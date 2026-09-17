@@ -1,0 +1,669 @@
+[
+  {
+    "id": "mobilisation-cheville-demi-genou",
+    "nom": "Mobilisation de cheville en demi-genou",
+    "famille": "mollet-cheville",
+    "anim": "anklemob",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Talon collé au sol tout le temps",
+      "Genou vers l'avant, au-dessus des orteils",
+      "Tiens 2 s devant, reviens doucement"
+    ],
+    "erreurs": [
+      "Décoller le talon",
+      "Laisser le genou partir vers l'intérieur"
+    ],
+    "pourquoi": "Une cheville qui plie bien absorbe mieux les descentes et les dévers en trail.",
+    "respiration": "Souffle quand le genou avance.",
+    "securite": "Une tension derrière la cheville est normale. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "mobilite",
+      "echauffement",
+      "foulee"
+    ],
+    "alternatives": [
+      "mobilisation-cheville-elastique",
+      "mobilisation-cheville-demi-genou-charge",
+      "alphabet-cheville"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 10
+  },
+  {
+    "id": "mobilisation-cheville-demi-genou-charge",
+    "nom": "Mobilisation de cheville en demi-genou avec kettlebell",
+    "famille": "mollet-cheville",
+    "anim": "anklemob",
+    "opts": {
+      "load": "kb"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "kettlebell",
+      "tapis"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Kettlebell posée sur la cuisse, près du genou",
+      "Talon collé au sol",
+      "Genou vers l'avant, au-dessus des orteils"
+    ],
+    "erreurs": [
+      "Décoller le talon sous la charge",
+      "Aller trop vite en bout de course"
+    ],
+    "pourquoi": "La charge aide la cheville à gagner de l'amplitude, utile dans les montées raides et les descentes en trail.",
+    "respiration": "Souffle quand le genou avance.",
+    "securite": "Charge légère à moyenne (8-16 kg). Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "mobilite",
+      "foulee",
+      "montee"
+    ],
+    "alternatives": [
+      "mobilisation-cheville-demi-genou",
+      "mobilisation-cheville-elastique"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 8
+  },
+  {
+    "id": "mobilisation-cheville-elastique",
+    "nom": "Mobilisation de cheville avec élastique",
+    "famille": "mollet-cheville",
+    "anim": "ankleband",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "elastique",
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Élastique bas sur la cheville, tiré derrière",
+      "Talon collé au sol",
+      "Genou vers l'avant, au-dessus des orteils"
+    ],
+    "erreurs": [
+      "Élastique trop haut sur le tibia",
+      "Décoller le talon"
+    ],
+    "pourquoi": "L'élastique fait glisser l'articulation vers l'arrière : la cheville plie plus librement, la foulée est plus souple.",
+    "respiration": "Souffle quand le genou avance.",
+    "securite": "Ne dois pas pincer devant la cheville. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "mobilite",
+      "echauffement",
+      "foulee"
+    ],
+    "alternatives": [
+      "mobilisation-cheville-demi-genou",
+      "mobilisation-cheville-demi-genou-charge"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 10
+  },
+  {
+    "id": "alphabet-cheville",
+    "nom": "Alphabet de la cheville",
+    "famille": "mollet-cheville",
+    "anim": "anklealpha",
+    "opts": {},
+    "type": "hold",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "banc"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Jambe tendue, seul le pied bouge",
+      "Dessine les lettres en grand",
+      "Mouvements lents et contrôlés"
+    ],
+    "erreurs": [
+      "Bouger toute la jambe au lieu du pied",
+      "Faire des lettres minuscules"
+    ],
+    "pourquoi": "Réveiller la cheville dans toutes les directions prépare aux appuis tordus des sentiers.",
+    "respiration": "Respire calmement.",
+    "securite": "Idéal après une entorse, sans douleur. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "mobilite",
+      "echauffement",
+      "proprio"
+    ],
+    "alternatives": [
+      "mobilisation-cheville-demi-genou",
+      "inversion-cheville-elastique"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "dureeConseillee": 60
+  },
+  {
+    "id": "marche-talons",
+    "nom": "Marche sur les talons",
+    "famille": "mollet-cheville",
+    "anim": "heeltoewalk",
+    "opts": {
+      "mode": "heels"
+    },
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "shins"
+    ],
+    "musclesTxt": "Muscles du tibia (releveurs du pied)",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pointes de pieds bien relevées",
+      "Jambes presque tendues",
+      "Petits pas, buste droit"
+    ],
+    "erreurs": [
+      "Laisser retomber les pointes",
+      "Se pencher en arrière"
+    ],
+    "pourquoi": "Des releveurs du pied solides évitent les douleurs du tibia et les pieds qui accrochent en fin de trail.",
+    "respiration": "Respire normalement.",
+    "securite": "Brûlure du tibia normale ; arrête si douleur vive. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "echauffement",
+      "foulee"
+    ],
+    "alternatives": [
+      "marche-talons-pointes",
+      "releve-pointes-mur"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "dureeConseillee": 30
+  },
+  {
+    "id": "marche-pointes",
+    "nom": "Marche sur la pointe des pieds",
+    "famille": "mollet-cheville",
+    "anim": "heeltoewalk",
+    "opts": {
+      "mode": "toes"
+    },
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "calves"
+    ],
+    "musclesTxt": "Mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Talons hauts, sur l'avant du pied",
+      "Jambes presque tendues",
+      "Petits pas, bassin haut"
+    ],
+    "erreurs": [
+      "Laisser descendre les talons",
+      "Plier les genoux"
+    ],
+    "pourquoi": "Des mollets endurants tiennent la foulée plus longtemps dans les montées de trail.",
+    "respiration": "Respire normalement.",
+    "securite": "Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "echauffement",
+      "foulee",
+      "montee"
+    ],
+    "alternatives": [
+      "marche-talons-pointes",
+      "mollets-debout"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "dureeConseillee": 30
+  },
+  {
+    "id": "marche-talons-pointes",
+    "nom": "Marche talons puis pointes",
+    "famille": "mollet-cheville",
+    "anim": "heeltoewalk",
+    "opts": {},
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, muscles du tibia",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "D'abord sur les talons, pointes levées",
+      "Puis sur les pointes, talons hauts",
+      "Petits pas, buste droit"
+    ],
+    "erreurs": [
+      "Talons ou pointes qui retombent",
+      "Aller trop vite"
+    ],
+    "pourquoi": "Les deux faces de la jambe travaillent : la cheville est prête pour les appuis variés du trail.",
+    "respiration": "Respire normalement.",
+    "securite": "Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "echauffement",
+      "foulee"
+    ],
+    "alternatives": [
+      "marche-talons",
+      "marche-pointes"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "dureeConseillee": 40
+  },
+  {
+    "id": "inversion-cheville-elastique",
+    "nom": "Inversion de cheville contre élastique",
+    "famille": "mollet-cheville",
+    "anim": "invev",
+    "opts": {
+      "dir": "in"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "shins",
+      "calves"
+    ],
+    "musclesTxt": "Muscles internes de la cheville",
+    "materiel": [
+      "elastique",
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Jambe tendue, talon au sol",
+      "Tourne la plante du pied vers l'intérieur",
+      "Reviens lentement, sans lâcher"
+    ],
+    "erreurs": [
+      "Tourner toute la jambe",
+      "Relâcher d'un coup au retour"
+    ],
+    "pourquoi": "Une cheville forte dans tous les sens tient mieux sur les pierres et les racines du trail.",
+    "respiration": "Souffle en tirant.",
+    "securite": "Élastique léger au début. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "proprio"
+    ],
+    "alternatives": [
+      "eversion-cheville-elastique",
+      "alphabet-cheville"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 15
+  },
+  {
+    "id": "eversion-cheville-elastique",
+    "nom": "Éversion de cheville contre élastique",
+    "famille": "mollet-cheville",
+    "anim": "invev",
+    "opts": {
+      "dir": "out"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "shins",
+      "calves"
+    ],
+    "musclesTxt": "Muscles externes de la cheville (fibulaires)",
+    "materiel": [
+      "elastique",
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Élastique autour des deux pieds",
+      "Tourne le pied vers l'extérieur",
+      "Reviens lentement, sans lâcher"
+    ],
+    "erreurs": [
+      "Tourner toute la jambe",
+      "Bouger les deux pieds"
+    ],
+    "pourquoi": "Les muscles externes de la cheville retiennent l'entorse quand le pied se tord en trail.",
+    "respiration": "Souffle en poussant.",
+    "securite": "Élastique léger au début. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "proprio"
+    ],
+    "alternatives": [
+      "inversion-cheville-elastique",
+      "alphabet-cheville"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 15
+  },
+  {
+    "id": "sauts-ligne-deux-pieds",
+    "nom": "Petits sauts latéraux au-dessus d'une ligne",
+    "famille": "mollet-cheville",
+    "anim": "lathops",
+    "opts": {
+      "single": false
+    },
+    "type": "plyo",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pieds serrés, sur l'avant du pied",
+      "Petits sauts rapides de chaque côté",
+      "Contact au sol le plus bref possible"
+    ],
+    "erreurs": [
+      "Poser les talons à chaque saut",
+      "Sauter trop haut et lentement"
+    ],
+    "pourquoi": "Des chevilles vives et réactives, c'est une foulée plus sûre et plus économique en trail.",
+    "respiration": "Respire en rythme.",
+    "securite": "Contact au sol le plus court possible. Qualité avant quantité : récup complète, arrête dès que les sauts ralentissent. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "explosivite",
+      "foulee",
+      "proprio"
+    ],
+    "alternatives": [
+      "sauts-ligne-unipodal",
+      "pogo-jumps"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "dureeConseillee": 20
+  },
+  {
+    "id": "sauts-ligne-unipodal",
+    "nom": "Petits sauts latéraux sur une jambe au-dessus d'une ligne",
+    "famille": "mollet-cheville",
+    "anim": "lathops",
+    "opts": {
+      "single": true
+    },
+    "type": "plyo",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "shins"
+    ],
+    "musclesTxt": "Mollets, chevilles",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Sur l'avant du pied, genou souple",
+      "Petits sauts rapides de chaque côté",
+      "Genou dans l'axe du pied"
+    ],
+    "erreurs": [
+      "Poser le talon à chaque saut",
+      "Genou qui rentre à la réception"
+    ],
+    "pourquoi": "La cheville apprend à réagir vite sur un seul appui, comme sur un sentier technique.",
+    "respiration": "Respire en rythme.",
+    "securite": "Contact au sol le plus court possible. Qualité avant quantité : récup complète, arrête dès que les sauts ralentissent. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "explosivite",
+      "foulee",
+      "proprio",
+      "genou"
+    ],
+    "alternatives": [
+      "sauts-ligne-deux-pieds",
+      "sauts-unipodaux-multidirectionnels"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets",
+      "genoux"
+    ],
+    "dureeConseillee": 15
+  },
+  {
+    "id": "sauts-unipodaux-multidirectionnels",
+    "nom": "Sauts sur une jambe dans toutes les directions",
+    "famille": "mollet-cheville",
+    "anim": "slhopmulti",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Mollets, quadriceps, fessiers",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Avant, côté, arrière, retour au centre",
+      "Réception stable, genou dans l'axe",
+      "Fige 1 s avant le saut suivant"
+    ],
+    "erreurs": [
+      "Enchaîner sans se stabiliser",
+      "Atterrir jambe tendue"
+    ],
+    "pourquoi": "Réagir sur une jambe dans toutes les directions, c'est l'appui imprévu d'une descente de trail.",
+    "respiration": "Souffle à chaque réception.",
+    "securite": "Petits sauts au début. Contact au sol le plus court possible. Qualité avant quantité : récup complète, arrête dès que les sauts ralentissent. Arrête en cas de douleur à la cheville ou au tendon d'Achille. Arrête aussi si le genou fait mal.",
+    "tags": [
+      "cheville",
+      "trail",
+      "proprio",
+      "genou",
+      "explosivite",
+      "foulee"
+    ],
+    "alternatives": [
+      "hop-stick",
+      "sauts-ligne-unipodal",
+      "reception-unijambe"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets",
+      "genoux"
+    ],
+    "repsConseillees": 3
+  },
+  {
+    "id": "mollet-excentrique-marche",
+    "nom": "Descente lente du mollet sur une jambe (marche)",
+    "famille": "mollet-cheville",
+    "anim": "calfecc",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "calves"
+    ],
+    "musclesTxt": "Mollets, tendon d'Achille",
+    "materiel": [
+      "marche",
+      "mur"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Monte sur la pointe avec les 2 pieds",
+      "Lève un pied, descends en 3 s sur l'autre",
+      "Talon sous la marche, sans rebond"
+    ],
+    "erreurs": [
+      "Descendre trop vite",
+      "Plier le genou pour tricher"
+    ],
+    "pourquoi": "La descente lente renforce le tendon d'Achille, très sollicité dans les montées et les descentes de trail.",
+    "respiration": "Souffle pendant la descente.",
+    "securite": "Une main au mur. Tendon sensible : descends moins bas. Arrête en cas de douleur à la cheville ou au tendon d'Achille.",
+    "tags": [
+      "cheville",
+      "trail",
+      "montee",
+      "foulee"
+    ],
+    "alternatives": [
+      "mollet-unijambe-marche",
+      "mollets-marche",
+      "marche-pointes"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "chevilles",
+      "mollets"
+    ],
+    "repsConseillees": 10
+  }
+]

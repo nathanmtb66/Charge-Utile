@@ -1,0 +1,859 @@
+[
+  {
+    "id": "pompes",
+    "nom": "Pompes",
+    "famille": "haut-du-corps",
+    "anim": "pushup",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "pecs",
+      "triceps",
+      "delts",
+      "abs"
+    ],
+    "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Corps droit de la tête aux talons",
+      "Coudes à 45° du corps",
+      "Poitrine à 5 cm du sol"
+    ],
+    "erreurs": [
+      "Laisser tomber les hanches",
+      "Écarter les coudes à l'horizontale"
+    ],
+    "pourquoi": "Des bras et un buste solides tiennent le guidon dans les descentes VTT sans te fatiguer.",
+    "respiration": "Inspire en descendant, souffle en poussant.",
+    "securite": "Si les poignets font mal, pose les mains sur des poignées ou fais-les sur les genoux.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt",
+      "gainage"
+    ],
+    "alternatives": [
+      "pompes-genoux",
+      "developpe-militaire-halteres"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "pompes-genoux",
+    "nom": "Pompes sur les genoux",
+    "famille": "haut-du-corps",
+    "anim": "pushup",
+    "opts": {
+      "knees": true
+    },
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "pecs",
+      "triceps",
+      "delts",
+      "abs"
+    ],
+    "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+    "materiel": [
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Genoux posés, corps droit jusqu'à la tête",
+      "Coudes à 45° du corps",
+      "Poitrine près du sol"
+    ],
+    "erreurs": [
+      "Plier les hanches, fesses en l'air",
+      "Descendre à moitié seulement"
+    ],
+    "pourquoi": "Tu construis la force des bras pour tenir le guidon en descente, sans surcharge.",
+    "respiration": "Inspire en descendant, souffle en poussant.",
+    "securite": "Pose les genoux sur un tapis ou une serviette pliée.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "pompes"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "rowing-haltere",
+    "nom": "Rowing haltère un bras",
+    "famille": "haut-du-corps",
+    "anim": "dbrow",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "lats",
+      "upperback",
+      "biceps"
+    ],
+    "musclesTxt": "Dos (grand dorsal), haut du dos, biceps",
+    "materiel": [
+      "halteres",
+      "banc"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Dos plat, parallèle au sol",
+      "Tire le coude vers la hanche",
+      "Descends jusqu'au bras tendu"
+    ],
+    "erreurs": [
+      "Tourner le buste pour tirer",
+      "Tirer avec le bras, épaule vers l'oreille"
+    ],
+    "pourquoi": "Un dos fort te garde gainé et stable sur le vélo quand ça secoue en descente.",
+    "respiration": "Souffle en tirant, inspire en descendant.",
+    "securite": "Garde le dos plat ; si le bas du dos tire, allège la charge.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt",
+      "dos"
+    ],
+    "alternatives": [
+      "tractions"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "1"
+    ],
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "tractions",
+    "nom": "Tractions",
+    "famille": "haut-du-corps",
+    "anim": "pullup",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "lats",
+      "biceps",
+      "upperback",
+      "forearms"
+    ],
+    "musclesTxt": "Dos (grand dorsal), biceps, avant-bras",
+    "materiel": [
+      "barre-traction"
+    ],
+    "niveau": 3,
+    "consignes": [
+      "Mains largeur d'épaules, paumes devant",
+      "Monte le menton au-dessus de la barre",
+      "Redescends bras tendus, sans balancer"
+    ],
+    "erreurs": [
+      "Balancer les jambes pour monter",
+      "Remonter sans tendre les bras"
+    ],
+    "pourquoi": "Tirer fort et tenir la prise sert à piloter le VTT et à garder le guidon en main.",
+    "respiration": "Souffle en montant, inspire en descendant.",
+    "securite": "Si tu n'en fais pas encore, descends lentement depuis le haut ou utilise un élastique.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "rowing-haltere"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "developpe-militaire-halteres",
+    "nom": "Développé militaire haltères debout",
+    "famille": "haut-du-corps",
+    "anim": "ohpress",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "delts",
+      "triceps",
+      "abs"
+    ],
+    "musclesTxt": "Épaules, triceps, abdos",
+    "materiel": [
+      "halteres"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Serre les fesses et le ventre",
+      "Pousse les haltères au-dessus de la tête",
+      "Ne creuse pas le bas du dos"
+    ],
+    "erreurs": [
+      "Cambrer le dos pour pousser",
+      "Pousser les haltères vers l'avant"
+    ],
+    "pourquoi": "Des épaules solides encaissent les chocs du guidon et protègent en cas de chute.",
+    "respiration": "Souffle en poussant, inspire en descendant.",
+    "securite": "Si tu dois cambrer pour monter, prends plus léger.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt",
+      "gainage"
+    ],
+    "alternatives": [
+      "pompes"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "marche-du-fermier",
+    "nom": "Marche du fermier",
+    "famille": "haut-du-corps",
+    "anim": "farmer",
+    "opts": {},
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "forearms",
+      "upperback",
+      "abs",
+      "delts"
+    ],
+    "musclesTxt": "Avant-bras, haut du dos, abdos, épaules",
+    "materiel": [
+      "kettlebell",
+      "halteres"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Buste droit, regard devant",
+      "Épaules basses et en arrière",
+      "Petits pas contrôlés"
+    ],
+    "erreurs": [
+      "Pencher sur le côté",
+      "Hausser les épaules vers les oreilles"
+    ],
+    "pourquoi": "Une poigne et un gainage solides tiennent le guidon dans les longues descentes.",
+    "respiration": "Respire calmement, sans bloquer.",
+    "securite": "Pose les charges en pliant les jambes, dos droit.",
+    "tags": [
+      "haut-du-corps",
+      "descente-vtt",
+      "gainage"
+    ],
+    "alternatives": [
+      "rowing-haltere"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "velo",
+    "nom": "Vélo d'appartement",
+    "famille": "cardio",
+    "anim": "bike",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "musclesTxt": "Cuisses, fessiers, mollets",
+    "materiel": [
+      "velo"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pédale en rond, sans à-coups",
+      "Buste calme, épaules relâchées",
+      "Genou dans l'axe du pied"
+    ],
+    "erreurs": [
+      "Selle trop basse, genou très plié",
+      "Se dandiner sur la selle"
+    ],
+    "pourquoi": "Le vélo chauffe les jambes en douceur, avec le même geste que sur le VTT.",
+    "respiration": "Respire par le ventre, à un rythme régulier.",
+    "securite": "Règle la selle : jambe presque tendue en bas du coup de pédale.",
+    "tags": [
+      "cardio",
+      "echauffement",
+      "retour-au-calme",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "tapis",
+      "rameur"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "velo-sprint",
+    "nom": "Vélo à fond",
+    "famille": "cardio",
+    "anim": "bike",
+    "opts": {},
+    "type": "effort",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "musclesTxt": "Cuisses, fessiers, mollets",
+    "materiel": [
+      "velo"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Mets de la résistance, puis pédale fort",
+      "Buste calé, mains fermes",
+      "Pédale en rond, sans rebondir"
+    ],
+    "erreurs": [
+      "Rebondir sur la selle",
+      "Partir trop vite et exploser"
+    ],
+    "pourquoi": "Les sprints sur vélo musclent le coup de pédale pour les relances en VTT.",
+    "respiration": "Souffle fort et régulier pendant l'effort.",
+    "securite": "Échauffe-toi 5 minutes avant de sprinter.",
+    "tags": [
+      "cardio",
+      "coup-de-pedale",
+      "explosivite"
+    ],
+    "alternatives": [
+      "velo",
+      "rameur-sprint"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "montees-de-genoux",
+    "nom": "Montées de genoux",
+    "famille": "echauffement",
+    "anim": "highknees",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "hipflex",
+      "quads",
+      "calves"
+    ],
+    "musclesTxt": "Fléchisseurs de hanche, cuisses, mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Genoux à hauteur de hanche",
+      "Reste sur l'avant des pieds",
+      "Bras qui accompagnent"
+    ],
+    "erreurs": [
+      "Pencher le buste en arrière",
+      "Atterrir sur les talons"
+    ],
+    "pourquoi": "Tu réveilles hanches et chevilles avant de courir ou de monter en danseuse.",
+    "respiration": "Respire vite mais sans bloquer.",
+    "securite": "Commence doucement, puis accélère.",
+    "tags": [
+      "echauffement",
+      "foulee",
+      "cardio"
+    ],
+    "alternatives": [
+      "talons-fesses",
+      "sprint-sur-place"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "talons-fesses",
+    "nom": "Talons-fesses",
+    "famille": "echauffement",
+    "anim": "buttkicks",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "hams",
+      "calves"
+    ],
+    "musclesTxt": "Ischios, mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Talon vers la fesse",
+      "Cuisse qui reste verticale",
+      "Petits appuis sur l'avant du pied"
+    ],
+    "erreurs": [
+      "Lancer la cuisse en arrière",
+      "Pencher le buste en avant"
+    ],
+    "pourquoi": "Tu chauffes les ischios avant la course et les descentes en trail.",
+    "respiration": "Respire régulièrement.",
+    "securite": "Commence lentement, puis accélère.",
+    "tags": [
+      "echauffement",
+      "foulee",
+      "chaine-posterieure"
+    ],
+    "alternatives": [
+      "montees-de-genoux"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "balancier-jambe",
+    "nom": "Balancier de jambe avant-arrière",
+    "famille": "echauffement",
+    "anim": "legswing",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "hams",
+      "hipflex",
+      "glutes"
+    ],
+    "musclesTxt": "Ischios, fléchisseurs de hanche, fessiers",
+    "materiel": [
+      "mur"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Une main en appui, buste droit",
+      "Jambe souple, balance d'avant en arrière",
+      "Augmente l'amplitude petit à petit"
+    ],
+    "erreurs": [
+      "Forcer l'amplitude dès le début",
+      "Cambrer le dos quand la jambe va derrière"
+    ],
+    "pourquoi": "Des hanches mobiles donnent une foulée plus ample et un pédalage plus fluide.",
+    "respiration": "Respire calmement.",
+    "securite": "Reste dans une amplitude sans douleur.",
+    "tags": [
+      "echauffement",
+      "hanche",
+      "foulee"
+    ],
+    "alternatives": [
+      "balancier-jambe-lateral"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "balancier-jambe-lateral",
+    "nom": "Balancier de jambe latéral",
+    "famille": "echauffement",
+    "anim": "legswing",
+    "opts": {
+      "side": true
+    },
+    "type": "cardio",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "adductors",
+      "glutes",
+      "hipflex"
+    ],
+    "musclesTxt": "Adducteurs, fessiers, hanches",
+    "materiel": [
+      "mur"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Face à l'appui, deux mains posées",
+      "Jambe croise devant puis s'écarte",
+      "Bassin face à l'appui"
+    ],
+    "erreurs": [
+      "Tourner le bassin avec la jambe",
+      "Taper le pied d'appui"
+    ],
+    "pourquoi": "Des hanches mobiles sur les côtés protègent le genou dans les appuis en trail.",
+    "respiration": "Respire calmement.",
+    "securite": "Reste dans une amplitude sans douleur.",
+    "tags": [
+      "echauffement",
+      "hanche",
+      "genou"
+    ],
+    "alternatives": [
+      "balancier-jambe"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "chenille",
+    "nom": "Chenille",
+    "famille": "echauffement",
+    "anim": "inchworm",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "hams",
+      "abs",
+      "delts"
+    ],
+    "musclesTxt": "Ischios, abdos, épaules",
+    "materiel": [
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Mains au sol, jambes presque tendues",
+      "Marche des mains jusqu'à la planche",
+      "Reviens mains vers pieds, puis relève-toi"
+    ],
+    "erreurs": [
+      "Plier fort les genoux dès le départ",
+      "Laisser tomber les hanches en planche"
+    ],
+    "pourquoi": "Tu étires les ischios et réveilles le gainage avant une sortie VTT ou trail.",
+    "respiration": "Souffle en avançant les mains, respire en planche.",
+    "securite": "Plie un peu les genoux si l'arrière des cuisses tire trop.",
+    "tags": [
+      "echauffement",
+      "chaine-posterieure",
+      "gainage"
+    ],
+    "alternatives": [
+      "balancier-jambe"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "jumping-jack",
+    "nom": "Jumping jack",
+    "famille": "echauffement",
+    "anim": "jack",
+    "opts": {},
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "calves",
+      "delts"
+    ],
+    "musclesTxt": "Mollets, épaules",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Saute pieds écartés, bras en haut",
+      "Reste sur l'avant des pieds",
+      "Rythme régulier"
+    ],
+    "erreurs": [
+      "Atterrir talons en premier",
+      "Genoux qui rentrent vers l'intérieur"
+    ],
+    "pourquoi": "Tu fais monter le cœur et tu prépares les chevilles aux appuis en trail.",
+    "respiration": "Respire en rythme avec les sauts.",
+    "securite": "Si le genou n'aime pas les sauts, fais le mouvement en pas chassés.",
+    "tags": [
+      "echauffement",
+      "cardio",
+      "cheville"
+    ],
+    "alternatives": [
+      "montees-de-genoux"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "sprint-sur-place",
+    "nom": "Sprint sur place",
+    "famille": "cardio",
+    "anim": "sprint",
+    "opts": {},
+    "type": "effort",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "hams",
+      "calves"
+    ],
+    "musclesTxt": "Cuisses, ischios, mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Genoux hauts, appuis très rapides",
+      "Sur l'avant des pieds",
+      "Bras qui tirent fort"
+    ],
+    "erreurs": [
+      "Rester sur les talons",
+      "Buste penché en arrière"
+    ],
+    "pourquoi": "Des appuis rapides t'aident à relancer en côte et à réagir sur le terrain.",
+    "respiration": "Souffle fort pendant l'effort, récupère ensuite.",
+    "securite": "Échauffe-toi avant : chevilles et mollets doivent être chauds.",
+    "tags": [
+      "cardio",
+      "explosivite",
+      "foulee"
+    ],
+    "alternatives": [
+      "montees-de-genoux"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "tapis",
+    "nom": "Tapis de course",
+    "famille": "cardio",
+    "anim": "treadmill",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "calves"
+    ],
+    "musclesTxt": "Cuisses, mollets",
+    "materiel": [
+      "tapis"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Buste droit, regard devant",
+      "Pose le pied sous le bassin",
+      "Allure facile, tu peux parler"
+    ],
+    "erreurs": [
+      "Tenir les barres en courant",
+      "Faire de grandes enjambées"
+    ],
+    "pourquoi": "Un footing facile chauffe le corps en douceur, comme au début d'un trail.",
+    "respiration": "Respire tranquillement, tu dois pouvoir parler.",
+    "securite": "Monte et descends du tapis à l'arrêt.",
+    "tags": [
+      "cardio",
+      "echauffement",
+      "retour-au-calme",
+      "foulee"
+    ],
+    "alternatives": [
+      "velo",
+      "rameur"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "rameur",
+    "nom": "Rameur",
+    "famille": "cardio",
+    "anim": "rower",
+    "opts": {},
+    "type": "cardio",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "lats"
+    ],
+    "musclesTxt": "Cuisses, fessiers, dos",
+    "materiel": [
+      "rameur"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pousse d'abord avec les jambes",
+      "Puis bascule le buste, tire les mains",
+      "Retour : bras, buste, puis jambes"
+    ],
+    "erreurs": [
+      "Tirer avec les bras en premier",
+      "Arrondir le dos"
+    ],
+    "pourquoi": "Le rameur chauffe jambes et dos ensemble, utiles sur le VTT.",
+    "respiration": "Souffle en poussant, inspire au retour.",
+    "securite": "Dos droit : si le bas du dos tire, réduis la résistance.",
+    "tags": [
+      "cardio",
+      "echauffement",
+      "retour-au-calme",
+      "dos"
+    ],
+    "alternatives": [
+      "velo",
+      "tapis"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "rameur-sprint",
+    "nom": "Rameur à fond",
+    "famille": "cardio",
+    "anim": "rower",
+    "opts": {},
+    "type": "effort",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "lats"
+    ],
+    "musclesTxt": "Cuisses, fessiers, dos",
+    "materiel": [
+      "rameur"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Poussée de jambes explosive",
+      "Buste gainé, dos plat",
+      "Tire les mains vers le bas des côtes"
+    ],
+    "erreurs": [
+      "Tirer avec les bras en premier",
+      "Arrondir le dos en fin d'effort"
+    ],
+    "pourquoi": "Les sprints au rameur boostent la puissance des jambes et du dos pour les relances.",
+    "respiration": "Souffle fort à chaque poussée.",
+    "securite": "Échauffe-toi 5 minutes avant ; arrête si le dos se creuse ou s'arrondit.",
+    "tags": [
+      "cardio",
+      "explosivite",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "velo-sprint",
+      "ski-erg"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  },
+  {
+    "id": "ski-erg",
+    "nom": "Ski-erg",
+    "famille": "cardio",
+    "anim": "skierg",
+    "opts": {},
+    "type": "effort",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "lats",
+      "abs",
+      "triceps"
+    ],
+    "musclesTxt": "Dos, abdos, triceps",
+    "materiel": [
+      "ski-erg"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Tire les poignées de haut en bas",
+      "Plie les hanches, garde le dos plat",
+      "Remonte grand, bras en haut"
+    ],
+    "erreurs": [
+      "Tirer seulement avec les bras",
+      "Arrondir le dos en bas"
+    ],
+    "pourquoi": "Le ski-erg muscle le haut du corps et le gainage utiles en descente VTT.",
+    "respiration": "Souffle fort en tirant, inspire en remontant.",
+    "securite": "Échauffe-toi avant ; garde le dos plat en bas.",
+    "tags": [
+      "cardio",
+      "haut-du-corps",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "rameur-sprint"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true
+  }
+]
