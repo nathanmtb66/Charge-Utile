@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "squat-pdc",
+    "nom": "Squat au poids du corps",
+    "famille": "squat",
+    "anim": "bwsquat",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pieds largeur d'épaules, pointes ouvertes",
+      "Fesses en arrière, genoux vers les orteils",
+      "Descends cuisses sous l'horizontale"
+    ],
+    "erreurs": [
+      "Laisser les genoux rentrer vers l'intérieur",
+      "Décoller les talons en bas"
+    ],
+    "pourquoi": "La base pour des cuisses qui tiennent dans les longues descentes et les montées raides.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Descends moins bas si le genou tire. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "montee",
+      "echauffement"
+    ],
+    "alternatives": [
+      "squat-goblet",
+      "chaise-mur",
+      "spanish-squat"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "squat-goblet",
+    "nom": "Squat goblet (haltère)",
+    "famille": "squat",
+    "anim": "squat",
+    "opts": {
+      "hold": "goblet"
+    },
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "halteres"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Haltère collé contre la poitrine",
+      "Coudes entre les genoux en bas",
+      "Talons au sol, buste fier"
+    ],
+    "erreurs": [
+      "Arrondir le dos en bas",
+      "Laisser les genoux rentrer"
+    ],
+    "pourquoi": "Des cuisses fortes absorbent mieux les chocs en descente VTT et en trail.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Garde une charge que tu contrôles jusqu'en bas. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "montee"
+    ],
+    "alternatives": [
+      "squat-pdc",
+      "squat-sumo",
+      "squat-sac-leste"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "squat-barre",
+    "nom": "Squat barre sur le dos",
+    "famille": "squat",
+    "anim": "squat",
+    "opts": {
+      "hold": "backBar"
+    },
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "lowback"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, bas du dos",
+    "materiel": [
+      "barre"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Barre sur le haut du dos, pas sur la nuque",
+      "Ventre gainé avant de descendre",
+      "Genoux dans l'axe des pieds"
+    ],
+    "erreurs": [
+      "Arrondir le bas du dos",
+      "Remonter les fesses avant les épaules"
+    ],
+    "pourquoi": "La force des jambes rend chaque coup de pédale et chaque montée plus facile.",
+    "respiration": "Bloque l'air en descendant, souffle en haut.",
+    "securite": "Travaille dans un rack avec les sécurités réglées. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "montee",
+      "coup-de-pedale",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "squat-goblet",
+      "squat-sac-leste",
+      "squat-pdc"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches",
+      "bas-du-dos"
+    ]
+  },
+  {
+    "id": "squat-avant",
+    "nom": "Squat avant (barre devant)",
+    "famille": "squat",
+    "anim": "squat",
+    "opts": {
+      "hold": "frontBar"
+    },
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "abs"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, gainage",
+    "materiel": [
+      "barre"
+    ],
+    "niveau": 3,
+    "consignes": [
+      "Barre sur l'avant des épaules",
+      "Coudes hauts tout le long",
+      "Buste droit, descends entre les pieds"
+    ],
+    "erreurs": [
+      "Laisser tomber les coudes",
+      "Pencher le buste en avant"
+    ],
+    "pourquoi": "Buste droit et cuisses qui travaillent : idéal pour la position en descente VTT.",
+    "respiration": "Bloque l'air en descendant, souffle en haut.",
+    "securite": "Si la barre roule, allège ou reprends le goblet. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "montee",
+      "gainage"
+    ],
+    "alternatives": [
+      "squat-goblet",
+      "squat-barre",
+      "squat-sac-leste"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": false,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches",
+      "haut-du-dos",
+      "poignets"
+    ]
+  },
+  {
+    "id": "squat-sac-leste",
+    "nom": "Squat avec sac lesté",
+    "famille": "squat",
+    "anim": "squat",
+    "opts": {
+      "hold": "bag"
+    },
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "abs"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, gainage",
+    "materiel": [
+      "sac-leste"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Sac serré contre la poitrine",
+      "Pieds à plat, genoux vers les orteils",
+      "Descends lentement, remonte fort"
+    ],
+    "erreurs": [
+      "Laisser le sac tirer le buste en avant",
+      "Décoller les talons"
+    ],
+    "pourquoi": "Une charge instable gaine le tronc, comme un sac à dos sur un trail.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Choisis un sac que tu tiens sans arrondir le dos. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "gainage",
+      "montee"
+    ],
+    "alternatives": [
+      "squat-goblet",
+      "squat-pdc",
+      "squat-barre"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "squat-saute",
+    "nom": "Squat sauté",
+    "famille": "squat",
+    "anim": "jumpsquat",
+    "opts": {},
+    "type": "plyo",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Descends à mi-cuisse, puis saute fort",
+      "Bras qui lancent le saut",
+      "Réception douce, genoux dans l'axe"
+    ],
+    "erreurs": [
+      "Atterrir jambes tendues",
+      "Genoux qui rentrent à la réception"
+    ],
+    "pourquoi": "L'explosivité aide à relancer après un virage ou à franchir un obstacle.",
+    "respiration": "Souffle fort à chaque saut.",
+    "securite": "Réception silencieuse, sinon réduis la hauteur. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "explosivite",
+      "genou",
+      "coup-de-pedale",
+      "montee"
+    ],
+    "alternatives": [
+      "box-jump",
+      "squat-pdc",
+      "fentes-sautees"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "mollets",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "chaise-mur",
+    "nom": "Chaise contre le mur",
+    "famille": "squat",
+    "anim": "wallsit",
+    "opts": {},
+    "type": "hold",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "mur"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Dos et bassin collés au mur",
+      "Cuisses à l'horizontale",
+      "Genoux au-dessus des chevilles"
+    ],
+    "erreurs": [
+      "Genoux qui dépassent les pieds",
+      "Mains posées sur les cuisses"
+    ],
+    "pourquoi": "Tenir la position longtemps prépare les cuisses aux longues descentes en danseuse.",
+    "respiration": "Respire calmement, ne bloque pas l'air.",
+    "securite": "Remonte un peu si le genou tire. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "spanish-squat",
+      "squat-pdc",
+      "chaise-mur-unijambe"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "genoux"
+    ]
+  },
+  {
+    "id": "chaise-mur-unijambe",
+    "nom": "Chaise contre le mur sur une jambe",
+    "famille": "squat",
+    "anim": "wallsit",
+    "opts": {
+      "single": true
+    },
+    "type": "hold",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe d'appui)",
+    "materiel": [
+      "mur"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Dos collé au mur, bassin horizontal",
+      "Jambe libre tendue devant",
+      "Genou d'appui au-dessus du pied"
+    ],
+    "erreurs": [
+      "Laisser le bassin pencher d'un côté",
+      "Genou d'appui qui rentre"
+    ],
+    "pourquoi": "Chaque jambe travaille seule, comme à chaque appui en trail.",
+    "respiration": "Respire calmement, ne bloque pas l'air.",
+    "securite": "Pose le pied libre si tu trembles trop. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "chaise-mur",
+      "spanish-squat",
+      "step-down-lateral"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux"
+    ]
+  },
+  {
+    "id": "spanish-squat",
+    "nom": "Spanish squat (sangle derrière les genoux)",
+    "famille": "squat",
+    "anim": "spanish",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads"
+    ],
+    "musclesTxt": "Quadriceps",
+    "materiel": [
+      "sangle"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Sangle derrière les genoux, bien tendue",
+      "Tibias verticaux, bascule en arrière",
+      "Descends jusqu'aux cuisses horizontales"
+    ],
+    "erreurs": [
+      "Laisser les genoux avancer",
+      "Se pencher en avant"
+    ],
+    "pourquoi": "Il charge le quadriceps en ménageant le genou : parfait pour le tendon rotulien des traileurs et vététistes.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Une gêne légère sous la rotule peut passer, une douleur non. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "chaise-mur",
+      "squat-pdc",
+      "step-down-lateral"
+    ],
+    "tempoConseille": [
+      "3",
+      "2",
+      "2",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "genoux"
+    ]
+  },
+  {
+    "id": "fente-avant",
+    "nom": "Fente avant",
+    "famille": "fente",
+    "anim": "lunge",
+    "opts": {
+      "dir": "fwd"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Grand pas devant, buste droit",
+      "Genou arrière à 3-5 cm du sol",
+      "Repousse fort pour revenir"
+    ],
+    "erreurs": [
+      "Genou avant qui rentre vers l'intérieur",
+      "Pas trop court, talon qui décolle"
+    ],
+    "pourquoi": "Freiner avec une jambe, c'est ce que fait chaque foulée en descente de trail.",
+    "respiration": "Inspire en descendant, souffle en revenant.",
+    "securite": "Fais un pas plus court si l'équilibre manque. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "foulee",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "fente-arriere",
+      "fente-bulgare-sans-charge",
+      "step-up"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fente-arriere",
+    "nom": "Fente arrière",
+    "famille": "fente",
+    "anim": "lunge",
+    "opts": {
+      "dir": "back"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Recule d'un grand pas, buste droit",
+      "Genou arrière à 3-5 cm du sol",
+      "Pousse sur le pied avant pour revenir"
+    ],
+    "erreurs": [
+      "Genou avant qui part vers l'intérieur",
+      "Poser le genou arrière au sol"
+    ],
+    "pourquoi": "Plus douce pour le genou que la fente avant, elle renforce la poussée utile en montée.",
+    "respiration": "Inspire en descendant, souffle en revenant.",
+    "securite": "Tiens-toi à un support si tu vacilles. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "foulee",
+      "montee"
+    ],
+    "alternatives": [
+      "fente-avant",
+      "fente-arriere-halteres",
+      "fente-bulgare-sans-charge"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fente-arriere-halteres",
+    "nom": "Fente arrière avec haltères",
+    "famille": "fente",
+    "anim": "lunge",
+    "opts": {
+      "dir": "back",
+      "load": "db"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "forearms"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, avant-bras",
+    "materiel": [
+      "halteres"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Haltères le long du corps, épaules basses",
+      "Genou arrière à 3-5 cm du sol",
+      "Poids sur le talon du pied avant"
+    ],
+    "erreurs": [
+      "Pencher le buste en avant",
+      "Pas trop court, genou avant loin devant"
+    ],
+    "pourquoi": "Plus de charge, plus de force pour les montées raides et les relances.",
+    "respiration": "Inspire en descendant, souffle en revenant.",
+    "securite": "Commence léger pour garder l'équilibre. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "montee",
+      "foulee",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "fente-arriere",
+      "fente-bulgare",
+      "step-up-halteres"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fente-laterale",
+    "nom": "Fente latérale",
+    "famille": "fente",
+    "anim": "sidelunge",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "adductors"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, adducteurs",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Grand pas sur le côté, pieds à plat",
+      "Fesses en arrière, l'autre jambe tendue",
+      "Genou plié au-dessus du pied"
+    ],
+    "erreurs": [
+      "Genou qui dépasse vers l'intérieur",
+      "Décoller le talon de la jambe tendue"
+    ],
+    "pourquoi": "Les appuis latéraux protègent le genou et la hanche dans les virages et les dévers.",
+    "respiration": "Inspire en descendant, souffle en revenant.",
+    "securite": "Réduis l'écart si l'intérieur de la cuisse tire. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "hanche",
+      "descente-vtt",
+      "proprio"
+    ],
+    "alternatives": [
+      "fente-avant",
+      "sauts-lateraux-skater",
+      "squat-sumo"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "adducteurs",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fentes-sautees",
+    "nom": "Fentes sautées",
+    "famille": "fente",
+    "anim": "splitjump",
+    "opts": {},
+    "type": "plyo",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, mollets",
+    "materiel": [
+      "aucun"
+    ],
+    "niveau": 3,
+    "consignes": [
+      "Pars en fente basse, buste droit",
+      "Saute et change de jambe en l'air",
+      "Reçois-toi en douceur, genou dans l'axe"
+    ],
+    "erreurs": [
+      "Atterrir jambe avant tendue",
+      "Genou arrière qui tape le sol"
+    ],
+    "pourquoi": "Des appuis explosifs et contrôlés, utiles pour relancer en trail et en VTT.",
+    "respiration": "Souffle à chaque saut.",
+    "securite": "Fais des fentes simples si la réception est bruyante. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "explosivite",
+      "foulee",
+      "genou",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "squat-saute",
+      "fente-avant",
+      "box-jump"
+    ],
+    "tempoConseille": null,
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "mollets",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "step-up",
+    "nom": "Step-up sur box",
+    "famille": "fente",
+    "anim": "stepup",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "box"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pied entier posé sur la box",
+      "Pousse avec la jambe du haut",
+      "Redescends lentement, sans sauter"
+    ],
+    "erreurs": [
+      "Pousser avec le pied resté au sol",
+      "Genou du haut qui rentre"
+    ],
+    "pourquoi": "C'est le geste d'une montée raide : il muscle la poussée en trail et en VTT.",
+    "respiration": "Souffle en montant, inspire en descendant.",
+    "securite": "Prends une box plus basse si le genou passe au-dessus de la hanche. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "montee",
+      "genou",
+      "foulee",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "step-up-halteres",
+      "fente-arriere",
+      "step-down-lateral"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "step-up-halteres",
+    "nom": "Step-up avec haltères",
+    "famille": "fente",
+    "anim": "stepup",
+    "opts": {
+      "load": "db"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers",
+    "materiel": [
+      "box",
+      "halteres"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Haltères le long du corps",
+      "Pousse avec la jambe du haut",
+      "Redescends lentement, sans sauter"
+    ],
+    "erreurs": [
+      "Pencher le buste pour se hisser",
+      "Pousser avec le pied resté au sol"
+    ],
+    "pourquoi": "Monter chargé, comme un sac en trail : la poussée devient plus forte.",
+    "respiration": "Souffle en montant, inspire en descendant.",
+    "securite": "Commence léger, la box doit rester stable. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "montee",
+      "genou",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "step-up",
+      "fente-arriere-halteres",
+      "fente-bulgare"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "step-down-lateral-10cm",
+    "nom": "Step-down latéral (marche 10 cm)",
+    "famille": "fente",
+    "anim": "stepdown",
+    "opts": {
+      "h": 0.1
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe d'appui)",
+    "materiel": [
+      "marche"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Genou d'appui dans l'axe du 2e orteil",
+      "Bassin horizontal, bras devant",
+      "Le talon libre effleure le sol"
+    ],
+    "erreurs": [
+      "Laisser le genou rentrer vers l'intérieur",
+      "Se laisser tomber sur le talon"
+    ],
+    "pourquoi": "Il apprend au genou à rester stable en freinant, comme dans chaque descente.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Commence là si le genou est sensible, tiens un mur si besoin. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "proprio",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "spanish-squat",
+      "etoile-plots",
+      "mini-squat-demi-swissball"
+    ],
+    "tempoConseille": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "progression": {
+      "groupe": "step-down",
+      "niveau": 1,
+      "nom": "Facile"
+    },
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "step-down-lateral",
+    "nom": "Step-down latéral (marche 20 cm)",
+    "famille": "fente",
+    "anim": "stepdown",
+    "opts": {
+      "h": 0.2
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe d'appui)",
+    "materiel": [
+      "marche"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Genou d'appui dans l'axe du 2e orteil",
+      "Bassin horizontal, bras devant",
+      "Le talon libre effleure le sol"
+    ],
+    "erreurs": [
+      "Laisser le genou rentrer vers l'intérieur",
+      "Se laisser tomber sur le talon"
+    ],
+    "pourquoi": "Il apprend au genou à rester stable en freinant, comme dans chaque descente.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Commence sur une marche basse, tiens un mur si besoin. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "proprio",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "spanish-squat",
+      "etoile-plots",
+      "mini-squat-demi-swissball"
+    ],
+    "tempoConseille": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "progression": {
+      "groupe": "step-down",
+      "niveau": 2,
+      "nom": "Moyen"
+    },
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "step-down-lateral-30cm",
+    "nom": "Step-down latéral (marche 30 cm)",
+    "famille": "fente",
+    "anim": "stepdown",
+    "opts": {
+      "h": 0.3
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe d'appui)",
+    "materiel": [
+      "marche"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Genou d'appui dans l'axe du 2e orteil",
+      "Fesses en arrière, bras devant",
+      "Descends lentement, talon qui effleure"
+    ],
+    "erreurs": [
+      "Laisser le genou rentrer vers l'intérieur",
+      "Se laisser tomber sur le talon"
+    ],
+    "pourquoi": "Il apprend au genou à rester stable en freinant, comme dans chaque descente.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Passe à ce niveau seulement si 20 cm est facile et sans douleur. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "proprio",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "spanish-squat",
+      "etoile-plots",
+      "mini-squat-demi-swissball"
+    ],
+    "tempoConseille": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "progression": {
+      "groupe": "step-down",
+      "niveau": 3,
+      "nom": "Difficile"
+    },
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "step-down-lateral-30cm-halteres",
+    "nom": "Step-down latéral lesté (marche 30 cm)",
+    "famille": "fente",
+    "anim": "stepdown",
+    "opts": {
+      "h": 0.3,
+      "load": "db"
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "forearms"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe d'appui), avant-bras",
+    "materiel": [
+      "marche",
+      "halteres"
+    ],
+    "niveau": 3,
+    "consignes": [
+      "Haltères légers le long du corps",
+      "Genou d'appui dans l'axe du 2e orteil",
+      "Descends lentement, talon qui effleure"
+    ],
+    "erreurs": [
+      "Laisser le genou rentrer vers l'intérieur",
+      "Se laisser tomber sur le talon"
+    ],
+    "pourquoi": "Il apprend au genou à rester stable en freinant, comme dans chaque descente.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Prends des haltères légers : le contrôle passe avant la charge. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "proprio",
+      "descente-vtt",
+      "foulee"
+    ],
+    "alternatives": [
+      "spanish-squat",
+      "etoile-plots",
+      "mini-squat-demi-swissball"
+    ],
+    "tempoConseille": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "progression": {
+      "groupe": "step-down",
+      "niveau": 4,
+      "nom": "Hardcore"
+    },
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "chevilles"
+    ]
+  },
+  {
+    "id": "squat-sumo",
+    "nom": "Squat sumo goblet",
+    "famille": "squat",
+    "anim": "sumo",
+    "opts": {},
+    "type": "reps",
+    "unilateral": false,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes",
+      "adductors"
+    ],
+    "musclesTxt": "Quadriceps, fessiers, adducteurs",
+    "materiel": [
+      "halteres"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pieds très écartés, pointes vers l'extérieur",
+      "Genoux au-dessus des pieds",
+      "Buste droit, haltère contre la poitrine"
+    ],
+    "erreurs": [
+      "Genoux qui rentrent vers l'intérieur",
+      "Pencher le buste en avant"
+    ],
+    "pourquoi": "Des adducteurs et fessiers solides stabilisent le genou et la hanche sur le vélo.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Écarte moins si l'intérieur de la cuisse tire. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "hanche",
+      "coup-de-pedale",
+      "descente-vtt"
+    ],
+    "alternatives": [
+      "squat-goblet",
+      "fente-laterale",
+      "squat-pdc"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "adducteurs",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fente-bulgare",
+    "nom": "Fente bulgare avec haltères",
+    "famille": "fente",
+    "anim": "split",
+    "opts": {},
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe avant)",
+    "materiel": [
+      "banc",
+      "halteres"
+    ],
+    "niveau": 2,
+    "consignes": [
+      "Pied arrière posé sur le banc",
+      "Descends droit, genou arrière vers le sol",
+      "Poids sur le pied avant"
+    ],
+    "erreurs": [
+      "Pied avant trop près du banc",
+      "Genou avant qui rentre"
+    ],
+    "pourquoi": "Une jambe à la fois, avec de la charge : la force qui compte en montée et en relance.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Trouve ton écart sans charge d'abord. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "montee",
+      "foulee",
+      "coup-de-pedale"
+    ],
+    "alternatives": [
+      "fente-bulgare-sans-charge",
+      "fente-arriere-halteres",
+      "step-up-halteres"
+    ],
+    "tempoConseille": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  },
+  {
+    "id": "fente-bulgare-sans-charge",
+    "nom": "Fente bulgare sans charge",
+    "famille": "fente",
+    "anim": "split",
+    "opts": {
+      "noLoad": true
+    },
+    "type": "reps",
+    "unilateral": true,
+    "cote": null,
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "musclesTxt": "Quadriceps, fessiers (jambe avant)",
+    "materiel": [
+      "banc"
+    ],
+    "niveau": 1,
+    "consignes": [
+      "Pied arrière posé sur le banc",
+      "Mains sur les hanches, buste droit",
+      "Descends droit, genou avant stable"
+    ],
+    "erreurs": [
+      "Pied avant trop près du banc",
+      "Pousser avec la jambe arrière"
+    ],
+    "pourquoi": "Apprends le geste sur une jambe avant de charger : utile pour chaque foulée.",
+    "respiration": "Inspire en descendant, souffle en remontant.",
+    "securite": "Tiens-toi à un mur si l'équilibre manque. Arrête si tu as mal dans le genou.",
+    "tags": [
+      "genou",
+      "foulee",
+      "montee",
+      "proprio"
+    ],
+    "alternatives": [
+      "fente-arriere",
+      "fente-bulgare",
+      "step-up"
+    ],
+    "tempoConseille": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "voirEnVrai": null,
+    "valide": true,
+    "zones": [
+      "quadriceps",
+      "fessiers",
+      "genoux",
+      "hanches"
+    ]
+  }
+]

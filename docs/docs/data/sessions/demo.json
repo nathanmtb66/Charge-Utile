@@ -1,0 +1,392 @@
+{
+ "athlete": "demo",
+ "prenom": "",
+ "coach": "Nathan",
+ "seances": [
+  {
+   "id": "2026-09-17-pliometrie",
+   "date": "2026-09-17",
+   "titre": "Pliométrie",
+   "rpe": "7 à 8",
+   "dureeMin": 80,
+   "message": "Objectif : des appuis explosifs. Si tes sauts ralentissent, prends plus de récup plutôt que de forcer.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Circuit training",
+     "type": "circuit",
+     "tours": 3,
+     "recupExo": 15,
+     "recupTour": 120,
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 30
+      },
+      {
+       "ex": "hip-thrust-unijambe-pdc",
+       "reps": 10,
+       "alterne": true
+      },
+      {
+       "ex": "gainage-lateral-rotation",
+       "duree": 30,
+       "charge": "2,5 kg",
+       "parCote": true
+      },
+      {
+       "ex": "cross-body",
+       "reps": 20,
+       "alterne": true
+      },
+      {
+       "ex": "equilibre-genoux-swissball",
+       "duree": 30,
+       "charge": "disque 10 kg"
+      },
+      {
+       "ex": "pull-over-swissball",
+       "reps": 10,
+       "charge": "haltère 8 kg",
+       "tempo": [
+        "2",
+        "0",
+        "2",
+        "0"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Corps de séance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 5,
+       "charge": 60,
+       "pas": 5,
+       "rpe": 8,
+       "recup": 240,
+       "tempo": [
+        "3",
+        "5",
+        "X",
+        "0"
+       ],
+       "filmer": 2,
+       "consignes": [
+        "3 s pour descendre",
+        "Tiens 5 s en bas, gainé",
+        "Remonte le plus vite possible"
+       ],
+       "note": "La pause en bas supprime le rebond : tu construis une force de démarrage pure, celle d'une relance."
+      },
+      {
+       "ex": "box-jump",
+       "series": 5,
+       "reps": 8,
+       "recup": 60,
+       "intention": "Explosif"
+      },
+      {
+       "ex": "sprint-sur-place",
+       "series": 5,
+       "duree": 15,
+       "recup": 60,
+       "rpe": 9,
+       "intention": "À fond"
+      },
+      {
+       "ex": "ski-erg",
+       "series": 5,
+       "duree": 15,
+       "recup": 60,
+       "rpe": 9,
+       "intention": "À balle"
+      },
+      {
+       "ex": "triple-death-jump",
+       "series": 5,
+       "reps": 4,
+       "parCote": true,
+       "recup": 120,
+       "intention": "Réactif",
+       "note": "Death jump, box jump, puis death jump avec réception sur une jambe sur demi-swissball."
+      }
+     ]
+    },
+    {
+     "nom": "Genoux & chevilles",
+     "type": "series",
+     "items": [
+      {
+       "ex": "etoile-plots",
+       "series": 2,
+       "reps": 15,
+       "parCote": true,
+       "recup": 30,
+       "note": "5 touches par plot, trois plots en triangle."
+      },
+      {
+       "ex": "equilibre-demi-swissball",
+       "series": 2,
+       "duree": 30,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "mini-squat-demi-swissball",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "recup": 30,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "step-down-lateral",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "recup": 30,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "reception-unijambe",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "chaise-mur",
+       "series": 2,
+       "duree": 40,
+       "recup": 30
+      },
+      {
+       "ex": "mollet-unijambe-marche",
+       "series": 2,
+       "reps": 12,
+       "parCote": true,
+       "recup": 30,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      },
+      {
+       "ex": "sauts-ligne-unipodal",
+       "series": 2,
+       "duree": 20,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "mobilisation-cheville-demi-genou",
+       "series": 1,
+       "reps": 10,
+       "parCote": true,
+       "recup": 15
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Très facile",
+       "consignes": [
+        "Marche ou trot très facile",
+        "Respire par le nez",
+        "Laisse redescendre le cœur"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-09-20-force-gainage",
+   "date": "2026-09-20",
+   "titre": "Force & gainage",
+   "rpe": "6 à 7",
+   "dureeMin": 55,
+   "message": "Séance de fond : on construit des ischios et un tronc qui tiennent en descente.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 360,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Mise en route",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 60,
+     "items": [
+      {
+       "ex": "balancier-jambe",
+       "reps": 10,
+       "parCote": true
+      },
+      {
+       "ex": "chenille",
+       "reps": 5
+      },
+      {
+       "ex": "montees-de-genoux",
+       "duree": 20
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rdl-barre",
+       "series": 4,
+       "reps": 6,
+       "charge": 50,
+       "pas": 5,
+       "rpe": 7,
+       "recup": 150,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "fente-arriere-halteres",
+       "series": 3,
+       "reps": 8,
+       "parCote": true,
+       "charge": 12,
+       "pas": 2,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "nordic-curl",
+       "series": 3,
+       "reps": 4,
+       "rpe": 8,
+       "recup": 120,
+       "tempo": [
+        "4",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "mollets-marche",
+       "series": 3,
+       "reps": 12,
+       "charge": "poids du corps",
+       "rpe": 7,
+       "recup": 60,
+       "tempo": [
+        "2",
+        "1",
+        "1",
+        "0"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "circuit",
+     "tours": 3,
+     "recupExo": 15,
+     "recupTour": 60,
+     "items": [
+      {
+       "ex": "pallof-press",
+       "reps": 10,
+       "parCote": true,
+       "charge": "élastique moyen"
+      },
+      {
+       "ex": "copenhague",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "dead-bug",
+       "reps": 10,
+       "alterne": true
+      },
+      {
+       "ex": "planche-avant-bras",
+       "duree": 40
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "focus": [
+  "genoux",
+  "chevilles"
+ ]
+}

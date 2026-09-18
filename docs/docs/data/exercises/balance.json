@@ -1,0 +1,1556 @@
+[
+ {
+  "id": "etoile-plots-proches",
+  "nom": "Étoile aux plots, plots proches",
+  "famille": "proprio",
+  "anim": "star",
+  "opts": {
+   "reach": "near"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets (jambe d'appui)",
+  "materiel": [
+   "plots"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Genou d'appui dans l'axe du 2e orteil",
+   "Touche devant, arrière-droite, arrière-gauche",
+   "Bassin horizontal, mains aux hanches"
+  ],
+  "erreurs": [
+   "Laisser le genou d'appui rentrer vers l'intérieur",
+   "Poser le poids sur le pied qui touche"
+  ],
+  "pourquoi": "Un genou qui reste stable sur une jambe encaisse mieux chaque appui en trail et chaque réception en VTT.",
+  "respiration": "Respire calmement, souffle quand tu vas loin.",
+  "securite": "Plots à 30-40 cm pour commencer. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "foulee",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "etoile-plots",
+   "equilibre-unipodal-sol",
+   "reception-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "etoile",
+   "niveau": 1,
+   "nom": "Facile"
+  }
+ },
+ {
+  "id": "etoile-plots",
+  "nom": "Étoile aux plots (Y-balance)",
+  "famille": "proprio",
+  "anim": "star",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets (jambe d'appui)",
+  "materiel": [
+   "plots"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Genou d'appui dans l'axe du 2e orteil",
+   "Plots devant, arrière-droite, arrière-gauche",
+   "Touche le plot sans t'appuyer dessus"
+  ],
+  "erreurs": [
+   "Laisser le genou d'appui rentrer vers l'intérieur",
+   "Poser le poids sur le pied qui touche"
+  ],
+  "pourquoi": "Un genou qui reste stable sur une jambe encaisse mieux chaque appui en trail et chaque réception en VTT.",
+  "respiration": "Respire calmement, souffle quand tu vas loin.",
+  "securite": "Va moins loin si tu perds l'équilibre. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "foulee",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "etoile-plots-proches",
+   "etoile-plots-coussin",
+   "equilibre-demi-swissball",
+   "reception-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "etoile",
+   "niveau": 2,
+   "nom": "Moyen"
+  }
+ },
+ {
+  "id": "etoile-plots-coussin",
+  "nom": "Étoile aux plots sur coussin d'équilibre",
+  "famille": "proprio",
+  "anim": "star",
+  "opts": {
+   "pad": true
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets (jambe d'appui)",
+  "materiel": [
+   "plots",
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Pied d'appui au centre du coussin",
+   "Genou dans l'axe du 2e orteil",
+   "Touche les 3 plots loin, sans t'appuyer"
+  ],
+  "erreurs": [
+   "Genou qui rentre quand le coussin bouge",
+   "Se relever entre deux touches pour se rattraper"
+  ],
+  "pourquoi": "Un appui mou oblige la cheville et le genou à se corriger, comme sur un sol boueux ou des aiguilles de pin.",
+  "respiration": "Respire calmement, souffle quand tu vas loin.",
+  "securite": "Pas de coussin ? Un tapis épais plié fait l'affaire. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "foulee",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "etoile-plots",
+   "etoile-plots-coussin-charge",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "etoile",
+   "niveau": 3,
+   "nom": "Difficile"
+  }
+ },
+ {
+  "id": "etoile-plots-coussin-charge",
+  "nom": "Étoile sur coussin avec haltère léger",
+  "famille": "proprio",
+  "anim": "star",
+  "opts": {
+   "pad": true,
+   "load": true
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets (jambe d'appui)",
+  "materiel": [
+   "plots",
+   "tapis",
+   "halteres"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Haltère léger contre la poitrine",
+   "Genou dans l'axe du 2e orteil",
+   "Touche loin, reviens lentement au centre"
+  ],
+  "erreurs": [
+   "Prendre une charge trop lourde",
+   "Pencher le buste pour aller plus loin"
+  ],
+  "pourquoi": "Stabiliser le genou avec une charge prépare aux longues descentes avec un sac de trail.",
+  "respiration": "Souffle quand tu touches le plot, inspire en revenant.",
+  "securite": "2 à 4 kg suffisent. Reviens au niveau précédent si le genou tremble. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "etoile-plots-coussin",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "etoile",
+   "niveau": 4,
+   "nom": "Hardcore"
+  }
+ },
+ {
+  "id": "equilibre-unipodal-sol",
+  "nom": "Équilibre sur une jambe au sol",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "surface": "floor"
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Genou souple, dans l'axe du pied",
+   "Bassin horizontal, ventre serré",
+   "Regard fixe devant toi"
+  ],
+  "erreurs": [
+   "Verrouiller le genou tendu",
+   "Laisser la hanche tomber sur le côté"
+  ],
+  "pourquoi": "La base de tout appui en trail : tenir sur une jambe sans que le genou parte.",
+  "respiration": "Respire lentement par le ventre.",
+  "securite": "Reste près d'un mur si besoin. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball",
+   "etoile-plots-proches"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "equilibre-unipodal",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 30
+ },
+ {
+  "id": "equilibre-demi-swissball",
+  "nom": "Équilibre sur une jambe sur demi-swissball",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers, gainage",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Genou souple, dans l'axe du pied",
+   "Bassin horizontal, ventre serré",
+   "Petites corrections avec la cheville"
+  ],
+  "erreurs": [
+   "Verrouiller le genou tendu",
+   "Laisser le genou partir vers l'intérieur"
+  ],
+  "pourquoi": "La cheville et le genou apprennent à se corriger seuls, comme sur un sentier technique ou une racine.",
+  "respiration": "Respire lentement par le ventre.",
+  "securite": "Commence près d'un mur pour te rattraper. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "gainage",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "equilibre-demi-swissball-yeux-fermes",
+   "equilibre-demi-swissball-balle",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "equilibre-unipodal",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 30
+ },
+ {
+  "id": "equilibre-demi-swissball-yeux-fermes",
+  "nom": "Équilibre sur demi-swissball, yeux fermés",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "eyes": "closed"
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers, gainage",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Stable d'abord, puis ferme les yeux",
+   "Genou souple, dans l'axe du pied",
+   "Tête droite, bras bas près du corps"
+  ],
+  "erreurs": [
+   "Fermer les yeux avant d'être stable",
+   "Se crisper et bloquer le genou"
+  ],
+  "pourquoi": "Sans les yeux, la cheville et le genou travaillent seuls : utile de nuit ou dans une descente où tu regardes loin devant.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Fais-le à côté d'un mur, pose le pied dès que tu pars. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball",
+   "equilibre-demi-swissball-retourne-balle"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "equilibre-unipodal",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 20
+ },
+ {
+  "id": "equilibre-demi-swissball-retourne-balle",
+  "nom": "Équilibre sur demi-swissball retourné + balle",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "surface": "flip",
+   "ball": true
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers, gainage",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Plateau en haut, pied au centre",
+   "Genou souple, dans l'axe du 2e orteil",
+   "Attrape, ramène à la poitrine, renvoie"
+  ],
+  "erreurs": [
+   "Monter sans aide sur le plateau",
+   "Bloquer le genou quand le plateau bascule"
+  ],
+  "pourquoi": "Le plateau bascule dans tous les sens : c'est le terrain le plus piégeux d'une descente, en salle.",
+  "respiration": "Souffle quand tu renvoies la balle.",
+  "securite": "Monte en te tenant à un mur ou à un partenaire, passes douces. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "gainage",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball-yeux-fermes",
+   "equilibre-demi-swissball-balle"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "equilibre-unipodal",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "dureeConseillee": 30
+ },
+ {
+  "id": "equilibre-demi-swissball-balle",
+  "nom": "Équilibre sur demi-swissball avec balle",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "ball": true
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers, gainage",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Attrape la balle, genou toujours souple",
+   "Genou dans l'axe du 2e orteil",
+   "Ramène la balle à la poitrine, renvoie"
+  ],
+  "erreurs": [
+   "Regarder ses pieds au lieu de la balle",
+   "Laisser le genou rentrer en attrapant"
+  ],
+  "pourquoi": "Garder le genou stable pendant que l'attention est ailleurs, comme quand tu lis le terrain en VTT ou en trail.",
+  "respiration": "Souffle quand tu renvoies la balle.",
+  "securite": "Passes douces et proches au début. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "gainage",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball",
+   "equilibre-demi-swissball-retourne-balle"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "dureeConseillee": 30
+ },
+ {
+  "id": "mini-squat-unipodal-sol",
+  "nom": "Mini-squat sur une jambe au sol",
+  "famille": "proprio",
+  "anim": "bosusquat",
+  "opts": {
+   "surface": "floor"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Descends lentement, genou vers le 2e orteil",
+   "Fesses en arrière, bras devant",
+   "Petite amplitude, bassin horizontal"
+  ],
+  "erreurs": [
+   "Genou qui rentre vers l'intérieur",
+   "Talon qui décolle"
+  ],
+  "pourquoi": "Un genou qui plie sous contrôle sur une jambe, c'est la base des descentes en trail.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Reste dans une amplitude sans douleur. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "mini-squat-demi-swissball",
+   "equilibre-unipodal-sol"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "mini-squat-unipodal",
+   "niveau": 1,
+   "nom": "Facile"
+  }
+ },
+ {
+  "id": "mini-squat-demi-swissball",
+  "nom": "Mini-squat une jambe sur demi-swissball",
+  "famille": "proprio",
+  "anim": "bosusquat",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Descends lentement, genou vers le 2e orteil",
+   "Fesses en arrière, bras devant",
+   "Petite amplitude, bassin horizontal"
+  ],
+  "erreurs": [
+   "Genou qui rentre vers l'intérieur",
+   "Descendre trop bas et perdre le contrôle"
+  ],
+  "pourquoi": "Un genou qui plie sous contrôle sur une jambe, c'est la base des descentes en trail et des réceptions en VTT.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Reste dans une amplitude sans douleur. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "mini-squat-unipodal-sol",
+   "mini-squat-demi-swissball-lent",
+   "equilibre-demi-swissball",
+   "etoile-plots"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "mini-squat-unipodal",
+   "niveau": 2,
+   "nom": "Moyen"
+  }
+ },
+ {
+  "id": "mini-squat-demi-swissball-lent",
+  "nom": "Mini-squat une jambe sur demi-swissball, lent et plus bas",
+  "famille": "proprio",
+  "anim": "bosusquat",
+  "opts": {
+   "deep": true
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Descends en 4 s, genou vers le 2e orteil",
+   "Un peu plus bas, sans perdre l'axe",
+   "Remonte sans à-coup"
+  ],
+  "erreurs": [
+   "Descendre vite pour « passer » le bas",
+   "Genou qui rentre en bas du mouvement"
+  ],
+  "pourquoi": "Freiner longtemps sur une jambe, c'est exactement ce que demande une longue descente en trail.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Descends seulement là où tu contrôles le genou. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "mini-squat-demi-swissball",
+   "mini-squat-demi-swissball-retourne"
+  ],
+  "tempoConseille": [
+   "4",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "mini-squat-unipodal",
+   "niveau": 3,
+   "nom": "Difficile"
+  }
+ },
+ {
+  "id": "mini-squat-demi-swissball-retourne",
+  "nom": "Mini-squat une jambe sur demi-swissball retourné",
+  "famille": "proprio",
+  "anim": "bosusquat",
+  "opts": {
+   "surface": "flip"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Plateau en haut, pied au centre",
+   "Genou dans l'axe du 2e orteil",
+   "Petite amplitude, plateau bien stable"
+  ],
+  "erreurs": [
+   "Monter sur le plateau sans aide",
+   "Laisser le genou suivre les bascules"
+  ],
+  "pourquoi": "Plier le genou pendant que l'appui bascule prépare aux réceptions sur terrain cassant en VTT et en trail.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Monte en te tenant à un mur. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "mini-squat-demi-swissball-lent",
+   "mini-squat-demi-swissball"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "mini-squat-unipodal",
+   "niveau": 4,
+   "nom": "Hardcore"
+  }
+ },
+ {
+  "id": "reception-unijambe",
+  "nom": "Réception sur une jambe stabilisée",
+  "famille": "proprio",
+  "anim": "sllanding",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Petit saut, atterris sans bruit",
+   "Genou plié dans l'axe du 2e orteil",
+   "Tiens 2 s immobile avant de repartir"
+  ],
+  "erreurs": [
+   "Atterrir jambe tendue",
+   "Genou qui rentre vers l'intérieur à l'impact"
+  ],
+  "pourquoi": "Apprendre à amortir sur une jambe protège le genou à chaque saut de racine ou descente de marche.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Commence par des sauts très courts. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "descente-vtt",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "reception-unijambe-demi-swissball",
+   "hop-stick",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "reception-unipodale",
+   "niveau": 1,
+   "nom": "Facile"
+  }
+ },
+ {
+  "id": "reception-unijambe-demi-swissball",
+  "nom": "Réception sur une jambe sur demi-swissball",
+  "famille": "proprio",
+  "anim": "sllanding",
+  "opts": {
+   "bosu": true
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Petit saut, pied au centre du dôme",
+   "Genou plié dans l'axe du 2e orteil",
+   "Tiens 2 s immobile, puis descends"
+  ],
+  "erreurs": [
+   "Sauter trop loin et atterrir au bord",
+   "Genou tendu ou qui rentre à l'impact"
+  ],
+  "pourquoi": "Amortir sur un appui instable prépare le genou aux réceptions imprévues sur terrain cassant.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Maîtrise d'abord la version au sol. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "reception-unijambe-laterale",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "reception-unipodale",
+   "niveau": 2,
+   "nom": "Moyen"
+  }
+ },
+ {
+  "id": "reception-unijambe-laterale",
+  "nom": "Saut latéral, réception sur une jambe",
+  "famille": "proprio",
+  "anim": "sllanding",
+  "opts": {
+   "dir": "side"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Petit saut sur le côté",
+   "Atterris genou plié, dans l'axe du pied",
+   "Tiens 2 s immobile, puis reviens"
+  ],
+  "erreurs": [
+   "Genou qui rentre à l'impact",
+   "Pied qui glisse ou pivote à la réception"
+  ],
+  "pourquoi": "Les appuis de côté arrivent sans prévenir en trail : le genou doit savoir les encaisser.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Commence par 20-30 cm de côté. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "reception-unijambe-demi-swissball",
+   "sauts-lateraux-skater",
+   "reception-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "reception-unipodale",
+   "niveau": 3,
+   "nom": "Difficile"
+  }
+ },
+ {
+  "id": "reception-unijambe-box-demi-swissball",
+  "nom": "Saut depuis une box, réception une jambe sur demi-swissball",
+  "famille": "proprio",
+  "anim": "boxlanding",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "box",
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Box basse (30 cm), petit saut vers le dôme",
+   "Pied au centre, genou plié dans l'axe",
+   "Tiens 2 s, puis remonte calmement"
+  ],
+  "erreurs": [
+   "Sauter trop loin et atterrir au bord",
+   "Atterrir jambe tendue"
+  ],
+  "pourquoi": "Encaisser une petite chute sur un appui instable, c'est la réception d'une marche ou d'un rocher en descente.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Seulement si les 3 niveaux précédents sont faciles. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "reception-unijambe-demi-swissball",
+   "reception-unijambe-laterale",
+   "triple-death-jump"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "progression": {
+   "groupe": "reception-unipodale",
+   "niveau": 4,
+   "nom": "Hardcore"
+  }
+ },
+ {
+  "id": "sauts-lateraux-skater-facile",
+  "nom": "Sauts latéraux (skater) courts, pause 2 s",
+  "famille": "proprio",
+  "anim": "skatereasy",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "adductors"
+  ],
+  "musclesTxt": "Fessiers, quadriceps, mollets, adducteurs",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Petit saut de côté, atterris doux",
+   "Genou dans l'axe du pied",
+   "Tiens 2 s avant de repartir"
+  ],
+  "erreurs": [
+   "Genou qui rentre vers l'intérieur",
+   "Repartir avant d'être stable"
+  ],
+  "pourquoi": "Des appuis latéraux solides sécurisent les changements de direction en trail.",
+  "respiration": "Souffle à chaque réception.",
+  "securite": "Distance courte (40-50 cm). Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "hanche",
+   "proprio",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater",
+   "reception-unijambe-laterale"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles",
+   "hanches"
+  ],
+  "progression": {
+   "groupe": "skater",
+   "niveau": 1,
+   "nom": "Facile"
+  }
+ },
+ {
+  "id": "sauts-lateraux-skater",
+  "nom": "Sauts latéraux (skater)",
+  "famille": "proprio",
+  "anim": "skater",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "adductors"
+  ],
+  "musclesTxt": "Fessiers, quadriceps, mollets, adducteurs",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Atterris doux, genou dans l'axe du pied",
+   "Marque un temps d'arrêt à chaque appui",
+   "L'autre pied passe derrière, sans toucher"
+  ],
+  "erreurs": [
+   "Genou qui rentre vers l'intérieur",
+   "Enchaîner sans se stabiliser"
+  ],
+  "pourquoi": "Des appuis latéraux solides sécurisent les changements de direction en trail et les relances en VTT.",
+  "respiration": "Souffle à chaque réception.",
+  "securite": "Réduis la distance si tu ne tiens pas l'appui. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "hanche",
+   "proprio",
+   "explosivite",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater-facile",
+   "sauts-lateraux-skater-demi-swissball",
+   "reception-unijambe",
+   "hop-stick"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles",
+   "hanches"
+  ],
+  "progression": {
+   "groupe": "skater",
+   "niveau": 2,
+   "nom": "Moyen"
+  }
+ },
+ {
+  "id": "sauts-lateraux-skater-demi-swissball",
+  "nom": "Grands sauts latéraux (skater) sur demi-swissball",
+  "famille": "proprio",
+  "anim": "skaterbosu",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "adductors"
+  ],
+  "musclesTxt": "Fessiers, quadriceps, mollets, adducteurs",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Grand saut d'un dôme à l'autre",
+   "Pied au centre, genou plié dans l'axe",
+   "Stable avant de repartir"
+  ],
+  "erreurs": [
+   "Atterrir au bord du dôme",
+   "Genou qui rentre à l'impact"
+  ],
+  "pourquoi": "Relancer de côté puis se stabiliser sur un appui mou, c'est le terrain technique du trail.",
+  "respiration": "Souffle à chaque réception.",
+  "securite": "2 demi-swissballs à environ 1 m, dôme en haut. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "hanche",
+   "proprio",
+   "explosivite",
+   "trail"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater",
+   "sauts-lateraux-skater-hardcore"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles",
+   "hanches"
+  ],
+  "progression": {
+   "groupe": "skater",
+   "niveau": 3,
+   "nom": "Difficile"
+  }
+ },
+ {
+  "id": "sauts-lateraux-skater-hardcore",
+  "nom": "Grands sauts latéraux (skater), tenue 3 s puis relance",
+  "famille": "proprio",
+  "anim": "skaterhard",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "adductors"
+  ],
+  "musclesTxt": "Fessiers, quadriceps, mollets, adducteurs",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Le plus loin possible sur le côté",
+   "Réception figée 3 s, genou dans l'axe",
+   "Puis relance tout de suite, sans élan"
+  ],
+  "erreurs": [
+   "Sautiller pour trouver l'équilibre",
+   "Genou qui rentre à l'impact"
+  ],
+  "pourquoi": "Freiner fort puis relancer sans élan : l'appui d'un changement de direction en course.",
+  "respiration": "Souffle à chaque réception.",
+  "securite": "Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "hanche",
+   "proprio",
+   "explosivite",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater-demi-swissball",
+   "sauts-lateraux-skater"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles",
+   "hanches"
+  ],
+  "progression": {
+   "groupe": "skater",
+   "niveau": 4,
+   "nom": "Hardcore"
+  }
+ },
+ {
+  "id": "pogo-jumps",
+  "nom": "Pogo jumps (sauts de cheville)",
+  "famille": "plio",
+  "anim": "pogo",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollets, chevilles",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Jambes presque tendues",
+   "Rebondis vite, contact le plus court",
+   "Chevilles raides, talons ne touchent pas"
+  ],
+  "erreurs": [
+   "Plier les genoux à chaque saut",
+   "Poser les talons au sol"
+  ],
+  "pourquoi": "Des chevilles réactives, comme des ressorts, rendent la foulée plus économique en trail.",
+  "respiration": "Respire en rythme, sans bloquer.",
+  "securite": "Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si le tendon d'Achille ou le genou fait mal.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "explosivite",
+   "montee",
+   "trail"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater",
+   "sauts-ligne-deux-pieds",
+   "mollet-unijambe-marche"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "chevilles",
+   "mollets"
+  ]
+ },
+ {
+  "id": "drop-jump",
+  "nom": "Drop jump",
+  "famille": "plio",
+  "anim": "dropjump",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Avance un pied dans le vide, ne saute pas",
+   "Rebondis tout de suite, contact bref",
+   "Genoux dans l'axe des pieds"
+  ],
+  "erreurs": [
+   "Sauter vers le haut en quittant la box",
+   "Rester longtemps au sol avant de rebondir"
+  ],
+  "pourquoi": "Le rebond immédiat apprend aux jambes à renvoyer l'énergie comme un ressort, pour des relances plus vives.",
+  "respiration": "Souffle en rebondissant.",
+  "securite": "Box basse au début. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si le genou ou le tendon d'Achille fait mal.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "coup-de-pedale",
+   "genou",
+   "trail"
+  ],
+  "alternatives": [
+   "box-jump",
+   "pogo-jumps",
+   "reception-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ]
+ },
+ {
+  "id": "hop-stick",
+  "nom": "Saut sur une jambe, réception tenue (hop and stick)",
+  "famille": "proprio",
+  "anim": "hopstick",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Petit saut vertical sur une jambe",
+   "Atterris genou plié, dans l'axe du pied",
+   "Fige la position 2 s"
+  ],
+  "erreurs": [
+   "Atterrir jambe tendue",
+   "Sautiller pour retrouver l'équilibre"
+  ],
+  "pourquoi": "Savoir se figer après un saut protège le genou lors des réceptions sur une jambe en trail.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Saute moins haut si tu ne tiens pas la réception. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "sauts-lateraux-skater",
+   "etoile-plots",
+   "sauts-unipodaux-multidirectionnels"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ]
+ },
+ {
+  "id": "box-jump",
+  "nom": "Box jump",
+  "famille": "plio",
+  "anim": "boxjump",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élan des bras, saute vers le haut",
+   "Atterris doux, genoux dans l'axe",
+   "Redescends en marchant, pas en sautant"
+  ],
+  "erreurs": [
+   "Choisir une box trop haute",
+   "Atterrir genoux qui rentrent"
+  ],
+  "pourquoi": "L'explosivité des jambes aide à relancer dans les montées raides et sur les obstacles ; chaque saut doit être rapide et propre.",
+  "respiration": "Souffle en sautant.",
+  "securite": "Box basse au début. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si le genou fait mal.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "trail"
+  ],
+  "alternatives": [
+   "drop-jump",
+   "pogo-jumps"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ]
+ },
+ {
+  "id": "triple-death-jump",
+  "nom": "Triple death jump",
+  "famille": "plio",
+  "anim": "deathjump",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "box",
+   "demi-swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Au sol : rebondis tout de suite",
+   "Contact au sol le plus court possible",
+   "Dernière réception : tiens 2 s"
+  ],
+  "erreurs": [
+   "Rester longtemps au sol avant de sauter",
+   "Plier beaucoup les genoux à la 1re réception"
+  ],
+  "pourquoi": "Il enchaîne rebond, saut et réception instable, comme une section technique en VTT ou en trail : la qualité compte plus que le nombre.",
+  "respiration": "Souffle à chaque impulsion.",
+  "securite": "Maîtrise box jump, drop jump et réception sur une jambe avant. Contact au sol le plus court possible. Qualité avant quantité : récup complète entre les séries, arrête dès que les sauts ralentissent. Arrête si le genou fait mal.",
+  "tags": [
+   "explosivite",
+   "proprio",
+   "genou",
+   "descente-vtt",
+   "trail"
+  ],
+  "alternatives": [
+   "drop-jump",
+   "box-jump",
+   "reception-unijambe-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "zones": [
+   "genoux",
+   "chevilles"
+  ]
+ },
+ {
+  "id": "equilibre-genoux-swissball",
+  "nom": "Équilibre à genoux sur swissball avec disque",
+  "famille": "proprio",
+  "anim": "ballkneel",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques"
+  ],
+  "musclesTxt": "Abdominaux, obliques",
+  "materiel": [
+   "swissball",
+   "disque"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "À genoux sur le ballon, buste droit",
+   "Disque bras tendus, tourne lentement",
+   "Ventre serré, regard devant"
+  ],
+  "erreurs": [
+   "S'asseoir sur les talons",
+   "Tourner trop vite et perdre le ballon"
+  ],
+  "pourquoi": "Un tronc stable sur appui instable aide à garder le contrôle du vélo en descente.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Apprends d'abord sans disque, près d'un mur.",
+  "tags": [
+   "gainage",
+   "proprio",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball-balle",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": true,
+  "dureeConseillee": 30
+ }
+]
