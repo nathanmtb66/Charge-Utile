@@ -196,7 +196,10 @@ function hollow(s, o, t){
 /* ================================================================ 8. superman (sur le ventre) */
 const PR_Y = .145;
 const SUP_F = [{u:0, k:0}, {u:.08, k:0}, {u:.32, k:1}, {u:.6, k:1}, {u:.88, k:0}, {u:1, k:0}];
+// option brasse : poitrine et jambes restent décollées, les bras passent de devant (tendus) à l'arrière le long du corps, puis reviennent
+const SUP_B = [{u:0, p:0}, {u:.08, p:0}, {u:.46, p:1}, {u:.56, p:1}, {u:.94, p:0}, {u:1, p:0}];
 function superman(s, o, t){
+  if(o && o.brasse) return supermanBrasse(s, o, t);
   const k = kf(SUP_F, s).k;
   const pc = [0, PR_Y + .005*k];
   const dev = {pel:lerp(0, 2, k), lum:lerp(0, -6, k), thlow:lerp(0, -12, k), thup:lerp(0, -20, k)};
@@ -214,6 +217,29 @@ function superman(s, o, t){
     world:{mat:{x:-.1}},
     focus:['lowback','glutes','hams','upperback'],
     phase: s < .32 ? 2 : s < .88 ? 0 : 3
+  };
+}
+
+function supermanBrasse(s, o, t){
+  const k = 1, pc = [0, PR_Y + .005*k];
+  const dev = {pel:2, lum:-6, thlow:-12, thup:-20};
+  const b = 11;
+  const leg = z => { const hp = [pc[0], pc[1]];
+    const an = [hp[0] - .897*Math.cos(b*D2R), hp[1] + .897*Math.sin(b*D2R) - .06, z];
+    const fa = (180 + b + 20)*D2R;
+    return {ankle:an, toe:[an[0] + .2*Math.cos(fa), an[1] + .2*Math.sin(fa), z], pole:[0,-1,z*.2], toeFlex:0, sole:[0,-1,0]}; };
+  const p = kf(SUP_B, s).p, ph = p*Math.PI;            // 0 = bras devant, 1 = bras le long du corps
+  const R = .60;
+  const arm = sz => ({hand:[R*Math.cos(ph), lerp(.145, -.03, p) + .04*Math.sin(ph), sz*(R*Math.sin(ph)*.95 + lerp(.02, .07, p))],
+    pole:[lerp(0, -.2, p), lerp(1, .3, p), lerp(.5, 1, p)*sz], rel:'sh', curl:'flat'});
+  const u = ((s % 1) + 1) % 1;
+  return {
+    pc, tilt:90, dev, gaze:[1.4, 0], gazeK:.35,
+    legs:{L:leg(.10), R:leg(-.10)},
+    arms:{mode:'custom', curl:'flat', L:arm(1), R:arm(-1)},
+    world:{mat:{x:-.1}},
+    focus:['lowback','glutes','hams','upperback','delts'],
+    phase: u < .5 ? 2 : u < .94 ? 0 : 3
   };
 }
 
@@ -362,7 +388,7 @@ const META = {
   pallof:         {family:'core', tempo:true, cycle:3, frame:{tx:.23, ty:.91, tz:.34, H:2.05, W:1.6, el:10, az:100}},
   mountain:       {family:'core', cycle:.8, frame:{tx:-.38, ty:.3, tz:0, H:1.0, W:1.75, el:14, az:30}},
   hollow:         {family:'core', cycle:4, frame:{tx:-.03, ty:.3, tz:0, H:.75, W:1.9, el:18, az:45}},
-  superman:       {family:'core', cycle:3, frame:{tx:.08, ty:.15, tz:0, H:.95, W:2.15, el:18, az:45}},
+  superman:       {family:'core', cycle:3, frame:o => o.brasse ? {tx:.02, ty:.18, tz:0, H:1.0, W:2.3, el:30, az:40} : {tx:.08, ty:.15, tz:0, H:.95, W:2.15, el:18, az:45}},
   plankreach:     {family:'core', cycle:2.6, frame:{tx:-.37, ty:.28, tz:.03, H:1.0, W:1.6, el:16, az:40}}
 };
 const LIB = {sideplankstatic, copenhagen, deadbug, birddog, pallof, mountain, hollow, superman, plankreach};

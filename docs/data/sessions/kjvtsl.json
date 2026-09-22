@@ -6,5 +6,187 @@
   "genoux",
   "chevilles"
  ],
- "seances": []
+ "seances": [
+  {
+   "id": "2026-09-22-masse",
+   "date": "2026-09-22",
+   "titre": "Prise de masse",
+   "rpe": "5",
+   "dureeMin": 90,
+   "message": "Objectif : prise de masse musculaire. On cherche la fatigue : c'est elle qui déclenche la construction du muscle. Barre libre (20 kg) sur tout le corps de séance.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Circuit training",
+     "type": "circuit",
+     "tours": 4,
+     "recupExo": 10,
+     "recupTour": 90,
+     "items": [
+      {
+       "ex": "burpees",
+       "reps": 8
+      },
+      {
+       "ex": "gainage-lateral-rotation",
+       "nom": "Planche + rotation",
+       "reps": 10,
+       "parCote": true,
+       "note": "20 au total : 10 de chaque côté.",
+       "consignes": [
+        "Hanches hautes pendant la rotation",
+        "Le bras passe sous le buste",
+        "Tourne les épaules, pas le bassin"
+       ]
+      },
+      {
+       "ex": "cross-body",
+       "nom": "Cross body mountain climber",
+       "reps": 20,
+       "alterne": true
+      },
+      {
+       "ex": "chaise-mur",
+       "duree": 45
+      },
+      {
+       "ex": "superman-brasse",
+       "duree": 45
+      }
+     ]
+    },
+    {
+     "nom": "Corps de séance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "nom": "Squat barre 90°",
+       "series": 4,
+       "reps": 20,
+       "charge": "barre libre (20 kg)",
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "consignes": [
+        "Descends jusqu'aux cuisses parallèles",
+        "Genoux dans l'axe des pieds",
+        "Ventre gainé, pousse fort dans le sol"
+       ],
+       "rpe": 5
+      },
+      {
+       "ex": "developpe-couche-barre",
+       "series": 4,
+       "reps": 20,
+       "charge": "barre libre (20 kg)",
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "rpe": 5
+      },
+      {
+       "ex": "souleve-de-terre",
+       "series": 4,
+       "reps": 20,
+       "charge": "barre libre (20 kg)",
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "filmer": 2,
+       "rpe": 5
+      },
+      {
+       "ex": "mollets-barre",
+       "nom": "Extension de mollets sur rack à squat",
+       "series": 4,
+       "reps": 20,
+       "charge": "barre libre (20 kg)",
+       "recup": 90,
+       "rpe": 5
+      },
+      {
+       "ex": "leg-extension-machine",
+       "series": 4,
+       "reps": 20,
+       "charge": "charge légère",
+       "recup": 90,
+       "note": "Monte à 2 jambes, tiens 3 s, redescends sur une jambe en alternant : 10 descentes par jambe.",
+       "rpe": 5
+      }
+     ]
+    },
+    {
+     "nom": "Proprio genoux & chevilles",
+     "type": "series",
+     "items": [
+      {
+       "ex": "etoile-plots",
+       "series": 5,
+       "reps": 5,
+       "parCote": true,
+       "recup": 15,
+       "note": "5 tours de plots par jambe : devant, arrière-droite, arrière-gauche."
+      },
+      {
+       "ex": "equilibre-demi-swissball-balle",
+       "nom": "Tourner le ballon sur demi-swissball",
+       "series": 5,
+       "duree": 30,
+       "parCote": true,
+       "recup": 15,
+       "consignes": [
+        "Fais tourner le ballon autour de toi",
+        "Genou souple, dans l'axe du pied",
+        "Change de sens à chaque série"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Très facile",
+       "consignes": [
+        "Marche ou trot très facile",
+        "Respire par le nez",
+        "Laisse redescendre le cœur"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

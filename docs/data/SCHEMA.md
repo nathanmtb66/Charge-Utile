@@ -38,7 +38,7 @@ Un tableau d'objets. Tout le texte est en **français simple**, tutoiement, phra
 | `type` | `reps` (répétitions, question RPE = reps en réserve) · `hold` (tenue en secondes, question = secondes en réserve) · `plyo` (question = explosivité, en phrases) · `effort` (sprint / machine à fond, question = effort) · `cardio` (échauffement / retour au calme, pas de question) |
 | `unilateral` | `true` si l'exercice se fait une jambe / un bras à la fois (la prescription se lit « par jambe » / « par côté ») |
 | `muscles` | clés de zones musculaires du mannequin (voir `moves/README.md`) |
-| `materiel` | `barre`, `halteres`, `kettlebell`, `disque`, `banc`, `box`, `swissball`, `demi-swissball`, `plots`, `elastique`, `barre-traction`, `mur`, `sangle`, `tapis`, `marche`, `rameur`, `ski-erg`, `velo`, `aucun` |
+| `materiel` | `barre`, `halteres`, `kettlebell`, `disque`, `banc`, `box`, `swissball`, `demi-swissball`, `plots`, `elastique`, `barre-traction`, `mur`, `sangle`, `tapis`, `marche`, `rameur`, `ski-erg`, `velo`, `sac-leste`, `machine`, `aucun` |
 | `niveau` | 1 débutant · 2 intermédiaire · 3 avancé |
 | `tags` (besoins sportifs) | `descente-vtt`, `coup-de-pedale`, `foulee`, `montee`, `explosivite`, `genou`, `cheville`, `hanche`, `dos`, `gainage`, `proprio`, `chaine-posterieure`, `haut-du-corps`, `echauffement`, `cardio`, `retour-au-calme`, `mobilite`, `etirement`, `recuperation`, `avant-effort`, `velo`, `trail` |
 | `alternatives` | ids d'exercices du catalogue, du plus proche au plus éloigné |

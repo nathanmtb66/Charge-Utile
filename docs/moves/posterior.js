@@ -3,6 +3,26 @@
 const {V, lerp, clamp, sm, bump, osc, foot, hand, D2R} = Rig.util;
 const kf = Rig.kf;
 
+/* ---------- rack à squat (option bar de calfraise) : deux montants et crochets en J, derrière l'athlète ---------- */
+Rig.prop('post_rack', {
+  make(c){ const T = c.THREE, g = new T.Group();
+    for(const z of [-1, 1]){
+      const add = (m, k) => { m.userData.z = z; m.userData.k = k; g.add(m); };
+      add(c.mk(new T.BoxGeometry(.07, 1, .07), c.mats.mach), 'post');
+      add(c.mk(new T.BoxGeometry(.10, .025, .05), c.mats.steel), 'hook');
+      add(c.mk(new T.BoxGeometry(.02, .05, .05), c.mats.steel), 'lip');
+      add(c.mk(new T.BoxGeometry(.6, .04, .09), c.mats.mach), 'foot');
+    }
+    return g; },
+  update(g, s){ const zz = s.zw || .55, H = s.h, top = H + .55;
+    g.position.set(s.x, 0, 0);
+    for(const m of g.children){ const z = m.userData.z * zz, k = m.userData.k;
+      if(k === 'hook') m.position.set(.075, H - .0125, z);
+      else if(k === 'lip') m.position.set(.12, H + .01, z);
+      else if(k === 'foot') m.position.set(0, .02, z);
+      else { m.scale.y = top; m.position.set(0, top/2, z); } } }
+});
+
 /* ---------- aides ---------- */
 const T_LINE = 1.78;                       // angle de repos de la ligne bassin → haut du dos
 const SH_REST = [.025, .472, .208];        // épaule par rapport au centre du bassin (debout)
@@ -243,8 +263,8 @@ const LIB = {
     return {
       pc, tilt:1, dev:{}, gaze:[3, 1.4 + H], gazeK:.4,
       legs:{L, R},
-      arms:{mode: o.load==='db' ? 'sides' : 'hips'},
-      world: step ? {step:{x:mx - .03 + .2, h:H, d:.4, w:.9}} : {},
+      arms:{mode: o.bar ? 'backBar' : o.load==='db' ? 'sides' : 'hips'},
+      world: step ? {step:{x:mx - .03 + .2, h:H, d:.4, w:.9}} : o.bar ? {post_rack:{x:-.50, h:1.30, zw:.55}} : {},
       focus:['calves']
     };
   },
@@ -313,7 +333,7 @@ const META = {
   deadlift:{family:'hinge', tempo:true, cycle:3.2, frame:{tx:0,ty:.85,H:1.95,W:1.9,el:10,az:30}},
   kbswing:{family:'hinge', cycle:1.3, frame:{tx:.05,ty:.88,H:2.0,W:1.8,el:10,az:24}},
   nordic:{family:'hinge', tempo:true, cycle:4.5, frame:{tx:.2,ty:.5,H:1.3,W:2.1,el:14,az:22}},
-  calfraise:{family:'calf', tempo:true, cycle:2.4, frame:{tx:.02,ty:.95,H:2.1,W:1.3,el:8,az:38}},
+  calfraise:{family:'calf', tempo:true, cycle:2.4, frame:o => o.bar ? {tx:-.12,ty:1.0,H:2.2,W:1.75,el:10,az:32} : {tx:.02,ty:.95,H:2.1,W:1.3,el:8,az:38}},
   slcalf:{family:'calf', tempo:true, cycle:2.6, frame:{tx:.02,ty:1.05,H:2.2,W:1.5,el:8,az:62}},
   tibraise:{family:'calf', cycle:1.6, frame:{tx:-.12,ty:.9,H:2.05,W:1.4,el:8,az:48}},
   goodmorning:{family:'hinge', tempo:true, cycle:3.2, frame:{tx:.0,ty:.9,H:1.95,W:1.8,el:12,az:45}},
