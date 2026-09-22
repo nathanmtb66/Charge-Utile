@@ -50,8 +50,38 @@ const Data = {
   }
 };
 
+/* ============ défilement : on prévient quand il reste du contenu sous l'écran ============ */
+function scrollWatch(){
+  const app = $('#app'), bar = $('#bar'), down = $('#scrolldown');
+  const boxes = ['#page','#panel'].map($).filter(Boolean);
+  const live = () => boxes.find(n => !n.hidden && n.scrollHeight - n.clientHeight > 12);
+  const upd = () => {
+    const n = live();
+    const more = !!n && !app.classList.contains('live') && n.scrollTop + n.clientHeight < n.scrollHeight - 12;
+    app.classList.toggle('more', more);
+    if(more && down) down.style.bottom = (bar.offsetHeight + 10) + 'px';
+  };
+  boxes.forEach(n => {
+    n.addEventListener('scroll', upd, {passive:true});
+    new ResizeObserver(upd).observe(n);
+    new MutationObserver(upd).observe(n, {childList:true, subtree:true, characterData:true});
+  });
+  new ResizeObserver(upd).observe(bar);
+  addEventListener('resize', upd);
+  if(down) down.onclick = () => { const n = live(); if(n) n.scrollBy({top: n.clientHeight * .8, behavior:'smooth'}); };
+  upd();
+}
+
 /* ============ son, vibration, écran ============ */
-let actx = null, soundOn = Store.get('sound', true);
+let actx = null;
+/* trois familles de sons, réglables séparément par l'athlète */
+const SND_LABELS = {tempo:['Bips du rythme','Le tempo pendant la série : descends, tiens, monte'], count:['Bips du décompte','Les 5 dernières secondes avant de démarrer ou de repartir'], end:['Signal de fin','Le son qui annonce la fin d’une série ou d’une récup']};
+const sndPrefs = (()=>{
+  const old = Store.get('sound', null);                       // ancien réglage unique : on le reprend
+  const base = {tempo: old !== false, count: old !== false, end: old !== false};
+  return Object.assign(base, Store.get('snd', {}));
+})();
+function sndSet(k, v){ sndPrefs[k] = v; Store.set('snd', sndPrefs); }
 function audio(){
   if(!actx){
     try{
@@ -63,8 +93,8 @@ function audio(){
   if(actx.state === 'suspended') actx.resume().catch(()=>{});
   return actx;
 }
-function beep(f=880, d=.12, v=.2, when=0, type='sine'){
-  if(!soundOn) return;
+function beep(f=880, d=.12, v=.2, when=0, type='sine', cat='end'){
+  if(!sndPrefs[cat]) return;
   const a = audio(); if(!a) return;
   try{
     const t = a.currentTime + when;
@@ -77,14 +107,15 @@ function beep(f=880, d=.12, v=.2, when=0, type='sine'){
 }
 // signatures sonores du tempo
 const SND = {
-  down: ()=>beep(520, .09, .22),                 // descente : tic grave à chaque seconde
-  hold: ()=>beep(700, .07, .16, 0, 'triangle'),  // pause : tic moyen
-  up:   ()=>{ beep(880, .07, .26); beep(1320, .12, .26, .07); }, // montée : double note montante
-  rep:  ()=>beep(990, .05, .12),
-  count:()=>beep(640, .08, .2),
-  go:   ()=>beep(1040, .22, .26),
-  end:  ()=>{ beep(880, .12, .24); beep(1175, .2, .24, .13); },
-  tap:  ()=>beep(700, .04, .08)
+  down: ()=>beep(520, .09, .22, 0, 'sine', 'tempo'),                 // descente : tic grave à chaque seconde
+  hold: ()=>beep(700, .07, .16, 0, 'triangle', 'tempo'),             // pause : tic moyen
+  up:   ()=>{ beep(880, .07, .26, 0, 'sine', 'tempo'); beep(1320, .12, .26, .07, 'sine', 'tempo'); }, // montée : double note montante
+  rep:  ()=>beep(990, .05, .12, 0, 'sine', 'tempo'),
+  breath:(f,d,v)=>beep(f, d, v, 0, 'sine', 'tempo'),
+  count:()=>beep(640, .08, .2, 0, 'sine', 'count'),
+  go:   ()=>beep(1040, .22, .26, 0, 'sine', 'end'),
+  end:  ()=>{ beep(880, .12, .24, 0, 'sine', 'end'); beep(1175, .2, .24, .13, 'sine', 'end'); },
+  tap:  ()=>beep(700, .04, .08, 0, 'sine', 'end')
 };
 const buzz = p => { try{ navigator.vibrate && navigator.vibrate(p); }catch(e){} };
 let wake = null, wantWake = false;
@@ -206,7 +237,8 @@ const Stage = (()=>{
   /* ---------- séance guidée : compte, bips et rythme sur la même horloge ---------- */
   function startGuide(o){
     stopGuide();
-    guide = Object.assign({count:0, lastPh:-1, lastSec:-1, lead:o.leadIn ?? 3, t0:performance.now(), done:false, lastCyc:-1}, o);
+    // rythme sonore : seulement quand l'athlète compte des reps. Sur un exo au chrono, le silence.
+    guide = Object.assign({count:0, lastPh:-1, lastSec:-1, lead:o.leadIn ?? 3, t0:performance.now(), done:false, lastCyc:-1, rhythm: o.rhythm !== false && !!o.target}, o);
     const tempo = tl && !tl.cyclic;
     hud.className = 'hud live';
     hud.innerHTML = `
@@ -244,19 +276,19 @@ const Stage = (()=>{
         const word = phaseWord(r.phase);
         const show = d >= .5 || r.phase === 2;
         if(show){ P.innerHTML = `<b>${word}</b><i id="hSec">${r.phase===2 && exo.tempo[2]==='X' ? '' : secLeft}</i>`; P.dataset.ph = r.phase; pop(P,'phasein'); }
-        if(r.phase===0) SND.down(); else if(r.phase===1 && d >= .5) SND.hold(); else if(r.phase===2) SND.up();
+        if(g.rhythm){ if(r.phase===0) SND.down(); else if(r.phase===1 && d >= .5) SND.hold(); else if(r.phase===2) SND.up(); }
         if(r.phase===2) buzz(30);
       } else if(secLeft !== g.lastSec){
         g.lastSec = secLeft;
         const S = $('#hSec'); if(S && S.textContent !== '') { S.textContent = secLeft; pop(S,'pulse'); }
-        if(r.phase===0) SND.down(); else if(r.phase===1) SND.hold();
+        if(g.rhythm){ if(r.phase===0) SND.down(); else if(r.phase===1) SND.hold(); }
       }
       return {s:r.s, t:tg};
     }
     // mouvement cyclique : un bip par rep
     const per = tl.total, half = g.half ? per/2 : per;
     const cnt = Math.floor(tg / half);
-    if(cnt !== g.count){ g.count = cnt; const c = $('#hCount'); c.textContent = cnt; pop(c,'tick'); SND.rep(); if(g.onRep) g.onRep(cnt); }
+    if(cnt !== g.count){ g.count = cnt; const c = $('#hCount'); c.textContent = cnt; pop(c,'tick'); if(g.rhythm) SND.rep(); if(g.onRep) g.onRep(cnt); }
     if(target && cnt >= target){ const tEnd = cnt*half; g.freezeS = (tEnd % per)/per; g.freezeT = tEnd; finishGuide(); return {s:g.freezeS, t:tEnd}; }
     return {s:(tg % per)/per, t:tg};
   }
@@ -469,7 +501,8 @@ const App = (()=>{
   }
   const loadTxt = it => typeof it.load === 'number' ? `${kg(it.load)} kg` : it.load ? it.load : '';
   function blockSummary(b){
-    if(b.type==='circuit') return `${b.rounds} tours · ${b.items.length} exos · ${b.restEx} s entre les exos · ${b.restRound >= 60 ? b.restRound/60 + ' min' : b.restRound + ' s'} entre les tours`;
+    if(b.type==='circuit') return [b.rounds > 1 ? `${b.rounds} tours` : '', `${b.items.length} exos`, `${b.restEx} s entre les exos`,
+      b.rounds > 1 ? `${b.restRound >= 60 ? b.restRound/60 + ' min' : b.restRound + ' s'} entre les tours` : ''].filter(Boolean).join(' · ');
     if(b.type==='sets') return b.items.map(it=>`${it.sets} × ${volume(it)} ${it.name.toLowerCase()}`).join(' · ');
     if(b.type==='free') return `${b.min} à ${b.max} min`;
     return b.items.map(it=>`${volume(it)} ${it.name.toLowerCase()}`).join(' + ');
@@ -497,19 +530,19 @@ const App = (()=>{
         <div><small>${dayLabel(s.date)}${s.date < today ? ' · en retard' : ''}</small><b>${esc(s.titre)}</b>
         <span>${s.blocs.length} blocs · ≈ ${s.dureeMin || '?'} min · RPE ${esc(s.rpe || '—')}</span></div>${ico('chev')}</button>`;
     $('#page').innerHTML = `
-      <div class="hero"><h2>${book.prenom ? 'Salut ' + esc(book.prenom) : 'Salut'}</h2><p class="tagline">${todo.length ? `${todo.length} séance${todo.length>1?'s':''} à faire` : 'Tout est fait, bravo'}</p></div>
+      <div class="hero"><h2>${book.prenom ? 'Salut ' + esc(book.prenom) : 'Salut'}</h2><p class="tagline">${todo.length ? `${todo.length} séance${todo.length>1?'s':''} à faire` : list.length ? 'Tout est fait, bravo' : 'Nathan prépare ta première séance'}</p></div>
       ${resume ? `<button class="resume" id="resume">${ico('play')}<div><b>Reprendre ${esc(resume.titre)}</b><span>Là où tu t’es arrêté</span></div></button>` : ''}
-      ${todo.length ? `<div class="slist">${todo.map(card).join('')}</div>` : '<p class="quote">Nathan n’a pas encore publié ta prochaine séance.</p>'}
+      ${todo.length ? `<div class="slist">${todo.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
       <button class="recupbtn" id="recupB"><div><b>Récup &amp; mobilité</b><span>Étirements, mobilité, respiration · 5 à 20 min</span></div>${ico('chev')}</button>
       ${installCard()}
       ${done.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${done.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)} · RPE ${hist[s.id].srpe ?? '—'}</span></li>`).join('')}</ul>` : ''}
-      <div class="foot"><button class="textlink" id="snd">${soundOn ? 'Bips : activés' : 'Bips : coupés'}</button><button class="textlink" id="chg">Changer de code</button></div>`;
+      <div class="foot"><button class="textlink" id="snd">Sons : ${sndSummary()}</button><button class="textlink" id="chg">Changer de code</button></div>`;
     stagger($('#page'));
     bar('');
     $$('.scard').forEach(b => b.onclick = ()=>{ SND.tap(); intro(list.find(s=>s.id===b.dataset.id)); });
     on('#resume', ()=>{ resumeSession(resume, prog); });
     on('#recupB', ()=>{ SND.tap(); recupHome(); });
-    on('#snd', ()=>{ soundOn = !soundOn; Store.set('sound', soundOn); $('#snd').textContent = soundOn ? 'Bips : activés' : 'Bips : coupés'; SND.tap(); });
+    on('#snd', ()=>{ SND.tap(); soundSheet(()=>{ const s = $('#snd'); if(s) s.textContent = `Sons : ${sndSummary()}`; }); });
     on('#chg', ()=>{ Store.del('code'); home(); });
     bindInstall();
   }
@@ -551,13 +584,66 @@ const App = (()=>{
       $('#page').innerHTML = `
         <div class="hero"><h2>${esc(sess.titre)}</h2><p class="tagline">RPE visé ${esc(sess.rpe || '—')} · ≈ ${sess.dureeMin || '?'} min</p></div>
         ${sess.message ? `<p class="quote">${esc(sess.message)}<small>${esc(Data.book.coach || 'Nathan')}</small></p>` : ''}
-        <ol class="blocks">${S.blocks.map((b,i)=>`<li><i>${i+1}</i><div><b>${esc(b.name)}</b><span>${esc(blockSummary(b))}</span></div></li>`).join('')}</ol>`;
+        <ol class="blocks">${S.blocks.map((b,i)=>`<li><i>${i+1}</i><div><b>${esc(b.name)}</b><span>${esc(blockSummary(b))}</span></div></li>`).join('')}</ol>
+        <button class="detailbtn" id="detail"><div><b>Voir la séance en détail</b><span>Tous les exos, charges, tempo et récup</span></div>${ico('chev')}</button>`;
       stagger($('#page'));
       bar(`<div class="pair"><button class="ghost" id="back">Retour</button>${goBtn('C’est parti')}</div>`);
       on('#back', home);
+      on('#detail', ()=>{ SND.tap(); detailScreen(()=>{ layout({page:true, tools:false}); head(dayLabel(sess.date), 'Ta séance'); render(); }); });
       on('#go', ()=>{ audio(); SND.go(); buzz(20); keepAwake(); S.t0 = Date.now(); run(); });
     };
     render();
+  }
+  /* ---------- la séance en détail : tout est écrit, pour celui qui veut la faire sans guidage ---------- */
+  function itemLine(it, b){
+    const bits = [];
+    if(b.type === 'sets' && it.sets > 1) bits.push(`${it.sets} séries`);
+    bits.push(volume(it));
+    if(loadTxt(it)) bits.push(loadTxt(it)); else if(b.type !== 'cardio' && it.kind !== 'cardio') bits.push('poids du corps');
+    if(it.kind === 'cardio' && it.level) bits.push(esc(it.level));
+    else if(qKind(it) === 'plyo' && it.intent) bits.push(esc(it.intent));
+    else if(it.rpe) bits.push(`RPE ${it.rpe}`);
+    const t = it.tempoTxt || it.tempo;
+    const extra = [];
+    if(t) extra.push(`Tempo ${t.join('-')}`);
+    if(b.type === 'sets' && it.rest) extra.push(`Récup ${it.rest >= 60 ? (it.rest/60).toFixed(0).replace('.0','') + ' min' : it.rest + ' s'}`);
+    if(it.progression) extra.push(`Niveau ${it.progression.nom.toLowerCase()}`);
+    if(it.filmSet) extra.push(`Série ${it.filmSet} à filmer`);
+    if(it.note) extra.push(esc(it.note));
+    return `<li><b>${esc(it.name)}</b><span>${bits.join(' · ')}</span>${extra.length ? `<em>${extra.join(' · ')}</em>` : ''}
+      ${it.cues && it.cues.length ? `<u>${it.cues.map(c => esc(c)).join(' · ')}</u>` : ''}</li>`;
+  }
+  function sessionText(){
+    const L = [`${SESS.titre} · ${dayLabel(SESS.date)} · RPE ${SESS.rpe || '—'} · ≈ ${SESS.dureeMin || '?'} min`];
+    S.blocks.forEach((b, i) => {
+      L.push(``, `${i+1}. ${b.name.toUpperCase()} — ${blockSummary(b)}`);
+      (b.items || []).forEach(it => {
+        const t = it.tempoTxt || it.tempo;
+        L.push(`- ${it.name} : ${[b.type === 'sets' && it.sets > 1 ? it.sets + ' séries' : '', volume(it), loadTxt(it), it.rpe ? 'RPE ' + it.rpe : '',
+          t ? 'tempo ' + t.join('-') : '', b.type === 'sets' && it.rest ? 'récup ' + it.rest + ' s' : ''].filter(Boolean).join(' · ')}`);
+      });
+      if(b.note) L.push(`  (${b.note})`);
+    });
+    return L.join('\n');
+  }
+  function detailScreen(back){
+    S.screen = 'detail';
+    layout({page:true, tools:false});
+    head(esc(SESS.titre), 'La séance en détail');
+    $('#page').innerHTML = `
+      <div class="hero"><h2>${esc(SESS.titre)}</h2><p class="tagline">RPE visé ${esc(SESS.rpe || '—')} · ≈ ${SESS.dureeMin || '?'} min</p></div>
+      <p class="quote">Tu connais déjà la séance ? Tu peux la faire sans guidage.<small>Les bips se coupent dans les réglages</small></p>
+      ${S.blocks.map((b, i) => `<div class="dblock"><p class="dhead"><i>${i+1}</i>${esc(b.name)}</p>
+        <p class="dsum">${esc(blockSummary(b))}</p>
+        ${b.note ? `<p class="dnote">${esc(b.note)}</p>` : ''}
+        <ol class="dlist">${(b.items || []).map(it => itemLine(it, b)).join('')}</ol></div>`).join('')}
+      <div class="minor"><button id="sndD">${ico('sound')}Réglages des sons</button><button id="shareS">${ico('send')}Envoyer la séance</button></div>`;
+    stagger($('#page'));
+    bar(`<div class="pair"><button class="ghost" id="backD">Retour</button>${goBtn('C’est parti')}</div>`);
+    on('#backD', back);
+    on('#sndD', ()=>{ SND.tap(); soundSheet(); });
+    on('#shareS', async ()=>{ const r = await shareText(sessionText()); if(r !== 'aborted') toast(r === 'shared' ? 'Séance envoyée' : 'Séance copiée'); });
+    on('#go', ()=>{ audio(); SND.go(); buzz(20); keepAwake(); S.t0 = Date.now(); run(); });
   }
   function resumeSession(sess, prog){
     SESS = sess; S = prog.S; S.t0 = S.t0 || Date.now(); audio(); keepAwake(); run();
@@ -598,7 +684,7 @@ const App = (()=>{
       <p class="bsum">${esc(blockSummary(b))}</p>
       ${b.items && b.items.length ? `<ul class="list tight">${b.items.map(it=>`<li><span>${esc(it.name)}</span><span>${it.sets > 1 ? it.sets+' × ' : ''}${volume(it)}${loadTxt(it) ? ' · '+esc(loadTxt(it)) : ''}</span></li>`).join('')}</ul>` : `<p class="cue">${esc(b.note || '')}</p>`}`;
     stagger($('#panel'));
-    bar(goBtn(S.i === 0 ? 'Démarrer l’échauffement' : 'C’est parti'));
+    bar(goBtn(S.i === 0 && !SESS.recup && b.type === 'cardio' ? 'Démarrer l’échauffement' : 'C’est parti'));
     on('#go', ()=>{ SND.go(); buzz(20); if(!S.done.includes(S.i)) S.done.push(S.i); S.i++; run(); });
   }
 
@@ -714,7 +800,7 @@ const App = (()=>{
         lastSec = sec;
         if(phase==='in'){ if(sec>0){ SND.count(); pop($('#tv'),'tick'); } }
         else {
-          if(sec<=3 && sec>0){ SND.count(); pop($('#tv'),'tick'); }
+          if(sec<=5 && sec>0){ SND.count(); pop($('#tv'),'tick'); }   // rien pendant l'exo, le décompte seulement à la fin
           const m = (cardio ? MOTIV_CARDIO : MOTIV)(left, total);
           if(m !== lastMsg){ lastMsg = m; const mv = $('#motiv'); if(mv){ mv.textContent = m; pop(mv); } }
         }
@@ -790,7 +876,7 @@ const App = (()=>{
     tick = setInterval(()=>{
       const left = Math.max(0,(end-Date.now())*SPEED/1000);
       setRing(left, sec);
-      const s = Math.ceil(left); if(s !== lastSec){ lastSec = s; if(s<=3 && s>0){ SND.count(); pop($('#tv'),'tick'); } }
+      const s = Math.ceil(left); if(s !== lastSec){ lastSec = s; if(s<=5 && s>0){ SND.count(); pop($('#tv'),'tick'); } }
       if(left<=0){ clearTimers(); go(); }
     }, 100);
     const go = (lead=0) => { clearTimers(); S.screen = 'x'; live({leadIn: lead}); };
@@ -862,8 +948,8 @@ const App = (()=>{
       const sec = Math.ceil(left);
       if(sec !== lastSec){
         lastSec = sec;
-        if(sec === 10){ const ts = $('#tsub'); if(ts){ ts.textContent = 'prépare-toi'; pop(ts); } const r = $('#ready'); if(r) r.classList.add('urgent'); SND.count(); buzz(40); }
-        if(sec<=3 && sec>0){ SND.count(); pop($('#tv'),'tick'); }
+        if(sec === 10){ const ts = $('#tsub'); if(ts){ ts.textContent = 'prépare-toi'; pop(ts); } const r = $('#ready'); if(r) r.classList.add('urgent'); buzz(40); }
+        if(sec<=5 && sec>0){ SND.count(); pop($('#tv'),'tick'); }
       }
       if(left <= 0){ SND.go(); buzz([150,80,150]); leave(); }
     }, 100);
@@ -1086,7 +1172,7 @@ const App = (()=>{
       const [lab, dur, kind] = tech.phases[i], u = t / dur;
       ball.style.transform = `scale(${scale(kind, u).toFixed(3)})`;
       if(i !== lastPh){ lastPh = i; $('#bph').textContent = lab; pop($('#bph'), 'phasein');
-        if(kind === 'in') beep(420, .35, .12); else if(kind === 'out') beep(300, .45, .12); else if(kind === 'in2') beep(520, .2, .1); buzz(15); }
+        if(kind === 'in') SND.breath(420, .35, .12); else if(kind === 'out') SND.breath(300, .45, .12); else if(kind === 'in2') SND.breath(520, .2, .1); buzz(15); }
       const sl = Math.ceil(dur - t); if(sl !== lastSec){ lastSec = sl; $('#bsec').textContent = sl; }
       const left = total - el; $('#bleft').textContent = `${Math.floor(left/60)}:${String(Math.floor(left%60)).padStart(2,'0')}`;
     }, 50);
@@ -1107,29 +1193,67 @@ const App = (()=>{
     return `<div class="reco" id="reco">
       <p class="lbl" style="margin-top:0">Ta récup</p>
       <div class="recoin"><label for="poids">Ton poids</label><input class="field" id="poids" type="number" inputmode="decimal" min="35" max="140" step="0.5" placeholder="kg" value="${w ?? ''}"><span>kg</span></div>
+      <div class="recoin"><label for="poidsAp">Pesée après <em>si tu t’es pesé</em></label><input class="field" id="poidsAp" type="number" inputmode="decimal" min="35" max="140" step="0.1" placeholder="kg" value="${S.poidsAp ?? ''}"><span>kg</span></div>
       <p class="lbl">Demain</p>
       <div class="kbtn four">${[['repos','Repos'],['facile','Facile'],['dure','Séance dure'],['course','Course']].map(([v,l]) => `<button data-tm="${v}" class="${tomorrow===v?'on':''}">${l}</button>`).join('')}</div>
-      <div id="recoOut">${recoveryAdvice(w, tomorrow)}</div></div>`;
+      <div id="recoOut">${recoveryAdvice(w, tomorrow, S.poidsAp)}</div></div>`;
   }
-  function recoveryAdvice(w, tomorrow){
-    const mins = Math.round((Date.now() - (S.t0||Date.now()))/60000);
-    const hard = tomorrow === 'dure' || tomorrow === 'course' || ((S.srpe||0) >= 8 && mins >= 60);
-    const P = w ? Math.min(40, Math.max(20, Math.round(w * .3))) : null;
-    const G = w ? Math.round(w * 1) : null;
+  /** repères chiffrés, calculés sur le poids, le ressenti de la séance et la journée de demain */
+  function recoveryAdvice(w, tomorrow, after){
+    const g = (x, r=5) => Math.round(x/r)*r;                       // arrondi lisible
+    const hardTomorrow = tomorrow === 'dure' || tomorrow === 'course';
+    const hardToday = (S.srpe || 0) >= 8;
+    const loss = w && after && w - after > .2 && w - after < 5 ? +(w - after).toFixed(1) : null;
     const L = [];
-    L.push(`<li><b>Protéines</b>${P ? ` · ${P} g` : ' · 20 à 40 g'} dans les 2 h (ex. 250 g de skyr ≈ 25 g, 150 g de poulet ≈ 35 g), puis un apport toutes les 3 à 4 h.</li>`);
-    L.push(hard ? `<li><b>Glucides</b>${G ? ` · ≈ ${G} g` : ' · environ 1 g par kg'} au repas qui suit (riz, pâtes, pain, fruits)${tomorrow === 'course' ? ', et des repas riches en glucides toute la journée' : ''}.</li>`
-                : `<li><b>Glucides</b> · repas normal et équilibré, pas besoin de charger.</li>`);
-    L.push(`<li><b>Hydratation</b> · un grand verre ou deux dans l’heure, puis selon ta soif. Urine claire = c’est bon.</li>`);
-    L.push(`<li><b>Froid</b> · évite le bain froid dans les heures qui suivent la muscu : il freine les gains de force et de muscle.${tomorrow === 'course' ? ' La veille d’une course, ce n’est pas le moment d’essayer.' : ''}</li>`);
-    L.push(`<li><b>Étirements</b> · ils n’enlèvent pas les courbatures. Si ça te fait du bien, fais-les doux ce soir : <button class="textlink inline" id="goRecup">routine récup 10 min</button>.</li>`);
-    L.push(`<li><b>Sommeil</b> · vise 8 h cette nuit, c’est là que tu récupères le plus.</li>`);
+
+    // 1. boire : le seul repère fiable est ce que tu as perdu sur la balance
+    if(loss){
+      const lo = Math.round(loss * 1.25 * 10) / 10, hi = Math.round(loss * 1.5 * 10) / 10;
+      L.push(`<li><b>Boire</b> · tu as perdu ${loss} kg → <b>${lo} à ${hi} L</b> sur les 3 h qui viennent, en 4 fois (≈ ${Math.round(lo*1000/4/10)*10} mL par prise). Avec du sel : ≈ 2 g de sel par litre, ou un vrai repas salé si tu manges dans l’heure.</li>`);
+    } else {
+      L.push(`<li><b>Boire</b> · pèse-toi avant et après tes grosses séances : il faut <b>1,25 à 1,5 L par kg perdu</b>, en 4 fois sur 3 h, avec du sel. Sans pesée : bois à ta soif, et vérifie le matin (ton poids doit être revenu à la normale).</li>`);
+    }
+
+    // 2. protéines : dose de la prise + total du jour, le timing compte moins que le total
+    if(w){
+      const shot = g(w * .5), day = g(w * (tomorrow === 'repos' ? 2 : 1.8));
+      L.push(`<li><b>Protéines</b> · <b>${shot} g</b> à ton prochain repas (≈ ${Math.round(shot/25*100)} g de viande ou de poisson, ou 2 skyr + 2 œufs), et <b>${day} g sur la journée</b> en 4 prises${hardToday || hardTomorrow ? `, dont <b>40 g avant de dormir</b>` : ''}. Pas de course contre la montre : c’est le total du jour qui compte, pas la demi-heure après la séance.</li>`);
+    } else {
+      L.push(`<li><b>Protéines</b> · 0,4 à 0,55 g par kg à chaque repas, 4 fois dans la journée. Le total du jour compte plus que l’heure de la prise.</li>`);
+    }
+
+    // 3. glucides : réglés sur la charge de demain, pas sur un dogme
+    const CH = {repos:[3,5,'journée calme'], facile:[5,7,'séance facile'], dure:[6,10,'grosse séance'], course:[8,10,'course']}[tomorrow || 'facile'];
+    if(w) L.push(`<li><b>Glucides</b> · demain ${CH[2]} → <b>${g(w*CH[0], 10)} à ${g(w*CH[1], 10)} g sur la journée</b> (100 g de pâtes crues ≈ 75 g, une banane ≈ 25 g)${hardTomorrow ? '. Si tu repars dans moins de 4 h, monte à ' + g(w) + ' g par heure, tout de suite' : '. Repas normaux, rien à forcer'}.</li>`);
+    else L.push(`<li><b>Glucides</b> · 3 à 5 g par kg les jours calmes, 6 à 10 g par kg quand la charge est grosse.</li>`);
+
+    // 4. froid : la règle n'est pas la même après la muscu et après l'endurance
+    L.push(`<li><b>Bain froid</b> · <b>pas après la muscu</b> : il rabote les gains de force et de muscle. Après du vélo ou du trail, il ne freine rien : 10 à 15 °C, 10 à 15 min, utile surtout s’il fait chaud ou si tu enchaînes deux efforts en 48 h.</li>`);
+
+    // 5. ce qui ne marche pas, dit franchement
+    L.push(`<li><b>Étirements</b> · aucun effet sur les courbatures ni sur ta forme de demain. Fais-les si ça te fait du bien, pas pour récupérer : <button class="textlink inline" id="goRecup">routine mobilité 10 min</button>.</li>`);
+
+    // 6. sommeil : le levier le mieux prouvé
+    L.push(`<li><b>Sommeil</b> · <b>${hardToday || hardTomorrow ? '9 à 10 h' : '8 à 10 h'} au lit</b> cette nuit. Sieste possible : 25 à 90 min, entre 13 h et 16 h. Si tu dors moins de 6 h, compte environ <b>−7 % de performance</b> : déplace ta séance le matin, c’est là que le manque de sommeil se voit le moins.</li>`);
+
+    L.push(`<li><b>Le reste</b> · massage, compression, rouleau, électrostimulation : agréable, mais rien de solide chez les athlètes d’endurance. Dormir, manger, boire : c’est là que tout se joue.</li>`);
+
     return `<ul class="recolist">${L.join('')}</ul>
-      <details class="src"><summary>D’où viennent ces repères ?</summary><p>Protéines et glucides : prise de position de l’International Society of Sports Nutrition sur le timing des nutriments (2017). Bain froid : Roberts et al., Journal of Physiology (2015). Étirements et courbatures : revue Cochrane, Herbert et al. (2011). Ce sont des repères généraux, pas une prescription médicale.</p></details>`;
+      <details class="src"><summary>D’où viennent ces repères ?</summary><p>
+      Boire : Peden et al., Frontiers in Sports and Active Living, 2023 ; Armstrong et al., Open Access J Sports Med, 2025.
+      Protéines : Witard et al., Sports Medicine, 2025 (1,8 à 2,0 g/kg/j chez l’athlète d’endurance) ; Trommelen et al., Cell Reports Medicine, 2023 (la fenêtre d’une heure n’existe pas).
+      Glucides : position de l’American College of Sports Medicine, Thomas et al., 2016 ; Podlogar &amp; Wallis, Sports Medicine, 2022.
+      Bain froid : Malta et al., Sports Medicine, 2021 ; Piñero et al., Eur J Sport Sci, 2024.
+      Étirements : Afonso et al., Frontiers in Physiology, 2021.
+      Sommeil : consensus du CIO, Walsh et al., BJSM, 2021 ; Craven et al., Sports Medicine, 2022 ; sieste : Boukhris et al., Biology of Sport, 2025.
+      Les autres méthodes : Li et al., Sports Medicine Open, 2024 (revue des revues chez l’athlète d’endurance).
+      Ce sont des repères généraux pour un adulte en bonne santé, pas une prescription. Une douleur qui dure, c’est le kiné ou le médecin.</p></details>`;
   }
   function bindRecovery(){
-    const upd = () => { $('#recoOut').innerHTML = recoveryAdvice(Store.get('poids', null), S.tomorrow || null); on('#goRecup', () => { SND.tap(); recupHome({kind:'etirement', minutes:10, sport:'muscu'}); }); };
-    const inp = $('#poids'); if(inp) inp.oninput = () => { const v = parseFloat(inp.value.replace(',', '.')); if(v >= 35 && v <= 140){ Store.set('poids', v); upd(); } };
+    const upd = () => { $('#recoOut').innerHTML = recoveryAdvice(Store.get('poids', null), S.tomorrow || null, S.poidsAp); on('#goRecup', () => { SND.tap(); recupHome({kind:'mobilite', minutes:10, sport:'muscu'}); }); };
+    const num = (sel, fn) => { const inp = $(sel); if(inp) inp.oninput = () => { const v = parseFloat(inp.value.replace(',', '.')); if(v >= 35 && v <= 140){ fn(v); upd(); } }; };
+    num('#poids', v => Store.set('poids', v));
+    num('#poidsAp', v => { S.poidsAp = v; });
     $$('[data-tm]').forEach(b => b.onclick = () => { S.tomorrow = b.dataset.tm; $$('[data-tm]').forEach(x => x.classList.toggle('on', x === b)); SND.tap(); upd(); });
     upd();
   }
@@ -1288,9 +1412,25 @@ const App = (()=>{
         <h4>Sécurité</h4><p>${esc(it.safety || 'Douleur vive : arrête et signale-la.')}</p>
         ${tempoTxt}${rpeTxt}
         <a class="ghost small linkbtn" href="${esc(videoLink(it))}" target="_blank" rel="noopener">${ico('eye')}Voir une vraie vidéo${it.link ? '' : ' (YouTube)'}</a>
-        <button class="ghost small" id="snd">${soundOn ? ico('mute')+'Couper les bips' : ico('sound')+'Activer les bips'}</button>
+        <button class="ghost small" id="snd">${ico('sound')}Réglages des sons</button>
       </div>`);
-    on('#snd', ()=>{ soundOn = !soundOn; Store.set('sound', soundOn); SND.tap(); $('#snd').innerHTML = soundOn ? ico('mute')+'Couper les bips' : ico('sound')+'Activer les bips'; });
+    on('#snd', ()=>{ SND.tap(); soundSheet(); });
+  }
+  /* ---------- réglages des sons ---------- */
+  function sndSummary(){
+    const on = Object.keys(SND_LABELS).filter(k => sndPrefs[k]);
+    return on.length === 3 ? 'tous activés' : on.length === 0 ? 'coupés' : `${on.length}/3 activés`;
+  }
+  function soundSheet(after){
+    const row = k => `<button class="swrow${sndPrefs[k] ? ' on' : ''}" data-s="${k}"><div><b>${SND_LABELS[k][0]}</b><span>${SND_LABELS[k][1]}</span></div><i class="sw"></i></button>`;
+    openSheet(`<h3>Les sons</h3><p class="sub">Coupe seulement ce qui te gêne.</p>
+      <div class="swlist">${Object.keys(SND_LABELS).map(row).join('')}</div>
+      <p class="last">Tes bips se mélangent à ta musique, ils ne la coupent pas.</p>`);
+    $$('[data-s]').forEach(b => b.onclick = ()=>{
+      const k = b.dataset.s; sndSet(k, !sndPrefs[k]); b.classList.toggle('on', sndPrefs[k]);
+      if(sndPrefs[k]){ audio(); k === 'tempo' ? SND.up() : k === 'count' ? SND.count() : SND.end(); }
+      if(after) after();
+    });
   }
   function quitSheet(){
     openSheet(`<h3>Quitter ?</h3><p class="sub">Tu peux reprendre plus tard là où tu t’es arrêté, ou terminer maintenant et envoyer ce que tu as fait.</p>
@@ -1402,6 +1542,7 @@ const App = (()=>{
           session: ()=>SESS || {}, _state: ()=>S, _jump: n=>{ S.i = n; S.screen='x'; run(); }, _recap: ()=>recap()};
 })();
 window.__app = App;
+scrollWatch();
 App.start().catch(e => { console.error(e); const p = $('#page'); if(p){ p.hidden = false; p.innerHTML = `<p class="warn">Impossible de charger tes séances. Vérifie ta connexion au premier lancement.</p>`; } });
 if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost') && !window.CU_DATA){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 })();
