@@ -490,3 +490,9 @@ html,body{overscroll-behavior:none}
 .dlist span{font-size:14.5px;color:var(--ink)}
 .dlist em{font-style:normal;font-size:13px;color:var(--warn)}
 .dlist u{text-decoration:none;font-size:13px;color:var(--dim)}
+/* écran d'installation et état hors-ligne */
+.steps{list-style:none;counter-reset:st;margin:0;padding:0;display:grid;gap:10px}
+.steps li{counter-increment:st;position:relative;padding:12px 14px 12px 46px;background:var(--s1);border-radius:14px;font-size:15px;line-height:1.35}
+.steps li::before{content:counter(st);position:absolute;left:12px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);font-family:var(--d);font-weight:700;font-size:14px;display:grid;place-items:center}
+.okline{margin:0;font-size:13.5px;color:var(--ok);display:flex;align-items:center;gap:6px}
+.waitline{margin:0;font-size:13.5px;color:var(--dim)}

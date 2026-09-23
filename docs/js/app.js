@@ -519,6 +519,7 @@ const App = (()=>{
     await Data.load(code);
     const book = Data.book;
     if(!book){ return setup('Code introuvable. Vérifie avec Nathan, ou essaie la démo.'); }
+    if(needInstallScreen()) return installScreen(book.prenom);
     const hist = Store.get('history', {});
     const prog = Store.get('progress');
     const today = new Date().toISOString().slice(0,10);
@@ -535,10 +536,12 @@ const App = (()=>{
       ${todo.length ? `<div class="slist">${todo.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
       <button class="recupbtn" id="recupB"><div><b>Récup &amp; mobilité</b><span>Étirements, mobilité, respiration · 5 à 20 min</span></div>${ico('chev')}</button>
       ${installCard()}
+      <div id="offb"></div>
       ${done.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${done.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)} · RPE ${hist[s.id].srpe ?? '—'}</span></li>`).join('')}</ul>` : ''}
       <div class="foot"><button class="textlink" id="snd">Sons : ${sndSummary()}</button><button class="textlink" id="chg">Changer de code</button></div>`;
     stagger($('#page'));
     bar('');
+    offlineBadge();
     $$('.scard').forEach(b => b.onclick = ()=>{ SND.tap(); intro(list.find(s=>s.id===b.dataset.id)); });
     on('#resume', ()=>{ resumeSession(resume, prog); });
     on('#recupB', ()=>{ SND.tap(); recupHome(); });
@@ -565,13 +568,70 @@ const App = (()=>{
   let deferredPrompt = null;
   window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferredPrompt = e; const c = $('#install'); if(c) c.hidden = false; });
   const standalone = () => (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
+  const UA = navigator.userAgent;
+  const isIOS = /iphone|ipad|ipod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
+  const iosOtherBrowser = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS/i.test(UA);   // sur iPhone, seul Safari sait installer
   function installCard(){
     if(standalone() || window.CU_DATA) return '';
-    const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
-    if(ios) return `<div class="install" id="install"><b>Installe l’appli</b><span>Dans Safari : ${ico('dl','ico sm')} Partager → « Sur l’écran d’accueil ». Elle marchera ensuite sans réseau en salle.</span></div>`;
+    if(iosOtherBrowser) return `<div class="install" id="install"><b>Installe l’appli</b><span>Ouvre ce lien dans <b>Safari</b>, puis Partager → « Sur l’écran d’accueil ».</span><button class="ghost small" id="copyLink">Copier le lien</button></div>`;
+    if(isIOS) return `<div class="install" id="install"><b>Installe l’appli</b><span>${ico('dl','ico sm')} Partager → « Sur l’écran d’accueil ». Elle marchera ensuite sans réseau en salle.</span></div>`;
     return `<div class="install" id="install" ${deferredPrompt ? '' : 'hidden'}><b>Installe l’appli</b><span>Elle marchera ensuite sans réseau en salle.</span><button class="ghost small" id="doInstall">Installer</button></div>`;
   }
-  function bindInstall(){ on('#doInstall', async ()=>{ if(!deferredPrompt) return; deferredPrompt.prompt(); try{ await deferredPrompt.userChoice; }catch(e){} deferredPrompt = null; const c = $('#install'); if(c) c.hidden = true; }); }
+  async function copyLink(){
+    const url = location.origin + location.pathname + '?a=' + (Store.get('code') || '');
+    try{ await navigator.clipboard.writeText(url); toast('Lien copié : ouvre-le dans Safari'); }
+    catch(e){ toast(url); }
+  }
+  function bindInstall(){
+    on('#doInstall', async ()=>{ if(!deferredPrompt) return; deferredPrompt.prompt(); try{ await deferredPrompt.userChoice; }catch(e){} deferredPrompt = null; const c = $('#install'); if(c) c.hidden = true; });
+    on('#copyLink', copyLink);
+  }
+  /* ---------- écran d'installation : montré une fois, impossible à rater ---------- */
+  function needInstallScreen(){ return !standalone() && !window.CU_DATA && !Store.get('installVu') && !!Store.get('code'); }
+  function installScreen(prenom){
+    Store.set('installVu', 1);
+    layout({page:true, tools:false, top:false});
+    head('Charge Utile', 'Installe l’appli');
+    const steps = iosOtherBrowser
+      ? [`Ouvre ce lien dans <b>Safari</b> (pas Chrome) : c’est le seul navigateur qui sait installer l’appli sur iPhone.`,
+         `Dans Safari, touche <b>Partager</b> ${ico('dl','ico sm')} en bas de l’écran.`,
+         `Choisis <b>« Sur l’écran d’accueil »</b>, puis <b>Ajouter</b>.`]
+      : isIOS
+      ? [`Touche <b>Partager</b> ${ico('dl','ico sm')} en bas de l’écran.`,
+         `Fais défiler et choisis <b>« Sur l’écran d’accueil »</b>.`,
+         `Touche <b>Ajouter</b> : Charge Utile apparaît avec tes autres applis.`]
+      : [`Ouvre le menu <b>⋮</b> en haut à droite de ton navigateur.`,
+         `Choisis <b>« Installer l’application »</b> (ou « Ajouter à l’écran d’accueil »).`,
+         `Valide : Charge Utile apparaît avec tes autres applis.`];
+    $('#page').innerHTML = `
+      <div class="hero"><h2>${prenom ? 'Salut ' + esc(prenom) : 'Bienvenue'}</h2><p class="tagline">Installe l’appli avant ta première séance</p></div>
+      <p class="quote">En salle, le réseau passe mal. Une fois installée, l’appli marche <b>sans connexion</b> : tes séances, les animations et les bips sont enregistrés sur ton téléphone.<small>1 minute, une seule fois</small></p>
+      <ol class="steps">${steps.map(t => `<li>${t}</li>`).join('')}</ol>
+      ${iosOtherBrowser ? `<button class="ghost" id="copyLink2">Copier le lien pour Safari</button>` : ''}
+      ${deferredPrompt ? `<button class="primary" id="doInstall2">${ico('dl')}Installer maintenant</button>` : ''}`;
+    stagger($('#page'));
+    bar(`<button class="ghost" id="later">Plus tard, je continue ici</button>`);
+    on('#later', home);
+    on('#copyLink2', copyLink);
+    on('#doInstall2', async ()=>{ if(!deferredPrompt) return; deferredPrompt.prompt(); try{ await deferredPrompt.userChoice; }catch(e){} deferredPrompt = null; home(); });
+  }
+  /* ---------- état hors-ligne : l'athlète doit savoir que sa séance est enregistrée ---------- */
+  async function offlineBadge(){
+    const el = $('#offb'); if(!el) return;
+    if(!('serviceWorker' in navigator) || !('caches' in window)){ el.innerHTML = ''; return; }
+    try{
+      const ready = !!(await navigator.serviceWorker.getRegistration())?.active;
+      const keys = await caches.keys();
+      const app = keys.find(k => k.startsWith('cu-'));
+      const nb = app ? (await (await caches.open(app)).keys()).length : 0;
+      const sess = await caches.open('cu-seances').then(c => c.keys()).catch(()=>[]);
+      const ok = ready && nb > 10 && sess.length > 0;
+      el.innerHTML = ok
+        ? `<p class="okline">${ico('check','ico sm')} Prête pour la salle : ta séance marche sans réseau</p>`
+        : `<p class="waitline">Enregistrement en cours pour le hors-réseau… garde l’appli ouverte quelques secondes</p>`;
+      if(!ok) setTimeout(offlineBadge, 2500);
+    }catch(e){ el.innerHTML = ''; }
+  }
 
   /* ================= PRÉSENTATION DE LA SÉANCE ================= */
   function intro(sess){
