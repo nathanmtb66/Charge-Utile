@@ -187,6 +187,201 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2026-09-25-hypertrophie",
+   "date": "2026-09-25",
+   "titre": "Hypertrophie",
+   "rpe": "6-7",
+   "dureeMin": 95,
+   "message": "Objectif : hypertrophie. On passe à 15 reps avec plus de charge : il doit te rester 2 à 3 reps sous le pied à la fin de chaque série. Si c'est trop facile, monte de 2,5 kg.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Circuit training",
+     "type": "circuit",
+     "tours": 4,
+     "recupExo": 10,
+     "recupTour": 90,
+     "items": [
+      {
+       "ex": "burpees",
+       "reps": 8
+      },
+      {
+       "ex": "gainage-lateral-rotation",
+       "nom": "Planche + rotation",
+       "reps": 10,
+       "parCote": true,
+       "note": "20 au total : 10 de chaque côté.",
+       "consignes": [
+        "Hanches hautes pendant la rotation",
+        "Le bras passe sous le buste",
+        "Tourne les épaules, pas le bassin"
+       ]
+      },
+      {
+       "ex": "spiderman",
+       "reps": 20,
+       "alterne": true
+      },
+      {
+       "ex": "step-up",
+       "reps": 10,
+       "parCote": true
+      },
+      {
+       "ex": "superman-brasse",
+       "duree": 45
+      },
+      {
+       "ex": "bird-dog",
+       "reps": 10,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Corps de séance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 15,
+       "charge": 30,
+       "pas": 2.5,
+       "recup": 90,
+       "rpe": 7,
+       "nom": "Squat barre 90°",
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "consignes": [
+        "Descends jusqu'aux cuisses parallèles",
+        "Genoux dans l'axe des pieds",
+        "Ventre gainé, pousse fort dans le sol"
+       ]
+      },
+      {
+       "ex": "developpe-couche-barre",
+       "series": 4,
+       "reps": 15,
+       "charge": 25,
+       "pas": 2.5,
+       "recup": 90,
+       "rpe": 7,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "souleve-de-terre",
+       "series": 4,
+       "reps": 15,
+       "charge": 35,
+       "pas": 2.5,
+       "recup": 90,
+       "rpe": 7,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "mollets-barre",
+       "series": 4,
+       "reps": 15,
+       "charge": 30,
+       "pas": 2.5,
+       "recup": 90,
+       "rpe": 7,
+       "nom": "Extension de mollets sur rack à squat"
+      },
+      {
+       "ex": "hip-thrust-barre",
+       "series": 4,
+       "reps": 15,
+       "charge": 40,
+       "pas": 2.5,
+       "recup": 90,
+       "rpe": 7,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Proprio genoux & chevilles",
+     "type": "series",
+     "items": [
+      {
+       "ex": "etoile-plots",
+       "series": 5,
+       "reps": 5,
+       "parCote": true,
+       "recup": 15,
+       "note": "5 tours de plots par jambe : devant, arrière-droite, arrière-gauche."
+      },
+      {
+       "ex": "equilibre-demi-swissball-balle",
+       "nom": "Tourner le ballon sur demi-swissball",
+       "series": 5,
+       "duree": 30,
+       "parCote": true,
+       "recup": 15,
+       "consignes": [
+        "Fais tourner le ballon autour de toi",
+        "Genou souple, dans l'axe du pied",
+        "Change de sens à chaque série"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "tapis",
+       "duree": 300,
+       "niveau": "Très facile",
+       "consignes": [
+        "Marche ou trot très facile",
+        "Respire par le nez",
+        "Laisse redescendre le cœur"
+       ]
+      }
+     ]
+    }
+   ]
   }
  ]
 }
