@@ -496,3 +496,78 @@ html,body{overscroll-behavior:none}
 .steps li::before{content:counter(st);position:absolute;left:12px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);font-family:var(--d);font-weight:700;font-size:14px;display:grid;place-items:center}
 .okline{margin:0;font-size:13.5px;color:var(--ok);display:flex;align-items:center;gap:6px}
 .waitline{margin:0;font-size:13.5px;color:var(--dim)}
+/* tests de la batterie */
+.panel.tpanel{overflow:auto;max-height:52vh;padding-bottom:10px;-webkit-overflow-scrolling:touch}
+.tmes{margin:0;font-size:14.5px;color:var(--dim);text-align:center;line-height:1.35}
+.tmes b{color:var(--ink);font-weight:600}
+.tsteps{list-style:none;counter-reset:st;margin:0;padding:0;display:grid;gap:6px}
+.tsteps li{counter-increment:st;position:relative;padding:0 0 0 30px;font-size:15px;line-height:1.35}
+.tsteps li::before{content:counter(st);position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;background:var(--s2);color:var(--ink);font-family:var(--d);font-weight:700;font-size:13px;display:grid;place-items:center}
+.tmont{margin:0;display:flex;gap:8px;align-items:flex-start;font-size:14px;line-height:1.35;background:#16222B;border:1px solid #23394A;border-radius:12px;padding:9px 11px}
+.tmont .ico{flex:none;color:#5AA9FF;margin-top:1px}
+.tstop{margin:0;font-size:13px;color:var(--dim);line-height:1.35}
+.tstop b{color:var(--warn);font-weight:600;margin-right:4px}
+.tmat{margin:0;display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+.tmat span{font-size:12px;color:var(--dim);background:var(--s1);border-radius:99px;padding:4px 10px}
+.tin{display:grid;grid-template-columns:1fr 46px 92px 46px;align-items:center;gap:6px}
+.tin label{font-weight:600;font-size:15.5px;line-height:1.2}
+.tin label em{display:block;font-style:normal;font-weight:400;font-size:12px;color:var(--faint)}
+.tin .field{margin:0;text-align:center;font-family:var(--d);font-size:26px;font-weight:700;padding:6px 4px}
+.tpm{width:46px;height:46px;border-radius:50%;background:var(--s2);font-size:24px}
+.tang{display:flex;align-items:baseline;justify-content:center;gap:2px}
+.tang b{font-family:var(--d);font-weight:700;font-size:88px;line-height:.9;font-variant-numeric:tabular-nums}
+.tang span{font-family:var(--d);font-size:40px;color:var(--dim)}
+.tstat{margin:0;text-align:center;font-family:var(--d);font-size:22px;font-weight:600;text-transform:uppercase;letter-spacing:.02em}
+.tapzone{position:absolute;inset:0;z-index:60;background:#0B0E11;display:grid;place-items:center;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.tzin{display:grid;justify-items:center;gap:6px;text-align:center;padding:24px}
+.tzin small{font-size:15px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+.tzin b{font-family:var(--d);font-weight:700;font-size:min(46vw,210px);line-height:.9;font-variant-numeric:tabular-nums}
+.tzin span{font-family:var(--d);font-size:42px;font-weight:700;text-transform:uppercase;color:var(--acc)}
+.tzin em{font-style:normal;font-size:14px;color:var(--faint);margin-top:18px}
+.tramp{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.tramp li{display:flex;align-items:center;gap:10px;background:var(--s1);border-radius:12px;padding:9px 12px;color:var(--dim)}
+.tramp li b{font-family:var(--d);font-size:24px;color:var(--ink);min-width:88px}
+.tramp li .ico{margin-left:auto;color:var(--ok)}
+.tramp li.ok{opacity:.55}
+.tramp li.now{box-shadow:inset 0 0 0 2px var(--ok);color:var(--ink)}
+.tramp li.test b{color:var(--acc)}
+.tcheck{display:flex;align-items:center;gap:10px;text-align:left;background:var(--s1);border-radius:12px;padding:11px 12px;font-size:14.5px;color:var(--dim)}
+.tcheck .ico{flex:none;width:22px;height:22px;border-radius:6px;box-shadow:inset 0 0 0 2px var(--line);color:transparent;padding:2px}
+.tcheck.on{color:var(--ink)}
+.tcheck.on .ico{background:var(--ok);color:var(--bg);box-shadow:none}
+.tres{margin:0;text-align:center;font-size:16px;min-height:22px}
+.tres b{font-family:var(--d);font-size:28px}
+.tres em{font-style:normal;font-size:13px;color:var(--warn)}
+#rir.rpe5 button.on{background:var(--ink);color:var(--bg);box-shadow:none}
+#rir.rpe5 button.on span{color:var(--bg)}
+.tbig{display:grid;justify-items:center;gap:2px}
+.tbig b{font-family:var(--d);font-weight:700;font-size:80px;line-height:.9}
+.tbig span{color:var(--dim);font-size:14px}
+.tduo{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px}
+.tduo > div{background:var(--s1);border-radius:16px;padding:12px 8px;display:grid;justify-items:center;gap:2px}
+.tduo > div.weak{box-shadow:inset 0 0 0 2px var(--warn)}
+.tduo small{font-size:12.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+.tduo b{font-family:var(--d);font-weight:700;font-size:52px;line-height:1}
+.tduo b i{font-style:normal;font-size:22px;color:var(--dim);margin-left:2px}
+.tduo u{text-decoration:none;font-size:12px;color:var(--warn)}
+.tduo em,.tbig em,.fline em{font-style:normal;font-size:13px;font-weight:600}
+em.up{color:var(--ok)} em.dn{color:var(--warn)} em.st{color:var(--dim)}
+.tsym{margin:0;text-align:center;font-size:15px;color:var(--ok)}
+.tsym.flag{color:var(--warn);font-weight:600}
+.list.fiche .fline{align-items:flex-start}
+.fline > div:first-child{display:grid;gap:2px;min-width:0}
+.fline > div:first-child span{white-space:normal !important;color:var(--dim);font-size:13.5px !important;font-weight:400 !important}
+.fline u{text-decoration:none;font-size:12.5px;color:var(--warn)}
+.fline > div:last-child{display:grid;justify-items:end;gap:2px;flex:none}
+.fline small{font-size:12px;color:var(--faint)}
+@media (max-height:700px){.panel.tpanel{max-height:46vh}.tang b{font-size:70px}.tduo b{font-size:42px}.tbig b{font-size:64px}}
+.panel.tpanel.tfill{flex:1 1 auto;max-height:none;align-content:start}
+.tvid{width:100%;max-height:34vh;border-radius:14px;background:#000;object-fit:contain}
+.tcrit{display:grid;gap:6px}
+.tcr{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--s1);border-radius:12px;padding:8px 10px}
+.tcr span{font-size:14.5px;line-height:1.25}
+.tcr div{display:flex;gap:4px;flex:none}
+.tcr button{height:38px;padding:0 14px;border-radius:99px;background:var(--s2);font-size:14px;font-weight:600}
+.tcr button[data-v="1"].on{background:var(--ok);color:var(--bg)}
+.tcr button[data-v="0"].on{background:var(--warn);color:var(--bg)}
+.warnc{color:var(--warn) !important}

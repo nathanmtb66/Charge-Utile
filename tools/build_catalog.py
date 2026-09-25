@@ -8,7 +8,7 @@ ZONES = {'cou','epaules','haut-du-dos','bas-du-dos','hanches','fessiers','adduct
 TYPES = {'reps','hold','plyo','effort','cardio'}
 MUSCLES = {'quads','quadsL','hams','glutes','calves','abs','obliques','lowback','pecs','delts','arms','biceps','triceps','forearms','lats','upperback','adductors','shins','hipflex'}
 TAGS = {'descente-vtt','coup-de-pedale','foulee','montee','explosivite','genou','cheville','hanche','dos','gainage','proprio','chaine-posterieure','haut-du-corps','echauffement','cardio','retour-au-calme','mobilite','etirement','recuperation','avant-effort','velo','trail'}
-MAT = {'barre','halteres','kettlebell','disque','banc','box','swissball','demi-swissball','plots','elastique','barre-traction','mur','sangle','tapis','marche','rameur','ski-erg','velo','aucun','sac-leste'}
+MAT = {'barre','halteres','kettlebell','disque','banc','box','swissball','demi-swissball','plots','elastique','barre-traction','mur','sangle','tapis','marche','rameur','ski-erg','velo','aucun','sac-leste','machine'}
 links = json.load(open(os.path.join(ROOT, 'tools', 'liens_fitnessprogramer.json')))
 
 def load():
@@ -52,10 +52,10 @@ if __name__ == '__main__':
     ex = load()
     anims = None
     af = os.path.join(ROOT, 'qa', 'anims.json')
-    if os.path.exists(af): anims = set(json.load(open(af)))
+    if os.path.exists(af) and '--sans-anims' not in sys.argv: anims = set(json.load(open(af)))
     for x in ex:
         slug = links.get(x['id'])
-        x['voirEnVrai'] = f'https://fitnessprogramer.com/exercise/{slug}/' if slug else None
+        x['voirEnVrai'] = f'https://fitnessprogramer.com/exercise/{slug}/' if slug else x.get('voirEnVrai')   # lien écrit dans la fiche gardé
     errs = validate(ex, anims)
     if errs:
         print('\n'.join(errs)); sys.exit(1)

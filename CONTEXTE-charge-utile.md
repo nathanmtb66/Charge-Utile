@@ -1,7 +1,7 @@
 # Charge Utile — contexte du projet
 
 Document de reprise : à lire au début d'une conversation qui touche à l'appli.
-Dernière mise à jour : 23 septembre 2026.
+Dernière mise à jour : 23 septembre 2026 (batterie de tests + fiche athlète).
 
 ## Ce que c'est
 
@@ -15,26 +15,23 @@ Nathan dicte une séance à Claude, Claude l'écrit et la publie, l'athlète la 
 
 ## Où est le code
 
-Dossier relié au Mac de Nathan : **`Téléchargements/charge-utile-site`** (accessible avec `device_bash`). Il contient tout le projet.
+Dépôt cloné par GitHub Desktop sur le Mac de Nathan : **`Documents/GitHub/Charge-Utile`** (dossier relié, accessible avec `device_bash`).
 
 ```
-coach.py                  outil de recherche (voir plus bas)
+coach.py                  outil coach : recherche d'exos, vérif, tests, fiche, charges en %
 docs/                     le site publié
   index.html  catalogue.html  sw.js  manifest.webmanifest
-  js/app.js               le lecteur de séance (~2700 lignes)
+  js/app.js               le lecteur de séance (séances, tests, fiche)
   js/engine.js            moteur 3D (squelette, IK, tempo) — ne jamais modifier à la légère
-  js/body.js              maillage du mannequin (généré depuis MakeHuman)
-  moves/*.js              les animations, une famille par fichier (139 animations)
-  moves/README.md         API des poses — à lire avant d'écrire une animation
+  moves/*.js              les animations, une famille par fichier (dont tests.js : positions des tests)
   data/exercises/*.json   les fiches sources (190 exercices)
-  data/exercises.json     catalogue fusionné (généré)
+  data/tests.json         la batterie de tests (protocoles, erreurs de mesure, repères, sources)
   data/sessions/<code>.json  les séances de chaque athlète
-  data/SCHEMA.md          format exact des fiches et des séances
+  data/SCHEMA.md          format exact des fiches, séances, tests et charges en %
+prive/fiches/<code>.json  fiche maître de chaque athlète (résultats datés, profil) — jamais publiée (.gitignore)
 tools/  build.py · build_catalog.py · anims.js · check_sessions.py · nouvel_athlete.py
-qa/     shots.js (rendus) · flow.js · recup.js · offline.js · bips.js · BRIEF-AGENT.md
+qa/     flow.js · recup.js · offline.js · tests.js (batterie) · angles.js (preuve du calcul d'angle) · shots.js (rendus)
 ```
-
-Le projet complet existe aussi en zip dans les livrables des conversations précédentes.
 
 ## Méthode de travail (et d'économie)
 
@@ -52,16 +49,11 @@ Le projet complet existe aussi en zip dans les livrables des conversations préc
 
 ## Publier
 
-Seul le contenu de `docs/` compte pour le site.
+1. Écrire dans le dépôt (dossier relié), lancer `python3 tools/build.py` (change la version du service worker).
+2. Montrer un récap court à Nathan. Après son ok : commit + push avec GitHub Desktop.
+3. Contrôler le site en ligne (`fetch` de `data/tests.json`, du fichier de séance, de `js/app.js`). Le cache de GitHub Pages peut servir l'ancienne version quelques minutes.
 
-1. Mettre les fichiers à jour dans `charge-utile-site/docs` (via `device_bash` ou `device_commit_files`).
-2. Ouvrir à Nathan `https://github.com/nathanmtb66/Charge-Utile/upload/main` (**racine** du dépôt, jamais `/upload/main/docs`, sinon ça crée un `docs/docs/`).
-3. Il glisse le dossier `docs`. Vérifier ensuite que tous les chemins affichés commencent par `/docs/`, écrire le message de commit, cliquer **Commit changes**.
-4. Contrôler le site en ligne depuis une page github.io (`fetch` du fichier de séance, du catalogue, de `app.js`). Le cache de GitHub Pages peut servir l'ancienne version pendant quelques minutes.
-
-**Testé et sans issue, ne pas réessayer** : l'envoi de fichiers par l'extension Chrome (elle refuse les fichiers venant de la session) et la frappe dans l'éditeur de code GitHub (les touches n'atteignent pas l'éditeur).
-
-Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec du réseau** (le service worker change de version à chaque build).
+Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec du réseau**.
 
 ## Ce que l'appli fait aujourd'hui
 
@@ -73,7 +65,10 @@ Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec 
 - **Fin de séance** : RPE de séance, conseils de récup chiffrés (boire, protéines, glucides, froid, sommeil) calculés sur le poids, la pesée après séance, le RPE et la journée du lendemain, avec les sources (littérature 2021-2026). Message récap envoyé à Nathan.
 - **Récup & mobilité** : routine générée selon le temps, le sport du jour, les douleurs à éviter et le `focus` de l'athlète. Respiration guidée (cohérence cardiaque, soupir physiologique, carrée, expiration longue).
 - **Installation** : écran plein écran au premier lancement, adapté iPhone/Android, plus un voyant « prête pour la salle » quand tout est enregistré hors-ligne.
-- **Catalogue** : 190 exercices, 139 animations, dont proprio en 4 niveaux, chevilles trail, et 12 exercices d'épaule.
+- **Catalogue** : 190 exercices, 152 animations, dont proprio en 4 niveaux, chevilles trail, et 12 exercices d'épaule.
+- **Tests en autonomie** (bloc `test`) : 14 tests, présentation animée, mesure guidée, résultat comparé au précédent, écart gauche/droite. Test A force (saut unipodal ou assis-debout, squat et soulevé de terre en max estimé), test B mobilité (genou au mur, Thomas, rotation de hanche, jambe tendue, épaules, squat bras levés filmé, équilibre yeux fermés, mollet, pont). Angles mesurés par le capteur du téléphone fixé sur le membre : vérification du capteur une fois par séance (téléphone debout = 90°, corrige un signe inversé), zéro automatique, angle = rotation depuis le zéro (indépendant du sens du téléphone sur le membre), valeur = moyenne de la fin d'une tenue stable, saisie à la main en secours. `node qa/angles.js` prouve le calcul (0,000° d'erreur sans bruit, sur 20 000 montages au hasard).
+- **Ma fiche** : les résultats datés sur le téléphone ; ligne `FICHE …` dans le message à Nathan.
+- **Charges en %** : `pct` + `base` dans une séance ; le téléphone recalcule si l'athlète a refait son test.
 
 ## Limites connues (à dire franchement)
 
@@ -89,9 +84,16 @@ Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec 
 
 - Interprétations d'animations : routine vélo n°3 et n°10, étirements n°11, 12, 15 et 18 de la capture Nolio.
 
+## Tests et fiche : la méthode
+
+- Envoyer une séance de tests : `python3 coach.py batterie <code> A|B <date>` (adaptée au profil : `coach.py profil <code> sans_saut=1 sdt=trap sans_<test>=1`). Profils décidés : Simon sans saut (genou/cheville), Malone profil épaule (tests d'épaule faisables mais « Je ne peux pas » dispo), Amael suivi de l'écart des quadriceps.
+- Ranger les résultats reçus : `python3 coach.py fiche-ajoute "<message collé>"`, puis `coach.py athlete <code>` (écarts à cibler).
+- « squat 4×5 à 80 % » : `python3 coach.py charge <code> squat 80` → mettre les champs donnés dans l'item.
+- Fréquence conseillée : test A toutes les 6 semaines (la force bouge vite), test B toutes les 8 à 12 semaines, jamais la veille d'une course.
+
 ## Prochain chantier
 
-Batterie de **tests terrain réalisables sans Nathan** (1RM estimé, mobilité type FMS/GMS, souplesse, force, équilibre), puis une **fiche athlète** qui stocke les résultats datés, pour prescrire les séances en pourcentage de 1RM et cibler les points faibles. Recherche à faire sur les tests les plus fiables et les plus simples en autonomie.
+Premier passage réel des tests par les 4 athlètes (le capteur d'angle n'est testable automatiquement que sur Chromium : valider sur un iPhone).
 
 ## Comment Nathan veut travailler
 

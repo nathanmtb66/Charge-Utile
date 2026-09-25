@@ -383,6 +383,136 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2026-09-25-tests-force",
+   "date": "2026-09-25",
+   "titre": "Tests force",
+   "rpe": "7 à 8",
+   "dureeMin": 45,
+   "message": "Tests du bloc : fais-les reposé (48 h après une séance dure, jamais la veille d'une course), à la même heure que la dernière fois. Aucune série jusqu'à l'échec : il doit toujours t'en rester une.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60
+      }
+     ]
+    },
+    {
+     "nom": "Tests",
+     "type": "test",
+     "items": [
+      {
+       "test": "saut-unipodal"
+      },
+      {
+       "test": "squat-e1rm"
+      },
+      {
+       "test": "sdt-e1rm",
+       "variante": "trap"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-09-27-tests-mobilite",
+   "date": "2026-09-27",
+   "titre": "Tests mobilité",
+   "rpe": "4 à 5",
+   "dureeMin": 40,
+   "message": "Tests du bloc, à faire pieds nus, à la maison ou en salle. Il te faut : un mètre ruban, du scotch, un mur, une table solide, une box ou une chaise d'environ 60 cm, et un brassard pour fixer ton téléphone. Pas de séance dure la veille.",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 90
+      },
+      {
+       "ex": "talons-fesses",
+       "duree": 90
+      }
+     ]
+    },
+    {
+     "nom": "Tests",
+     "type": "test",
+     "items": [
+      {
+       "test": "genou-mur"
+      },
+      {
+       "test": "thomas"
+      },
+      {
+       "test": "rotation-interne-hanche"
+      },
+      {
+       "test": "jambe-tendue"
+      },
+      {
+       "test": "flexion-epaule"
+      },
+      {
+       "test": "rotation-externe-epaule"
+      },
+      {
+       "test": "squat-bras-leves"
+      },
+      {
+       "test": "unipodal-yeux-fermes"
+      },
+      {
+       "test": "mollet-unipodal"
+      },
+      {
+       "test": "pont-unipodal"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-09-29-force-pct",
+   "date": "2026-09-29",
+   "titre": "Force en %",
+   "rpe": "7 à 8",
+   "dureeMin": 40,
+   "message": "Démo : charge calculée en % du max estimé.",
+   "blocs": [
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 180,
+       "pas": 5,
+       "pct": 80,
+       "base": "squat",
+       "charge": 60.0,
+       "e1rm": 75.0,
+       "e1rmDate": "2026-09-10"
+      }
+     ]
+    }
+   ]
   }
  ],
  "focus": [

@@ -1,0 +1,540 @@
+{
+ "version": 1,
+ "note": "Batterie de tests Charge Utile. Chaque test se fait seul, se note sans jugement, et donne un chiffre par côté. mdc = plus petit changement qui dépasse l'erreur de mesure (en dessous : « stable »). asym = écart gauche/droite signalé (en unité du test), asymPct = côté faible sous ce % du côté fort.",
+ "tests": [
+  {
+   "id": "saut-unipodal",
+   "nom": "Saut sur une jambe",
+   "court": "Saut 1 jambe",
+   "mesure": "Ta puissance et ta confiance d'appui, jambe par jambe",
+   "mode": "saisie",
+   "unite": "cm",
+   "cotes": true,
+   "essais": 3,
+   "pas": 1,
+   "min": 20,
+   "max": 300,
+   "mdc": 12,
+   "asymPct": 90,
+   "repere": {
+    "txt": "La jambe faible à 90 % de l'autre ou plus"
+   },
+   "anim": "t_hop",
+   "materiel": [
+    "Mètre ruban scotché au sol",
+    "Une ligne de départ"
+   ],
+   "etapes": [
+    "Scotche le mètre au sol, le 0 sur la ligne de départ.",
+    "Sur une jambe, orteils derrière la ligne, bras libres.",
+    "Saute le plus loin possible et atterris sur la même jambe.",
+    "Tiens 2 s sans bouger, puis lis le chiffre à ton talon."
+   ],
+   "stop": [
+    "L'autre pied touche le sol",
+    "Tu sautilles à la réception",
+    "Une main touche le sol"
+   ],
+   "avant": "2 sauts d'essai à 75 % par jambe, non notés.",
+   "saisie": "Ton meilleur saut valide, en cm",
+   "securite": "Réception genou souple, dans l'axe du pied. Si la réception fait mal, arrête le test.",
+   "pourquoi": "Un saut plus court d'un côté montre la jambe à renforcer en priorité.",
+   "fiabilite": "Très fiable (ICC 0,92 à 0,97). Erreur de mesure : environ 5 à 15 cm selon le saut.",
+   "source": "Reid et al., Phys Ther 2007 ; revue Physiopedia « Hop test »"
+  },
+  {
+   "id": "assis-debout-unipodal",
+   "nom": "Assis-debout sur une jambe",
+   "court": "Assis-debout",
+   "mesure": "La force et l'endurance de chaque cuisse, sans impact",
+   "mode": "metronome",
+   "unite": "reps",
+   "cotes": true,
+   "periode": 2,
+   "mots": [
+    "Debout",
+    "Assis"
+   ],
+   "max": 40,
+   "mdc": 4,
+   "asymPct": 90,
+   "repere": {
+    "txt": "La jambe faible à 90 % de l'autre ou plus"
+   },
+   "anim": "t_slsts",
+   "materiel": [
+    "Un banc ou une box à hauteur de genou (toujours la même)"
+   ],
+   "etapes": [
+    "Assis au bord du banc, bras croisés, téléphone contre la poitrine.",
+    "Une jambe tendue devant toi, talon décollé du sol.",
+    "Au bip aigu, lève-toi sur l'autre jambe. Au bip grave, rassieds-toi.",
+    "Touche l'écran quand tu ne peux plus suivre."
+   ],
+   "stop": [
+    "Le pied libre touche le sol",
+    "Tu t'aides des mains",
+    "Tu rates le bip 2 fois de suite"
+   ],
+   "securite": "Genou dans l'axe du pied. Gêne au genou : arrête et appuie sur « Je ne peux pas ».",
+   "pourquoi": "Remplace le saut sans impact : l'écart entre tes deux jambes reste visible.",
+   "fiabilite": "Test de terrain moins étudié que le saut. Il sert surtout à comparer tes deux jambes et à te comparer à toi-même.",
+   "source": "Adaptation du test assis-debout unipodal utilisé en rééducation du genou"
+  },
+  {
+   "id": "squat-e1rm",
+   "nom": "Squat : ton max estimé",
+   "court": "Squat max",
+   "mesure": "Ta charge maximale sur 1 rep, estimée sans la tenter",
+   "mode": "force",
+   "lift": "squat",
+   "unite": "kg",
+   "cotes": false,
+   "mdcPct": 5,
+   "anim": "t_boxsquat",
+   "materiel": [
+    "Rack avec barres de sécurité",
+    "Barre et disques",
+    "Un banc ou une box derrière toi, à hauteur de parallèle"
+   ],
+   "etapes": [
+    "Règle les barres de sécurité juste sous ta position basse.",
+    "Place la box derrière toi : tes fesses la touchent quand tes cuisses sont à l'horizontale.",
+    "Échauffe-toi avec les séries que l'appli calcule.",
+    "Série test : environ 5 reps. Arrête quand il ne t'en reste qu'une, ou dès que la technique lâche."
+   ],
+   "stop": [
+    "Le dos s'arrondit",
+    "Les talons décollent",
+    "Tu ne touches plus la box"
+   ],
+   "securite": "Jamais sans barres de sécurité. Jamais jusqu'à l'échec : il doit toujours t'en rester une.",
+   "pourquoi": "Nathan calcule tes charges de squat en % de ce chiffre.",
+   "fiabilite": "Formule d'Epley sur 3 à 8 reps : environ ±5 %. Ton estimation des reps en réserve se trompe d'environ 1 rep.",
+   "source": "Epley 1985 ; Reynolds et al. JSCR 2006 ; Moses (Wintec) ; étude RIR au squat, 2025"
+  },
+  {
+   "id": "sdt-e1rm",
+   "nom": "Soulevé de terre : ton max estimé",
+   "court": "Soulevé max",
+   "mesure": "Ta charge maximale sur 1 rep, estimée sans la tenter",
+   "mode": "force",
+   "lift": "sdt",
+   "unite": "kg",
+   "cotes": false,
+   "mdcPct": 5,
+   "anim": "deadlift",
+   "materiel": [
+    "Barre (ou trap bar, toujours la même) et disques"
+   ],
+   "etapes": [
+    "Toujours la même barre d'un test à l'autre : c'est Nathan qui la choisit.",
+    "Échauffe-toi avec les séries que l'appli calcule.",
+    "Série test : environ 5 reps, en reposant la barre au sol à chaque rep.",
+    "Arrête quand il ne t'en reste qu'une, ou dès que la technique lâche."
+   ],
+   "stop": [
+    "Le dos s'arrondit",
+    "La barre s'éloigne des jambes",
+    "Tu donnes un à-coup pour décoller"
+   ],
+   "securite": "Dos plat du début à la fin. Au moindre arrondi, la série s'arrête là.",
+   "pourquoi": "Nathan calcule tes charges de soulevé de terre en % de ce chiffre.",
+   "fiabilite": "Les formules sous-estiment un peu le soulevé de terre (jusqu'à 5 à 10 % à partir de 5 reps) : c'est une marge de sécurité.",
+   "source": "Epley 1985 ; Moses (Wintec) ; LeSuer et al. JSCR 1997"
+  },
+  {
+   "id": "genou-mur",
+   "nom": "Genou au mur",
+   "court": "Cheville",
+   "mesure": "La souplesse de ta cheville en charge",
+   "mode": "saisie",
+   "unite": "cm",
+   "cotes": true,
+   "essais": 3,
+   "pas": 0.5,
+   "min": 0,
+   "max": 25,
+   "mdc": 2,
+   "asym": 2,
+   "repere": {
+    "min": 10,
+    "txt": "10 cm et plus"
+   },
+   "anim": "t_kneewall",
+   "materiel": [
+    "Un mur",
+    "Mètre ruban scotché au sol, le 0 contre le mur"
+   ],
+   "etapes": [
+    "Pieds nus, face au mur, le pied à tester le long du mètre.",
+    "L'autre pied derrière. Pousse le genou avant contre le mur.",
+    "Talon collé au sol, genou dans l'axe du 2e orteil.",
+    "Recule le pied jusqu'à la distance max où le genou touche encore. Lis la distance gros orteil – mur."
+   ],
+   "stop": [
+    "Le talon décolle",
+    "Le genou part vers l'intérieur"
+   ],
+   "saisie": "Ta meilleure distance, en cm",
+   "securite": "Tu dois sentir un étirement dans le mollet, pas une douleur devant la cheville.",
+   "pourquoi": "Une cheville raide oblige le genou à compenser en descente et en réception.",
+   "fiabilite": "Très fiable (ICC 0,80 à 0,99). Un changement de moins de 2 cm n'est pas réel.",
+   "source": "Powden et al., Man Ther 2015 (revue systématique)"
+  },
+  {
+   "id": "thomas",
+   "nom": "Test de Thomas",
+   "court": "Hanche avant",
+   "mesure": "La souplesse de l'avant de ta hanche (psoas), très sollicité à vélo",
+   "mode": "angle",
+   "signe": true,
+   "unite": "°",
+   "cotes": true,
+   "essais": 2,
+   "mdc": 5,
+   "asym": 6,
+   "repere": {
+    "min": 0,
+    "txt": "Cuisse à l'horizontale ou plus bas (0° et plus)"
+   },
+   "anim": "t_thomas",
+   "materiel": [
+    "Une table solide (ton pied ne doit pas toucher le sol)",
+    "Brassard ou élastique pour fixer le téléphone"
+   ],
+   "montage": "Fixe le téléphone sur le dessus de la cuisse testée, le haut du téléphone vers le genou (le sens de l'écran ne compte pas).",
+   "etapes": [
+    "Assis tout au bord de la table, la cuisse testée posée à plat : l'appli prend le zéro.",
+    "Au bip, ramène l'autre genou contre ta poitrine avec tes mains et bascule sur le dos.",
+    "Bas du dos plaqué sur la table. La jambe testée pend, relâchée.",
+    "Ne bouge plus : l'appli bipe quand elle a mesuré."
+   ],
+   "stop": [
+    "Le bas du dos se décolle",
+    "Le pied de la jambe testée touche le sol"
+   ],
+   "securite": "Aucun effort : tu te laisses pendre. Gêne dans l'aine : arrête.",
+   "pourquoi": "Une hanche raide devant tire le bassin vers l'avant et fatigue le bas du dos sur le vélo.",
+   "fiabilite": "Fiable à l'inclinomètre, bassin verrouillé par le genou serré (ICC ≈ 0,9). L'appli mesure la rotation de la cuisse depuis le zéro pris assis : la position du téléphone sur la cuisse ne compte pas, seul le haut vers le genou sert au signe.",
+   "source": "Clapis et al., Physiother Theory Pract 2008"
+  },
+  {
+   "id": "rotation-interne-hanche",
+   "nom": "Rotation interne de hanche",
+   "court": "Rotation hanche",
+   "mesure": "La rotation de ta hanche vers l'intérieur",
+   "mode": "angle",
+   "unite": "°",
+   "cotes": true,
+   "essais": 2,
+   "mdc": 6,
+   "asym": 8,
+   "repere": {
+    "min": 30,
+    "txt": "30° et plus"
+   },
+   "anim": "t_hipir",
+   "materiel": [
+    "La même table",
+    "Brassard ou élastique"
+   ],
+   "montage": "Fixe le téléphone sur le tibia : n'importe quel sens, l'appli mesure la rotation depuis le zéro.",
+   "etapes": [
+    "Assis au bord de la table, cuisses posées, genoux pliés à 90°, mains sur la table.",
+    "Jambe verticale et immobile : l'appli prend le zéro.",
+    "Sans bouger la cuisse, envoie le pied vers l'extérieur le plus loin possible.",
+    "Tiens 2 s au bout : bip = mesuré. Reviens au centre."
+   ],
+   "stop": [
+    "La fesse se soulève",
+    "Le genou glisse sur le côté"
+   ],
+   "securite": "Mouvement lent, sans élan. Gêne dans le genou : arrête.",
+   "pourquoi": "Une hanche qui tourne mal fait travailler le genou en torsion à la réception.",
+   "fiabilite": "Téléphone contre système 3D : bon en rotation interne (ICC 0,81 à 0,94). La rotation externe assis n'est pas assez fiable, on ne la mesure pas.",
+   "source": "BMC Musculoskelet Disord 2021 (applis smartphone contre analyse 3D)"
+  },
+  {
+   "id": "jambe-tendue",
+   "nom": "Jambe tendue levée",
+   "court": "Ischios",
+   "mesure": "La souplesse de l'arrière de ta cuisse",
+   "mode": "angle",
+   "unite": "°",
+   "cotes": true,
+   "essais": 2,
+   "mdc": 6,
+   "asym": 8,
+   "repere": {
+    "min": 70,
+    "txt": "70° et plus"
+   },
+   "anim": "t_aslr",
+   "materiel": [
+    "Un tapis au sol",
+    "Brassard ou élastique"
+   ],
+   "montage": "Fixe le téléphone sur le devant du tibia : n'importe quel sens, l'appli mesure la rotation depuis le zéro.",
+   "etapes": [
+    "Allongé sur le dos, jambes tendues au sol, bras le long du corps.",
+    "Jambe au sol et immobile : l'appli prend le zéro.",
+    "Lève la jambe tendue le plus haut possible, pointe de pied vers toi.",
+    "Tiens 2 s en haut : bip = mesuré. Redescends."
+   ],
+   "stop": [
+    "Le genou se plie",
+    "L'autre jambe décolle du sol"
+   ],
+   "securite": "Étirement franc, jamais de douleur ni de fourmillement dans la jambe.",
+   "pourquoi": "Des ischios raides limitent ta foulée en descente et tirent sur le bas du dos à vélo.",
+   "fiabilite": "Très fiable au smartphone (ICC ≥ 0,82 ; erreur ≈ 3°). Mesure faite seul : même principe, pas encore validée telle quelle.",
+   "source": "J Bodyw Mov Ther 2024 (jambe tendue mesurée à l'iPhone)"
+  },
+  {
+   "id": "flexion-epaule",
+   "nom": "Bras levé au-dessus de la tête",
+   "court": "Épaule haut",
+   "mesure": "L'amplitude de ton épaule quand tu lèves le bras",
+   "mode": "angle",
+   "unite": "°",
+   "cotes": true,
+   "essais": 2,
+   "mdc": 8,
+   "asym": 10,
+   "repere": {
+    "min": 165,
+    "txt": "165° et plus"
+   },
+   "anim": "t_shflex",
+   "materiel": [
+    "Un tapis au sol",
+    "Brassard ou élastique"
+   ],
+   "montage": "Fixe le téléphone sur l'avant-bras : n'importe quel sens, l'appli mesure la rotation depuis le zéro.",
+   "etapes": [
+    "Allongé sur le dos, genoux pliés, pieds au sol.",
+    "Bras tendu le long du corps, pouce vers le plafond : l'appli prend le zéro.",
+    "Monte le bras tendu au-dessus de la tête, le plus près possible du sol.",
+    "Bas du dos collé au sol. Tiens 2 s : bip = mesuré."
+   ],
+   "stop": [
+    "Le bas du dos se creuse",
+    "Le coude se plie"
+   ],
+   "securite": "Amplitude sans douleur. Si l'épaule pince, arrête là : c'est ta mesure.",
+   "pourquoi": "Une épaule qui monte mal compense avec le bas du dos, et encaisse moins bien une chute.",
+   "fiabilite": "Applis inclinomètre à l'épaule : bonne reproductibilité (ICC > 0,75 dans la plupart des études).",
+   "source": "Werner et al., J Shoulder Elbow Surg 2014 ; Keogh et al., PLoS One 2019 (revue)"
+  },
+  {
+   "id": "rotation-externe-epaule",
+   "nom": "Rotation externe d'épaule",
+   "court": "Épaule rotation",
+   "mesure": "La rotation de ton épaule vers l'extérieur, coude au corps",
+   "mode": "angle",
+   "unite": "°",
+   "cotes": true,
+   "essais": 2,
+   "mdc": 8,
+   "asym": 10,
+   "repere": {
+    "min": 60,
+    "txt": "60° et plus"
+   },
+   "anim": "t_sher",
+   "materiel": [
+    "Un tapis au sol",
+    "Brassard ou élastique"
+   ],
+   "montage": "Fixe le téléphone sur l'avant-bras : n'importe quel sens, l'appli mesure la rotation depuis le zéro.",
+   "etapes": [
+    "Allongé sur le dos, genoux pliés, coude collé au corps, plié à 90°.",
+    "Avant-bras vertical, main vers le plafond : l'appli prend le zéro.",
+    "Laisse descendre la main vers l'extérieur, vers le sol, coude toujours collé.",
+    "Tiens 2 s au plus loin : bip = mesuré."
+   ],
+   "stop": [
+    "Le coude s'écarte du corps",
+    "L'épaule décolle du sol"
+   ],
+   "securite": "Bras le long du corps : c'est la position la plus sûre pour l'épaule. Douleur : arrête.",
+   "pourquoi": "Des rotateurs d'épaule mobiles protègent l'épaule quand tu tends le bras dans une chute.",
+   "fiabilite": "Applis inclinomètre à l'épaule : bonne reproductibilité (ICC > 0,75 dans la plupart des études).",
+   "source": "Werner et al., J Shoulder Elbow Surg 2014 ; Keogh et al., PLoS One 2019 (revue)"
+  },
+  {
+   "id": "squat-bras-leves",
+   "nom": "Squat bras levés (overhead squat)",
+   "court": "Squat bras levés",
+   "mesure": "La mobilité de toute la chaîne ensemble : chevilles, hanches, haut du dos, épaules",
+   "mode": "video",
+   "unite": "/4",
+   "cotes": false,
+   "mdc": 1,
+   "repere": {
+    "min": 4,
+    "txt": "4 critères sur 4"
+   },
+   "anim": "t_ohsquat",
+   "materiel": [
+    "Un manche à balai ou un bâton",
+    "Ton téléphone posé de profil à 2-3 m, à hauteur de hanche"
+   ],
+   "etapes": [
+    "Pieds nus, pieds largeur d'épaules, orteils vers l'avant.",
+    "Bâton au-dessus de la tête, bras tendus, coudes verrouillés.",
+    "Descends le plus bas possible, lentement, puis remonte. 5 reps.",
+    "L'appli filme, puis tu revois la vidéo et tu coches 4 critères."
+   ],
+   "stop": [
+    "Les pieds tournent vers l'extérieur",
+    "Tu plies les coudes"
+   ],
+   "criteres": [
+    {
+     "k": "cuisses",
+     "txt": "Cuisses sous l'horizontale en bas",
+     "pb": "profondeur de squat limitée"
+    },
+    {
+     "k": "talons",
+     "txt": "Talons collés au sol tout le long",
+     "pb": "talons qui décollent"
+    },
+    {
+     "k": "buste",
+     "txt": "Buste parallèle au tibia, ou plus droit",
+     "pb": "buste qui plonge vers l'avant"
+    },
+    {
+     "k": "baton",
+     "txt": "Bâton au-dessus des pieds, pas devant",
+     "pb": "bras qui tombent vers l'avant"
+    }
+   ],
+   "securite": "Aucune charge, amplitude sans douleur. Épaule qui pince : arrête et appuie sur « Je ne peux pas ».",
+   "pourquoi": "Un seul mouvement montre où ça coince : chevilles (talons), hanches (profondeur), haut du dos et épaules (bâton qui part devant).",
+   "fiabilite": "Test visuel : c'est pour ça qu'on le filme et qu'on juge 4 critères oui/non sur la vidéo de profil, au lieu d'une note de 0 à 3. Nathan reçoit la vidéo et peut corriger. Il ne prédit pas les blessures : il sert à choisir les exercices de mobilité.",
+   "source": "Critères du squat bras levés du FMS (Cook et al., 2006) ; revue Sports (MDPI) 2025 sur sa valeur prédictive"
+  },
+  {
+   "id": "unipodal-yeux-fermes",
+   "nom": "Sur une jambe, yeux fermés",
+   "court": "Équilibre",
+   "mesure": "Ta proprioception : l'équilibre sans l'aide des yeux",
+   "mode": "chrono",
+   "unite": "s",
+   "cotes": true,
+   "essais": 3,
+   "max": 45,
+   "mdc": 8,
+   "repere": {
+    "txt": "Moyenne des 18-39 ans : environ 13 s"
+   },
+   "anim": "t_slseyes",
+   "materiel": [
+    "Sol dur, pieds nus"
+   ],
+   "etapes": [
+    "Pieds nus. Croise les bras, téléphone contre la poitrine, pouce sur l'écran.",
+    "Lève un pied à hauteur de la cheville, sans la toucher.",
+    "Au bip, ferme les yeux.",
+    "Touche l'écran dès que tu perds la position."
+   ],
+   "stop": [
+    "Le pied levé touche le sol ou l'autre jambe",
+    "Le pied d'appui bouge",
+    "Tu ouvres les yeux",
+    "Tes bras se décroisent"
+   ],
+   "securite": "Fais-le à côté d'un mur, sans rien autour qui puisse te blesser.",
+   "pourquoi": "Après une entorse, c'est souvent ce sens-là qui manque, bien plus que la force.",
+   "fiabilite": "Simple et reproductible, mais variable d'un essai à l'autre : on garde le meilleur des 3.",
+   "source": "Springer et al., J Geriatr Phys Ther 2007"
+  },
+  {
+   "id": "mollet-unipodal",
+   "nom": "Montées sur pointe, une jambe",
+   "court": "Mollet",
+   "mesure": "L'endurance de ton mollet et de ton tendon d'Achille",
+   "mode": "metronome",
+   "unite": "reps",
+   "cotes": true,
+   "periode": 2,
+   "mots": [
+    "Monte",
+    "Descends"
+   ],
+   "max": 70,
+   "mdc": 6,
+   "asymPct": 90,
+   "repere": {
+    "min": 25,
+    "txt": "25 et plus"
+   },
+   "anim": "t_heelraise",
+   "materiel": [
+    "Un mur",
+    "Sol plat, pieds nus"
+   ],
+   "etapes": [
+    "Pieds nus, sur une jambe, le bout des doigts contre le mur.",
+    "Téléphone dans l'autre main.",
+    "Au bip aigu, monte le plus haut possible. Au bip grave, redescends.",
+    "Touche l'écran quand tu ne peux plus suivre."
+   ],
+   "stop": [
+    "Tu ne montes plus aussi haut 2 fois de suite",
+    "Le genou plie",
+    "Tu t'appuies sur le mur",
+    "Tu rates le bip 2 fois"
+   ],
+   "securite": "Gêne au tendon d'Achille : arrête et appuie sur « Je ne peux pas ».",
+   "pourquoi": "Le mollet encaisse chaque appui en trail et chaque relance à vélo.",
+   "fiabilite": "Très fiable (ICC 0,90 à 0,96 ; erreur ≈ 2 reps).",
+   "source": "Hébert-Losier et al., Physiotherapy 2017 ; CISS 2023 (protocole à 60 bpm)"
+  },
+  {
+   "id": "pont-unipodal",
+   "nom": "Pont sur une jambe",
+   "court": "Pont 1 jambe",
+   "mesure": "L'endurance de tes fessiers et ischios, jambe par jambe",
+   "mode": "metronome",
+   "unite": "reps",
+   "cotes": true,
+   "periode": 2,
+   "mots": [
+    "Monte",
+    "Descends"
+   ],
+   "max": 70,
+   "mdc": 5,
+   "asymPct": 90,
+   "repere": {
+    "min": 25,
+    "txt": "25 et plus (moins de 20 : faible)"
+   },
+   "anim": "t_slbridge",
+   "materiel": [
+    "Une box ou une chaise d'environ 60 cm (toujours la même)",
+    "Un tapis"
+   ],
+   "etapes": [
+    "Sur le dos, un talon sur la box, genou presque tendu.",
+    "Autre cuisse verticale, bras croisés, téléphone posé à côté de ta main.",
+    "Au bip aigu, monte les fesses jusqu'à l'alignement épaules-hanche-genou. Au bip grave, touche le sol.",
+    "Touche l'écran quand tu ne montes plus jusqu'en haut."
+   ],
+   "stop": [
+    "Les hanches ne montent plus en haut 2 fois de suite",
+    "L'autre jambe bouge pour aider",
+    "Tu rates le bip 2 fois"
+   ],
+   "securite": "Crampe à l'ischio : arrête, c'est ta mesure du jour.",
+   "pourquoi": "Mesure l'endurance de la chaîne arrière qui tient ta position sur le vélo et ta foulée.",
+   "fiabilite": "Fiable (ICC 0,77 à 0,91). Il mesure fessiers + ischios ensemble, pas les ischios seuls.",
+   "source": "Freckleton et al., BJSM 2014 ; IJSPT 2024"
+  }
+ ]
+}

@@ -93,3 +93,30 @@ Champs d'un item : `ex` (id du catalogue, obligatoire) · `reps` ou `duree` (s) 
 `nom` (remplace le nom du catalogue) · `note` (précision de Nathan).
 
 `focus` (fichier athlète, facultatif) : zones à travailler en priorité dans les routines Récup & mobilité (mêmes valeurs que `zones` des fiches).
+
+## Charges en % du max estimé
+
+Un item de bloc `series` peut être prescrit en % du max estimé (1RM calculé par les tests) :
+
+```json
+{"ex": "squat-barre", "series": 4, "reps": 5, "pct": 80, "base": "squat", "charge": 60, "e1rm": 75, "e1rmDate": "2026-09-10", "pas": 5, "rpe": 8}
+```
+
+`base` = `squat` ou `sdt` (soulevé de terre). `charge` = les kilos calculés par `python3 coach.py charge <code> <base> <pct>` (arrondi à 2,5 kg en dessous), qui donne aussi `e1rm` et `e1rmDate`.
+Si l'athlète a refait son test sur son téléphone après `e1rmDate`, l'appli recalcule la charge depuis son nouveau max. L'ajustement au RPE reste actif.
+
+## Tests — `data/tests.json` et bloc `test`
+
+La batterie est décrite dans `data/tests.json` (protocole, mode de mesure, erreur de mesure `mdc`, seuils d'écart `asym`/`asymPct`, repère, sources).
+Modes : `saisie` (mètre), `angle` (capteur du téléphone), `chrono`, `metronome` (reps comptées par l'appli), `force` (max estimé, formule d'Epley), `video` (filmé puis critères oui/non).
+
+Une séance de tests contient un bloc de type `test` :
+
+```json
+{"nom": "Tests", "type": "test", "items": [{"test": "saut-unipodal"}, {"test": "squat-e1rm", "e1rm": 75, "e1rmDate": "2026-09-10"}, {"test": "sdt-e1rm", "variante": "trap"}]}
+```
+
+`variante` (soulevé de terre) : `trap` ou `classique`. `e1rm` sert à proposer la charge de la série test.
+Ne l'écris pas à la main : `python3 coach.py batterie <code> A|B <date>` construit la séance selon le profil privé de l'athlète.
+
+Les résultats restent sur le téléphone (« Ma fiche ») et partent dans le message de fin, avec une ligne `FICHE …` que `coach.py fiche-ajoute` range dans `prive/fiches/<code>.json` (jamais publié : `prive/` est dans `.gitignore`).

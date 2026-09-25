@@ -6,6 +6,7 @@ const pw = require('playwright');
   const b = await pw[engine].launch(opts);
   const dev = engine === 'webkit' ? pw.devices['iPhone 13'] : pw.devices['Pixel 7'];
   const ctx = await b.newContext({...dev});
+  await ctx.addInitScript(()=>{ try{ localStorage.setItem('cu.installVu','1'); }catch(e){} });   // l'écran d'installation ne s'affiche qu'une fois
   const p = await ctx.newPage();
   const errs = []; p.on('pageerror', e=>errs.push(e.message));
   await p.goto('http://localhost:8765/?a=demo'); await p.waitForTimeout(2500);

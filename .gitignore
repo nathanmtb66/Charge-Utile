@@ -1,0 +1,5 @@
+# fiches athlètes : résultats de tests et profils, uniquement sur le Mac de Nathan (jamais publiés)
+prive/
+# rendus de contrôle
+qa/out/
+dist/

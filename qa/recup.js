@@ -2,7 +2,9 @@
 const { chromium, devices } = require('playwright');
 (async()=>{
   const b = await chromium.launch({args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader']});
-  const p = await (await b.newContext({...devices['iPhone 13']})).newPage();
+  const ctx = await b.newContext({...devices['iPhone 13']});
+  await ctx.addInitScript(()=>{ try{ localStorage.setItem('cu.installVu','1'); }catch(e){} });
+  const p = await ctx.newPage();
   const errs = []; p.on('pageerror', e=>errs.push('PAGEERR '+e.message)); p.on('console', m=>{ if(m.type()==='error') errs.push(m.text()); });
   const ev = s => p.evaluate(s => { const e = document.querySelector(s); if(e){ e.click(); return true; } return false; }, s);
   const shot = async n => p.screenshot({path:`qa/out/r_${n}.png`});

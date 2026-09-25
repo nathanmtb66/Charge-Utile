@@ -3,7 +3,8 @@ import json, glob, os, sys, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'docs')
 ex = {x['id']: x for x in json.load(open(os.path.join(SITE, 'data', 'exercises.json')))}
-BT = {'cardio', 'circuit', 'series', 'libre'}
+BT = {'cardio', 'circuit', 'series', 'libre', 'test'}
+TESTS = {t['id']: t for t in json.load(open(os.path.join(SITE, 'data', 'tests.json')))['tests']}
 files = sys.argv[1:] or sorted(glob.glob(os.path.join(SITE, 'data', 'sessions', '*.json')))
 errs = []
 for f in files:
@@ -25,6 +26,14 @@ for f in files:
             if b.get('type') not in BT: W(f"bloc « {b.get('nom')} » : type inconnu {b.get('type')}")
             if b.get('type') == 'libre':
                 continue
+            if b.get('type') == 'test':
+                if not b.get('items'): W(f"bloc « {b.get('nom')} » vide")
+                for it in b.get('items', []):
+                    t = TESTS.get(it.get('test'))
+                    if not t: W(f"test inconnu « {it.get('test')} »"); continue
+                    if it.get('variante') not in (None, 'trap', 'classique'): W(f"« {it['test']} » : variante trap ou classique")
+                    if 'e1rm' in it and not isinstance(it['e1rm'], (int, float)): W(f"« {it['test']} » : e1rm doit être un nombre")
+                continue
             if not b.get('items'): W(f"bloc « {b.get('nom')} » vide")
             for it in b.get('items', []):
                 x = ex.get(it.get('ex'))
@@ -35,5 +44,8 @@ for f in files:
                 if b['type'] == 'cardio' and not it.get('duree'): W(f"« {it['ex']} » : un bloc cardio se donne en durée")
                 if 'tempo' in it and (len(it['tempo']) != 4 or not all(str(v) == 'X' or str(v).isdigit() for v in it['tempo'])): W(f"« {it['ex']} » : tempo invalide")
                 if it.get('rpe') is not None and not (1 <= it['rpe'] <= 10): W(f"« {it['ex']} » : rpe hors 1-10")
+                if 'pct' in it or 'base' in it:
+                    if it.get('base') not in ('squat', 'sdt') or not isinstance(it.get('pct'), (int, float)) or not 30 <= it['pct'] <= 100: W(f"« {it['ex']} » : pct (30-100) et base (squat|sdt) vont ensemble")
+                    if not isinstance(it.get('charge'), (int, float)): W(f"« {it['ex']} » : en % du max, écris aussi la charge calculée en kg")
 if errs: print('\n'.join(errs)); sys.exit(1)
 print(f'{len(files)} fichier(s) de séances OK')

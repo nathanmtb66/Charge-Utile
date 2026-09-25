@@ -5,7 +5,7 @@ import json, os, subprocess, hashlib, base64, re, sys, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'docs'); DIST = os.path.join(ROOT, 'dist')
 run = lambda *a: subprocess.run(a, cwd=ROOT, check=True)
-run('python3', 'tools/build_catalog.py')
+run('python3', 'tools/build_catalog.py', '--sans-anims')   # 1re passe : fusionne, sans vérifier les anims (la liste est refaite juste après)
 run('node', 'tools/anims.js')
 run('python3', 'tools/build_catalog.py')   # 2e passe : vérifie aussi que chaque anim existe
 run('python3', 'tools/check_sessions.py')
@@ -20,7 +20,7 @@ cat = open(os.path.join(SITE, 'catalogue.template.html')).read().replace('<!--MO
 open(os.path.join(SITE, 'catalogue.html'), 'w').write(cat)
 
 assets = ['./', 'index.html', 'catalogue.html', 'manifest.webmanifest', 'css/app.css', 'js/three.min.js', 'js/body.js', 'js/engine.js', 'js/app.js',
-          'data/exercises.json'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
+          'data/exercises.json', 'data/tests.json'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
 h = hashlib.sha1()
 for a in assets:
     p = os.path.join(SITE, 'index.html' if a == './' else a); h.update(open(p, 'rb').read())
@@ -37,7 +37,7 @@ def font_inline(m):
 css = re.sub(r"url\(\.\./fonts/([^)]+)\)", font_inline, css)
 js = lambda p: open(os.path.join(SITE, p)).read().replace('</script', '<\\/script')
 sessions = {os.path.basename(f)[:-5]: json.load(open(f)) for f in glob.glob(os.path.join(SITE, 'data', 'sessions', '*.json'))}
-data = {'exercises': json.load(open(os.path.join(SITE, 'data', 'exercises.json'))), 'sessions': sessions, 'defaultCode': 'demo'}
+data = {'exercises': json.load(open(os.path.join(SITE, 'data', 'exercises.json'))), 'tests': json.load(open(os.path.join(SITE, 'data', 'tests.json'))), 'sessions': sessions, 'defaultCode': 'demo'}
 parts = ['<title>Charge Utile</title>', '<meta name="theme-color" content="#0B0E11">', f'<style>{css}</style>', body,
          f'<script>window.CU_DATA = {json.dumps(data, ensure_ascii=False)};try{{if(!localStorage.getItem("cu.code"))localStorage.setItem("cu.code",JSON.stringify("demo"))}}catch(e){{}}</script>']
 for p in ['js/three.min.js', 'js/body.js', 'js/engine.js'] + [f'moves/{m}.js' for m in moves] + ['js/app.js']:

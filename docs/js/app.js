@@ -17,7 +17,9 @@ const ICO = {
   mute:'<path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 9l5 6M22 9l-5 6"/>',
   chev:'<path d="M9 5l7 7-7 7"/>',
   knee:'<path d="M9 3v7c0 2 1 3 3 3s3 1 3 3v5"/><circle cx="12" cy="13" r="2.2"/>',
-  dl:'<path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/>'
+  dl:'<path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/>',
+  phone:'<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
+  chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'
 };
 const ico = (n, cls='ico') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICO[n]}</svg>`;
 const Q = new URLSearchParams(location.search);
@@ -34,11 +36,12 @@ const Store = {
 
 /* ============ données ============ */
 const Data = {
-  ex: {}, list: [], book: null,
+  ex: {}, list: [], book: null, tests: {},
   async load(code){
     const inline = window.CU_DATA;
     const exs = inline ? inline.exercises : await (await fetch('data/exercises.json')).json();
     this.list = exs; this.ex = {}; exs.forEach(x => this.ex[x.id] = x);
+    try{ const t = inline ? inline.tests : await (await fetch('data/tests.json')).json(); this.tests = {}; ((t && t.tests) || []).forEach(x => this.tests[x.id] = x); }catch(e){ this.tests = {}; }
     if(!code){ this.book = null; return; }
     if(inline){ this.book = inline.sessions[code] || null; return; }
     try{
@@ -406,11 +409,32 @@ function breathCue(it){
 const holdLabel = it => (it.famille === 'etirement' || it.famille === 'gainage' || STATIC.has(it.anim) || (it.famille === 'proprio' && it.kind === 'hold')) ? 'Tiens la position' : it.famille === 'mobilite' ? 'Suis le mouvement' : 'Continue';
 const qKind = it => it.progression ? 'level' : it.dur ? (it.kind === 'effort' ? 'effort' : it.kind === 'plyo' ? 'plyo' : 'hold') : (it.kind === 'plyo' ? 'plyo' : it.kind === 'effort' ? 'effort' : 'reps');
 
+/* ============ fiche de tests locale : sert au lecteur et au calcul des charges en % du max ============ */
+const D2R = Math.PI/180;
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
+const r25 = v => Math.max(0, Math.floor(v/2.5 + 1e-9)*2.5);           // arrondi à 2,5 kg en dessous
+const fKey = () => 'fiche.' + (Store.get('code') || 'x');
+const ficheAll = () => Store.get(fKey(), []);
+/** dernier max estimé connu : celui du téléphone (test refait par l'athlète) ou celui écrit par Nathan dans la séance, le plus récent gagne */
+function e1rmFor(lift, src){
+  const id = lift === 'squat' ? 'squat-e1rm' : 'sdt-e1rm';
+  const loc = ficheAll().filter(e => e.test === id && e.v && !e.v.skip && e.v.e1rm).sort((a,b) => a.date.localeCompare(b.date)).pop();
+  const a = loc ? {e1rm: +loc.v.e1rm, date: loc.date, local: true} : null;
+  const b = src && src.e1rm ? {e1rm: +src.e1rm, date: src.e1rmDate || '0', local: false} : null;
+  if(a && b) return a.date > b.date ? a : b;
+  return a || b;
+}
+
 /* ============ moteur de séance ============ */
 function buildItem(src){
   const x = Data.ex[src.ex] || {nom:src.ex, anim:'squat', type:'reps'};
   const m = (typeof Rig !== 'undefined' && Rig.META[x.anim]) || {};
-  const load = src.charge;
+  let load = src.charge, pctTxt = null;
+  // charge en % du max estimé : Nathan écrit pct + base (+ charge calculée) ; si l'athlète a refait son test depuis, le téléphone recalcule
+  if(src.pct && src.base){
+    const e = e1rmFor(src.base, src);
+    if(e){ if(e.local || typeof load !== 'number') load = r25(e.e1rm*src.pct/100); pctTxt = `${src.pct} % de ton max estimé (${kg(e.e1rm)} kg)`; }
+  }
   const tempoOk = typeof m.tempo === 'function' ? m.tempo(x.opts || {}) : m.tempo;
   return {
     id: src.ex, src, name: src.nom || x.nom, anim: x.anim, opts: x.opts || {}, kind: x.type || 'reps',
@@ -420,14 +444,21 @@ function buildItem(src){
     repsTodo: !!src.repsAConfirmer, cues: (src.consignes && src.consignes.length ? src.consignes : x.consignes) || [],
     why: x.pourquoi, breath: x.respiration, safety: x.securite, errors: x.erreurs || [], musclesTxt: x.musclesTxt, muscles: x.muscles,
     note: src.note, link: x.voirEnVrai, niveau: x.niveau || 1, famille: x.famille, progression: x.progression || null, tags: x.tags || [],
-    alts: (x.alternatives || []).map(id => Data.ex[id]).filter(a => a && a.valide !== false), cycle: m.cycle
+    alts: (x.alternatives || []).map(id => Data.ex[id]).filter(a => a && a.valide !== false), cycle: m.cycle, pctTxt
   };
+}
+/** un test de la batterie (bloc de type « test ») */
+function buildTestItem(src){
+  const d = Data.tests[src.test] || {id:src.test, nom:src.test, mode:'saisie', unite:'', cotes:false};
+  const anim = typeof Rig !== 'undefined' && d.anim && typeof Rig.P[d.anim] === 'function' ? d.anim : null;
+  return {id: src.test, src, test: d, kind:'test', name: src.nom || d.nom, anim, opts: d.opts || {}, sets: 1, cues: d.etapes || [], errors: [], alts: [],
+    note: src.note, famille: 'test', muscles: null, why: d.pourquoi, safety: d.securite, reps: null, dur: null};
 }
 function buildBlocks(sess){
   return sess.blocs.map(b => ({
     name: b.nom, type: ({series:'sets', libre:'free'})[b.type] || b.type,
     rounds: b.tours || 1, restEx: b.recupExo ?? 15, restRound: b.recupTour ?? 90, min: b.min, max: b.max, note: b.note, noRpe: !!b.noRpe,
-    items: (b.items || []).map(buildItem)
+    items: (b.items || []).map(b.type === 'test' ? buildTestItem : buildItem)
   }));
 }
 function buildSteps(blocks){
@@ -451,6 +482,7 @@ function buildSteps(blocks){
       }
     });
     if(b.type==='free') steps.push({t:'free', bi});
+    if(b.type==='test') b.items.forEach((it, ii)=> steps.push({t:'test', bi, ii, rest:0}));
   });
   return steps;
 }
@@ -461,10 +493,10 @@ const App = (()=>{
   const step = () => S.steps[S.i];
   const blk = st => S.blocks[(st||step()).bi];
   const item = st => { st = st || step(); const b = S.blocks[st.bi]; return b && b.items ? b.items[st.ii] : null; };
-  function clearTimers(){ clearInterval(cueTimer); clearInterval(tick); cueTimer = tick = null; }
+  function clearTimers(){ clearInterval(cueTimer); clearInterval(tick); cueTimer = tick = null; tClean(); }
   const on = (sel, fn) => { const n = $(sel); if(n) n.onclick = fn; };
   function layout({stage=false, page=false, panel=false, tools=true, live=false, top=true}){
-    $('#stage').hidden = !stage; $('#page').hidden = !page; $('#panel').hidden = !panel;
+    $('#stage').hidden = !stage; $('#page').hidden = !page; $('#panel').hidden = !panel; $('#panel').classList.remove('tpanel','tfill');
     $('#app').classList.toggle('live', live);
     $('#app').classList.toggle('home', !top);
     $('#btnQuit').classList.toggle('off', !tools); $('#btnInfo').classList.toggle('off', !tools);
@@ -496,6 +528,7 @@ const App = (()=>{
     return b.name;
   }
   function volume(it){
+    if(it.kind === 'test') return it.test.cotes ? 'gauche + droite' : (it.test.mode === 'force' ? 'série test' : '1 mesure');
     if(it.dur) return (it.dur >= 60 ? `${Math.round(it.dur/60)} min` : `${it.dur} s`) + (it.perSide ? ' / côté' : '');
     return `${it.reps}${it.alt ? ' alternés' : it.perSide ? ' / côté' : ''}`;
   }
@@ -505,6 +538,7 @@ const App = (()=>{
       b.rounds > 1 ? `${b.restRound >= 60 ? b.restRound/60 + ' min' : b.restRound + ' s'} entre les tours` : ''].filter(Boolean).join(' · ');
     if(b.type==='sets') return b.items.map(it=>`${it.sets} × ${volume(it)} ${it.name.toLowerCase()}`).join(' · ');
     if(b.type==='free') return `${b.min} à ${b.max} min`;
+    if(b.type==='test') return `${b.items.length} test${b.items.length > 1 ? 's' : ''} : ` + b.items.map(it => (it.test.court || it.name).toLowerCase()).join(', ');
     return b.items.map(it=>`${volume(it)} ${it.name.toLowerCase()}`).join(' + ');
   }
   const videoLink = it => it.link || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(it.name + ' exercice technique'));
@@ -535,6 +569,7 @@ const App = (()=>{
       ${resume ? `<button class="resume" id="resume">${ico('play')}<div><b>Reprendre ${esc(resume.titre)}</b><span>Là où tu t’es arrêté</span></div></button>` : ''}
       ${todo.length ? `<div class="slist">${todo.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
       <button class="recupbtn" id="recupB"><div><b>Récup &amp; mobilité</b><span>Étirements, mobilité, respiration · 5 à 20 min</span></div>${ico('chev')}</button>
+      ${ficheAll().length ? `<button class="recupbtn" id="ficheB"><div><b>Ma fiche</b><span>Tes tests datés : force, souplesse, symétrie</span></div>${ico('chev')}</button>` : ''}
       ${installCard()}
       <div id="offb"></div>
       ${done.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${done.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)} · RPE ${hist[s.id].srpe ?? '—'}</span></li>`).join('')}</ul>` : ''}
@@ -545,6 +580,7 @@ const App = (()=>{
     $$('.scard').forEach(b => b.onclick = ()=>{ SND.tap(); intro(list.find(s=>s.id===b.dataset.id)); });
     on('#resume', ()=>{ resumeSession(resume, prog); });
     on('#recupB', ()=>{ SND.tap(); recupHome(); });
+    on('#ficheB', ()=>{ SND.tap(); ficheScreen(); });
     on('#snd', ()=>{ SND.tap(); soundSheet(()=>{ const s = $('#snd'); if(s) s.textContent = `Sons : ${sndSummary()}`; }); });
     on('#chg', ()=>{ Store.del('code'); home(); });
     bindInstall();
@@ -656,6 +692,7 @@ const App = (()=>{
   }
   /* ---------- la séance en détail : tout est écrit, pour celui qui veut la faire sans guidage ---------- */
   function itemLine(it, b){
+    if(it.kind === 'test') return `<li><b>${esc(it.name)}</b><span>${esc(it.test.mesure || '')} · ${volume(it)}</span><em>${esc((it.test.materiel || []).join(' · '))}</em></li>`;
     const bits = [];
     if(b.type === 'sets' && it.sets > 1) bits.push(`${it.sets} séries`);
     bits.push(volume(it));
@@ -669,6 +706,7 @@ const App = (()=>{
     if(b.type === 'sets' && it.rest) extra.push(`Récup ${it.rest >= 60 ? (it.rest/60).toFixed(0).replace('.0','') + ' min' : it.rest + ' s'}`);
     if(it.progression) extra.push(`Niveau ${it.progression.nom.toLowerCase()}`);
     if(it.filmSet) extra.push(`Série ${it.filmSet} à filmer`);
+    if(it.pctTxt) extra.push(esc(it.pctTxt));
     if(it.note) extra.push(esc(it.note));
     return `<li><b>${esc(it.name)}</b><span>${bits.join(' · ')}</span>${extra.length ? `<em>${extra.join(' · ')}</em>` : ''}
       ${it.cues && it.cues.length ? `<u>${it.cues.map(c => esc(c)).join(' · ')}</u>` : ''}</li>`;
@@ -678,6 +716,7 @@ const App = (()=>{
     S.blocks.forEach((b, i) => {
       L.push(``, `${i+1}. ${b.name.toUpperCase()} — ${blockSummary(b)}`);
       (b.items || []).forEach(it => {
+        if(it.kind === 'test') return L.push(`- ${it.name} : ${volume(it)}`);
         const t = it.tempoTxt || it.tempo;
         L.push(`- ${it.name} : ${[b.type === 'sets' && it.sets > 1 ? it.sets + ' séries' : '', volume(it), loadTxt(it), it.rpe ? 'RPE ' + it.rpe : '',
           t ? 'tempo ' + t.join('-') : '', b.type === 'sets' && it.rest ? 'récup ' + it.rest + ' s' : ''].filter(Boolean).join(' · ')}`);
@@ -719,6 +758,7 @@ const App = (()=>{
     if(st.t==='reps') return prep();
     if(st.t==='rpe') return restScreen(Math.max(st.rest, 45), {round:true});
     if(st.t==='free') return freeScreen();
+    if(st.t==='test') return testIntro();
   }
   function next(){
     if(!S.done.includes(S.i)) S.done.push(S.i);
@@ -736,7 +776,7 @@ const App = (()=>{
   /* ================= CARTE DE BLOC ================= */
   function blockIntro(){
     clearTimers(); S.screen = 'blockintro';
-    const b = blk(); const first = b.items && b.items[0];
+    const b = blk(); const first = b.items && b.items[0] && b.items[0].anim ? b.items[0] : null;
     layout({stage: !!first, panel:true}); progress();
     if(first) Stage.setExo(first);
     head(`Bloc ${step().bi+1}/${S.blocks.length}`, b.name);
@@ -794,6 +834,7 @@ const App = (()=>{
       ${presc(it)}
       <p class="cue" id="cue">${esc(it.cues[0] || '')}</p>
       ${it.note ? `<p class="last">${esc(it.note)}</p>` : it.replaced ? `<p class="last">Remplace « ${esc(it.replaced)} »</p>` : tempoLine(it)}
+      ${it.pctTxt ? `<p class="last">${esc(it.pctTxt)}</p>` : ''}
       <p class="breathline">${esc(breathCue(it))}</p>
       ${it.progression ? `<p class="lvline">Niveau ${it.progression.niveau}/4 · ${esc(it.progression.nom)}</p>` : ''}`;
     stagger($('#panel'));
@@ -965,8 +1006,8 @@ const App = (()=>{
     if(o.round){ if(!S.done.includes(S.i)) S.done.push(S.i); S.i++; }
     const nst = step();
     const nb = nst ? blk(nst) : null, nit = nst ? item(nst) : null;
-    layout({stage: !!nit, panel:true}); progress();
-    if(nit) Stage.setExo(nit);
+    layout({stage: !!(nit && nit.anim), panel:true}); progress();
+    if(nit && nit.anim) Stage.setExo(nit);
     const newThing = !nst ? 'Fin de séance' : nst.t==='intro' ? nb.name : nit ? nit.name : nb.name;
     head('Récupération', nst && nst.t==='intro' ? `Ensuite : ${newThing}` : newThing);
     let rt = total, end = Date.now() + total*1000/SPEED;
@@ -1318,6 +1359,723 @@ const App = (()=>{
     upd();
   }
 
+
+  /* ================= TESTS : batterie en autonomie, résultats datés dans « Ma fiche » ================= */
+  const SIDE = {g:'Gauche', d:'Droite'};
+  const SIDEL = {g:'gauche', d:'droite'}, COTE = {g:'gauche', d:'droit'};
+  const n1 = v => v == null ? '—' : (Math.round(v*10)/10).toString().replace('.',',');
+  const unitTxt = u => u === '°' ? '°' : ' ' + u;
+  const valTxt = (v, u) => v == null ? '—' : `${n1(v)}${unitTxt(u)}`;
+  /** e1RM (Epley). reps + reps en réserve = reps possibles jusqu'à l'échec */
+  const epley = (kgv, reps, rir) => kgv * (1 + (reps + rir)/30);
+  /* ---------- fiche locale (sur le téléphone) ---------- */
+  function ficheAdd(test, v){
+    const all = ficheAll().filter(e => !(e.test === test && e.date === today()));
+    all.push({date: today(), test, v}); Store.set(fKey(), all.slice(-400));
+  }
+  const ficheOf = test => ficheAll().filter(e => e.test === test && !e.v.skip).sort((a,b) => a.date.localeCompare(b.date));
+  const latestE1rm = e1rmFor;
+  /* ---------- lecture d'un résultat : symétrie, repère, évolution ---------- */
+  const mainVal = (d, v) => d.cotes ? null : (d.mode === 'force' ? v.e1rm : v.val);
+  function asymOf(d, v){
+    if(!d.cotes || v.g == null || v.d == null) return null;
+    const lo = Math.min(v.g, v.d), hi = Math.max(v.g, v.d), weak = v.g < v.d ? 'g' : v.d < v.g ? 'd' : null;
+    if(d.asymPct){ const pct = hi > 0 ? lo/hi*100 : 100; return {weak, txt: weak ? `${SIDEL[weak]} à ${Math.round(pct)} %` : 'égalité', flag: pct < d.asymPct}; }
+    if(d.asym != null){ const diff = hi - lo; return {weak, txt:`écart ${n1(diff)}${unitTxt(d.unite)}`, flag: diff >= d.asym}; }
+    return {weak, txt:'', flag:false};
+  }
+  function trendOf(d, prev, now){
+    if(prev == null || now == null) return null;
+    const diff = now - prev, lim = d.mdcPct ? prev*d.mdcPct/100 : (d.mdc || 0);
+    if(Math.abs(diff) < lim) return {c:'st', t:'stable'};
+    return diff > 0 ? {c:'up', t:`+${n1(diff)}${unitTxt(d.unite)}`} : {c:'dn', t:`${n1(diff)}${unitTxt(d.unite)}`};
+  }
+  const lowRep = (d, x) => d.repere && d.repere.min != null && x != null && x < d.repere.min;
+  /** ce qui est « à travailler » dans un résultat (jamais de diagnostic, juste des chiffres) */
+  function flagsOf(d, v){
+    if(!v || v.skip) return [];
+    const f = [];
+    if(d.mode === 'video') return (d.criteres || []).filter(c => v[c.k] === 0).map(c => c.pb);
+    const a = asymOf(d, v); if(a && a.flag) f.push(`côté ${COTE[a.weak]} plus faible (${a.txt})`);
+    if(d.cotes){ const lo = ['g','d'].filter(s => lowRep(d, v[s])); if(lo.length) f.push(`${lo.length === 2 ? 'les deux côtés' : SIDEL[lo[0]]} sous le repère`); }
+    return f;
+  }
+  function resLine(d, v){
+    if(v.skip) return `non fait (${v.skip})`;
+    if(d.mode === 'video'){ const ko = (d.criteres || []).filter(c => v[c.k] === 0).map(c => c.pb); return `${v.score}/${(d.criteres || []).length}${ko.length ? ' (' + ko.join(', ') + ')' : ''}`; }
+    if(d.mode === 'force') return `${n1(v.e1rm)} kg estimés (${n1(v.kg)} kg × ${v.reps}, ${v.rir >= 3 ? '3+' : v.rir} en réserve${v.variante ? ', ' + v.variante : ''})`;
+    if(d.cotes) return `G ${valTxt(v.g, d.unite)} · D ${valTxt(v.d, d.unite)}`;
+    return valTxt(v.val, d.unite);
+  }
+  /** ligne machine, recopiée par Nathan : FICHE <code> <date> | test clé=valeur … */
+  function ficheLine(entries){
+    const code = Store.get('code') || '?';
+    const kv = (id, v) => v.skip ? `${id} skip=${v.skip.replace(/\s+/g,'-')}` : `${id} ` + Object.entries(v).filter(([k,x]) => x != null && typeof x !== 'object').map(([k,x]) => `${k}=${String(x).replace(/\s+/g,'-')}`).join(' ');
+    return `FICHE ${code} ${today()} | ` + entries.map(([id, v]) => kv(id, v)).join(' | ');
+  }
+
+  /* ---------- capteur d'inclinaison (angles au téléphone) ---------- */
+  /** direction du haut (opposé à la gravité) dans le repère du téléphone, depuis beta/gamma (convention W3C Z-X'-Y'').
+      Exacte pour toutes les orientations : près de beta = ±90°, gamma est mal défini mais son poids (cos beta) tend vers 0. */
+  const upVec = (b, g) => { const B = b*D2R, G = g*D2R; return [-Math.sin(G)*Math.cos(B), Math.sin(B), Math.cos(G)*Math.cos(B)]; };
+  /** angle entre deux directions : atan2(|u×v|, u·v), précis de 0 à 180° (acos perd en précision aux extrémités) */
+  const angBetween = (a, b) => { const c = [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];
+    return Math.atan2(Math.hypot(c[0], c[1], c[2]), a[0]*b[0] + a[1]*b[1] + a[2]*b[2])/D2R; };
+  const Tilt = {
+    on:false, u:null, last:0, fn:null,
+    async ask(){
+      try{ if(window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function'){ const r = await DeviceOrientationEvent.requestPermission(); if(r !== 'granted') return false; } }catch(e){ return false; }
+      return 'DeviceOrientationEvent' in window;
+    },
+    start(){
+      if(this.on) return; this.on = true; this.u = null; this.last = 0;
+      this.fn = e => { if(e.beta == null || e.gamma == null) return;
+        const v = upVec(e.beta, e.gamma), k = .3;
+        this.u = this.u ? this.u.map((x, i) => x + (v[i] - x)*k) : v;
+        const n = Math.hypot(...this.u); this.u = this.u.map(x => x/n); this.beta = e.beta; this.last = performance.now(); };
+      addEventListener('deviceorientation', this.fn);
+    },
+    stop(){ if(this.fn) removeEventListener('deviceorientation', this.fn); this.fn = null; this.on = false; },
+    fresh(){ return this.u && performance.now() - this.last < 1500; }
+  };
+  /* son des tests : toujours joué (le test en dépend), même si les bips de séance sont coupés */
+  function tbeep(f, d=.12, v=.26, when=0){ const a = audio(); if(!a) return; try{ const t = a.currentTime + when, o = a.createOscillator(), g = a.createGain();
+    o.frequency.setValueAtTime(f, t); o.connect(g); g.connect(a.destination); g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(v, t + .008); g.gain.exponentialRampToValueAtTime(.0001, t + d); o.start(t); o.stop(t + d + .03); }catch(e){} }
+  const TB = {count:()=>tbeep(640, .08, .22), go:()=>tbeep(1040, .25, .28), hi:()=>tbeep(1175, .13, .28), lo:()=>tbeep(523, .13, .28),
+    ok:()=>{ tbeep(880, .1, .26); tbeep(1320, .16, .26, .11); }, end:()=>{ tbeep(880, .12, .26); tbeep(1175, .2, .26, .13); }};
+
+  /* ---------- état du test en cours ---------- */
+  let TS = null;                                    // {it, d, v, cleanup}
+  function tClean(){ if(TS && TS.cleanup){ try{ TS.cleanup(); }catch(e){} TS.cleanup = null; } Tilt.stop(); const z = $('#tapzone'); if(z) z.remove(); }
+  function tStage(it, side){
+    if(!it.anim || !Stage.ok) return false;
+    Stage.setExo({...it, tempo:null, opts:{...(it.opts || {}), side: side === 'd' ? 'R' : 'L'}});
+    return true;
+  }
+  function tLayout(it, side, withStage=true){
+    const st = !!(withStage && it.anim && Stage.ok);
+    layout({stage: st, panel:true}); progress();
+    if(st) tStage(it, side);
+    $('#panel').classList.add('tpanel'); $('#panel').classList.toggle('tfill', !st);
+    return st;
+  }
+  const tKick = () => { const st = step(), b = blk(st); return `Test ${st.ii+1}/${b.items.length}`; };
+  function tVariante(it){ const v = it.src.variante; return v === 'trap' ? 'trap bar' : v === 'classique' ? 'barre classique' : v || null; }
+
+  /* ----- 1. présentation du test ----- */
+  function testIntro(){
+    clearTimers(); S.screen = 'test';
+    const st = step(), it = item(st), d = it.test;
+    S.tests = S.tests || {};
+    TS = {it, d, v: d.cotes ? {g:null, d:null} : {}};
+    tLayout(it, 'g');
+    head(tKick(), it.name);
+    const vari = tVariante(it);
+    $('#panel').innerHTML = `
+      <p class="tmes">${esc(d.mesure || '')}${vari ? ` · <b>${esc(vari)}</b>` : ''}</p>
+      <ol class="tsteps">${(d.etapes || []).map(e => `<li>${esc(e)}</li>`).join('')}</ol>
+      ${d.montage ? `<p class="tmont">${ico('phone','ico sm')}${esc(d.montage)}</p>` : ''}
+      ${d.stop && d.stop.length ? `<p class="tstop"><b>L’essai ne compte pas si</b> ${d.stop.map(esc).join(' · ').toLowerCase()}</p>` : ''}
+      ${d.avant ? `<p class="last">${esc(d.avant)}</p>` : ''}
+      ${it.note ? `<p class="last">${esc(it.note)}</p>` : ''}
+      <p class="tmat">${(d.materiel || []).map(m => `<span>${esc(m)}</span>`).join('')}</p>`;
+    stagger($('#panel'));
+    bar(`<div class="minor"><button id="skipT">${ico('pain')}Je ne peux pas</button></div><button class="primary" id="main">${ico('play')}${d.cotes ? 'Commencer · gauche' : 'Commencer'}</button>`);
+    on('#skipT', skipTestSheet);
+    on('#main', ()=>{ audio(); buzz(15); SND.tap(); testStart(); });
+  }
+  function testStart(){
+    const m = TS.d.mode;
+    if(m === 'saisie') return tSaisie();
+    if(m === 'angle') return tAngle('g', 1);
+    if(m === 'chrono') return tChrono();
+    if(m === 'metronome') return tMetro('g');
+    if(m === 'force') return tForceSetup();
+    if(m === 'video') return tVideo();
+    tSaisie();
+  }
+  function skipTestSheet(){
+    const it = TS.it; let why = null;
+    openSheet(`<h3>Tu ne peux pas faire ce test ?</h3><p class="sub">Pas de souci : on le saute. Nathan le verra dans ton message.</p>
+      <div class="chips col" id="why">${['Ça me gêne ou ça fait mal', 'Je n’ai pas le matériel', 'Autre raison'].map(l => `<button>${l}</button>`).join('')}</div>
+      <textarea class="field" id="whyc" rows="2" placeholder="Un mot pour Nathan (facultatif)"></textarea>
+      <div class="actions"><button class="primary" id="okS" disabled>Passer ce test</button><button class="ghost" id="keepT">Je le fais</button></div>`);
+    body.querySelectorAll('#why button').forEach(b => b.onclick = ()=>{ why = b.textContent; body.querySelectorAll('#why button').forEach(x => x.classList.toggle('on', x === b)); $('#okS').disabled = false; pop(b); });
+    on('#keepT', ()=>closeSheet());
+    on('#okS', ()=>{ const c = ($('#whyc').value || '').trim();
+      const code = why.startsWith('Ça') ? 'gêne' : why.startsWith('Je') ? 'matériel' : 'autre';
+      closeSheet(true); testSave({skip: code, note: c || undefined}); });
+  }
+
+  /* ----- 2a. saisie au mètre ----- */
+  function tSaisie(){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS;
+    tLayout(it, 'g');
+    head(tKick(), it.name);
+    const sides = d.cotes ? ['g','d'] : ['v'];
+    const prev = ficheOf(d.id).pop();
+    const row = s => `<div class="tin"><label for="in_${s}">${s === 'v' ? 'Résultat' : SIDE[s]}${prev && prev.v[s === 'v' ? 'val' : s] != null ? `<em>avant : ${valTxt(prev.v[s === 'v' ? 'val' : s], d.unite)}</em>` : ''}</label>
+      <button class="tpm" data-s="${s}" data-k="-1" aria-label="Moins">−</button><input class="field" id="in_${s}" type="number" inputmode="decimal" step="${d.pas || 1}" min="${d.min ?? 0}" max="${d.max ?? 999}" placeholder="${esc(d.unite)}"><button class="tpm" data-s="${s}" data-k="1" aria-label="Plus">+</button></div>`;
+    $('#panel').innerHTML = `
+      <p class="tmes">${esc(d.saisie || 'Ton meilleur essai')}${d.essais ? ` · ${d.essais} essais par côté` : ''}</p>
+      ${sides.map(row).join('')}
+      <p class="last" id="twarn"></p>`;
+    stagger($('#panel'));
+    bar(`<div class="pair"><button class="ghost" id="backT">Retour</button><button class="primary" id="main" disabled>${ico('check')}Valider</button></div>`);
+    const read = s => { const x = parseFloat(($('#in_' + s).value || '').replace(',', '.')); return isNaN(x) ? null : x; };
+    const check = () => {
+      const vals = sides.map(read), okAll = vals.every(x => x != null && x >= (d.min ?? 0) && x <= (d.max ?? 999));
+      $('#main').disabled = !okAll;
+      const bad = vals.some(x => x != null && (x < (d.min ?? 0) || x > (d.max ?? 999)));
+      $('#twarn').textContent = bad ? `Valeur entre ${d.min ?? 0} et ${d.max ?? 999}${unitTxt(d.unite)}` : '';
+    };
+    $$('.tin input').forEach(i => i.oninput = check);
+    $$('.tpm').forEach(b => b.onclick = ()=>{ const s = b.dataset.s, inp = $('#in_' + s); const cur = read(s) ?? (prev && prev.v[s === 'v' ? 'val' : s]) ?? (d.min ?? 0);
+      const nv = Math.round((cur + (+b.dataset.k)*(d.pas || 1))*100)/100; inp.value = Math.max(d.min ?? 0, Math.min(d.max ?? 999, nv)); pop(b); check(); });
+    on('#backT', testIntro);
+    on('#main', ()=>{ const v = d.cotes ? {g: read('g'), d: read('d')} : {val: read('v')}; testSave(v); });
+  }
+
+  /* ----- 2b. angle au capteur du téléphone ----- */
+  function tAngle(side, trial){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS;
+    TS.acc = TS.acc || {g:[], d:[]};
+    if(trial === 1) TS.acc[side] = [];
+    tLayout(it, side);
+    head(`${tKick()} · ${SIDEL[side]}`, it.name);
+    $('#panel').innerHTML = `
+      <div class="tang"><b id="aval">—</b><span id="aunit">°</span></div>
+      <p class="tstat" id="astat">${SIDE[side]} · essai ${trial}/${d.essais || 2}</p>
+      <p class="tmes">${S.tiltSign ? esc(d.montage || '') : 'Garde le téléphone en main et touche Démarrer : l’appli vérifie d’abord le capteur, puis tu le fixes.'}</p>
+      <p class="last">${S.tiltSign ? 'Téléphone fixé, touche Démarrer : tu n’as plus à le toucher, il bipe au zéro puis à chaque mesure.' : esc(d.montage || '')}</p>`;
+    stagger($('#panel'));
+    bar(`<div class="pair"><button class="ghost" id="manual">Manuel</button><button class="primary" id="main">${ico('play')}Démarrer</button></div>`);
+    on('#manual', ()=>tAngleManual(side));
+    on('#main', async ()=>{
+      audio(); const ok = await Tilt.ask();
+      if(!ok){ toast('Capteur refusé : saisis l’angle à la main'); return tAngleManual(side); }
+      Tilt.start(); keepAwake();
+      $('#stage').hidden = true; Stage.stop(); $('#panel').classList.add('tfill');   // téléphone fixé : pas de 3D, batterie et capteur au calme
+      if(S.tiltSign) return tAngleRun(side, trial);
+      bar(`<button class="ghost" id="stopA">Annuler</button>`); on('#stopA', ()=>{ tClean(); tAngle(side, trial); });
+      tAngleCheck(()=>{                                   // capteur vérifié : on fixe le téléphone, puis on lance
+        const m = $('.tmes'); if(m) m.textContent = TS.d.montage || '';
+        bar(`<button class="primary" id="go2">${ico('play')}Téléphone fixé : lancer</button>`);
+        on('#go2', ()=>{ audio(); tAngleRun(side, trial); });
+      }, ()=>tAngleManual(side));
+    });
+  }
+  /** vérification du capteur, une fois par séance : téléphone tenu debout, écran face à soi.
+      Par la norme, beta vaut alors +90° ; un téléphone qui renverrait −90° a le signe inversé : on le corrige (seul le test de Thomas a besoin du signe). */
+  function tAngleCheck(ok, ko){
+    const stat = t => { const e = $('#astat'); if(e){ e.textContent = t; pop(e); } };
+    stat('Vérification du capteur');
+    const m = $('.tmes'); if(m) m.textContent = 'Avant de le fixer : tiens ton téléphone debout devant toi, écran face à toi, 2 secondes.';
+    let t0 = performance.now(), okSince = 0, sign = 0;
+    const iv = setInterval(()=>{
+      const now = performance.now();
+      if(!Tilt.fresh()){ if(now - t0 > 3000){ clearInterval(iv); TS.cleanup = null; Tilt.stop(); toast('Pas de signal du capteur : saisis à la main'); ko(); } return; }
+      const b = Tilt.beta, e = $('#aval'); if(e) e.textContent = Math.round(Math.abs(b));
+      const sg = b > 70 ? 1 : b < -70 ? -1 : 0;
+      if(sg && sg === sign){ if(now - okSince > Math.max(400, 1500/SPEED)){ clearInterval(iv); TS.cleanup = null; S.tiltSign = sign; TB.ok(); buzz(60); stat('Capteur OK · fixe ton téléphone'); setTimeout(ok, Math.max(200, 900/SPEED)); } }
+      else { sign = sg; okSince = now; }
+      if(now - t0 > 20000){ clearInterval(iv); TS.cleanup = null; Tilt.stop(); toast('Capteur instable : saisis à la main'); ko(); }
+    }, 50);
+    TS.cleanup = ()=>clearInterval(iv);
+  }
+  function tAngleRun(side, trial){
+    const {d} = TS;
+    const TH = !!d.signe;                                              // Thomas : zéro assis (cuisse posée), mesure allongé, avec le signe
+    const stat = t => { const e = $('#astat'); if(e){ e.textContent = t; pop(e); } };
+    const show = x => { const e = $('#aval'); if(e) e.textContent = x == null ? '—' : Math.round(x); };
+    const lead = 8;
+    let phase = 'lead', tEnd = performance.now() + lead*1000/SPEED, lastN = -1, zero = null, best = null, buf = [], zbuf = [], started = performance.now(), noSig = 0, lieEnd = 0;
+    bar(`<button class="ghost" id="stopA">Arrêter</button>`);
+    on('#stopA', ()=>{ tClean(); tAngle(side, trial); });
+    stat(TH ? 'Assis au bord de la table, cuisse posée à plat' : 'Mets-toi en position de départ');
+    const ms = sec => Math.max(350, sec*1000/SPEED);                  // en test accéléré, le capteur garde sa vraie cadence
+    /** angle depuis le zéro : exact quel que soit le sens du téléphone sur le membre (le membre tourne autour d'un axe horizontal) */
+    const angleNow = () => {
+      if(!Tilt.fresh() || !zero) return null;
+      const a = angBetween(zero, Tilt.u);
+      if(!TH) return a;
+      // signe : le haut du téléphone (vers le genou) descend quand la cuisse passe sous l'horizontale → valeur positive
+      const dy = (Tilt.u[1] - zero[1])*(S.tiltSign || 1);
+      return dy < 0 ? a : -a;
+    };
+    const stable = (win, tol) => { const now = performance.now(), w = buf.filter(p => now - p[0] <= ms(win));
+      if(w.length < 4 || now - w[0][0] < ms(win)*.8) return null; const xs = w.map(p => p[1]);
+      if(Math.max(...xs) - Math.min(...xs) > tol) return null;
+      const tail = xs.slice(Math.floor(xs.length/2)); return tail.reduce((a,b)=>a+b,0)/tail.length; };   // moyenne de la fin de la tenue : pas de biais de mise en place
+    const iv = setInterval(()=>{
+      const now = performance.now();
+      if(!Tilt.fresh()){ if(now - started > 2500){ noSig++; if(noSig === 1){ clearInterval(iv); tClean(); toast('Pas de signal du capteur : saisis à la main'); return tAngleManual(side); } } return; }
+      if(phase === 'lead'){
+        const n = Math.ceil((tEnd - now)*SPEED/1000);
+        if(n !== lastN){ lastN = n; if(n <= 3 && n > 0){ TB.count(); buzz(20); } stat(`${TH ? 'Assis, cuisse posée' : 'Position de départ'} · ${n}`); }
+        if(n <= 0){ phase = 'zero'; zbuf = []; stat('Ne bouge plus : zéro…'); }
+        return;
+      }
+      if(phase === 'zero'){                                           // zéro : le vecteur ne bouge plus pendant 1 s
+        zbuf.push([now, Tilt.u.slice()]); zbuf = zbuf.filter(p => now - p[0] <= ms(1));
+        const ref = zbuf[zbuf.length-1][1];
+        if(now - zbuf[0][0] >= ms(1)*.8 && zbuf.length >= 4 && zbuf.every(p => angBetween(p[1], ref) < 1.5)){
+          zero = zbuf.reduce((acc, p) => acc.map((x, k) => x + p[1][k]), [0,0,0]); const nz = Math.hypot(...zero); zero = zero.map(x => x/nz);
+          buf = []; TB.go(); buzz(60); show(0);
+          if(TH){ phase = 'lie'; lieEnd = now + Math.max(1500, 10000/SPEED); lastN = -1; }
+          else { phase = 'move'; stat('Zéro pris : va au bout du mouvement et tiens 2 s'); }
+        }
+        return;
+      }
+      const a = angleNow(); if(a == null) return;
+      buf.push([now, a]); buf = buf.filter(p => now - p[0] <= Math.max(2500, ms(2.5)));
+      show(a);
+      if(phase === 'lie'){                                            // Thomas : le temps de basculer sur le dos
+        const n = Math.ceil((lieEnd - now)*SPEED/1000);
+        if(n !== lastN){ lastN = n; stat(`Zéro pris : allonge-toi, genou contre la poitrine · ${Math.max(0, n)}`); if(n <= 3 && n > 0) TB.count(); }
+        if(now >= lieEnd){ phase = 'hold'; stat('Relâche la jambe, ne bouge plus…'); }
+        return;
+      }
+      if(phase === 'hold'){                                           // Thomas : la valeur tenue 2 s, jambe relâchée
+        const m = stable(2, 1.5);
+        if(m != null){ best = m; TB.ok(); buzz([60,40,60]); return trialDone(); }
+        if(now - lieEnd > Math.max(8000, 30000/SPEED)) return trialDone();
+        return;
+      }
+      // mouvement : on garde l'angle maximal tenu 1 s
+      const m = stable(1, 1.5);
+      if(m != null && m >= 8 && (best == null || m > best + .5)){ best = m; TB.ok(); buzz([60,40,60]); stat(`Mesuré : ${Math.round(best)}° · reviens au départ`); }
+      if(best != null && a < Math.max(5, best*.35)) return trialDone();
+      if(now - started > lead*1000/SPEED + Math.max(10000, 40000/SPEED)) return trialDone();
+    }, 50);
+    TS.cleanup = ()=>clearInterval(iv);
+    function trialDone(){
+      clearInterval(iv); TS.cleanup = null;
+      const n = d.essais || 2;
+      if(best == null){ Tilt.stop(); TB.end(); toast('Pas de mesure tenue : on recommence'); return tAngle(side, trial); }
+      TS.acc[side].push(Math.round(best*10)/10);
+      TB.end(); buzz([100,60,100]);
+      if(trial < n){ Tilt.stop(); return tAngleBetween(side, trial); }
+      Tilt.stop(); tAngleSideDone(side);
+    }
+  }
+  function tAngleBetween(side, trial){
+    const {d} = TS; const got = TS.acc[side];
+    $('#astat').textContent = `Essai ${trial} : ${Math.round(got[got.length-1])}°`;
+    $('#aval').textContent = Math.round(got[got.length-1]);
+    bar(`<div class="pair"><button class="ghost" id="redo">Refaire</button>${goBtn(`Essai ${trial+1}/${d.essais || 2}`, 'main')}</div>`);
+    on('#redo', ()=>{ TS.acc[side].pop(); tAngle(side, trial); });
+    on('#main', ()=>tAngle(side, trial + 1));
+  }
+  function tAngleSideDone(side){
+    const {d} = TS; const got = TS.acc[side];
+    const best = Math.max(...got);
+    TS.v[side] = Math.round(best*10)/10;
+    TS.v['ess_' + side] = got.map(x => Math.round(x)).join('/');
+    $('#aval').textContent = Math.round(best);
+    $('#astat').textContent = `${SIDE[side]} : ${Math.round(best)}° (essais ${got.map(Math.round).join(' / ')})`;
+    const nextSide = side === 'g' && d.cotes;
+    bar(`<div class="pair"><button class="ghost" id="redo">Refaire ${SIDEL[side]}</button>${goBtn(nextSide ? 'Côté droit' : 'Voir le résultat', 'main')}</div>`);
+    on('#redo', ()=>tAngle(side, 1));
+    on('#main', ()=> nextSide ? tAngle('d', 1) : testSave(TS.v));
+  }
+  function tAngleManual(side){
+    clearTimers(); tClean();
+    const {it, d} = TS;
+    tLayout(it, side);
+    head(`${tKick()} · ${SIDEL[side]}`, it.name);
+    $('#panel').innerHTML = `
+      <p class="tmes">Sans le capteur : mesure avec une appli niveau (ex. « Mesures » sur iPhone) posée comme indiqué, et note ton meilleur angle.</p>
+      <div class="tin"><label for="in_m">${SIDE[side]}</label><button class="tpm" data-k="-1">−</button><input class="field" id="in_m" type="number" inputmode="decimal" step="1" placeholder="°"><button class="tpm" data-k="1">+</button></div>`;
+    bar(`<div class="pair"><button class="ghost" id="backA">Capteur</button><button class="primary" id="main" disabled>${ico('check')}Valider</button></div>`);
+    const inp = $('#in_m'), rd = () => { const x = parseFloat((inp.value || '').replace(',', '.')); return isNaN(x) ? null : x; };
+    const ok = () => { const x = rd(); $('#main').disabled = x == null || x < -60 || x > 200; };
+    inp.oninput = ok;
+    $$('.tpm').forEach(b => b.onclick = ()=>{ inp.value = (rd() ?? 0) + +b.dataset.k; ok(); });
+    on('#backA', ()=>tAngle(side, 1));
+    on('#main', ()=>{ TS.acc = TS.acc || {g:[], d:[]}; TS.acc[side] = [rd()]; TS.v.manuel = 1; TS.v[side] = rd(); TS.v['ess_' + side] = String(Math.round(rd()));
+      if(side === 'g' && d.cotes) return tAngle('d', 1); testSave(TS.v); });
+  }
+
+  /* ----- plein écran « touche l'écran pour arrêter » (chrono, métronome) ----- */
+  function tapZone(html, onTap){
+    Stage.stop();                                       // la 3D est cachée : on ne la calcule plus
+    const z = document.createElement('div'); z.id = 'tapzone'; z.className = 'tapzone'; z.innerHTML = html;
+    $('#app').appendChild(z);
+    let armed = false; setTimeout(()=>{ armed = true; }, 400);
+    z.addEventListener('pointerdown', e => { e.preventDefault(); if(armed) onTap(); });
+    return z;
+  }
+
+  /* ----- 2c. chrono : sur une jambe yeux fermés ----- */
+  function tChrono(){
+    const {it, d} = TS;
+    const order = []; for(let k=1; k<=(d.essais || 3); k++) (d.cotes ? ['g','d'] : ['v']).forEach(s => order.push([s, k]));
+    TS.order = order; TS.k = 0; TS.acc = {g:[], d:[], v:[]};
+    tChronoReady();
+  }
+  function tChronoReady(){
+    clearTimers(); tClean(); S.screen = 'test';
+    const {it, d} = TS; const [side, k] = TS.order[TS.k];
+    tLayout(it, side === 'd' ? 'd' : 'g');
+    head(`${tKick()} · ${SIDEL[side] || ''}`, it.name);
+    const done = ['g','d'].filter(s => TS.acc[s].length).map(s => `<li><span>${SIDE[s]}</span><span>${TS.acc[s].map(x => n1(x) + ' s').join(' · ')}</span></li>`).join('');
+    $('#panel').innerHTML = `
+      <p class="tstat">${SIDE[side] || 'Essai'} · essai ${k}/${d.essais || 3}</p>
+      <p class="tmes">Bras croisés, téléphone contre la poitrine. Au bip, ferme les yeux. Touche l’écran dès que tu perds la position.</p>
+      <p class="last">${ico('sound','ico sm')} Son monté, mode silencieux coupé : le bip te dit quand fermer les yeux.</p>
+      ${done ? `<ul class="list tight">${done}</ul>` : ''}`;
+    stagger($('#panel'));
+    bar(`${TS.k ? `<div class="pair"><button class="ghost" id="redo">Refaire le dernier</button>` : ''}${goBtn(`Lancer · ${SIDEL[side] || ''}`, 'main')}${TS.k ? '</div>' : ''}`);
+    on('#redo', ()=>{ TS.k--; const [s] = TS.order[TS.k]; TS.acc[s].pop(); tChronoReady(); });
+    on('#main', ()=>{ audio(); keepAwake(); tChronoRun(); });
+  }
+  function tChronoRun(){
+    const {d} = TS; const [side] = TS.order[TS.k];
+    const max = d.max || 45;
+    let phase = 'lead', t0 = performance.now(), lastN = -1, stopped = false;
+    const z = tapZone(`<div class="tzin"><small id="zs">Mets-toi en place</small><b id="zv">5</b><span id="zw">${SIDE[side] || ''}</span><em>Touche l’écran pour arrêter</em></div>`, ()=>finish());
+    const iv = setInterval(()=>{
+      const el = (performance.now() - t0)*SPEED/1000;
+      if(phase === 'lead'){
+        const n = Math.ceil(5 - el);
+        if(n !== lastN){ lastN = n; if(n > 0){ $('#zv').textContent = n; TB.count(); } }
+        if(el >= 5){ phase = 'go'; t0 = performance.now(); TB.go(); buzz(80); $('#zs').textContent = 'Yeux fermés'; }
+        return;
+      }
+      $('#zv').textContent = Math.floor(el);
+      if(el >= max) finish(true);
+    }, 50);
+    TS.cleanup = ()=>clearInterval(iv);
+    function finish(cap){
+      if(stopped) return;
+      if(phase === 'lead'){ clearInterval(iv); tClean(); return tChronoReady(); }
+      stopped = true; clearInterval(iv);
+      const t = Math.min(max, (performance.now() - t0)*SPEED/1000);
+      TS.acc[side].push(Math.round(t*10)/10);
+      cap ? TB.end() : TB.lo(); buzz([100,60,100]);
+      tClean(); TS.k++;
+      if(TS.k < TS.order.length){ toast(`${n1(t)} s${cap ? ' · maximum' : ''}`); return tChronoReady(); }
+      const best = s => TS.acc[s].length ? Math.max(...TS.acc[s]) : null;
+      const v = d.cotes ? {g: best('g'), d: best('d'), ess_g: TS.acc.g.join('/'), ess_d: TS.acc.d.join('/')} : {val: best('v')};
+      testSave(v);
+    }
+  }
+
+  /* ----- 2d. métronome : reps comptées par l'appli ----- */
+  function tMetro(side){
+    clearTimers(); tClean(); S.screen = 'test';
+    const {it, d} = TS;
+    tLayout(it, side);
+    head(`${tKick()} · ${SIDEL[side] || ''}`, it.name);
+    const [w1, w2] = d.mots || ['Monte', 'Descends'];
+    $('#panel').innerHTML = `
+      <p class="tstat">${SIDE[side] || ''}</p>
+      <p class="tmes">Bip aigu : ${esc(w1.toLowerCase())}. Bip grave : ${esc(w2.toLowerCase())}. ${d.periode || 2} s par rep. L’appli compte, tu touches l’écran quand tu ne peux plus suivre.</p>
+      <p class="last">${ico('sound','ico sm')} Son monté, mode silencieux coupé : le rythme se suit à l’oreille.</p>
+      ${side === 'd' && TS.v.g != null ? `<ul class="list tight"><li><span>Gauche</span><span>${TS.v.g} reps</span></li></ul>` : ''}`;
+    stagger($('#panel'));
+    bar(goBtn(`Lancer · ${SIDEL[side] || ''}`, 'main'));
+    on('#main', ()=>{ audio(); keepAwake(); tMetroRun(side); });
+  }
+  function tMetroRun(side){
+    const {d} = TS; const per = d.periode || 2, half = per/2, max = d.max || 60;
+    const [w1, w2] = d.mots || ['Monte', 'Descends'];
+    let phase = 'lead', t0 = performance.now(), lastN = -1, lastBeat = -1, reps = 0, stopped = false;
+    const z = tapZone(`<div class="tzin"><small id="zs">Mets-toi en place</small><b id="zv">5</b><span id="zw">${SIDE[side] || ''}</span><em>Touche l’écran quand tu ne peux plus suivre</em></div>`, ()=>finish());
+    const iv = setInterval(()=>{
+      const el = (performance.now() - t0)*SPEED/1000;
+      if(phase === 'lead'){
+        const n = Math.ceil(5 - el);
+        if(n !== lastN){ lastN = n; if(n > 0){ $('#zv').textContent = n; TB.count(); } }
+        if(el >= 5){ phase = 'go'; t0 = performance.now(); lastBeat = -1; $('#zv').textContent = '0'; $('#zs').textContent = 'reps'; }
+        return;
+      }
+      const beat = Math.floor(el/half);
+      if(beat !== lastBeat){
+        lastBeat = beat;
+        if(beat % 2 === 0){ if(beat > 0){ reps = beat/2; $('#zv').textContent = reps; } TB.hi(); $('#zw').textContent = w1; buzz(25); }
+        else { TB.lo(); $('#zw').textContent = w2; }
+        if(reps >= max) finish(true);
+      }
+    }, 20);
+    TS.cleanup = ()=>clearInterval(iv);
+    function finish(cap){
+      if(stopped) return;
+      if(phase === 'lead'){ clearInterval(iv); tClean(); return tMetro(side); }
+      stopped = true; clearInterval(iv); TB.end(); buzz([100,60,100]); tClean();
+      tMetroConfirm(side, reps, cap);
+    }
+  }
+  function tMetroConfirm(side, reps, cap){
+    const {d} = TS; let n = reps;
+    $('#panel').innerHTML = `
+      <p class="tstat">${SIDE[side] || ''}${cap ? ' · maximum atteint' : ''}</p>
+      <div class="stepper"><button id="m" aria-label="Moins">−</button><b id="n">${n}</b><button id="p" aria-label="Plus">+</button></div>
+      <p class="last">Reps complètes. Corrige si l’appli s’est trompée d’une.</p>`;
+    stagger($('#panel'));
+    on('#m', ()=>{ n = Math.max(0, n-1); $('#n').textContent = n; pop($('#n')); });
+    on('#p', ()=>{ n = Math.min(d.max || 99, n+1); $('#n').textContent = n; pop($('#n')); });
+    const nextSide = side === 'g' && d.cotes;
+    bar(`<div class="pair"><button class="ghost" id="redo">Refaire</button>${goBtn(nextSide ? 'Côté droit' : 'Voir le résultat', 'main')}</div>`);
+    on('#redo', ()=>tMetro(side));
+    on('#main', ()=>{ if(d.cotes) TS.v[side] = n; else TS.v.val = n; if(nextSide) return tMetro('d'); testSave(TS.v); });
+  }
+
+  /* ----- 2e. force : max estimé sans le tenter ----- */
+  function tForceSetup(){
+    clearTimers(); tClean(); S.screen = 'test';
+    const {it, d} = TS;
+    tLayout(it, 'g');
+    head(tKick(), it.name);
+    const prev = latestE1rm(d.lift, it.src), lastBox = (ficheOf(d.id).pop() || {v:{}}).v.box;
+    const sug = prev ? r25(prev.e1rm*.85) : null;
+    TS.f = {kg: sug, box: lastBox || null, safe: d.lift !== 'squat'};
+    $('#panel').innerHTML = `
+      <p class="tmes">${prev ? `Ton dernier max estimé : <b>${n1(prev.e1rm)} kg</b>. L’appli propose 85 % pour ta série test (≈ 5 reps).` : 'Premier test : choisis la charge que tu penses lever <b>6 fois proprement</b>. Pas plus.'}</p>
+      <div class="tin"><label for="in_kg">Charge de la série test</label><button class="tpm" data-k="-2.5">−</button><input class="field" id="in_kg" type="number" inputmode="decimal" step="2.5" min="20" max="400" placeholder="kg" value="${sug ?? ''}"><button class="tpm" data-k="2.5">+</button></div>
+      ${d.lift === 'squat' ? `<div class="tin"><label for="in_box">Hauteur de ta box <em>${lastBox ? 'la dernière fois : ' + lastBox + ' cm' : 'facultatif, garde toujours la même'}</em></label><button class="tpm" data-b="-1">−</button><input class="field" id="in_box" type="number" inputmode="numeric" step="1" min="20" max="80" placeholder="cm" value="${lastBox ?? ''}"><button class="tpm" data-b="1">+</button></div>
+        <button class="tcheck" id="safe">${ico('check','ico sm')}Barres de sécurité réglées juste sous ma position basse</button>` : ''}
+      ${tVariante(it) ? `<p class="last">Barre : <b>${esc(tVariante(it))}</b></p>` : ''}`;
+    stagger($('#panel'));
+    bar(`<div class="pair"><button class="ghost" id="backT">Retour</button><button class="primary" id="main" disabled>Échauffement</button></div>`);
+    const kgIn = $('#in_kg');
+    const rd = el => { const x = parseFloat((el.value || '').replace(',', '.')); return isNaN(x) ? null : x; };
+    const ok = () => { TS.f.kg = rd(kgIn); const b = $('#in_box'); if(b) TS.f.box = rd(b); $('#main').disabled = !(TS.f.kg >= 20 && TS.f.kg <= 400 && TS.f.safe); };
+    kgIn.oninput = ok; const bx = $('#in_box'); if(bx) bx.oninput = ok;
+    $$('.tpm').forEach(b => b.onclick = ()=>{ if(b.dataset.b){ const x = rd(bx) ?? 45; bx.value = x + +b.dataset.b; } else { kgIn.value = Math.max(20, (rd(kgIn) ?? 40) + +b.dataset.k); } pop(b); ok(); });
+    on('#safe', ()=>{ TS.f.safe = !TS.f.safe; $('#safe').classList.toggle('on', TS.f.safe); SND.tap(); ok(); });
+    on('#backT', testIntro);
+    on('#main', ()=>{ TS.f.ramp = rampOf(TS.f.kg); TS.f.rk = 0; TS.f.sets = []; tForceRamp(); });
+    ok();
+  }
+  /** échauffement calculé depuis la charge test : 40 % ×8 (ou barre), 60 % ×5, 80 % ×3, 90 % ×1 */
+  function rampOf(L){
+    const w = [[.4, 8, 60], [.6, 5, 90], [.8, 3, 120], [.9, 1, 150]].map(([p, r, rest]) => ({kg: Math.max(20, r25(L*p)), reps: r, rest}));
+    return w.filter((x, i) => i === 0 || x.kg > w[i-1].kg);
+  }
+  function tForceRamp(){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS, f = TS.f;
+    tLayout(it, 'g');
+    head(`${tKick()} · échauffement`, it.name);
+    const cur = f.rk;
+    $('#panel').innerHTML = `
+      <ol class="tramp">${f.ramp.map((x, i) => `<li class="${i < cur ? 'ok' : i === cur ? 'now' : ''}"><b>${n1(x.kg)} kg</b><span>× ${x.reps}</span>${i < cur ? ico('check','ico sm') : ''}</li>`).join('')}
+        <li class="${cur >= f.ramp.length ? 'now' : ''} test"><b>${n1(f.kg)} kg</b><span>série test · ≈ 5 reps</span></li></ol>
+      <p class="last">${cur < f.ramp.length ? 'Reps faciles et propres : c’est de l’échauffement, pas de la fatigue.' : 'Arrête quand il ne t’en reste qu’une, ou dès que la technique lâche.'}</p>`;
+    stagger($('#panel'));
+    if(cur < f.ramp.length) bar(`<div class="pair"><button class="ghost" id="skipW">Passer</button><button class="primary" id="main">${ico('check')}${n1(f.ramp[cur].kg)} kg fait</button></div>`);
+    else bar(`<button class="primary" id="main">${ico('check')}Série test faite</button>`);
+    on('#skipW', ()=>{ f.rk++; tForceRamp(); });
+    on('#main', ()=>{ SND.tap(); buzz(15);
+      if(cur < f.ramp.length){ f.rk++; return tRest(f.ramp[cur].rest, tForceRamp); }
+      tForceResult(); });
+  }
+  function tRest(sec, then){
+    clearTimers(); S.screen = 'test';
+    $('#panel').innerHTML = `${ring('small', sec, 'récup')}<p class="last">Prochaine série à la fin du chrono, ou quand tu es prêt.</p>`;
+    bar(`<div class="pair"><button class="ghost" id="plus">+30 s</button>${goBtn('Je suis prêt', 'ready')}</div>`);
+    let end = Date.now() + sec*1000/SPEED, rt = sec, lastSec = -1;
+    tick = setInterval(()=>{ const left = Math.max(0, (end - Date.now())*SPEED/1000); if(left > rt) rt = left; setRing(left, rt);
+      const s = Math.ceil(left); if(s !== lastSec){ lastSec = s; if(s <= 5 && s > 0){ SND.count(); pop($('#tv'),'tick'); } }
+      if(left <= 0){ clearTimers(); SND.go(); buzz([150,80,150]); then(); } }, 100);
+    on('#plus', ()=>{ end += 30000/SPEED; });
+    on('#ready', ()=>{ clearTimers(); then(); });
+  }
+  function tForceResult(){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS, f = TS.f;
+    let reps = 5, rir = null;
+    tLayout(it, 'g', false);
+    head(`${tKick()} · résultat`, it.name);
+    $('#panel').innerHTML = `
+      <p class="lbl" style="margin:0">Reps faites à ${n1(f.kg)} kg</p>
+      <div class="stepper"><button id="m" aria-label="Moins">−</button><b id="n">${reps}</b><button id="p" aria-label="Plus">+</button></div>
+      <p class="lbl" style="margin:0">Il t’en restait combien ?</p>
+      <div class="rpe5 c4" id="rir">${[[0,'0','échec'],[1,'1','idéal'],[2,'2',''],[3,'3+','trop léger']].map(([v,l,s]) => `<button data-r="${v}"><b>${l}</b><span>${s}</span></button>`).join('')}</div>
+      <p class="tres" id="fres"></p>`;
+    stagger($('#panel'));
+    bar(`<button class="primary" id="main" disabled>${ico('check')}Valider</button>`);
+    const upd = () => {
+      const out = $('#fres');
+      if(rir == null){ out.innerHTML = ''; $('#main').disabled = true; return; }
+      const r = reps + rir, e = epley(f.kg, reps, rir);
+      out.innerHTML = `Max estimé : <b>${n1(Math.round(e*2)/2)} kg</b>${r > 8 ? '<br><em>Charge trop légère : estimation moins précise.</em>' : reps < 2 ? '<br><em>Charge très lourde : garde une rep en réserve la prochaine fois.</em>' : ''}`;
+      $('#main').disabled = false;
+    };
+    on('#m', ()=>{ reps = Math.max(1, reps-1); $('#n').textContent = reps; pop($('#n')); upd(); });
+    on('#p', ()=>{ reps = Math.min(15, reps+1); $('#n').textContent = reps; pop($('#n')); upd(); });
+    $$('#rir button').forEach(b => b.onclick = ()=>{ rir = +b.dataset.r; $$('#rir button').forEach(x => x.classList.toggle('on', x === b)); pop(b); buzz(10); upd(); });
+    on('#main', ()=>{
+      const r = reps + rir, e = Math.round(epley(f.kg, reps, rir)*2)/2;
+      f.sets.push({kg:f.kg, reps, rir, e1rm:e});
+      const v = {e1rm:e, kg:f.kg, reps, rir, box: f.box || undefined, variante: tVariante(it) || undefined, series: f.sets.length};
+      if(r > 8 && f.sets.length < 2){
+        const nk = Math.max(f.kg + 2.5, Math.ceil(f.kg*1.1/2.5)*2.5);
+        openSheet(`<h3>Charge trop légère</h3><p class="sub">Avec ${r} reps possibles, l’estimation perd en précision. Une 2e série test à <b>${n1(nk)} kg</b> après 4 min de repos donne un chiffre plus juste.</p>
+          <div class="actions"><button class="primary" id="okS">Refaire à ${n1(nk)} kg</button><button class="ghost" id="keepF">Garder ${n1(e)} kg</button></div>`);
+        on('#okS', ()=>{ closeSheet(true); f.kg = nk; tRest(240, ()=>{ f.rk = f.ramp.length; tForceRamp(); }); });
+        on('#keepF', ()=>{ closeSheet(true); testSave(v); });
+        return;
+      }
+      testSave(v);
+    });
+  }
+
+  /* ----- 2f. vidéo + critères oui/non (squat bras levés) ----- */
+  function tVideo(){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS;
+    tLayout(it, 'g');
+    head(tKick(), it.name);
+    $('#panel').innerHTML = `
+      <p class="tmes">Pose ton téléphone <b>de profil</b>, à 2-3 m, à hauteur de hanche : tout ton corps et le bâton dans le cadre.</p>
+      <p class="last">Tu as 8 s pour te placer, puis l’appli filme 5 reps (20 s) et bipe à la fin.</p>`;
+    stagger($('#panel'));
+    bar(`<div class="pair"><button class="ghost" id="backT">Retour</button><button class="primary" id="main">${ico('cam')}Filmer</button></div>`);
+    on('#backT', testIntro);
+    on('#main', async ()=>{ audio(); keepAwake();
+      if(!Rec.supported) return tVideoFile();
+      try{ await Rec.open(); }catch(e){ return tVideoFile(); }
+      tVideoRec(); });
+  }
+  function tVideoFile(){
+    const inp = $('#camfile'); inp.value = '';
+    inp.onchange = () => { const f = inp.files && inp.files[0]; if(f) tVideoReview(f); };
+    inp.click(); toast('Filme tes 5 reps de profil, puis valide la vidéo');
+  }
+  function tVideoRec(){
+    const {it} = TS;
+    layout({stage:true, panel:true, live:true}); $('#stage').classList.add('camon');
+    head(`${tKick()} · vidéo`, it.name);
+    $('#panel').innerHTML = `<p class="tstat" id="vst">Place-toi · 8</p><p class="last">De profil, tout le corps dans le cadre.</p>`;
+    bar(`<div class="pair"><button class="ghost" id="cancelV">Annuler</button><button class="primary" id="stopV" disabled>${ico('check')}Fini</button></div>`);
+    let phase = 'lead', t0 = performance.now(), lastN = -1, stopped = false;
+    const REC = 20;
+    const iv = setInterval(()=>{
+      const el = (performance.now() - t0)*SPEED/1000;
+      if(phase === 'lead'){ const n = Math.ceil(8 - el);
+        if(n !== lastN){ lastN = n; if(n <= 3 && n > 0) TB.count(); $('#vst').textContent = `Place-toi · ${n}`; }
+        if(el >= 8){ phase = 'rec'; t0 = performance.now(); Rec.start(); $('#stage').classList.add('recording'); TB.go(); buzz(60); $('#stopV').disabled = false; }
+        return; }
+      const left = Math.max(0, Math.ceil(REC - el)); $('#vst').textContent = `On filme · ${left} s`;
+      if(el >= REC) finish();
+    }, 100);
+    TS.cleanup = () => { clearInterval(iv); if(!stopped){ try{ Rec.close(); }catch(e){} $('#stage').classList.remove('camon','recording'); } };
+    on('#cancelV', ()=>{ tClean(); tVideo(); });
+    on('#stopV', ()=>finish());
+    async function finish(){
+      if(stopped) return; stopped = true; clearInterval(iv); TS.cleanup = null; TB.end(); buzz([100,60,100]);
+      const file = phase === 'rec' ? await Rec.stop('squat-bras-leves') : null;
+      Rec.close(); $('#stage').classList.remove('camon','recording');
+      if(!file || !file.size){ toast('La vidéo n’a pas été enregistrée : on recommence'); return tVideo(); }
+      tVideoReview(file);
+    }
+  }
+  function tVideoReview(file){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS; TS.file = file;
+    tLayout(it, 'g', false);
+    head(`${tKick()} · revois ta vidéo`, it.name);
+    const url = URL.createObjectURL(file); TS.url = url;
+    const crit = d.criteres || [], ans = {};
+    $('#panel').innerHTML = `
+      <video class="tvid" src="${url}" playsinline muted loop autoplay controls></video>
+      <p class="tmes">Regarde ta rep la plus basse. Pour chaque critère : oui ou non.</p>
+      <div class="tcrit">${crit.map(c => `<div class="tcr" data-k="${c.k}"><span>${esc(c.txt)}</span><div><button data-v="1">Oui</button><button data-v="0">Non</button></div></div>`).join('')}</div>`;
+    stagger($('#panel'));
+    bar(`<div class="pair"><button class="ghost" id="redoV">Refilmer</button><button class="primary" id="main" disabled>${ico('check')}Valider</button></div>`);
+    $$('.tcr button').forEach(b => b.onclick = ()=>{ const row = b.closest('.tcr'); ans[row.dataset.k] = +b.dataset.v;
+      row.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); pop(b); SND.tap();
+      $('#main').disabled = Object.keys(ans).length < crit.length; });
+    on('#redoV', ()=>{ URL.revokeObjectURL(url); tVideo(); });
+    on('#main', ()=>{ const v = {score: crit.filter(c => ans[c.k] === 1).length}; crit.forEach(c => v[c.k] = ans[c.k]); v.video = 1; testSave(v); });
+  }
+
+  /* ----- 3. enregistrement + résultat ----- */
+  function testSave(v){
+    clearTimers(); tClean();
+    const {it, d} = TS;
+    Object.keys(v).forEach(k => v[k] === undefined && delete v[k]);
+    S.tests = S.tests || {}; S.tests[d.id] = v;
+    S.log.push({i:S.i, test:d.id});
+    ficheAdd(d.id, v); save();
+    testResult();
+  }
+  function testResult(){
+    clearTimers(); S.screen = 'test';
+    const {it, d} = TS; const v = S.tests[d.id];
+    tLayout(it, 'g', false);
+    head(tKick(), it.name);
+    const hist = ficheOf(d.id).filter(e => e.date !== today()), prev = hist.pop();
+    let html;
+    if(v.skip) html = `<p class="quote">Test passé (${esc(v.skip)}). Nathan le verra dans ton message.</p>`;
+    else if(d.mode === 'video'){
+      const crit = d.criteres || [], tr = prev ? trendOf(d, prev.v.score, v.score) : null;
+      html = `<div class="tbig"><b>${v.score}/${crit.length}</b><span>critères réussis</span>${tr ? `<em class="${tr.c}">${tr.t}</em>` : ''}</div>
+        <ul class="list tight">${crit.map(c => `<li><span>${esc(c.txt)}</span><span class="${v[c.k] ? 'okc' : 'warnc'}">${v[c.k] ? 'oui' : 'à travailler'}</span></li>`).join('')}</ul>
+        ${TS.file ? `<button class="sendvid" id="sendV">${ico('send')}Envoyer la vidéo à Nathan</button>` : ''}`;
+    }
+    else if(d.mode === 'force'){
+      const tr = prev ? trendOf(d, prev.v.e1rm, v.e1rm) : null;
+      html = `<div class="tbig"><b>${n1(v.e1rm)}</b><span>kg · max estimé</span>${tr ? `<em class="${tr.c}">${tr.t} depuis le ${prev.date.split('-').reverse().slice(0,2).join('/')}</em>` : ''}</div>
+        <p class="last">${n1(v.kg)} kg × ${v.reps} reps, ${v.rir >= 3 ? '3 ou plus' : v.rir} en réserve · marge ±5 %</p>
+        <ul class="list tight">${[70,75,80,85].map(p => `<li><span>${p} % pour tes séances</span><span>${n1(r25(v.e1rm*p/100))} kg</span></li>`).join('')}</ul>`;
+    } else {
+      const a = asymOf(d, v);
+      const cell = s => { const x = s === 'v' ? v.val : v[s], p = prev ? (s === 'v' ? prev.v.val : prev.v[s]) : null, tr = trendOf(d, p, x);
+        return `<div class="${a && a.flag && a.weak === s ? 'weak' : ''}"><small>${s === 'v' ? 'Résultat' : SIDE[s]}</small><b>${x == null ? '—' : n1(x)}<i>${esc(d.unite)}</i></b>${tr ? `<em class="${tr.c}">${tr.t}</em>` : ''}${lowRep(d, x) ? '<u>sous le repère</u>' : ''}</div>`; };
+      html = `<div class="tduo">${(d.cotes ? ['g','d'] : ['v']).map(cell).join('')}</div>
+        ${a ? `<p class="tsym ${a.flag ? 'flag' : ''}">${a.flag ? `À travailler : côté ${COTE[a.weak]} (${esc(a.txt)})` : `Symétrie correcte${a.txt ? ' · ' + esc(a.txt) : ''}`}</p>` : ''}
+        ${d.repere ? `<p class="last">Repère : ${esc(d.repere.txt)}</p>` : ''}
+        ${prev ? `<p class="last">Comparé au test du ${prev.date.split('-').reverse().join('/')}. En dessous de l’erreur de mesure, c’est « stable ».</p>` : '<p class="last">Premier test : c’est ta référence.</p>'}`;
+    }
+    $('#panel').innerHTML = html;
+    stagger($('#panel'));
+    const last = !S.steps[S.i + 1] || S.steps[S.i + 1].t !== 'test';
+    bar(`<div class="pair"><button class="ghost" id="redoT">Refaire</button>${goBtn(last ? 'Continuer' : 'Test suivant', 'main')}</div>`);
+    on('#sendV', async ()=>{ const r = await shareFile(TS.file, `${SESS.titre} · ${it.name}`); if(r !== 'aborted'){ S.videos++; const bt = $('#sendV'); if(bt) bt.outerHTML = `<p class="last okc">${r === 'downloaded' ? 'Vidéo enregistrée : envoie-la à Nathan sur WhatsApp' : 'Vidéo envoyée'}</p>`; } });
+    on('#redoT', ()=>{ delete S.tests[d.id]; S.log = S.log.filter(l => !(l.i === S.i && l.test)); testIntro(); });
+    on('#main', ()=>{ SND.go(); buzz(20); TS = null; next(); });
+  }
+
+  /* ----- Ma fiche (sur le téléphone) ----- */
+  function ficheScreen(){
+    clearTimers(); S = null; SESS = null;
+    layout({page:true, tools:false, top:false}); progress();
+    head('Charge Utile', 'Ma fiche');
+    const all = ficheAll(), tests = Object.values(Data.tests || {});
+    const blocks = tests.map(d => {
+      const h = all.filter(e => e.test === d.id).sort((a,b) => a.date.localeCompare(b.date));
+      if(!h.length) return '';
+      const last = h[h.length-1], ok = h.filter(e => !e.v.skip), prev = ok.length > 1 ? ok[ok.length-2] : null;
+      const cur = last.v.skip ? null : last;
+      let tr = '';
+      if(cur && prev){ if(d.mode === 'force'){ const t = trendOf(d, prev.v.e1rm, cur.v.e1rm); tr = t ? `<em class="${t.c}">${t.t}</em>` : ''; }
+        else if(d.cotes){ tr = ['g','d'].map(s => { const t = trendOf(d, prev.v[s], cur.v[s]); return t ? `<em class="${t.c}">${s.toUpperCase()} ${t.t}</em>` : ''; }).join(' '); }
+        else { const k = d.mode === 'video' ? 'score' : 'val'; const t = trendOf(d, prev.v[k], cur.v[k]); tr = t ? `<em class="${t.c}">${t.t}</em>` : ''; } }
+      const fl = cur ? flagsOf(d, cur.v) : [];
+      return `<li class="fline"><div><b>${esc(d.court || d.nom)}</b><span>${esc(resLine(d, last.v))}</span>${fl.length ? `<u>${esc(fl.join(' · '))}</u>` : ''}</div><div><small>${last.date.split('-').reverse().slice(0,2).join('/')}</small>${tr}</div></li>`;
+    }).filter(Boolean);
+    $('#page').innerHTML = `
+      <div class="hero"><h2>Ma fiche</h2><p class="tagline">Tes derniers tests, datés</p></div>
+      ${blocks.length ? `<ul class="list fiche">${blocks.join('')}</ul>` : `<p class="quote">Aucun test pour l’instant. Nathan t’enverra une séance de tests.</p>`}
+      <p class="last">« Stable » = changement plus petit que l’erreur de mesure du test. Les écarts gauche/droite servent à choisir tes exercices, ce n’est pas un avis médical.</p>`;
+    stagger($('#page'));
+    bar(`<div class="pair"><button class="ghost" id="back">Retour</button><button class="primary light" id="shareF" ${blocks.length ? '' : 'disabled'}>${ico('send')}Envoyer à Nathan</button></div>`);
+    on('#back', home);
+    on('#shareF', async ()=>{
+      const lastBy = {}; all.forEach(e => { if(!lastBy[e.test] || lastBy[e.test].date <= e.date) lastBy[e.test] = e; });
+      const L = ['Ma fiche de tests'].concat(Object.values(lastBy).map(e => { const d = Data.tests[e.test]; return d ? `${d.nom} (${e.date}) : ${resLine(d, e.v)}` : ''; }).filter(Boolean));
+      const byDate = {}; Object.values(lastBy).forEach(e => (byDate[e.date] = byDate[e.date] || []).push([e.test, e.v]));
+      Object.entries(byDate).forEach(([dt, en]) => L.push(ficheLine(en).replace(/ \d{4}-\d{2}-\d{2} \|/, ` ${dt} |`)));
+      const r = await shareText(L.join('\n')); if(r !== 'aborted') toast('Fiche envoyée');
+    });
+  }
+
   /* ================= FEUILLES ================= */
   const scrim = $('#scrim'), sheet = $('#sheet'), body = $('#sheetBody');
   let onClose = null, hideT = null;
@@ -1452,6 +2210,15 @@ const App = (()=>{
   function infoSheet(){
     const st = step(); const it = st && item(st); const b = st && blk(st);
     if(!it){ openSheet(`<h3>${esc(b ? b.name : SESS.titre)}</h3><div class="info"><p>${esc(b && b.note ? b.note : SESS.message || '')}</p></div>`); return; }
+    if(it.kind === 'test'){ const d = it.test;
+      openSheet(`<h3>${esc(it.name)}</h3><div class="info">
+        <h4>Ce que ça mesure</h4><p>${esc(d.mesure || '')}</p>
+        <h4>Pourquoi pour toi</h4><p>${esc(d.pourquoi || '')}</p>
+        ${d.repere ? `<h4>Repère</h4><p>${esc(d.repere.txt)}. Ce n’est pas une note : ce qui compte, c’est ton évolution et l’écart entre tes deux côtés.</p>` : ''}
+        <h4>Sécurité</h4><p>${esc(d.securite || 'Douleur : arrête le test.')}</p>
+        <h4>Fiabilité</h4><p>${esc(d.fiabilite || '')}</p>
+        ${d.source ? `<p class="rule">${esc(d.source)}</p>` : ''}
+      </div>`); return; }
     const t = it.tempoTxt || it.tempo;
     const tempoTxt = t ? `<h4>Le tempo ${t.join('-')}</h4><p>${t[0]} s pour descendre, ${+t[1] ? t[1]+' s de pause en bas' : 'pas de pause en bas'}, ${t[2]==='X' ? 'remonte le plus vite possible' : t[2]+' s pour remonter'}${+t[3] ? ', '+t[3]+' s en haut' : ''}.</p>
       <p class="rule">Pendant la série, le mannequin suit ce rythme et les bips te le donnent : tic grave = descends, tic moyen = tiens, double note = monte. Si tu n’entends rien, coupe le mode silencieux.</p>` : '';
@@ -1528,6 +2295,12 @@ const App = (()=>{
     }
     const rounds = S.log.filter(l => l.round && l.rpe != null && l.bi != null);
     [...new Set(rounds.map(r=>r.bi))].forEach(bi => L.push(`${S.blocks[bi].name} (tours) : RPE ${rounds.filter(r=>r.bi===bi).map(r=>r.rpe).join(' / ')}`));
+    if(S.tests && Object.keys(S.tests).length){
+      const en = Object.entries(S.tests);
+      en.forEach(([id, v]) => { const d = Data.tests[id] || {nom:id, unite:''}; const fl = d.mode === 'video' ? [] : flagsOf(d, v);
+        L.push(`${d.nom} : ${resLine(d, v)}${v.note ? ` « ${v.note} »` : ''}${fl.length ? ' → ' + fl.join(', ') : ''}`); });
+      L.push(ficheLine(en));
+    }
     if(S.adj.length) L.push(`Ajustements : ${S.adj.join(' ; ')}`);
     if(S.skipped && S.skipped.length) L.push(`Exos arrêtés : ${[...new Set(S.skipped)].join(', ')}`);
     S.pain.forEach(p => L.push(`Douleur : ${painLine(p)}`));
@@ -1540,12 +2313,12 @@ const App = (()=>{
     layout({page:true, tools:false}); S.steps.forEach((_,i)=>{ if(i < S.i && !S.done.includes(i)) S.done.push(i); }); progress();
     releaseWake();
     const secs = Math.round((Date.now() - (S.t0||Date.now()))/1000);
-    const work = S.steps.filter((s,i)=>['timer','reps','free'].includes(s.t) && S.done.includes(i) && !S.log.find(l=>l.i===i && l.skipped)).length;
-    const total = S.steps.filter(s=>['timer','reps','free'].includes(s.t)).length;
+    const work = S.steps.filter((s,i)=>['timer','reps','free','test'].includes(s.t) && S.done.includes(i) && !S.log.find(l=>l.i===i && l.skipped)).length;
+    const total = S.steps.filter(s=>['timer','reps','free','test'].includes(s.t)).length;
     head(SESS.titre, early ? 'Séance arrêtée' : 'Séance terminée');
     $('#page').innerHTML = `
       <div class="big-ok"><svg viewBox="0 0 52 52" aria-hidden="true"><circle class="c" cx="26" cy="26" r="24"/><path class="k" d="M15 27l7 7 15-16"/></svg></div>
-      <div class="facts"><div><b>${Math.floor(secs/60)}:${String(secs%60).padStart(2,'0')}</b>durée</div><div><b><span id="dn">${work}</span>/${total}</b>séries et exos</div><div><b>${S.adj.length}</b>ajustement${S.adj.length>1?'s':''}</div></div>
+      <div class="facts"><div><b>${Math.floor(secs/60)}:${String(secs%60).padStart(2,'0')}</b>durée</div><div><b><span id="dn">${work}</span>/${total}</b>${S.steps.some(s => s.t === 'test') ? 'étapes et tests' : 'séries et exos'}</div><div><b>${S.adj.length}</b>ajustement${S.adj.length>1?'s':''}</div></div>
       <div><p class="lbl" style="margin-top:0">Ta séance entière, sur 10 ?</p>
       <div class="rpegrid" id="srpe">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button data-n="${n}">${n}</button>`).join('')}</div>
       <p class="legend" id="srpeL">Objectif de Nathan : ${esc(SESS.rpe)}</p></div>

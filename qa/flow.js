@@ -4,6 +4,7 @@ const SID = process.argv[2] || 0, KNEE = process.argv[3] || 'ok';
 (async()=>{
   const b = await chromium.launch({args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader','--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
   const ctx = await b.newContext({...devices['Pixel 7'], permissions:['camera']});
+  await ctx.addInitScript(()=>{ try{ localStorage.setItem('cu.installVu','1'); }catch(e){} });   // l'écran d'installation ne s'affiche qu'une fois
   const p = await ctx.newPage();
   const errs = []; p.on('pageerror', e=>errs.push('PAGEERR '+e.message)); p.on('console', m=>{ if(m.type()==='error') errs.push(m.text()); });
   ctx.on('page', pg => pg.close().catch(()=>{}));
@@ -12,7 +13,9 @@ const SID = process.argv[2] || 0, KNEE = process.argv[3] || 'ok';
 
   const shots = {}; let n = 0, guard = 0, rpeI = 0, swapped = false, pained = false, filmed = false;
   const click = async sel => p.evaluate(s=>{ const e = document.querySelector(s); if(e && !e.disabled){ e.click(); return true; } return false; }, sel);
-  const snap = async tag => { if(shots[tag]) return; shots[tag] = 1; await p.screenshot({path:`qa/out/f${String(n++).padStart(2,'0')}-${tag}.png`}); };
+  const off = new Set();
+  const snap = async tag => { if(shots[tag]) return; shots[tag] = 1; await p.screenshot({path:`qa/out/f${String(n++).padStart(2,'0')}-${tag}.png`});
+    (await p.evaluate(()=>{ const vh = innerHeight, vw = innerWidth, o = []; document.querySelectorAll('#bar button, #bar a').forEach(e=>{ const r = e.getBoundingClientRect(); if(r.width && (r.bottom > vh+1 || r.right > vw+1 || r.left < -1)) o.push((e.id||e.className)+'@'+Math.round(r.bottom)+'/'+vh); }); return o; })).forEach(x => off.add(tag+':'+x)); };
   await click('#go'); await p.waitForTimeout(400);
   while(guard++ < 900){
     const st = await p.evaluate(()=>{ const S = __app._state(); return {screen: S ? S.screen : 'home', i: S && S.i, n: S && S.steps.length, sheet: !document.querySelector('#sheet').hidden && document.querySelector('#sheet').classList.contains('show'), title: document.querySelector('#title').textContent}; });
@@ -48,6 +51,7 @@ const SID = process.argv[2] || 0, KNEE = process.argv[3] || 'ok';
   const res = await p.evaluate(()=>{ const S = __app._state(); return {i:S.i, steps:S.steps.length, log:S.log.length, adj:S.adj, pain:S.pain.length, recap: __app._recap()}; });
   console.log('iterations', guard, JSON.stringify({i:res.i, steps:res.steps, log:res.log, pain:res.pain}));
   console.log(res.recap);
+  console.log('HORS-ECRAN', [...off]);
   console.log('ERRORS', errs);
   await b.close();
 })();
