@@ -82,66 +82,28 @@
    "source": "Adaptation du test assis-debout unipodal utilisé en rééducation du genou"
   },
   {
-   "id": "squat-e1rm",
-   "nom": "Squat : ton max estimé",
-   "court": "Squat max",
-   "mesure": "Ta charge maximale sur 1 rep, estimée sans la tenter",
+   "id": "rm",
+   "nom": "Test de force (RM)",
+   "court": "Max",
+   "mesure": "Ta charge maximale estimée sur cet exercice, sans aller à l'échec",
    "mode": "force",
-   "lift": "squat",
    "unite": "kg",
    "cotes": false,
    "mdcPct": 5,
-   "anim": "t_boxsquat",
-   "materiel": [
-    "Rack avec barres de sécurité",
-    "Barre et disques",
-    "Un banc ou une box derrière toi, à hauteur de parallèle"
-   ],
+   "materiel": [],
    "etapes": [
-    "Règle les barres de sécurité juste sous ta position basse.",
-    "Place la box derrière toi : tes fesses la touchent quand tes cuisses sont à l'horizontale.",
     "Échauffe-toi avec les séries que l'appli calcule.",
-    "Série test : environ 5 reps. Arrête quand il ne t'en reste qu'une, ou dès que la technique lâche."
+    "Série test : le nombre de reps demandé par Nathan, à la charge proposée.",
+    "Arrête-toi quand il ne t'en reste que le nombre prévu en réserve, ou dès que la technique lâche.",
+    "Note tes reps et ce qu'il te restait : l'appli calcule ton max."
    ],
    "stop": [
-    "Le dos s'arrondit",
-    "Les talons décollent",
-    "Tu ne touches plus la box"
+    "La technique lâche (dos qui s'arrondit, talons qui décollent, amplitude qui diminue)"
    ],
-   "securite": "Jamais sans barres de sécurité. Jamais jusqu'à l'échec : il doit toujours t'en rester une.",
-   "pourquoi": "Nathan calcule tes charges de squat en % de ce chiffre.",
-   "fiabilite": "Formule d'Epley sur 3 à 8 reps : environ ±5 %. Ton estimation des reps en réserve se trompe d'environ 1 rep.",
-   "source": "Epley 1985 ; Reynolds et al. JSCR 2006 ; Moses (Wintec) ; étude RIR au squat, 2025"
-  },
-  {
-   "id": "sdt-e1rm",
-   "nom": "Soulevé de terre : ton max estimé",
-   "court": "Soulevé max",
-   "mesure": "Ta charge maximale sur 1 rep, estimée sans la tenter",
-   "mode": "force",
-   "lift": "sdt",
-   "unite": "kg",
-   "cotes": false,
-   "mdcPct": 5,
-   "anim": "deadlift",
-   "materiel": [
-    "Barre (ou trap bar, toujours la même) et disques"
-   ],
-   "etapes": [
-    "Toujours la même barre d'un test à l'autre : c'est Nathan qui la choisit.",
-    "Échauffe-toi avec les séries que l'appli calcule.",
-    "Série test : environ 5 reps, en reposant la barre au sol à chaque rep.",
-    "Arrête quand il ne t'en reste qu'une, ou dès que la technique lâche."
-   ],
-   "stop": [
-    "Le dos s'arrondit",
-    "La barre s'éloigne des jambes",
-    "Tu donnes un à-coup pour décoller"
-   ],
-   "securite": "Dos plat du début à la fin. Au moindre arrondi, la série s'arrête là.",
-   "pourquoi": "Nathan calcule tes charges de soulevé de terre en % de ce chiffre.",
-   "fiabilite": "Les formules sous-estiment un peu le soulevé de terre (jusqu'à 5 à 10 % à partir de 5 reps) : c'est une marge de sécurité.",
-   "source": "Epley 1985 ; Moses (Wintec) ; LeSuer et al. JSCR 1997"
+   "securite": "Jamais jusqu'à l'échec sans barres de sécurité ou pareur. La technique passe avant la charge.",
+   "pourquoi": "Nathan calcule tes charges en % de ce chiffre.",
+   "fiabilite": "Formule d'Epley sur 3 à 8 reps : environ ±5 %. Ton estimation des reps en réserve se trompe d'environ 1 rep. Au soulevé de terre, les formules sous-estiment un peu : c'est une marge de sécurité. Un vrai 1RM (1 rep) donne le chiffre exact mais demande un pareur.",
+   "source": "Epley 1985 ; Reynolds et al. JSCR 2006 ; Moses (Wintec) ; LeSuer et al. JSCR 1997 ; étude RIR au squat, 2025"
   },
   {
    "id": "genou-mur",

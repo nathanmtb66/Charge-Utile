@@ -414,10 +414,14 @@ const D2R = Math.PI/180;
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
 const r25 = v => Math.max(0, Math.floor(v/2.5 + 1e-9)*2.5);           // arrondi à 2,5 kg en dessous
 const fKey = () => 'fiche.' + (Store.get('code') || 'x');
-const ficheAll = () => Store.get(fKey(), []);
+/* test de force : un par exercice, rangé sous « rm:<id de l'exercice> ». Anciens noms (1re version) convertis à la lecture. */
+const RM_ALIAS = {squat:'squat-barre', sdt:'souleve-de-terre'};
+const LEGACY = {'squat-e1rm':'rm:squat-barre', 'sdt-e1rm':'rm:souleve-de-terre'};
+const rmId = base => 'rm:' + (RM_ALIAS[base] || base);
+const ficheAll = () => Store.get(fKey(), []).map(e => LEGACY[e.test] ? Object.assign({}, e, {test: LEGACY[e.test]}) : e);
 /** dernier max estimé connu : celui du téléphone (test refait par l'athlète) ou celui écrit par Nathan dans la séance, le plus récent gagne */
-function e1rmFor(lift, src){
-  const id = lift === 'squat' ? 'squat-e1rm' : 'sdt-e1rm';
+function e1rmFor(base, src){
+  const id = rmId(base);
   const loc = ficheAll().filter(e => e.test === id && e.v && !e.v.skip && e.v.e1rm).sort((a,b) => a.date.localeCompare(b.date)).pop();
   const a = loc ? {e1rm: +loc.v.e1rm, date: loc.date, local: true} : null;
   const b = src && src.e1rm ? {e1rm: +src.e1rm, date: src.e1rmDate || '0', local: false} : null;
@@ -431,8 +435,8 @@ function buildItem(src){
   const m = (typeof Rig !== 'undefined' && Rig.META[x.anim]) || {};
   let load = src.charge, pctTxt = null;
   // charge en % du max estimé : Nathan écrit pct + base (+ charge calculée) ; si l'athlète a refait son test depuis, le téléphone recalcule
-  if(src.pct && src.base){
-    const e = e1rmFor(src.base, src);
+  if(src.pct){
+    const e = e1rmFor(src.base || src.ex, src);
     if(e){ if(e.local || typeof load !== 'number') load = r25(e.e1rm*src.pct/100); pctTxt = `${src.pct} % de ton max estimé (${kg(e.e1rm)} kg)`; }
   }
   const tempoOk = typeof m.tempo === 'function' ? m.tempo(x.opts || {}) : m.tempo;
@@ -448,19 +452,35 @@ function buildItem(src){
   };
 }
 /** un test de la batterie (bloc de type « test ») */
+/** définition d'un test ; « rm:<exercice> » = le test de force générique appliqué à cet exercice */
+function testDef(id){
+  if(Data.tests[id]) return Data.tests[id];
+  if(/^rm:/.test(id)){
+    const exId = id.slice(3), x = Data.ex[exId] || {nom: exId};
+    return Object.assign({}, Data.tests.rm || {mode:'force', unite:'kg', cotes:false, mdcPct:5}, {id, ex: exId, nom: `Max estimé · ${x.nom}`, court: x.nom});
+  }
+  return null;
+}
 function buildTestItem(src){
-  const d = Data.tests[src.test] || {id:src.test, nom:src.test, mode:'saisie', unite:'', cotes:false};
-  const anim = typeof Rig !== 'undefined' && d.anim && typeof Rig.P[d.anim] === 'function' ? d.anim : null;
-  return {id: src.test, src, test: d, kind:'test', name: src.nom || d.nom, anim, opts: d.opts || {}, sets: 1, cues: d.etapes || [], errors: [], alts: [],
-    note: src.note, famille: 'test', muscles: null, why: d.pourquoi, safety: d.securite, reps: null, dur: null};
+  let d = src.test === 'rm' ? testDef(rmId(src.ex)) : testDef(src.test);
+  d = d || {id:src.test, nom:src.test, mode:'saisie', unite:'', cotes:false};
+  const x = d.ex ? Data.ex[d.ex] || {} : null;
+  let anim = d.anim, opts = d.opts || {};
+  if(x){ anim = src.box && x.anim === 'squat' ? 't_boxsquat' : x.anim; opts = src.box ? {} : (x.opts || {}); }
+  if(!(typeof Rig !== 'undefined' && anim && typeof Rig.P[anim] === 'function')) anim = null;
+  const nom = x && +src.reps === 1 ? `1RM · ${x.nom}` : d.nom;
+  return {id: d.id, src, test: d, ex: x, kind:'test', name: src.nom || nom, anim, opts, sets: 1, cues: d.etapes || [], errors: [], alts: [],
+    note: src.note, famille: 'test', muscles: x ? x.muscles : null, why: d.pourquoi, safety: d.securite, reps: null, dur: null};
 }
 function buildBlocks(sess){
   return sess.blocs.map(b => ({
     name: b.nom, type: ({series:'sets', libre:'free'})[b.type] || b.type,
     rounds: b.tours || 1, restEx: b.recupExo ?? 15, restRound: b.recupTour ?? 90, min: b.min, max: b.max, note: b.note, noRpe: !!b.noRpe,
     items: (b.items || []).map(b.type === 'test' ? buildTestItem : buildItem)
-  }));
+  })).filter(b => ['cardio','circuit','sets','free','test'].includes(b.type));   // bloc d'une version plus récente : ignoré plutôt que cassé
 }
+/** une séance de tests (au moins un bloc « test ») : elle va dans l'onglet Tests */
+function isTestSession(s){ const b = s.blocs || []; return b.some(x => x.type === 'test') && b.every(x => x.type === 'test' || x.type === 'cardio'); }   // une séance mixte reste dans « Séances »
 function buildSteps(blocks){
   const steps = [];
   blocks.forEach((b, bi)=>{
@@ -545,6 +565,7 @@ const App = (()=>{
 
   /* ================= ACCUEIL ================= */
   async function home(){
+    if(window.__cuPending && !window.__cuReloading){ window.__cuReloading = true; location.reload(); return; }   // nouvelle version arrivée pendant la séance
     clearTimers(); releaseWake(); S = null; SESS = null;
     layout({page:true, tools:false, top:false}); progress();
     const code = Store.get('code');
@@ -558,32 +579,57 @@ const App = (()=>{
     const prog = Store.get('progress');
     const today = new Date().toISOString().slice(0,10);
     const list = [...book.seances].sort((a,b)=>a.date.localeCompare(b.date));
-    const todo = list.filter(s => !hist[s.id]);
-    const done = list.filter(s => hist[s.id]).reverse();
+    const isT = s => isTestSession(s);
+    const todoS = list.filter(s => !hist[s.id] && !isT(s)), todoT = list.filter(s => !hist[s.id] && isT(s));
     const resume = prog && list.find(s => s.id === prog.sid) && Date.now() - prog.at < 12*3600e3 ? list.find(s => s.id === prog.sid) : null;
+    const tab = curTab;                                  // l'onglet ouvert pendant cette visite ; l'appli rouvre toujours sur « Séances »
+    if(tab === 'recup') return recupHome();
+    head('Charge Utile', tab === 'tests' ? 'Mes tests' : 'Mes séances');
     const card = (s, i) => `<button class="scard${i===0 ? ' first' : ''}" data-id="${esc(s.id)}">
         <div><small>${dayLabel(s.date)}${s.date < today ? ' · en retard' : ''}</small><b>${esc(s.titre)}</b>
-        <span>${s.blocs.length} blocs · ≈ ${s.dureeMin || '?'} min · RPE ${esc(s.rpe || '—')}</span></div>${ico('chev')}</button>`;
-    $('#page').innerHTML = `
-      <div class="hero"><h2>${book.prenom ? 'Salut ' + esc(book.prenom) : 'Salut'}</h2><p class="tagline">${todo.length ? `${todo.length} séance${todo.length>1?'s':''} à faire` : list.length ? 'Tout est fait, bravo' : 'Nathan prépare ta première séance'}</p></div>
-      ${resume ? `<button class="resume" id="resume">${ico('play')}<div><b>Reprendre ${esc(resume.titre)}</b><span>Là où tu t’es arrêté</span></div></button>` : ''}
-      ${todo.length ? `<div class="slist">${todo.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
-      <button class="recupbtn" id="recupB"><div><b>Récup &amp; mobilité</b><span>Étirements, mobilité, respiration · 5 à 20 min</span></div>${ico('chev')}</button>
-      ${ficheAll().length ? `<button class="recupbtn" id="ficheB"><div><b>Ma fiche</b><span>Tes tests datés : force, souplesse, symétrie</span></div>${ico('chev')}</button>` : ''}
-      ${installCard()}
-      <div id="offb"></div>
-      ${done.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${done.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)} · RPE ${hist[s.id].srpe ?? '—'}</span></li>`).join('')}</ul>` : ''}
-      <div class="foot"><button class="textlink" id="snd">Sons : ${sndSummary()}</button><button class="textlink" id="chg">Changer de code</button></div>`;
+        <span>${isT(s) ? `${s.blocs.reduce((n, b) => n + (b.type === 'test' ? (b.items || []).length : 0), 0)} tests · ≈ ${s.dureeMin || '?'} min` : `${s.blocs.length} blocs · ≈ ${s.dureeMin || '?'} min · RPE ${esc(s.rpe || '—')}`}</span></div>${ico('chev')}</button>`;
+    const resumeHtml = r => r ? `<button class="resume" id="resume">${ico('play')}<div><b>Reprendre ${esc(r.titre)}</b><span>Là où tu t’es arrêté</span></div></button>` : '';
+    const doneList = arr => arr.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${arr.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)}${isT(s) ? '' : ` · RPE ${hist[s.id].srpe ?? '—'}`}</span></li>`).join('')}</ul>` : '';
+    let body;
+    if(tab === 'tests'){
+      const rows = ficheRows();
+      body = `
+        <div class="hero"><h2>Tests</h2><p class="tagline">${todoT.length ? `${todoT.length} séance${todoT.length>1?'s':''} de tests à faire` : 'Aucun test à faire pour l’instant'}</p></div>
+        ${resumeHtml(resume && isT(resume) ? resume : null)}
+        ${todoT.length ? `<div class="slist">${todoT.map(card).join('')}</div>` : ''}
+        <p class="lbl">Mes derniers résultats</p>
+        ${rows.length ? `<ul class="list fiche">${rows.join('')}</ul><button class="textlink" id="ficheB">${ico('send','ico sm')} Envoyer ma fiche à Nathan</button>` : `<p class="quote">Tes résultats s’afficheront ici, datés, après ta première séance de tests.<small>Nathan s’en sert pour régler tes charges et choisir tes exercices</small></p>`}
+        ${doneList(list.filter(s => hist[s.id] && isT(s)).reverse())}`;
+    } else {
+      body = `
+        <div class="hero"><h2>${book.prenom ? 'Salut ' + esc(book.prenom) : 'Salut'}</h2><p class="tagline">${todoS.length ? `${todoS.length} séance${todoS.length>1?'s':''} à faire` : list.length ? 'Tout est fait, bravo' : 'Nathan prépare ta première séance'}</p></div>
+        ${resumeHtml(resume && !isT(resume) ? resume : null)}
+        ${todoS.length ? `<div class="slist">${todoS.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
+        ${installCard()}
+        <div id="offb"></div>
+        ${doneList(list.filter(s => hist[s.id] && !isT(s)).reverse())}
+        <div class="foot"><button class="textlink" id="snd">Sons : ${sndSummary()}</button><button class="textlink" id="chg">Changer de code</button></div>`;
+    }
+    $('#page').innerHTML = tabsHtml(tab, {seances: todoS.length, tests: todoT.length}) + body;
     stagger($('#page'));
     bar('');
+    bindTabs();
     offlineBadge();
     $$('.scard').forEach(b => b.onclick = ()=>{ SND.tap(); intro(list.find(s=>s.id===b.dataset.id)); });
     on('#resume', ()=>{ resumeSession(resume, prog); });
-    on('#recupB', ()=>{ SND.tap(); recupHome(); });
     on('#ficheB', ()=>{ SND.tap(); ficheScreen(); });
     on('#snd', ()=>{ SND.tap(); soundSheet(()=>{ const s = $('#snd'); if(s) s.textContent = `Sons : ${sndSummary()}`; }); });
     on('#chg', ()=>{ Store.del('code'); home(); });
     bindInstall();
+  }
+  /* ---------- onglets de l'accueil : Séances · Tests · Récup ---------- */
+  let curTab = 'seances';
+  function tabsHtml(active, n = {}){
+    const T = [['seances', 'Séances', n.seances], ['tests', 'Tests', n.tests], ['recup', 'Récup']];
+    return `<div class="tabs" role="tablist">${T.map(([k, l, c]) => `<button role="tab" data-tab="${k}" class="${k === active ? 'on' : ''}" aria-selected="${k === active}">${l}${c ? `<i>${c}</i>` : ''}</button>`).join('')}</div>`;
+  }
+  function bindTabs(){
+    $$('[data-tab]').forEach(b => b.onclick = ()=>{ if(b.classList.contains('on')) return; SND.tap(); curTab = b.dataset.tab; curTab === 'recup' ? recupHome() : home(); });
   }
   function setup(msg){
     head('Charge Utile', 'Bienvenue');
@@ -1184,7 +1230,8 @@ const App = (()=>{
     const focus = (Data.book && Data.book.focus) || [];
     const chip = (grp, val, lab, on) => `<button data-g="${grp}" data-v="${val}" class="${on ? 'on' : ''}">${lab}</button>`;
     const render = () => {
-      $('#page').innerHTML = `
+      const book = Data.book, hist = Store.get('history', {}), open = (book && book.seances || []).filter(x => !hist[x.id]);
+      $('#page').innerHTML = tabsHtml('recup', {seances: open.filter(x => !isTestSession(x)).length, tests: open.filter(isTestSession).length}) + `
         <div class="hero"><h2>Récup</h2><p class="tagline">Une routine faite pour toi, maintenant</p></div>
         <div class="rgroup"><p class="lbl">Tu veux faire quoi ?</p><div class="kbtn three">
           ${chip('kind','mobilite','Mobilité', st.kind==='mobilite')}${chip('kind','etirement','Étirements', st.kind==='etirement')}${chip('kind','respiration','Respiration', st.kind==='respiration')}</div>
@@ -1195,7 +1242,8 @@ const App = (()=>{
         <div class="rgroup"><p class="lbl">Tu as mal quelque part ? <em>on évite la zone</em></p><div class="chips">${RZONES.map(([v,l]) => chip('pain', v, l, st.pain.includes(v))).join('')}</div></div>
         ${focus.length ? `<p class="quote">Nathan a ciblé : ${focus.map(z => esc(ZNAME[z] || z)).join(', ')}<small>La routine insiste dessus</small></p>` : ''}`}`;
       stagger($('#page'));
-      bar(st.kind === 'respiration' ? '' : `<div class="pair"><button class="ghost" id="back">Retour</button>${goBtn('Créer ma routine')}</div>`);
+      bar(st.kind === 'respiration' ? '' : goBtn('Créer ma routine'));
+      bindTabs();
       $$('#page [data-g]').forEach(b => b.onclick = () => {
         SND.tap(); const g = b.dataset.g, v = b.dataset.v;
         if(g === 'pain'){ st.pain = st.pain.includes(v) ? st.pain.filter(x => x !== v) : st.pain.concat(v); }
@@ -1403,7 +1451,7 @@ const App = (()=>{
   function resLine(d, v){
     if(v.skip) return `non fait (${v.skip})`;
     if(d.mode === 'video'){ const ko = (d.criteres || []).filter(c => v[c.k] === 0).map(c => c.pb); return `${v.score}/${(d.criteres || []).length}${ko.length ? ' (' + ko.join(', ') + ')' : ''}`; }
-    if(d.mode === 'force') return `${n1(v.e1rm)} kg estimés (${n1(v.kg)} kg × ${v.reps}, ${v.rir >= 3 ? '3+' : v.rir} en réserve${v.variante ? ', ' + v.variante : ''})`;
+    if(d.mode === 'force') return v.vrai ? `${n1(v.e1rm)} kg (vrai 1RM${v.tentatives ? ' : ' + v.tentatives : ''})` : `${n1(v.e1rm)} kg estimés (${n1(v.kg)} kg × ${v.reps}, ${v.rir >= 3 ? '3+' : v.rir} en réserve${v.variante ? ', ' + v.variante : ''})`;
     if(d.cotes) return `G ${valTxt(v.g, d.unite)} · D ${valTxt(v.d, d.unite)}`;
     return valTxt(v.val, d.unite);
   }
@@ -1473,6 +1521,7 @@ const App = (()=>{
     const vari = tVariante(it);
     $('#panel').innerHTML = `
       <p class="tmes">${esc(d.mesure || '')}${vari ? ` · <b>${esc(vari)}</b>` : ''}</p>
+      ${d.mode === 'force' ? (P => `<p class="tstat">${P.R === 1 ? 'Vrai 1RM · pareur ou barres de sécurité' : `Série test : ${P.R} reps · ${P.rir} en réserve`}</p>`)(fParams(it)) : ''}
       <ol class="tsteps">${(d.etapes || []).map(e => `<li>${esc(e)}</li>`).join('')}</ol>
       ${d.montage ? `<p class="tmont">${ico('phone','ico sm')}${esc(d.montage)}</p>` : ''}
       ${d.stop && d.stop.length ? `<p class="tstop"><b>L’essai ne compte pas si</b> ${d.stop.map(esc).join(' · ').toLowerCase()}</p>` : ''}
@@ -1825,54 +1874,93 @@ const App = (()=>{
   }
 
   /* ----- 2e. force : max estimé sans le tenter ----- */
+  /* paramètres du test de force, écrits par Nathan dans la séance :
+     reps (reps visées, 1 = vrai 1RM), rir (reps gardées en réserve, 1 par défaut), pas (kg), box, barres, echauffement [[% de la charge test, reps, récup s], …] */
+  function fParams(it){
+    const src = it.src, x = it.ex || {}, mat = x.materiel || [];
+    const R = Math.max(1, Math.min(12, +src.reps || 5)), rir = R === 1 ? 0 : Math.max(0, Math.min(3, src.rir ?? 1));
+    const pas = +src.pas || (mat.includes('halteres') || mat.includes('kettlebell') ? 2 : 2.5);
+    const barres = src.barres ?? (mat.includes('barre') && ['squat', 'fente', 'haut-du-corps'].includes(x.famille));
+    return {R, rir, pas, barres, box: !!src.box, perHand: mat.includes('halteres'), min: mat.includes('barre') ? 20 : pas};
+  }
+  const rDown = (v, pas) => Math.max(0, Math.floor(v/pas + 1e-9)*pas);
+  const pctFor = (R, rir) => 1/(1 + (R + rir)/30);                  // Epley inversé : part du max pour R reps avec rir en réserve
   function tForceSetup(){
     clearTimers(); tClean(); S.screen = 'test';
-    const {it, d} = TS;
+    const {it, d} = TS, P = fParams(it);
     tLayout(it, 'g');
     head(tKick(), it.name);
-    const prev = latestE1rm(d.lift, it.src), lastBox = (ficheOf(d.id).pop() || {v:{}}).v.box;
-    const sug = prev ? r25(prev.e1rm*.85) : null;
-    TS.f = {kg: sug, box: lastBox || null, safe: d.lift !== 'squat'};
+    const prev = latestE1rm(d.ex, it.src), last = (ficheOf(d.id).pop() || {v:{}}).v;
+    const sug = prev ? rDown(prev.e1rm*pctFor(P.R, P.rir), P.pas) : null;
+    TS.f = {kg: sug, box: last.box || null, safe: !P.barres, P};
+    const unitH = P.perHand ? ' par haltère' : '';
+    const intro = P.R === 1
+      ? `<b>Vrai 1RM</b> : tu montes par paliers jusqu’à la charge max que tu soulèves proprement une fois.${prev ? ` Dernier max : <b>${n1(prev.e1rm)} kg</b>.` : ''}`
+      : prev ? `Dernier max estimé : <b>${n1(prev.e1rm)} kg</b>. Pour <b>${P.R} reps</b> avec ${P.rir} en réserve, l’appli propose <b>${n1(sug)} kg</b>.`
+      : `Premier test : choisis la charge que tu penses lever <b>${P.R + P.rir} fois proprement</b>. Tu en feras ${P.R}.`;
     $('#panel').innerHTML = `
-      <p class="tmes">${prev ? `Ton dernier max estimé : <b>${n1(prev.e1rm)} kg</b>. L’appli propose 85 % pour ta série test (≈ 5 reps).` : 'Premier test : choisis la charge que tu penses lever <b>6 fois proprement</b>. Pas plus.'}</p>
-      <div class="tin"><label for="in_kg">Charge de la série test</label><button class="tpm" data-k="-2.5">−</button><input class="field" id="in_kg" type="number" inputmode="decimal" step="2.5" min="20" max="400" placeholder="kg" value="${sug ?? ''}"><button class="tpm" data-k="2.5">+</button></div>
-      ${d.lift === 'squat' ? `<div class="tin"><label for="in_box">Hauteur de ta box <em>${lastBox ? 'la dernière fois : ' + lastBox + ' cm' : 'facultatif, garde toujours la même'}</em></label><button class="tpm" data-b="-1">−</button><input class="field" id="in_box" type="number" inputmode="numeric" step="1" min="20" max="80" placeholder="cm" value="${lastBox ?? ''}"><button class="tpm" data-b="1">+</button></div>
-        <button class="tcheck" id="safe">${ico('check','ico sm')}Barres de sécurité réglées juste sous ma position basse</button>` : ''}
-      ${tVariante(it) ? `<p class="last">Barre : <b>${esc(tVariante(it))}</b></p>` : ''}`;
+      <p class="tmes">${intro}</p>
+      <div class="tin"><label for="in_kg">${P.R === 1 ? 'Charge visée' : 'Charge de la série test'}${unitH ? `<em>${unitH}</em>` : ''}</label><button class="tpm" data-k="-${P.pas}">−</button><input class="field" id="in_kg" type="number" inputmode="decimal" step="${P.pas}" min="${P.min}" max="500" placeholder="kg" value="${sug ?? ''}"><button class="tpm" data-k="${P.pas}">+</button></div>
+      ${P.box ? `<div class="tin"><label for="in_box">Hauteur de ta box <em>${last.box ? 'la dernière fois : ' + last.box + ' cm' : 'garde toujours la même'}</em></label><button class="tpm" data-b="-1">−</button><input class="field" id="in_box" type="number" inputmode="numeric" step="1" min="20" max="80" placeholder="cm" value="${last.box ?? ''}"><button class="tpm" data-b="1">+</button></div>` : ''}
+      ${P.barres ? `<button class="tcheck" id="safe">${ico('check','ico sm')}Barres de sécurité réglées${P.R === 1 ? ' et un pareur avec moi' : ' juste sous ma position basse'}</button>` : ''}
+      ${it.note ? `<p class="last">${esc(it.note)}</p>` : ''}`;
     stagger($('#panel'));
     bar(`<div class="pair"><button class="ghost" id="backT">Retour</button><button class="primary" id="main" disabled>Échauffement</button></div>`);
-    const kgIn = $('#in_kg');
+    const kgIn = $('#in_kg'), bx = $('#in_box');
     const rd = el => { const x = parseFloat((el.value || '').replace(',', '.')); return isNaN(x) ? null : x; };
-    const ok = () => { TS.f.kg = rd(kgIn); const b = $('#in_box'); if(b) TS.f.box = rd(b); $('#main').disabled = !(TS.f.kg >= 20 && TS.f.kg <= 400 && TS.f.safe); };
-    kgIn.oninput = ok; const bx = $('#in_box'); if(bx) bx.oninput = ok;
-    $$('.tpm').forEach(b => b.onclick = ()=>{ if(b.dataset.b){ const x = rd(bx) ?? 45; bx.value = x + +b.dataset.b; } else { kgIn.value = Math.max(20, (rd(kgIn) ?? 40) + +b.dataset.k); } pop(b); ok(); });
+    const ok = () => { TS.f.kg = rd(kgIn); if(bx) TS.f.box = rd(bx); $('#main').disabled = !(TS.f.kg >= P.min && TS.f.kg <= 500 && TS.f.safe); };
+    kgIn.oninput = ok; if(bx) bx.oninput = ok;
+    $$('.tpm').forEach(b => b.onclick = ()=>{ if(b.dataset.b){ bx.value = (rd(bx) ?? 45) + +b.dataset.b; } else { kgIn.value = Math.max(P.min, Math.round(((rd(kgIn) ?? P.min*2) + +b.dataset.k)*100)/100); } pop(b); ok(); });
     on('#safe', ()=>{ TS.f.safe = !TS.f.safe; $('#safe').classList.toggle('on', TS.f.safe); SND.tap(); ok(); });
     on('#backT', testIntro);
-    on('#main', ()=>{ TS.f.ramp = rampOf(TS.f.kg); TS.f.rk = 0; TS.f.sets = []; tForceRamp(); });
+    on('#main', ()=>{ TS.f.ramp = rampOf(TS.f.kg, it.src.echauffement, P); TS.f.rk = 0; TS.f.sets = []; TS.f.tries = []; tForceRamp(); });
     ok();
   }
-  /** échauffement calculé depuis la charge test : 40 % ×8 (ou barre), 60 % ×5, 80 % ×3, 90 % ×1 */
-  function rampOf(L){
-    const w = [[.4, 8, 60], [.6, 5, 90], [.8, 3, 120], [.9, 1, 150]].map(([p, r, rest]) => ({kg: Math.max(20, r25(L*p)), reps: r, rest}));
+  /** échauffement : celui de Nathan s'il l'a écrit, sinon 40 % ×8, 60 % ×5, 80 % ×3, 90 % ×1 de la charge test (et 95 % ×1 avant un vrai 1RM) */
+  function rampOf(L, custom, P){
+    const base = custom && custom.length ? custom.map(([p, r, rest]) => [p/100, r, rest || 120]) : [[.4, 8, 60], [.6, 5, 90], [.8, 3, 120], [.9, 1, 150]].concat(P.R === 1 ? [] : []);
+    const w = base.map(([p, r, rest]) => ({kg: Math.max(P.min, rDown(L*p, P.pas)), reps: r, rest}));
     return w.filter((x, i) => i === 0 || x.kg > w[i-1].kg);
   }
   function tForceRamp(){
     clearTimers(); S.screen = 'test';
-    const {it, d} = TS, f = TS.f;
+    const {it} = TS, f = TS.f, P = f.P;
     tLayout(it, 'g');
-    head(`${tKick()} · échauffement`, it.name);
+    head(`${tKick()} · ${f.rk < f.ramp.length ? 'échauffement' : P.R === 1 ? 'tentatives' : 'série test'}`, it.name);
     const cur = f.rk;
+    const testLine = P.R === 1 ? `tentative${f.tries.length ? ' ' + (f.tries.length + 1) : ''} · 1 rep` : `série test · ${P.R} rep${P.R > 1 ? 's' : ''}${P.rir ? `, ${P.rir} en réserve` : ''}`;
     $('#panel').innerHTML = `
       <ol class="tramp">${f.ramp.map((x, i) => `<li class="${i < cur ? 'ok' : i === cur ? 'now' : ''}"><b>${n1(x.kg)} kg</b><span>× ${x.reps}</span>${i < cur ? ico('check','ico sm') : ''}</li>`).join('')}
-        <li class="${cur >= f.ramp.length ? 'now' : ''} test"><b>${n1(f.kg)} kg</b><span>série test · ≈ 5 reps</span></li></ol>
-      <p class="last">${cur < f.ramp.length ? 'Reps faciles et propres : c’est de l’échauffement, pas de la fatigue.' : 'Arrête quand il ne t’en reste qu’une, ou dès que la technique lâche.'}</p>`;
+        ${f.tries.map(t => `<li class="ok"><b>${n1(t.kg)} kg</b><span>${t.ok ? 'réussi' : 'raté'}</span></li>`).join('')}
+        <li class="${cur >= f.ramp.length ? 'now' : ''} test"><b>${n1(f.kg)} kg</b><span>${testLine}</span></li></ol>
+      <p class="last">${cur < f.ramp.length ? 'Reps faciles et propres : c’est de l’échauffement, pas de la fatigue.'
+        : P.R === 1 ? 'Une seule rep, technique parfaite. Au moindre doute, c’est raté.' : `Arrête-toi quand il ne t’en reste que ${P.rir || 'zéro'}, ou dès que la technique lâche.`}</p>`;
     stagger($('#panel'));
     if(cur < f.ramp.length) bar(`<div class="pair"><button class="ghost" id="skipW">Passer</button><button class="primary" id="main">${ico('check')}${n1(f.ramp[cur].kg)} kg fait</button></div>`);
+    else if(P.R === 1) bar(`<div class="pair"><button class="ghost" id="miss">Raté</button><button class="primary" id="hit">${ico('check')}Réussi</button></div>`);
     else bar(`<button class="primary" id="main">${ico('check')}Série test faite</button>`);
     on('#skipW', ()=>{ f.rk++; tForceRamp(); });
     on('#main', ()=>{ SND.tap(); buzz(15);
       if(cur < f.ramp.length){ f.rk++; return tRest(f.ramp[cur].rest, tForceRamp); }
       tForceResult(); });
+    on('#hit', ()=>tOneRm(true)); on('#miss', ()=>tOneRm(false));
+  }
+  /** vrai 1RM : réussi → on monte (5 % puis 2,5 %), raté → on redescend d'un cran une fois, puis on s'arrête */
+  function tOneRm(ok){
+    const f = TS.f, P = f.P; SND.tap(); buzz(15);
+    f.tries.push({kg: f.kg, ok});
+    const best = Math.max(0, ...f.tries.filter(t => t.ok).map(t => t.kg)), misses = f.tries.filter(t => !t.ok).length;
+    if(misses >= 2 || f.tries.length >= 5){
+      if(!best){ toast('Aucune tentative réussie : repars plus léger la prochaine fois'); return testSave({skip:'autre', note:'1RM : aucune tentative réussie'}); }
+      return testSave({e1rm: best, kg: best, reps: 1, rir: 0, cible: 1, vrai: 1, tentatives: f.tries.map(t => `${n1(t.kg)}${t.ok ? '✓' : '✗'}`).join(' ')});
+    }
+    const up = f.tries.filter(t => t.ok).length <= 1 ? .05 : .025;
+    const next = ok ? Math.max(f.kg + P.pas, rDown(f.kg*(1 + up), P.pas)) : Math.max(best + P.pas, rDown(f.kg*.975, P.pas));
+    openSheet(`<h3>${ok ? 'Réussi' : 'Raté'}</h3><p class="sub">${ok ? `Prochaine tentative à <b>${n1(next)} kg</b> après 3 à 5 min de repos, ou arrête-toi là : ton max est ${n1(f.kg)} kg.` : `Dernière tentative à <b>${n1(next)} kg</b> après 5 min, ou arrête-toi : ton max est ${best ? n1(best) + ' kg' : 'à refaire'}.`}</p>
+      <div class="actions"><button class="primary" id="okS">Tentative à ${n1(next)} kg</button><button class="ghost" id="stopT">J’arrête là</button></div>`);
+    on('#okS', ()=>{ closeSheet(true); f.kg = next; tRest(240, tForceRamp); });
+    on('#stopT', ()=>{ closeSheet(true); if(!best) return testSave({skip:'autre', note:'1RM : aucune tentative réussie'});
+      testSave({e1rm: best, kg: best, reps: 1, rir: 0, cible: 1, vrai: 1, tentatives: f.tries.map(t => `${n1(t.kg)}${t.ok ? '✓' : '✗'}`).join(' ')}); });
   }
   function tRest(sec, then){
     clearTimers(); S.screen = 'test';
@@ -1887,15 +1975,15 @@ const App = (()=>{
   }
   function tForceResult(){
     clearTimers(); S.screen = 'test';
-    const {it, d} = TS, f = TS.f;
-    let reps = 5, rir = null;
+    const {it} = TS, f = TS.f, P = f.P;
+    let reps = P.R, rir = null;
     tLayout(it, 'g', false);
     head(`${tKick()} · résultat`, it.name);
     $('#panel').innerHTML = `
       <p class="lbl" style="margin:0">Reps faites à ${n1(f.kg)} kg</p>
       <div class="stepper"><button id="m" aria-label="Moins">−</button><b id="n">${reps}</b><button id="p" aria-label="Plus">+</button></div>
       <p class="lbl" style="margin:0">Il t’en restait combien ?</p>
-      <div class="rpe5 c4" id="rir">${[[0,'0','échec'],[1,'1','idéal'],[2,'2',''],[3,'3+','trop léger']].map(([v,l,s]) => `<button data-r="${v}"><b>${l}</b><span>${s}</span></button>`).join('')}</div>
+      <div class="rpe5 c4" id="rir">${[[0,'0','échec'],[1,'1',''],[2,'2',''],[3,'3+','']].map(([v,l,s]) => `<button data-r="${v}"><b>${l}</b><span>${v === P.rir ? 'prévu' : s}</span></button>`).join('')}</div>
       <p class="tres" id="fres"></p>`;
     stagger($('#panel'));
     bar(`<button class="primary" id="main" disabled>${ico('check')}Valider</button>`);
@@ -1903,18 +1991,18 @@ const App = (()=>{
       const out = $('#fres');
       if(rir == null){ out.innerHTML = ''; $('#main').disabled = true; return; }
       const r = reps + rir, e = epley(f.kg, reps, rir);
-      out.innerHTML = `Max estimé : <b>${n1(Math.round(e*2)/2)} kg</b>${r > 8 ? '<br><em>Charge trop légère : estimation moins précise.</em>' : reps < 2 ? '<br><em>Charge très lourde : garde une rep en réserve la prochaine fois.</em>' : ''}`;
+      out.innerHTML = `Max estimé : <b>${n1(Math.round(e*2)/2)} kg</b>${r > Math.max(8, P.R + P.rir + 3) ? '<br><em>Charge trop légère : estimation moins précise.</em>' : ''}`;
       $('#main').disabled = false;
     };
     on('#m', ()=>{ reps = Math.max(1, reps-1); $('#n').textContent = reps; pop($('#n')); upd(); });
-    on('#p', ()=>{ reps = Math.min(15, reps+1); $('#n').textContent = reps; pop($('#n')); upd(); });
+    on('#p', ()=>{ reps = Math.min(20, reps+1); $('#n').textContent = reps; pop($('#n')); upd(); });
     $$('#rir button').forEach(b => b.onclick = ()=>{ rir = +b.dataset.r; $$('#rir button').forEach(x => x.classList.toggle('on', x === b)); pop(b); buzz(10); upd(); });
     on('#main', ()=>{
       const r = reps + rir, e = Math.round(epley(f.kg, reps, rir)*2)/2;
       f.sets.push({kg:f.kg, reps, rir, e1rm:e});
-      const v = {e1rm:e, kg:f.kg, reps, rir, box: f.box || undefined, variante: tVariante(it) || undefined, series: f.sets.length};
-      if(r > 8 && f.sets.length < 2){
-        const nk = Math.max(f.kg + 2.5, Math.ceil(f.kg*1.1/2.5)*2.5);
+      const v = {e1rm:e, kg:f.kg, reps, rir, cible: P.R, box: f.box || undefined, series: f.sets.length};
+      if(r > Math.max(8, P.R + P.rir + 3) && f.sets.length < 2){
+        const nk = Math.max(f.kg + P.pas, rDown(e*pctFor(P.R, P.rir), P.pas));
         openSheet(`<h3>Charge trop légère</h3><p class="sub">Avec ${r} reps possibles, l’estimation perd en précision. Une 2e série test à <b>${n1(nk)} kg</b> après 4 min de repos donne un chiffre plus juste.</p>
           <div class="actions"><button class="primary" id="okS">Refaire à ${n1(nk)} kg</button><button class="ghost" id="keepF">Garder ${n1(e)} kg</button></div>`);
         on('#okS', ()=>{ closeSheet(true); f.kg = nk; tRest(240, ()=>{ f.rk = f.ramp.length; tForceRamp(); }); });
@@ -2021,9 +2109,10 @@ const App = (()=>{
     }
     else if(d.mode === 'force'){
       const tr = prev ? trendOf(d, prev.v.e1rm, v.e1rm) : null;
-      html = `<div class="tbig"><b>${n1(v.e1rm)}</b><span>kg · max estimé</span>${tr ? `<em class="${tr.c}">${tr.t} depuis le ${prev.date.split('-').reverse().slice(0,2).join('/')}</em>` : ''}</div>
-        <p class="last">${n1(v.kg)} kg × ${v.reps} reps, ${v.rir >= 3 ? '3 ou plus' : v.rir} en réserve · marge ±5 %</p>
-        <ul class="list tight">${[70,75,80,85].map(p => `<li><span>${p} % pour tes séances</span><span>${n1(r25(v.e1rm*p/100))} kg</span></li>`).join('')}</ul>`;
+      const pas = fParams(it).pas;
+      html = `<div class="tbig"><b>${n1(v.e1rm)}</b><span>kg · ${v.vrai ? 'vrai 1RM' : 'max estimé'}</span>${tr ? `<em class="${tr.c}">${tr.t} depuis le ${prev.date.split('-').reverse().slice(0,2).join('/')}</em>` : ''}</div>
+        <p class="last">${v.vrai ? `Tentatives : ${esc(v.tentatives || '')}` : `${n1(v.kg)} kg × ${v.reps} reps, ${v.rir >= 3 ? '3 ou plus' : v.rir} en réserve · marge ±5 %`}</p>
+        <ul class="list tight">${[70,75,80,85].map(p => `<li><span>${p} % pour tes séances</span><span>${n1(rDown(v.e1rm*p/100, pas))} kg</span></li>`).join('')}</ul>`;
     } else {
       const a = asymOf(d, v);
       const cell = s => { const x = s === 'v' ? v.val : v[s], p = prev ? (s === 'v' ? prev.v.val : prev.v[s]) : null, tr = trendOf(d, p, x);
@@ -2043,23 +2132,30 @@ const App = (()=>{
   }
 
   /* ----- Ma fiche (sur le téléphone) ----- */
-  function ficheScreen(){
-    clearTimers(); S = null; SESS = null;
-    layout({page:true, tools:false, top:false}); progress();
-    head('Charge Utile', 'Ma fiche');
-    const all = ficheAll(), tests = Object.values(Data.tests || {});
-    const blocks = tests.map(d => {
-      const h = all.filter(e => e.test === d.id).sort((a,b) => a.date.localeCompare(b.date));
+  /** les lignes de « Ma fiche » : les max en premier (un par exercice testé), puis les autres tests dans l'ordre de la batterie */
+  function ficheRows(){
+    const all = ficheAll();
+    const rmIds = [...new Set(all.filter(e => /^rm:/.test(e.test)).map(e => e.test))];
+    const ids = rmIds.concat(Object.keys(Data.tests || {}).filter(id => id !== 'rm'));
+    return ids.map(id => {
+      const d = testDef(id); if(!d) return '';
+      const h = all.filter(e => e.test === id).sort((a,b) => a.date.localeCompare(b.date));
       if(!h.length) return '';
       const last = h[h.length-1], ok = h.filter(e => !e.v.skip), prev = ok.length > 1 ? ok[ok.length-2] : null;
       const cur = last.v.skip ? null : last;
       let tr = '';
       if(cur && prev){ if(d.mode === 'force'){ const t = trendOf(d, prev.v.e1rm, cur.v.e1rm); tr = t ? `<em class="${t.c}">${t.t}</em>` : ''; }
-        else if(d.cotes){ tr = ['g','d'].map(s => { const t = trendOf(d, prev.v[s], cur.v[s]); return t ? `<em class="${t.c}">${s.toUpperCase()} ${t.t}</em>` : ''; }).join(' '); }
+        else if(d.cotes){ tr = ['g','d'].map(k => { const t = trendOf(d, prev.v[k], cur.v[k]); return t ? `<em class="${t.c}">${k.toUpperCase()} ${t.t}</em>` : ''; }).join(' '); }
         else { const k = d.mode === 'video' ? 'score' : 'val'; const t = trendOf(d, prev.v[k], cur.v[k]); tr = t ? `<em class="${t.c}">${t.t}</em>` : ''; } }
       const fl = cur ? flagsOf(d, cur.v) : [];
-      return `<li class="fline"><div><b>${esc(d.court || d.nom)}</b><span>${esc(resLine(d, last.v))}</span>${fl.length ? `<u>${esc(fl.join(' · '))}</u>` : ''}</div><div><small>${last.date.split('-').reverse().slice(0,2).join('/')}</small>${tr}</div></li>`;
+      return `<li class="fline"><div><b>${esc(d.mode === 'force' ? 'Max · ' + d.court : (d.court || d.nom))}</b><span>${esc(resLine(d, last.v))}</span>${fl.length ? `<u>${esc(fl.join(' · '))}</u>` : ''}</div><div><small>${last.date.split('-').reverse().slice(0,2).join('/')}</small>${tr}</div></li>`;
     }).filter(Boolean);
+  }
+  function ficheScreen(){
+    clearTimers(); S = null; SESS = null;
+    layout({page:true, tools:false, top:false}); progress();
+    head('Charge Utile', 'Ma fiche');
+    const all = ficheAll(), blocks = ficheRows();
     $('#page').innerHTML = `
       <div class="hero"><h2>Ma fiche</h2><p class="tagline">Tes derniers tests, datés</p></div>
       ${blocks.length ? `<ul class="list fiche">${blocks.join('')}</ul>` : `<p class="quote">Aucun test pour l’instant. Nathan t’enverra une séance de tests.</p>`}
@@ -2069,7 +2165,7 @@ const App = (()=>{
     on('#back', home);
     on('#shareF', async ()=>{
       const lastBy = {}; all.forEach(e => { if(!lastBy[e.test] || lastBy[e.test].date <= e.date) lastBy[e.test] = e; });
-      const L = ['Ma fiche de tests'].concat(Object.values(lastBy).map(e => { const d = Data.tests[e.test]; return d ? `${d.nom} (${e.date}) : ${resLine(d, e.v)}` : ''; }).filter(Boolean));
+      const L = ['Ma fiche de tests'].concat(Object.values(lastBy).map(e => { const d = testDef(e.test); return d ? `${d.nom} (${e.date}) : ${resLine(d, e.v)}` : ''; }).filter(Boolean));
       const byDate = {}; Object.values(lastBy).forEach(e => (byDate[e.date] = byDate[e.date] || []).push([e.test, e.v]));
       Object.entries(byDate).forEach(([dt, en]) => L.push(ficheLine(en).replace(/ \d{4}-\d{2}-\d{2} \|/, ` ${dt} |`)));
       const r = await shareText(L.join('\n')); if(r !== 'aborted') toast('Fiche envoyée');
@@ -2297,7 +2393,7 @@ const App = (()=>{
     [...new Set(rounds.map(r=>r.bi))].forEach(bi => L.push(`${S.blocks[bi].name} (tours) : RPE ${rounds.filter(r=>r.bi===bi).map(r=>r.rpe).join(' / ')}`));
     if(S.tests && Object.keys(S.tests).length){
       const en = Object.entries(S.tests);
-      en.forEach(([id, v]) => { const d = Data.tests[id] || {nom:id, unite:''}; const fl = d.mode === 'video' ? [] : flagsOf(d, v);
+      en.forEach(([id, v]) => { const d = testDef(id) || {nom:id, unite:''}; const fl = d.mode === 'video' ? [] : flagsOf(d, v);
         L.push(`${d.nom} : ${resLine(d, v)}${v.note ? ` « ${v.note} »` : ''}${fl.length ? ' → ' + fl.join(', ') : ''}`); });
       L.push(ficheLine(en));
     }
@@ -2372,10 +2468,21 @@ const App = (()=>{
             const a = Q.get('a'); if(a){ Store.set('code', a.trim().toLowerCase()); history.replaceState(null, '', location.pathname); }
             await home();
           },
-          session: ()=>SESS || {}, _state: ()=>S, _jump: n=>{ S.i = n; S.screen='x'; run(); }, _recap: ()=>recap()};
+          session: ()=>SESS || {}, idle: ()=>!S, _state: ()=>S, _jump: n=>{ S.i = n; S.screen='x'; run(); }, _recap: ()=>recap()};
 })();
 window.__app = App;
 scrollWatch();
 App.start().catch(e => { console.error(e); const p = $('#page'); if(p){ p.hidden = false; p.innerHTML = `<p class="warn">Impossible de charger tes séances. Vérifie ta connexion au premier lancement.</p>`; } });
-if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost') && !window.CU_DATA){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+/* mise à jour : quand Nathan publie, le nouveau service worker prend la main ; on recharge tout de suite si l'athlète est sur l'accueil,
+   sinon à son retour à l'accueil (jamais au milieu d'une séance). Sans ça, l'ancien code tournait une ouverture de plus avec les nouvelles séances. */
+if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost') && !window.CU_DATA){
+  const hadCtl = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState === 'visible') reg.update().catch(()=>{}); });
+  }).catch(()=>{});
+  navigator.serviceWorker.addEventListener('controllerchange', ()=>{
+    if(!hadCtl || window.__cuReloading) return;
+    if(App.idle()){ window.__cuReloading = true; location.reload(); } else window.__cuPending = true;
+  });
+}
 })();

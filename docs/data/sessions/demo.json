@@ -389,7 +389,7 @@
    "date": "2026-09-25",
    "titre": "Tests force",
    "rpe": "7 à 8",
-   "dureeMin": 45,
+   "dureeMin": 80,
    "message": "Tests du bloc : fais-les reposé (48 h après une séance dure, jamais la veille d'une course), à la même heure que la dernière fois. Aucune série jusqu'à l'échec : il doit toujours t'en rester une.",
    "blocs": [
     {
@@ -415,11 +415,24 @@
        "test": "saut-unipodal"
       },
       {
-       "test": "squat-e1rm"
+       "test": "rm",
+       "ex": "squat-barre",
+       "reps": 5,
+       "box": true,
+       "e1rm": 75.0,
+       "e1rmDate": "2026-09-10"
       },
       {
-       "test": "sdt-e1rm",
-       "variante": "trap"
+       "test": "rm",
+       "ex": "souleve-de-terre",
+       "reps": 3,
+       "e1rm": 90.0,
+       "e1rmDate": "2026-09-10"
+      },
+      {
+       "test": "rm",
+       "ex": "developpe-couche-barre",
+       "reps": 1
       }
      ]
     }
@@ -505,7 +518,7 @@
        "recup": 180,
        "pas": 5,
        "pct": 80,
-       "base": "squat",
+       "base": "squat-barre",
        "charge": 60.0,
        "e1rm": 75.0,
        "e1rmDate": "2026-09-10"

@@ -31,7 +31,10 @@ for f in files:
                 for it in b.get('items', []):
                     t = TESTS.get(it.get('test'))
                     if not t: W(f"test inconnu « {it.get('test')} »"); continue
-                    if it.get('variante') not in (None, 'trap', 'classique'): W(f"« {it['test']} » : variante trap ou classique")
+                    if it['test'] == 'rm':
+                        if it.get('ex') not in ex: W(f"test RM : exercice inconnu « {it.get('ex')} »")
+                        if not 1 <= int(it.get('reps', 5)) <= 12: W(f"test RM « {it.get('ex')} » : reps entre 1 et 12")
+                        if not 0 <= int(it.get('rir', 1)) <= 3: W(f"test RM « {it.get('ex')} » : rir entre 0 et 3")
                     if 'e1rm' in it and not isinstance(it['e1rm'], (int, float)): W(f"« {it['test']} » : e1rm doit être un nombre")
                 continue
             if not b.get('items'): W(f"bloc « {b.get('nom')} » vide")
@@ -45,7 +48,8 @@ for f in files:
                 if 'tempo' in it and (len(it['tempo']) != 4 or not all(str(v) == 'X' or str(v).isdigit() for v in it['tempo'])): W(f"« {it['ex']} » : tempo invalide")
                 if it.get('rpe') is not None and not (1 <= it['rpe'] <= 10): W(f"« {it['ex']} » : rpe hors 1-10")
                 if 'pct' in it or 'base' in it:
-                    if it.get('base') not in ('squat', 'sdt') or not isinstance(it.get('pct'), (int, float)) or not 30 <= it['pct'] <= 100: W(f"« {it['ex']} » : pct (30-100) et base (squat|sdt) vont ensemble")
+                    base = {'squat': 'squat-barre', 'sdt': 'souleve-de-terre'}.get(it.get('base', it['ex']), it.get('base', it['ex']))
+                    if base not in ex or not isinstance(it.get('pct'), (int, float)) or not 30 <= it['pct'] <= 105: W(f"« {it['ex']} » : pct (30-105) et base (un exercice du catalogue) vont ensemble")
                     if not isinstance(it.get('charge'), (int, float)): W(f"« {it['ex']} » : en % du max, écris aussi la charge calculée en kg")
 if errs: print('\n'.join(errs)); sys.exit(1)
 print(f'{len(files)} fichier(s) de séances OK')

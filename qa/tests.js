@@ -28,7 +28,8 @@ const WHICH = (process.argv[2] || 'AB').toUpperCase(), DEV = process.argv[3] || 
   const results = {};
   for(const title of (WHICH.includes('A') ? ['Tests force'] : []).concat(WHICH.includes('B') ? ['Tests mobilité'] : [])){
     await p.goto('http://localhost:8765/?vitesse=25'); await p.waitForTimeout(1200);
-    await p.evaluate(t=>{ const c = [...document.querySelectorAll('.scard')].find(x=>x.textContent.includes(t)); c.click(); }, title); await p.waitForTimeout(500);
+    await p.evaluate(()=>{ const t = document.querySelector('[data-tab="tests"]'); if(t) t.click(); }); await p.waitForTimeout(600); await snap('tab-tests-'+title.split(' ')[1]);
+    await p.evaluate(t=>{ let c = [...document.querySelectorAll('.scard')].find(x=>x.textContent.includes(t)); c.click(); }, title); await p.waitForTimeout(500);
     await snap('intro-'+title.split(' ')[1]); await checkOff('intro');
     await click('#detail'); await p.waitForTimeout(400); await snap('detail-'+title.split(' ')[1]); await click('#backD'); await p.waitForTimeout(300);
     await click('#go'); await p.waitForTimeout(400);
@@ -60,15 +61,16 @@ const WHICH = (process.argv[2] || 'AB').toUpperCase(), DEV = process.argv[3] || 
         continue;
       }
       if(st.mode === 'force'){
-        if(await has('#in_kg')){ await p.fill('#in_kg', T === 'squat-e1rm' ? '60' : '80'); if(await has('#in_box')) await p.fill('#in_box', '46');
+        if(await has('#in_kg')){ await p.fill('#in_kg', T === 'rm:squat-barre' ? '60' : T === 'rm:developpe-couche-barre' ? '50' : '80'); if(await has('#in_box')) await p.fill('#in_box', '46');
           await p.dispatchEvent('#in_kg', 'input'); await click('#safe'); await snap('f-'+tag); await checkOff('f-'+tag); await click('#main'); await p.waitForTimeout(300); continue; }
+        if(await has('#hit')){ results.tries = (results.tries || 0) + 1; await snap('onerm-'+results.tries); await click(results.tries <= 2 ? '#hit' : '#miss'); await p.waitForTimeout(300); continue; }
         if(await has('.tramp')){ await snap('ramp-'+tag); await checkOff('ramp'); await click('#main'); await p.waitForTimeout(300); continue; }
         if(await has('#tv') && await has('#ready')){ await snap('trest'); await click('#ready'); await p.waitForTimeout(300); continue; }
         if(await has('#rir')){ // squat : 10 reps possibles → trop léger → on refait à +10 % ; soulevé : 5 reps RIR 1
           const first = !results['_f'+T]; results['_f'+T] = 1;
-          const reps = T === 'squat-e1rm' && first ? 9 : 5;
+          const reps = T === 'rm:squat-barre' && first ? 9 : 5;
           for(let k = 5; k < reps; k++) await click('#p');
-          await p.evaluate(r=>document.querySelector(`#rir button[data-r="${r}"]`).click(), T === 'squat-e1rm' && first ? 1 : 1);
+          await p.evaluate(r=>document.querySelector(`#rir button[data-r="${r}"]`).click(), 1);
           await snap('fres-'+tag+(first?'':'2')); await checkOff('fres'); await click('#main'); await p.waitForTimeout(400); continue; }
         await p.waitForTimeout(150); continue;
       }
@@ -108,13 +110,14 @@ const WHICH = (process.argv[2] || 'AB').toUpperCase(), DEV = process.argv[3] || 
   }
   // fiche sur l'accueil
   await p.goto('http://localhost:8765/?vitesse=25'); await p.waitForTimeout(1200);
-  await snap('home'); await click('#ficheB'); await p.waitForTimeout(600); await snap('fiche'); await checkOff('fiche');
+  await click('[data-tab="tests"]'); await p.waitForTimeout(500); await snap('home-tests'); await click('#ficheB'); await p.waitForTimeout(600); await snap('fiche'); await checkOff('fiche');
   console.log('\n=== Ma fiche'); console.log(await txt('#page'));
   // prescription en % : séance avec pct + base, le téléphone recalcule depuis son test plus récent
-  const pct = await p.evaluate(()=>{ const f = JSON.parse(localStorage.getItem('cu.fiche.demo') || '[]'); return f.filter(e=>e.test.endsWith('e1rm')).map(e=>e.test+' '+e.v.e1rm); });
+  const pct = await p.evaluate(()=>{ const f = JSON.parse(localStorage.getItem('cu.fiche.demo') || '[]'); return f.filter(e=>e.test.startsWith('rm:')).map(e=>e.test+' '+e.v.e1rm); });
   console.log('\nFiche e1RM', pct);
   // la séance « Force en % » : Nathan a écrit 80 % de 75 kg (60 kg) ; le téléphone a un test plus récent → il recalcule
   await p.goto('http://localhost:8765/?vitesse=25'); await p.waitForTimeout(1200);
+  await click('[data-tab="seances"]'); await p.waitForTimeout(500); await snap('home-seances');
   const hasPct = await p.evaluate(()=>{ const c = [...document.querySelectorAll('.scard')].find(x=>x.textContent.includes('Force en %')); if(c){ c.click(); return true; } return false; });
   if(hasPct){ await p.waitForTimeout(400); await click('#go'); await p.waitForTimeout(400);
     const i = await p.evaluate(()=>__app._state().steps.findIndex(s=>s.t==='reps')); await p.evaluate(i=>__app._jump(i), i); await p.waitForTimeout(900);

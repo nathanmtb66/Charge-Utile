@@ -571,3 +571,8 @@ em.up{color:var(--ok)} em.dn{color:var(--warn)} em.st{color:var(--dim)}
 .tcr button[data-v="1"].on{background:var(--ok);color:var(--bg)}
 .tcr button[data-v="0"].on{background:var(--warn);color:var(--bg)}
 .warnc{color:var(--warn) !important}
+/* onglets de l'accueil */
+.tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px;margin:0 -4px;background:var(--s1);border-radius:16px;box-shadow:0 6px 14px -8px rgba(0,0,0,.6)}
+.tabs button{height:42px;border-radius:12px;font-family:var(--d);font-weight:700;font-size:18px;letter-spacing:.03em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;justify-content:center;gap:6px;transition:background-color .2s,color .2s}
+.tabs button.on{background:var(--ink);color:var(--bg)}
+.tabs button i{font-style:normal;font-family:var(--b);font-size:11.5px;font-weight:700;min-width:19px;height:19px;padding:0 5px;border-radius:99px;background:var(--acc);color:#fff;display:grid;place-items:center}

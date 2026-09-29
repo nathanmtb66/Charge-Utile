@@ -30,7 +30,7 @@ docs/                     le site publié
   data/SCHEMA.md          format exact des fiches, séances, tests et charges en %
 prive/fiches/<code>.json  fiche maître de chaque athlète (résultats datés, profil) — jamais publiée (.gitignore)
 tools/  build.py · build_catalog.py · anims.js · check_sessions.py · nouvel_athlete.py
-qa/     flow.js · recup.js · offline.js · tests.js (batterie) · angles.js (preuve du calcul d'angle) · shots.js (rendus)
+qa/     flow.js · recup.js · offline.js · tests.js (batterie) · angles.js (preuve du calcul d'angle) · update.js (mise à jour auto) · shots.js (rendus)
 ```
 
 ## Méthode de travail (et d'économie)
@@ -66,7 +66,9 @@ Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec 
 - **Récup & mobilité** : routine générée selon le temps, le sport du jour, les douleurs à éviter et le `focus` de l'athlète. Respiration guidée (cohérence cardiaque, soupir physiologique, carrée, expiration longue).
 - **Installation** : écran plein écran au premier lancement, adapté iPhone/Android, plus un voyant « prête pour la salle » quand tout est enregistré hors-ligne.
 - **Catalogue** : 190 exercices, 152 animations, dont proprio en 4 niveaux, chevilles trail, et 12 exercices d'épaule.
-- **Tests en autonomie** (bloc `test`) : 14 tests, présentation animée, mesure guidée, résultat comparé au précédent, écart gauche/droite. Test A force (saut unipodal ou assis-debout, squat et soulevé de terre en max estimé), test B mobilité (genou au mur, Thomas, rotation de hanche, jambe tendue, épaules, squat bras levés filmé, équilibre yeux fermés, mollet, pont). Angles mesurés par le capteur du téléphone fixé sur le membre : vérification du capteur une fois par séance (téléphone debout = 90°, corrige un signe inversé), zéro automatique, angle = rotation depuis le zéro (indépendant du sens du téléphone sur le membre), valeur = moyenne de la fin d'une tenue stable, saisie à la main en secours. `node qa/angles.js` prouve le calcul (0,000° d'erreur sans bruit, sur 20 000 montages au hasard).
+- **Accueil en 3 onglets** : Séances · Tests · Récup (l'appli rouvre toujours sur Séances). Les séances de tests et « Ma fiche » vivent dans l'onglet Tests.
+- **Mise à jour automatique** : quand une nouvelle version est publiée, l'appli se recharge seule sur l'accueil (jamais pendant une séance). Avant, l'ancien code tournait une ouverture de plus avec les nouvelles séances.
+- **Tests en autonomie** (bloc `test`) : présentation animée, mesure guidée, résultat comparé au précédent, écart gauche/droite. **Test RM générique** : n'importe quel exercice, reps visées et réserve choisies par Nathan, vrai 1RM possible (reps 1, tentatives réussi/raté). Test A (saut unipodal ou assis-debout + les RM choisis), test B mobilité (genou au mur, Thomas, rotation de hanche, jambe tendue, épaules, squat bras levés filmé, équilibre yeux fermés, mollet, pont). Angles mesurés par le capteur du téléphone fixé sur le membre : vérification du capteur une fois par séance (téléphone debout = 90°, corrige un signe inversé), zéro automatique, angle = rotation depuis le zéro (indépendant du sens du téléphone sur le membre), valeur = moyenne de la fin d'une tenue stable, saisie à la main en secours. `node qa/angles.js` prouve le calcul (0,000° d'erreur sans bruit, sur 20 000 montages au hasard).
 - **Ma fiche** : les résultats datés sur le téléphone ; ligne `FICHE …` dans le message à Nathan.
 - **Charges en %** : `pct` + `base` dans une séance ; le téléphone recalcule si l'athlète a refait son test.
 
@@ -87,8 +89,9 @@ Sur le téléphone, la nouvelle version arrive à la prochaine ouverture **avec 
 ## Tests et fiche : la méthode
 
 - Envoyer une séance de tests : `python3 coach.py batterie <code> A|B <date>` (adaptée au profil : `coach.py profil <code> sans_saut=1 sdt=trap sans_<test>=1`). Profils décidés : Simon sans saut (genou/cheville), Malone profil épaule (tests d'épaule faisables mais « Je ne peux pas » dispo), Amael suivi de l'écart des quadriceps.
+- Test RM : `python3 coach.py batterie <code> A <date> squat-barre:5 developpe-couche-barre:1` (exercice:reps[:rir], 1 = vrai 1RM), ou un bloc `test` écrit à la main dans n'importe quelle séance (voir SCHEMA.md).
 - Ranger les résultats reçus : `python3 coach.py fiche-ajoute "<message collé>"`, puis `coach.py athlete <code>` (écarts à cibler).
-- « squat 4×5 à 80 % » : `python3 coach.py charge <code> squat 80` → mettre les champs donnés dans l'item.
+- « squat 4×5 à 80 % » : `python3 coach.py charge <code> squat-barre 80` → mettre les champs donnés dans l'item.
 - Fréquence conseillée : test A toutes les 6 semaines (la force bouge vite), test B toutes les 8 à 12 semaines, jamais la veille d'une course.
 
 ## Prochain chantier

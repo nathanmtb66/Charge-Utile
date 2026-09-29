@@ -10,7 +10,7 @@ const { chromium, devices } = require('playwright');
   const shot = async n => p.screenshot({path:`qa/out/r_${n}.png`});
   await p.goto('http://localhost:8765/?a=demo&vitesse=30'); await p.waitForTimeout(1200);
   await shot('0home');
-  await ev('#recupB'); await p.waitForTimeout(500); await shot('1recup');
+  await ev('[data-tab="recup"]'); await p.waitForTimeout(500); await shot('1recup');
   await ev('[data-g="kind"][data-v="mobilite"]'); await ev('[data-g="sport"][data-v="trail"]'); await ev('[data-g="minutes"][data-v="15"]'); await ev('[data-g="pain"][data-v="genoux"]');
   await p.waitForTimeout(300); await shot('2choix');
   await ev('#go'); await p.waitForTimeout(500); await shot('3preview');
@@ -30,7 +30,7 @@ const { chromium, devices } = require('playwright');
     await p.waitForTimeout(300);
   }
   await ev('#homeB'); await p.waitForTimeout(600);
-  await ev('#recupB'); await p.waitForTimeout(300);
+  await ev('[data-tab="recup"]'); await p.waitForTimeout(300);
   await ev('[data-g="kind"][data-v="respiration"]'); await p.waitForTimeout(300); await shot('6breath');
   await ev('[data-b="soupir"]'); await p.waitForTimeout(300); await ev('[data-bm="2"]'); await p.waitForTimeout(300);
   await ev('#bgo'); await p.waitForTimeout(1500); await shot('7breathrun');

@@ -96,27 +96,36 @@ Champs d'un item : `ex` (id du catalogue, obligatoire) · `reps` ou `duree` (s) 
 
 ## Charges en % du max estimé
 
-Un item de bloc `series` peut être prescrit en % du max estimé (1RM calculé par les tests) :
+Un item de bloc `series` peut être prescrit en % du max de l'exercice (mesuré par un test RM) :
 
 ```json
-{"ex": "squat-barre", "series": 4, "reps": 5, "pct": 80, "base": "squat", "charge": 60, "e1rm": 75, "e1rmDate": "2026-09-10", "pas": 5, "rpe": 8}
+{"ex": "squat-barre", "series": 4, "reps": 5, "pct": 80, "base": "squat-barre", "charge": 60, "e1rm": 75, "e1rmDate": "2026-09-10", "pas": 5, "rpe": 8}
 ```
 
-`base` = `squat` ou `sdt` (soulevé de terre). `charge` = les kilos calculés par `python3 coach.py charge <code> <base> <pct>` (arrondi à 2,5 kg en dessous), qui donne aussi `e1rm` et `e1rmDate`.
-Si l'athlète a refait son test sur son téléphone après `e1rmDate`, l'appli recalcule la charge depuis son nouveau max. L'ajustement au RPE reste actif.
+`base` = l'exercice testé (par défaut l'exercice lui-même ; `squat` et `sdt` restent acceptés). `charge`, `e1rm`, `e1rmDate` : donnés par `python3 coach.py charge <code> <exercice> <pct>` (arrondi en dessous : 2,5 kg à la barre, 2 kg aux haltères).
+Si l'athlète a refait son test sur son téléphone après `e1rmDate`, l'appli recalcule la charge. L'ajustement au RPE reste actif.
 
 ## Tests — `data/tests.json` et bloc `test`
 
 La batterie est décrite dans `data/tests.json` (protocole, mode de mesure, erreur de mesure `mdc`, seuils d'écart `asym`/`asymPct`, repère, sources).
-Modes : `saisie` (mètre), `angle` (capteur du téléphone), `chrono`, `metronome` (reps comptées par l'appli), `force` (max estimé, formule d'Epley), `video` (filmé puis critères oui/non).
+Modes : `saisie` (mètre), `angle` (capteur du téléphone), `chrono`, `metronome` (reps comptées par l'appli), `force` (test RM), `video` (filmé puis critères oui/non).
 
-Une séance de tests contient un bloc de type `test` :
+Une séance de tests contient un bloc de type `test` (seule, ou avec un échauffement `cardio` : elle va alors dans l'onglet **Tests** ; mélangée à d'autres blocs, elle reste dans **Séances**) :
 
 ```json
-{"nom": "Tests", "type": "test", "items": [{"test": "saut-unipodal"}, {"test": "squat-e1rm", "e1rm": 75, "e1rmDate": "2026-09-10"}, {"test": "sdt-e1rm", "variante": "trap"}]}
+{"nom": "Tests", "type": "test", "items": [
+  {"test": "saut-unipodal"},
+  {"test": "rm", "ex": "squat-barre", "reps": 5, "rir": 1, "box": true, "e1rm": 75, "e1rmDate": "2026-09-10"},
+  {"test": "rm", "ex": "developpe-couche-barre", "reps": 1}
+]}
 ```
 
-`variante` (soulevé de terre) : `trap` ou `classique`. `e1rm` sert à proposer la charge de la série test.
-Ne l'écris pas à la main : `python3 coach.py batterie <code> A|B <date>` construit la séance selon le profil privé de l'athlète.
+**Test RM** (`"test": "rm"`), sur n'importe quel exercice du catalogue, réglé par Nathan :
+`ex` (obligatoire) · `reps` visées pour la série test (1 à 12 ; **1 = vrai 1RM** par tentatives, réussi/raté) · `rir` reps gardées en réserve (0 à 3, défaut 1) ·
+`pas` (kg, défaut 2,5 à la barre, 2 aux haltères) · `box` (squat touché-box, hauteur notée) · `barres` (forcer ou retirer la case « barres de sécurité », par défaut pour squat, fente et développé à la barre) ·
+`echauffement` `[[% de la charge test, reps, récup s], …]` (défaut 40/60/80/90 %) · `e1rm`, `e1rmDate` (pour proposer la charge) · `note`.
+Le résultat est rangé sous `rm:<exercice>` : un max par exercice.
 
-Les résultats restent sur le téléphone (« Ma fiche ») et partent dans le message de fin, avec une ligne `FICHE …` que `coach.py fiche-ajoute` range dans `prive/fiches/<code>.json` (jamais publié : `prive/` est dans `.gitignore`).
+`python3 coach.py batterie <code> A <date> squat-barre:5 souleve-de-terre:3:1 developpe-couche-barre:1` écrit la séance (saut ou assis-debout selon le profil + les tests RM choisis) ; `… B <date>` la batterie mobilité.
+
+Les résultats restent sur le téléphone (onglet Tests, « Ma fiche ») et partent dans le message de fin, avec une ligne `FICHE …` que `coach.py fiche-ajoute` range dans `prive/fiches/<code>.json` (jamais publié : `prive/` est dans `.gitignore`).
