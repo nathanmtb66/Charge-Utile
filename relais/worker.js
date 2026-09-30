@@ -169,6 +169,23 @@ async function sync(env){
   return report;
 }
 
+/* ---------------- test des droits : pose puis retire une note du jour chez chaque athlète ---------------- */
+async function droits(env){
+  const call = icu(env), team = await equipe(env), links = await lier(env, call, team), today = iso(new Date()), out = {};
+  for(const a of team){
+    const L = links[a.code];
+    if(!L || !L.id){ out[a.code] = {prenom: a.prenom, ok: false, erreur: (L && L.error) || 'non relié'}; continue; }
+    try{
+      await call('GET', `/api/v1/athlete/${L.id}/activities?oldest=${addDays(today, -7)}&newest=${today}&limit=1`);
+      const ev = await call('POST', `/api/v1/athlete/${L.id}/events/bulk`, [{category: 'NOTE', start_date_local: `${today}T00:00:00`, name: 'Test Charge Utile (retiré tout seul)', external_id: `cu-${a.code}-test-droits`}]);
+      const id = Array.isArray(ev) && ev[0] ? ev[0].id : null;
+      if(id) await call('PUT', `/api/v1/athlete/${L.id}/events/bulk-delete`, [{id}]);
+      out[a.code] = {prenom: a.prenom, ok: true};
+    }catch(e){ out[a.code] = {prenom: a.prenom, ok: false, erreur: e.message}; }
+  }
+  return out;
+}
+
 /* ---------------- vue coach ---------------- */
 const FICHE_RE = /^FICHE .*$/m;
 async function coach(env){
@@ -232,6 +249,7 @@ export default {
         if(!sameSecret(req.headers.get('x-cu-pin'), env.PIN)) return json({ok: false, error: 'PIN'}, 401, h);
         if(url.pathname === '/coach' && req.method === 'GET') return json(await coach(env), 200, h);
         if(url.pathname === '/coach/sync' && req.method === 'POST') return json({ok: true, rapport: await sync(env)}, 200, h);
+        if(url.pathname === '/coach/droits' && req.method === 'POST') return json({ok: true, droits: await droits(env)}, 200, h);
       }
       return json({ok: false, error: 'introuvable'}, 404, h);
     }catch(e){

@@ -180,6 +180,11 @@ if(require.main === module) (async () => {
   r = await R('/coach/sync', {method: 'POST', headers: {'x-cu-pin': PIN}}); j = await r.json();
   ok(!F.S.events.i10.find(e => e.id === 424242) && j.rapport.kjvtsl.suppr === 1, 'séance retirée par Nathan : enlevée du calendrier intervals');
 
+  // test des droits
+  r = await R('/coach/droits', {method: 'POST', headers: {'x-cu-pin': PIN}}); j = await r.json();
+  ok(j.ok && Object.values(j.droits).every(x => x.ok) && !F.S.events.i10.some(e => e.external_id === 'cu-kjvtsl-test-droits'), 'test des droits : note posée puis retirée chez les 4, rien ne reste');
+  r = await R('/coach/droits', {method: 'POST'}); ok(r.status === 401, 'test des droits sans PIN → 401');
+
   // cron
   let waited = null; await W.scheduled({}, ENV, {waitUntil: p => waited = p}); await waited;
   ok(F.S.calls.filter(c => c === 'GET /api/v1/athletes').length > 5, 'tâche horaire : la synchro tourne toute seule');

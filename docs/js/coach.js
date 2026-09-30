@@ -135,9 +135,14 @@ function render(){
   $('#clist').innerHTML = resume() + (team.length ? team.map(card).join('') : `<p class="quote">Aucun athlète publié.</p>`);
   $$('.ccard .ctop').forEach(b => b.onclick = () => { const c = b.parentElement.dataset.code; open = open === c ? null : c; St.set('coachOpen', open); render();
     const el = document.querySelector(`.ccard[data-code="${c}"]`); if(el && open){ Saison.focus(el); el.scrollIntoView({block: 'start', behavior: 'smooth'}); } });
-  $('#cfoot').innerHTML = RELAIS && St.get('pin') ? `<button class="ghost" id="syncB">Synchroniser intervals</button><button class="textlink" id="pinX">Oublier le PIN sur ce téléphone</button>`
+  $('#cfoot').innerHTML = RELAIS && St.get('pin') ? `<button class="ghost" id="syncB">Synchroniser intervals</button><button class="textlink" id="droitsB">Vérifier les droits intervals</button><button class="textlink" id="pinX">Oublier le PIN sur ce téléphone</button>`
     : `<p class="note2">Ajoute cette page à ton écran d’accueil : c’est ta vue coach.</p>`;
   const sb = $('#syncB'); if(sb) sb.onclick = syncNow;
+  const db = $('#droitsB'); if(db) db.onclick = async () => { db.textContent = 'Vérification…';
+    try{ const r = await getJSON(RELAIS.replace(/\/$/, '') + '/coach/droits', {method: 'POST', headers: {'x-cu-pin': St.get('pin')}});
+      state(Object.values(r.droits).map(x => `${esc(x.prenom)} : ${x.ok ? '✓ lecture et écriture OK' : '✗ ' + esc(x.erreur)}`).join('<br>')); }
+    catch(e){ toast('Vérification impossible : ' + (e.body && e.body.error || e.message)); }
+    db.textContent = 'Vérifier les droits intervals'; };
   const px = $('#pinX'); if(px) px.onclick = () => { St.del('pin'); live = null; state(); bindPin(); render(); };
   bindPin();
 }
