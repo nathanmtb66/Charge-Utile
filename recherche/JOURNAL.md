@@ -53,4 +53,6 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 
 - 30/09 20 h 35 — `git push` impossible depuis la session : pas d'identifiants GitHub dans le terminal (ni `gh`, ni clé SSH, ni credential helper). Je ne vais pas chercher de jeton dans le trousseau. → Résolu à 20 h 40 avec l'accord de Nathan : je commite en ligne de commande et je pousse en cliquant « Push origin » dans GitHub Desktop (branche `recherche` publiée). Jamais rien sur `main`.
 
+- 30/09 20 h 55 — les 6 sous-agents de la 1re vague ont été coupés par la limite de session (HTTP 429) avant d'écrire. Relancés à 21 h 00 sur les crédits disponibles, avec consigne d'écrire leur fichier au fur et à mesure.
+
 ## Revues contradictoires
