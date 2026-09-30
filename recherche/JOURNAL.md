@@ -51,6 +51,9 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 
 ## Problèmes rencontrés
 
+- 01/10 01 h 55 — `verifie.py` échouait sur les exemples de format de `MISSION.md` (les clés d'exemple « cle », « ronnestad2014 », « blagrove2018 » écrites au format citation). Correctif : `verifie.py` ignore **uniquement** `MISSION.md` (la consigne, pas un livrable). En contrepartie je l'ai **durci** : toute source de `sources.json` doit avoir `verifie: true`. Les deux références d'exemple ont été vérifiées (Europe PMC) et ajoutées à `sources.json`.
+- 30/09 21 h 10 → 01/10 01 h 50 — seconde coupure par limite de session : 5 sous-agents interrompus (marché, concurrence endurance et mesure/IA à moitié écrits ; juridique et go-to-market sans fichier). Repris à 01 h 50.
+
 - 30/09 20 h 35 — `git push` impossible depuis la session : pas d'identifiants GitHub dans le terminal (ni `gh`, ni clé SSH, ni credential helper). Je ne vais pas chercher de jeton dans le trousseau. → Résolu à 20 h 40 avec l'accord de Nathan : je commite en ligne de commande et je pousse en cliquant « Push origin » dans GitHub Desktop (branche `recherche` publiée). Jamais rien sur `main`.
 
 - 30/09 20 h 55 — les 6 sous-agents de la 1re vague ont été coupés par la limite de session (HTTP 429) avant d'écrire. Relancés à 21 h 00 sur les crédits disponibles, avec consigne d'écrire leur fichier au fur et à mesure.

@@ -71,9 +71,11 @@ if os.path.exists(sf):
         keys = [s.get('cle') for s in src]
         for s in src:
             if not s.get('cle') or not s.get('url') or not s.get('annee'): E(f"source {s.get('cle')} : cle, url et annee obligatoires")
+            if s.get('verifie') is not True: E(f"source {s.get('cle')} : verifie doit être true (source ouverte), sinon la retirer")
         if len(keys) != len(set(keys)): E('sources.json : clés en double')
         cited = set()
         for md in glob.glob(os.path.join(R, '**', '*.md'), recursive=True):
+            if os.path.basename(md) == 'MISSION.md': continue   # la consigne contient des exemples de format ([@cle]), pas des citations
             cited |= set(re.findall(r'\[@([A-Za-z0-9_\-]+)\]', open(md).read()))
         missing = cited - set(keys)
         if missing: E(f'citées dans les .md mais absentes de sources.json : {sorted(missing)[:20]}')
