@@ -7,6 +7,10 @@ main = "worker.js"
 compatibility_date = "2026-09-01"
 workers_dev = true
 
+# identifiant de la version déployée, renvoyé par /ping (pour vérifier qu'un push est bien en ligne)
+[version_metadata]
+binding = "VERSION_INFO"
+
 [vars]
 SITE = "https://nathanmtb66.github.io/Charge-Utile/"
 ORIGINS = "https://nathanmtb66.github.io"

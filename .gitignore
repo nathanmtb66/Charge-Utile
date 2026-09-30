@@ -3,3 +3,6 @@ prive/
 # rendus de contrôle
 qa/out/
 dist/
+
+# caches python
+__pycache__/

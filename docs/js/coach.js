@@ -115,7 +115,8 @@ function volBars(sem){
   const max = Math.max(1, ...past.map(k => k.heures));
   let s = `<svg class="cload" viewBox="0 0 ${past.length * W} ${H}" preserveAspectRatio="none" role="img" aria-label="Volume par semaine et par sport">`;
   past.forEach((k, i) => { let y = H;
-    SP.forEach(([id, , c]) => { const v = (k.sports || {})[id] || 0; if(!v) return; const h = v / max * H; y -= h; s += `<rect x="${i * W + 5}" y="${y}" width="${W - 10}" height="${h}" fill="${c}"/>`; });
+    const sp = k.sports || {autre: k.heures || 0}; /* relais plus ancien : volume total en gris */
+    SP.forEach(([id, , c]) => { const v = sp[id] || 0; if(!v) return; const h = v / max * H; y -= h; s += `<rect x="${i * W + 5}" y="${y}" width="${W - 10}" height="${h}" fill="${c}"/>`; });
     if(k.semaine === thisMon) s += `<rect x="${i * W + 2}" y="0.5" width="${W - 4}" height="${H - 1}" rx="3" class="cnow"/>`; });
   return s + '</svg>';
 }
@@ -123,6 +124,7 @@ function volLegend(sem){
   const thisMon = Saison.monday(today), k = (sem || []).find(x => x.semaine === thisMon), last = (sem || []).filter(x => x.semaine < thisMon).slice(-1)[0];
   const h = v => String(Math.round(v * 10) / 10).replace('.', ',');
   const ref = k && k.heures ? k : last;
+  if(!(sem || []).some(x => x.sports)) return `<div class="cvleg">${ref ? `<em>${ref === k ? 'cette sem.' : 'sem. dernière'} : ${h(ref.heures)} h</em>` : ''}</div>`;
   return `<div class="cvleg">${SP.map(([id, l, c]) => `<span><i style="background:${c}"></i>${l}${ref && ref.sports && ref.sports[id] ? ` ${h(ref.sports[id])} h` : ''}</span>`).join('')}${ref ? `<em>${ref === k ? 'cette sem.' : 'sem. dernière'} : ${h(ref.heures)} h</em>` : ''}</div>`;
 }
 function card(a){

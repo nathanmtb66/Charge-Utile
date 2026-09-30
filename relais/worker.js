@@ -254,7 +254,7 @@ export default {
     const url = new URL(req.url), h = cors(req, env);
     if(req.method === 'OPTIONS') return new Response(null, {status: 204, headers: h});
     try{
-      if(url.pathname === '/ping') return json({ok: true, cle: !!env.ICU_KEY, pin: !!env.PIN}, 200, h);
+      if(url.pathname === '/ping') return json({ok: true, cle: !!env.ICU_KEY, pin: !!env.PIN, version: (env.VERSION_INFO || {}).id || null, deploye: (env.VERSION_INFO || {}).timestamp || null}, 200, h);
       if(!env.ICU_KEY) return json({ok: false, error: 'clé intervals absente (secret ICU_KEY)'}, 503, h);
       if(url.pathname === '/seance' && req.method === 'POST') return withH(await seance(req, env), h);
       if(url.pathname.startsWith('/coach')){
