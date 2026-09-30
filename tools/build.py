@@ -32,7 +32,7 @@ cat = open(os.path.join(SITE, 'catalogue.template.html')).read().replace('<!--MO
 open(os.path.join(SITE, 'catalogue.html'), 'w').write(cat)
 
 assets = ['./', 'index.html', 'catalogue.html', 'manifest.webmanifest', 'css/app.css', 'js/three.min.js', 'js/body.js', 'js/engine.js', 'js/saison.js', 'js/app.js',
-          'data/exercises.json', 'data/tests.json', 'data/config.json'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
+          'data/exercises.json', 'data/tests.json', 'data/config.json', 'coach.html', 'css/coach.css', 'js/coach.js'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
 h = hashlib.sha1()
 for a in assets:
     p = os.path.join(SITE, 'index.html' if a == './' else a); h.update(open(p, 'rb').read())

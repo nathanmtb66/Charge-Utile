@@ -29,7 +29,7 @@ function state(msg){
   const el = $('#cstate');
   if(msg) return el.innerHTML = msg;
   if(!RELAIS) return el.innerHTML = `Plans et séances publiés. <b>intervals.icu pas encore branché</b> : la forme et le réalisé s’afficheront dès que le relais est en ligne.`;
-  if(!St.get('pin')) return el.innerHTML = `<span>intervals.icu est branché : tape ton PIN pour voir le réalisé.</span><span class="pinrow"><input id="pin" class="field" inputmode="numeric" autocomplete="off" placeholder="PIN"><button class="primary small" id="pinOk">OK</button></span>`;
+  if(!St.get('pin')){ el.innerHTML = `<span>intervals.icu est branché : tape ton PIN pour voir le réalisé.</span><form class="pinrow" id="pinF"><input id="pin" class="field" type="password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="PIN" aria-label="PIN"><button class="primary small" id="pinOk" type="submit">OK</button></form>`; bindPin(); return; }
   el.textContent = live ? `intervals.icu · à jour ${new Date().toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'})}` : 'intervals.icu…';
 }
 async function fetchLive(){
@@ -43,9 +43,9 @@ async function fetchLive(){
   }
 }
 function bindPin(){
-  const go = () => { const v = ($('#pin') || {}).value; if(!v) return; St.set('pin', v.trim()); fetchLive(); };
-  const b = $('#pinOk'); if(b) b.onclick = go;
-  const i = $('#pin'); if(i) i.onkeydown = e => { if(e.key === 'Enter') go(); };
+  const f = $('#pinF'); if(!f) return;
+  f.onsubmit = e => { e.preventDefault(); const v = ($('#pin') || {}).value; if(!v || !v.trim()){ toast('Tape ton PIN'); return; }
+    St.set('pin', v.trim()); const b = $('#pinOk'); if(b){ b.disabled = true; b.textContent = '…'; } fetchLive(); };
 }
 
 /* ---------- une carte par athlète ---------- */
@@ -156,5 +156,11 @@ async function syncNow(){
   b.disabled = false; b.textContent = 'Synchroniser intervals';
 }
 window.__coach = {reload: load, state: () => ({RELAIS, live, team: team.length})};
+/* nouvelle version publiée : on la prend tout de suite (la vue coach n'a jamais de séance en cours) */
+if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')){
+  const had = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.register('sw.js').then(reg => { document.addEventListener('visibilitychange', () => { if(document.visibilityState === 'visible') reg.update().catch(() => {}); }); }).catch(() => {});
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if(had && !window.__cuReloading){ window.__cuReloading = true; location.reload(); } });
+}
 load().catch(e => { console.error(e); state('Impossible de charger : vérifie ta connexion.'); });
 })();

@@ -17,9 +17,9 @@ const DEV = process.argv[2] || 'Pixel 7';
   const b = await chromium.launch({args: ['--use-gl=swiftshader', '--enable-webgl', '--ignore-gpu-blocklist', '--enable-unsafe-swiftshader']});
   let fail = 0; const ok = (c, m) => { console.log((c ? 'OK   ' : 'ÉCHEC ') + m); if(!c) fail++; };
   const errs = [];
-  const mk = async (extra = {}) => {
+  const mk = async (extra = {}, noPin = false) => {
     const ctx = await b.newContext({...devices[DEV], serviceWorkers: 'block', ...extra});
-    await ctx.addInitScript(([pin]) => { localStorage.setItem('cu.installVu', '1'); localStorage.setItem('cu.relais', JSON.stringify('http://localhost:8790')); if(!localStorage.getItem('cu.pin')) localStorage.setItem('cu.pin', JSON.stringify(pin)); }, [R.PIN]);
+    await ctx.addInitScript(([pin, noPin]) => { localStorage.setItem('cu.installVu', '1'); localStorage.setItem('cu.relais', JSON.stringify('http://localhost:8790')); if(!noPin && !localStorage.getItem('cu.pin')) localStorage.setItem('cu.pin', JSON.stringify(pin)); }, [R.PIN, noPin]);
     await ctx.route('**/data/sessions/kjvtsl.json', r => r.fulfill({body: book, contentType: 'application/json'}));
     const p = await ctx.newPage();
     p.on('pageerror', e => errs.push('PAGEERR ' + e.message)); p.on('console', m => { if(m.type() === 'error' && !/Failed to load resource|net::ERR/.test(m.text())) errs.push(m.text()); });
@@ -83,12 +83,25 @@ const DEV = process.argv[2] || 'Pixel 7';
   await click(p, '#syncB'); await p.waitForTimeout(1500);
   ok(/Simon : \d+ posée/.test(await p.evaluate(() => document.querySelector('#cstate').innerText)), 'vue coach : synchro des calendriers, rapport affiché');
   await ctx.close();
+  // premier PIN tapé à la main (au doigt, bouton OK et touche Entrée)
+  ({ctx, p} = await mk({}, true));
+  await p.goto('http://localhost:8765/coach.html'); await p.waitForTimeout(1500);
+  const box = await p.evaluate(() => { const i = document.querySelector('#pin').getBoundingClientRect(), b = document.querySelector('#pinOk').getBoundingClientRect(); return {it: i.top, ib: i.bottom, bt: b.top, bb: b.bottom}; });
+  ok(Math.abs(box.it - box.bt) < 1.5 && Math.abs(box.ib - box.bb) < 1.5, `PIN : champ et bouton OK alignés (${JSON.stringify(box)})`);
+  await p.tap('#pin'); await p.keyboard.type(R.PIN); await p.tap('#pinOk'); await p.waitForTimeout(1500);
+  ok(/Forme/.test(await p.evaluate(() => document.body.innerText)), 'PIN tapé + bouton OK : les données arrivent');
+  await ctx.close();
+  ({ctx, p} = await mk({}, true));
+  await p.goto('http://localhost:8765/coach.html'); await p.waitForTimeout(1500);
+  await p.tap('#pin'); await p.keyboard.type(R.PIN); await p.keyboard.press('Enter'); await p.waitForTimeout(1500);
+  ok(/Forme/.test(await p.evaluate(() => document.body.innerText)), 'PIN tapé + touche Entrée du clavier : les données arrivent');
+  await ctx.close();
   // mauvais PIN
   ({ctx, p} = await mk());
   await p.addInitScript(() => localStorage.setItem('cu.pin', JSON.stringify('0000')));
   await p.goto('http://localhost:8765/coach.html'); await p.waitForTimeout(2000);
   ok(await p.$('#pin') !== null && await p.evaluate(() => !localStorage.getItem('cu.pin')), 'mauvais PIN : oublié, on redemande');
-  await p.fill('#pin', R.PIN); await click(p, '#pinOk'); await p.waitForTimeout(1500);
+  await p.fill('#pin', R.PIN); await p.tap('#pinOk'); await p.waitForTimeout(1500);
   ok(/Forme/.test(await p.evaluate(() => document.body.innerText)), 'bon PIN tapé : les données arrivent');
   await ctx.close();
   // sans relais configuré : l'appli se comporte comme avant
