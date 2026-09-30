@@ -92,6 +92,8 @@ Champs d'un item : `ex` (id du catalogue, obligatoire) · `reps` ou `duree` (s) 
 `rpe` (cible) · `recup` (s) · `tempo` · `alterne` · `parCote` · `intention` · `filmer` (numéro de série à filmer) · `consignes` (remplace celles du catalogue) ·
 `nom` (remplace le nom du catalogue) · `note` (précision de Nathan).
 
+Champ de bloc `circuit` : `noRpe: true` supprime la question « ce tour, c'était comment ? » (échauffement, mise en route, mobilité : une donnée qui ne sert à rien coûte un tap par tour).
+
 `focus` (fichier athlète, facultatif) : zones à travailler en priorité dans les routines Récup & mobilité (mêmes valeurs que `zones` des fiches).
 
 ## Charges en % du max estimé

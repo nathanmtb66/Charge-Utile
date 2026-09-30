@@ -480,6 +480,7 @@ function buildBlocks(sess){
   })).filter(b => ['cardio','circuit','sets','free','test'].includes(b.type));   // bloc d'une version plus récente : ignoré plutôt que cassé
 }
 /** une séance de tests (au moins un bloc « test ») : elle va dans l'onglet Tests */
+const plur = (n, w) => `${n} ${w}${n > 1 ? 's' : ''}`;
 function isTestSession(s){ const b = s.blocs || []; return b.some(x => x.type === 'test') && b.every(x => x.type === 'test' || x.type === 'cardio'); }   // une séance mixte reste dans « Séances »
 function buildSteps(blocks){
   const steps = [];
@@ -587,7 +588,7 @@ const App = (()=>{
     head('Charge Utile', tab === 'tests' ? 'Mes tests' : 'Mes séances');
     const card = (s, i) => `<button class="scard${i===0 ? ' first' : ''}" data-id="${esc(s.id)}">
         <div><small>${dayLabel(s.date)}${s.date < today ? ' · en retard' : ''}</small><b>${esc(s.titre)}</b>
-        <span>${isT(s) ? `${s.blocs.reduce((n, b) => n + (b.type === 'test' ? (b.items || []).length : 0), 0)} tests · ≈ ${s.dureeMin || '?'} min` : `${s.blocs.length} blocs · ≈ ${s.dureeMin || '?'} min · RPE ${esc(s.rpe || '—')}`}</span></div>${ico('chev')}</button>`;
+        <span>${isT(s) ? `${plur(s.blocs.reduce((n, b) => n + (b.type === 'test' ? (b.items || []).length : 0), 0), 'test')} · ≈ ${s.dureeMin || '?'} min` : `${plur(s.blocs.length, 'bloc')} · ≈ ${s.dureeMin || '?'} min · RPE ${esc(s.rpe || '—')}`}</span></div>${ico('chev')}</button>`;
     const resumeHtml = r => r ? `<button class="resume" id="resume">${ico('play')}<div><b>Reprendre ${esc(r.titre)}</b><span>Là où tu t’es arrêté</span></div></button>` : '';
     const doneList = arr => arr.length ? `<p class="lbl">Déjà faites</p><ul class="list tight">${arr.slice(0,6).map(s=>`<li><span>${esc(s.titre)}</span><span>${dayLabel(s.date)}${isT(s) ? '' : ` · RPE ${hist[s.id].srpe ?? '—'}`}</span></li>`).join('')}</ul>` : '';
     let body;

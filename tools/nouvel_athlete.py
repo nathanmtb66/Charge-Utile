@@ -13,5 +13,5 @@ code = args[1] if len(args) > 1 else ''.join(secrets.choice(string.ascii_lowerca
 f = os.path.join(ROOT, 'docs', 'data', 'sessions', f'{code}.json')
 if os.path.exists(f): sys.exit(f'Le code {code} existe déjà.')
 json.dump({'athlete': code, 'prenom': prenom, 'coach': 'Nathan', 'focus': focus, 'seances': []}, open(f, 'w'), ensure_ascii=False, indent=1)
-base = open(os.path.join(ROOT, 'SITE_URL')).read().strip() if os.path.exists(os.path.join(ROOT, 'SITE_URL')) else 'https://<compte>.github.io/charge-utile/'
+base = open(os.path.join(ROOT, 'SITE_URL')).read().strip() if os.path.exists(os.path.join(ROOT, 'SITE_URL')) else 'https://nathanmtb66.github.io/Charge-Utile/'
 print(f'{prenom} → code {code}\nLien à envoyer : {base}?a={code}')
