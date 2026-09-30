@@ -531,5 +531,154 @@
  "focus": [
   "genoux",
   "chevilles"
- ]
+ ],
+ "saison": {
+  "nom": "Saison 2027 (exemple)",
+  "note": "Exemple de démo : tes vrais blocs et tes courses arrivent quand Nathan les fixe.",
+  "blocs": [
+   {
+    "type": "TRANSITION",
+    "nom": "Reprise",
+    "debut": "2026-09-28",
+    "fin": "2026-10-18",
+    "objectif": "Reprendre en douceur, sans structure : vélo cool, trail plaisir.",
+    "muscu": "Technique à vide, gainage, mobilité",
+    "heures": [
+     4,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "PPG",
+    "nom": "PPG 1",
+    "debut": "2026-10-19",
+    "fin": "2026-11-29",
+    "objectif": "Construire le foncier et une base de force.",
+    "muscu": "3-4 × 8-10, RPE 7, technique d’abord",
+    "heures": [
+     7,
+     8,
+     9,
+     6,
+     9,
+     10
+    ]
+   },
+   {
+    "type": "PPG",
+    "nom": "PPG 2",
+    "debut": "2026-11-30",
+    "fin": "2027-01-03",
+    "objectif": "Monter le volume, force maximale.",
+    "muscu": "4 × 4-6 à 80-85 % du max",
+    "heures": [
+     10,
+     11,
+     8,
+     11,
+     7
+    ]
+   },
+   {
+    "type": "PPO",
+    "debut": "2027-01-04",
+    "fin": "2027-02-21",
+    "objectif": "Transformer la force en puissance, premiers intervalles.",
+    "muscu": "3 × 3-5 à 85 % + pliométrie",
+    "heures": [
+     11,
+     12,
+     13,
+     9,
+     12,
+     13,
+     9
+    ]
+   },
+   {
+    "type": "PPS",
+    "debut": "2027-02-22",
+    "fin": "2027-04-04",
+    "objectif": "Intensités de course, travail technique XCO.",
+    "muscu": "3 × 3 explosif, entretien de la force",
+    "heures": [
+     12,
+     13,
+     10,
+     13,
+     14,
+     9
+    ]
+   },
+   {
+    "type": "AFFUTAGE",
+    "debut": "2027-04-05",
+    "fin": "2027-04-18",
+    "objectif": "Garder l’intensité, couper le volume.",
+    "muscu": "2 × 3 à 85 %, rien de nouveau",
+    "heures": [
+     8,
+     6
+    ]
+   },
+   {
+    "type": "PPC",
+    "debut": "2027-04-19",
+    "fin": "2027-07-25",
+    "objectif": "Performer, récupérer entre les courses.",
+    "muscu": "Entretien 1 fois par semaine, jamais à J-2"
+   },
+   {
+    "type": "TRANSITION",
+    "nom": "Coupure",
+    "debut": "2027-07-26",
+    "fin": "2027-08-22",
+    "objectif": "Repos actif, faire autre chose."
+   }
+  ],
+  "courses": [
+   {
+    "date": "2027-03-14",
+    "nom": "Course de reprise",
+    "prio": "C",
+    "objectif": "Retrouver les sensations de départ"
+   },
+   {
+    "date": "2027-04-18",
+    "nom": "Coupe de France 1",
+    "prio": "A"
+   },
+   {
+    "date": "2027-05-16",
+    "nom": "Coupe régionale",
+    "prio": "B"
+   },
+   {
+    "date": "2027-06-06",
+    "nom": "Coupe de France 2",
+    "prio": "B"
+   },
+   {
+    "date": "2027-07-18",
+    "nom": "Championnat de France",
+    "prio": "A",
+    "objectif": "Objectif de la saison"
+   }
+  ],
+  "tests": [
+   {
+    "date": "2026-10-10",
+    "nom": "Tests force et mobilité"
+   },
+   {
+    "date": "2027-01-02",
+    "nom": "Tests force"
+   },
+   {
+    "date": "2027-04-03",
+    "nom": "Tests avant la saison"
+   }
+  ]
+ }
 }

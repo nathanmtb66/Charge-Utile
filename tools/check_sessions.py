@@ -51,5 +51,29 @@ for f in files:
                     base = {'squat': 'squat-barre', 'sdt': 'souleve-de-terre'}.get(it.get('base', it['ex']), it.get('base', it['ex']))
                     if base not in ex or not isinstance(it.get('pct'), (int, float)) or not 30 <= it['pct'] <= 105: W(f"« {it['ex']} » : pct (30-105) et base (un exercice du catalogue) vont ensemble")
                     if not isinstance(it.get('charge'), (int, float)): W(f"« {it['ex']} » : en % du max, écris aussi la charge calculée en kg")
+    sa = d.get('saison')
+    if sa is not None:
+        SE = lambda m: E(f'saison : {m}')
+        TY = {'TRANSITION', 'PPG', 'PPO', 'PPS', 'PPC', 'AFFUTAGE', 'RECUP'}
+        def dt(v, what):
+            try: return datetime.date.fromisoformat(v)
+            except Exception: SE(f'{what} : date invalide « {v} » (AAAA-MM-JJ)')
+        bl = sorted(sa.get('blocs', []), key=lambda b: b.get('debut', ''))
+        prev = None
+        for b in bl:
+            nm = b.get('nom') or b.get('type')
+            if b.get('type') not in TY: SE(f"bloc « {nm} » : type {b.get('type')} inconnu ({', '.join(sorted(TY))})")
+            a, z = dt(b.get('debut'), f'bloc « {nm} » début'), dt(b.get('fin'), f'bloc « {nm} » fin')
+            if a and z and z < a: SE(f'bloc « {nm} » : fin avant début')
+            if prev and a and prev[1] and a <= prev[1]: SE(f"blocs « {prev[0]} » et « {nm} » se chevauchent")
+            if a and z and 'heures' in b:
+                nw = ((z - (a - datetime.timedelta(days=a.weekday()))).days // 7) + 1
+                if not isinstance(b['heures'], list) or len(b['heures']) != nw: SE(f'bloc « {nm} » : « heures » doit avoir une valeur par semaine ({nw})')
+            prev = (nm, z)
+        for c in sa.get('courses', []):
+            dt(c.get('date'), f"course « {c.get('nom')} »")
+            if c.get('prio') not in ('A', 'B', 'C'): SE(f"course « {c.get('nom')} » : prio A, B ou C")
+            if not c.get('nom'): SE('course sans nom')
+        for t in sa.get('tests', []): dt(t.get('date'), 'test')
 if errs: print('\n'.join(errs)); sys.exit(1)
 print(f'{len(files)} fichier(s) de séances OK')

@@ -1,0 +1,15 @@
+# Relais intervals.icu de Charge Utile — déployé par Cloudflare depuis ce dossier à chaque push sur main.
+# Secrets (tableau de bord Cloudflare → le worker → Settings → Variables and Secrets, type « Secret ») :
+#   ICU_KEY = ta clé API intervals.icu (Réglages intervals → Developer Settings)
+#   PIN     = un code que tu choisis, tapé une fois sur ton téléphone pour la vue coach
+name = "charge-utile-relais"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[vars]
+SITE = "https://nathanmtb66.github.io/Charge-Utile/"
+ORIGINS = "https://nathanmtb66.github.io"
+
+[triggers]
+crons = ["23 * * * *"]

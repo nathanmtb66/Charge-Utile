@@ -131,3 +131,31 @@ Le résultat est rangé sous `rm:<exercice>` : un max par exercice.
 `python3 coach.py batterie <code> A <date> squat-barre:5 souleve-de-terre:3:1 developpe-couche-barre:1` écrit la séance (saut ou assis-debout selon le profil + les tests RM choisis) ; `… B <date>` la batterie mobilité.
 
 Les résultats restent sur le téléphone (onglet Tests, « Ma fiche ») et partent dans le message de fin, avec une ligne `FICHE …` que `coach.py fiche-ajoute` range dans `prive/fiches/<code>.json` (jamais publié : `prive/` est dans `.gitignore`).
+
+## Plan de saison — champ `saison` du fichier athlète
+
+Visible par l'athlète (bandeau en haut de ses séances + écran « Ma saison ») et par Nathan (`coach.html`). Posé aussi dans le calendrier intervals.icu par le relais (courses en RACE_A/B/C, blocs en notes sur plusieurs jours).
+
+```json
+"saison": {
+  "nom": "Saison 2027",
+  "note": "facultatif, affiché en bas de l'écran saison",
+  "blocs": [
+    {"type": "PPG", "nom": "PPG 1", "debut": "2026-10-19", "fin": "2026-11-29",
+     "objectif": "Construire le foncier et une base de force.", "muscu": "3-4 × 8-10, RPE 7", "heures": [7, 8, 9, 6, 9, 10]}
+  ],
+  "courses": [{"date": "2027-04-18", "nom": "Coupe de France 1", "prio": "A", "lieu": "…", "objectif": "…"}],
+  "tests": [{"date": "2027-01-02", "nom": "Tests force"}]
+}
+```
+
+- `type` : `TRANSITION` · `PPG` · `PPO` · `PPS` · `PPC` · `AFFUTAGE` · `RECUP` (couleur fixe par type). `nom` facultatif.
+- Les blocs ne se chevauchent pas. `heures` (facultatif) : une valeur par semaine du bloc (semaines du lundi au dimanche, la 1re est celle qui contient `debut`).
+- `prio` : A (objectif), B, C. Les séances de tests publiées apparaissent toutes seules comme repères ◆.
+- Contrôle : `python3 coach.py verifie <code>`.
+- Rien de privé ici (site public) : pas de nom de famille, pas de blessure.
+
+## Relais intervals.icu (`relais/`, `data/config.json`, `data/equipe.json`)
+
+- `data/config.json` : `{"relais": "https://charge-utile-relais.<compte>.workers.dev"}` ; vide = l'appli garde l'ancien fonctionnement (message WhatsApp + RPE à taper dans intervals).
+- `data/equipe.json` : généré par `tools/build.py` (codes + prénoms, sans la démo). Le relais relie un code à l'athlète intervals **par le prénom** dans la liste des athlètes coachés ; en cas d'homonyme, ajoute `"icu": "i12345"` en tête du fichier athlète.

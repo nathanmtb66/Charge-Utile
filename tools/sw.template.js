@@ -11,7 +11,7 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if(e.request.method !== 'GET' || url.origin !== location.origin) return;
   // séances : réseau d'abord (pour avoir la dernière version de Nathan), cache si pas de réseau
-  if(url.pathname.includes('/data/sessions/')){
+  if(url.pathname.includes('/data/sessions/') || url.pathname.endsWith('/data/equipe.json')){
     e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); if(r.ok) caches.open('cu-seances').then(c => c.put(url.pathname, copy)); return r; })
       .catch(() => caches.open('cu-seances').then(c => c.match(url.pathname)).then(r => r || new Response('null', {status:503}))));
     return;

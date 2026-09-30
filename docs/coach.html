@@ -3,25 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Charge Utile</title>
-<meta name="description" content="Tes séances de muscu préparées par Nathan, guidées pas à pas.">
+<title>Charge Utile · Coach</title>
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#0B0E11">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Charge Utile">
-<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="CU Coach">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/coach.css">
 </head>
-<body>
-<!--BODY-->
-<script src="js/three.min.js"></script>
-<script src="js/body.js"></script>
-<script src="js/engine.js"></script>
-<!--MOVES-->
+<body class="coach">
+<main class="cwrap">
+  <header class="chead"><span class="kicker">Charge Utile</span><h1>Mes athlètes</h1><p id="cstate" class="cstate">Chargement…</p></header>
+  <section id="clist" class="clist" aria-live="polite"></section>
+  <footer class="cfoot" id="cfoot"></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="js/saison.js"></script>
-<script src="js/app.js"></script>
+<script src="js/coach.js"></script>
 </body>
 </html>

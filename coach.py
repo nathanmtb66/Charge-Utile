@@ -78,7 +78,13 @@ def verifie(code):
                     errs.append(f"{s['id']} / {b['nom']} / {it['ex']} : ni reps ni durée")
                 if 'pct' in it and (ALIAS.get(it.get('base', it['ex']), it.get('base', it['ex'])) not in BYID or not isinstance(it.get('charge'), (int, float))):
                     errs.append(f"{s['id']} / {it['ex']} : en % du max, il faut base (un exercice testé) et la charge calculée (coach.py charge)")
-    print('\n'.join(errs) if errs else f"{code} : OK ({len(ids)} séance(s))")
+    import subprocess   # saison, formats fins : même contrôle que la construction du site
+    r = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'check_sessions.py'), f], capture_output=True, text=True)
+    if r.returncode: errs += [l.split(' : ', 1)[1] if ' : ' in l else l for l in r.stdout.strip().splitlines() if l.strip()]
+    errs = list(dict.fromkeys(errs))
+    sa = d.get('saison')
+    extra = f", saison : {len(sa.get('blocs', []))} bloc(s), {len(sa.get('courses', []))} course(s)" if sa else ''
+    print('\n'.join(errs) if errs else f"{code} : OK ({len(ids)} séance(s){extra})")
 
 def seances():
     for f in sorted(os.listdir(os.path.join(SITE, 'data', 'sessions'))):

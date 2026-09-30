@@ -62,7 +62,8 @@ function scrollWatch(){
     const n = live();
     const more = !!n && !app.classList.contains('live') && n.scrollTop + n.clientHeight < n.scrollHeight - 12;
     app.classList.toggle('more', more);
-    if(more && down) down.style.bottom = (bar.offsetHeight + 10) + 'px';
+    app.style.setProperty('--barh', bar.offsetHeight + 'px');
+    if(more && down) down.style.bottom = (bar.offsetHeight + 8) + 'px';
   };
   boxes.forEach(n => {
     n.addEventListener('scroll', upd, {passive:true});
@@ -375,6 +376,33 @@ async function shareText(text){
   return 'wa';
 }
 
+/* ============ relais intervals.icu : la séance part dans intervals sans que l'athlète ait de clé à donner ============ */
+const Relais = {
+  url: null,
+  async init(){
+    if(this.url !== null) return this.url;
+    const dev = Store.get('relais');                        // réglage de test uniquement
+    if(dev != null) return this.url = dev;
+    try{ const c = window.CU_DATA ? {} : await (await fetch('data/config.json', {cache:'no-cache'})).json(); this.url = (c && c.relais) || ''; }catch(e){ this.url = ''; }
+    return this.url;
+  },
+  queue(p){ const q = Store.get('outbox', []).filter(x => !(x.code === p.code && x.id === p.id)); q.push(p); Store.set('outbox', q); },
+  async flush(){
+    const url = await this.init(); if(!url) return {sent: 0, left: Store.get('outbox', []).length};
+    let q = Store.get('outbox', []), sent = 0, last = null;
+    for(const p of [...q]){
+      try{
+        const r = await fetch(url.replace(/\/$/, '') + '/seance', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(p)});
+        const j = await r.json().catch(() => ({}));
+        if(r.ok || (r.status >= 400 && r.status < 500 && r.status !== 408 && r.status !== 429)){  // envoyé, ou refus définitif : on ne réessaie pas en boucle
+          q = q.filter(x => x !== p && !(x.code === p.code && x.id === p.id)); Store.set('outbox', q); if(r.ok) sent++; last = r.ok ? j : Object.assign({refus: true}, j);
+        }
+      }catch(e){ break; }                                       // pas de réseau : on garde tout pour la prochaine ouverture
+    }
+    return {sent, left: q.length, last};
+  }
+};
+
 /* ============ questions de ressenti (selon le type d'exercice) ============ */
 const CR10 = ['','Très facile','Facile','Modéré','Un peu dur','Dur','Dur +','Très dur','Très dur +','Presque max','Maximal'];
 const RPEQ = {
@@ -604,6 +632,7 @@ const App = (()=>{
     } else {
       body = `
         <div class="hero"><h2>${book.prenom ? 'Salut ' + esc(book.prenom) : 'Salut'}</h2><p class="tagline">${todoS.length ? `${todoS.length} séance${todoS.length>1?'s':''} à faire` : list.length ? 'Tout est fait, bravo' : 'Nathan prépare ta première séance'}</p></div>
+        ${book.saison ? Saison.strip(book.saison) : ''}
         ${resumeHtml(resume && !isT(resume) ? resume : null)}
         ${todoS.length ? `<div class="slist">${todoS.map(card).join('')}</div>` : `<p class="quote">${list.length ? 'Nathan n’a pas encore publié ta prochaine séance.' : 'Ton espace est prêt. Ta première séance arrivera ici.'}<small>En attendant, la récup et la mobilité sont déjà dispo.</small></p>`}
         ${installCard()}
@@ -619,10 +648,31 @@ const App = (()=>{
     $$('.scard').forEach(b => b.onclick = ()=>{ SND.tap(); intro(list.find(s=>s.id===b.dataset.id)); });
     on('#resume', ()=>{ resumeSession(resume, prog); });
     on('#ficheB', ()=>{ SND.tap(); ficheScreen(); });
+    on('#saisonB', ()=>{ SND.tap(); saisonScreen(); });
+    Relais.flush().catch(()=>{});
+    if(deepSid){ const d = list.find(s => s.id === deepSid); deepSid = null; if(d && !hist[d.id]) return intro(d); }
     on('#snd', ()=>{ SND.tap(); soundSheet(()=>{ const s = $('#snd'); if(s) s.textContent = `Sons : ${sndSummary()}`; }); });
     on('#chg', ()=>{ Store.del('code'); home(); });
     bindInstall();
   }
+  /* ---------- plan de saison ---------- */
+  function saisonScreen(){
+    const book = Data.book, sa = book.saison; if(!sa) return home();
+    layout({page:true, tools:false}); progress();
+    head(book.prenom || 'Charge Utile', sa.nom || 'Ma saison');
+    const tests = (book.seances || []).filter(isTestSession).map(s => ({date: s.date, nom: s.titre}));
+    $('#page').innerHTML = `${Saison.strip(sa, undefined, 'saisonTop')}
+      ${Saison.frame(sa, {tests})}
+      ${Saison.legend(sa)}
+      ${Saison.details(sa)}
+      ${sa.note ? `<p class="quote">${esc(sa.note)}<small>${esc(book.coach || 'Nathan')}</small></p>` : ''}`;
+    stagger($('#page'));
+    Saison.focus($('#page'));
+    bar(`<button class="primary light" id="back">Retour</button>`);
+    on('#back', ()=>{ SND.tap(); home(); });
+    on('#saisonTop', ()=>{});
+  }
+  let deepSid = Q.get('s');
   /* ---------- onglets de l'accueil : Séances · Tests · Récup ---------- */
   let curTab = 'seances';
   function tabsHtml(active, n = {}){
@@ -775,7 +825,7 @@ const App = (()=>{
   function detailScreen(back){
     S.screen = 'detail';
     layout({page:true, tools:false});
-    head(esc(SESS.titre), 'La séance en détail');
+    head(SESS.titre, 'La séance en détail');
     $('#page').innerHTML = `
       <div class="hero"><h2>${esc(SESS.titre)}</h2><p class="tagline">RPE visé ${esc(SESS.rpe || '—')} · ≈ ${SESS.dureeMin || '?'} min</p></div>
       <p class="quote">Tu connais déjà la séance ? Tu peux la faire sans guidage.<small>Les bips se coupent dans les réglages</small></p>
@@ -858,7 +908,7 @@ const App = (()=>{
     cueTimer = setInterval(()=>{ const c = $(sel); if(!c) return; c.classList.add('out'); setTimeout(()=>{ ci = (ci+1)%it.cues.length; c.textContent = it.cues[ci]; c.classList.remove('out'); }, 280); }, 5000);
   }
   function tools(it){
-    return `<div class="minor"><a class="mbtn" href="${esc(videoLink(it))}" target="_blank" rel="noopener">${ico('eye')}Voir en vrai</a>${it.alts && it.alts.length ? `<button id="swapB">${ico('swap')}Remplacer</button>` : ''}<button id="painB">${ico('pain')}Douleur</button></div>`;
+    return `<div class="minor"><a class="mbtn" href="${esc(videoLink(it))}" target="_blank" rel="noopener">${ico('eye')}<span class="lg">Voir&nbsp;</span>en vrai</a>${it.alts && it.alts.length ? `<button id="swapB">${ico('swap')}Remplacer</button>` : ''}<button id="painB">${ico('pain')}Douleur</button></div>`;
   }
   function tempoLine(it){
     const t = it.tempoTxt || it.tempo; if(!t) return '';
@@ -2444,20 +2494,41 @@ const App = (()=>{
     bar(`<button class="primary light" id="homeB">Terminé</button>`);
     on('#homeB', home);
   }
+  const localIso = t => { const d = new Date(t), z = n => String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}T${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`; };
   async function sent(){
     const text = recap();
     const hist = Store.get('history', {}); hist[SESS.id] = {at:Date.now(), srpe:S.srpe, early:S.early}; Store.set('history', hist);
     Store.del('progress');
-    const r = await shareText(text);
+    const relais = await Relais.init();
+    const code = Store.get('code');
+    const sendable = relais && code && code !== 'demo' && !SESS.recup;
+    let res = null;
+    if(sendable){
+      const secs = Math.max(60, Math.round((Date.now() - (S.t0 || Date.now()))/1000));
+      Relais.queue({code, id: SESS.id, srpe: S.srpe, dureeS: secs, debutLocal: localIso(S.t0 || Date.now() - secs*1000), fin: new Date().toISOString(),
+        recap: text, fiche: S.tests && Object.keys(S.tests).length ? ficheLine(Object.entries(S.tests)) : ''});
+      toast('Envoi à intervals…');
+      res = await Relais.flush().catch(()=>null);
+    }
+    const r = sendable ? 'relais' : await shareText(text);         // sans relais : comme avant, message WhatsApp
     S.screen = 'sent'; layout({page:true, tools:false});
     head(SESS.titre, r === 'aborted' ? 'Pas encore envoyé' : 'Bien joué');
+    const okIco = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>`;
+    const status = !sendable ? `<div class="todo2"><b>Dernière étape : intervals.icu</b><span>Arrête ta montre si ce n’est pas fait, puis ouvre la séance dans intervals.icu et mets ton RPE : <strong>${S.srpe}/10</strong>. C’est ce qui compte la muscu dans ta charge d’entraînement.</span></div>`
+      : res && res.sent ? `<div class="sent-ok">${okIco}<div><b>C’est dans intervals.icu</b><span>RPE ${S.srpe}/10, durée et détail de ta séance : Nathan voit tout, ta charge est comptée. Rien d’autre à faire.</span></div></div>`
+      : res && res.last && res.last.refus ? `<div class="sent-ok wait">${okIco}<div><b>Pas pu aller dans intervals.icu</b><span>${esc(res.last.error || 'refusé')} : envoie le message à Nathan ci-dessous.</span></div></div>`
+      : `<div class="sent-ok wait">${okIco}<div><b>Enregistrée sur ton téléphone</b><span>Pas de réseau : elle partira toute seule dans intervals.icu à la prochaine ouverture de l’appli.</span></div></div>`;
+    const needMsg = S.pain.length || S.videos || (res && res.last && res.last.refus) || !sendable;
     $('#page').innerHTML = `
       <div class="big-ok"><svg viewBox="0 0 52 52" aria-hidden="true"><circle class="c" cx="26" cy="26" r="24"/><path class="k" d="M15 27l7 7 15-16"/></svg></div>
-      <div class="todo2"><b>Dernière étape : intervals.icu</b><span>Arrête ta montre si ce n’est pas fait, puis ouvre la séance dans intervals.icu et mets ton RPE : <strong>${S.srpe}/10</strong>. C’est ce qui compte la muscu dans ta charge d’entraînement.</span></div>
-      <p class="lbl">Ton message à Nathan</p>
+      ${status}
+      ${sendable && S.pain.length ? `<p class="quote">Tu as signalé une douleur : envoie aussi le message à Nathan pour qu’il adapte la suite.</p>` : ''}
+      <p class="lbl">${sendable ? 'Le détail (déjà dans intervals)' : 'Ton message à Nathan'}</p>
       <pre class="recap">${esc(text)}</pre>`;
     stagger($('#page'));
-    bar(`<div class="pair"><button class="ghost" id="again">${ico('send')}Renvoyer</button><button class="primary light" id="homeB">Terminé</button></div>`);
+    bar(sendable
+      ? `<div class="pair even"><button class="${needMsg ? 'primary' : 'ghost'}" id="again">${ico('send')}WhatsApp</button><button class="${needMsg ? 'ghost' : 'primary light'}" id="homeB">Terminé</button></div>`
+      : `<div class="pair"><button class="ghost" id="again">${ico('send')}Renvoyer</button><button class="primary light" id="homeB">Terminé</button></div>`);
     on('#again', ()=>shareText(text));
     on('#homeB', home);
   }

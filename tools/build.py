@@ -10,6 +10,18 @@ run('node', 'tools/anims.js')
 run('python3', 'tools/build_catalog.py')   # 2e passe : vérifie aussi que chaque anim existe
 run('python3', 'tools/check_sessions.py')
 
+# équipe (lue par le relais intervals et par la vue coach) : codes et prénoms seulement, jamais de nom de famille
+team = []
+for f in sorted(glob.glob(os.path.join(SITE, 'data', 'sessions', '*.json'))):
+    d = json.load(open(f))
+    if d.get('athlete') == 'demo': continue
+    a = {'code': d['athlete'], 'prenom': d.get('prenom', '')}
+    if d.get('icu'): a['icu'] = d['icu']
+    team.append(a)
+open(os.path.join(SITE, 'data', 'equipe.json'), 'w').write(json.dumps({'athletes': team}, ensure_ascii=False, indent=1) + '\n')
+if not os.path.exists(os.path.join(SITE, 'data', 'config.json')):
+    open(os.path.join(SITE, 'data', 'config.json'), 'w').write('{"relais": ""}\n')
+
 moves = json.load(open(os.path.join(SITE, 'moves', 'index.json')))
 tpl = open(os.path.join(SITE, 'index.template.html')).read()
 body = open(os.path.join(SITE, 'body.fragment.html')).read()
@@ -19,8 +31,8 @@ open(os.path.join(SITE, 'index.html'), 'w').write(html)
 cat = open(os.path.join(SITE, 'catalogue.template.html')).read().replace('<!--MOVES-->', '\n'.join(f'<script src="moves/{m}.js"></script>' for m in moves))
 open(os.path.join(SITE, 'catalogue.html'), 'w').write(cat)
 
-assets = ['./', 'index.html', 'catalogue.html', 'manifest.webmanifest', 'css/app.css', 'js/three.min.js', 'js/body.js', 'js/engine.js', 'js/app.js',
-          'data/exercises.json', 'data/tests.json'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
+assets = ['./', 'index.html', 'catalogue.html', 'manifest.webmanifest', 'css/app.css', 'js/three.min.js', 'js/body.js', 'js/engine.js', 'js/saison.js', 'js/app.js',
+          'data/exercises.json', 'data/tests.json', 'data/config.json'] + [f'moves/{m}.js' for m in moves] + sorted('fonts/' + f for f in os.listdir(os.path.join(SITE, 'fonts'))) + sorted('icons/' + f for f in os.listdir(os.path.join(SITE, 'icons')))
 h = hashlib.sha1()
 for a in assets:
     p = os.path.join(SITE, 'index.html' if a == './' else a); h.update(open(p, 'rb').read())
@@ -40,7 +52,7 @@ sessions = {os.path.basename(f)[:-5]: json.load(open(f)) for f in glob.glob(os.p
 data = {'exercises': json.load(open(os.path.join(SITE, 'data', 'exercises.json'))), 'tests': json.load(open(os.path.join(SITE, 'data', 'tests.json'))), 'sessions': sessions, 'defaultCode': 'demo'}
 parts = ['<title>Charge Utile</title>', '<meta name="theme-color" content="#0B0E11">', f'<style>{css}</style>', body,
          f'<script>window.CU_DATA = {json.dumps(data, ensure_ascii=False)};try{{if(!localStorage.getItem("cu.code"))localStorage.setItem("cu.code",JSON.stringify("demo"))}}catch(e){{}}</script>']
-for p in ['js/three.min.js', 'js/body.js', 'js/engine.js'] + [f'moves/{m}.js' for m in moves] + ['js/app.js']:
+for p in ['js/three.min.js', 'js/body.js', 'js/engine.js'] + [f'moves/{m}.js' for m in moves] + ['js/saison.js', 'js/app.js']:
     parts.append(f'<script>{js(p)}</script>')
 open(os.path.join(DIST, 'apercu.html'), 'w').write('\n'.join(parts))
 print(f'docs/ prêt (version {ver}, {len(assets)} fichiers hors-ligne) · dist/apercu.html {os.path.getsize(os.path.join(DIST, "apercu.html"))//1024} Ko')
