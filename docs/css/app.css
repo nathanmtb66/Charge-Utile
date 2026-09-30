@@ -642,3 +642,4 @@ em.up{color:var(--ok)} em.dn{color:var(--warn)} em.st{color:var(--dim)}
 .slegend i.lp{background:none;border:1.2px solid var(--faint);border-radius:2px}
 .slegend i.lf{background:var(--ink);opacity:.85;border-radius:2px}
 .sstrip .sobj{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chips .vdate{width:auto;margin:0;height:38px;padding:0 10px;border-radius:99px;font-size:14px;color-scheme:dark}

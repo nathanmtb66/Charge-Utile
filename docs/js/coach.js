@@ -76,9 +76,58 @@ function axis(sem){
   const n = sem.length, showNow = i > 1, showEnd = i < 0 || i < n - 3;
   return `<div class="caxis"><span>${lab(sem[0])}</span>${showNow ? `<span class="now" style="left:${Math.min(88, (i + .5) / n * 100)}%">cette sem.</span>` : ''}${showEnd ? `<span>${lab(sem[n - 1])}</span>` : ''}</div>`;
 }
+const vue = () => St.get('coachVue', 'volume');
+function chart(L){
+  if(!L || !L.semaines || !L.semaines.length) return '';
+  const v = vue();
+  const tabs = `<span class="cvtab"><button data-vue="volume" class="${v === 'volume' ? 'on' : ''}">Volume</button><button data-vue="charge" class="${v === 'charge' ? 'on' : ''}">Charge</button></span>`;
+  return v === 'volume'
+    ? `<div class="cchart"><small>${tabs}</small>${volBars(L.semaines)}${axis(L.semaines.filter(k => k.semaine <= Saison.monday(today)))}${volLegend(L.semaines)}</div>`
+    : `<div class="cchart"><small>${tabs}<i class="lf"></i>faite <i class="lp"></i>prévue</small>${loadBars(L.semaines)}${axis(L.semaines)}</div>`;
+}
+/* athlète suivi sur intervals mais pas encore dans l'appli muscu */
+function cardHorsAppli(a){
+  const L = a.L || {}, alerts = [];
+  if(L.erreur) alerts.push(`intervals : ${esc(L.erreur)}`);
+  if(L.derniere && days(L.derniere, today) >= 5) alerts.push(`aucune activité sur intervals depuis ${days(L.derniere, today)} jours`);
+  return `<article class="ccard" data-code="${esc(a.key)}">
+    <div class="cname"><b>${esc(a.prenom)}</b><span class="ctag"><em class="dim">pas encore dans l’appli muscu</em></span></div>
+    ${alerts.length ? `<p class="calert">${alerts.join('<br>')}</p>` : ''}
+    ${formeTxt(L.forme)}
+    ${chart(L)}
+    <p class="cnote">Pour lui créer son appli muscu, dis à Claude : « ajoute ${esc(a.prenom)} » (en même temps que sa première séance).</p>
+    <button class="textlink cmask" data-mask="${esc(a.key)}">Masquer (ce n’est pas un de mes athlètes)</button>
+  </article>`;
+}
 const ago = d => { const j = days(d, today); return j <= 0 ? 'aujourd’hui' : j === 1 ? 'hier' : `il y a ${j} j`; };
+/* la liste vient d'intervals (tout athlète suivi apparaît tout seul) ; sans le relais, celle des fiches publiées */
+function people(){
+  const hidden = new Set(St.get('caches', []));
+  const all = live ? live.athletes.map(L => ({key: L.code || 'icu-' + L.icu, code: L.code, prenom: ((L.code && team.find(t => t.code === L.code)) || {}).prenom || L.prenom, L}))
+    : team.map(a => ({key: a.code, code: a.code, prenom: a.prenom, L: null}));
+  return {shown: all.filter(a => !hidden.has(a.key)), hidden: all.filter(a => hidden.has(a.key))};
+}
+const SP = [['velo', 'Vélo', '#4C8DFF'], ['course', 'Course', '#F4B63F'], ['muscu', 'Muscu', '#FF5A48'], ['autre', 'Autre', '#7C8896']];
+/* volume par semaine, empilé par sport ; la semaine en cours est encadrée */
+function volBars(sem){
+  if(!sem || !sem.length) return '';
+  const W = 24, H = 56, thisMon = Saison.monday(today), past = sem.filter(k => k.semaine <= thisMon);
+  const max = Math.max(1, ...past.map(k => k.heures));
+  let s = `<svg class="cload" viewBox="0 0 ${past.length * W} ${H}" preserveAspectRatio="none" role="img" aria-label="Volume par semaine et par sport">`;
+  past.forEach((k, i) => { let y = H;
+    SP.forEach(([id, , c]) => { const v = (k.sports || {})[id] || 0; if(!v) return; const h = v / max * H; y -= h; s += `<rect x="${i * W + 5}" y="${y}" width="${W - 10}" height="${h}" fill="${c}"/>`; });
+    if(k.semaine === thisMon) s += `<rect x="${i * W + 2}" y="0.5" width="${W - 4}" height="${H - 1}" rx="3" class="cnow"/>`; });
+  return s + '</svg>';
+}
+function volLegend(sem){
+  const thisMon = Saison.monday(today), k = (sem || []).find(x => x.semaine === thisMon), last = (sem || []).filter(x => x.semaine < thisMon).slice(-1)[0];
+  const h = v => String(Math.round(v * 10) / 10).replace('.', ',');
+  const ref = k && k.heures ? k : last;
+  return `<div class="cvleg">${SP.map(([id, l, c]) => `<span><i style="background:${c}"></i>${l}${ref && ref.sports && ref.sports[id] ? ` ${h(ref.sports[id])} h` : ''}</span>`).join('')}${ref ? `<em>${ref === k ? 'cette sem.' : 'sem. dernière'} : ${h(ref.heures)} h</em>` : ''}</div>`;
+}
 function card(a){
-  const book = books[a.code] || {}, sa = book.saison, L = live && live.athletes.find(x => x.code === a.code);
+  const book = (a.code && books[a.code]) || {}, sa = book.saison, L = a.L;
+  if(!a.code) return cardHorsAppli(a);
   const seances = [...(book.seances || [])].sort((x, y) => x.date.localeCompare(y.date));
   const faites = new Set(((L && L.faites) || []).map(f => f.id));
   const avenir = seances.filter(s => s.date >= today && !faites.has(s.id));
@@ -89,6 +138,7 @@ function card(a){
   const race = p && p.prochaine ? `<span class="crace${p.prochaine.prio === 'A' ? ' a' : ''}">▲ ${esc(p.prochaine.nom)} · J-${p.prochaine.jours}</span>` : '';
   const alerts = [];
   if(L && L.erreur) alerts.push(`intervals : ${esc(L.erreur)}`);
+  if(!live && !L && a.code && RELAIS && St.get('pin')) alerts.push('intervals…');
   (L && L.douleurs || []).forEach(d => alerts.push(`<b>Douleur</b> ${court(d.date)} : ${esc(d.txt)}`));
   if(L && L.derniere && days(L.derniere, today) >= 5) alerts.push(`aucune activité sur intervals depuis ${days(L.derniere, today)} jours`);
   if(retard.length) alerts.push(`${retard.length} séance${retard.length > 1 ? 's' : ''} de muscu pas faite${retard.length > 1 ? 's' : ''} (15 derniers jours)`);
@@ -114,7 +164,7 @@ function card(a){
     </button>
     ${alerts.length ? `<p class="calert">${alerts.join('<br>')}</p>` : ''}
     ${formeTxt(L && L.forme)}
-    ${L && L.semaines && L.semaines.length ? `<div class="cchart"><small>Charge par semaine <i class="lf"></i>faite <i class="lp"></i>prévue</small>${loadBars(L.semaines)}${axis(L.semaines)}</div>` : ''}
+    ${chart(L)}
     <div class="crow"><span>Prochaine muscu</span><b>${next ? `${esc(next.titre)} · ${days(today, next.date) === 0 ? 'aujourd’hui' : court(next.date)}` : '—'}</b></div>
     ${last ? `<div class="crow"><span>Dernière faite</span><b>${esc(last.nom.replace(/^Muscu · /, ''))} · ${ago(last.date)}${last.rpe ? ` · RPE ${last.rpe}` : ''}</b></div>` : ''}
     ${L ? `<div class="crow"><span>Muscu cette semaine</span><b>${semaine.faites}/${semaine.prevues}</b></div>` : ''}
@@ -132,7 +182,12 @@ function resume(){
   return `<div class="csum"><div><b>${fait}/${prev}</b><span>muscu faites cette semaine</span></div><div class="${douleurs ? 'bad' : ''}"><b>${douleurs}</b><span>douleur${douleurs > 1 ? 's' : ''} signalée${douleurs > 1 ? 's' : ''} (14 j)</span></div></div>`;
 }
 function render(){
-  $('#clist').innerHTML = resume() + (team.length ? team.map(card).join('') : `<p class="quote">Aucun athlète publié.</p>`);
+  const P = people();
+  $('#clist').innerHTML = resume() + (P.shown.length ? P.shown.map(card).join('') : `<p class="quote">Aucun athlète.</p>`)
+    + (P.hidden.length ? `<button class="textlink" id="showHidden">Afficher les masqués (${P.hidden.length})</button>` : '');
+  $$('[data-vue]').forEach(b => b.onclick = e => { e.stopPropagation(); St.set('coachVue', b.dataset.vue); render(); });
+  $$('[data-mask]').forEach(b => b.onclick = () => { const c = St.get('caches', []); c.push(b.dataset.mask); St.set('caches', c); render(); toast('Masqué sur ce téléphone'); });
+  const sh = $('#showHidden'); if(sh) sh.onclick = () => { St.del('caches'); render(); };
   $$('.ccard .ctop').forEach(b => b.onclick = () => { const c = b.parentElement.dataset.code; open = open === c ? null : c; St.set('coachOpen', open); render();
     const el = document.querySelector(`.ccard[data-code="${c}"]`); if(el && open){ Saison.focus(el); el.scrollIntoView({block: 'start', behavior: 'smooth'}); } });
   $('#cfoot').innerHTML = RELAIS && St.get('pin') ? `<button class="ghost" id="syncB">Synchroniser intervals</button><button class="textlink" id="droitsB">Vérifier les droits intervals</button><button class="textlink" id="pinX">Oublier le PIN sur ce téléphone</button>`
@@ -140,7 +195,7 @@ function render(){
   const sb = $('#syncB'); if(sb) sb.onclick = syncNow;
   const db = $('#droitsB'); if(db) db.onclick = async () => { db.textContent = 'Vérification…';
     try{ const r = await getJSON(RELAIS.replace(/\/$/, '') + '/coach/droits', {method: 'POST', headers: {'x-cu-pin': St.get('pin')}});
-      state(Object.values(r.droits).map(x => `${esc(x.prenom)} : ${x.ok ? '✓ lecture et écriture OK' : '✗ ' + esc(x.erreur)}`).join('<br>')); }
+      state(Object.values(r.droits).map(x => `${esc(x.prenom)} : ${x.ok ? '✓ lecture et écriture OK' + (x.appli === false ? ' (pas encore dans l’appli muscu)' : '') : '✗ ' + esc(x.erreur)}`).join('<br>')); }
     catch(e){ toast('Vérification impossible : ' + (e.body && e.body.error || e.message)); }
     db.textContent = 'Vérifier les droits intervals'; };
   const px = $('#pinX'); if(px) px.onclick = () => { St.del('pin'); live = null; state(); bindPin(); render(); };

@@ -20,6 +20,8 @@ function testSite(){
   b.seances.push(Object.assign(force, {id: 'qa-force', date: d(0), titre: 'Force QA'}));
   b.saison = {nom: 'Test', blocs: [{type: 'PPG', debut: d(-10), fin: d(20)}, {type: 'PPO', debut: d(21), fin: d(50)}], courses: [{date: d(60), nom: 'Course A', prio: 'A'}]};
   fs.writeFileSync(k, JSON.stringify(b));
+  const mq = path.join(dir, 'data', 'sessions', '4h6w4q.json'), bm = JSON.parse(fs.readFileSync(mq));
+  bm.seances.push({id: 'qa-manuel', date: '2026-09-29', titre: 'Faite à la main', blocs: []}); fs.writeFileSync(mq, JSON.stringify(bm));
   const a = path.join(dir, 'data', 'sessions', '2qzstf.json'), b2 = JSON.parse(fs.readFileSync(a));
   b2.seances.push({id: '2026-09-28-montre', date: '2026-09-28', titre: 'Avec montre', blocs: []}); fs.writeFileSync(a, JSON.stringify(b2));
   const srv = http.createServer((req, res) => { const f = path.join(dir, decodeURIComponent(new URL(req.url, 'http://x').pathname));
@@ -30,8 +32,8 @@ function testSite(){
 /* ---------- faux intervals.icu ---------- */
 function fakeIcu(){
   const S = {
-    athletes: [{id: 'i1', name: 'Nathan Coach'}, {id: 'i10', name: 'Simon'}, {id: 'i11', name: 'Antonin'}, {id: 'i12', name: 'Malone'}, {id: 'i13', name: 'Amael'}],
-    acts: {i10: [], i11: [], i12: [], i13: []}, events: {i10: [], i11: [], i12: [], i13: []},
+    athletes: [{id: 'i1', name: 'Nathan Coach'}, {id: 'i10', name: 'Simon'}, {id: 'i11', name: 'Antonin'}, {id: 'i12', name: 'Malone'}, {id: 'i13', name: 'Dupont Amael'}, {id: 'i14', name: 'Arthur Nouveau', firstname: 'Arthur'}],
+    acts: {i10: [], i11: [], i12: [], i13: [], i14: []}, events: {i10: [], i11: [], i12: [], i13: [], i14: []},
     wellness: {i10: [{id: '', ctl: 42.3, atl: 51.1}], i11: [{ctl: 60, atl: 55}], i12: [{ctl: 30, atl: 28}], i13: [{ctl: 20, atl: 25}]},
     calls: [], nextId: 100, forbidWrite: false
   };
@@ -44,6 +46,7 @@ function fakeIcu(){
       const B = body ? JSON.parse(body) : null;
       let r;
       if(m === 'GET' && p === '/api/v1/athletes') return send(200, S.athletes);
+      if(m === 'GET' && p === '/api/v1/athlete/0') return send(200, {id: 'i1', name: 'Nathan Coach'});
       if((r = p.match(/^\/api\/v1\/athlete\/(i\d+)\/activities$/)) && m === 'GET'){
         const o = u.searchParams.get('oldest'), n = u.searchParams.get('newest') || '9999';
         return send(200, (S.acts[r[1]] || []).filter(a => a.start_date_local.slice(0, 10) >= o.slice(0, 10) && a.start_date_local <= (n.length === 10 ? n + 'T23:59:59' : n)));
@@ -140,6 +143,11 @@ if(require.main === module) (async () => {
   const w = F.S.acts.i10.find(x => x.id === 'a8');
   ok(j.mode === 'complete' && w.icu_rpe === 7 && w.description.startsWith('notes montre') && w.description.includes('Charge Utile ·'), 'montre : RPE posé, ses notes gardées, récap ajouté');
 
+  // validée sans l'appli : la muscu de la montre plus tôt dans la journée est complétée
+  F.S.acts.i12.push({id: 'a7', type: 'WeightTraining', start_date_local: '2026-09-29T07:30:00', name: 'Muscu', description: '', moving_time: 2700, external_id: null});
+  r = await R('/seance', {method: 'POST', body: JSON.stringify({code: '4h6w4q', id: 'qa-manuel', srpe: 6, dureeS: 2700, debutLocal: '2026-09-29T18:00:00', recap: 'x', manuel: true})}); j = await r.json();
+  ok(j.mode === 'complete' && F.S.acts.i12.length === 1 && F.S.acts.i12[0].icu_rpe === 6 && /validée sans l’appli/.test(F.S.acts.i12[0].description), `validée sans l’appli : la muscu du jour enregistrée par la montre est complétée (${JSON.stringify(j)})`);
+
   // refus
   r = await R('/seance', {method: 'POST', body: JSON.stringify({...body, id: 'nexiste-pas'})}); ok(r.status === 404, 'séance non publiée → refusée (404)');
   r = await R('/seance', {method: 'POST', body: JSON.stringify({...body, srpe: 14})}); ok(r.status === 400, 'RPE hors 1-10 → refusé (400)');
@@ -159,7 +167,11 @@ if(require.main === module) (async () => {
   r = await R('/coach', {headers: {'x-cu-pin': '0000'}}); ok(r.status === 401, 'vue coach mauvais PIN → 401');
   r = await R('/coach', {headers: {'x-cu-pin': PIN}}); j = await r.json();
   const sim = j.athletes && j.athletes.find(x => x.code === 'kjvtsl');
-  ok(r.status === 200 && j.athletes.length === 4, `vue coach : 4 athlètes (${(j.athletes || []).map(x => x.prenom + (x.erreur ? ' ✗ ' + x.erreur : ' ✓')).join(', ')})`);
+  ok(r.status === 200 && j.athletes.length === 5 && !j.athletes.some(x => x.icu === 'i1'), `vue coach : 5 athlètes, le coach exclu (${(j.athletes || []).map(x => x.prenom + (x.erreur ? ' ✗ ' + x.erreur : ' ✓')).join(', ')})`);
+  const art = j.athletes.find(x => x.icu === 'i14'), ama = j.athletes.find(x => x.prenom === 'Amael' || x.icu === 'i13');
+  ok(art && art.code === null && art.prenom === 'Arthur', 'nouvel athlète sur intervals (Arthur) : apparaît tout seul, sans rien configurer');
+  ok(ama && ama.code === 'fmlmvk', 'prénom pas en premier sur intervals (« Dupont Amael ») : quand même relié');
+  ok(sim && sim.semaines.some(s => s.sports && s.sports.muscu > 0), 'volume par sport (vélo, course, muscu, autre) par semaine');
   ok(sim && sim.forme.ctl === 42.3 && sim.forme.tsb === -8.8, 'vue coach : forme (CTL 42,3 · ATL 51,1 · forme −8,8)');
   ok(sim && sim.faites.length >= 1 && sim.fiche[0] && sim.fiche[0].startsWith('FICHE kjvtsl'), 'vue coach : séances faites + résultats de tests relus depuis intervals');
   ok(sim && sim.semaines.some(s => s.charge > 0 && s.muscu >= 1), 'vue coach : charge par semaine calculée');

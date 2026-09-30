@@ -66,13 +66,35 @@ const DEV = process.argv[2] || 'Pixel 7';
   ok(await p.evaluate(() => JSON.parse(localStorage.getItem('cu.outbox') || '[]').length === 0), 'file vidée');
   await ctx.close();
 
+  // 2b. séance faite sans l'appli : validée avec date, durée, RPE
+  ({ctx, p} = await mk());
+  await p.goto('http://localhost:8765/?a=kjvtsl&s=qa-force'); await p.waitForTimeout(1500);
+  await click(p, '#sansAppli'); await p.waitForTimeout(500);
+  await p.screenshot({path: 'qa/out/i-valider.png'});
+  await p.evaluate(() => document.querySelectorAll('#vDate button')[1].click()); await p.waitForTimeout(200);
+  await click(p, '#vP'); await click(p, '#vRpe button[data-n="6"]'); await p.waitForTimeout(200);
+  await click(p, '#vOk'); await p.waitForTimeout(1500);
+  const man = H.F.S.acts.i10.find(x => x.external_id === 'cu-kjvtsl-qa-force');
+  ok(man && man.icu_rpe === 6 && /validée sans l’appli/.test(man.description) && man.start_date_local.slice(0, 10) === d(-1), `validée sans l’appli : dans intervals, hier, RPE 6 (${man ? man.start_date_local + ' ' + Math.round(man.moving_time / 60) + ' min' : 'rien'})`);
+  ok(await p.evaluate(() => { const h = JSON.parse(localStorage.getItem('cu.history') || '{}'); return !!(h['qa-force'] && h['qa-force'].manuel); }), 'la séance passe dans « déjà faites » sur le téléphone');
+  await ctx.close();
+  H.F.S.acts.i10 = H.F.S.acts.i10.filter(x => x.external_id !== 'cu-kjvtsl-qa-force');
+
   // 3. vue coach
   ({ctx, p} = await mk());
   await p.goto('http://localhost:8765/coach.html'); await p.waitForTimeout(2500);
   const cards = await p.$$eval('.ccard', n => n.map(x => x.querySelector('.cname b').textContent));
-  ok(cards.length === 4, `vue coach : ${cards.join(', ')}`);
+  ok(cards.length === 5 && cards.includes('Arthur'), `vue coach : tous les athlètes intervals, dont le nouveau (${cards.join(', ')})`);
+  ok(/pas encore dans l’appli muscu/.test(await p.evaluate(() => document.querySelector('.ccard[data-code="icu-i14"]').innerText)), 'nouvel athlète : « pas encore dans l’appli muscu » + comment l’ajouter');
+  ok(await p.$('.ccard[data-code="kjvtsl"] .cvleg') !== null && (await p.$$('.ccard[data-code="kjvtsl"] .cload rect')).length > 3, 'vue coach : volume par semaine empilé par sport (vélo, course, muscu, autre)');
+  await p.evaluate(() => document.querySelector('.ccard[data-code="kjvtsl"] [data-vue="charge"]').click()); await p.waitForTimeout(300);
+  ok(await p.$('.ccard[data-code="kjvtsl"] .cload rect.cr') !== null, 'bascule Volume → Charge');
+  await p.evaluate(() => document.querySelector('.ccard[data-code="kjvtsl"] [data-vue="volume"]').click()); await p.waitForTimeout(300);
+  await p.evaluate(() => document.querySelector('[data-mask="icu-i14"]').click()); await p.waitForTimeout(300);
+  ok(!(await p.$('.ccard[data-code="icu-i14"]')) && await p.$('#showHidden') !== null, 'masquer un athlète (pas le mien) : disparaît, récupérable');
+  await p.evaluate(() => document.querySelector('#showHidden').click()); await p.waitForTimeout(300);
   ok(/Forme/.test(await p.evaluate(() => document.querySelector('.ccard[data-code="kjvtsl"]').innerText)), 'vue coach : forme de Simon (intervals)');
-  ok(await p.$('.ccard[data-code="kjvtsl"] .cload rect.cr') !== null, 'vue coach : charge réelle par semaine');
+  ok(await p.$('.ccard[data-code="kjvtsl"] .cload rect') !== null, 'vue coach : graphe par semaine');
   ok(await p.$('.ccard[data-code="kjvtsl"] .smini') !== null, 'vue coach : mini-frise de saison');
   await p.screenshot({path: 'qa/out/i-coach.png'});
   await click(p, '.ccard[data-code="kjvtsl"] .ctop'); await p.waitForTimeout(600);

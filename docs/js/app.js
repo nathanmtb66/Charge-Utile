@@ -778,14 +778,49 @@ const App = (()=>{
         <div class="hero"><h2>${esc(sess.titre)}</h2><p class="tagline">RPE visé ${esc(sess.rpe || '—')} · ≈ ${sess.dureeMin || '?'} min</p></div>
         ${sess.message ? `<p class="quote">${esc(sess.message)}<small>${esc(Data.book.coach || 'Nathan')}</small></p>` : ''}
         <ol class="blocks">${S.blocks.map((b,i)=>`<li><i>${i+1}</i><div><b>${esc(b.name)}</b><span>${esc(blockSummary(b))}</span></div></li>`).join('')}</ol>
-        <button class="detailbtn" id="detail"><div><b>Voir la séance en détail</b><span>Tous les exos, charges, tempo et récup</span></div>${ico('chev')}</button>`;
+        <button class="detailbtn" id="detail"><div><b>Voir la séance en détail</b><span>Tous les exos, charges, tempo et récup</span></div>${ico('chev')}</button>
+        <button class="textlink" id="sansAppli">Tu l’as déjà faite sans l’appli ? Valide-la</button>`;
       stagger($('#page'));
       bar(`<div class="pair"><button class="ghost" id="back">Retour</button>${goBtn('C’est parti')}</div>`);
       on('#back', home);
       on('#detail', ()=>{ SND.tap(); detailScreen(()=>{ layout({page:true, tools:false}); head(dayLabel(sess.date), 'Ta séance'); render(); }); });
       on('#go', ()=>{ audio(); SND.go(); buzz(20); keepAwake(); S.t0 = Date.now(); run(); });
+      on('#sansAppli', ()=>{ SND.tap(); validerSansAppli(sess); });
     };
     render();
+  }
+  /* séance faite sans l'appli (ou pas en entier dedans) : on la valide quand même, avec la date, la durée et le RPE */
+  function validerSansAppli(sess){
+    const d0 = today(), hier = (()=>{ const d = new Date(); d.setDate(d.getDate() - 1); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; })();
+    const v = {date: sess.date <= d0 ? (sess.date === hier ? hier : d0) : d0, min: sess.dureeMin || 45, rpe: null};
+    const draw = () => {
+      openSheet(`<h3>Valider la séance</h3><p class="sub">${esc(sess.titre)} · faite sans l’appli, ou pas en entier dedans</p>
+        <p class="lbl">Quand ?</p><div class="chips" id="vDate"><button data-d="${d0}" class="${v.date === d0 ? 'on' : ''}">Aujourd’hui</button><button data-d="${hier}" class="${v.date === hier ? 'on' : ''}">Hier</button>
+          <input type="date" class="field vdate" id="vDateI" max="${d0}" value="${v.date !== d0 && v.date !== hier ? v.date : ''}" aria-label="Autre date"></div>
+        <p class="lbl">Durée</p><div class="stepper"><button id="vM">−</button><b id="vMin">${v.min} min</b><button id="vP">+</button></div>
+        <p class="lbl">Ta séance entière, sur 10 ? <em>(RPE : ton effort ressenti, 1 = très facile, 10 = à fond)</em></p><div class="rpegrid" id="vRpe">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button data-n="${n}" class="${v.rpe === n ? 'on' : ''}">${n}</button>`).join('')}</div>
+        <p class="legend">${v.rpe ? `${v.rpe} · ${CR10[v.rpe]}` : `Objectif de Nathan : ${esc(sess.rpe || '—')}`}</p>
+        <div class="actions"><button class="primary" id="vOk" ${v.rpe ? '' : 'disabled'}>Valider</button><button class="ghost" id="vNo">Annuler</button></div>`);
+      $$('#vDate button').forEach(b => b.onclick = () => { v.date = b.dataset.d; draw(); });
+      const di = $('#vDateI'); if(di) di.onchange = () => { if(di.value && di.value <= d0){ v.date = di.value; draw(); } };
+      on('#vM', () => { v.min = Math.max(10, v.min - 5); $('#vMin').textContent = `${v.min} min`; });
+      on('#vP', () => { v.min = Math.min(240, v.min + 5); $('#vMin').textContent = `${v.min} min`; });
+      $$('#vRpe button').forEach(b => b.onclick = () => { v.rpe = +b.dataset.n; draw(); });
+      on('#vNo', () => closeSheet());
+      on('#vOk', async () => {
+        const hist = Store.get('history', {}); hist[sess.id] = {at: Date.now(), srpe: v.rpe, manuel: true}; Store.set('history', hist);
+        const text = `${sess.titre} · ${dayLabel(v.date).toLowerCase()}\nFaite sans l’appli (ou pas en entier dedans)\nDurée : ${v.min} min · RPE séance : ${v.rpe}/10 (visé ${sess.rpe || '—'})`;
+        const relais = await Relais.init(), code = Store.get('code');
+        closeSheet(true);
+        if(relais && code && code !== 'demo'){
+          Relais.queue({code, id: sess.id, srpe: v.rpe, dureeS: v.min * 60, debutLocal: `${v.date}T${v.date === d0 ? String(Math.max(0, new Date().getHours() - Math.ceil(v.min / 60))).padStart(2, '0') : '18'}:00:00`, recap: text, manuel: true});
+          const r = await Relais.flush().catch(() => null);
+          toast(r && r.sent ? 'Validée : c’est dans intervals.icu' : r && r.last && r.last.refus ? 'Validée ici, mais intervals a refusé' : 'Validée : partira dans intervals dès que tu as du réseau');
+        } else { toast('Validée'); await shareText(text); }
+        home();
+      });
+    };
+    draw();
   }
   /* ---------- la séance en détail : tout est écrit, pour celui qui veut la faire sans guidage ---------- */
   function itemLine(it, b){
@@ -2466,7 +2501,7 @@ const App = (()=>{
     $('#page').innerHTML = `
       <div class="big-ok"><svg viewBox="0 0 52 52" aria-hidden="true"><circle class="c" cx="26" cy="26" r="24"/><path class="k" d="M15 27l7 7 15-16"/></svg></div>
       <div class="facts"><div><b>${Math.floor(secs/60)}:${String(secs%60).padStart(2,'0')}</b>durée</div><div><b><span id="dn">${work}</span>/${total}</b>${S.steps.some(s => s.t === 'test') ? 'étapes et tests' : 'séries et exos'}</div><div><b>${S.adj.length}</b>ajustement${S.adj.length>1?'s':''}</div></div>
-      <div><p class="lbl" style="margin-top:0">Ta séance entière, sur 10 ?</p>
+      <div><p class="lbl" style="margin-top:0">Ta séance entière, sur 10 ? <em>(RPE : ton effort ressenti, 1 = très facile, 10 = à fond)</em></p>
       <div class="rpegrid" id="srpe">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button data-n="${n}">${n}</button>`).join('')}</div>
       <p class="legend" id="srpeL">Objectif de Nathan : ${esc(SESS.rpe)}</p></div>
       ${S.pain.length ? `<p class="quote">${S.pain.map(p=>esc(painLine(p))).join('<br>')}<small>Sera dans ton message à Nathan</small></p>` : ''}

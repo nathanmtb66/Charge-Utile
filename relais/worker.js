@@ -50,23 +50,31 @@ async function site(env, path){
 async function equipe(env){ const e = await site(env, 'data/equipe.json'); return (e && e.athletes) || []; }
 
 /* code Charge Utile → id intervals, via la liste des athlètes coachés (prénom), ou « icu » dans le fichier */
-async function lier(env, call, team){
-  const coached = await call('GET', '/api/v1/athletes');
-  const list = (coached || []).map(a => ({id: a.id, name: a.name || [a.firstname, a.lastname].filter(Boolean).join(' ')}));
+/* athlètes suivis sur intervals (sans le coach lui-même) : c'est la liste de référence, un nouvel athlète y apparaît tout seul */
+async function suivis(call){
+  const [list, me] = await Promise.all([call('GET', '/api/v1/athletes'), call('GET', '/api/v1/athlete/0').catch(() => null)]);
+  return (list || []).filter(a => !me || a.id !== me.id).map(a => ({id: a.id, name: a.name || [a.firstname, a.lastname].filter(Boolean).join(' '),
+    prenom: a.firstname || String(a.name || '').split(/\s+/)[0] || a.id, perm: a.icu_permission || null}));
+}
+/* code Charge Utile → athlète intervals : « icu » dans son fichier, sinon le prénom (n'importe quel mot du nom intervals, accents ignorés) */
+async function lier(env, call, team, list){
+  list = list || await suivis(call);
   const out = {};
   for(const a of team){
-    if(a.icu){ out[a.code] = {id: a.icu, name: a.prenom}; continue; }
+    if(a.icu){ const x = list.find(y => y.id === a.icu); out[a.code] = x || {id: a.icu, name: a.prenom, prenom: a.prenom}; continue; }
     const p = norm(a.prenom); if(!p) continue;
-    const hits = list.filter(x => norm(x.name).split(/\s+/)[0] === p);
+    let hits = list.filter(x => norm(x.prenom) === p);
+    if(!hits.length) hits = list.filter(x => norm(x.name).split(/[\s\-]+/).includes(p));
+    if(!hits.length) hits = list.filter(x => norm(x.name).split(/[\s\-]+/).some(t => t.length >= 3 && (t.startsWith(p) || p.startsWith(t))));
     if(hits.length === 1) out[a.code] = hits[0];
-    else out[a.code] = {error: hits.length ? `plusieurs athlètes « ${a.prenom} » sur intervals : ajoute "icu" dans son fichier` : `« ${a.prenom} » introuvable parmi tes athlètes intervals (il doit t'accepter comme coach)`};
+    else out[a.code] = {error: hits.length ? `plusieurs athlètes « ${a.prenom} » sur intervals : dis à Claude lequel est le bon` : `« ${a.prenom} » pas trouvé parmi tes athlètes intervals`};
   }
   return out;
 }
 
 /* ---------------- fin de séance → intervals ---------------- */
 function descSeance(b){
-  return [`Charge Utile · ${b.titre}`, b.recap ? String(b.recap).slice(0, 3500) : '', ...(b.fiche ? [String(b.fiche).slice(0, 1500)] : [])].filter(Boolean).join('\n\n');
+  return [`Charge Utile · ${b.titre}${b.manuel ? ' (validée sans l’appli)' : ''}`, b.recap ? String(b.recap).slice(0, 3500) : '', ...(b.fiche ? [String(b.fiche).slice(0, 1500)] : [])].filter(Boolean).join('\n\n');
 }
 async function seance(req, env){
   const b = await req.json().catch(() => null);
@@ -91,7 +99,7 @@ async function seance(req, env){
   const t0 = Date.parse(startLocal + 'Z');
   const watch = (acts || []).find(a => a.external_id === ext) ||
     (acts || []).find(a => /weight|strength|workout|training/i.test(a.type || '') && !String(a.external_id || '').startsWith('cu-') &&
-      Math.abs(Date.parse(String(a.start_date_local).slice(0, 19) + 'Z') - t0) < 3 * 3600e3);
+      (b.manuel || Math.abs(Date.parse(String(a.start_date_local).slice(0, 19) + 'Z') - t0) < 3 * 3600e3));   // validée à la main : n'importe quelle muscu du jour
   if(watch){
     await call('PUT', `/api/v1/activity/${watch.id}`, {icu_rpe: srpe, name: watch.external_id === ext ? `Muscu · ${s.titre}` : watch.name,
       description: watch.description && !String(watch.description).includes('Charge Utile ·') ? `${watch.description}\n\n${description}` : description});
@@ -171,16 +179,18 @@ async function sync(env){
 
 /* ---------------- test des droits : pose puis retire une note du jour chez chaque athlète ---------------- */
 async function droits(env){
-  const call = icu(env), team = await equipe(env), links = await lier(env, call, team), today = iso(new Date()), out = {};
-  for(const a of team){
-    const L = links[a.code];
+  const call = icu(env), team = await equipe(env), list = await suivis(call), links = await lier(env, call, team, list), today = iso(new Date()), out = {};
+  const linked = new Set(Object.values(links).filter(L => L && L.id).map(L => L.id));
+  const all = [...team, ...list.filter(x => !linked.has(x.id)).map(x => ({code: 'icu-' + x.id, prenom: x.prenom, _id: x.id}))];
+  for(const a of all){
+    const L = a._id ? {id: a._id} : links[a.code];
     if(!L || !L.id){ out[a.code] = {prenom: a.prenom, ok: false, erreur: (L && L.error) || 'non relié'}; continue; }
     try{
       await call('GET', `/api/v1/athlete/${L.id}/activities?oldest=${addDays(today, -7)}&newest=${today}&limit=1`);
       const ev = await call('POST', `/api/v1/athlete/${L.id}/events/bulk`, [{category: 'NOTE', start_date_local: `${today}T00:00:00`, name: 'Test Charge Utile (retiré tout seul)', external_id: `cu-${a.code}-test-droits`}]);
       const id = Array.isArray(ev) && ev[0] ? ev[0].id : null;
       if(id) await call('PUT', `/api/v1/athlete/${L.id}/events/bulk-delete`, [{id}]);
-      out[a.code] = {prenom: a.prenom, ok: true};
+      out[a.code] = {prenom: a.prenom, ok: true, appli: !a._id};
     }catch(e){ out[a.code] = {prenom: a.prenom, ok: false, erreur: e.message}; }
   }
   return out;
@@ -188,41 +198,43 @@ async function droits(env){
 
 /* ---------------- vue coach ---------------- */
 const FICHE_RE = /^FICHE .*$/m;
+const SPORT = t => /ride|bike|cycl|velo/i.test(t) ? 'velo' : /run|trail|walk|hike/i.test(t) ? 'course' : /weight|strength/i.test(t) ? 'muscu' : 'autre';
 async function coach(env){
   const call = icu(env);
-  const team = await equipe(env);
-  const links = await lier(env, call, team);
+  const [team, list] = await Promise.all([equipe(env), suivis(call)]);
+  const links = await lier(env, call, team, list);
+  const byId = {}; for(const [code, L] of Object.entries(links)) if(L && L.id) byId[L.id] = code;
   const today = iso(new Date());
   const from = monday(addDays(today, -7 * 7));                       // 8 semaines de réalisé
   const to = addDays(monday(today), 7 * 4 - 1);                      // 4 semaines de prévu
-  const out = [];
-  await Promise.all(team.map(async a => {
-    const L = links[a.code];
-    const row = {code: a.code, prenom: a.prenom};
-    if(!L || !L.id){ row.erreur = (L && L.error) || 'non relié'; out.push(row); return; }
-    row.icu = L.id;
+  const rows = list.map(x => ({icu: x.id, prenom: x.prenom, perm: x.perm, code: byId[x.id] || null}));
+  for(const a of team) if(!rows.find(r => r.code === a.code)){ const L = links[a.code]; rows.push({code: a.code, prenom: a.prenom, erreur: (L && L.error) || 'non relié'}); }
+  await Promise.all(rows.filter(r => r.icu).map(async row => {
+    const code = row.code;
     try{
       const [acts, wel, evs] = await Promise.all([
-        call('GET', `/api/v1/athlete/${L.id}/activities?oldest=${from}&newest=${today}T23:59:59&fields=id,start_date_local,type,name,moving_time,icu_training_load,icu_rpe,external_id,description`),
-        call('GET', `/api/v1/athlete/${L.id}/wellness?oldest=${addDays(today, -1)}&newest=${today}`),
-        call('GET', `/api/v1/athlete/${L.id}/events?oldest=${today}&newest=${to}`)]);
+        call('GET', `/api/v1/athlete/${row.icu}/activities?oldest=${from}&newest=${today}T23:59:59&fields=id,start_date_local,type,name,moving_time,icu_training_load,icu_rpe,external_id,description`),
+        call('GET', `/api/v1/athlete/${row.icu}/wellness?oldest=${addDays(today, -1)}&newest=${today}`),
+        call('GET', `/api/v1/athlete/${row.icu}/events?oldest=${today}&newest=${to}`)]);
       const w = (wel || []).slice(-1)[0] || {};
       row.forme = {ctl: w.ctl ?? null, atl: w.atl ?? null, tsb: w.ctl != null && w.atl != null ? Math.round((w.ctl - w.atl) * 10) / 10 : null};
       const weeks = {};
-      const wk = k => (weeks[k] = weeks[k] || {semaine: k, charge: 0, heures: 0, muscu: 0, prevu: 0, prevuH: 0});
+      const wk = k => (weeks[k] = weeks[k] || {semaine: k, charge: 0, heures: 0, muscu: 0, prevu: 0, prevuH: 0, sports: {velo: 0, course: 0, muscu: 0, autre: 0}});
       for(const x of acts || []){
-        const k = wk(monday(String(x.start_date_local).slice(0, 10)));
-        k.charge += x.icu_training_load || 0; k.heures += (x.moving_time || 0) / 3600;
-        if(/weight|strength/i.test(x.type || '')) k.muscu++;
+        const k = wk(monday(String(x.start_date_local).slice(0, 10))), h = (x.moving_time || 0) / 3600, sp = SPORT(x.type || '');
+        k.charge += x.icu_training_load || 0; k.heures += h; k.sports[sp] += h;
+        if(sp === 'muscu') k.muscu++;
       }
       for(const e of evs || []){
         if(e.category !== 'WORKOUT') continue;
         const k = wk(monday(String(e.start_date_local).slice(0, 10)));
         k.prevu += e.icu_training_load || e.load_target || 0; k.prevuH += (e.moving_time || 0) / 3600;
       }
-      row.semaines = Object.values(weeks).sort((x, y) => x.semaine.localeCompare(y.semaine)).map(k => ({...k, charge: Math.round(k.charge), heures: Math.round(k.heures * 10) / 10, prevu: Math.round(k.prevu), prevuH: Math.round(k.prevuH * 10) / 10}));
-      row.faites = (acts || []).filter(x => String(x.external_id || '').startsWith(`cu-${a.code}-`) || String(x.description || '').includes('Charge Utile ·'))
-        .map(x => ({id: String(x.external_id || '').replace(`cu-${a.code}-`, ''), date: String(x.start_date_local).slice(0, 10), nom: x.name, rpe: x.icu_rpe ?? null, min: Math.round((x.moving_time || 0) / 60)}));
+      const r1 = v => Math.round(v * 10) / 10;
+      row.semaines = Object.values(weeks).sort((x, y) => x.semaine.localeCompare(y.semaine)).map(k => ({...k, charge: Math.round(k.charge), heures: r1(k.heures), prevu: Math.round(k.prevu), prevuH: r1(k.prevuH),
+        sports: {velo: r1(k.sports.velo), course: r1(k.sports.course), muscu: r1(k.sports.muscu), autre: r1(k.sports.autre)}}));
+      const mine = x => code && (String(x.external_id || '').startsWith(`cu-${code}-`) || String(x.description || '').includes('Charge Utile ·'));
+      row.faites = (acts || []).filter(mine).map(x => ({id: String(x.external_id || '').replace(`cu-${code}-`, ''), date: String(x.start_date_local).slice(0, 10), nom: x.name, rpe: x.icu_rpe ?? null, min: Math.round((x.moving_time || 0) / 60)}));
       row.fiche = (acts || []).map(x => (String(x.description || '').match(FICHE_RE) || [])[0]).filter(Boolean);
       const recent = addDays(today, -14);
       row.douleurs = (acts || []).filter(x => String(x.start_date_local).slice(0, 10) >= recent)
@@ -230,10 +242,10 @@ async function coach(env){
       row.derniere = (acts || []).map(x => String(x.start_date_local).slice(0, 10)).sort().pop() || null;
       row.courses = (evs || []).filter(e => /^RACE_/.test(e.category || '')).map(e => ({date: String(e.start_date_local).slice(0, 10), nom: e.name, prio: e.category.slice(5)}));
     }catch(e){ row.erreur = e.message; }
-    out.push(row);
   }));
-  out.sort((x, y) => team.findIndex(a => a.code === x.code) - team.findIndex(a => a.code === y.code));
-  return {date: today, athletes: out};
+  const ord = r => { const i = team.findIndex(a => a.code === r.code); return i < 0 ? 100 : i; };
+  rows.sort((x, y) => ord(x) - ord(y) || String(x.prenom).localeCompare(String(y.prenom)));
+  return {date: today, athletes: rows};
 }
 
 /* ---------------- routeur ---------------- */
