@@ -51,4 +51,6 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 
 ## Problèmes rencontrés
 
+- 30/09 20 h 35 — `git push` impossible depuis la session : pas d'identifiants GitHub dans le terminal (ni `gh`, ni clé SSH, ni credential helper). Je ne vais pas chercher de jeton dans le trousseau. **Tous les commits restent locaux sur la branche `recherche`** : il suffit de la publier depuis GitHub Desktop (Publish branch / Push origin). Jamais rien sur `main`.
+
 ## Revues contradictoires
