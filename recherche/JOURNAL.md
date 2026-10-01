@@ -18,7 +18,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 **Exercices, séances, règles**
 - [ ] Carte de couverture ; ≥ 250 fiches candidates dont ≥ 80 en priorité 1 ; chaque case vide de la carte comblée ou justifiée.
 - [x] ≥ 12 tests de terrain proposés. *(15 tests + 1 questionnaire, 12 écartés avec la raison, batterie C)*
-- [ ] ≥ 60 séances modèles couvrant toutes les phases et tous les contextes listés.
+- [x] ≥ 60 séances modèles couvrant toutes les phases et tous les contextes listés. *(68 : VTT 15, route 11, trail 14, triathlon 8, nordique 8, transversal 12 ; couverture contrôlée par `_outils/verifie_modeles.py`)*
 - [x] ≥ 50 règles codables. *(70, dont 24 de niveau D assumé)*
 
 **Produit**
@@ -47,7 +47,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 | 1 — Business | 30/09 20 h 30 | 01/10 13 h 30 (3 coupures par limite de session) |
 | 2 — Science | 01/10 03 h 00 (collecte lancée en parallèle) | 01/10 14 h 30 (revue contradictoire en cours) |
 | 3 — Exercices | 01/10 13 h 30 | |
-| 4 — Séances modèles | | |
+| 4 — Séances modèles | 01/10 19 h 30 | 01/10 21 h 00 (revue contradictoire à venir) |
 | 5 — Règles | 01/10 13 h 45 | 01/10 14 h 30 |
 | 6 — Produit | 01/10 14 h 45 | 01/10 19 h 00 |
 

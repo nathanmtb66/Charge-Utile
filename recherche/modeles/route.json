@@ -1,0 +1,1226 @@
+{
+ "seances": [
+  {
+   "id": "route-ppg-force-max-jambes",
+   "titre": "Force max jambes (PPG)",
+   "rpe": "7 à 8",
+   "dureeMin": 55,
+   "message": "Objectif : gagner en force pour mieux tenir les longues bosses et finir fort. Charges lourdes, peu de reps, 2 reps en réserve sur chaque série : jamais jusqu'à l'échec.",
+   "sport": "route",
+   "phase": "PPG",
+   "duree": 55,
+   "materiel": "salle",
+   "niveau": 2,
+   "contextes": [
+    "force-max"
+   ],
+   "pourquoi": "L'hiver, deux séances lourdes par semaine améliorent la puissance en fin de course et l'efficacité du pédalage, sans prise de poids notable.",
+   "preuve": "C · [@ronnestad2010a] [@ronnestad2015] [@vikmoen2016]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-barre-vide-tempo",
+       "reps": 8
+      },
+      {
+       "ex": "pont-fessier-marche",
+       "reps": 10
+      },
+      {
+       "ex": "charniere-hanche-baton",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force lourde",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 3,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 180,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Environ 80-85 % de ton max, 2 reps en réserve. Descends jusqu'à l'angle du genou en haut du coup de pédale. 2 séries de montée avant."
+      },
+      {
+       "ex": "presse-a-cuisses-unijambe",
+       "series": 3,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 8,
+       "recup": 90,
+       "note": "Une jambe à la fois, comme sur le vélo. Pousse vite, redescends en 2-3 s. 2 reps en réserve."
+      },
+      {
+       "ex": "hip-thrust-barre",
+       "series": 3,
+       "reps": 6,
+       "rpe": 7,
+       "recup": 150
+      },
+      {
+       "ex": "mollets-barre",
+       "series": 2,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 75,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 40,
+       "recup": 30
+      },
+      {
+       "ex": "superman-brasse",
+       "series": 2,
+       "reps": 10,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppg-force-generale-halteres",
+   "titre": "Force générale aux haltères (PPG)",
+   "rpe": "6 à 7",
+   "dureeMin": 36,
+   "message": "Objectif : apprendre les gestes de base à la maison et habituer tes muscles aux charges. Tu finis chaque série en te disant « j'en avais encore 3 ».",
+   "sport": "route",
+   "phase": "PPG",
+   "duree": 36,
+   "materiel": "halteres",
+   "niveau": 1,
+   "contextes": [
+    "decouverte"
+   ],
+   "pourquoi": "Pour un routier qui débute la musculation, quelques semaines de gestes simples aux haltères préparent le travail lourd et renforcent ce que le vélo oublie.",
+   "preuve": "D · construction d'expert, principes B [@ronnestad2014] [@lauersen2018]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 30
+      },
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "pont-fessier",
+       "reps": 10
+      },
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Jambes",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-talons-sureleves",
+       "series": 3,
+       "reps": 10,
+       "rpe": 6,
+       "recup": 90,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Talons sur une cale ou un livre, haltère contre la poitrine : tu restes droit et tu descends bas."
+      },
+      {
+       "ex": "hip-thrust-haltere",
+       "series": 3,
+       "reps": 10,
+       "rpe": 6,
+       "recup": 75
+      },
+      {
+       "ex": "fente-arriere",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 6,
+       "recup": 60,
+       "note": "Trop facile ? Prends un haltère dans chaque main."
+      },
+      {
+       "ex": "soleaire-assis-charge",
+       "series": 2,
+       "reps": 12,
+       "rpe": 6,
+       "recup": 45,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Dos et gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rowing-haltere",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "rpe": 6,
+       "recup": 45
+      },
+      {
+       "ex": "dead-bug",
+       "series": 2,
+       "reps": 8,
+       "alterne": true,
+       "recup": 30
+      },
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 30,
+       "recup": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppg-dos-gainage-position-longue",
+   "titre": "Dos et gainage : tenir la position (PPG)",
+   "rpe": "6",
+   "dureeMin": 34,
+   "message": "Objectif : un dos, des épaules et un cou qui tiennent 4 heures les mains en bas du cintre. Mouvements lents, omoplates serrées, nuque longue.",
+   "sport": "route",
+   "phase": "PPG",
+   "duree": 34,
+   "materiel": "elastique",
+   "niveau": 2,
+   "pourquoi": "Sur route, la position longue et basse fatigue le dos et la nuque bien avant les jambes : les renforcer aide à rester efficace et bien posé en fin de sortie.",
+   "preuve": "D · construction d'expert, principes B [@lauersen2018] [@lauersen2014]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 20,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      },
+      {
+       "ex": "rotation-thoracique-main-nuque",
+       "reps": 6,
+       "parCote": true
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "extension-dos-debout",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Dos",
+     "type": "series",
+     "items": [
+      {
+       "ex": "tirage-elastique-debout",
+       "series": 3,
+       "reps": 12,
+       "rpe": 7,
+       "recup": 45,
+       "tempo": [
+        "1",
+        "2",
+        "1",
+        "2"
+       ],
+       "note": "Tiens 2 s omoplates serrées à chaque rep."
+      },
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "series": 2,
+       "reps": 12,
+       "rpe": 6,
+       "recup": 45
+      },
+      {
+       "ex": "tirage-visage-elastique",
+       "series": 2,
+       "reps": 12,
+       "recup": 45
+      },
+      {
+       "ex": "superman-brasse",
+       "series": 2,
+       "reps": 10,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Gainage et nuque",
+     "type": "series",
+     "items": [
+      {
+       "ex": "bird-dog",
+       "series": 2,
+       "reps": 8,
+       "alterne": true,
+       "recup": 30
+      },
+      {
+       "ex": "pallof-press",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 40,
+       "recup": 30
+      },
+      {
+       "ex": "gainage-lateral",
+       "series": 2,
+       "duree": 25,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "isometrie-cou-arriere",
+       "series": 2,
+       "duree": 20,
+       "recup": 30,
+       "note": "Pousse doucement la tête dans tes mains, sans bouger : environ la moitié de ta force."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppo-force-lourde-sauts",
+   "titre": "Force lourde + sauts (PPO)",
+   "rpe": "7 à 8",
+   "dureeMin": 50,
+   "message": "Objectif : garder le lourd et y ajouter de la vitesse. Après chaque série de squat, des sauts les plus hauts possible (environ 30 contacts au sol). Tes vrais sprints courts, tu les fais sur le vélo, un autre jour.",
+   "sport": "route",
+   "phase": "PPO",
+   "duree": 50,
+   "materiel": "salle",
+   "niveau": 3,
+   "contextes": [
+    "puissance"
+   ],
+   "pourquoi": "En préparation orientée, le squat lourd suivi de sauts transforme la force de l'hiver en puissance utile pour les attaques et les sprints.",
+   "preuve": "D · construction d'expert, principes B [@ronnestad2014] [@beattie2014] [@ronnestad2015]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-barre-vide-tempo",
+       "reps": 6
+      },
+      {
+       "ex": "pont-fessier-marche",
+       "reps": 10
+      },
+      {
+       "ex": "pogo-jumps",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Squat lourd puis sauts",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 4,
+       "rpe": 8,
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "X",
+        "0"
+       ],
+       "note": "Environ 85 % de ton max, 2 reps en réserve, remontée la plus rapide possible. Puis 90 s de récup et tu enchaînes les sauts."
+      },
+      {
+       "ex": "squat-saute",
+       "series": 4,
+       "reps": 4,
+       "recup": 120,
+       "intention": "Explosif",
+       "note": "Une série juste après chaque série de squat. Haut, réception silencieuse, 2 s entre deux sauts. 16 contacts."
+      }
+     ]
+    },
+    {
+     "nom": "Puissance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "jump-squat-halteres",
+       "series": 3,
+       "reps": 5,
+       "recup": 90,
+       "intention": "Explosif",
+       "note": "Haltères légers (tu dois sauter presque aussi haut que sans charge). 15 contacts."
+      },
+      {
+       "ex": "hip-thrust-explosif",
+       "series": 3,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 120,
+       "intention": "Explosif",
+       "note": "Charge moyenne, environ 50-60 % de ton max, montée la plus rapide possible."
+      },
+      {
+       "ex": "step-up-halteres",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 90,
+       "note": "Lourd : la jambe du haut fait tout le travail."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 40,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-pps-explosif-court-anti-flexion",
+   "titre": "Explosif court + dos gainé (PPS)",
+   "rpe": "7",
+   "dureeMin": 35,
+   "message": "Objectif : rester vif sans te fatiguer avant les courses, et garder un dos qui ne s'arrondit pas quand tu appuies fort. Peu de reps, toutes à fond (environ 35 contacts au sol), puis du gainage contrôlé.",
+   "sport": "route",
+   "phase": "PPS",
+   "duree": 35,
+   "materiel": "halteres",
+   "niveau": 2,
+   "contextes": [
+    "puissance"
+   ],
+   "pourquoi": "À l'approche des courses, on réduit le volume et on travaille vite ; un dos qui résiste à l'arrondi garde la puissance quand la fatigue arrive.",
+   "preuve": "D · construction d'expert, principes B [@ronnestad2014] [@devillarreal2009]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 20,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 30
+      },
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "charniere-hanche-baton",
+       "reps": 8
+      },
+      {
+       "ex": "pogo-jumps",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Explosif",
+     "type": "series",
+     "items": [
+      {
+       "ex": "jump-squat-halteres",
+       "series": 3,
+       "reps": 5,
+       "recup": 90,
+       "intention": "Explosif",
+       "note": "Haltères légers, saut maximal à chaque rep. 15 contacts."
+      },
+      {
+       "ex": "step-up-explosif",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "recup": 90,
+       "intention": "Explosif",
+       "note": "Monte sur une chaise stable ou un banc. 20 contacts."
+      },
+      {
+       "ex": "squat-goblet",
+       "series": 2,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 120,
+       "tempo": [
+        "2",
+        "0",
+        "X",
+        "0"
+       ],
+       "note": "Ton haltère le plus lourd, remontée rapide, 3 reps en réserve."
+      }
+     ]
+    },
+    {
+     "nom": "Dos gainé",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rdl-halteres",
+       "series": 2,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 75,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Le dos reste plat de la nuque au bassin : c'est lui qu'on entraîne à ne pas s'arrondir."
+      },
+      {
+       "ex": "souleve-valise",
+       "series": 2,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 45,
+       "note": "Haltère d'un seul côté, tu te relèves sans pencher ni tourner."
+      },
+      {
+       "ex": "porte-valise",
+       "series": 2,
+       "duree": 30,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "superman-brasse",
+       "series": 2,
+       "reps": 10,
+       "recup": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppc-maintien-saison",
+   "titre": "Maintien de saison (PPC)",
+   "rpe": "6 à 7",
+   "dureeMin": 26,
+   "message": "Objectif : garder la force de l'hiver sans entamer tes jambes. Mêmes charges lourdes, très peu de séries, 3 reps en réserve. Place-la loin de ta course et de ta séance clé.",
+   "sport": "route",
+   "phase": "PPC",
+   "duree": 26,
+   "materiel": "salle",
+   "niveau": 2,
+   "contextes": [
+    "maintien-saison"
+   ],
+   "pourquoi": "En saison, une séance courte et lourde par semaine suffit à garder la force ; quand on l'arrête, les gains disparaissent en quelques semaines.",
+   "preuve": "C · [@ronnestad2010b] [@ronnestad2016] [@spiering2021]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Force lourde, volume mini",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 2,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 150,
+       "note": "Charge lourde gardée (environ 80 % de ton max). 2 séries de montée avant."
+      },
+      {
+       "ex": "presse-a-cuisses-unijambe",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 75
+      },
+      {
+       "ex": "hip-thrust-barre",
+       "series": 1,
+       "reps": 6,
+       "rpe": 7,
+       "recup": 90
+      },
+      {
+       "ex": "mollets-barre",
+       "series": 1,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 60
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 40,
+       "recup": 30
+      },
+      {
+       "ex": "superman-brasse",
+       "series": 1,
+       "reps": 10,
+       "recup": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppc-micro-seance-os",
+   "titre": "Micro-séance : 5 min de sauts",
+   "rpe": "3 à 4",
+   "dureeMin": 5,
+   "message": "Ton vélo ne te donne pas de chocs : on en ajoute un peu. 5 minutes, 3 à 5 fois par semaine, environ 50 petits sauts avec des réceptions souples. Pas si tu as déjà eu une fracture de fatigue : vois d'abord un médecin.",
+   "sport": "route",
+   "phase": "PPC",
+   "duree": 5,
+   "materiel": "aucun",
+   "niveau": 1,
+   "contextes": [
+    "os"
+   ],
+   "pourquoi": "Le vélo porte ton poids et n'apporte aucun impact : quelques sauts courts et réguliers ajoutent les chocs qui manquent à un sport porté (environ 50 contacts).",
+   "preuve": "C · [@hilkens2024] [@olmedillas2012] [@zamboni2024]",
+   "blocs": [
+    {
+     "nom": "Mise en route",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 5,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 30
+      }
+     ]
+    },
+    {
+     "nom": "Sauts",
+     "type": "series",
+     "items": [
+      {
+       "ex": "pogo-jumps",
+       "series": 2,
+       "reps": 10,
+       "recup": 30,
+       "note": "Petits rebonds jambes presque tendues. 20 contacts."
+      },
+      {
+       "ex": "saut-avant-reception-deux-pieds",
+       "series": 2,
+       "reps": 5,
+       "recup": 30,
+       "note": "Saute devant toi, pose-toi sans bruit, reviens en marchant. 10 contacts."
+      },
+      {
+       "ex": "sauts-ligne-deux-pieds",
+       "series": 2,
+       "reps": 10,
+       "recup": 30,
+       "note": "D'un côté à l'autre d'une ligne, vite et léger. 20 contacts."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-ppc-seance-hotel",
+   "titre": "Séance d'hôtel (PPC)",
+   "rpe": "6",
+   "dureeMin": 25,
+   "message": "Objectif : entretenir tes jambes et ton gainage dans une chambre d'hôtel, sans matériel. On ralentit le mouvement et on tient les positions pour remplacer la charge. Rien ne doit laisser de courbatures.",
+   "sport": "route",
+   "phase": "PPC",
+   "duree": 25,
+   "materiel": "aucun",
+   "niveau": 2,
+   "contextes": [
+    "voyage",
+    "maintien-saison"
+   ],
+   "pourquoi": "Sur une course à étapes ou en stage, une courte séance au poids du corps garde les muscles en éveil entre deux séances lourdes.",
+   "preuve": "D · construction d'expert, principes C [@spiering2021] [@lum2019]",
+   "blocs": [
+    {
+     "nom": "Mise en route",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 40
+      },
+      {
+       "ex": "genou-poitrine-marche",
+       "reps": 8
+      },
+      {
+       "ex": "ischios-dynamique",
+       "reps": 8
+      },
+      {
+       "ex": "extension-dos-debout",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Jambes",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-une-et-demie",
+       "series": 3,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 60,
+       "note": "Descends, remonte à moitié, redescends, remonte : ça fait une rep."
+      },
+      {
+       "ex": "chaise-mur-unijambe",
+       "series": 2,
+       "duree": 20,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 30
+      },
+      {
+       "ex": "pont-fessier-unijambe",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "mollets-debout",
+       "series": 2,
+       "reps": 15,
+       "recup": 30,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Haut du corps et gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "pompes",
+       "series": 2,
+       "reps": 8,
+       "recup": 45,
+       "note": "Trop dur ? Passe sur les genoux."
+      },
+      {
+       "ex": "planche-touche-epaule",
+       "series": 2,
+       "reps": 12,
+       "alterne": true,
+       "recup": 30
+      },
+      {
+       "ex": "gainage-lateral",
+       "series": 1,
+       "duree": 30,
+       "parCote": true,
+       "recup": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-affutage-veille-de-course",
+   "titre": "Activation de veille de course",
+   "rpe": "3 à 4",
+   "dureeMin": 12,
+   "message": "Objectif : réveiller les muscles sans rien entamer. Court, vif, facile : tu dois finir plus frais qu'au départ. Aucune série difficile, aucun saut appuyé.",
+   "sport": "route",
+   "phase": "AFFUTAGE",
+   "duree": 12,
+   "materiel": "aucun",
+   "niveau": 1,
+   "contextes": [
+    "veille-course"
+   ],
+   "pourquoi": "La veille d'une course, quelques minutes de mouvements vifs, sans freinage ni impact, préparent les muscles sans fatigue ni courbatures.",
+   "preuve": "D · construction d'expert, principes C [@mcgowan2015] [@mujika2003]",
+   "blocs": [
+    {
+     "nom": "Délier",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 5,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "genou-poitrine-marche",
+       "reps": 10
+      },
+      {
+       "ex": "balancier-jambe",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "ischios-dynamique",
+       "reps": 8
+      },
+      {
+       "ex": "extension-dos-debout",
+       "reps": 8
+      },
+      {
+       "ex": "cercles-bras",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Réveiller",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 15,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 8,
+       "note": "Descente tranquille, remontée vive."
+      },
+      {
+       "ex": "pont-fessier",
+       "reps": 10
+      },
+      {
+       "ex": "bird-dog",
+       "reps": 6,
+       "alterne": true
+      },
+      {
+       "ex": "planche-avant-bras",
+       "duree": 20
+      }
+     ]
+    },
+    {
+     "nom": "Trois accélérations",
+     "type": "series",
+     "items": [
+      {
+       "ex": "sprint-sur-place",
+       "series": 3,
+       "duree": 6,
+       "recup": 45,
+       "intention": "Vif",
+       "note": "6 s vives, pas à fond : de la fréquence, pas de l'effort."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-affutage-seance-allegee",
+   "titre": "Séance allégée d'affûtage",
+   "rpe": "6 à 7",
+   "dureeMin": 30,
+   "message": "Objectif : arriver frais et fort le jour J. Tu gardes tes charges lourdes habituelles et tu fais moitié moins de séries. Fatigué ? Enlève une série, pas des kilos.",
+   "sport": "route",
+   "phase": "AFFUTAGE",
+   "duree": 30,
+   "materiel": "salle",
+   "niveau": 2,
+   "pourquoi": "Dans les 1 à 3 semaines avant l'objectif, on divise le volume par deux et on garde l'intensité : la fatigue s'en va, la force reste.",
+   "preuve": "D · construction d'expert, principes B [@bosquet2007] [@mujika2003] [@pritchard2019]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-barre-vide-tempo",
+       "reps": 8
+      },
+      {
+       "ex": "pont-fessier-marche",
+       "reps": 10
+      },
+      {
+       "ex": "charniere-hanche-baton",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Lourd, moitié moins",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 2,
+       "reps": 4,
+       "rpe": 7,
+       "recup": 180,
+       "tempo": [
+        "2",
+        "0",
+        "X",
+        "0"
+       ],
+       "note": "Ta charge lourde habituelle (environ 80-85 % de ton max), 3 reps en réserve, remontée rapide. 2 séries de montée avant."
+      },
+      {
+       "ex": "presse-a-cuisses-unijambe",
+       "series": 2,
+       "reps": 4,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 75
+      },
+      {
+       "ex": "hip-thrust-barre",
+       "series": 1,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 90
+      },
+      {
+       "ex": "mollets-barre",
+       "series": 1,
+       "reps": 8,
+       "rpe": 6,
+       "recup": 60
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 30,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 180,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route-transition-reprise-apres-coupure",
+   "titre": "Reprise après coupure",
+   "rpe": "5",
+   "dureeMin": 34,
+   "message": "Objectif : remettre le corps en route après la coupure, sans courbatures qui durent. Tout est léger et propre : tu finis chaque série avec 4 reps en réserve. Les charges reviendront sur 2 à 3 semaines.",
+   "sport": "route",
+   "phase": "TRANSITION",
+   "duree": 34,
+   "materiel": "elastique",
+   "niveau": 1,
+   "contextes": [
+    "retour-coupure"
+   ],
+   "pourquoi": "Après plusieurs semaines sans musculation, une partie de la force est partie : on repart léger pour réhabituer muscles et tendons avant le lourd.",
+   "preuve": "D · construction d'expert, principes B [@bosquet2013] [@ronnestad2016]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 20,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 30
+      },
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "ischios-dynamique",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Tout le corps, léger",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "series": 2,
+       "reps": 15,
+       "rpe": 5,
+       "recup": 60,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "pull-through-elastique",
+       "series": 2,
+       "reps": 12,
+       "rpe": 5,
+       "recup": 60,
+       "note": "Le mouvement vient des hanches, dos plat."
+      },
+      {
+       "ex": "fente-arriere",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 5,
+       "recup": 60
+      },
+      {
+       "ex": "marche-laterale-elastique",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "tirage-elastique-debout",
+       "series": 2,
+       "reps": 12,
+       "rpe": 5,
+       "recup": 45
+      },
+      {
+       "ex": "pompes-genoux",
+       "series": 2,
+       "reps": 10,
+       "rpe": 5,
+       "recup": 45
+      },
+      {
+       "ex": "mollets-debout",
+       "series": 2,
+       "reps": 15,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "dead-bug",
+       "series": 2,
+       "reps": 8,
+       "alterne": true,
+       "recup": 30
+      },
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 30,
+       "recup": 30
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
