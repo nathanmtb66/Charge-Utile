@@ -1,0 +1,2943 @@
+[
+ {
+  "id": "corde-a-sauter",
+  "nom": "Corde à sauter (ou sans corde, en mimant)",
+  "famille": "plio",
+  "anim": "pogo",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollets, chevilles",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Petits sauts, 2-3 cm du sol",
+   "Poignets qui tournent, coudes au corps",
+   "Talons qui ne touchent pas le sol"
+  ],
+  "erreurs": [
+   "Sauter trop haut, genoux très pliés",
+   "Regarder ses pieds, dos rond"
+  ],
+  "pourquoi": "Beaucoup de petits rebonds faciles : tes chevilles deviennent des ressorts, et tes os reçoivent les chocs que le vélo ne donne pas.",
+  "respiration": "Respire en rythme, par le nez si tu peux.",
+  "securite": "Sol ni trop dur ni glissant. Arrête si ça tire au tendon d'Achille ou au tibia.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "explosivite",
+   "cardio",
+   "echauffement",
+   "trail"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets",
+   "pieds"
+  ],
+  "alternatives": [
+   "pogo-jumps",
+   "sauts-ligne-deux-pieds",
+   "jumping-jack"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/jump-rope/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 4×30 contacts (≈ 20 s), 45 s → S4 : 5×50 contacts. 2 à 4 fois/sem",
+  "preuve": "C · [@hilkens2024] [@ramirezcampillo2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pogo-unijambe",
+  "nom": "Pogo sur une jambe",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, debout sur une jambe, l'autre genou fléchi à 90° pied derrière. s=0 : en l'air à 3-5 cm, cheville en pointe, genou d'appui presque tendu (≈ 10° de flexion). s=1 : contact bref sur l'avant-pied, talon à 1 cm du sol, genou à ≈ 15°. Bras fléchis à 90° qui battent légèrement. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollet, cheville",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Jambe presque tendue, autre pied levé",
+   "Rebondis vite, talon qui ne touche pas",
+   "Bassin à plat, buste droit"
+  ],
+  "erreurs": [
+   "Plier le genou à chaque rebond",
+   "Bassin qui tombe du côté levé"
+  ],
+  "pourquoi": "En course, tu rebondis toujours sur un seul pied : ce pogo prépare chaque cheville à renvoyer l'énergie seule.",
+  "respiration": "Respire en rythme, sans bloquer.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "explosivite",
+   "trail"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "pogo-jumps",
+   "sauts-ligne-unipodal",
+   "mollet-unijambe-marche"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pogo",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×6 contacts/jambe, 60 s → S4 : 3×10/jambe. Max 60 contacts/séance",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pogo-jumps"
+ },
+ {
+  "id": "sauts-genoux-poitrine",
+  "nom": "Sauts groupés, genoux vers la poitrine",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout, genoux fléchis à 30°, bras en arrière, deux pieds au sol largeur de bassin. s=1 : en l'air à ≈ 30 cm, hanches et genoux fléchis à 90-100° (cuisses à l'horizontale), buste vertical, bras fléchis devant. Retour : réception sur l'avant-pied, genoux à 40°. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves",
+   "hipflex",
+   "abs"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets, fléchisseurs de hanche",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Saute haut, monte les genoux vers toi",
+   "Buste droit, ne te penche pas",
+   "Réception souple, puis repars"
+  ],
+  "erreurs": [
+   "Baisser le buste vers les genoux",
+   "Atterrir lourd, talons qui claquent"
+  ],
+  "pourquoi": "Monter vite les genoux en l'air, c'est le geste pour passer une marche ou une racine sans casser ton élan.",
+  "respiration": "Souffle à chaque saut.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "hanche",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "hanches",
+   "chevilles"
+  ],
+  "alternatives": [
+   "squat-saute",
+   "pogo-jumps",
+   "montees-de-genoux"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/tuck-jump/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×5 contacts, 90 s → S4 : 4×6. Commence bas, genoux à hauteur de hanche",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "chute-en-reception",
+  "nom": "Chute rapide en position de réception",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur la pointe des pieds, corps tendu, bras tendus au-dessus de la tête. s=1 : pieds à plat largeur de bassin, genoux fléchis à 60°, hanches à 60°, buste penché à 40°, dos plat, bras tirés en arrière le long des hanches. La descente est très rapide (chute), puis position figée. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Cuisses, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Monte sur les pointes, bras en l'air",
+   "Tombe d'un coup en quart de squat",
+   "Fige 2 s : genoux dans l'axe, dos plat"
+  ],
+  "erreurs": [
+   "Descendre lentement au lieu de tomber",
+   "Genoux qui rentrent vers l'intérieur"
+  ],
+  "pourquoi": "Avant de sauter, apprends à atterrir : c'est la position qui encaisse une descente en trail ou une réception en VTT.",
+  "respiration": "Souffle sec au moment où tu te figes.",
+  "securite": "Réception silencieuse et stable. Arrête si ça tire au genou.",
+  "tags": [
+   "genou",
+   "explosivite",
+   "descente-vtt",
+   "avant-effort",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "hanches"
+  ],
+  "alternatives": [
+   "squat-pdc",
+   "reception-unijambe",
+   "squat-saute"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "reception-deux-pieds",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5 réceptions tenues 2 s, 45 s. Passe à la marche basse quand c'est net et silencieux",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "reception-marche-basse",
+  "nom": "Descente d'une marche basse, réception tenue",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout au bord d'une marche de 15-20 cm, un pied avancé dans le vide, bras le long du corps. s=1 : au sol devant la marche, deux pieds à plat largeur de bassin, genoux à 60°, hanches à 50°, buste penché à 30°, bras tendus vers l'avant pour l'équilibre, position figée. Matériel : une marche basse derrière l'athlète.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Avance un pied dans le vide, ne saute pas",
+   "Atterris sur deux pieds, sans bruit",
+   "Fige 2 s en quart de squat"
+  ],
+  "erreurs": [
+   "Atterrir jambes raides, talons d'abord",
+   "Genoux qui rentrent à la réception"
+  ],
+  "pourquoi": "Tes jambes apprennent à freiner un choc en douceur : la base avant tous les sauts, et un vrai plus pour les descentes.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Marche basse au début. Si la réception fait du bruit, baisse la hauteur. Arrête si ça tire au genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "descente-vtt",
+   "trail",
+   "explosivite"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "drop-jump",
+   "squat-pdc"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "reception-deux-pieds",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×5 contacts (marche 15-20 cm), 60 s → S4 : 3×8. Puis passe à la box",
+  "preuve": "D · [@ramirezcampillo2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "reception-box-haute",
+  "nom": "Chute d'une box, réception tenue (40 cm)",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout au bord d'une box de 40 cm, un pied avancé dans le vide. s=1 : au sol 30 cm devant la box, deux pieds à plat, genoux fléchis à 90°, hanches à 80°, buste penché à 40°, dos plat, bras tendus devant, position figée 2 s. Matériel : box de 40 cm derrière l'athlète.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves",
+   "hams"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Laisse-toi tomber, ne saute pas en l'air",
+   "Avant-pied puis talon, sans bruit",
+   "Freine jusqu'au demi-squat, fige 2 s"
+  ],
+  "erreurs": [
+   "S'écraser en squat complet",
+   "Buste qui plonge vers l'avant"
+  ],
+  "pourquoi": "Freiner une chute de 40 cm, c'est le travail des cuisses à chaque appui en descente raide.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Monte la hauteur seulement si la réception reste silencieuse. Pas dans les 2 jours après une grosse descente. Arrête si ça tire au genou.",
+  "tags": [
+   "genou",
+   "descente-vtt",
+   "trail",
+   "explosivite"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "drop-jump",
+   "reception-unijambe",
+   "step-down-lateral-30cm"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "reception-deux-pieds",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts (30 cm), 90 s → S4 : 4×5 (40 cm). Max 20 contacts/séance",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b]",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-jump-depart-arrete",
+  "nom": "Squat sauté départ arrêté (pause 2 s en bas)",
+  "famille": "squat",
+  "anim": "jumpsquat",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Descends à mi-cuisse et bloque 2 s",
+   "Saute sans redescendre avant",
+   "Mains sur les hanches, réception douce"
+  ],
+  "erreurs": [
+   "Prendre un petit élan vers le bas",
+   "Décoller les talons pendant la pause"
+  ],
+  "pourquoi": "Partir sans élan, c'est la force pure de démarrage : départ arrêté en XCO, relance en sortie de virage serré.",
+  "respiration": "Bloque court pendant la pause, souffle en sautant.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-saute",
+   "box-jump",
+   "squat-pdc"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×5 contacts, 90 s → S4 : 4×6. Hauteur maximale à chaque saut",
+  "preuve": "C · [@devillarreal2009] [@ramirezcampillo2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-saute"
+ },
+ {
+  "id": "saut-longueur-sans-elan",
+  "nom": "Saut en longueur sans élan",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : pieds largeur de bassin, genoux à 60°, hanches à 80°, buste penché à 45°, bras tendus en arrière. Milieu : en l'air, corps allongé à 45° vers l'avant, bras lancés devant. s=1 : réception 1,5 à 2 m plus loin, deux pieds à plat, genoux à 80°, buste penché, bras devant, position figée. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Bras en arrière, hanches en arrière",
+   "Pousse loin devant, bras qui lancent",
+   "Atterris sur deux pieds et fige 2 s"
+  ],
+  "erreurs": [
+   "Sauter en hauteur plutôt qu'en longueur",
+   "Tomber en arrière à la réception"
+  ],
+  "pourquoi": "Pousser fort vers l'avant, c'est la même poussée de hanche que pour relancer en côte, à pied comme sur le vélo.",
+  "respiration": "Inspire en armant, souffle en poussant.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "hanche",
+   "montee",
+   "foulee",
+   "coup-de-pedale",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "hanches",
+   "chevilles"
+  ],
+  "alternatives": [
+   "squat-saute",
+   "box-jump",
+   "kettlebell-swing"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×4 contacts, 90 s → S4 : 4×5. Marque ta distance : arrête si elle baisse",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "bonds-deux-pieds-enchaines",
+  "nom": "Sauts en longueur enchaînés (3 bonds)",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite. s=0 : contact au sol, deux pieds, genoux à 50°, hanches à 60°, bras en arrière. s=1 : en l'air, corps allongé vers l'avant, bras lancés devant, genoux qui remontent à 60° avant la réception. Trois cycles enchaînés, dernier contact figé en demi-squat. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "3 bonds vers l'avant, sans pause",
+   "Contact court, repars tout de suite",
+   "Fige la dernière réception 2 s"
+  ],
+  "erreurs": [
+   "S'écraser bas entre deux bonds",
+   "Raccourcir les bonds pour aller vite"
+  ],
+  "pourquoi": "Enchaîner les bonds apprend à réutiliser l'énergie de la réception, comme dans une suite de relances.",
+  "respiration": "Souffle à chaque poussée.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "hanche",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "hanches",
+   "chevilles"
+  ],
+  "alternatives": [
+   "squat-saute",
+   "drop-jump",
+   "box-jump"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "S1 : 3×3 contacts, 2 min → S4 : 4×3 (puis 3×5). Réservé à ceux qui tiennent le saut simple",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "trail",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "foulees-bondissantes",
+  "nom": "Foulées bondissantes",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite. s=0 : appui sur le pied gauche à plat sous le bassin, genou gauche à 20°, genou droit monté devant à 90° (cuisse horizontale), bras opposé devant. s=1 : phase de vol longue, jambe gauche tendue loin derrière (hanche en extension de 20°), cuisse droite à l'horizontale, buste droit. Alterner gauche/droite. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "calves",
+   "quads",
+   "hipflex"
+  ],
+  "musclesTxt": "Fessiers, ischios, mollets, cuisses",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Grandes foulées, pousse loin derrière",
+   "Genou avant haut, reste en l'air",
+   "Pied à plat sous toi, contact court"
+  ],
+  "erreurs": [
+   "Atterrir talon loin devant, en freinant",
+   "Petites foulées rapides sans pousser"
+  ],
+  "pourquoi": "C'est la foulée de course en plus grand : chaque appui pousse plus fort, pour des relances et des montées plus vives.",
+  "respiration": "Souffle à chaque appui, en rythme.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "foulee",
+   "explosivite",
+   "montee",
+   "hanche",
+   "cheville",
+   "trail"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets",
+   "hanches",
+   "genoux"
+  ],
+  "alternatives": [
+   "fentes-sautees",
+   "pogo-jumps",
+   "montees-de-genoux"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×8 contacts (≈ 15 m), 90 s → S4 : 4×10. Sur herbe ou piste",
+  "preuve": "C · [@ramirezcampillo2021b] [@llanoslagos2024b]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "sauts-haies-basses",
+  "nom": "Sauts de haies basses enchaînés (plots)",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite, 4 plots ou mini-haies de 20 cm espacés de 80 cm. s=0 : contact bref sur l'avant des deux pieds joints entre deux plots, genoux à 20°, bras fléchis en bas. s=1 : en l'air au-dessus du plot, genoux à 60°, pieds relevés, bras montés devant. Rebond immédiat à chaque contact. Matériel : plots au sol.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Mollets, cuisses, fessiers",
+  "materiel": [
+   "plots"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "4 à 6 plots, un pas et demi entre chaque",
+   "Rebondis vite, pieds joints",
+   "Genoux peu pliés, chevilles raides"
+  ],
+  "erreurs": [
+   "Rester longtemps au sol entre deux plots",
+   "Monter les genoux au lieu de rebondir"
+  ],
+  "pourquoi": "Rebondir par-dessus des obstacles bas rend l'appui plus court et plus sec : une foulée qui coûte moins d'énergie.",
+  "respiration": "Respire en rythme, souffle à chaque rebond.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "cheville",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "pogo-jumps",
+   "drop-jump",
+   "sauts-ligne-deux-pieds"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×5 contacts, 90 s → S4 : 4×6. Plots de 15 à 30 cm",
+  "preuve": "C · [@ramirezcampillo2023] [@jarvis2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "bond-unijambe-avant-tenu",
+  "nom": "Saut en avant sur une jambe, réception tenue",
+  "famille": "plio",
+  "anim": "hopstick",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pousse vers l'avant sur une jambe",
+   "Atterris sur la même, genou dans l'axe",
+   "Fige 2 s sans poser l'autre pied"
+  ],
+  "erreurs": [
+   "Genou qui part vers l'intérieur",
+   "Sautiller pour rattraper l'équilibre"
+  ],
+  "pourquoi": "Pousser et te recevoir sur la même jambe, c'est chaque appui de trail quand le terrain t'oblige à allonger.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Saute moins loin si tu ne tiens pas la réception. Arrête si ça tire au genou ou à la cheville.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "explosivite",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "alternatives": [
+   "hop-stick",
+   "reception-unijambe",
+   "sauts-unipodaux-multidirectionnels"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts/jambe, 60 s → S4 : 3×6/jambe. Allonge le saut peu à peu",
+  "preuve": "C · [@xin2026] [@ramirezcampillo2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "hop-stick"
+ },
+ {
+  "id": "step-up-explosif",
+  "nom": "Step-up explosif (saut depuis la box)",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : pied droit à plat sur une box de 30-40 cm, genou droit à 90°, pied gauche au sol derrière, buste penché à 20°, bras opposé devant. s=1 : en l'air au-dessus de la box, jambe droite tendue (pied à 10 cm de la box), jambe gauche tendue pendante, bras lancés vers le haut. Retour : pied droit sur la box puis pied gauche au sol. Matériel : box.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un pied à plat sur la box, buste penché",
+   "Pousse fort dessus, décolle de la box",
+   "Reviens sur le même pied, freine"
+  ],
+  "erreurs": [
+   "Pousser avec la jambe restée au sol",
+   "Genou d'appui qui rentre"
+  ],
+  "pourquoi": "Une jambe qui pousse fort depuis un genou plié : c'est un coup de pédale en danseuse ou une grande marche en trail.",
+  "respiration": "Souffle en poussant.",
+  "securite": "Box stable, pied bien à plat dessus. Arrête si ça tire au genou.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "quadriceps",
+   "fessiers"
+  ],
+  "alternatives": [
+   "step-up",
+   "fentes-sautees",
+   "box-jump"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "step-up-explosif",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×5 contacts/jambe, 90 s → S4 : 4×6/jambe. Box 30-40 cm",
+  "preuve": "C · [@xin2026] [@ramirezcampillo2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "step-up"
+ },
+ {
+  "id": "sauts-escalier",
+  "nom": "Bonds à deux pieds dans un escalier",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, escalier montant vers la droite (marches de 17 cm). s=0 : deux pieds à plat sur une marche, genoux à 60°, hanches à 60°, bras en arrière. s=1 : en l'air, genoux à 80°, bras lancés devant, au-dessus de la marche intermédiaire ; réception deux marches plus haut. Matériel : escalier de 8 à 12 marches.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Saute deux marches à la fois",
+   "Pieds entiers posés sur la marche",
+   "Rebondis vite, redescends en marchant"
+  ],
+  "erreurs": [
+   "Poser seulement la pointe des pieds",
+   "Redescendre en sautant"
+  ],
+  "pourquoi": "Sauter en montant donne beaucoup de poussée pour peu de choc : idéal pour débuter, et très proche d'une montée raide.",
+  "respiration": "Souffle à chaque bond.",
+  "securite": "Escalier sec, bien éclairé, sans personne. Redescends toujours en marchant. Arrête si ça tire au genou.",
+  "tags": [
+   "explosivite",
+   "montee",
+   "coup-de-pedale",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "box-jump",
+   "squat-saute",
+   "step-up"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×6 contacts, 90 s (redescente marchée) → S4 : 4×8",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "fente-sautee-meme-jambe",
+  "nom": "Fente sautée sans changer de jambe",
+  "famille": "fente",
+  "anim": "splitjump",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "En fente, saute droit vers le haut",
+   "Retombe dans la même fente",
+   "Genou avant au-dessus du pied"
+  ],
+  "erreurs": [
+   "Genou arrière qui tape le sol",
+   "Buste qui tombe vers l'avant"
+  ],
+  "pourquoi": "Version plus simple des fentes sautées : tu apprends à pousser et à freiner en fente avant d'ajouter le changement de jambe.",
+  "respiration": "Souffle à chaque saut.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "genou",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "zones": [
+   "genoux",
+   "quadriceps",
+   "fessiers"
+  ],
+  "alternatives": [
+   "fentes-sautees",
+   "fente-arriere",
+   "squat-saute"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "S1 : 3×5 contacts/jambe, 90 s → S4 : 3×8/jambe, puis passe aux fentes sautées",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fentes-sautees"
+ },
+ {
+  "id": "box-jump-depart-assis",
+  "nom": "Box jump départ assis",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : assis au bord d'un banc, genoux à 90°, pieds à plat largeur de bassin, buste penché à 30°, bras en arrière ; une box de 40-50 cm à 40 cm devant les pieds. s=1 : debout sur la box en quart de squat, genoux à 60°, deux pieds à plat, bras devant. Phase de vol entre les deux. Matériel : banc derrière, box devant.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "box",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Assis au bord du banc, pieds à plat",
+   "Lance les bras et saute sur la box",
+   "Atterris doucement, redescends au pas"
+  ],
+  "erreurs": [
+   "Se balancer en arrière pour l'élan",
+   "Sauter de la box pour redescendre"
+  ],
+  "pourquoi": "Partir assis coupe tout élan : tu travailles la poussée pure, genou plié, comme un départ arrêté sur le vélo.",
+  "respiration": "Souffle en sautant.",
+  "securite": "Box stable et pas trop haute. Redescends en marchant. Arrête si ça tire au genou.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "zones": [
+   "genoux",
+   "quadriceps",
+   "fessiers"
+  ],
+  "alternatives": [
+   "box-jump",
+   "squat-saute",
+   "step-up"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts, 90 s → S4 : 4×5. Box à hauteur de genou",
+  "preuve": "C · [@devillarreal2009]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "box-jump"
+ },
+ {
+  "id": "saut-obstacle-quart-de-tour",
+  "nom": "Saut d'obstacle bas avec quart de tour",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 : debout à gauche d'un plot de 20 cm, pieds largeur de bassin, genoux à 50°, bras en arrière. s=1 : réception à droite du plot, corps tourné de 90° (profil), deux pieds à plat largeur d'épaules, genoux à 60°, buste penché à 30°, tête tournée dans le sens de la rotation. Phase de vol au-dessus du plot, genoux à 70°. Matériel : un plot ou mini-haie.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves",
+   "obliques"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets, obliques",
+  "materiel": [
+   "plots"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Saute par-dessus le plot, de côté",
+   "Tourne d'un quart de tour en l'air",
+   "Regard déjà vers la sortie, repars"
+  ],
+  "erreurs": [
+   "Tourner les épaules sans les hanches",
+   "Atterrir pieds serrés, en déséquilibre"
+  ],
+  "pourquoi": "Atterrir déjà tourné vers la suite, c'est sortir d'un virage ou d'une marche en VTT et relancer sans temps mort.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Réception silencieuse. Arrête dès que les sauts ralentissent, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "descente-vtt",
+   "proprio",
+   "genou",
+   "cheville"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater",
+   "sauts-ligne-deux-pieds",
+   "box-jump"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "S1 : 3×4 contacts de chaque côté, 90 s → S4 : 3×6. Ajoute 3 foulées de sprint après",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "trail",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "drop-jump-unijambe",
+  "nom": "Drop jump sur une jambe (marche basse)",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout au bord d'une marche de 10-20 cm, jambe droite avancée dans le vide, jambe gauche d'appui. s=1 : contact au sol sur l'avant du pied droit seul, genou droit à 30°, hanche à 20°, jambe gauche fléchie à 90° derrière, bras en bas. Puis rebond vertical immédiat (vol 15-20 cm, jambe droite tendue) et réception sur deux pieds, genoux à 50°. Matériel : marche basse.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Mollet, cuisse, fessier",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Laisse-toi tomber sur une jambe",
+   "Rebondis tout de suite, contact court",
+   "Réception finale sur deux pieds"
+  ],
+  "erreurs": [
+   "Genou qui s'effondre vers l'intérieur",
+   "Prendre une marche trop haute"
+  ],
+  "pourquoi": "Tout le poids sur une jambe et un rebond immédiat : c'est l'appui de course poussé à fond, pour ceux qui maîtrisent déjà le drop jump.",
+  "respiration": "Souffle au rebond.",
+  "securite": "Seulement si ton drop jump à deux pieds est propre. Marche de 10-15 cm au début. Arrête dès que le contact s'allonge, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "cheville",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "chevilles",
+   "genoux",
+   "mollets"
+  ],
+  "alternatives": [
+   "drop-jump",
+   "sauts-ligne-unipodal",
+   "reception-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×3 contacts/jambe (10-15 cm), 2 min → S4 : 3×5/jambe. Max 30 contacts/séance",
+  "preuve": "C · [@ramirezcampillo2023] [@xin2026]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": "drop-jump"
+ },
+ {
+  "id": "drop-jump-vers-bond",
+  "nom": "Drop jump enchaîné sur un saut en longueur",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite. s=0 : debout au bord d'une box de 30 cm, un pied avancé dans le vide. s=1 : contact bref au sol, deux pieds, genoux à 40°, buste penché à 30°, bras en arrière. Puis vol long vers l'avant (corps allongé à 45°, bras devant) et réception figée 1,5 m plus loin en demi-squat, genoux à 80°. Matériel : box de 30 cm.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, cuisses, mollets",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Laisse-toi tomber de la box",
+   "Rebondis tout de suite vers l'avant",
+   "Fige la réception du bond 2 s"
+  ],
+  "erreurs": [
+   "Rester au sol avant de repartir",
+   "Rebondir vers le haut, pas vers l'avant"
+  ],
+  "pourquoi": "Tu transformes une chute en poussée vers l'avant : exactement ce que font tes jambes quand tu relances en bas d'une marche.",
+  "respiration": "Souffle au rebond.",
+  "securite": "Box basse. Sol non glissant. Arrête dès que le contact s'allonge, ou si ça tire au genou ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "hanche",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "drop-jump",
+   "box-jump",
+   "squat-saute"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×3 contacts (box 20-30 cm), 2 min → S4 : 4×4. Compte 2 contacts par répétition",
+  "preuve": "C · [@ramirezcampillo2023] [@llanoslagos2024a]",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "drop-jump"
+ },
+ {
+  "id": "bonds-en-cote",
+  "nom": "Foulées bondissantes en côte",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, sol incliné de 8° montant vers la droite. s=0 : appui sur le pied gauche à plat, genou gauche à 30°, genou droit monté devant à 90°, buste aligné avec la jambe d'appui (légèrement penché vers la pente), bras opposé devant. s=1 : phase de vol, jambe gauche tendue derrière, cuisse droite haute. Alterner. Aucun matériel, dessiner la pente.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "calves",
+   "quads"
+  ],
+  "musclesTxt": "Fessiers, ischios, mollets, cuisses",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pente moyenne, grandes foulées",
+   "Pousse jusqu'à tendre la jambe arrière",
+   "Bras amples, redescends en marchant"
+  ],
+  "erreurs": [
+   "Se pencher en avant, plié aux hanches",
+   "Raccourcir pour aller vite"
+  ],
+  "pourquoi": "En côte, tu pousses plus fort et tu retombes de moins haut : beaucoup de puissance pour la montée, peu de choc pour les tendons.",
+  "respiration": "Souffle à chaque poussée.",
+  "securite": "Redescends toujours en marchant. Arrête dès que les bonds raccourcissent, ou si ça tire au mollet ou au tendon d'Achille.",
+  "tags": [
+   "montee",
+   "explosivite",
+   "foulee",
+   "hanche",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "hanches",
+   "chevilles"
+  ],
+  "alternatives": [
+   "fentes-sautees",
+   "step-up",
+   "squat-saute"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 4×8 contacts (≈ 15 m), retour marché + 90 s → S4 : 5×10. Pente 6-10 %",
+  "preuve": "C · [@llanoslagos2024a] [@ramirezcampillo2021b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "triple-bond-unijambe",
+  "nom": "Triple bond sur une jambe",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite. s=0 : appui sur le pied droit à plat, genou droit à 35°, jambe gauche fléchie à 90° derrière, bras gauche devant. s=1 : phase de vol, jambe droite qui revient cuisse à l'horizontale devant, jambe gauche en arrière, buste droit. Trois cycles sur la même jambe, puis réception figée sur deux pieds, genoux à 60°. Aucun matériel.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, cuisses, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "3 bonds en avant sur la même jambe",
+   "Contact court, genou dans l'axe",
+   "Fige la 3e réception sur deux pieds"
+  ],
+  "erreurs": [
+   "Genou qui rentre à chaque appui",
+   "Bonds de plus en plus courts"
+  ],
+  "pourquoi": "Trois appuis d'affilée sur une jambe : le plus proche d'une foulée de sprint ou de descente rapide, à garder pour les plus solides.",
+  "respiration": "Souffle à chaque appui.",
+  "securite": "Seulement si tu tiens le saut en avant sur une jambe sans vaciller. Arrête si ça tire au genou, à la cheville ou au tendon d'Achille.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "genou",
+   "cheville",
+   "proprio",
+   "trail"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "hop-stick",
+   "sauts-unipodaux-multidirectionnels",
+   "drop-jump"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 2×3 contacts/jambe, 2 min → S4 : 4×3/jambe. Max 30 contacts/séance",
+  "preuve": "C · [@xin2026] [@ramirezcampillo2023]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "bonds-en-descente",
+  "nom": "Petits bonds en descente douce, réception amortie",
+  "famille": "plio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, sol incliné de 6° descendant vers la droite. s=0 : en l'air entre deux appuis, 10 cm au-dessus du sol, jambe avant (droite) légèrement fléchie, pied sous le bassin. s=1 : réception sur le pied droit à plat, genou droit à 50°, hanche à 40°, buste perpendiculaire à la pente, jambe gauche fléchie derrière, bras écartés pour l'équilibre ; tenue 1 s. Alterner. Aucun matériel, dessiner la pente.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "quadsL",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Pente douce, petits bonds alternés",
+   "Pied sous toi, genou qui amortit",
+   "Fige 1 s chaque appui, sans bruit"
+  ],
+  "erreurs": [
+   "Atterrir talon devant, jambe tendue",
+   "Se pencher en arrière"
+  ],
+  "pourquoi": "En trail, c'est la descente qui casse les cuisses : les habituer à freiner, à petite dose, les rend plus solides le jour de la course.",
+  "respiration": "Souffle à chaque réception.",
+  "securite": "Pente douce, sol régulier. Attends des courbatures le lendemain : commence petit. Pas dans la semaine d'une course. Arrête si ça tire au genou.",
+  "tags": [
+   "trail",
+   "genou",
+   "foulee",
+   "proprio",
+   "cheville"
+  ],
+  "zones": [
+   "genoux",
+   "quadriceps",
+   "chevilles"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "step-down-lateral-30cm",
+   "drop-jump"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×6 contacts, 90 s (pente 5-8 %) → S4 : 4×8. 1 fois/sem, à 4-8 sem d'une course qui descend",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b]",
+  "sports": [
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "jump-squat-halteres",
+  "nom": "Squat sauté avec haltères légers",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme l'animation jumpsquat, avec un haltère dans chaque main. Vue de profil. s=0 : en l'air à 20-30 cm, corps tendu, bras tendus le long du corps, haltères contre les cuisses. s=1 : pieds à plat largeur de bassin, genoux à 60°, hanches à 50°, buste penché à 25°, haltères au niveau des genoux, bras verticaux. Matériel : deux haltères légers.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Haltères le long des cuisses, bras tendus",
+   "Descends au quart, saute le plus haut",
+   "Amortis, replace-toi, puis repars"
+  ],
+  "erreurs": [
+   "Prendre trop lourd et sauter bas",
+   "Épaules qui montent, haltères qui volent"
+  ],
+  "pourquoi": "Une charge légère poussée le plus vite possible : tu gagnes en puissance pour les relances et les départs, sans grossir.",
+  "respiration": "Inspire en haut, souffle en sautant.",
+  "securite": "Reste léger : la vitesse compte, pas la charge. Réception silencieuse. Arrête si ça tire au genou ou au dos.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-saute",
+   "squat-goblet",
+   "kettlebell-swing"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "1"
+  ],
+  "progression": {
+   "groupe": "jump-squat-charge",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/dumbbell-jump-squat/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 3×5 contacts, 2 min → S4 : 4×5. Charge : 10-20 % de ton poids au total. Arrête si la hauteur baisse",
+  "preuve": "C · [@parejablanco2017] [@denadai2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-saute"
+ },
+ {
+  "id": "jump-squat-barre",
+  "nom": "Squat sauté barre légère sur le dos",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme jumpsquat, barre sur le dos. Vue de profil. s=0 : en l'air à 15-20 cm, corps tendu, barre posée sur les trapèzes, mains qui la tirent vers le bas, coudes sous la barre. s=1 : pieds à plat largeur d'épaules, genoux à 60°, hanches à 50°, buste penché à 25°, barre au-dessus du milieu du pied. Matériel : barre légère.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves",
+   "lowback"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre plaquée sur les trapèzes, tirée",
+   "Quart de squat, puis saute fort",
+   "Amortis, replace la barre, repars"
+  ],
+  "erreurs": [
+   "Barre qui décolle et retombe sur le cou",
+   "Charger lourd et à peine décoller"
+  ],
+  "pourquoi": "Le squat sauté chargé léger travaille la vitesse de poussée, la qualité que l'endurance freine le plus.",
+  "respiration": "Inspire et gaine en haut, souffle en sautant.",
+  "securite": "Maîtrise d'abord le squat barre et le squat sauté. Tire la barre contre toi pendant le saut. Arrête si ça tire au dos ou au genou.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "gainage"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-saute",
+   "kettlebell-swing"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "1"
+  ],
+  "progression": {
+   "groupe": "jump-squat-charge",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/barbell-jump-squat/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts, 2-3 min → S4 : 5×4. 20-30 % du 1RM squat (souvent la barre seule + un peu)",
+  "preuve": "C · [@parejablanco2017] [@schumann2022]",
+  "sports": [
+   "xco",
+   "route",
+   "nordique",
+   "triathlon",
+   "trail"
+  ],
+  "varianteDe": "squat-barre"
+ },
+ {
+  "id": "jump-squat-trap-bar",
+  "nom": "Saut avec trap bar (barre hexagonale légère)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : en l'air à 15 cm, corps tendu, bras tendus le long du corps, mains sur les poignées latérales d'une barre hexagonale à hauteur de mi-cuisse. s=1 : pieds à plat largeur de bassin, genoux à 70°, hanches à 70°, buste penché à 35°, dos plat, bras verticaux, disques à 10 cm du sol. Matériel : trap bar avec petits disques.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, ischios, mollets",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Au milieu de la barre, bras tendus",
+   "Dos plat, pousse le sol et saute",
+   "Amortis, repose-toi 2 s, repars"
+  ],
+  "erreurs": [
+   "Tirer avec les bras, épaules hautes",
+   "Dos qui s'arrondit à la réception"
+  ],
+  "pourquoi": "La charge reste près des hanches, pas sur le dos : la façon la plus simple de sauter chargé et de produire beaucoup de puissance.",
+  "respiration": "Inspire et gaine en bas, souffle en sautant.",
+  "securite": "Charge légère. Dos plat du début à la fin. Arrête si ça tire au dos.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "chaine-posterieure",
+   "hanche"
+  ],
+  "zones": [
+   "fessiers",
+   "quadriceps",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "souleve-de-terre",
+   "kettlebell-swing",
+   "squat-saute"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "1"
+  ],
+  "progression": {
+   "groupe": "jump-squat-charge",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts, 2-3 min → S4 : 5×3. 20-30 % du 1RM soulevé de terre",
+  "preuve": "C · [@parejablanco2017] [@schumann2022]",
+  "sports": [
+   "xco",
+   "route",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "souleve-de-terre"
+ },
+ {
+  "id": "tirage-haut-barre",
+  "nom": "Tirage haut explosif, barre aux cuisses (clean pull)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=1 (bas) : barre juste au-dessus des genoux contre les cuisses, prise largeur d'épaules, genoux à 30°, hanches à 70°, buste penché à 45°, dos plat, bras tendus, pieds à plat. s=0 (haut) : sur la pointe des pieds, genoux et hanches tendus, épaules haussées vers les oreilles, coudes légèrement fléchis vers l'extérieur, barre à hauteur du nombril collée au corps. Matériel : barre avec disques légers.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "quads",
+   "calves",
+   "upperback"
+  ],
+  "musclesTxt": "Fessiers, ischios, cuisses, mollets, trapèzes",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre au-dessus des genoux, dos plat",
+   "Pousse le sol, finis sur les pointes",
+   "Hausse les épaules, bras souples"
+  ],
+  "erreurs": [
+   "Tirer avec les bras avant les jambes",
+   "Barre qui s'éloigne du corps"
+  ],
+  "pourquoi": "Tu gardes le meilleur de l'épaulé (pousser fort avec hanches, genoux et chevilles) sans la réception technique qui demande des mois.",
+  "respiration": "Inspire et gaine en bas, souffle en haut.",
+  "securite": "Apprends le geste barre vide avec un coach. Dos plat tout le temps. Arrête si ça tire au dos.",
+  "tags": [
+   "explosivite",
+   "chaine-posterieure",
+   "hanche",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "zones": [
+   "fessiers",
+   "ischios",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "souleve-de-terre",
+   "kettlebell-swing",
+   "rdl-barre"
+  ],
+  "tempoConseille": [
+   "2",
+   "1",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "4×3, 2-3 min. Charge qui reste rapide (≈ 40-60 % du 1RM soulevé de terre). Avec un coach au début",
+  "preuve": "D · [@schumann2022]",
+  "sports": [
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "step-up-explosif-halteres",
+  "nom": "Step-up explosif avec haltères",
+  "famille": "fente",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme step-up-explosif avec un haltère dans chaque main. Vue de profil. s=0 : pied droit à plat sur une box de 30 cm, genou droit à 90°, pied gauche au sol, bras tendus le long du corps avec haltères. s=1 : en l'air, jambe droite tendue à 5-10 cm au-dessus de la box, jambe gauche pendante, haltères le long des cuisses. Matériel : box, deux haltères légers.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "box",
+   "halteres"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Un pied à plat sur la box, haltères bas",
+   "Pousse fort, décolle de la box",
+   "Reviens sur le même pied, freine"
+  ],
+  "erreurs": [
+   "S'aider de la jambe au sol",
+   "Haltères trop lourds, montée lente"
+  ],
+  "pourquoi": "Pousser vite sur une jambe avec une charge, c'est la puissance d'un démarrage en côte ou d'une relance en danseuse.",
+  "respiration": "Souffle en poussant.",
+  "securite": "Box stable. Maîtrise d'abord la version sans charge. Arrête si ça tire au genou.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "genou"
+  ],
+  "zones": [
+   "genoux",
+   "quadriceps",
+   "fessiers"
+  ],
+  "alternatives": [
+   "step-up-halteres",
+   "step-up",
+   "fentes-sautees"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "step-up-explosif",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 3×4 contacts/jambe, 2 min → S4 : 4×5/jambe. Haltères de 5 à 10 % de ton poids chacun",
+  "preuve": "C · [@xin2026] [@parejablanco2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "nordique"
+  ],
+  "varianteDe": "step-up-halteres"
+ },
+ {
+  "id": "hip-thrust-explosif",
+  "nom": "Hip thrust explosif (barre légère)",
+  "famille": "charniere",
+  "anim": "thrust",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, ischios",
+  "materiel": [
+   "barre",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Haut du dos sur le banc, barre aux hanches",
+   "Monte le bassin le plus vite possible",
+   "Bloque 1 s en haut, redescends en 2 s"
+  ],
+  "erreurs": [
+   "Cambrer le dos en haut",
+   "Charger trop lourd, montée lente"
+  ],
+  "pourquoi": "Des fessiers qui poussent vite, sans aucun choc : utile pour le sprint et le haut du coup de pédale, même en période de course.",
+  "respiration": "Inspire en bas, souffle fort en montant.",
+  "securite": "Menton rentré, côtes basses en haut. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "explosivite",
+   "hanche",
+   "chaine-posterieure",
+   "coup-de-pedale",
+   "foulee"
+  ],
+  "zones": [
+   "fessiers",
+   "hanches"
+  ],
+  "alternatives": [
+   "hip-thrust-barre",
+   "hip-thrust-haltere",
+   "kettlebell-swing"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "X",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3-4×5, tempo 2-0-X-1, 2 min. 40-60 % de ta charge habituelle en hip thrust",
+  "preuve": "C · [@parejablanco2017] [@jukic2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "hip-thrust-barre"
+ },
+ {
+  "id": "lancer-poitrine-medecine-ball",
+  "nom": "Lancer en poussée de poitrine (medecine-ball, mur)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, face à un mur à droite à 2-3 m. s=0 : debout, pieds largeur d'épaules, genoux à 20°, ballon tenu à deux mains contre la poitrine, coudes fléchis à 100° vers le bas. s=1 : bras tendus à l'horizontale vers le mur, doigts ouverts, ballon parti (dessiné en vol), buste légèrement penché en avant, poids sur l'avant des pieds. Matériel : medecine-ball 2-4 kg, mur.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "sac-leste",
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Ballon contre la poitrine, coudes bas",
+   "Pousse fort vers le mur, bras tendus",
+   "Rattrape, replace-toi, relance"
+  ],
+  "erreurs": [
+   "Cambrer le dos en poussant",
+   "Lancer mou pour enchaîner vite"
+  ],
+  "pourquoi": "Pousser vite avec les bras, tronc gainé : c'est ce qui te tient sur le guidon quand le VTT tape, et la fin de poussée sur les bâtons.",
+  "respiration": "Souffle sec à chaque lancer.",
+  "securite": "Mur solide, personne autour. Ballon léger. Arrête si ça tire à l'épaule ou au poignet.",
+  "tags": [
+   "haut-du-corps",
+   "explosivite",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pompes",
+   "pompes-genoux",
+   "developpe-couche-barre"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6 lancers, 60-90 s. Ballon de 2 à 4 kg, à 2-3 m du mur",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lancer-arriere-medecine-ball",
+  "nom": "Lancer en arrière par-dessus la tête (medecine-ball)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, lancer vers la gauche (derrière l'athlète). s=1 (bas) : pieds largeur d'épaules, genoux à 70°, hanches à 80°, buste penché à 45°, dos plat, bras tendus, ballon tenu à deux mains entre les genoux. s=0 (haut) : corps en extension complète sur la pointe des pieds, légèrement arqué en arrière, bras tendus au-dessus et en arrière de la tête, ballon lâché (dessiné en vol vers l'arrière-haut). Matériel : medecine-ball 3-5 kg.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "quads",
+   "lowback",
+   "delts"
+  ],
+  "musclesTxt": "Fessiers, ischios, cuisses, bas du dos, épaules",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Ballon entre les jambes, dos plat",
+   "Pousse le sol, tends tout le corps",
+   "Lance haut et loin derrière toi"
+  ],
+  "erreurs": [
+   "Lancer avec les bras seulement",
+   "Arrondir le dos en descendant"
+  ],
+  "pourquoi": "Toute la puissance des jambes et des hanches en un geste, sans réception à encaisser : le saut sans le choc.",
+  "respiration": "Inspire en descendant, souffle en lançant.",
+  "securite": "Vérifie que personne n'est derrière toi. Ne te cambre pas à fond. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "explosivite",
+   "chaine-posterieure",
+   "hanche",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "alternatives": [
+   "kettlebell-swing",
+   "squat-saute",
+   "souleve-de-terre"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4×4 lancers, 90 s. Ballon de 3 à 5 kg, dehors. Cherche la distance, mesure-la",
+  "preuve": "D · [@schumann2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lancer-rotation-medecine-ball",
+  "nom": "Lancer en rotation contre un mur (medecine-ball)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, mur sur la droite de l'image à 1,5 m, athlète de profil au mur (épaule gauche vers le mur). s=0 : pieds plus larges que les épaules, genoux à 30°, poids sur la jambe droite (loin du mur), ballon tenu à deux mains près de la hanche droite, épaules tournées à 45° vers la droite. s=1 : hanches et épaules tournées face au mur, pied droit pivoté sur la pointe, bras tendus vers le mur, ballon lâché (dessiné en vol). Matériel : medecine-ball 2-4 kg, mur.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "glutes",
+   "delts"
+  ],
+  "musclesTxt": "Obliques, abdos, fessiers, épaules",
+  "materiel": [
+   "sac-leste",
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "De profil au mur, ballon à la hanche",
+   "Pivote le pied arrière, tourne les hanches",
+   "Lance fort, rattrape, replace-toi"
+  ],
+  "erreurs": [
+   "Tourner seulement les bras",
+   "Pieds collés au sol, genou qui vrille"
+  ],
+  "pourquoi": "La force part des hanches et passe par le tronc : c'est ce qui te permet de tenir le vélo en virage ou de pousser sur un bâton.",
+  "respiration": "Souffle sec à chaque lancer.",
+  "securite": "Mur solide. Laisse pivoter le pied arrière. Arrête si ça tire dans le dos.",
+  "tags": [
+   "gainage",
+   "explosivite",
+   "hanche",
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pallof-press",
+   "gainage-lateral-rotation",
+   "cross-body"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/medicine-ball-rotational-throw/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×5 lancers de chaque côté, 60-90 s. Ballon de 2 à 4 kg, à 1-2 m du mur",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "nordique",
+   "triathlon",
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "slam-medecine-ball",
+  "nom": "Slam au sol (medecine-ball)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur la pointe des pieds, corps tendu, bras tendus au-dessus de la tête, ballon tenu à deux mains. s=1 : pieds à plat largeur d'épaules, genoux à 60°, hanches à 70°, buste penché à 45°, dos plat, bras tendus vers le sol devant les pieds, ballon lâché qui touche le sol à 20 cm devant les orteils. Matériel : medecine-ball souple 3-6 kg.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "lats",
+   "triceps",
+   "delts",
+   "glutes"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux, triceps, épaules",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Monte le ballon haut, sur les pointes",
+   "Claque-le au sol devant tes pieds",
+   "Plie hanches et genoux, dos plat"
+  ],
+  "erreurs": [
+   "Arrondir le dos pour ramasser",
+   "Se pencher sans plier les jambes"
+  ],
+  "pourquoi": "Tirer fort vers le bas avec les bras et le tronc, c'est le geste de la double poussée en ski de fond, et un gainage explosif pour tous.",
+  "respiration": "Inspire bras en haut, souffle fort en claquant.",
+  "securite": "Ballon qui ne rebondit pas, sinon écarte le visage. Arrête si ça tire dans le dos ou à l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "explosivite",
+   "cardio"
+  ],
+  "alternatives": [
+   "ski-erg",
+   "hollow-hold",
+   "mountain-climbers"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8 slams, 60-90 s. Ballon de 3 à 6 kg qui ne rebondit pas",
+  "preuve": "D · [@losnegard2011]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lancer-vertical-medecine-ball",
+  "nom": "Lancer vertical depuis le squat (medecine-ball)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=1 (bas) : squat cuisses à l'horizontale (genoux à 100°), pieds à plat largeur d'épaules, buste penché à 25°, ballon tenu à deux mains contre le haut de la poitrine, coudes sous le ballon. s=0 (haut) : corps en extension sur la pointe des pieds, bras tendus à la verticale, ballon lâché 50 cm au-dessus des mains. Matériel : medecine-ball 3-5 kg.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "delts",
+   "triceps",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, épaules, triceps",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Ballon contre la poitrine, coudes hauts",
+   "Squat, puis pousse et lance très haut",
+   "Laisse retomber au sol, replace-toi"
+  ],
+  "erreurs": [
+   "Lancer avec les bras, sans les jambes",
+   "Talons qui décollent en bas du squat"
+  ],
+  "pourquoi": "Une poussée complète des jambes jusqu'au bout des bras, sans réception : bon choix quand les sauts sont trop durs pour tes tendons.",
+  "respiration": "Inspire en descendant, souffle en lançant.",
+  "securite": "Dehors ou plafond haut. Ne rattrape pas le ballon en l'air : laisse-le tomber. Arrête si ça tire au genou ou à l'épaule.",
+  "tags": [
+   "explosivite",
+   "coup-de-pedale",
+   "montee",
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "squat-goblet",
+   "squat-saute",
+   "developpe-militaire-halteres"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/wall-ball/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×5 lancers, 90 s. Ballon de 3 à 5 kg. Cherche la hauteur maximale",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pompe-explosive",
+  "nom": "Pompe explosive (mains qui décollent)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme pushup, avec décollage des mains. Vue de profil. s=1 (bas) : planche, coudes fléchis à 90° près du corps, poitrine à 5 cm du sol, corps aligné, pointes de pieds au sol. s=0 (haut) : corps aligné, bras tendus, mains à 5-10 cm au-dessus du tapis (phase de vol des mains), pieds toujours au sol. Matériel : tapis.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Descends poitrine près du sol",
+   "Pousse si fort que les mains décollent",
+   "Amortis coudes souples, corps gainé"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse à la réception",
+   "Atterrir bras tendus, coudes verrouillés"
+  ],
+  "pourquoi": "Tes bras apprennent à encaisser et à repousser un choc, comme à la réception d'un saut ou dans un pierrier en VTT.",
+  "respiration": "Inspire en bas, souffle en poussant.",
+  "securite": "Il te faut 15 pompes propres avant d'essayer. Sol souple. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "explosivite",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pompes",
+   "pompes-genoux",
+   "planche-mains"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/clap-push-up/",
+  "valide": false,
+  "priorite": 3,
+  "prescription": "S1 : 3×4 contacts, 90 s → S4 : 4×5. Sur les genoux pour commencer",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "pompes"
+ },
+ {
+  "id": "sprint-cote-court",
+  "nom": "Sprint court en côte (6-8 s)",
+  "famille": "cardio",
+  "anim": "sprint",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, ischios, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pars à fond dès le premier appui",
+   "Genoux hauts, bras puissants",
+   "6-8 s max, redescends en marchant"
+  ],
+  "erreurs": [
+   "Sprinter plus de 10 s",
+   "Repartir sans être bien récupéré"
+  ],
+  "pourquoi": "Six secondes à fond en côte : tu recrutes tous tes muscles comme en muscu, avec très peu de choc et sans te fatiguer pour le lendemain.",
+  "respiration": "Ne retiens pas ton souffle, respire fort.",
+  "securite": "Échauffe-toi 10 min avec 2-3 accélérations avant. Arrête si ça tire derrière la cuisse ou au mollet.",
+  "tags": [
+   "explosivite",
+   "montee",
+   "foulee",
+   "cardio",
+   "trail"
+  ],
+  "alternatives": [
+   "sprint-sur-place",
+   "velo-sprint",
+   "montees-de-genoux"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 4×6 s à fond, retour marché + 2 min → S4 : 8×6-8 s. Pente 6-10 %",
+  "preuve": "C · [@ferrarofarro2026] [@kristoffersen2019]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "sprint-depart-arrete",
+  "nom": "Sprint départ arrêté (20-30 m)",
+  "famille": "cardio",
+  "anim": "sprint",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, cuisses, ischios, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un pied devant, buste penché",
+   "Pousse loin derrière sur 5 appuis",
+   "Redresse-toi peu à peu, relâche après 30 m"
+  ],
+  "erreurs": [
+   "Se redresser dès le premier pas",
+   "Freiner d'un coup à l'arrivée"
+  ],
+  "pourquoi": "Lancer ton corps depuis l'arrêt demande une grosse force appliquée vite : la base des relances et d'un départ en masse.",
+  "respiration": "Inspire avant de partir, respire fort ensuite.",
+  "securite": "Échauffe-toi 10 min avec 2-3 accélérations avant. Arrête si ça tire derrière la cuisse ou au mollet.",
+  "tags": [
+   "explosivite",
+   "foulee",
+   "cardio",
+   "hanche"
+  ],
+  "alternatives": [
+   "sprint-sur-place",
+   "montees-de-genoux",
+   "squat-saute"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "S1 : 4×20 m, 2 min → S4 : 6×30 m. Sur terrain plat et régulier",
+  "preuve": "C · [@ferrarofarro2026] [@ramirezcampillo2021b]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "sprint-velo-depart-arrete",
+  "nom": "Sprint vélo 6 s départ arrêté, gros braquet",
+  "famille": "cardio",
+  "anim": "bike",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, ischios, mollets",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Presque à l'arrêt, gros braquet",
+   "Arrache à fond 6 s, assis ou danseuse",
+   "Récupère 3 min en tournant les jambes"
+  ],
+  "erreurs": [
+   "Prendre un braquet trop facile",
+   "Raccourcir la récupération"
+  ],
+  "pourquoi": "C'est de la force maximale sur le vélo : en six semaines, le sprint court sur le vélo fait plus pour ton sprint que la muscu seule.",
+  "respiration": "Souffle fort, sans bloquer.",
+  "securite": "Vélo bien serré sur le home-trainer, ou route dégagée. Arrête si ça tire au genou.",
+  "tags": [
+   "coup-de-pedale",
+   "explosivite",
+   "velo",
+   "cardio"
+  ],
+  "alternatives": [
+   "velo-sprint",
+   "velo",
+   "rameur-sprint"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "S1 : 4×6 s à fond, 3 min faciles → S4 : 8×6 s. 1-2 fois/sem, sur home-trainer ou route calme",
+  "preuve": "B · [@kristoffersen2019] [@ferrarofarro2026]",
+  "sports": [
+   "route",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": "velo-sprint"
+ },
+ {
+  "id": "sprint-escalier",
+  "nom": "Sprint dans un escalier (6 s)",
+  "famille": "cardio",
+  "anim": "sprint",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte à fond, une marche sur deux",
+   "Pied entier sur la marche, bras actifs",
+   "6 s max, redescends en marchant"
+  ],
+  "erreurs": [
+   "Regarder ailleurs que les marches",
+   "Redescendre en courant"
+  ],
+  "pourquoi": "Pas de côte près de chez toi ? L'escalier fait le même travail : poussée maximale, genou plié, presque sans choc.",
+  "respiration": "Respire fort, sans bloquer.",
+  "securite": "Escalier sec, éclairé, sans personne. Redescends en marchant en tenant la rampe. Arrête si ça tire au mollet.",
+  "tags": [
+   "explosivite",
+   "montee",
+   "coup-de-pedale",
+   "cardio",
+   "trail"
+  ],
+  "alternatives": [
+   "sprint-sur-place",
+   "step-up",
+   "velo-sprint"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "S1 : 4×6 s, retour marché + 2 min → S4 : 8×6 s",
+  "preuve": "C · [@ferrarofarro2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lignes-droites-progressives",
+  "nom": "Lignes droites en accélération progressive",
+  "famille": "cardio",
+  "anim": "sprint",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "quads",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, ischios, cuisses, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Accélère doucement sur 60-80 m",
+   "Atteins 90 % de ta vitesse, relâché",
+   "Ralentis sur 20 m, reviens en marchant"
+  ],
+  "erreurs": [
+   "Partir à fond dès le début",
+   "Se crisper : épaules hautes, poings serrés"
+  ],
+  "pourquoi": "Courir vite et relâché quelques secondes entretient ta foulée et prépare les jambes avant une séance dure ou une course.",
+  "respiration": "Respire librement, sans forcer.",
+  "securite": "Jamais à froid. Arrête si ça tire derrière la cuisse.",
+  "tags": [
+   "foulee",
+   "avant-effort",
+   "echauffement",
+   "cardio",
+   "trail"
+  ],
+  "alternatives": [
+   "montees-de-genoux",
+   "talons-fesses",
+   "tapis"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4-6×80 m (≈ 15 s), retour marché. Après un footing ou avant une séance",
+  "preuve": "D · [@ferrarofarro2026]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "gamme-a-skip",
+  "nom": "Gamme A (skip : genou haut en sautillant)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement lent vers la droite. s=0 : appui sur l'avant du pied gauche, jambe gauche tendue, corps grand ; genou droit monté à hauteur de hanche (cuisse horizontale), pied droit relevé sous le genou, bras gauche devant coude à 90°. s=1 : petit sursaut sur le pied gauche pendant que le pied droit redescend sous le bassin ; puis inversion. Rythme : deux petits contacts par jambe (sursaut-pose). Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Fléchisseurs de hanche, mollets, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sautille, monte un genou à la hanche",
+   "Pied relevé, repose-le sous toi",
+   "Reste grand, bras en rythme"
+  ],
+  "erreurs": [
+   "S'asseoir : bassin qui recule",
+   "Poser le pied loin devant"
+  ],
+  "pourquoi": "La gamme de base du coureur : elle t'apprend à poser le pied sous toi et à rester grand, pour une foulée qui ne freine pas.",
+  "respiration": "Respire en rythme.",
+  "securite": "Sol plat et régulier. Arrête si ça tire au mollet ou au tendon d'Achille.",
+  "tags": [
+   "foulee",
+   "echauffement",
+   "avant-effort",
+   "cheville",
+   "hanche",
+   "trail"
+  ],
+  "alternatives": [
+   "montees-de-genoux",
+   "talons-fesses",
+   "pogo-jumps"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "gammes-skip",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/high-knee-skips/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2-3×20 m, retour marché. Environ 20 contacts légers par passage",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "gamme-b-skip",
+  "nom": "Gamme B (skip : genou haut puis jambe qui griffe)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement lent vers la droite. s=0 : appui sur l'avant du pied gauche, genou droit monté à hauteur de hanche, pied droit relevé. s=1 : jambe droite dépliée vers l'avant (genou à 20°, pied à 40 cm du sol) puis ramenée activement vers le bas et l'arrière pour se poser sous le bassin, avec un petit sursaut du pied gauche. Alterner. Buste vertical, bras de coureur. Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "hams",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Fléchisseurs de hanche, ischios, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte le genou, puis déplie la jambe",
+   "Ramène le pied sous toi en griffant",
+   "Reste grand, ne te penche pas en arrière"
+  ],
+  "erreurs": [
+   "Lancer la jambe et se pencher en arrière",
+   "Taper le sol talon en avant"
+  ],
+  "pourquoi": "Tu apprends à ramener le pied vers l'arrière avant qu'il touche le sol : moins de freinage à chaque foulée.",
+  "respiration": "Respire en rythme.",
+  "securite": "Sol plat. Va doucement au début. Arrête si ça tire derrière la cuisse.",
+  "tags": [
+   "foulee",
+   "echauffement",
+   "avant-effort",
+   "chaine-posterieure",
+   "hanche",
+   "trail"
+  ],
+  "alternatives": [
+   "montees-de-genoux",
+   "balancier-jambe",
+   "ischios-dynamique"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "gammes-skip",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2-3×20 m, retour marché. Seulement quand la gamme A est facile",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "griffes-jambes-tendues",
+  "nom": "Griffés jambes tendues",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers la droite. s=0 : appui bref sur l'avant du pied gauche sous le bassin, jambe gauche tendue ; jambe droite tendue levée devant à 35° de la verticale, pointe de pied relevée. s=1 : inversion en ciseaux, jambe droite ramenée tendue vers le sol et l'arrière, jambe gauche tendue qui monte devant. Buste vertical, bras de coureur opposés. Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Ischios, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Jambes presque tendues, en ciseaux",
+   "Griffe le sol vers l'arrière, pied relevé",
+   "Contact court sur l'avant du pied"
+  ],
+  "erreurs": [
+   "Se pencher en arrière",
+   "Plier les genoux comme en course"
+  ],
+  "pourquoi": "Les ischios tirent le sol vers l'arrière à chaque appui : tu actives la chaîne arrière et tu rends tes chevilles réactives.",
+  "respiration": "Respire en rythme.",
+  "securite": "Échauffe-toi avant. Arrête si ça tire derrière la cuisse.",
+  "tags": [
+   "foulee",
+   "echauffement",
+   "chaine-posterieure",
+   "cheville",
+   "avant-effort",
+   "trail"
+  ],
+  "alternatives": [
+   "talons-fesses",
+   "pogo-jumps",
+   "ischios-dynamique"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×20 m, retour marché. Environ 20 contacts par passage",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pas-chasses",
+  "nom": "Pas chassés",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, déplacement vers la droite de l'image. s=0 : pieds écartés (1,5 fois la largeur des épaules), genoux à 30°, hanches à 30°, buste légèrement penché, bras écartés bas. s=1 : pieds presque joints (10 cm), corps en léger vol à 3-5 cm du sol, genoux à 20°. Le pied droit s'écarte, le gauche le rejoint, sans jamais croiser. Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "adductors",
+   "calves",
+   "quads"
+  ],
+  "musclesTxt": "Fessiers, adducteurs, mollets, cuisses",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "De profil, genoux un peu pliés",
+   "Pousse sur le côté, les pieds se frôlent",
+   "Bassin bas et stable, puis change de côté"
+  ],
+  "erreurs": [
+   "Croiser les pieds",
+   "Sautiller haut au lieu de glisser"
+  ],
+  "pourquoi": "Le vélo et la course se font tout droit : bouger sur le côté réveille les hanches et prépare aux appuis de travers en trail ou en skating.",
+  "respiration": "Respire en rythme.",
+  "securite": "Sol sec et dégagé. Arrête si ça tire à la cheville ou à l'aine.",
+  "tags": [
+   "echauffement",
+   "hanche",
+   "cheville",
+   "proprio",
+   "avant-effort"
+  ],
+  "alternatives": [
+   "sauts-lateraux-skater-facile",
+   "fente-laterale",
+   "jumping-jack"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×15 m de chaque côté, retour marché",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "nordique",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "course-arriere",
+  "nom": "Course en arrière",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, athlète tourné vers la droite mais se déplaçant vers la gauche. s=0 : appui sur l'avant du pied droit sous le bassin, genou droit à 30°, buste penché de 10° vers l'avant ; jambe gauche fléchie à 90°, pied qui part en arrière. s=1 : jambe gauche tendue loin derrière, avant-pied qui touche le sol ; jambe droite qui se soulève devant. Bras de coureur. Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "shins"
+  ],
+  "musclesTxt": "Quadriceps, mollets, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Cours en arrière sur l'avant du pied",
+   "Petits pas, pousse loin derrière",
+   "Regarde par-dessus l'épaule de temps en temps"
+  ],
+  "erreurs": [
+   "Se pencher en arrière",
+   "Faire de grands pas, talons d'abord"
+  ],
+  "pourquoi": "Courir en arrière fait travailler les cuisses en douceur et réveille les chevilles : bon échauffement avant des sauts ou une descente.",
+  "respiration": "Respire librement.",
+  "securite": "Terrain plat, dégagé, sans obstacle derrière toi. Arrête si ça tire au mollet.",
+  "tags": [
+   "echauffement",
+   "genou",
+   "cheville",
+   "foulee",
+   "avant-effort",
+   "trail"
+  ],
+  "alternatives": [
+   "talons-fesses",
+   "montees-de-genoux",
+   "marche-pointes"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-4×20 m, retour en trottinant",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pas-croises",
+  "nom": "Pas croisés (carioca)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, déplacement vers la droite de l'image. s=0 : pied gauche croisé devant le pied droit (posé à droite de celui-ci), bassin tourné de 30° vers la droite, épaules de face, bras écartés à l'horizontale. s=1 : pied gauche croisé derrière le pied droit, bassin tourné de 30° vers la gauche, épaules toujours de face. Entre les deux, le pied droit se décale vers la droite. Appuis sur l'avant-pied, genoux à 20°. Aucun matériel.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "glutes",
+   "adductors",
+   "calves"
+  ],
+  "musclesTxt": "Obliques, fessiers, adducteurs, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "De profil : croise devant, puis derrière",
+   "Les hanches tournent, les épaules non",
+   "Sur l'avant des pieds, léger et rapide"
+  ],
+  "erreurs": [
+   "Tourner tout le buste",
+   "Regarder ses pieds"
+  ],
+  "pourquoi": "Tes hanches tournent pendant que tes épaules restent fixes : la même dissociation qu'en virage à VTT ou sur un sentier en dévers.",
+  "respiration": "Respire en rythme.",
+  "securite": "Va lentement pour apprendre. Sol sec. Arrête si ça tire à la cheville.",
+  "tags": [
+   "echauffement",
+   "hanche",
+   "proprio",
+   "cheville",
+   "avant-effort",
+   "trail"
+  ],
+  "alternatives": [
+   "balancier-jambe-lateral",
+   "sauts-lateraux-skater-facile",
+   "cercles-hanche-debout"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2×15 m de chaque côté, retour marché",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "double-poussee-elastique",
+  "nom": "Double poussée explosive à l'élastique",
+  "famille": "haut-du-corps",
+  "anim": "skierg",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "triceps",
+   "abs",
+   "delts"
+  ],
+  "musclesTxt": "Grands dorsaux, triceps, abdos, épaules",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique fixé haut, mains devant le front",
+   "Tire vite vers les hanches, buste qui plonge",
+   "Finis bras tendus derrière, remonte lent"
+  ],
+  "erreurs": [
+   "Tirer avec les bras sans fléchir le buste",
+   "Remonter d'un coup, élastique détendu"
+  ],
+  "pourquoi": "C'est le geste de la double poussée en ski de fond : dorsaux, triceps et abdos qui tirent ensemble, le plus vite possible.",
+  "respiration": "Souffle fort en tirant, inspire en remontant.",
+  "securite": "Vérifie l'ancrage de l'élastique. Dos plat quand le buste plonge. Arrête si ça tire à l'épaule ou dans le dos.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "explosivite"
+  ],
+  "alternatives": [
+   "ski-erg",
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×6, tempo 2-0-X-0, 90 s. Élastique moyen : chaque répétition doit rester rapide",
+  "preuve": "C · [@losnegard2011] [@parejablanco2017]",
+  "sports": [
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": null
+ }
+]

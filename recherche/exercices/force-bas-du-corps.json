@@ -1,0 +1,4103 @@
+[
+ {
+  "id": "squat-talons-sureleves",
+  "nom": "Squat goblet talons surélevés (cale ou disque)",
+  "famille": "squat",
+  "anim": "squat",
+  "opts": {
+   "hold": "goblet"
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps surtout, fessiers",
+  "materiel": [
+   "halteres",
+   "disque"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Talons sur une cale, pieds serrés",
+   "Buste droit, genoux qui avancent",
+   "Descends bas, remonte sans rebond"
+  ],
+  "erreurs": [
+   "Décoller les orteils",
+   "Pencher le buste en avant"
+  ],
+  "pourquoi": "Les talons surélevés chargent plus le quadriceps : le muscle qui pousse sur la pédale et freine en descente.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si ça tire sous la rotule, descends moins bas et parles-en à un kiné si ça dure.",
+  "tags": [
+   "genou",
+   "coup-de-pedale",
+   "descente-vtt",
+   "montee"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-goblet",
+   "spanish-squat",
+   "squat-pdc"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/heel-elevated-goblet-squat/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10, tempo 3-1-1-0, 90 s",
+  "preuve": "C · [@bohm2015] [@rio2019] (charge lourde et lente pour le tendon ; effet antidouleur non confirmé [@holden2020])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-goblet"
+ },
+ {
+  "id": "squat-box-barre",
+  "nom": "Squat sur box (barre sur le dos)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout, barre sur les trapèzes (mains serrées dessus), pieds largeur d'épaules, une box de 40-45 cm juste derrière les talons. s=1 : assis sur le bord de la box, cuisses horizontales, genoux à 90°, tibias presque verticaux, buste penché d'environ 30° en avant, dos plat. Appuis : deux pieds à plat, fesses posées sur la box à s=1.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, ischios",
+  "materiel": [
+   "barre",
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Fesses loin derrière, vers la box",
+   "Pose-toi 1 s sans te relâcher",
+   "Pousse fort dans le sol pour remonter"
+  ],
+  "erreurs": [
+   "Se laisser tomber sur la box",
+   "Se balancer pour repartir"
+  ],
+  "pourquoi": "La box fixe la profondeur et t'apprend à démarrer fort à l'arrêt, comme une relance en côte.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Règle la box pour avoir les cuisses à l'horizontale. Garde le dos plat et gainé une fois assis.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "explosivite",
+   "hanche"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-goblet",
+   "squat-pdc"
+  ],
+  "tempoConseille": [
+   "2",
+   "1",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×4-6, tempo 2-1-X-0, 2-3 min",
+  "preuve": "C · [@llanoslagos2024b] [@eihara2022] (preuve sur la méthode force lourde, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "demi-squat-barre-guidee",
+  "nom": "Demi-squat à la barre guidée (machine)",
+  "famille": "squat",
+  "anim": "squat",
+  "opts": {
+   "hold": "backBar"
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Descends jusqu'aux genoux à 90°",
+   "Remonte le plus vite possible",
+   "Pieds à plat, largeur du bassin"
+  ],
+  "erreurs": [
+   "Descendre de moins en moins bas",
+   "Décoller les talons"
+  ],
+  "pourquoi": "C'est l'exercice des études sur les cyclistes : il copie l'angle du genou quand tu pousses sur la pédale.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Règle les butées de sécurité juste sous ta position basse avant de charger.",
+  "tags": [
+   "coup-de-pedale",
+   "velo",
+   "montee",
+   "explosivite"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-goblet",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/smith-machine-squat/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×4-6 lourd, descente 2 s, montée rapide, 3 min",
+  "preuve": "B · [@ronnestad2010a] [@llanoslagos2026] (exercice du protocole de force lourde des cyclistes)",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": "squat-barre"
+ },
+ {
+  "id": "squat-barre-excentrique-5s",
+  "nom": "Squat barre, descente en 5 secondes",
+  "famille": "squat",
+  "anim": "squat",
+  "opts": {
+   "hold": "backBar"
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps et fessiers (en freinage)",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Compte 5 secondes pour descendre",
+   "Même vitesse du haut jusqu'en bas",
+   "Remonte normalement, sans rebond"
+  ],
+  "erreurs": [
+   "Accélérer sur la fin de la descente",
+   "Prendre trop lourd et tricher"
+  ],
+  "pourquoi": "Tes cuisses apprennent à freiner longtemps : c'est ce qu'elles font dans une longue descente de trail.",
+  "respiration": "Inspire en haut, souffle doucement en descendant, souffle fort en remontant.",
+  "securite": "Prends 20 % de moins que ton squat habituel. Attends-toi à des courbatures les premières fois : commence par 2 séries.",
+  "tags": [
+   "trail",
+   "descente-vtt",
+   "genou",
+   "foulee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-goblet",
+   "leg-extension-machine"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5, tempo 5-0-1-0, 2 min ; pas dans les 10 jours avant une course",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b] (exposition progressive à l'excentrique ; exercice : pratique de terrain)",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "squat-barre"
+ },
+ {
+  "id": "presse-a-cuisses",
+  "nom": "Presse à cuisses (machine)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, presse inclinée à 45°. Athlète assis dos calé contre le dossier incliné, mains sur les poignées près des hanches, deux pieds à plat sur le plateau, largeur du bassin. s=0 : jambes presque tendues (genoux fléchis de 10°), plateau en haut. s=1 : plateau descendu, genoux à 90°, cuisses proches du buste, fesses toujours collées au siège. Matériel : presse à cuisses avec plateau coulissant.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds à plat, largeur du bassin",
+   "Descends jusqu'aux genoux à 90°",
+   "Pousse sans verrouiller les genoux"
+  ],
+  "erreurs": [
+   "Décoller les fesses du siège",
+   "Laisser les genoux rentrer"
+  ],
+  "pourquoi": "Tu peux pousser très lourd sans technique compliquée : la voie la plus simple vers la force max de pédalage.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Garde le bas du dos collé au siège. Remets les sécurités avant de relâcher la charge.",
+  "tags": [
+   "coup-de-pedale",
+   "velo",
+   "montee",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-goblet",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/leg-press/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×4-8 lourd, tempo 3-0-1-0, 2-3 min",
+  "preuve": "C · [@llanoslagos2026] [@ronnestad2010a] (preuve sur la méthode force lourde, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "presse-a-cuisses-unijambe",
+  "nom": "Presse à cuisses sur une jambe (machine)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, presse inclinée à 45°. Athlète assis dos calé, mains sur les poignées. Un seul pied à plat au centre du plateau ; l'autre pied posé au sol, genou plié, hors du plateau. s=0 : jambe de travail presque tendue (genou fléchi de 10°). s=1 : genou de travail à 90°, cuisse proche du buste, bassin à plat sur le siège. Matériel : presse à cuisses.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un pied au milieu du plateau",
+   "Genou dans l'axe du pied",
+   "Pousse vite, freine en redescendant"
+  ],
+  "erreurs": [
+   "Laisser le bassin tourner",
+   "Genou qui part vers l'intérieur"
+  ],
+  "pourquoi": "Sur le vélo, chaque jambe pousse seule : ici tu la rends forte sans que l'autre compense.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Commence par ta jambe la plus faible et fais le même nombre de reps de l'autre côté.",
+  "tags": [
+   "coup-de-pedale",
+   "velo",
+   "montee",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-bulgare",
+   "step-up-halteres",
+   "squat-goblet"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "X",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/single-leg-press/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×4-8/jambe lourd, montée rapide, 2 min",
+  "preuve": "B · [@ronnestad2010a] [@llanoslagos2026] (exercice du protocole de force lourde des cyclistes)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "presse-deux-montent-une-descend",
+  "nom": "Presse : 2 jambes montent, 1 jambe descend",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, presse inclinée à 45°. s=0 : athlète assis dos calé, jambes presque tendues, UN seul pied sur le plateau (l'autre jambe repliée, pied décollé du plateau de 10 cm). s=1 : même jambe seule en appui, genou à 90°, plateau descendu. Pour le retour s=1→0, montrer le second pied qui se repose sur le plateau et les deux jambes qui poussent ensemble. Matériel : presse à cuisses.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps et fessiers (en freinage)",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pousse avec les 2 jambes",
+   "En haut, retire un pied du plateau",
+   "Freine 4-5 s sur une seule jambe"
+  ],
+  "erreurs": [
+   "Laisser tomber le plateau",
+   "Tourner le bassin en freinant"
+  ],
+  "pourquoi": "Une jambe freine une charge qu'elle ne pourrait pas pousser seule : très proche du travail des cuisses en descente.",
+  "respiration": "Souffle en poussant, respire lentement pendant toute la descente.",
+  "securite": "Charge ce que tu pousses facilement à 2 jambes pour 12 reps. Règle les butées de sécurité au-dessus de ta position basse.",
+  "tags": [
+   "trail",
+   "descente-vtt",
+   "genou",
+   "foulee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "leg-extension-machine",
+   "step-down-lateral-30cm",
+   "squat-goblet"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×5/jambe, descente 5 s, 2 min ; commence par 2 séries",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b] (exposition progressive à l'excentrique ; exercice : pratique de terrain)",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "landmine-squat",
+  "nom": "Squat landmine (barre calée dans un angle)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Barre olympique dont une extrémité est calée au sol devant l'athlète (à 1,5 m), l'autre extrémité chargée tenue à deux mains contre le haut de la poitrine, coudes serrés. s=0 : debout, corps légèrement incliné vers l'avant (5-10°), pieds largeur d'épaules. s=1 : squat complet, cuisses sous l'horizontale, genoux à environ 70°, buste droit, coudes entre les genoux, talons au sol.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, abdos",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bout de barre tenu contre la poitrine",
+   "Penche-toi un peu vers la barre",
+   "Descends droit, coudes entre les genoux"
+  ],
+  "erreurs": [
+   "Arrondir le dos en bas",
+   "Laisser la barre s'éloigner du torse"
+  ],
+  "pourquoi": "La barre te guide : tu apprends à squatter lourd et droit avant de passer à la barre sur le dos.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Cale bien l'autre bout de la barre dans un angle ou un support pour qu'il ne glisse pas.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "gainage"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-goblet",
+   "squat-avant",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/landmine-squat/",
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×6-10, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@llanoslagos2024b] [@eihara2022] (preuve sur la méthode force lourde, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "sissy-squat-assiste",
+  "nom": "Sissy squat assisté (une main sur un appui)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout, pieds largeur du bassin, une main tenant un montant ou un cadre de porte à hauteur de hanche. s=1 : talons décollés (appui sur l'avant des pieds), genoux fléchis à 90° et avancés loin devant les orteils, hanches en extension complète : cuisses, bassin et buste alignés et inclinés d'environ 45° vers l'arrière. Bras libre le long du corps.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "hipflex",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps (droit de la cuisse compris), abdos",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur les pointes, tiens l'appui",
+   "Genoux en avant, buste en arrière",
+   "Ligne droite des genoux aux épaules"
+  ],
+  "erreurs": [
+   "Plier les hanches (fesses en arrière)",
+   "Descendre trop bas trop tôt"
+  ],
+  "pourquoi": "Il charge fort le quadriceps genou très plié, sans matériel : utile en voyage pour garder des genoux solides.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Commence par une petite amplitude. Une gêne légère devant le genou peut passer ; si ça fait mal, arrête.",
+  "tags": [
+   "genou",
+   "descente-vtt",
+   "trail"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "spanish-squat",
+   "leg-extension-machine",
+   "chaise-mur"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/sissy-squat/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-0-2-0, 90 s",
+  "preuve": "C · [@bohm2015] [@rio2019] (charge lourde et lente pour le tendon ; effet antidouleur non confirmé [@holden2020])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "reverse-nordic",
+  "nom": "Nordic inversé (à genoux, buste en arrière)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : à genoux sur un tapis, genoux largeur du bassin, cuisses et buste verticaux, dessus des pieds à plat au sol, bras croisés sur la poitrine. s=1 : cuisses, bassin et buste restent alignés et basculent ensemble vers l'arrière d'environ 40° (genoux fléchis à ~50°), sans plier les hanches ; fesses à 20-30 cm des talons. Appuis : genoux, tibias et dessus des pieds.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "hipflex",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps en étirement, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "À genoux, fessiers et abdos serrés",
+   "Penche-toi en arrière d'un bloc",
+   "Reviens en poussant les tibias au sol"
+  ],
+  "erreurs": [
+   "Creuser le bas du dos",
+   "S'asseoir sur les talons en cassant"
+  ],
+  "pourquoi": "Il renforce le quadriceps en position allongée, là où il travaille quand ta jambe passe derrière toi en course.",
+  "respiration": "Inspire en te penchant, souffle en revenant.",
+  "securite": "Va seulement jusqu'où tu contrôles. Mets un tapis épais sous les genoux. Si ça tire fort devant le genou, réduis l'amplitude.",
+  "tags": [
+   "genou",
+   "foulee",
+   "trail",
+   "mobilite"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "spanish-squat",
+   "leg-extension-machine",
+   "couch-stretch"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-8, tempo 4-0-2-0, 90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "spanish-squat-isometrique",
+  "nom": "Spanish squat tenu (sangle ou élastique fort)",
+  "famille": "squat",
+  "anim": "spanish",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads"
+  ],
+  "musclesTxt": "Quadriceps",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sangle tendue derrière les genoux",
+   "Assieds-toi en arrière, tibias droits",
+   "Tiens cuisses presque horizontales"
+  ],
+  "erreurs": [
+   "Remonter petit à petit",
+   "Se pencher en avant"
+  ],
+  "pourquoi": "Une tenue longue charge fort le quadriceps et son tendon sans choc : pratique en saison, entre deux courses.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Une gêne légère sous la rotule peut passer, une douleur non. Ce n'est pas un soin : si ça dure, parles-en à un kiné.",
+  "tags": [
+   "genou",
+   "descente-vtt",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "spanish-squat",
+   "chaise-mur",
+   "chaise-mur-unijambe"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 40,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5×30-45 s, 1-2 min de repos",
+  "preuve": "C · [@bohm2015] [@rio2019] (charge lourde et lente pour le tendon ; effet antidouleur non confirmé [@holden2020])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "spanish-squat"
+ },
+ {
+  "id": "chaise-mur-lestee",
+  "nom": "Chaise contre le mur lestée (disque ou sac)",
+  "famille": "squat",
+  "anim": "wallsit",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "mur",
+   "disque"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dos au mur, genoux à 90°",
+   "Pose la charge sur le haut des cuisses",
+   "Pousse le sol, ne bouge plus"
+  ],
+  "erreurs": [
+   "Remonter les fesses",
+   "Appuyer les mains sur les cuisses"
+  ],
+  "pourquoi": "Quand la chaise simple devient facile, le lest remet de la force au lieu d'ajouter des minutes.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Demande à quelqu'un de poser et retirer la charge. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "descente-vtt",
+   "trail"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "chaise-mur",
+   "chaise-mur-unijambe",
+   "spanish-squat"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 40,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×30-45 s, 90 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "chaise-mur"
+ },
+ {
+  "id": "chaise-mur-talons-decolles",
+  "nom": "Chaise contre le mur, talons décollés",
+  "famille": "squat",
+  "anim": "wallsit",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, mollets",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dos au mur, genoux à 90°",
+   "Décolle les talons de 3-4 cm",
+   "Reste haut sur l'avant des pieds"
+  ],
+  "erreurs": [
+   "Laisser retomber les talons",
+   "Chevilles qui partent sur le côté"
+  ],
+  "pourquoi": "Cuisses et mollets tiennent ensemble, comme debout sur les pédales dans une longue descente.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Si le mollet menace de cramper, repose les talons et secoue les jambes.",
+  "tags": [
+   "descente-vtt",
+   "genou",
+   "cheville",
+   "trail"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux",
+   "mollets"
+  ],
+  "alternatives": [
+   "chaise-mur",
+   "chaise-mur-unijambe",
+   "mollets-debout"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×30 s, 60 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "chaise-mur"
+ },
+ {
+  "id": "squat-isometrique-butees",
+  "nom": "Squat isométrique contre les butées (barre bloquée)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil dans un rack. Barre vide posée sur les trapèzes et bloquée SOUS deux butées de sécurité fixes (elle ne peut pas monter). Position unique tenue : pieds à plat largeur du bassin, genoux fléchis à ~100-110° (quart à demi-squat), hanches légèrement en arrière, buste incliné de 20°, dos plat, mains serrées sur la barre. Animation : pas de déplacement, juste une légère vibration de poussée vers le haut contre les butées.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "lowback"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, bas du dos",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Barre bloquée sous les butées du rack",
+   "Genoux pliés comme la pédale à 3 h",
+   "Pousse à fond 3 à 5 secondes"
+  ],
+  "erreurs": [
+   "Pousser par à-coups",
+   "Arrondir le dos sous la barre"
+  ],
+  "pourquoi": "Tu pousses à 100 % sans bouger : beaucoup de force, très peu de courbatures. Idéal en saison.",
+  "respiration": "Souffle pendant la poussée, ne bloque pas l'air plus de 2 s.",
+  "securite": "Monte en pression sur 1 seconde, sans coup sec. Échauffe-toi avec 2 poussées à 50 % puis 70 %.",
+  "tags": [
+   "coup-de-pedale",
+   "velo",
+   "montee",
+   "explosivite"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "chaise-mur-unijambe",
+   "squat-goblet"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×(3 poussées de 3-5 s), 20 s entre poussées, 2 min entre séries",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-presse-angle-pedalage",
+  "nom": "Poussée isométrique une jambe à la presse (angle de pédalage)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, presse inclinée à 45° dont le plateau repose sur ses butées de sécurité (il ne peut pas bouger). Athlète assis dos calé, mains sur les poignées, un seul pied au centre du plateau, genou fléchi à ~90-100°, l'autre pied au sol. Position unique tenue, sans déplacement : montrer une légère tension de poussée dans la jambe d'appui.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Plateau bloqué sur les sécurités",
+   "Un pied, genou plié à environ 90°",
+   "Pousse à fond 3 à 5 secondes"
+  ],
+  "erreurs": [
+   "Décoller les fesses du siège",
+   "Pousser avec l'autre jambe en douce"
+  ],
+  "pourquoi": "Tu travailles la force max à l'angle exact où tu pousses le plus fort sur la pédale, sans fatiguer tes jambes.",
+  "respiration": "Souffle pendant la poussée, ne bloque pas l'air plus de 2 s.",
+  "securite": "Vérifie que le plateau est bien bloqué avant de pousser. Monte en pression progressivement.",
+  "tags": [
+   "coup-de-pedale",
+   "velo",
+   "montee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "chaise-mur-unijambe",
+   "squat-goblet",
+   "step-up"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×(3 poussées de 3-5 s)/jambe, 20 s entre poussées, 2 min",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-position-descente-vtt",
+  "nom": "Tenue en position d'attaque VTT (sac lesté sur le dos)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Position unique tenue : pieds à plat décalés d'une longueur de pied (un pied devant l'autre, comme pédales à l'horizontale), genoux fléchis à ~120°, hanches reculées, buste incliné à ~45° dos plat, bras devant comme sur un cintre large (coudes fléchis à 100° et écartés), tête relevée regard devant. Sac à dos lesté sur le dos. Animation : très légers rebonds verticaux de 2-3 cm.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "lowback",
+   "hams"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, bas du dos, ischios",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds décalés comme sur les pédales",
+   "Fesses en arrière, buste penché, dos plat",
+   "Coudes ouverts, regard loin devant"
+  ],
+  "erreurs": [
+   "Se redresser quand ça brûle",
+   "Arrondir le bas du dos"
+  ],
+  "pourquoi": "C'est ta position en descente technique : la tenir longtemps sans vélo prépare cuisses et dos aux longues descentes.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Si le bas du dos tire, enlève le sac et redresse un peu le buste.",
+  "tags": [
+   "descente-vtt",
+   "dos",
+   "gainage",
+   "hanche"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "chaise-mur",
+   "rdl-halteres",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 45,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×45-60 s, 60 s ; ajoute du poids dans le sac avant d'ajouter du temps",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-unijambe-box-haute",
+  "nom": "Squat une jambe, assis-debout sur box haute",
+  "famille": "squat",
+  "anim": "t_slsts",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout sur une jambe devant la box",
+   "Assieds-toi lentement, 3 secondes",
+   "Relève-toi sans élan, genou dans l'axe"
+  ],
+  "erreurs": [
+   "Se laisser tomber sur la box",
+   "Genou qui rentre vers l'intérieur"
+  ],
+  "pourquoi": "Premier pas vers le squat sur une jambe : de la vraie force, à la maison, sans charge.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Prends une box ou une chaise stable de 50 cm environ. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "montee",
+   "foulee",
+   "proprio"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "mini-squat-unipodal-sol",
+   "step-up",
+   "fente-bulgare-sans-charge"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "squat-pistol",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8/jambe, tempo 3-1-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-unijambe-box-basse",
+  "nom": "Squat une jambe, assis-debout sur box basse",
+  "famille": "squat",
+  "anim": "t_slsts",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Box à hauteur de genou ou plus bas",
+   "Bras devant pour l'équilibre",
+   "Effleure la box, ne t'assieds pas"
+  ],
+  "erreurs": [
+   "Rebondir sur la box",
+   "Décoller le talon d'appui"
+  ],
+  "pourquoi": "Plus la box est basse, plus la jambe travaille fort : tu approches du pistol sans risquer la chute.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Baisse la box de 5 cm seulement quand 8 reps propres passent. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "montee",
+   "foulee",
+   "proprio"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-down-lateral-30cm",
+   "fente-bulgare",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "squat-pistol",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-8/jambe, tempo 3-0-1-0, 2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-pistol-assiste",
+  "nom": "Squat pistol assisté (sangle ou montant)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Les deux mains tiennent les poignées d'une sangle de suspension (ou un montant) fixée devant, à hauteur de poitrine. s=0 : debout sur une jambe, l'autre jambe tendue levée devant à 20 cm du sol. s=1 : squat complet sur la jambe d'appui (genou à ~40°, fesse près du talon, talon au sol), jambe libre tendue horizontale devant, buste légèrement penché en arrière retenu par la sangle, bras tendus.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hipflex"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, fléchisseurs de hanche",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Tiens la sangle, bras presque tendus",
+   "Descends à fond sur une jambe",
+   "Aide-toi des bras le moins possible"
+  ],
+  "erreurs": [
+   "Tirer fort avec les bras",
+   "Talon d'appui qui décolle"
+  ],
+  "pourquoi": "Tu fais toute l'amplitude sur une jambe avec juste l'aide qu'il faut : force et mobilité en même temps.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Vérifie que la sangle est bien accrochée. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "montee",
+   "foulee",
+   "cheville"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-down-lateral-30cm",
+   "fente-bulgare",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "squat-pistol",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×4-6/jambe, tempo 3-0-1-0, 2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-pistol",
+  "nom": "Squat pistol (squat complet sur une jambe)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur une jambe, bras tendus devant à l'horizontale, jambe libre tendue devant à 20 cm du sol. s=1 : squat complet sur la jambe d'appui (genou à ~40°, fesse près du talon, talon à plat), jambe libre tendue à l'horizontale devant, buste penché en avant de 30-40°, bras tendus devant en contrepoids. Aucun matériel.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hipflex",
+   "abs"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, fléchisseurs de hanche, abdos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Jambe libre tendue devant toi",
+   "Descends lentement, talon au sol",
+   "Remonte sans rebond, genou dans l'axe"
+  ],
+  "erreurs": [
+   "Tomber dans la position basse",
+   "Arrondir le dos et basculer en arrière"
+  ],
+  "pourquoi": "La force max sur une jambe, sans aucun matériel : parfait en voyage ou en stage.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Passe par les niveaux sur box et assisté d'abord. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "montee",
+   "foulee",
+   "proprio"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-down-lateral-30cm-halteres",
+   "fente-bulgare",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "squat-pistol",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/pistol-squat/",
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×3-5/jambe, tempo 3-0-1-0, 2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-patineur",
+  "nom": "Squat du patineur (genou arrière vers un coussin)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur une jambe, l'autre genou fléchi à 90° avec le pied derrière (tibia horizontal), bras le long du corps. s=1 : jambe d'appui fléchie (genou à ~80°), buste incliné à ~45° vers l'avant, bras tendus devant à l'horizontale, genou arrière posé légèrement sur un coussin de 10 cm placé derrière le talon d'appui ; le pied arrière ne touche jamais le sol.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur une jambe, l'autre pliée derrière",
+   "Buste penché, bras tendus devant",
+   "Pose le genou arrière sur le coussin"
+  ],
+  "erreurs": [
+   "Poser le pied arrière au sol",
+   "Tomber sur le genou"
+  ],
+  "pourquoi": "Chaque jambe pousse seule, buste penché comme en montée raide : fort pour le trail, sans matériel.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Mets un coussin épais sous le genou arrière. Arrête si tu as mal dans le genou d'appui.",
+  "tags": [
+   "montee",
+   "genou",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-bulgare-sans-charge",
+   "step-down-lateral-30cm",
+   "fente-arriere"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/skater-squat/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-8/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-crevette",
+  "nom": "Squat crevette (shrimp squat, pied arrière tenu)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur une jambe, l'autre genou fléchi à fond, pied arrière tenu par la main du même côté contre la fesse, bras opposé tendu devant. s=1 : jambe d'appui fléchie (genou à ~60°), buste incliné à ~45°, genou arrière qui touche un tapis au sol juste derrière le talon d'appui, pied arrière toujours tenu contre la fesse, bras libre tendu devant.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Attrape ton pied arrière d'une main",
+   "Descends, genou arrière vers le sol",
+   "Remonte sans lâcher le pied"
+  ],
+  "erreurs": [
+   "Lâcher le pied pour s'aider",
+   "Se pencher et perdre l'équilibre"
+  ],
+  "pourquoi": "Le plus dur des squats sur une jambe sans charge : de quoi rester fort avec zéro matériel.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Maîtrise d'abord le squat du patineur. Pose le genou en douceur sur un tapis. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "genou",
+   "montee",
+   "foulee",
+   "proprio"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-down-lateral-30cm-halteres",
+   "fente-bulgare",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/shrimp-squat/",
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×3-5/jambe, tempo 3-0-1-0, 2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "split-squat-halteres",
+  "nom": "Split squat avec haltères (pieds au sol)",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back",
+   "load": "db"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds décalés, ils ne bougent plus",
+   "Descends droit, genou arrière vers le sol",
+   "Pousse dans le talon de devant"
+  ],
+  "erreurs": [
+   "Partir vers l'avant au lieu de descendre",
+   "Genou avant qui rentre"
+  ],
+  "pourquoi": "Plus stable qu'une fente : tu peux charger lourd sur une jambe dès les premières séances.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Écarte assez les pieds en largeur pour rester stable. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "genou",
+   "foulee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-arriere-halteres",
+   "fente-bulgare",
+   "fente-bulgare-sans-charge"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "split-squat-isometrique",
+  "nom": "Split squat tenu en bas",
+  "famille": "fente",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Position unique tenue : fente basse, pied avant à plat, genou avant à 90° au-dessus de la cheville ; jambe arrière genou fléchi à 90° suspendu à 5 cm du sol, appui sur l'avant du pied arrière ; buste vertical, mains sur les hanches. Animation : immobile, avec un très léger tremblement.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hipflex"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, fléchisseurs de hanche",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Fente basse, genou arrière à 5 cm du sol",
+   "Buste droit, bassin de face",
+   "Pousse le sol et ne bouge plus"
+  ],
+  "erreurs": [
+   "Remonter petit à petit",
+   "Poser le genou arrière"
+  ],
+  "pourquoi": "Tu charges cuisse et tendons d'une jambe sans mouvement : peu de courbatures, faisable partout, même en saison.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Si le genou avant fait mal, remonte de quelques centimètres. Ajoute des haltères quand 45 s deviennent faciles.",
+  "tags": [
+   "genou",
+   "foulee",
+   "trail",
+   "hanche"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux",
+   "hanches"
+  ],
+  "alternatives": [
+   "chaise-mur-unijambe",
+   "fente-arriere",
+   "fente-bulgare-sans-charge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 35,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4×30-45 s/jambe, 60 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "fente-bulgare-barre",
+  "nom": "Fente bulgare avec barre sur le dos",
+  "famille": "fente",
+  "anim": "split",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "barre",
+   "banc"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre sur les trapèzes, pied arrière sur banc",
+   "Descends droit, buste un peu penché",
+   "Pousse fort dans le pied de devant"
+  ],
+  "erreurs": [
+   "Pousser avec la jambe arrière",
+   "Genou avant qui rentre"
+  ],
+  "pourquoi": "La version lourde de la fente bulgare : la force max d'une jambe, celle qui compte dans un sprint en côte.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Maîtrise la version haltères d'abord. Travaille dans un rack avec les sécurités réglées.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "explosivite",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-bulgare",
+   "fente-arriere-halteres",
+   "squat-barre"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/barbell-bulgarian-split-squat/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×4-6/jambe lourd, tempo 3-0-1-0, 2-3 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fente-bulgare"
+ },
+ {
+  "id": "fente-marchee-halteres",
+  "nom": "Fentes marchées avec haltères",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "fwd"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, ischios",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Grand pas, genou arrière près du sol",
+   "Pousse et enchaîne sur l'autre jambe",
+   "Buste droit, haltères le long du corps"
+  ],
+  "erreurs": [
+   "Faire des petits pas",
+   "Genou avant qui rentre"
+  ],
+  "pourquoi": "Tu freines puis tu pousses à chaque pas, en avançant : très proche de la course en côte et en descente.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Garde 10 m de place devant toi. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "foulee",
+   "montee",
+   "trail",
+   "hanche"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-avant",
+   "fente-arriere-halteres",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/dumbbell-walking-lunge/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10 pas/jambe, 90 s-2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "trail",
+   "nordique",
+   "triathlon",
+   "xco",
+   "route"
+  ],
+  "varianteDe": "fente-avant"
+ },
+ {
+  "id": "fente-arriere-barre",
+  "nom": "Fente arrière avec barre sur le dos",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre sur les trapèzes, gainage serré",
+   "Grand pas en arrière, genou près du sol",
+   "Reviens en poussant le pied de devant"
+  ],
+  "erreurs": [
+   "Pencher le buste et la barre",
+   "Pousser avec la jambe arrière"
+  ],
+  "pourquoi": "La fente la plus facile à charger lourd : force d'une jambe et bassin stable sous la charge.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Pars d'un rack. Garde de la marge : 1-2 reps en réserve, jamais à l'échec avec une barre.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "genou",
+   "gainage"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-arriere-halteres",
+   "fente-bulgare",
+   "squat-barre"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-6/jambe lourd, 2-3 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fente-arriere-halteres"
+ },
+ {
+  "id": "fente-arriere-excentrique",
+  "nom": "Fente arrière, descente en 5 secondes (haltères)",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back",
+   "load": "db"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps et fessiers (en freinage)",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Recule le pied, puis compte 5 secondes",
+   "Descends à vitesse constante",
+   "Remonte normalement"
+  ],
+  "erreurs": [
+   "Accélérer en fin de descente",
+   "Mettre le poids sur la jambe arrière"
+  ],
+  "pourquoi": "La jambe avant freine longtemps sous charge, comme à chaque appui d'une descente raide en trail.",
+  "respiration": "Souffle doucement pendant la descente, souffle fort en remontant.",
+  "securite": "Attends-toi à des courbatures les premières fois : commence par 2 séries, loin d'une course.",
+  "tags": [
+   "trail",
+   "descente-vtt",
+   "genou",
+   "foulee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-arriere-halteres",
+   "step-down-lateral-30cm",
+   "fente-bulgare"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5/jambe, tempo 5-0-1-0, 2 min",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b] (exposition progressive à l'excentrique ; exercice : pratique de terrain)",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "fente-arriere-halteres"
+ },
+ {
+  "id": "fente-arriere-sac-leste",
+  "nom": "Fente arrière avec sac lesté",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sac serré sur le dos ou contre le torse",
+   "Grand pas en arrière, genou près du sol",
+   "Pousse dans le pied de devant"
+  ],
+  "erreurs": [
+   "Sac qui ballotte",
+   "Genou avant qui rentre"
+  ],
+  "pourquoi": "La fente chargée de la maison : un sac à dos rempli de livres ou de bouteilles suffit pour progresser.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Serre bien les sangles du sac. Arrête si tu as mal dans le genou.",
+  "tags": [
+   "montee",
+   "genou",
+   "foulee",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-arriere-halteres",
+   "fente-arriere",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fente-arriere-halteres"
+ },
+ {
+  "id": "fente-laterale-haltere",
+  "nom": "Fente latérale avec haltère (goblet)",
+  "famille": "fente",
+  "anim": "sidelunge",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "adductors"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, adducteurs",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Haltère contre la poitrine",
+   "Grand pas de côté, fesses en arrière",
+   "L'autre jambe reste tendue"
+  ],
+  "erreurs": [
+   "Genou qui dépasse vers l'intérieur",
+   "Talon qui décolle"
+  ],
+  "pourquoi": "Tu deviens fort sur le côté : utile pour les appuis en dévers, les virages à pied et le pas de patineur.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si ça tire fort à l'intérieur de la cuisse, réduis la taille du pas.",
+  "tags": [
+   "hanche",
+   "genou",
+   "trail",
+   "descente-vtt"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "adducteurs",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-laterale",
+   "squat-sumo",
+   "fente-arriere-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "trail",
+   "nordique",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": "fente-laterale"
+ },
+ {
+  "id": "squat-cosaque",
+  "nom": "Squat cosaque (d'une jambe à l'autre)",
+  "famille": "fente",
+  "anim": "tm_cossack",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "adductors"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, adducteurs",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pieds très écartés",
+   "Descends à fond sur une jambe",
+   "L'autre jambe tendue, orteils vers le haut"
+  ],
+  "erreurs": [
+   "Décoller le talon de la jambe pliée",
+   "Arrondir le dos pour descendre"
+  ],
+  "pourquoi": "Force et souplesse de hanche en même temps : pour bouger librement sur le vélo dans le technique.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Tiens un appui devant toi au début. Si ça tire fort à l'aine, descends moins bas.",
+  "tags": [
+   "hanche",
+   "mobilite",
+   "descente-vtt",
+   "genou"
+  ],
+  "zones": [
+   "hanches",
+   "adducteurs",
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-laterale",
+   "squat-sumo",
+   "squat-pdc"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/cossack-squat/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-6/côté, tempo 3-1-1-0, 60-90 s ; ajoute un haltère en goblet ensuite",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "trail",
+   "nordique"
+  ],
+  "varianteDe": "fente-laterale"
+ },
+ {
+  "id": "step-up-barre",
+  "nom": "Step-up haut avec barre (box à hauteur de genou)",
+  "famille": "fente",
+  "anim": "stepup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "barre",
+   "box"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Pied entier sur la box, barre sur le dos",
+   "Monte sans pousser avec le pied du bas",
+   "Redescends lentement, en contrôle"
+  ],
+  "erreurs": [
+   "S'élancer avec la jambe du bas",
+   "Genou qui rentre en montant"
+  ],
+  "pourquoi": "Une jambe soulève tout ton poids plus la barre sur une grande marche : la force des montées raides.",
+  "respiration": "Souffle en montant, inspire en redescendant.",
+  "securite": "Box stable et antidérapante. Garde 2 reps en réserve : on ne rate pas une rep avec une barre sur le dos.",
+  "tags": [
+   "montee",
+   "coup-de-pedale",
+   "trail",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-up-halteres",
+   "fente-bulgare",
+   "squat-barre"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/barbell-step-up/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×4-6/jambe lourd, tempo 3-0-1-0, 2-3 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "step-up-halteres"
+ },
+ {
+  "id": "step-up-sac-leste",
+  "nom": "Step-up haut avec sac lesté (chaise ou banc)",
+  "famille": "fente",
+  "anim": "stepup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps, fessiers",
+  "materiel": [
+   "sac-leste",
+   "box"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pied entier sur le support",
+   "Monte sans pousser avec le pied du bas",
+   "Descends en 3 secondes"
+  ],
+  "erreurs": [
+   "S'élancer avec la jambe du bas",
+   "Se pencher pour tricher"
+  ],
+  "pourquoi": "Avec un sac et une chaise solide, tu refais chez toi l'effort d'une marche haute en montagne.",
+  "respiration": "Souffle en montant, inspire en redescendant.",
+  "securite": "Cale le support contre un mur pour qu'il ne glisse pas.",
+  "tags": [
+   "montee",
+   "trail",
+   "genou",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-up-halteres",
+   "step-up",
+   "squat-sac-leste"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "step-up-halteres"
+ },
+ {
+  "id": "step-down-avant-excentrique",
+  "nom": "Descente de marche de face, lente (5 s)",
+  "famille": "fente",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout sur une marche de 20 cm, face au vide, appui sur une jambe au bord de la marche, l'autre jambe tendue devant dans le vide, mains sur les hanches. s=1 : genou d'appui fléchi à ~110° et avancé au-dessus des orteils, talon d'appui à plat, bassin horizontal, buste presque vertical, talon de la jambe libre qui effleure le sol devant la marche.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Quadriceps (en freinage), fessiers",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Debout sur la marche, face au vide",
+   "Descends 5 s, talon vers le sol devant",
+   "Effleure le sol, remonte à 2 jambes"
+  ],
+  "erreurs": [
+   "Se laisser tomber sur la fin",
+   "Genou qui rentre vers l'intérieur"
+  ],
+  "pourquoi": "C'est exactement le geste d'une descente en trail : la cuisse freine ton poids, genou en avant.",
+  "respiration": "Souffle doucement pendant toute la descente.",
+  "securite": "Commence sur 15-20 cm. Une gêne légère devant le genou peut passer ; si ça fait mal, baisse la marche.",
+  "tags": [
+   "trail",
+   "genou",
+   "foulee",
+   "descente-vtt"
+  ],
+  "zones": [
+   "quadriceps",
+   "genoux"
+  ],
+  "alternatives": [
+   "step-down-lateral",
+   "step-down-lateral-30cm",
+   "spanish-squat"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8/jambe, descente 5 s, 90 s ; marche plus haute puis haltères",
+  "preuve": "C · [@khassetarash2023] [@giandolini2016b] (exposition progressive à l'excentrique ; exercice : pratique de terrain)",
+  "sports": [
+   "trail",
+   "nordique",
+   "triathlon",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "fente-arriere-deficit",
+  "nom": "Fente arrière depuis une marche (grande amplitude)",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, quadriceps, ischios",
+  "materiel": [
+   "marche",
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Debout sur une marche de 10-15 cm",
+   "Recule le pied loin, jusqu'au sol",
+   "Remonte avec la jambe de la marche"
+  ],
+  "erreurs": [
+   "Pousser avec le pied du bas",
+   "Buste qui s'effondre"
+  ],
+  "pourquoi": "La marche allonge le mouvement : le fessier travaille étiré, comme quand tu pousses haut sur une grosse marche.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Marche stable et large. Si ça tire dans l'aine arrière, baisse la marche.",
+  "tags": [
+   "montee",
+   "hanche",
+   "trail",
+   "genou"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "fente-arriere-halteres",
+   "fente-bulgare",
+   "step-up-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×6-8/jambe, tempo 3-0-1-0, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fente-arriere-halteres"
+ },
+ {
+  "id": "marche-laterale-elastique",
+  "nom": "Marche latérale avec élastique (pas chassés)",
+  "famille": "fente",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Mini-élastique en boucle autour des cuisses juste au-dessus des genoux. Position de base : demi-squat (genoux à ~130°), buste légèrement penché, mains jointes devant la poitrine, pieds parallèles largeur du bassin. s=0 : pieds largeur du bassin. s=1 : un pied a fait un pas de 30 cm sur le côté (pieds largeur 1,5× épaules), élastique étiré, bassin à la même hauteur. Puis l'autre pied suit ; 4 pas d'un côté, 4 de l'autre.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes"
+  ],
+  "musclesTxt": "Moyen fessier (côté de la hanche)",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique au-dessus des genoux",
+   "Demi-squat, pieds parallèles",
+   "Petits pas de côté, élastique tendu"
+  ],
+  "erreurs": [
+   "Laisser les genoux rentrer",
+   "Se balancer d'un côté à l'autre"
+  ],
+  "pourquoi": "Le fessier du côté tient ton bassin et ton genou dans l'axe à chaque appui et à chaque coup de pédale.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Si tu le sens dans le genou et pas dans la fesse, remonte un peu et écarte les genoux.",
+  "tags": [
+   "hanche",
+   "genou",
+   "foulee",
+   "echauffement"
+  ],
+  "zones": [
+   "fessiers",
+   "hanches",
+   "genoux"
+  ],
+  "alternatives": [
+   "gainage-lateral-jambe-levee",
+   "fente-laterale",
+   "step-down-lateral"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/resistance-band-lateral-walk/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12 pas/côté, 45 s ; aussi en activation avant une séance",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "souleve-de-terre-trap-bar",
+  "nom": "Soulevé de terre à la trap bar (barre hexagonale)",
+  "famille": "charniere",
+  "anim": "deadlift",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams",
+   "lowback"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, ischios, bas du dos",
+  "materiel": [
+   "barre",
+   "disque"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Place-toi au milieu de la barre",
+   "Dos plat, poitrine sortie",
+   "Pousse le sol, finis hanches droites"
+  ],
+  "erreurs": [
+   "Arrondir le dos au décollage",
+   "Tirer avec les bras"
+  ],
+  "pourquoi": "Le mouvement lourd le plus simple à apprendre : beaucoup de force dans les jambes, moins de contrainte sur le dos.",
+  "respiration": "Inspire et gaine avant de tirer, souffle en haut.",
+  "securite": "Pose la barre à chaque rep et replace ton dos. Si le bas du dos tire, baisse la charge.",
+  "tags": [
+   "coup-de-pedale",
+   "montee",
+   "explosivite",
+   "chaine-posterieure"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "ischios",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "souleve-de-terre",
+   "squat-barre",
+   "rdl-barre"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/trap-bar-deadlift/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×4-6 lourd, 2-3 min",
+  "preuve": "C · [@llanoslagos2024b] [@eihara2022] (preuve sur la méthode force lourde, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "souleve-de-terre"
+ },
+ {
+  "id": "souleve-de-terre-kettlebell",
+  "nom": "Soulevé de terre kettlebell",
+  "famille": "charniere",
+  "anim": "deadlift",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "lowback"
+  ],
+  "musclesTxt": "Fessiers, ischios, bas du dos",
+  "materiel": [
+   "kettlebell"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Kettlebell entre les chevilles",
+   "Fesses en arrière, dos plat",
+   "Pousse le sol, serre les fessiers en haut"
+  ],
+  "erreurs": [
+   "Arrondir le dos",
+   "Plier les genoux comme un squat"
+  ],
+  "pourquoi": "Tu apprends à soulever avec les hanches et pas avec le dos : la base avant la barre.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si le bas du dos tire, surélève la kettlebell sur un disque.",
+  "tags": [
+   "chaine-posterieure",
+   "hanche",
+   "dos",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "rdl-halteres",
+   "pont-fessier",
+   "kettlebell-swing"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/kettlebell-deadlift/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10, tempo 3-0-1-1, 90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "souleve-de-terre"
+ },
+ {
+  "id": "rdl-appui-decale",
+  "nom": "Soulevé de terre jambes tendues, appui décalé (haltères)",
+  "famille": "charniere",
+  "anim": "rdl",
+  "opts": {
+   "load": "db"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes",
+   "lowback"
+  ],
+  "musclesTxt": "Ischios, fessiers, bas du dos",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "80 % du poids sur la jambe avant",
+   "Pied arrière sur la pointe, en béquille",
+   "Fesses en arrière, haltères près des jambes"
+  ],
+  "erreurs": [
+   "Répartir le poids sur les 2 jambes",
+   "Arrondir le dos"
+  ],
+  "pourquoi": "Tu charges lourd une jambe à la fois sans être limité par l'équilibre : idéal entre le RDL et le RDL une jambe.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si le bas du dos tire, arrête les haltères sous les genoux.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "hanche",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "rdl-unijambe-haltere",
+   "rdl-halteres",
+   "rdl-barre"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8/jambe, tempo 3-0-1-0, 90 s-2 min",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "rdl-halteres"
+ },
+ {
+  "id": "rdl-sac-leste",
+  "nom": "Soulevé de terre jambes tendues avec sac lesté",
+  "famille": "charniere",
+  "anim": "rdl",
+  "opts": {
+   "load": "db"
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes",
+   "lowback"
+  ],
+  "musclesTxt": "Ischios, fessiers, bas du dos",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Tiens le sac à deux mains devant toi",
+   "Fesses loin derrière, dos plat",
+   "Le sac glisse le long des jambes"
+  ],
+  "erreurs": [
+   "Arrondir le dos",
+   "Plier les genoux comme un squat"
+  ],
+  "pourquoi": "Le travail des ischios et des fessiers à la maison, avec juste un sac bien rempli.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si le bas du dos tire, arrête le sac sous les genoux.",
+  "tags": [
+   "chaine-posterieure",
+   "dos",
+   "foulee",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "rdl-halteres",
+   "rdl-unijambe",
+   "pont-fessier"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12, tempo 3-0-1-0, 90 s ; passe sur une jambe quand c'est facile",
+  "preuve": "C · [@llanoslagos2024b] [@eihara2022] (preuve sur la méthode force lourde, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "rdl-halteres"
+ },
+ {
+  "id": "hip-thrust-unijambe-haltere",
+  "nom": "Hip thrust une jambe avec haltère",
+  "famille": "charniere",
+  "anim": "thrust",
+  "opts": {
+   "single": true,
+   "load": "db"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, ischios",
+  "materiel": [
+   "halteres",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dos sur le banc, haltère sur la hanche",
+   "Un pied au sol, l'autre genou levé",
+   "Monte le bassin, serre le fessier 1 s"
+  ],
+  "erreurs": [
+   "Bassin qui penche d'un côté",
+   "Creuser le dos en haut"
+  ],
+  "pourquoi": "Le fessier d'une seule jambe pousse fort, hanche tendue : c'est le moteur de ta foulée et de ta pédalée en danseuse.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Si tu le sens surtout dans le bas du dos, rentre le menton et monte moins haut.",
+  "tags": [
+   "hanche",
+   "foulee",
+   "coup-de-pedale",
+   "chaine-posterieure"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "hip-thrust-unijambe-pdc",
+   "hip-thrust-haltere",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8/jambe, tempo 2-0-1-1, 90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "hip-thrust-unijambe-pdc"
+ },
+ {
+  "id": "hip-thrust-isometrique",
+  "nom": "Hip thrust tenu en haut (barre)",
+  "famille": "charniere",
+  "anim": "thrust",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, ischios",
+  "materiel": [
+   "barre",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte le bassin à l'horizontale",
+   "Menton rentré, côtes basses",
+   "Serre les fessiers et ne bouge plus"
+  ],
+  "erreurs": [
+   "Laisser le bassin redescendre",
+   "Creuser le dos pour tenir"
+  ],
+  "pourquoi": "Les fessiers tiennent fort hanche tendue, sans mouvement : de la force qui ne fatigue presque pas les jambes.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Mets une mousse sous la barre. Si le bas du dos tire, baisse un peu le bassin.",
+  "tags": [
+   "hanche",
+   "chaine-posterieure",
+   "foulee",
+   "dos"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "hip-thrust-barre",
+   "pont-fessier",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×20-30 s lourd, 90 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "hip-thrust-barre"
+ },
+ {
+  "id": "pont-fessier-leste",
+  "nom": "Pont fessier lesté au sol (haltère ou sac)",
+  "famille": "charniere",
+  "anim": "thrust",
+  "opts": {
+   "floor": true
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, ischios",
+  "materiel": [
+   "halteres",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Charge posée sur le pli des hanches",
+   "Pousse dans les talons, monte le bassin",
+   "Serre les fessiers 2 s en haut"
+  ],
+  "erreurs": [
+   "Creuser le dos en haut",
+   "Pousser sur les pointes de pied"
+  ],
+  "pourquoi": "Le pont fessier devient vite trop facile : avec une charge, il continue à te rendre plus fort, sans banc.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Tiens la charge avec les mains pour qu'elle ne roule pas.",
+  "tags": [
+   "hanche",
+   "chaine-posterieure",
+   "foulee",
+   "dos"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier",
+   "hip-thrust-haltere",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "2"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-12, tempo 2-0-1-2, 60-90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pont-fessier"
+ },
+ {
+  "id": "pont-unijambe-pied-sureleve",
+  "nom": "Pont fessier une jambe, pied sur un banc",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos sur un tapis, bras le long du corps, un talon posé sur le bord d'un banc de 40-45 cm (genou fléchi à 90°), l'autre jambe genou plié ramené vers la poitrine. s=0 : bassin au sol. s=1 : bassin levé, ligne droite épaules-hanche-genou de la jambe d'appui. Appuis : haut du dos au sol et un talon sur le banc.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "banc",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur le dos, un talon sur le banc",
+   "Monte le bassin, l'autre jambe en l'air",
+   "Redescends en 3 s, effleure le sol"
+  ],
+  "erreurs": [
+   "Bassin qui tourne",
+   "Pousser avec les bras"
+  ],
+  "pourquoi": "Le pied surélevé allonge le mouvement et fait travailler bien plus les ischios, une jambe à la fois.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Une crampe derrière la cuisse au début est fréquente : rapproche un peu le pied des fesses.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "hanche",
+   "genou"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier-unijambe",
+   "hip-thrust-unijambe-pdc",
+   "rdl-unijambe"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-12/jambe, tempo 3-0-1-1, 60-90 s",
+  "preuve": "C · [@xin2026] (preuve sur le travail unilatéral, pas sur l'exercice)",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pont-fessier-unijambe"
+ },
+ {
+  "id": "pont-ischios-long-levier",
+  "nom": "Pont ischios long levier tenu (2 jambes)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos sur un tapis, bras au sol le long du corps. Position unique tenue : talons au sol loin des fesses (genoux fléchis à seulement 30° environ, soit ~150° d'ouverture), pointes de pied relevées, bassin décollé de 10-15 cm : ligne droite épaules-hanches-genoux. Appuis : haut du dos et deux talons.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, talons loin des fesses",
+   "Genoux presque tendus, pointes levées",
+   "Décolle le bassin et tiens"
+  ],
+  "erreurs": [
+   "Laisser le bassin redescendre",
+   "Plier les genoux pour tricher"
+  ],
+  "pourquoi": "Les ischios tiennent fort en position allongée, comme juste avant que ton pied touche le sol en course rapide.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Si une crampe arrive derrière la cuisse, plie un peu plus les genoux.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier",
+   "pont-fessier-unijambe",
+   "rdl-unijambe"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pont-ischios-long-levier",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4×20-30 s, 60 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pont-ischios-long-levier-unijambe",
+  "nom": "Pont ischios long levier tenu sur une jambe",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos sur un tapis, bras au sol. Position unique tenue : un seul talon au sol loin des fesses (genou d'appui fléchi à ~30°), pointe relevée ; l'autre jambe tendue levée à 45° ; bassin décollé de 10-15 cm et horizontal, ligne droite épaules-hanche-genou d'appui. Appuis : haut du dos et un talon.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un talon loin des fesses, genou presque tendu",
+   "L'autre jambe levée",
+   "Bassin décollé et bien horizontal"
+  ],
+  "erreurs": [
+   "Bassin qui tourne ou qui descend",
+   "Plier le genou d'appui"
+  ],
+  "pourquoi": "Une tenue très dure pour les ischios d'une seule jambe, sans aucun matériel : parfaite en saison ou en voyage.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Arrête la tenue si une crampe arrive. Si ça tire d'un coup derrière la cuisse, stoppe et parles-en à un kiné.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier-unijambe",
+   "rdl-unijambe",
+   "nordic-curl"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pont-ischios-long-levier",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×15-25 s/jambe, 60 s",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "curl-ischios-glisse-excentrique",
+  "nom": "Curl ischios glissé, descente seule (serviette ou patins)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos, bras au sol le long du corps, les deux talons posés sur une serviette pliée (ou des patins) sur sol lisse. s=0 : pont fessier, genoux fléchis à 90°, bassin levé, ligne épaules-hanches-genoux. s=1 : talons glissés loin, jambes presque tendues (genoux à ~160°), bassin encore décollé de 5 cm. Retour : fesses posées au sol, talons ramenés, puis remontée en pont.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios (en freinage), fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "En pont, talons sur une serviette",
+   "Fais glisser les talons loin, en 4 s",
+   "Pose les fesses, ramène, recommence"
+  ],
+  "erreurs": [
+   "Laisser le bassin tomber tout de suite",
+   "Aller trop vite"
+  ],
+  "pourquoi": "Tes ischios freinent en s'allongeant, sans machine : le premier pas vers le Nordic, faisable sur un parquet.",
+  "respiration": "Souffle lentement pendant toute la glissade.",
+  "securite": "Il faut un sol lisse (parquet, carrelage). Si une crampe arrive, raccourcis la glissade.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier",
+   "pont-fessier-unijambe",
+   "rdl-unijambe"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "curl-ischios-glisse",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8, descente 4 s, 90 s",
+  "preuve": "C · [@franke2025] [@vandyk2019] (effet incertain sur les seuls essais randomisés [@impellizzeri2021]) ; exercice : pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "curl-ischios-glisse",
+  "nom": "Curl ischios glissé aller-retour (serviette ou patins)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos, bras au sol, deux talons sur une serviette (ou des patins) sur sol lisse. s=0 : pont, genoux à 90°, bassin haut. s=1 : jambes presque tendues (genoux ~160°), bassin toujours décollé de 5-10 cm, corps en planche inversée. Le retour s=1→0 se fait bassin levé, en ramenant les talons sous les genoux.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Bassin haut du début à la fin",
+   "Glisse les talons loin en 3 s",
+   "Ramène les talons sous les genoux"
+  ],
+  "erreurs": [
+   "Bassin qui tombe au retour",
+   "Casser aux hanches"
+  ],
+  "pourquoi": "Les ischios plient le genou pendant que les fessiers tiennent la hanche : leur double travail en course.",
+  "respiration": "Inspire en glissant loin, souffle en ramenant.",
+  "securite": "Si le bassin tombe, reviens à la version descente seule.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier-unijambe",
+   "rdl-unijambe",
+   "nordic-curl"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "curl-ischios-glisse",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-0-1-0, 90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "curl-ischios-glisse-unijambe",
+  "nom": "Curl ischios glissé sur une jambe (serviette ou patin)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos, bras au sol, un seul talon sur une serviette (ou un patin) sur sol lisse, l'autre jambe tendue levée à 45°. s=0 : pont sur une jambe, genou d'appui à 90°, bassin haut et horizontal. s=1 : jambe d'appui presque tendue (genou ~160°), bassin décollé de 5 cm, jambe libre toujours levée.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Un talon sur la serviette, autre jambe levée",
+   "Glisse loin en 4 s, bassin haut",
+   "Ramène si tu peux, sinon pose et replace"
+  ],
+  "erreurs": [
+   "Bassin qui tourne",
+   "Se laisser tomber en fin de glissade"
+  ],
+  "pourquoi": "Presque aussi dur qu'un Nordic pour les ischios, mais sur une jambe et sans partenaire.",
+  "respiration": "Souffle lentement en glissant, souffle fort en ramenant.",
+  "securite": "Maîtrise 10 reps à 2 jambes avant. Si ça tire d'un coup derrière la cuisse, stoppe.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "trail"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "nordic-curl",
+   "rdl-unijambe-haltere",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "curl-ischios-glisse",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×4-6/jambe, descente 4 s, 2 min",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "curl-ischios-swissball",
+  "nom": "Curl ischios sur swissball",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Allongé sur le dos sur un tapis, bras au sol écartés à 45°, talons et mollets posés sur le haut d'un swissball de 55-65 cm. s=0 : jambes tendues, bassin levé, ligne droite épaules-hanches-talons. s=1 : ballon roulé vers les fesses, genoux fléchis à 90°, plantes de pied sur le ballon, bassin encore plus haut (ligne épaules-hanches-genoux).",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Ischios, fessiers, gainage",
+  "materiel": [
+   "swissball",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Talons sur le ballon, bassin levé",
+   "Ramène le ballon vers les fesses",
+   "Repars lentement, bassin toujours haut"
+  ],
+  "erreurs": [
+   "Bassin qui descend",
+   "Ballon qui part sur le côté"
+  ],
+  "pourquoi": "Les ischios plient le genou pendant que tu tiens ton bassin sur un appui instable : force et contrôle.",
+  "respiration": "Souffle en ramenant le ballon, inspire en repartant.",
+  "securite": "Écarte les bras au sol pour être plus stable. Si une crampe arrive, fais une pause.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "gainage",
+   "genou"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "pont-fessier-unijambe",
+   "rdl-unijambe",
+   "nordic-curl"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-12, tempo 3-0-1-1, 90 s ; puis sur une jambe",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "leg-curl-machine",
+  "nom": "Leg curl (machine à ischios)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, machine à ischios assis. Athlète assis dos calé, cuisses bloquées sous un coussin, mains sur les poignées latérales, bas des mollets posé sur un rouleau. s=0 : jambes presque tendues devant (genoux à ~170°). s=1 : genoux fléchis à ~70°, rouleau ramené sous le siège, talons vers les fesses. Le buste et les cuisses ne bougent pas.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams"
+  ],
+  "musclesTxt": "Ischios",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Axe de la machine en face du genou",
+   "Ramène le rouleau vers les fesses",
+   "Freine le retour en 3 secondes"
+  ],
+  "erreurs": [
+   "Décoller les hanches du siège",
+   "Lâcher la charge au retour"
+  ],
+  "pourquoi": "Le seul moyen simple de charger lourd les ischios genou plié : utile si le Nordic est encore trop dur pour toi.",
+  "respiration": "Souffle en pliant, inspire en revenant.",
+  "securite": "Règle le rouleau sur le bas du mollet, pas sur le talon. Si ça tire d'un coup derrière la cuisse, stoppe.",
+  "tags": [
+   "chaine-posterieure",
+   "genou",
+   "foulee",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "ischios",
+   "genoux"
+  ],
+  "alternatives": [
+   "nordic-curl",
+   "rdl-halteres",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/leg-curl/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10, tempo 3-0-1-1, 90 s ; variante : 2 jambes plient, 1 jambe freine",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "nordic-assiste-elastique",
+  "nom": "Nordic assisté par un élastique",
+  "famille": "charniere",
+  "anim": "nordic",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios (en freinage), fessiers",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique fixé en haut, tenu contre la poitrine",
+   "Corps droit des genoux à la tête",
+   "Descends en 4 s jusqu'au sol"
+  ],
+  "erreurs": [
+   "Casser aux hanches",
+   "Prendre un élastique trop faible"
+  ],
+  "pourquoi": "L'élastique te retient en bas, là où c'est le plus dur : tu fais enfin toute la descente du Nordic en contrôle.",
+  "respiration": "Souffle lentement pendant toute la descente.",
+  "securite": "Chevilles bien bloquées, tapis sous les genoux. Si ça tire d'un coup derrière la cuisse, stoppe.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "nordic-curl",
+   "pont-fessier-unijambe",
+   "rdl-unijambe-haltere"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "2",
+   "1"
+  ],
+  "progression": {
+   "groupe": "nordic",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2-3×4-6, descente 4 s, 2 min ; 2 fois par semaine",
+  "preuve": "B · [@franke2025] [@vandyk2019] (effet incertain sur les seuls essais randomisés [@impellizzeri2021])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "nordic-curl"
+ },
+ {
+  "id": "nordic-amplitude-reduite",
+  "nom": "Nordic amplitude réduite (mains sur un banc)",
+  "famille": "charniere",
+  "anim": "nordic",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios (en freinage), fessiers",
+  "materiel": [
+   "banc",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un banc devant toi, à un bras",
+   "Descends d'un bloc en 4 secondes",
+   "Pose les mains sur le banc, repousse"
+  ],
+  "erreurs": [
+   "Casser aux hanches",
+   "Lâcher avant d'arriver au banc"
+  ],
+  "pourquoi": "Tu freines sur la partie que tu maîtrises, puis tu baisses le support au fil des semaines jusqu'au sol.",
+  "respiration": "Souffle lentement pendant toute la descente.",
+  "securite": "Chevilles bien bloquées. Baisse le support seulement quand la descente est lente jusqu'au bout.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "genou",
+   "descente-vtt"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "nordic-curl",
+   "pont-fessier-unijambe",
+   "rdl-unijambe-haltere"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "2",
+   "1"
+  ],
+  "progression": {
+   "groupe": "nordic",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×4-5, descente 4 s, 2 min ; 2 fois par semaine",
+  "preuve": "B · [@franke2025] [@vandyk2019] (effet incertain sur les seuls essais randomisés [@impellizzeri2021])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "nordic-curl"
+ },
+ {
+  "id": "nordic-remontee-complete",
+  "nom": "Nordic complet, remontée sans les mains",
+  "famille": "charniere",
+  "anim": "nordic",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes"
+  ],
+  "musclesTxt": "Ischios, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Descends en 4 s, corps droit",
+   "Arrête-toi juste avant le sol",
+   "Remonte en tirant avec les ischios"
+  ],
+  "erreurs": [
+   "Casser aux hanches pour remonter",
+   "Donner un coup de reins"
+  ],
+  "pourquoi": "Le sommet de la force des ischios au poids du corps : pour ceux qui passent déjà le Nordic classique.",
+  "respiration": "Souffle en descendant, bloque court en bas, souffle en remontant.",
+  "securite": "Seulement si tu contrôles 5 Nordic lents jusqu'au sol. Si ça tire d'un coup derrière la cuisse, stoppe.",
+  "tags": [
+   "chaine-posterieure",
+   "foulee",
+   "explosivite",
+   "genou"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "nordic-curl",
+   "rdl-barre",
+   "rdl-unijambe-haltere"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "2",
+   "1"
+  ],
+  "progression": {
+   "groupe": "nordic",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×3-5, 2-3 min",
+  "preuve": "B · [@franke2025] [@vandyk2019] (effet incertain sur les seuls essais randomisés [@impellizzeri2021])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "nordic-curl"
+ },
+ {
+  "id": "tirage-isometrique-mi-cuisse",
+  "nom": "Tirage isométrique à mi-cuisse (barre contre les butées)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil dans un rack. Barre bloquée SOUS deux butées fixes à hauteur de mi-cuisse (elle ne peut pas monter). Position unique tenue : pieds à plat largeur du bassin sous la barre, genoux fléchis à ~130-140°, hanches à ~140-150°, buste presque vertical (incliné de 10-15°), dos plat, bras tendus, mains en pronation sur la barre largeur d'épaules. Animation : immobile, tension vers le haut.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams",
+   "lowback",
+   "upperback",
+   "forearms"
+  ],
+  "musclesTxt": "Jambes, fessiers, dos, poigne",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Barre bloquée sous les butées, à mi-cuisse",
+   "Genoux un peu pliés, dos plat",
+   "Pousse le sol à fond 3 à 5 s"
+  ],
+  "erreurs": [
+   "Tirer avec les bras et le dos",
+   "Donner un coup sec"
+  ],
+  "pourquoi": "Tu produis ta force maximale de tout le corps sans bouger : gros signal de force, presque zéro courbature.",
+  "respiration": "Souffle pendant la poussée, ne bloque pas l'air plus de 2 s.",
+  "securite": "Monte en pression sur 1 seconde. Dos plat tout du long ; si le bas du dos tire, arrête.",
+  "tags": [
+   "coup-de-pedale",
+   "explosivite",
+   "chaine-posterieure",
+   "montee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "souleve-de-terre",
+   "rdl-barre",
+   "squat-barre"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×(3 tirages de 3-5 s), 20 s entre tirages, 2-3 min entre séries",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tirage-isometrique-mi-cuisse-sangle",
+  "nom": "Tirage isométrique à mi-cuisse avec sangle (maison)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Sangle non élastique passée sous les deux pieds (largeur du bassin), formant une boucle tenue à deux mains devant les cuisses, à mi-cuisse (ou enroulée autour d'un manche à balai tenu comme une barre). Position unique tenue : genoux fléchis à ~135°, hanches à ~145°, buste incliné de 10-15°, dos plat, bras tendus, sangle tendue verticale. Animation : immobile, tension vers le haut.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams",
+   "lowback",
+   "forearms"
+  ],
+  "musclesTxt": "Jambes, fessiers, dos, poigne",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout sur la sangle, boucle à mi-cuisse",
+   "Genoux un peu pliés, dos plat",
+   "Pousse le sol à fond 3 à 5 s"
+  ],
+  "erreurs": [
+   "Tirer avec les bras",
+   "Arrondir le dos"
+  ],
+  "pourquoi": "La force max sans salle : une sangle solide sous les pieds et tu pousses contre toi-même, en voyage ou en stage.",
+  "respiration": "Souffle pendant la poussée, ne bloque pas l'air plus de 2 s.",
+  "securite": "Utilise une sangle solide, non élastique (sangle de judo, d'arrimage). Monte en pression progressivement.",
+  "tags": [
+   "coup-de-pedale",
+   "explosivite",
+   "chaine-posterieure",
+   "montee"
+  ],
+  "zones": [
+   "quadriceps",
+   "fessiers",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "rdl-halteres",
+   "squat-sac-leste",
+   "chaise-mur-unijambe"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×(3 tirages de 3-5 s), 20 s entre tirages, 2 min",
+  "preuve": "C · [@lum2019] (dosage de l'isométrie ; seule, elle n'améliore pas l'économie [@llanoslagos2024b])",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pull-through-elastique",
+  "nom": "Pull-through à l'élastique (tirage entre les jambes)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Élastique fixé bas derrière l'athlète (à 20 cm du sol), passé entre les jambes et tenu à deux mains devant le bassin, bras tendus. Pieds un peu plus larges que le bassin. s=0 : debout, hanches en extension complète, mains devant le bassin, élastique tendu. s=1 : charnière de hanche, fesses loin derrière, buste incliné à ~60° dos plat, genoux fléchis à ~150°, mains reculées entre les cuisses.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Fessiers, ischios",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Dos à l'ancrage, élastique entre les jambes",
+   "Fesses loin derrière, dos plat",
+   "Pousse les hanches devant, serre fort"
+  ],
+  "erreurs": [
+   "Tirer avec les bras",
+   "Creuser le dos en haut"
+  ],
+  "pourquoi": "L'élastique tire tes hanches en arrière : tu sens tout de suite le travail des fessiers, sans charge sur le dos.",
+  "respiration": "Inspire en reculant les fesses, souffle en poussant les hanches.",
+  "securite": "Fixe l'élastique bas et solidement. Avance d'un pas pour le tendre avant de commencer.",
+  "tags": [
+   "hanche",
+   "chaine-posterieure",
+   "coup-de-pedale",
+   "dos"
+  ],
+  "zones": [
+   "ischios",
+   "fessiers"
+  ],
+  "alternatives": [
+   "kettlebell-swing",
+   "rdl-halteres",
+   "pont-fessier"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/cable-pull-through/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×12-15, tempo 2-0-1-1, 60 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-dos-banc-45",
+  "nom": "Extension du dos au banc à 45° (banc à lombaires)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, banc à lombaires incliné à 45°. Chevilles calées sous les rouleaux, cuisses en appui sur le coussin dont le bord supérieur est juste sous le pli des hanches, bras croisés sur la poitrine. s=0 : corps aligné des chevilles à la tête, incliné à 45°. s=1 : buste fléchi vers le bas à ~80° aux hanches, dos plat, jambes tendues immobiles.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lowback",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Bas du dos, fessiers, ischios",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Coussin sous le pli des hanches",
+   "Descends dos plat, en 3 secondes",
+   "Remonte jusqu'à l'alignement, pas plus"
+  ],
+  "erreurs": [
+   "Cambrer en haut",
+   "Arrondir et dérouler le dos"
+  ],
+  "pourquoi": "Un dos qui tient longtemps penché, c'est moins de gêne en fin de longue sortie vélo ou en montée bâtons.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si le bas du dos tire, réduis l'amplitude. Ajoute un disque contre la poitrine seulement quand 15 reps sont faciles.",
+  "tags": [
+   "dos",
+   "chaine-posterieure",
+   "velo",
+   "hanche"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "fessiers",
+   "ischios"
+  ],
+  "alternatives": [
+   "good-morning",
+   "superman",
+   "rdl-halteres"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/hyperextension/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-15, tempo 3-0-1-1, 60-90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "clamshell-elastique",
+  "nom": "Coquillage avec élastique (clamshell)",
+  "famille": "charniere",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (athlète couché sur le côté, face à la caméra). Allongé sur le flanc, tête posée sur le bras du dessous, hanches fléchies à 45°, genoux fléchis à 90°, pieds joints, mini-élastique en boucle juste au-dessus des genoux, main du dessus sur la hanche. s=0 : genoux joints. s=1 : genou du dessus ouvert vers le plafond d'environ 40°, pieds toujours collés, bassin immobile et vertical.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes"
+  ],
+  "musclesTxt": "Moyen fessier, rotateurs de hanche",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le côté, genoux pliés, pieds joints",
+   "Ouvre le genou du dessus contre l'élastique",
+   "Le bassin ne roule pas en arrière"
+  ],
+  "erreurs": [
+   "Rouler le bassin pour ouvrir plus",
+   "Aller trop vite"
+  ],
+  "pourquoi": "Il renforce les petits muscles qui empêchent ton genou de rentrer à chaque appui et à chaque coup de pédale.",
+  "respiration": "Souffle en ouvrant, inspire en refermant.",
+  "securite": "Tu dois le sentir sur le côté de la fesse. Si ça pince dans la hanche, ouvre moins.",
+  "tags": [
+   "hanche",
+   "genou",
+   "foulee",
+   "echauffement"
+  ],
+  "zones": [
+   "fessiers",
+   "hanches"
+  ],
+  "alternatives": [
+   "gainage-lateral-jambe-levee",
+   "cercles-hanche-quadrupedie",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "2"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×12-15/côté, tempo 2-0-1-2, 45 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "adducteurs-squeeze-isometrique",
+  "nom": "Serrage des adducteurs, ballon entre les genoux",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil légèrement de trois quarts. Allongé sur le dos sur un tapis, bras le long du corps, hanches fléchies à 45°, genoux fléchis à 90°, pieds à plat au sol largeur du bassin, un ballon mou (20 cm) ou un coussin serré entre les genoux. Position unique tenue ; animation : légère compression du ballon par les genoux puis relâchement.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "adductors",
+   "abs"
+  ],
+  "musclesTxt": "Adducteurs, bas des abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, genoux pliés, pieds au sol",
+   "Ballon ou coussin entre les genoux",
+   "Serre fort et tiens"
+  ],
+  "erreurs": [
+   "Bloquer la respiration",
+   "Décoller le bas du dos"
+  ],
+  "pourquoi": "Des adducteurs forts tiennent ton bassin en course et dans les relances ; c'est l'étape avant le Copenhague.",
+  "respiration": "Respire calmement, ne bloque pas l'air.",
+  "securite": "Serre à 7-8 sur 10, sans douleur. Si ça fait mal à l'aine, serre moins fort et parles-en à un kiné si ça dure.",
+  "tags": [
+   "hanche",
+   "gainage",
+   "foulee"
+  ],
+  "zones": [
+   "adducteurs",
+   "hanches"
+  ],
+  "alternatives": [
+   "copenhague-court",
+   "copenhague",
+   "fente-laterale"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "copenhague",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5×10 s fort, 20 s de repos",
+  "preuve": "C · [@haroy2019] (football ; transfert à l'endurance non prouvé) ; exercice : pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "copenhague-dynamique",
+  "nom": "Copenhague dynamique (montées et descentes)",
+  "famille": "gainage",
+  "anim": "copenhagen",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "adductors",
+   "obliques",
+   "abs"
+  ],
+  "musclesTxt": "Adducteurs, obliques",
+  "materiel": [
+   "banc",
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Cheville du dessus sur le banc",
+   "Monte le bassin et la jambe du bas",
+   "Redescends en 3 s, effleure le sol"
+  ],
+  "erreurs": [
+   "Bassin qui recule",
+   "Se laisser tomber"
+  ],
+  "pourquoi": "La version qui a fait ses preuves chez les footballeurs : des adducteurs forts pour les appuis en dévers et le skating.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Tiens d'abord 30 s en Copenhague statique. Si ça fait mal à l'aine, reviens à la version courte.",
+  "tags": [
+   "hanche",
+   "gainage",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "adducteurs",
+   "hanches"
+  ],
+  "alternatives": [
+   "copenhague",
+   "copenhague-court",
+   "gainage-lateral-jambe-levee"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "copenhague",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2-3×6-10/côté, tempo 3-0-1-1, 60-90 s",
+  "preuve": "B · [@haroy2019] (football ; transfert à l'endurance non prouvé)",
+  "sports": [
+   "trail",
+   "nordique",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": "copenhague"
+ }
+]
