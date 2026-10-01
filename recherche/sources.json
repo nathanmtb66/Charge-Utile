@@ -754,6 +754,32 @@
   "note": "11 vététistes : VO2pic relative, résistance à la fatigue sur 30 s et couple max du quadriceps expliquent 98 % ; 4 × 30 s explique 88 % (PMID 30430912)."
  },
  {
+  "cle": "bell2023",
+  "auteurs": "Bell L, Strafford BW, Coleman M, Androulakis Korakakis P, Nolan D",
+  "annee": 2023,
+  "titre": "Integrating Deloading into Strength and Physique Sports Training Programmes: An International Delphi Consensus Approach",
+  "revue": "Sports Med Open 9(1):87",
+  "doi": "10.1186/s40798-023-00633-0",
+  "url": "https://doi.org/10.1186/s40798-023-00633-0",
+  "type": "consensus",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Delphi (34 puis 21 coachs experts) : définition consensuelle de la décharge et principes de conception ; avis d'experts."
+ },
+ {
+  "cle": "benjamin2019",
+  "auteurs": "Benjamin CL, Sekiguchi Y, Fry LA, Casa DJ",
+  "annee": 2019,
+  "titre": "Performance Changes Following Heat Acclimation and the Factors That Influence These Changes: Meta-Analysis and Meta-Regression",
+  "revue": "Front Physiol 10:1448",
+  "doi": "10.3389/fphys.2019.01448",
+  "url": "https://doi.org/10.3389/fphys.2019.01448",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "35 études : l'acclimatation à la chaleur améliore VO2max (g 0,30) et puissance de pointe (g 0,29)."
+ },
+ {
   "cle": "bergeron2015",
   "auteurs": "Bergeron MF, Mountjoy M, Armstrong N et al.",
   "annee": 2015,
@@ -1027,6 +1053,19 @@
   "note": "13 études, 346 personnes : pas d'effet antidouleur constant de l'isométrie en cas de douleur locale."
  },
  {
+  "cle": "bonetti2009",
+  "auteurs": "Bonetti DL, Hopkins WG",
+  "annee": 2009,
+  "titre": "Sea-level exercise performance following adaptation to hypoxia: a meta-analysis",
+  "revue": "Sports Med 39(2):107-127",
+  "doi": "10.2165/00007256-200939020-00002",
+  "url": "https://doi.org/10.2165/00007256-200939020-00002",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "51 études : LHTL naturel +4,2 % (±2,9) chez sous-élites, +4,0 % (±3,7) chez élites ; LHTH incertain (+0,9 % ±3,4) ; part de placebo."
+ },
+ {
   "cle": "borges2016",
   "auteurs": "Borges N, Reaburn P, Driller M, Argus C",
   "annee": 2016,
@@ -1038,6 +1077,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "Revue narrative : effet de l'âge sur performance et récupération peut-être plus faible qu'annoncé ; la sédentarité pèse plus ; récupération possiblement ralentie, peu de données (PMID 25880787)."
+ },
+ {
+  "cle": "bosquet2007",
+  "auteurs": "Bosquet L, Montpetit J, Arvisais D, Mujika I",
+  "annee": 2007,
+  "titre": "Effects of tapering on performance: a meta-analysis",
+  "revue": "Med Sci Sports Exerc 39(8):1358-1365",
+  "doi": "10.1249/mss.0b013e31806010e0",
+  "url": "https://doi.org/10.1249/mss.0b013e31806010e0",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "27 études : affûtage optimal de 2 semaines (ES 0,59), volume réduit de 41-60 % (ES 0,72), sans baisser intensité ni fréquence."
+ },
+ {
+  "cle": "boukhris2026",
+  "auteurs": "Boukhris O, Trabelsi K, Suppiah H, Jahrami H, Driller M",
+  "annee": 2026,
+  "titre": "The effects of daytime napping on psychophysiological measures in physically active individuals and athletes: A systematic review, meta-analysis, and meta-regression, with assessment of the certainty of evidence",
+  "revue": "Biol Sport 43:149-163",
+  "doi": "10.5114/biolsport.2026.153310",
+  "url": "https://doi.org/10.5114/biolsport.2026.153310",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "35 études, n = 489 : après nuit normale, la sieste réduit fatigue (SMD 0,91) et RPE (1,62), améliore la récup perçue ; certitude faible sauf RPE."
  },
  {
   "cle": "boullosa2018",
@@ -1157,6 +1222,19 @@
   "note": "Standard 49 $, Professional 69 $, Business 167 $/mois ; IA d'import et génération bêta."
  },
  {
+  "cle": "brown2017",
+  "auteurs": "Brown F, Gissane C, Howatson G, et al.",
+  "annee": 2017,
+  "titre": "Compression Garments and Recovery from Exercise: A Meta-Analysis",
+  "revue": "Sports Med 47(11):2245-2267",
+  "doi": "10.1007/s40279-017-0728-9",
+  "url": "https://doi.org/10.1007/s40279-017-0728-9",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "23 études : petits bénéfices, surtout récupération de force à 2-8 h et > 24 h ; utile pour le vélo du lendemain."
+ },
+ {
   "cle": "brujula-xco-2027",
   "auteurs": "Brújula Bike",
   "annee": 2026,
@@ -1248,6 +1326,19 @@
   "note": "12 études, jeunes sains : ICC goniomètre 0,18-0,99, photogrammétrie 0,78-1,00, smartphone 0,33-0,98 ; familiarisation conseillée."
  },
  {
+  "cle": "canez2025",
+  "auteurs": "Canez MS, da Silva LI, Ferreira GD, de Araújo FX, Luza LP",
+  "annee": 2025,
+  "titre": "Effects of photobiomodulation, intermittent pneumatic compression and neuromuscular electrical stimulation on muscle recovery: Systematic review with meta-analysis",
+  "revue": "J Bodyw Mov Ther 44:570-584",
+  "doi": "10.1016/j.jbmt.2025.06.021",
+  "url": "https://doi.org/10.1016/j.jbmt.2025.06.021",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "19 études, n = 672 : électrostimulation et pressothérapie après effort ne réduisent pas les courbatures (certitude faible à modérée)."
+ },
+ {
   "cle": "catapult-eyesup",
   "auteurs": "eyesup.football",
   "annee": 2026,
@@ -1324,6 +1415,45 @@
   "niveau": "A",
   "verifie": true,
   "note": "17 études : dynamomètre à main, limites d'accord ±34 % en extension de genou et ±49 % en flexion plantaire, contre < 15 % à l'isocinétique."
+ },
+ {
+  "cle": "chapman2014",
+  "auteurs": "Chapman RF, Karlsen T, Resaland GK, et al.",
+  "annee": 2014,
+  "titre": "Defining the \"dose\" of altitude training: how high to live for optimal sea level performance enhancement",
+  "revue": "J Appl Physiol 116(6):595-603",
+  "doi": "10.1152/japplphysiol.00634.2013",
+  "url": "https://doi.org/10.1152/japplphysiol.00634.2013",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "48 coureurs, 4 sem : 3 000 m amélioré en vivant à 2 085 et 2 454 m, pas à 1 780 ni 2 800 m ; cible 2 000-2 500 m."
+ },
+ {
+  "cle": "chapman2014b",
+  "auteurs": "Chapman RF, Laymon Stickford AS, Lundby C, Levine BD",
+  "annee": 2014,
+  "titre": "Timing of return from altitude training for optimal sea level performance",
+  "revue": "J Appl Physiol 116(7):837-843",
+  "doi": "10.1152/japplphysiol.00663.2013",
+  "url": "https://doi.org/10.1152/japplphysiol.00663.2013",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Le bon moment de retour dépend de la désacclimatation hématologique, ventilatoire et biomécanique ; pas de chiffre dans le résumé."
+ },
+ {
+  "cle": "chapman2016",
+  "auteurs": "Chapman RF, Karlsen T, Ge RL, Stray-Gundersen J, Levine BD",
+  "annee": 2016,
+  "titre": "Living altitude influences endurance exercise performance change over time at altitude",
+  "revue": "J Appl Physiol 120(10):1151-1158",
+  "doi": "10.1152/japplphysiol.00909.2015",
+  "url": "https://doi.org/10.1152/japplphysiol.00909.2015",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "48 coureurs : pour courir à 1 780 m, vivre à cette altitude ; vivre plus haut dégrade la perf au début et demande jusqu'à 19 jours."
  },
  {
   "cle": "chen2022",
@@ -1820,6 +1950,19 @@
   "note": "29 $ (1-5), 79 $ (6-50), 199 $ (51-150) par mois ; essai 14 jours."
  },
  {
+  "cle": "coleman2024",
+  "auteurs": "Coleman M, Burke R, Augustin F, et al.",
+  "annee": 2024,
+  "titre": "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations",
+  "revue": "PeerJ 12:e16777",
+  "doi": "10.7717/peerj.16777",
+  "url": "https://doi.org/10.7717/peerj.16777",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "39 pratiquants, 9 sem : une semaine d'arrêt au milieu = hypertrophie égale mais gains de force moindres."
+ },
+ {
   "cle": "colensosemple2023",
   "auteurs": "Colenso-Semple LM, D'Souza AC, Elliott-Sale KJ, Phillips SM",
   "annee": 2023,
@@ -1896,6 +2039,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "19 coureurs ; moins de dorsiflexion (r 0,65) et de rotation de hanche (r 0,53) = plus économique."
+ },
+ {
+  "cle": "craven2022",
+  "auteurs": "Craven J, McCartney D, Desbrow B, et al.",
+  "annee": 2022,
+  "titre": "Effects of Acute Sleep Loss on Physical Performance: A Systematic and Meta-Analytical Review",
+  "revue": "Sports Med 52(11):2669-2690",
+  "doi": "10.1007/s40279-022-01706-y",
+  "url": "https://doi.org/10.1007/s40279-022-01706-y",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "69 publications : sommeil ≤ 6 h = −7,56 % de performance ; ~−0,4 % par heure d'éveil ; séances du soir touchées, du matin peu."
  },
  {
   "cle": "creps-montpellier-dejeps-vtt",
@@ -2236,6 +2392,19 @@
   "note": "48,99 $/mois ou 399,99 $/an ; 4,5/5 (382)."
  },
  {
+  "cle": "duignan2020",
+  "auteurs": "Duignan C, Doherty C, Caulfield B, Blake C",
+  "annee": 2020,
+  "titre": "Single-Item Self-Report Measures of Team-Sport Athlete Wellbeing and Their Relationship With Training Load: A Systematic Review",
+  "revue": "J Athl Train 55(9):944-953",
+  "doi": "10.4085/1062-6050-0528.19",
+  "url": "https://doi.org/10.4085/1062-6050-0528.19",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "21 études : items les plus utilisés = courbatures, fatigue, sommeil, stress, humeur ; lien avec la charge surtout trivial à modéré."
+ },
+ {
   "cle": "dujawara2026",
   "auteurs": "Dujawara A, Ali K, Kumari S",
   "annee": 2026,
@@ -2260,6 +2429,32 @@
   "niveau": "B",
   "verifie": true,
   "note": "Plans jugés sous-optimaux, meilleurs avec plus d'informations ; relecture experte conseillée."
+ },
+ {
+  "cle": "duking2021",
+  "auteurs": "Düking P, Zinner C, Trabelsi K, et al.",
+  "annee": 2021,
+  "titre": "Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: A systematic review with meta-analysis",
+  "revue": "J Sci Med Sport 24(11):1180-1192",
+  "doi": "10.1016/j.jsams.2021.04.012",
+  "url": "https://doi.org/10.1016/j.jsams.2021.04.012",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "8 études, 198 participants : effet sur le sous-maximal (g 0,30), faible et non significatif sur la performance (g 0,08) et le VO2pic (g 0,17) ; moins de non-répondeurs."
+ },
+ {
+  "cle": "dupuy2018",
+  "auteurs": "Dupuy O, Douzi W, Theurot D, Bosquet L, Dugué B",
+  "annee": 2018,
+  "titre": "An Evidence-Based Approach for Choosing Post-exercise Recovery Techniques to Reduce Markers of Muscle Damage, Soreness, Fatigue, and Inflammation: A Systematic Review With Meta-Analysis",
+  "revue": "Front Physiol 9:403",
+  "doi": "10.3389/fphys.2018.00403",
+  "url": "https://doi.org/10.3389/fphys.2018.00403",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "99 études : massage = technique la plus efficace contre courbatures et fatigue ; CK SMD −0,37, IL-6 −0,36, CRP −0,38."
  },
  {
   "cle": "ecole-de-trail-coaching",
@@ -3731,6 +3926,19 @@
   "note": "Demande de charge basée sur le tonnage ; planification en tableur ; débat sur la charge."
  },
  {
+  "cle": "foster2001",
+  "auteurs": "Foster C, Florhaug JA, Franklin J, et al.",
+  "annee": 2001,
+  "titre": "A new approach to monitoring exercise training",
+  "revue": "J Strength Cond Res 15(1):109-115",
+  "doi": "10.1519/1533-4287(2001)015<0109:anatme>2.0.co;2",
+  "url": "https://doi.org/10.1519/1533-4287(2001)015<0109:anatme>2.0.co;2",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "La méthode sRPE (RPE × durée) suit la méthode FC en vélo continu, intervalles et basket ; score absolu plus élevé."
+ },
+ {
   "cle": "fragala2019",
   "auteurs": "Fragala MS, Cadore EL, Dorgo S et al.",
   "annee": 2019,
@@ -3913,6 +4121,19 @@
   "note": "24 sujets, rotation passive par examinateur : validité rotation interne ICC 0,81-0,94, rotation externe assis 0,70-0,73 ; fiabilité entre examinateurs seulement passable à bonne."
  },
  {
+  "cle": "gao2019",
+  "auteurs": "Gao B, Dwivedi S, Milewski MD, Cruz AI",
+  "annee": 2019,
+  "titre": "Lack of Sleep and Sports Injuries in Adolescents: A Systematic Review and Meta-analysis",
+  "revue": "J Pediatr Orthop 39(5):e324-e333",
+  "doi": "10.1097/bpo.0000000000001306",
+  "url": "https://doi.org/10.1097/bpo.0000000000001306",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "7 études, ≤ 19 ans : mauvais sommeil chronique associé à plus de blessures (OR 1,58 [1,05 ; 2,37])."
+ },
+ {
   "cle": "gao2023",
   "auteurs": "Gao J, Yu L",
   "annee": 2023,
@@ -4002,6 +4223,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "CA 2025 7,25 Md$ ; segment Fitness 2,357 Md$ (+33 %) ; Connect+ enrichi (nutrition par IA)."
+ },
+ {
+  "cle": "gastin2013",
+  "auteurs": "Gastin PB, Meyer D, Robinson D",
+  "annee": 2013,
+  "titre": "Perceptions of wellness to monitor adaptive responses to training and competition in elite Australian football",
+  "revue": "J Strength Cond Res 27(9):2518-2526",
+  "doi": "10.1519/jsc.0b013e31827fd600",
+  "url": "https://doi.org/10.1519/jsc.0b013e31827fd600",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "27 joueurs, 2 583 questionnaires (échelle 1-5) : le bien-être perçu réagit à la semaine d'entraînement et aux périodes de décharge."
  },
  {
   "cle": "gdiy-running-addict-2025",
@@ -4173,6 +4407,45 @@
   "note": "Vu via recherche web : 25 $ d'inscription une fois."
  },
  {
+  "cle": "gore2013",
+  "auteurs": "Gore CJ, Sharpe K, Garvican-Lewis LA, et al.",
+  "annee": 2013,
+  "titre": "Altitude training and haemoglobin mass from the optimised carbon monoxide rebreathing method determined by a meta-analysis",
+  "revue": "Br J Sports Med 47 Suppl 1:i31-39",
+  "doi": "10.1136/bjsports-2013-092840",
+  "url": "https://doi.org/10.1136/bjsports-2013-092840",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "17 études : Hbmass +1,1 % par 100 h d'altitude ; +3,3 % jusqu'à 20 jours après ; réponse individuelle 1,1-6 % à 300 h."
+ },
+ {
+  "cle": "govus2015",
+  "auteurs": "Govus AD, Garvican-Lewis LA, Abbiss CR, Peeling P, Gore CJ",
+  "annee": 2015,
+  "titre": "Pre-Altitude Serum Ferritin Levels and Daily Oral Iron Supplement Dose Mediate Iron Parameter and Hemoglobin Mass Responses to Altitude Exposure",
+  "revue": "PLoS One 10(8):e0135120",
+  "doi": "10.1371/journal.pone.0135120",
+  "url": "https://doi.org/10.1371/journal.pone.0135120",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "178 athlètes : Hbmass +1,1 % sans fer, +3,3 % avec 105 mg/j, +4,0 % avec 210 mg/j ; ferritine −33 % sans supplément."
+ },
+ {
+  "cle": "granerogallegos2020",
+  "auteurs": "Granero-Gallegos A, González-Quílez A, Plews D, Carrasco-Poyatos M",
+  "annee": 2020,
+  "titre": "HRV-Based Training for Improving VO2max in Endurance Athletes. A Systematic Review with Meta-Analysis",
+  "revue": "Int J Environ Res Public Health 17(21):7999",
+  "doi": "10.3390/ijerph17217999",
+  "url": "https://doi.org/10.3390/ijerph17217999",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Entraînement guidé par la VFC : petit effet positif sur le VO2max (ES 0,40), dépendant du niveau et du sexe."
+ },
+ {
   "cle": "greig2023",
   "auteurs": "Greig L, Aspe RR, Hall A, Comfort P, Cooper K, Swinton PA",
   "annee": 2023,
@@ -4212,6 +4485,19 @@
   "note": "16 études : ICC 0,73-0,99 (médiane 0,96), CV 0,7-11,1 % (médiane 4,9 %) pour la force max en tirage isométrique mi-cuisse."
  },
  {
+  "cle": "grgic2023",
+  "auteurs": "Grgic J",
+  "annee": 2023,
+  "titre": "Effects of post-exercise cold-water immersion on resistance training-induced gains in muscular strength: a meta-analysis",
+  "revue": "Eur J Sport Sci 23(3):372-380",
+  "doi": "10.1080/17461391.2022.2033851",
+  "url": "https://doi.org/10.1080/17461391.2022.2033851",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "10 études, n = 170 : gains de force atténués (ES −0,23) ; membre seul −0,31 ; corps entier −0,08 (ns)."
+ },
+ {
   "cle": "guan2022",
   "auteurs": "Guan Y, Bredin SSD, Taunton J, Jiang Q, Wu N, Warburton DER",
   "annee": 2022,
@@ -4236,6 +4522,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Liste de ce que Strava ne fait pas (programmation, minuteurs, technique) — source partisane."
+ },
+ {
+  "cle": "haddad2017",
+  "auteurs": "Haddad M, Stylianides G, Djaoui L, Dellal A, Chamari K",
+  "annee": 2017,
+  "titre": "Session-RPE Method for Training Load Monitoring: Validity, Ecological Usefulness, and Influencing Factors",
+  "revue": "Front Neurosci 11:612",
+  "doi": "10.3389/fnins.2017.00612",
+  "url": "https://doi.org/10.3389/fnins.2017.00612",
+  "type": "revue",
+  "niveau": "A",
+  "verifie": true,
+  "note": "36 études confirment validité, fiabilité et cohérence interne du sRPE, tous sports, âges et niveaux."
  },
  {
   "cle": "hahn2021",
@@ -4368,6 +4667,19 @@
   "note": "566 adultes 20-81 ans sur plan incliné 10° : ICC 1,0, limites d'accord ±6 reps entre jours ; médiane 24 (hommes) et 21 (femmes)."
  },
  {
+  "cle": "heikura2024",
+  "auteurs": "Heikura IA, McCluskey WTP, Tsai MC, et al.",
+  "annee": 2024,
+  "titre": "Application of the IOC Relative Energy Deficiency in Sport (REDs) Clinical Assessment Tool version 2 (CAT2) across 200+ elite athletes",
+  "revue": "Br J Sports Med 59(1):24-35",
+  "doi": "10.1136/bjsports-2024-108121",
+  "url": "https://doi.org/10.1136/bjsports-2024-108121",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "213 athlètes élites : 55 % vert, 36 % jaune, 5 % orange, 4 % rouge ; catégorie plus sévère = plus de fractures de fatigue ensuite."
+ },
+ {
   "cle": "held2026",
   "auteurs": "Held S, Wolf L, Rappelt L, Bloch W, Donath L, Micke F, Geisler S, Isenmann E",
   "annee": 2026,
@@ -4379,6 +4691,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Revue parapluie de 17 méta-analyses (144 études, 1492 sujets) : CT vs RT force/puissance/hypertrophie comparables, VO2 SMD 0,77 ; pas d'effet net de l'ordre ; données élites rares (PMID 41762427)."
+ },
+ {
+  "cle": "hellard2006",
+  "auteurs": "Hellard P, Avalos M, Lacoste L, et al.",
+  "annee": 2006,
+  "titre": "Assessing the limitations of the Banister model in monitoring training",
+  "revue": "J Sports Sci 24(5):509-520",
+  "doi": "10.1080/02640410500244697",
+  "url": "https://doi.org/10.1080/02640410500244697",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "9 nageurs élites : R² 0,79 mais intervalles énormes sur les constantes (fatigue 19 j [6 ; 32]) et paramètres corrélés."
  },
  {
   "cle": "hellsten2025",
@@ -4563,6 +4888,19 @@
   "note": "50 actifs : un côté ICC 0,98, MDC 1,7° ; l'asymétrie est moins fiable (ICC 0,85, MDC 2,1°) que la mesure d'un seul côté."
  },
  {
+  "cle": "hrozanova2021",
+  "auteurs": "Hrozanova M, Talsnes R, Karlsson Ø, McGawley K, Moen F",
+  "annee": 2021,
+  "titre": "An observational study of sleep characteristics in elite endurance athletes during an altitude training camp at 1800 m",
+  "revue": "Sleep Health 7(6):691-698",
+  "doi": "10.1016/j.sleh.2021.08.007",
+  "url": "https://doi.org/10.1016/j.sleh.2021.08.007",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "33 athlètes d'endurance nationaux à 1 800 m : durée de sommeil et sommeil léger en baisse, sommeil profond et fréquence respiratoire en hausse."
+ },
+ {
   "cle": "hudl-capterra",
   "auteurs": "Capterra",
   "annee": 2026,
@@ -4717,6 +5055,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Seulement 5 vrais essais randomisés sur 15 : RR 0,56 (IC 0,20-1,52), puis RR 0,59 (0,27-1,29) après mise à jour ; effet non concluant."
+ },
+ {
+  "cle": "inami2023",
+  "auteurs": "Inami T, Yamaguchi S, Nishioka T, et al.",
+  "annee": 2023,
+  "titre": "The Effect of Contrast Water Therapy on Dehydration during Endurance Training Camps in Moderate-Altitude Environments",
+  "revue": "Sports (Basel) 11(12):232",
+  "doi": "10.3390/sports11120232",
+  "url": "https://doi.org/10.3390/sports11120232",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "22 étudiants, stage 13 jours à 1 100 m : signes de déshydratation les premiers jours, réduits par les bains contrastés, sans effet sur la performance."
  },
  {
   "cle": "ingalls2026",
@@ -5317,6 +5668,19 @@
   "note": "32 études : RSI lié à l'endurance (r = 0,40) et à la force (r ≈ 0,34) ; lien fort avec le changement de direction (r = -0,57)."
  },
  {
+  "cle": "javaloyes2019",
+  "auteurs": "Javaloyes A, Sarabia JM, Lamberts RP, Moya-Ramon M",
+  "annee": 2019,
+  "titre": "Training Prescription Guided by Heart-Rate Variability in Cycling",
+  "revue": "Int J Sports Physiol Perform 14(1):23-32",
+  "doi": "10.1123/ijspp.2018-0122",
+  "url": "https://doi.org/10.1123/ijspp.2018-0122",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "17 cyclistes entraînés, 8 sem : groupe VFC, puissance max +5,1 %, chrono 40 min +7,3 % ; pas de différence significative entre groupes."
+ },
+ {
   "cle": "jde-nolio-2022",
   "auteurs": "Le Journal des Entreprises",
   "annee": 2022,
@@ -5681,6 +6045,19 @@
   "note": "Gratuit sans publicité, plans trail jusqu'à plus de 120 km avec renforcement musculaire ; 4,7/5 sur 19 000 notes."
  },
  {
+  "cle": "kirby2021",
+  "auteurs": "Kirby NV, Lucas SJE, Armstrong OJ, Weaver SR, Lucas RAI",
+  "annee": 2021,
+  "titre": "Intermittent post-exercise sauna bathing improves markers of exercise capacity in hot and temperate conditions in trained middle-distance runners",
+  "revue": "Eur J Appl Physiol 121(2):621-635",
+  "doi": "10.1007/s00421-020-04541-z",
+  "url": "https://doi.org/10.1007/s00421-020-04541-z",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "20 coureurs (20 ans), sauna 28 min 3 fois/sem, 3 sem : FC −11 bpm à la chaleur, VO2max +0,27 L/min, vitesse à 4 mmol +0,6 km/h vs contrôle."
+ },
+ {
   "cle": "kirmse2024",
   "auteurs": "Kirmse M, Lottmann TM, Volk NR, De Marées M, Holwerda AM, van Loon LJC, Platen P",
   "annee": 2024,
@@ -5705,6 +6082,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "Article d'opinion critique : la muscu centrée sur la phase folliculaire est « peut-être » supérieure ; besoin de recherches (PMID 35471634)."
+ },
+ {
+  "cle": "kiviniemi2007",
+  "auteurs": "Kiviniemi AM, Hautala AJ, Kinnunen H, Tulppo MP",
+  "annee": 2007,
+  "titre": "Endurance training guided individually by daily heart rate variability measurements",
+  "revue": "Eur J Appl Physiol 101(6):743-751",
+  "doi": "10.1007/s00421-007-0552-2",
+  "url": "https://doi.org/10.1007/s00421-007-0552-2",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "26 hommes, 4 sem : intensité choisie selon la VFC (seuil = moyenne 10 j − ET) : vitesse max +0,9 vs +0,5 km/h en plan fixe."
  },
  {
   "cle": "klasnja2019",
@@ -5759,6 +6149,19 @@
   "note": "En VTT, la tête et le membre supérieur restent les zones les plus touchées ; peu d'études sur la prévention."
  },
  {
+  "cle": "koivistomork2021",
+  "auteurs": "Koivisto-Mørk AE, Svendsen IS, Skattebo Ø, Hallén J, Paulsen G",
+  "annee": 2021,
+  "titre": "Impact of baseline serum ferritin and supplemental iron on altitude-induced hemoglobin mass response in elite athletes",
+  "revue": "Scand J Med Sci Sports 31(9):1764-1773",
+  "doi": "10.1111/sms.13982",
+  "url": "https://doi.org/10.1111/sms.13982",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "107 stages (1 800-2 500 m) : Hbmass +3,7 % ; ni ferritine ni fer ne changent le gain si réserves normales ; maladie −5,7 %."
+ },
+ {
   "cle": "kolber2011",
   "auteurs": "Kolber MJ, Vega F, Widmayer K, Cheng MS",
   "annee": 2011,
@@ -5770,6 +6173,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "30 sujets, épaule active à l'inclinomètre : ICC intra 0,83-0,94 ; MDC90 entre examinateurs 8° flexion, 9° rotation externe, 8° rotation interne."
+ },
+ {
+  "cle": "kolling2020",
+  "auteurs": "Kölling S, Schaffran P, Bibbey A, et al.",
+  "annee": 2020,
+  "titre": "Validation of the Acute Recovery and Stress Scale (ARSS) and the Short Recovery and Stress Scale (SRSS) in three English-speaking regions",
+  "revue": "J Sports Sci 38(2):130-139",
+  "doi": "10.1080/02640414.2019.1684790",
+  "url": "https://doi.org/10.1080/02640414.2019.1684790",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "996 athlètes : ARSS (32 items) et SRSS (8 items) ont une cohérence interne acceptable (α > 0,70) et une structure validée."
  },
  {
   "cle": "konrad2022",
@@ -6448,6 +6864,19 @@
   "note": "Revue narrative sur la réponse du tendon à la charge, à l'arrêt, à l'âge et à la blessure ; pas de chiffres dans le résumé."
  },
  {
+  "cle": "mah2011",
+  "auteurs": "Mah CD, Mah KE, Kezirian EJ, Dement WC",
+  "annee": 2011,
+  "titre": "The effects of sleep extension on the athletic performance of collegiate basketball players",
+  "revue": "Sleep 34(7):943-950",
+  "doi": "10.5665/sleep.1132",
+  "url": "https://doi.org/10.5665/sleep.1132",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "11 basketteurs : +111 min de sommeil pendant 5-7 sem, sprint 16,2 → 15,5 s, lancers francs +9 %."
+ },
+ {
   "cle": "makehuman-faq-vente",
   "auteurs": "MakeHuman Community",
   "annee": 2020,
@@ -6459,6 +6888,45 @@
   "niveau": "D",
   "verifie": true,
   "note": "Modèles exportés en CC0, usage commercial libre ; squelette non détaillé."
+ },
+ {
+  "cle": "malta2021",
+  "auteurs": "Malta ES, Dutra YM, Broatch JR, Bishop DJ, Zagatto AM",
+  "annee": 2021,
+  "titre": "The Effects of Regular Cold-Water Immersion Use on Training-Induced Changes in Strength and Endurance Performance: A Systematic Review with Meta-Analysis",
+  "revue": "Sports Med 51(1):161-174",
+  "doi": "10.1007/s40279-020-01362-0",
+  "url": "https://doi.org/10.1007/s40279-020-01362-0",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "8 études : bain froid régulier délétère pour la force (SMD −0,60 [−0,87 ; −0,33]), sans effet sur la performance aérobie."
+ },
+ {
+  "cle": "malta2026",
+  "auteurs": "Malta ES, Neto JCR, Beck WR, et al.",
+  "annee": 2026,
+  "titre": "Regular Cold-Water Immersion Following HIIT Does Not Affect Intramuscular Adaptation Markers, Inflammatory Profile or Endurance Performance",
+  "revue": "Scand J Med Sci Sports 36(3):e70241",
+  "doi": "10.1111/sms.70241",
+  "url": "https://doi.org/10.1111/sms.70241",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "16 hommes, 5 sem de HIIT + bain 11 °C 15 min : aucun effet sur VO2max, temps limite, PGC-1α, cellules satellites."
+ },
+ {
+  "cle": "manresarocamora2021",
+  "auteurs": "Manresa-Rocamora A, Sarabia JM, Javaloyes A, Flatt AA, Moya-Ramón M",
+  "annee": 2021,
+  "titre": "Heart Rate Variability-Guided Training for Enhancing Cardiac-Vagal Modulation, Aerobic Fitness, and Endurance Performance: A Methodological Systematic Review with Meta-Analysis",
+  "revue": "Int J Environ Res Public Health 18(19):10299",
+  "doi": "10.3390/ijerph181910299",
+  "url": "https://doi.org/10.3390/ijerph181910299",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "VFC guidée : VFC vagale SMD 0,50 ; VO2max 0,20, seuil 2 0,26, performance 0,20, tous non significatifs."
  },
  {
   "cle": "mansfield2020",
@@ -6485,6 +6953,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Audiences déclarées de 10 créateurs running/trail (10 sept. 2025)."
+ },
+ {
+  "cle": "marchal2025",
+  "auteurs": "Marchal A, Benazieb O, Weldegebriel Y, Méline T, Imbach F",
+  "annee": 2025,
+  "titre": "Statistical flaws of the fitness-fatigue sports performance prediction model",
+  "revue": "Sci Rep 15(1):3706",
+  "doi": "10.1038/s41598-025-88153-7",
+  "url": "https://doi.org/10.1038/s41598-025-88153-7",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Analyse bayésienne, 2 jeux de données : modèle mal conditionné et surajusté ; la composante fatigue n'améliore pas la prédiction (p > 0,40)."
  },
  {
   "cle": "marketreportsworld-coaching-software",
@@ -6656,6 +7137,19 @@
   "note": "52 expériences : g = 0,44 naïf → 0,11 après correction du biais de sélection ; pas de valeur probante."
  },
  {
+  "cle": "mclean2010",
+  "auteurs": "McLean BD, Coutts AJ, Kelly V, McGuigan MR, Cormack SJ",
+  "annee": 2010,
+  "titre": "Neuromuscular, endocrine, and perceptual fatigue responses during different length between-match microcycles in professional rugby league players",
+  "revue": "Int J Sports Physiol Perform 5(3):367-383",
+  "doi": "10.1123/ijspp.5.3.367",
+  "url": "https://doi.org/10.1123/ijspp.5.3.367",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "12 rugbymen : fatigue perçue, bien-être, courbatures et saut réduits 48 h après match, retour à la base en ~4 jours."
+ },
+ {
   "cle": "mcnulty2020",
   "auteurs": "McNulty KL, Elliott-Sale KJ, Dolan E et al.",
   "annee": 2020,
@@ -6680,6 +7174,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Applis fitness/bien-être pas DM ; exemple DM : exercices de rééducation personnalisés pour soulager une pathologie musculosquelettique ; règle 11."
+ },
+ {
+  "cle": "meeusen2013",
+  "auteurs": "Meeusen R, Duclos M, Foster C, et al.",
+  "annee": 2013,
+  "titre": "Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine",
+  "revue": "Med Sci Sports Exerc 45(1):186-205",
+  "doi": "10.1249/mss.0b013e318279a10a",
+  "url": "https://doi.org/10.1249/mss.0b013e318279a10a",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Continuum surcharge fonctionnelle, non fonctionnelle, surentraînement ; diagnostic d'exclusion ; aucun marqueur ne remplit tous les critères."
  },
  {
   "cle": "mesinfos-nolio-2024",
@@ -6825,6 +7332,19 @@
   "note": "Pédaler en descente n'améliore pas le temps ; les vibrations off-road augmentent FC et VO2 par rapport à la route (PMID 27712198)."
  },
  {
+  "cle": "millet2010",
+  "auteurs": "Millet GP, Roels B, Schmitt L, Woorons X, Richalet JP",
+  "annee": 2010,
+  "titre": "Combining hypoxic methods for peak performance",
+  "revue": "Sports Med 40(1):1-25",
+  "doi": "10.2165/11317920-000000000-00000",
+  "url": "https://doi.org/10.2165/11317920-000000000-00000",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Altitude optimale pour vivre 2 200-2 500 m, dose minimale ~12 h/jour, ~4 semaines pour l'érythropoïèse."
+ },
+ {
   "cle": "mirasmoreno2025",
   "auteurs": "Miras-Moreno S, Pérez-Castilla A, Weakley J, Rojas-Ruiz FJ, García-Ramos A",
   "annee": 2025,
@@ -6903,6 +7423,19 @@
   "note": "30 participants suivis 12 mois : freins = motivation, temps, lieu, absence de supervision ; l'alliance facilite l'adhésion à long terme."
  },
  {
+  "cle": "moore2023",
+  "auteurs": "Moore E, Fuller JT, Bellenger CR, et al.",
+  "annee": 2023,
+  "titre": "Effects of Cold-Water Immersion Compared with Other Recovery Modalities on Athletic Performance Following Acute Strenuous Exercise in Physically Active Participants: A Systematic Review, Meta-Analysis, and Meta-Regression",
+  "revue": "Sports Med 53(3):687-705",
+  "doi": "10.1007/s40279-022-01800-1",
+  "url": "https://doi.org/10.1007/s40279-022-01800-1",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "28 études : le bain froid est supérieur aux autres méthodes contre les courbatures, équivalent pour puissance et souplesse."
+ },
+ {
   "cle": "moran2017",
   "auteurs": "Moran J, Sandercock GR, Ramírez-Campillo R, Meylan C, Collison J, Parry DA",
   "annee": 2017,
@@ -6942,6 +7475,19 @@
   "note": "Consensus CIO : le REDs touche les hommes comme les femmes ; rôle du manque de glucides ; nouvel outil clinique CAT2 et principes de prévention."
  },
  {
+  "cle": "mujika2010",
+  "auteurs": "Mujika I",
+  "annee": 2010,
+  "titre": "Intense training: the key to optimal performance before and during the taper",
+  "revue": "Scand J Med Sci Sports 20 Suppl 2:24-31",
+  "doi": "10.1111/j.1600-0838.2010.01189.x",
+  "url": "https://doi.org/10.1111/j.1600-0838.2010.01189.x",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Pendant l'affûtage, le volume peut être fortement réduit, mais pas au détriment de l'intensité."
+ },
+ {
   "cle": "mujika2016",
   "auteurs": "Mujika I, Rønnestad BR, Martin DT",
   "annee": 2016,
@@ -6953,6 +7499,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "Revue : la muscu de maintien est essentielle en saison ; cyclistes femmes à plus de masse maigre des jambes : ~4-9 % de puissance max moyenne par kg en plus (PMID 27068517)."
+ },
+ {
+  "cle": "mujika2019",
+  "auteurs": "Mujika I, Sharma AP, Stellingwerff T",
+  "annee": 2019,
+  "titre": "Contemporary Periodization of Altitude Training for Elite Endurance Athletes: A Narrative Review",
+  "revue": "Sports Med 49(11):1651-1669",
+  "doi": "10.1007/s40279-019-01165-y",
+  "url": "https://doi.org/10.1007/s40279-019-01165-y",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "L'altitude doit être périodisée (charge, récup, pic, suivi, nutrition) ; effets à long terme des expositions répétées mal connus."
  },
  {
   "cle": "munozdelacruz2026",
@@ -7618,6 +8177,58 @@
   "note": "ECR, 16 marathoniens masters (~44 ans) : force maximale → 1RM +16,34 %, économie +6,17 % à allure marathon ; rien dans les autres groupes ; masse inchangée (PMID 23207882)."
  },
  {
+  "cle": "pinero2024",
+  "auteurs": "Piñero A, Burke R, Augustin F, et al.",
+  "annee": 2024,
+  "titre": "Throwing cold water on muscle growth: A systematic review with meta-analysis of the effects of postexercise cold water immersion on resistance training-induced hypertrophy",
+  "revue": "Eur J Sport Sci 24:177-189",
+  "doi": "10.1002/ejsc.12074",
+  "url": "https://doi.org/10.1002/ejsc.12074",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "8 études : hypertrophie moindre avec bain froid (cSMD −0,22 [−0,47 ; 0,04]) ; qualité passable à faible."
+ },
+ {
+  "cle": "plews2013",
+  "auteurs": "Plews DJ, Laursen PB, Stanley J, Kilding AE, Buchheit M",
+  "annee": 2013,
+  "titre": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+  "revue": "Sports Med 43(9):773-781",
+  "doi": "10.1007/s40279-013-0071-8",
+  "url": "https://doi.org/10.1007/s40279-013-0071-8",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Chez l'élite, hausse et baisse de VFC peuvent toutes deux accompagner une mauvaise adaptation ; moyennes glissantes et empreinte individuelle nécessaires."
+ },
+ {
+  "cle": "plews2014",
+  "auteurs": "Plews DJ, Laursen PB, Le Meur Y, et al.",
+  "annee": 2014,
+  "titre": "Monitoring training with heart rate-variability: how much compliance is needed for valid assessment?",
+  "revue": "Int J Sports Physiol Perform 9(5):783-790",
+  "doi": "10.1123/ijspp.2013-0455",
+  "url": "https://doi.org/10.1123/ijspp.2013-0455",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Triathlètes : plateau après 3-4 jours moyennés ; au moins 3 mesures valides de VFC par semaine."
+ },
+ {
+  "cle": "plews2017",
+  "auteurs": "Plews DJ, Scott B, Altini M, et al.",
+  "annee": 2017,
+  "titre": "Comparison of Heart-Rate-Variability Recording With Smartphone Photoplethysmography, Polar H7 Chest Strap, and Electrocardiography",
+  "revue": "Int J Sports Physiol Perform 12(10):1324-1328",
+  "doi": "10.1123/ijspp.2016-0668",
+  "url": "https://doi.org/10.1123/ijspp.2016-0668",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "29 sujets : rMSSD par smartphone ou ceinture vs ECG, erreur acceptable (CV ~6,35 %), différence triviale."
+ },
+ {
   "cle": "plisky2021",
   "auteurs": "Plisky P, Schwartkopf-Phifer K, Huebner B, Garner MB, Bullock G",
   "annee": 2021,
@@ -7668,6 +8279,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "26 athlètes ; yoga 2×/sem, 10 sem : gains de souplesse (sit-reach, épaule) et d'équilibre."
+ },
+ {
+  "cle": "poppendieck2016",
+  "auteurs": "Poppendieck W, Wegmann M, Ferrauti A, et al.",
+  "annee": 2016,
+  "titre": "Massage and Performance Recovery: A Meta-Analytical Review",
+  "revue": "Sports Med 46(2):183-204",
+  "doi": "10.1007/s40279-015-0420-x",
+  "url": "https://doi.org/10.1007/s40279-015-0420-x",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "22 ECR : effet faible sur la performance ; +1,3 % après endurance (g 0,12), +3,9 % après force ; massages courts plus efficaces."
  },
  {
   "cle": "powden2015",
@@ -8112,6 +8736,19 @@
   "note": "3 options (BMX, cyclisme traditionnel, VTT) ; pas de statistiques de certifiés affichées."
  },
  {
+  "cle": "roach2013",
+  "auteurs": "Roach GD, Schmidt WF, Aughey RJ, et al.",
+  "annee": 2013,
+  "titre": "The sleep of elite athletes at sea level and high altitude: a comparison of sea-level natives and high-altitude natives (ISA3600)",
+  "revue": "Br J Sports Med 47 Suppl 1:i114-120",
+  "doi": "10.1136/bjsports-2013-092843",
+  "url": "https://doi.org/10.1136/bjsports-2013-092843",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "À 3 600 m : sommeil plus court et moins bon la 1re nuit chez les natifs de plaine, qualité normale en ~1 semaine ; natifs d'altitude non touchés."
+ },
+ {
   "cle": "roadman-apps-force-velo",
   "auteurs": "Roadman Cycling",
   "annee": 2026,
@@ -8136,6 +8773,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "Audit du 25/08/2026 de 14 offres (CycleCoach 99-899 £, FasCat 153-461 $/4 sem., Team Wilpers 299-375 $)."
+ },
+ {
+  "cle": "roberts2015",
+  "auteurs": "Roberts LA, Raastad T, Markworth JF, et al.",
+  "annee": 2015,
+  "titre": "Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training",
+  "revue": "J Physiol 593(18):4285-4301",
+  "doi": "10.1113/jp270570",
+  "url": "https://doi.org/10.1113/jp270570",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "21 hommes, 12 sem : 10 min de bain froid après la muscu = moins de force et de masse ; fibres II +17 % et myonoyaux +26 % seulement en récup active."
  },
  {
   "cle": "roberts2020",
@@ -8175,6 +8825,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Méta-régressions : gains de force similaires quel que soit le RIR ; hypertrophie plus grande quand on s'approche de l'échec ; analyse exploratoire (PMID 38970765)."
+ },
+ {
+  "cle": "rogerson2024",
+  "auteurs": "Rogerson D, Nolan D, Androulakis Korakakis P, et al.",
+  "annee": 2024,
+  "titre": "Deloading Practices in Strength and Physique Sports: A Cross-sectional Survey",
+  "revue": "Sports Med Open",
+  "doi": "10.1186/s40798-024-00691-y",
+  "url": "https://doi.org/10.1186/s40798-024-00691-y",
+  "type": "observationnelle",
+  "niveau": "D",
+  "verifie": true,
+  "note": "246 athlètes : décharge de 6,4 ± 1,7 jours toutes les 5,6 ± 2,3 semaines ; volume réduit, fréquence gardée, RIR augmenté."
  },
  {
   "cle": "romeo2019",
@@ -8318,6 +8981,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Cas (élites, XCO cité) : +16 % presse et sprint après une prépa, maintenus en saison ; +44 % presse et +25 % sprint en 3,5 ans (PMID 35548458)."
+ },
+ {
+  "cle": "ronnestad2025",
+  "auteurs": "Rønnestad BR, Odden I, Urianstad T, et al.",
+  "annee": 2025,
+  "titre": "Heat Suit Training Preserves the Increased Hemoglobin Mass after Altitude Camp in Elite Cyclists",
+  "revue": "Med Sci Sports Exerc 57(1):81-87",
+  "doi": "10.1249/mss.0000000000003542",
+  "url": "https://doi.org/10.1249/mss.0000000000003542",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "18 cyclistes élites : Hbmass +4,1 % après 3 sem à ~2 100 m, puis −3,3 % en 3,5 sem, sauf avec 3 séances de chaleur par semaine."
  },
  {
   "cle": "rostami2015",
@@ -8554,6 +9230,19 @@
   "note": "131 athlètes, 16 sem : 70 essaient ; remplissage 84 % si soutenus par le coach vs 28 % et 8 % en autonomie."
  },
  {
+  "cle": "saw2016",
+  "auteurs": "Saw AE, Main LC, Gastin PB",
+  "annee": 2016,
+  "titre": "Monitoring the athlete training response: subjective self-reported measures trump commonly used objective measures: a systematic review",
+  "revue": "Br J Sports Med 50(5):281-291",
+  "doi": "10.1136/bjsports-2015-094758",
+  "url": "https://doi.org/10.1136/bjsports-2015-094758",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "56 études : les mesures subjectives reflètent la charge aiguë et chronique avec plus de sensibilité et de constance que les mesures objectives."
+ },
+ {
   "cle": "sawtooth-van-westendorp",
   "auteurs": "Sawtooth Software",
   "annee": 2026,
@@ -8591,6 +9280,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "43 études : SMD force max −0,06 NS, force explosive −0,28, hypertrophie −0,01 NS ; explosif plus freiné en même séance qu'avec ≥ 3 h d'écart (PMID 34757594)."
+ },
+ {
+  "cle": "scoon2007",
+  "auteurs": "Scoon GS, Hopkins WG, Mayhew S, Cotter JD",
+  "annee": 2007,
+  "titre": "Effect of post-exercise sauna bathing on the endurance performance of competitive male runners",
+  "revue": "J Sci Med Sport 10(4):259-262",
+  "doi": "10.1016/j.jsams.2006.06.009",
+  "url": "https://doi.org/10.1016/j.jsams.2006.06.009",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "6 coureurs, 3 sem de sauna post-séance (~31 min) : temps limite +32 % (~1,9 % en chrono), volume plasmatique +7,1 %."
  },
  {
   "cle": "sensortower-france-t3-2025",
@@ -8721,6 +9423,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "23 études, 11 applis : valides et fiables pour la vitesse de barre, mais biais systématique aux charges lourdes."
+ },
+ {
+  "cle": "sim2019",
+  "auteurs": "Sim M, Garvican-Lewis LA, Cox GR, et al.",
+  "annee": 2019,
+  "titre": "Iron considerations for the athlete: a narrative review",
+  "revue": "Eur J Appl Physiol 119(7):1463-1478",
+  "doi": "10.1007/s00421-019-04157-y",
+  "url": "https://doi.org/10.1007/s00421-019-04157-y",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Carence en fer chez ~15-35 % des athlètes femmes et ~5-11 % des hommes ; rôle de l'hepcidine après l'effort."
  },
  {
   "cle": "singh2025",
@@ -9137,6 +9852,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "21 essais, 30 850 personnes : exercice + éducation RR 0,55 ; exercice seul 0,65 ; éducation seule, ceinture et semelles sans effet."
+ },
+ {
+  "cle": "stellingwerff2019",
+  "auteurs": "Stellingwerff T, Peeling P, Garvican-Lewis LA, et al.",
+  "annee": 2019,
+  "titre": "Nutrition and Altitude: Strategies to Enhance Adaptation, Improve Performance and Maintain Health: A Narrative Review",
+  "revue": "Sports Med 49(Suppl 2):169-184",
+  "doi": "10.1007/s40279-019-01159-w",
+  "url": "https://doi.org/10.1007/s40279-019-01159-w",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "À 1 600-2 400 m : risque de faible disponibilité énergétique, besoins en fer accrus, bilan 4-6 semaines avant, pertes d'eau accrues (texte intégral lu)."
  },
  {
   "cle": "stoggl2022",
@@ -9605,6 +10333,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "19 études ; méta de 4 ECR non significative ; préférences partagées entre soutien et compétition."
+ },
+ {
+  "cle": "torstveit2023",
+  "auteurs": "Torstveit MK, Ackerman KE, Constantini N, et al.",
+  "annee": 2023,
+  "titre": "Primary, secondary and tertiary prevention of Relative Energy Deficiency in Sport (REDs): a narrative review by a subgroup of the IOC consensus on REDs",
+  "revue": "Br J Sports Med 57(17):1119-1126",
+  "doi": "10.1136/bjsports-2023-106932",
+  "url": "https://doi.org/10.1136/bjsports-2023-106932",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Prévention : éducation, ne pas insister sur le poids et la minceur ; repérage précoce par questionnaires, entretiens et entourage."
  },
  {
   "cle": "tp-communique-2024",
@@ -10504,6 +11245,19 @@
   "note": "Panorama VBT mis à jour en mai 2026 : prix, applis caméra, rachat de Perch par Catapult."
  },
  {
+  "cle": "vermeire2022",
+  "auteurs": "Vermeire K, Ghijs M, Bourgois JG, Boone J",
+  "annee": 2022,
+  "titre": "The Fitness-Fatigue Model: What's in the Numbers?",
+  "revue": "Int J Sports Physiol Perform 17(5):810-813",
+  "doi": "10.1123/ijspp.2021-0494",
+  "url": "https://doi.org/10.1123/ijspp.2021-0494",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Commentaire : les paramètres dépendent des valeurs de départ, de la technique et de la mesure de charge ; éviter les constantes génériques."
+ },
+ {
   "cle": "vernillo2017",
   "auteurs": "Vernillo G, Giandolini M, Edwards WB, Morin JB, Samozino P, Horvais N, Millet GY",
   "annee": 2017,
@@ -10840,6 +11594,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "232 coureurs : 97 % utilisent la technologie mais la jugent peu utile pour la prévention ; 84,5 % intéressés par un outil dédié."
+ },
+ {
+  "cle": "walsh2021",
+  "auteurs": "Walsh NP, Halson SL, Sargent C, et al.",
+  "annee": 2021,
+  "titre": "Sleep and the athlete: narrative review and 2021 expert consensus recommendations",
+  "revue": "Br J Sports Med (en ligne 2020)",
+  "doi": "10.1136/bjsports-2020-102025",
+  "url": "https://doi.org/10.1136/bjsports-2020-102025",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Athlètes souvent < 7 h et sommeil fragmenté ; pas de règle unique 7-9 h, approche individuelle ; boîte à outils éducation et dépistage."
  },
  {
   "cle": "wang2020",
