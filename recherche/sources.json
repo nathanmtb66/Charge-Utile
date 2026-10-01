@@ -104,6 +104,19 @@
   "note": "Tarifs API par million de tokens : Sonnet 5.5 2 $/10 $, Haiku 4.5 1 $/5 $, Opus 5.5 4 $/20 $ ; lots -50 %."
  },
  {
+  "cle": "apple-developer-programme",
+  "auteurs": "Apple",
+  "annee": 2026,
+  "titre": "Apple Developer Program — What's included",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://developer.apple.com/programs/whats-included/",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "99 $ par an ; exonération pour associations, établissements d'enseignement, administrations."
+ },
+ {
   "cle": "athlete360-appstore",
   "auteurs": "INSEP",
   "annee": 2026,
@@ -3120,6 +3133,19 @@
   "note": "8,0 Md$ (2023) → 17,7 Md$ (2030) ; définition floue, méthode non publiée."
  },
  {
+  "cle": "revenuecat-2026",
+  "auteurs": "RevenueCat",
+  "annee": 2026,
+  "titre": "The State of Subscription Apps in 10 minutes: lessons, trends, and benchmarks for 2026",
+  "revue": "blog RevenueCat (rapport sur 115 000+ applis)",
+  "doi": null,
+  "url": "https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026",
+  "type": "site",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Toutes catégories : passage au payant à J35 médian 2,1 % en freemium, 10,7 % avec paywall dur ; rétention annuelle an 1 ≈ 28 % ; revenu par installation à J60 0,38 $ (freemium) vs 3,09 $ (paywall dur). Pas de chiffre propre au sport dans cet article."
+ },
+ {
   "cle": "ridestrong-page",
   "auteurs": "EverAthlete",
   "annee": 2026,
@@ -3586,6 +3612,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "179 $ ou 79 $, 17 leçons vidéo de renforcement, PDF, 18 plans."
+ },
+ {
+  "cle": "stripe-prix-fr",
+  "auteurs": "Stripe",
+  "annee": 2026,
+  "titre": "Tarifs Stripe (France)",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://stripe.com/fr/pricing",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Cartes standard EEE 1,5 % + 0,25 € ; premium 2,8 % + 0,25 € ; internationales 3,15 % + 0,25 € ; Billing 0,7 % du volume (lu le 01/10/2026)."
  },
  {
   "cle": "strong-appstore",

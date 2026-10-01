@@ -1,4 +1,67 @@
 [
-{"cle": "ronnestad2014", "auteurs": "Rønnestad BR, Mujika I", "annee": 2014, "titre": "Optimizing strength training for running and cycling endurance performance: A review", "revue": "Scand J Med Sci Sports 24(4):603-612", "doi": "10.1111/sms.12104", "url": "https://doi.org/10.1111/sms.12104", "type": "revue", "niveau": "B", "verifie": true, "note": "Revue : la force lourde est recommandée pour l'économie de pédalage ; force lourde ou explosive améliore la course ; effet additif le plus net en vélo avec la force lourde (résumé Europe PMC, PMID 23914932)."},
-{"cle": "blagrove2018", "auteurs": "Blagrove RC, Howatson G, Hayes PR", "annee": 2018, "titre": "Effects of Strength Training on the Physiological Determinants of Middle- and Long-Distance Running Performance: A Systematic Review", "revue": "Sports Med 48(5):1117-1149", "doi": "10.1007/s40279-017-0835-7", "url": "https://doi.org/10.1007/s40279-017-0835-7", "type": "revue", "niveau": "A", "verifie": true, "note": "Revue systématique : bonnes preuves que la force améliore l'économie de course, les contre-la-montre et le sprint, sans effet négatif sur la composition corporelle ; 2-3 séances/sem conseillées (résumé Europe PMC, PMID 29249083)."}
+ {
+  "cle": "ronnestad2014",
+  "auteurs": "Rønnestad BR, Mujika I",
+  "annee": 2014,
+  "titre": "Optimizing strength training for running and cycling endurance performance: A review",
+  "revue": "Scand J Med Sci Sports 24(4):603-612",
+  "doi": "10.1111/sms.12104",
+  "url": "https://doi.org/10.1111/sms.12104",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue : la force lourde est recommandée pour l'économie de pédalage ; force lourde ou explosive améliore la course ; effet additif le plus net en vélo avec la force lourde (résumé Europe PMC, PMID 23914932)."
+ },
+ {
+  "cle": "blagrove2018",
+  "auteurs": "Blagrove RC, Howatson G, Hayes PR",
+  "annee": 2018,
+  "titre": "Effects of Strength Training on the Physiological Determinants of Middle- and Long-Distance Running Performance: A Systematic Review",
+  "revue": "Sports Med 48(5):1117-1149",
+  "doi": "10.1007/s40279-017-0835-7",
+  "url": "https://doi.org/10.1007/s40279-017-0835-7",
+  "type": "revue",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Revue systématique : bonnes preuves que la force améliore l'économie de course, les contre-la-montre et le sprint, sans effet négatif sur la composition corporelle ; 2-3 séances/sem conseillées (résumé Europe PMC, PMID 29249083)."
+ },
+ {
+  "cle": "stripe-prix-fr",
+  "auteurs": "Stripe",
+  "annee": 2026,
+  "titre": "Tarifs Stripe (France)",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://stripe.com/fr/pricing",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Cartes standard EEE 1,5 % + 0,25 € ; premium 2,8 % + 0,25 € ; internationales 3,15 % + 0,25 € ; Billing 0,7 % du volume (lu le 01/10/2026)."
+ },
+ {
+  "cle": "apple-developer-programme",
+  "auteurs": "Apple",
+  "annee": 2026,
+  "titre": "Apple Developer Program — What's included",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://developer.apple.com/programs/whats-included/",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "99 $ par an ; exonération pour associations, établissements d'enseignement, administrations."
+ },
+ {
+  "cle": "revenuecat-2026",
+  "auteurs": "RevenueCat",
+  "annee": 2026,
+  "titre": "The State of Subscription Apps in 10 minutes: lessons, trends, and benchmarks for 2026",
+  "revue": "blog RevenueCat (rapport sur 115 000+ applis)",
+  "doi": null,
+  "url": "https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026",
+  "type": "site",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Toutes catégories : passage au payant à J35 médian 2,1 % en freemium, 10,7 % avec paywall dur ; rétention annuelle an 1 ≈ 28 % ; revenu par installation à J60 0,38 $ (freemium) vs 3,09 $ (paywall dur). Pas de chiffre propre au sport dans cet article."
+ }
 ]

@@ -279,3 +279,52 @@ Fenêtre proposée : saison de préparation hivernale, **novembre 2026 → fin f
 
 Ces seuils sont des **choix de pilotage** inspirés des repères ci-dessus, pas des normes publiées.
 
+---
+
+## 6. Calendrier de saison : quand on choisit ses outils et qui paie quand
+
+### 6.1 Repères vérifiés
+
+| Date / période | Événement | Source |
+|---|---|---|
+| **1er septembre** | ouverture des licences FFC de l'année suivante pour les nouveaux licenciés (validité portée à 16 mois) ; licences valables du 1er janvier au 31 décembre | [velo.ffc.fr](https://velo.ffc.fr/se-licencier/licence-club/) ; renouvellement à partir du 1er octobre selon le résumé WebSearch d'un comité régional (non ouvert) |
+| **21 sept. 2026 → 1er oct. 2027** | promotion DEJEPS VTT de 16 stagiaires (CREPS Montpellier / Font-Romeu) | [creps-montpellier.org](https://www.creps-montpellier.org/formation.fiche-DEJEPS-VTT) |
+| **Fin octobre – 1er novembre** | dépôt des dossiers de labellisation des teams VTT pour la saison suivante, **avec le budget de la saison** (date limite 1er nov. 2025 pour la saison 2026) | [comiteoccitanieffc.com](https://www.comiteoccitanieffc.com/post/labellisation-teams-vtt-2026) |
+| **Novembre – décembre** | vote du **budget initial** des CREPS par leur conseil d'administration (exemple : CREPS des Pays de la Loire, budget initial 2022 adopté à l'unanimité le 14 décembre 2021) | [creps-pdl.sports.gouv.fr, PV du CA](https://www.creps-pdl.sports.gouv.fr/assets/images/docedit/pv_ca_14_decembre_2021.pdf), lu en texte |
+| **Mars → septembre** | Coupe de France VTT : 2026 = 5 manches (Pernes-les-Fontaines 27-29 mars, Guéret 17-19 avril, Élancourt 29-31 mai, Puy-Saint-Vincent 24-26 juillet, Brouains–Mont-Saint-Michel 11-13 septembre) | [velo.ffc.fr](https://velo.ffc.fr/informations-coupe-france-vtt/) pour les manches 3-5 ; manches 1-2 d'après le résumé WebSearch |
+| **Calendrier Coupe de France VTT 2027** | **non publié** au 01/10/2026 (la page FFC ne mentionne que les Mondiaux 2027) | [velo.ffc.fr](https://velo.ffc.fr/informations-coupe-france-vtt/) |
+| **Juillet** | championnats de France VTT XCO (2026 : 16-19 juillet, Le Dévoluy) | [velo.ffc.fr](https://velo.ffc.fr/championnats-france-vtt-xco-2026-repetition-championnats-deurope-monde/) |
+| **24 août → 5 sept. 2027** | **Championnats du monde UCI 2027 en Haute-Savoie Mont-Blanc**, VTT notamment aux Gets ; Coupe du monde XCO 2027 en projet : 12 manches du 17 avril au 10 octobre (calendrier provisoire, fuite) | [brujulabike.com, 17 août 2026](https://en.brujulabike.com/a-draft-of-the-2027-xco-world-cup-calendar-has-been-leaked-it-will-expand-to-12-events/) ; « Haute-Savoie UCI 2027 » cité aussi par [velo.ffc.fr](https://velo.ffc.fr/informations-coupe-france-vtt/) |
+| **Avril → mai** | campagne de subventions ANS « Projet sportif fédéral » pour clubs et comités, via Le Compte Asso (2026 : 3 avril → 10 mai pour le roller ; dates variables par fédération, jusqu'au 22 mai pour le triathlon selon WebSearch) | [ffroller-skateboard.fr](https://ffroller-skateboard.fr/blog/projet-sportif-federal-psf-2026-la-campagne-de-depot-de-dossier-est-ouverte/) |
+| **Mai** | commission nationale d'admission dans les CIE de ski (11 mai 2026) → entrée en structure à la rentrée de septembre | [ffs.fr](https://ffs.fr/app/uploads/DELIBERATIONS-CIE-12.05.2026.pdf) |
+| **Trail : pas de date fixe** | championnats de France de trail : mars 2023, avril 2024, juillet 2025, 29 mars 2026 (Bédoin) | [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Championnat_de_France_de_trail) |
+
+Non vérifié : la page Nordic Magazine sur les stages de préparation 2026-2027 de l'équipe de France B de biathlon (Prémanon, Ceillac, Bessans, **Font-Romeu**) est payante (erreur 402) ; seul son titre est connu.
+
+### 6.2 Lecture : fenêtres d'action pour Charge Utile (analyse)
+
+- **VTT XCO / route** : saison de courses mars → septembre. **Octobre-novembre = coupure puis reprise**, c'est **le moment où l'on programme le bloc de force hivernal** (novembre → février) et où les teams montent leur budget (dossier de labellisation fin octobre). → **Fenêtre principale : maintenant jusqu'à mi-novembre 2026** pour proposer un test sur le bloc de force hivernal. Deuxième fenêtre : fin de saison (septembre) pour le budget de l'année suivante.
+- **Ski nordique / biathlon** : compétitions en hiver ; la préparation physique (force incluse) se fait **de mai à novembre**. En octobre, les plans sont déjà en place : la bonne fenêtre est **avril-juin** (après la saison, au moment des admissions en CIE), pour un démarrage en mai.
+- **Trail** : calendrier éclaté, chaque coureur a sa course objectif ; la force se programme surtout pendant l'hiver. Le coach indépendant décide seul, à tout moment : canal « coach par coach » toute l'année.
+- **Structures (CREPS, comités, clubs)** : budgets votés en **novembre-décembre** (CREPS) ou en assemblée générale de fin d'année (clubs, non vérifié ici) ; subventions ANS demandées en **avril-mai**. Un achat institutionnel pour 2027 devrait être dans le budget de fin 2026 : trop tard pour un achat ferme, mais **assez tôt pour un pilote gratuit qui prépare une ligne budgétaire 2028** ou une ligne dans un dossier ANS d'avril-mai 2027.
+- **Année 2027 particulière** : Mondiaux UCI multi-disciplines en Haute-Savoie fin août-début septembre 2027 → forte visibilité du VTT français, occasion de contenus (section 2).
+
+---
+
+## Les 10 premiers contacts les plus réalistes pour Nathan
+
+Classés par probabilité d'obtenir un test réel d'ici fin novembre 2026 (proximité × besoin × liberté de décision). Types de structures uniquement, pas de noms de personnes.
+
+1. **Les stagiaires DEJEPS VTT 2026-2027 du CREPS Montpellier / Font-Romeu** (16 places, formation commencée le 21 septembre 2026). Futurs entraîneurs, qui doivent apprendre à programmer la préparation physique, présents à Font-Romeu. Proposition : outil gratuit pour leurs séances de stage, en échange de retours écrits. Passer par le responsable pédagogique de la formation.
+2. **Les enseignants et étudiants de la licence STAPS Entraînement sportif (L3) et du master de Font-Romeu**. Nathan est dans la place ; 200 h de stage en L3 où il faut encadrer de vrais athlètes. Demande : un TD ou un projet tutoré où Charge Utile sert de support, et 5-10 étudiants en stage qui l'utilisent avec leurs athlètes.
+3. **L'encadrement VTT du collège-lycée Pierre-de-Coubertin et du club support** (structure d'entraînement VTT de Font-Romeu citée par la FFC). Public jeune : commencer par la vue coach et des séances au poids du corps, avec accord parental.
+4. **Le Club des sports de Font-Romeu, section biathlon / ski de fond (pôle espoir / section sportive)**. Fait déjà de l'« haltérophilie » dans un entraînement croisé ; préparation estivale-automnale en cours. Même précaution « mineurs ».
+5. **Les préparateurs physiques du CREPS Occitanie à Font-Romeu** (passer par le département haute performance / le correspondant fédéral). Pas un achat : un avis d'expert et, si possible, un test sur un groupe en stage. Le contenu vidéo (« je filme votre stage ») est la monnaie d'échange.
+6. **Les coachs VTT et trail indépendants visibles sur la marketplace Nolio** (602 coachs affichés, filtrables VTT / trail). Ceux qui utilisent déjà intervals.icu sont prioritaires (le relais existe). Objectif : 20 entretiens Mom Test, 5 tests.
+7. **Le comité régional FFC Occitanie (ETR, commission VTT)** : accès aux clubs, à la sélection régionale jeunes (24 pilotes) et aux stages régionaux, souvent organisés en altitude. Proposition : séances de renforcement standard pour les stages ETR.
+8. **Les teams VTT XCO de club d'Occitanie et du Sud (niveau Team National 2 ou DN)** qui bouclent leur budget fin octobre : un staff réduit, souvent un seul entraîneur bénévole pour 8-15 pilotes, sans préparateur physique. C'est le profil le plus proche de Nathan aujourd'hui. Se rencontrent aux manches de Coupe de France.
+9. **Les structures d'entraînement VTT voisines** : Mende (centre omnisports de Lozère, VTT + salle de musculation), Blagnac (route-piste, salle de musculation), et la structure de Nice (VTT XCO). Même logique qu'en 8, mais structurées et liées à la FFC.
+10. **Le pôle France relève VTT XCO (CREPS de Boulouris, actuellement à Besançon) et le pôle espoirs triathlon du CREPS de Montpellier**. Le moins probable à court terme (staffs fédéraux, outils institutionnels), mais la meilleure référence possible. Objectif réaliste : un rendez-vous d'avis, pas un contrat ; y aller **après** avoir 3-5 coachs utilisateurs à montrer.
+
+**Ce qui manque pour aller vite** : une page « coach » avec fake door de prix (section 4.3), un formulaire de consentement pour mineurs et une note RGPD d'une page, et 3 vidéos de démonstration filmées par Nathan (section 2.3).
+

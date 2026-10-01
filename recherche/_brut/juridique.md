@@ -294,3 +294,85 @@ D'après plusieurs sources secondaires concordantes (non vérifié sur une page 
 5. Ouvrir un compte bancaire dédié (obligatoire au-delà de 10 000 € de CA deux années de suite : règle connue, non relue ici).
 6. **Expert-comptable** : une consultation ponctuelle (souvent proposée gratuitement par les CCI ou les réseaux d'accompagnement) suffit au début.
 
+---
+
+## 7. Sécurité et comptes utilisateurs
+
+### Réponse franche
+Le RGPD (art. 32) n'impose pas de liste technique : il impose une sécurité **adaptée au risque**, et avec des données de santé le risque est élevé. Les références françaises pratiques sont la **recommandation CNIL « mots de passe »** (2022) et le **guide CNIL de la sécurité des données personnelles** (édition 2024). Une fuite de données de santé doit être notifiée à la CNIL sous 72 h et, vu la sensibilité, probablement aux personnes concernées (art. 33 et 34 RGPD, règles connues, non relues sur EUR-Lex). Certitude : élevée.
+
+### Recommandation CNIL « mots de passe »
+Délibération n° 2022-100 du 21/07/2022, publiée en octobre 2022 ([cnil.fr](https://www.cnil.fr/fr/mots-de-passe-recommandations-pour-maitriser-sa-securite), lu ; [délibération PDF](https://www.cnil.fr/sites/default/files/atoms/files/deliberation-2022-100-du-21-juillet-2022_recommandation-aux-mots-de-passe.pdf), vu via recherche web). Trois cas :
+1. **Mot de passe seul** : entropie d'au moins **80 bits** (exemple CNIL : 12 caractères mêlant majuscules, minuscules, chiffres et caractères spéciaux).
+2. **Mot de passe + restriction d'accès** (blocage temporaire après des échecs, délai croissant, CAPTCHA) : **50 bits** suffisent. Cas typique d'un service en ligne grand public : **c'est le cas à viser pour Charge Utile**.
+3. **Mot de passe + dispositif matériel** (carte, téléphone) : 13 bits (code PIN), blocage après 3 échecs.
+- Stockage : **jamais en clair** ; fonction de hachage lente avec sel (scrypt, Argon2…).
+- Plus de renouvellement périodique imposé pour les comptes ordinaires.
+
+**Plus simple et plus sûr pour une petite équipe : ne pas gérer de mots de passe du tout.** Lien magique par e-mail, passkeys (WebAuthn), ou connexion via un fournisseur d'identité. Moins de surface d'attaque, pas de base de hachés à protéger.
+
+### Guide CNIL de la sécurité (édition 2024)
+Publié le 26/03/2024 ([cnil.fr](https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles-nouvelle-edition-2024), lu), 25 fiches, dont des fiches nouvelles sur les **applis mobiles, le cloud, les API et l'IA**. Fiche « Sauvegarder » (contenu renvoyé par recherche web, [cnil.fr](https://www.cnil.fr/fr/securite-sauvegarder)) : sauvegardes fréquentes, au moins une copie sur un site géographiquement distinct, au moins une copie **hors ligne**, sauvegardes chiffrées et protégées comme la production, **tests de restauration réguliers**, règle « 3-2-1 » (3 copies, 2 supports, 1 hors ligne).
+
+### Constats sur l'architecture actuelle (lecture du dépôt, 01/10/2026)
+**Deux défauts de sécurité ont été relevés dans le site et le relais actuels** (accès aux plans des athlètes ; intégrité des écritures vers intervals.icu). Les détails sont volontairement **hors du dépôt public** : voir `recherche/_prive/securite-relais.md` sur le Mac de Nathan.
+3. La vue coach est protégée par un PIN comparé à temps constant (bon point) ; aucun mécanisme de limitation des essais n'a été repéré lors de cette lecture rapide (à vérifier) : un PIN court sans limitation ne respecte pas le cas n° 2 de la CNIL.
+4. La **clé API de coach intervals.icu** dans le Worker donne accès en lecture et écriture à tous les athlètes coachés (constat déjà fait dans `intervals.md`) : c'est le secret le plus sensible du système.
+
+### Minimum à mettre en place avant de vendre
+| Mesure | Pourquoi |
+|---|---|
+| Limitation des tentatives sur le PIN coach et sur toute connexion (Cloudflare propose des règles de limitation de débit) | Cas n° 2 de la CNIL. |
+| HTTPS partout (déjà le cas), en-têtes de sécurité (CSP) | Base. |
+| Chiffrement des données de santé au repos, séparation des secrets (clés API en variables secrètes du Worker, déjà le cas pour `ICU_KEY`) | Art. 32. |
+| Journal des accès aux données sensibles, sans y écrire les données elles-mêmes | Détection et preuve. |
+| Sauvegarde quotidienne chiffrée de la base vers un second fournisseur + test de restauration trimestriel | Fiche CNIL « Sauvegarder ». |
+| Procédure écrite de violation de données (qui fait quoi en 72 h) | Art. 33-34. |
+| Mises à jour et revue des dépendances | Base. |
+
+### Juriste ?
+Non. Un **audit de sécurité léger** par un pair développeur ou un étudiant en cybersécurité est plus utile qu'un juriste ici. L'ANSSI et la CNIL publient gratuitement tout le nécessaire.
+
+---
+
+## 8. PWA ou App Store / Play Store en 2026 ?
+
+### Réponse franche
+**Rester en PWA pour lancer et vendre, sans appli native, au moins pendant la première année.** Les limites iOS qui comptaient (notifications, effacement des données) sont levées **à condition que l'appli soit ajoutée à l'écran d'accueil**, ce qui est déjà le parcours de Charge Utile (lien personnel ouvert puis installé). Le passage en magasin d'applis se justifie plus tard, pour la **découverte** (recherche dans l'App Store) et la **confiance**, pas pour des raisons techniques. Certitude : **moyenne à élevée** (techniquement vérifié ; l'effet sur les ventes est une hypothèse).
+
+### Limites iOS actuelles (vérifiées sur webkit.org)
+- **Notifications Web Push** : disponibles depuis **iOS / iPadOS 16.4** (bêta annoncée le 16/02/2023), **uniquement pour les web apps ajoutées à l'écran d'accueil**, après un geste de l'utilisateur (bouton « s'abonner »). Pas besoin d'adhérer au programme développeur Apple. L'API de pastille (badge) est aussi disponible ([webkit.org, Web Push for Web Apps on iOS and iPadOS](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/), lu).
+- **Effacement après 7 jours** : depuis mars 2020, Safari efface le stockage écrit par script (localStorage, IndexedDB, service worker) d'un site **après 7 jours d'utilisation de Safari sans interaction avec ce site**. Les **web apps ajoutées à l'écran d'accueil ne sont pas concernées** : elles ont leur propre compteur, qui avance seulement quand on les utilise ; WebKit qualifie l'effacement de données propres d'une telle appli de bogue grave ([webkit.org, 24/03/2020](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/), lu). **Conséquence pour Charge Utile** : un athlète qui utilise le lien dans Safari sans l'installer peut perdre son historique local (charges, RPE) s'il ne s'en sert pas pendant une semaine d'usage de Safari. L'appli stocke aujourd'hui l'état dans `localStorage` (`docs/js/app.js`, l. 32-34) : **il faut pousser l'installation à l'écran d'accueil** et, pour la version vendue, sauvegarder côté serveur.
+- **Quotas de stockage** (Safari 17 et plus) : jusqu'à 60 % du disque par origine dans un navigateur, 15 % dans les autres applis ; une web app de l'écran d'accueil a les mêmes quotas. `navigator.storage.persist()` est accordé selon des heuristiques, notamment si le site est ouvert comme web app de l'écran d'accueil ([webkit.org, Updates to Storage Policy](https://webkit.org/blog/14403/updates-to-storage-policy/), lu ; date de l'article non relevée, Safari 17 = 2023).
+- **Installation** : sur iOS, pas d'invite d'installation automatique ; l'utilisateur doit passer par le menu Partager > « Sur l'écran d'accueil ». Il faut un petit tutoriel illustré dans l'appli (règle d'usage connue, non relue sur une page Apple).
+
+### Situation dans l'UE (DMA)
+- En février 2024, Apple avait annoncé la suppression des web apps de l'écran d'accueil dans l'UE avec iOS 17.4 (justification : obligations du DMA sur les moteurs de navigateur alternatifs), puis a **fait marche arrière le 01/03/2024** : les web apps de l'écran d'accueil restent disponibles dans l'UE, construites sur WebKit ([The Register, 02/03/2024](https://www.theregister.com/software/2024/03/02/apple-reverses-decision-to-remove-home-screen-web-apps-in-eu/307995), [MacRumors, 01/03/2024](https://www.macrumors.com/2024/03/01/apple-walks-back-decision-to-disable-eu-web-apps/), vus via recherche web ; la page Apple d'origine n'a pas été relue). Aucune information trouvée sur une nouvelle restriction depuis.
+- Conditions commerciales Apple dans l'UE : page « DMA and apps in the EU » ([developer.apple.com](https://developer.apple.com/support/dma-and-apps-in-the-eu/), lue le 01/10/2026) qui annonce des **conditions unifiées en vigueur au 01/10/2026** : commission sur achat intégré 26 % (standard) ou **15 %** (Small Business Program, et abonnements après la 1re année) ; paiement alternatif dans l'appli 20 % / 10 % ; **offres hors appli** (lien vers un site) possibles, avec 15 % / 10 % sur les ventes faites dans les 7 jours suivant le clic ; Core Technology Commission de 5 % pour la distribution hors App Store. **À relire attentivement** : ces conditions venaient d'entrer en vigueur et le résumé a été produit par l'outil de lecture ; les montants exacts sont à recontrôler avant décision.
+
+### Coûts et commissions (pages officielles lues le 01/10/2026)
+| Poste | Apple | Google |
+|---|---|---|
+| Inscription | **99 $ par an** ([Apple Developer Program](https://developer.apple.com/programs/how-it-works/)) ; dispense possible pour certaines structures | **25 $ une fois** ([Play Console Help](https://support.google.com/googleplay/android-developer/answer/6112435?hl=en), vu via recherche web) |
+| Commission petite entreprise | **15 %** sous 1 M$ de produit annuel (Small Business Program, adhésion effective 15 jours après acceptation) ; 10 % dans l'UE sur conditions alternatives pour les abonnements après la 1re année ([page Small Business Program](https://developer.apple.com/app-store/small-business-program/)) | **Abonnements : 10 % + 5 % de frais de facturation** ; nouveaux barèmes déployés dans l'EEE, au Royaume-Uni et aux États-Unis à partir du **30/06/2026** ([Play Console Help, frais de service](https://support.google.com/googleplay/android-developer/answer/112622), lu) |
+| Contraintes d'entrée | Règle 4.2 : une appli ne doit pas être un simple site « reconditionné » ; règle 3.1.1 : abonnement numérique = achat intégré (sauf exceptions UE / liens externes) ; règle 5.1.1 (ix) : les services dans des domaines très réglementés (dont la **santé**) doivent être soumis par une **personne morale**, pas un développeur individuel ([App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/), lu) | Comptes personnels créés après le 13/11/2023 : **test fermé avec au moins 12 testeurs pendant 14 jours** avant la mise en production (vu via recherche web, [Play Console Help](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en)) |
+
+Point d'attention Apple : la règle 1.4.1 impose de justifier toute mesure de santé et de rappeler de consulter un médecin pour les applis médicales. Les **tests de mobilité au capteur** devront être présentés comme des repères sportifs, sans prétention de mesure clinique, sinon risque de refus. La règle 5.1.1 (ix) peut poser problème si Apple classe l'appli comme « santé » : un micro-entrepreneur est une personne physique (point **non vérifié** : la pratique d'Apple pour les applis de fitness tenues par des entrepreneurs individuels n'a pas été trouvée).
+
+### Avantages / inconvénients
+| | PWA seule | Appli en magasin (native ou PWA emballée) |
+|---|---|---|
+| Coût | ~0 € | 99 $/an + 25 $ + temps de revue |
+| Commission | 0 % (hors frais de paiement Stripe etc.) | 15 % (ou 10 % + 5 %) si paiement via le magasin |
+| Mises à jour | instantanées (déjà le cas avec GitHub Pages) | revue Apple à chaque version native |
+| Découverte | nulle hors bouche-à-oreille et réseaux | recherche App Store / Play |
+| Confiance perçue | plus faible (« c'est un site ? ») | plus forte |
+| Capteurs, caméra, hors-ligne | suffisants pour l'usage actuel | accès complet (HealthKit, Apple Watch, notifications fiables) |
+| TVA européenne | à gérer soi-même (ou merchant of record) | gérée par Apple / Google |
+
+### Recommandation : faut-il une appli native, et quand ?
+1. **Maintenant → premiers 100 abonnés payants** : PWA, paiement web (Stripe ou merchant of record), tutoriel « ajouter à l'écran d'accueil » obligatoire au premier lancement, sauvegarde serveur de l'historique.
+2. **Signal pour passer en magasin** : (a) une part importante des ventes perdues parce que « pas sur l'App Store », (b) besoin d'**intégrations santé natives** (HealthKit, Apple Watch, Garmin via Health Connect) que le web ne permet pas, (c) des notifications Web Push qui ne suffisent plus.
+3. **Première étape magasin peu coûteuse** : emballer la PWA (Trusted Web Activity pour Google Play ; Capacitor ou équivalent pour iOS) plutôt que réécrire en natif, en ajoutant assez de fonctions natives pour passer la règle 4.2 d'Apple.
+4. Avant de soumettre à Apple : avoir une **structure juridique** claire (micro-entreprise au minimum) et vérifier la règle 5.1.1 (ix).
+
