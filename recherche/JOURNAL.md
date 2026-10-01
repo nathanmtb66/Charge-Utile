@@ -12,14 +12,14 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - [x] Section « Ce qui est faux dans nos hypothèses » (09). *(14 points)*
 
 **Science**
-- [ ] 9 domaines A à I écrits, chacun avec ≥ 30 sources vérifiées dont ≥ 10 méta-analyses/consensus, tableau d'affirmations, chiffres clés, mythes, règles, « ce que l'appli devrait faire ».
-- [ ] 8 protocoles de respiration codables (C) ; score de forme (D) ; tableau nutrition de fin de séance (E).
+- [x] 9 domaines A à I écrits, chacun avec ≥ 30 sources vérifiées dont ≥ 10 méta-analyses/consensus, tableau d'affirmations, chiffres clés, mythes, règles, « ce que l'appli devrait faire ». *(sources / dont méta-analyses, revues systématiques, consensus : A 74/33 · B 63/37 · C 66/29 · D 63/27 · E 87/42 · F 76/33 · G 62/34 · H 72/31 · I 100/36 ; quotas contrôlés par `_outils/publie_science.py`)*
+- [x] 8 protocoles de respiration codables (C) ; score de forme (D) ; tableau nutrition de fin de séance (E). *(tableau + JSON dans chaque fichier)*
 
 **Exercices, séances, règles**
 - [ ] Carte de couverture ; ≥ 250 fiches candidates dont ≥ 80 en priorité 1 ; chaque case vide de la carte comblée ou justifiée.
 - [ ] ≥ 12 tests de terrain proposés.
 - [ ] ≥ 60 séances modèles couvrant toutes les phases et tous les contextes listés.
-- [ ] ≥ 50 règles codables.
+- [x] ≥ 50 règles codables. *(70, dont 24 de niveau D assumé)*
 
 **Produit**
 - [ ] vision, fonctionnalités (avec liste « à ne pas faire »), MVP vendable, expériences, idées folles.
@@ -41,10 +41,10 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 | Phase | Début | Fin |
 |---|---|---|
 | 1 — Business | 30/09 20 h 30 | 01/10 13 h 30 (3 coupures par limite de session) |
-| 2 — Science | 01/10 03 h 00 (collecte lancée en parallèle) | |
-| 3 — Exercices | | |
+| 2 — Science | 01/10 03 h 00 (collecte lancée en parallèle) | 01/10 14 h 30 (revue contradictoire en cours) |
+| 3 — Exercices | 01/10 13 h 30 | |
 | 4 — Séances modèles | | |
-| 5 — Règles | | |
+| 5 — Règles | 01/10 13 h 45 | 01/10 14 h 30 |
 | 6 — Produit | | |
 
 ## Décisions

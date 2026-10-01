@@ -1,0 +1,1176 @@
+[
+ {
+  "id": "autoreg-cible-rir",
+  "domaine": "autoregulation",
+  "condition": "exercice de force (type reps) sans RPE cible précisé par le coach",
+  "action": "viser 2 à 3 répétitions en réserve (RPE 7-8) par défaut ; 3 à 4 pour un exercice explosif ; ne jamais proposer l'échec",
+  "parametres": {
+   "rir_force": [
+    2,
+    3
+   ],
+   "rir_explosif": [
+    3,
+    4
+   ],
+   "echec": false
+  },
+  "preuve": "A",
+  "sources": [
+   "robinson2024",
+   "grgic2022",
+   "refalo2023"
+  ],
+  "limite": "les essais portent surtout sur des pratiquants de musculation, pas sur des athlètes d'endurance fatigués"
+ },
+ {
+  "id": "autoreg-pas-proportionnel",
+  "domaine": "autoregulation",
+  "condition": "série terminée avec un écart d'au moins 2 répétitions en réserve par rapport à la cible (aujourd'hui : pas fixe de 2,5 kg)",
+  "action": "ajuster la série suivante de 2,5 % de la charge par répétition d'écart (arrondi au pas disponible), au lieu d'un pas fixe ; garder la charge si l'écart est de 0 ou 1",
+  "parametres": {
+   "pct_par_rep": 2.5,
+   "ecart_min_reps": 2,
+   "arrondi": "pas de l'exercice"
+  },
+  "preuve": "C",
+  "sources": [
+   "helms2018",
+   "cowley2025",
+   "zourdos2016"
+  ],
+  "limite": "le coefficient de 2,5 % par répétition vient de la relation charge-répétitions (Epley), pas d'un essai sur l'ajustement série par série"
+ },
+ {
+  "id": "autoreg-plafond-seance",
+  "domaine": "autoregulation",
+  "condition": "hausses successives de charge dans une même séance",
+  "action": "plafonner la hausse totale à +10 % de la charge de départ sur la séance ; au-delà, noter pour le coach au lieu d'augmenter",
+  "parametres": {
+   "hausse_max_pct_seance": 10
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "plafond de prudence sans étude ; il sert aussi de garde-fou contre un bug (responsabilité du fait du logiciel)"
+ },
+ {
+  "id": "autoreg-premiere-serie",
+  "domaine": "autoregulation",
+  "condition": "première série d'un exercice",
+  "action": "ne pas augmenter la charge sur le seul ressenti de la première série (souvent sous-estimé) ; attendre la série 2, sauf si l'athlète annonce 5 répétitions en réserve ou plus",
+  "parametres": {
+   "serie_min_pour_hausse": 2,
+   "exception_rir": 5
+  },
+  "preuve": "B",
+  "sources": [
+   "mansfield2020",
+   "halperin2022"
+  ],
+  "limite": "ralentit la mise à la bonne charge quand le coach a prescrit beaucoup trop léger"
+ },
+ {
+  "id": "autoreg-serie-incomplete",
+  "domaine": "autoregulation",
+  "condition": "série incomplète (répétitions prévues non atteintes) ou 0 répétition en réserve",
+  "action": "baisser la charge de 5 % (ou d'un pas) pour la série suivante et ajouter 30 s de récupération ; si deux séries de suite sont incomplètes, arrêter l'exercice et le signaler au coach",
+  "parametres": {
+   "baisse_pct": 5,
+   "recup_plus_s": 30,
+   "arret_apres": 2
+  },
+  "preuve": "D",
+  "sources": [
+   "grgic2022"
+  ],
+  "limite": "seuils de prudence ; l'échec répété n'apporte rien à la force chez l'endurant"
+ },
+ {
+  "id": "autoreg-report-seance-suivante",
+  "domaine": "autoregulation",
+  "condition": "fin d'un exercice : charge finale différente de la charge prescrite",
+  "action": "proposer au coach la charge finale comme charge de départ de la prochaine séance ; ne rien changer sans sa validation",
+  "parametres": {
+   "validation_coach": true
+  },
+  "preuve": "D",
+  "sources": [
+   "helms2018"
+  ],
+  "limite": "aujourd'hui l'appli note seulement « Nathan montera la prochaine fois »"
+ },
+ {
+  "id": "autoreg-rir-correction-debutant",
+  "domaine": "autoregulation",
+  "condition": "athlète avec moins de 4 semaines de pratique du ressenti (RIR), ou série de plus de 12 répétitions",
+  "action": "traiter le RIR annoncé comme incertain à ±1 répétition ; pour les séries de plus de 12 répétitions, demander un RPE global plutôt qu'un RIR",
+  "parametres": {
+   "incertitude_reps": 1,
+   "reps_max_rir": 12,
+   "semaines_apprentissage": 4
+  },
+  "preuve": "A",
+  "sources": [
+   "halperin2022",
+   "zourdos2021"
+  ],
+  "limite": "l'erreur individuelle varie beaucoup (hétérogénéité très élevée) ; l'expérience n'améliore pas la précision"
+ },
+ {
+  "id": "autoreg-tenues",
+  "domaine": "autoregulation",
+  "condition": "tenue (type hold) jugée trop facile (20 s en réserve ou plus) ou impossible (0 s)",
+  "action": "allonger de 5 s, ou raccourcir de 5 s (plancher 10 s) ; au-delà de 60 s de tenue, proposer la variante plus dure plutôt que d'allonger",
+  "parametres": {
+   "pas_s": 5,
+   "plancher_s": 10,
+   "plafond_s": 60
+  },
+  "preuve": "D",
+  "sources": [
+   "lum2019"
+  ],
+  "limite": "c'est le comportement actuel de l'appli, plus le plafond de 60 s ; pas d'étude sur ce pas de 5 s"
+ },
+ {
+  "id": "autoreg-charge-lourde-cible",
+  "domaine": "autoregulation",
+  "condition": "exercice principal de force en phase de développement (PPG, PPO)",
+  "action": "prescrire 3 à 6 répétitions à 80 % du max estimé ou plus ; signaler au coach une séance faite uniquement de séries de 12 répétitions et plus",
+  "parametres": {
+   "reps": [
+    3,
+    6
+   ],
+   "pct_1rm_min": 80,
+   "alerte_reps_min": 12
+  },
+  "preuve": "A",
+  "sources": [
+   "eihara2022",
+   "llanoslagos2024b"
+  ],
+  "limite": "ne vaut pas pour un débutant en musculation (voir debutant-charges)"
+ },
+ {
+  "id": "debutant-charges",
+  "domaine": "autoregulation",
+  "condition": "athlète débutant en musculation (moins de 3 mois de pratique encadrée)",
+  "action": "commencer par 8 à 12 répétitions à charge modérée, technique d'abord ; hausses de charge de 2 à 10 % ; pas de test de vrai 1RM",
+  "parametres": {
+   "reps": [
+    8,
+    12
+   ],
+   "hausse_pct": [
+    2,
+    10
+   ],
+   "vrai_1rm": false,
+   "mois_min": 3
+  },
+  "preuve": "A",
+  "sources": [
+   "acsm2009"
+  ],
+  "limite": "position de consensus ancienne (2009) ; le passage au lourd se décide avec le coach"
+ },
+ {
+  "id": "proprio-niveau",
+  "domaine": "progression-proprio-plio",
+  "condition": "exercice de proprio à niveaux : réponse « trop facile » ou « je perds l'équilibre »",
+  "action": "monter d'un niveau après « trop facile » ; descendre d'un niveau après « je perds l'équilibre » ; rester sinon (comportement actuel)",
+  "parametres": {
+   "niveaux": 4
+  },
+  "preuve": "D",
+  "sources": [
+   "schiftan2015"
+  ],
+  "limite": "la progression par ressenti n'est pas testée ; la preuve porte sur l'entraînement de l'équilibre en général"
+ },
+ {
+  "id": "proprio-validation-niveau",
+  "domaine": "progression-proprio-plio",
+  "condition": "passage au niveau supérieur demandé pour la première fois",
+  "action": "exiger « trop facile » sur 2 séries de suite, ou sur 2 séances, avant de fixer le nouveau niveau comme niveau de départ",
+  "parametres": {
+   "confirmations": 2
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "règle de prudence pour éviter les montées sur un coup de chance"
+ },
+ {
+  "id": "proprio-cheville-fragile",
+  "domaine": "progression-proprio-plio",
+  "condition": "athlète qui a déclaré une entorse de cheville passée",
+  "action": "démarrer un niveau plus bas et programmer la proprio de cheville 2 à 3 fois par semaine pendant le bloc",
+  "parametres": {
+   "niveau_depart": -1,
+   "frequence_semaine": [
+    2,
+    3
+   ]
+  },
+  "preuve": "A",
+  "sources": [
+   "schiftan2015",
+   "doherty2017"
+  ],
+  "limite": "la preuve concerne la récidive d'entorse dans des sports collectifs surtout ; pas de diagnostic par l'appli"
+ },
+ {
+  "id": "plio-contacts-seance",
+  "domaine": "progression-proprio-plio",
+  "condition": "séance contenant de la pliométrie",
+  "action": "compter les contacts au sol ; débutant : 30 à 60 contacts de faible intensité par séance ; monter sur 3 à 4 semaines ; progresser par la difficulté des sauts plutôt que par le nombre",
+  "parametres": {
+   "contacts_debut": [
+    30,
+    60
+   ],
+   "semaines_montee": [
+    3,
+    4
+   ]
+  },
+  "preuve": "D",
+  "sources": [
+   "ramirezcampillo2018"
+  ],
+  "limite": "repère prudent, non prouvé ; les études décrivent mal les contacts"
+ },
+ {
+  "id": "plio-plafond-bloc",
+  "domaine": "progression-proprio-plio",
+  "condition": "bloc de pliométrie de 8 à 10 semaines",
+  "action": "alerter le coach quand le cumul dépasse environ 1 000 contacts sur le bloc : plus de sauts n'apporte plus de gain de réactivité",
+  "parametres": {
+   "contacts_bloc": 1000,
+   "semaines": [
+    8,
+    10
+   ]
+  },
+  "preuve": "B",
+  "sources": [
+   "ramirezcampillo2023"
+  ],
+  "limite": "méta-analyse sur le RSI, toutes populations ; peu de cyclistes"
+ },
+ {
+  "id": "plio-qualite",
+  "domaine": "progression-proprio-plio",
+  "condition": "réponse « ça a bien baissé » ou « plus du tout explosif » après une série de sauts",
+  "action": "ajouter 30 s de récupération ; si la série suivante est encore dégradée, arrêter la pliométrie de la séance",
+  "parametres": {
+   "recup_plus_s": 30,
+   "arret_apres": 2
+  },
+  "preuve": "D",
+  "sources": [
+   "parejablanco2017"
+  ],
+  "limite": "le +30 s est le comportement actuel ; l'arrêt après 2 séries dégradées est une règle de prudence"
+ },
+ {
+  "id": "plio-ordre-seance",
+  "domaine": "progression-proprio-plio",
+  "condition": "séance qui contient pliométrie ou exercices explosifs et force lourde",
+  "action": "placer la pliométrie et l'explosif en début de séance, après l'échauffement ; alerter si la plio est placée après un bloc d'endurance",
+  "parametres": {
+   "ordre": [
+    "echauffement",
+    "plio",
+    "force",
+    "gainage"
+   ]
+  },
+  "preuve": "A",
+  "sources": [
+   "schumann2022"
+  ],
+  "limite": "la méta-analyse montre que la force explosive est la qualité la plus freinée par l'endurance, pas un ordre d'exercices précis"
+ },
+ {
+  "id": "plio-os-cyclistes",
+  "domaine": "progression-proprio-plio",
+  "condition": "athlète qui ne fait que du vélo (route ou VTT), sans course à pied ni sauts dans la semaine",
+  "action": "proposer une micro-séance de sauts d'environ 5 min, 3 à 5 fois par semaine, en plus de la force lourde",
+  "parametres": {
+   "duree_min": 5,
+   "frequence_semaine": [
+    3,
+    5
+   ]
+  },
+  "preuve": "B",
+  "sources": [
+   "hilkens2024",
+   "olmedillas2012"
+  ],
+  "limite": "l'effet sur la densité osseuse demande des mois ; l'appli ne mesure rien et ne parle pas de fragilité osseuse"
+ },
+ {
+  "id": "decharge-frequence",
+  "domaine": "decharge",
+  "condition": "4 à 6 semaines de musculation sans semaine allégée",
+  "action": "proposer au coach une semaine de décharge : même fréquence, charges maintenues, volume réduit (séries) de 40 à 50 %",
+  "parametres": {
+   "semaines_max": [
+    4,
+    6
+   ],
+   "volume_pct": [
+    -50,
+    -40
+   ],
+   "frequence": "inchangée"
+  },
+  "preuve": "D",
+  "sources": [
+   "bell2023",
+   "rogerson2024"
+  ],
+  "limite": "repose sur une enquête et un consensus d'entraîneurs, pas sur des essais"
+ },
+ {
+  "id": "decharge-pas-arret",
+  "domaine": "decharge",
+  "condition": "décharge programmée",
+  "action": "garder une séance allégée plutôt que supprimer la musculation de la semaine",
+  "parametres": {
+   "seances_min": 1
+  },
+  "preuve": "C",
+  "sources": [
+   "coleman2024"
+  ],
+  "limite": "un seul essai, sur des pratiquants de musculation"
+ },
+ {
+  "id": "decharge-bloc-volume-endurance",
+  "domaine": "decharge",
+  "condition": "semaine où le volume d'endurance prévu dépasse de plus de 30 % la moyenne des 4 semaines précédentes (stage, bloc)",
+  "action": "passer la musculation en mode maintien (1 séance, volume réduit) pendant ce bloc",
+  "parametres": {
+   "hausse_endurance_pct": 30,
+   "seances": 1
+  },
+  "preuve": "C",
+  "sources": [
+   "ronnestad2012",
+   "wilson2012"
+  ],
+  "limite": "le seuil de 30 % est un choix ; la preuve dit seulement que le gros volume d'endurance freine les gains de force"
+ },
+ {
+  "id": "arret-prolonge",
+  "domaine": "decharge",
+  "condition": "aucune séance de musculation faite depuis plus de 3 semaines en période de compétition",
+  "action": "alerter le coach : les acquis se perdent en 8 semaines environ ; proposer une séance de maintien courte",
+  "parametres": {
+   "semaines_alerte": 3,
+   "perte_semaines": 8
+  },
+  "preuve": "B",
+  "sources": [
+   "ronnestad2016",
+   "ronnestad2010b"
+  ],
+  "limite": "essais sur des cyclistes norvégiens entraînés, petits effectifs"
+ },
+ {
+  "id": "reprise-apres-coupure",
+  "domaine": "decharge",
+  "condition": "reprise après 2 semaines ou plus sans musculation",
+  "action": "reprendre à environ 80 % des dernières charges, RIR +1, et prévenir des courbatures ; revenir aux charges d'avant en 2 séances",
+  "parametres": {
+   "pct_charge": 80,
+   "rir_plus": 1,
+   "seances_retour": 2
+  },
+  "preuve": "D",
+  "sources": [
+   "chesterton2022"
+  ],
+  "limite": "valeurs de terrain ; la preuve citée porte sur les courbatures comme frein à l'adhésion"
+ },
+ {
+  "id": "course-a-affutage",
+  "domaine": "competition",
+  "condition": "course A dans les 14 jours",
+  "action": "passer en affûtage : volume de musculation réduit de 40 à 60 %, charges lourdes et fréquence maintenues ; dernière séance lourde courte entre J-10 et J-5",
+  "parametres": {
+   "jours": 14,
+   "volume_pct": [
+    -60,
+    -40
+   ],
+   "derniere_seance_j": [
+    -10,
+    -5
+   ]
+  },
+  "preuve": "C",
+  "sources": [
+   "bosquet2007",
+   "wang2023",
+   "spiering2021"
+  ],
+  "limite": "preuve A pour l'affûtage de l'endurance ; l'application à la musculation de l'endurant est une extrapolation"
+ },
+ {
+  "id": "course-veille",
+  "domaine": "competition",
+  "condition": "veille ou avant-veille d'une course A ou B",
+  "action": "interdire force lourde, excentrique et pliométrie intense ; autoriser seulement une activation courte (10 à 15 min) ; ne jamais placer de test",
+  "parametres": {
+   "jours": 2,
+   "activation_min": [
+    10,
+    15
+   ]
+  },
+  "preuve": "C",
+  "sources": [
+   "devantierthomas2024",
+   "giandolini2016b"
+  ],
+  "limite": "délai de 48 h tiré d'études de fatigue après musculation et descente, pas d'un essai sur la veille de course"
+ },
+ {
+  "id": "course-b-allegee",
+  "domaine": "competition",
+  "condition": "course B dans les 5 jours",
+  "action": "garder la séance, sans excentrique lent ni nouveauté ; volume réduit d'un tiers ; pas de séance jambes dans les 72 h avant la course",
+  "parametres": {
+   "jours": 5,
+   "volume_pct": -33,
+   "delai_h": 72
+  },
+  "preuve": "D",
+  "sources": [
+   "devantierthomas2024"
+  ],
+  "limite": "choix de terrain"
+ },
+ {
+  "id": "course-c-rien",
+  "domaine": "competition",
+  "condition": "course C",
+  "action": "ne rien changer au plan de musculation, sauf la règle des 48 h avant la course pour les jambes",
+  "parametres": {
+   "delai_h": 48
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "choix de terrain"
+ },
+ {
+  "id": "apres-course",
+  "domaine": "competition",
+  "condition": "lendemain et surlendemain d'une course A ou d'un trail avec 1 000 m de descente ou plus",
+  "action": "pas de musculation lourde des jambes pendant 48 à 72 h ; proposer récupération active et mobilité",
+  "parametres": {
+   "delai_h": [
+    48,
+    72
+   ],
+   "descente_m": 1000
+  },
+  "preuve": "B",
+  "sources": [
+   "giandolini2016b",
+   "lemire2021"
+  ],
+  "limite": "mesuré après des descentes de trail ; extrapolé aux courses de VTT et de route"
+ },
+ {
+  "id": "saison-maintien",
+  "domaine": "competition",
+  "condition": "phase de compétition (PPC) du plan de saison",
+  "action": "basculer en mode maintien : 1 séance par semaine, 1 à 2 séries par exercice, charge lourde conservée",
+  "parametres": {
+   "seances_semaine": 1,
+   "series": [
+    1,
+    2
+   ]
+  },
+  "preuve": "B",
+  "sources": [
+   "ronnestad2010b",
+   "spiering2021"
+  ],
+  "limite": "essais sur des cyclistes ; non testé en trail"
+ },
+ {
+  "id": "test-pas-avant-course",
+  "domaine": "competition",
+  "condition": "séance de tests placée à moins de 3 jours d'une course",
+  "action": "refuser et proposer une autre date",
+  "parametres": {
+   "jours": 3
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "règle déjà dans le contexte de l'appli (« jamais la veille d'une course »), étendue à 3 jours"
+ },
+ {
+  "id": "interference-delai",
+  "domaine": "planification",
+  "condition": "séance de musculation des jambes lourde et séance d'endurance intense le même jour",
+  "action": "placer la musculation au moins 6 h après ou avant ; la musculation en premier si l'objectif du bloc est la force ; alerter le coach si le délai est plus court",
+  "parametres": {
+   "delai_h": 6,
+   "ideal_h": 24
+  },
+  "preuve": "B",
+  "sources": [
+   "robineau2016",
+   "petre2021",
+   "murlasits2018"
+  ],
+  "limite": "l'étude du délai porte sur des rugbymen amateurs ; l'appli ne connaît l'heure réelle des séances que si intervals.icu la donne"
+ },
+ {
+  "id": "interference-seuil-apres-muscu",
+  "domaine": "planification",
+  "condition": "séance au seuil ou fractionné de course prévue dans les 8 h après une musculation lourde des jambes",
+  "action": "alerter : l'économie de course est dégradée pendant environ 8 h ; proposer de décaler",
+  "parametres": {
+   "delai_h": 8
+  },
+  "preuve": "C",
+  "sources": [
+   "palmer2001"
+  ],
+  "limite": "une étude de 9 coureurs"
+ },
+ {
+  "id": "interference-48h-seance-cle",
+  "domaine": "planification",
+  "condition": "séance clé d'endurance (intensité, sortie longue, technique) dans les 48 h après une musculation lourde, surtout en début de bloc",
+  "action": "prévenir le coach ; pour les 2 premières séances d'un bloc, charge prudente",
+  "parametres": {
+   "delai_h": 48,
+   "seances_prudentes": 2
+  },
+  "preuve": "C",
+  "sources": [
+   "devantierthomas2024"
+  ],
+  "limite": "une étude ; l'effet diminue avec l'habitude"
+ },
+ {
+  "id": "interference-trail-plus-strict",
+  "domaine": "planification",
+  "condition": "athlète de trail",
+  "action": "appliquer les délais avec une marge de 12 h de plus que pour un cycliste",
+  "parametres": {
+   "marge_h": 12
+  },
+  "preuve": "B",
+  "sources": [
+   "wilson2012",
+   "lundberg2022"
+  ],
+  "limite": "les méta-analyses montrent que la course interfère plus que le vélo ; la marge de 12 h est un choix"
+ },
+ {
+  "id": "charge-tsb-bas",
+  "domaine": "planification",
+  "condition": "TSB d'intervals.icu très bas pour l'athlète (sous son 10e centile sur 90 jours) le jour d'une séance de musculation",
+  "action": "proposer la version allégée de la séance (une série de moins par exercice) ; ne jamais annuler d'office",
+  "parametres": {
+   "centile": 10,
+   "fenetre_j": 90,
+   "series": -1
+  },
+  "preuve": "D",
+  "sources": [
+   "marchal2025",
+   "vermeire2022"
+  ],
+  "limite": "le modèle CTL/ATL/TSB prédit mal la forme individuelle ; la charge de musculation y est mal représentée"
+ },
+ {
+  "id": "charge-srpe-intervals",
+  "domaine": "planification",
+  "condition": "fin d'une séance de musculation",
+  "action": "envoyer à intervals.icu une charge = RPE de séance (0-10) × durée en minutes, en la nommant « charge sRPE » ; ne pas l'appeler TSS",
+  "parametres": {
+   "formule": "rpe_seance * duree_min"
+  },
+  "preuve": "A",
+  "sources": [
+   "foster2001",
+   "haddad2017"
+  ],
+  "limite": "la charge sRPE et le TSS ne sont pas sur la même échelle ; par défaut, intervals.icu compte la musculation à 0 % pour la forme"
+ },
+ {
+  "id": "pas-d-acwr",
+  "domaine": "planification",
+  "condition": "calcul d'un ratio charge aiguë / charge chronique",
+  "action": "ne pas l'afficher et ne déclencher aucune alerte dessus ; signaler seulement les hausses brusques de volume",
+  "parametres": {},
+  "preuve": "A",
+  "sources": [
+   "impellizzeri2020",
+   "wang2020"
+  ],
+  "limite": "consensus critique : le ratio n'a pas de base causale"
+ },
+ {
+  "id": "ajout-muscu-retrait-endurance",
+  "domaine": "planification",
+  "condition": "premier bloc de musculation d'un athlète qui n'en faisait pas",
+  "action": "suggérer au coach de retirer un peu de volume d'endurance (environ 1 h par semaine) plutôt que d'empiler",
+  "parametres": {
+   "heures_retirees": 1
+  },
+  "preuve": "C",
+  "sources": [
+   "yamamoto2010"
+  ],
+  "limite": "revue de 5 essais ; la valeur d'une heure est un repère"
+ },
+ {
+  "id": "forme-score",
+  "domaine": "score-de-forme",
+  "condition": "matin d'une séance : 5 réponses (sommeil, fatigue, courbatures, stress, humeur) saisies",
+  "action": "calculer un score 0-100 contre la base de l'athlète (28 jours) : vert ≥ 70 = garder ; orange 50-69 = alléger (une série de moins, RIR +1, plio divisée par 2) ; rouge < 50 = remplacer par mobilité, respiration, proprio facile",
+  "parametres": {
+   "poids": {
+    "sommeilQualite": 12,
+    "sommeilDuree": 13,
+    "fatigue": 20,
+    "courbatures": 13,
+    "stress": 6,
+    "humeur": 6,
+    "rpeVeille": 10,
+    "vfc": 15,
+    "tsb": 5
+   },
+   "vert": 70,
+   "orange": 50
+  },
+  "preuve": "D",
+  "sources": [
+   "saw2016",
+   "duignan2020",
+   "craven2022"
+  ],
+  "limite": "score non validé : aucun essai ne montre qu'il améliore la performance ; l'athlète peut toujours garder sa séance"
+ },
+ {
+  "id": "forme-priorites",
+  "domaine": "score-de-forme",
+  "condition": "case « malade » cochée, ou un item à 1 sur 5, ou nuit de moins de 6 h avant une séance de l'après-midi ou du soir",
+  "action": "malade : repos, message « si ça dure, vois un médecin » ; item à 1 ou nuit courte : au mieux orange",
+  "parametres": {
+   "sommeil_h": 6,
+   "item_min": 1
+  },
+  "preuve": "B",
+  "sources": [
+   "craven2022",
+   "meeusen2013"
+  ],
+  "limite": "le plafond « orange » est un choix de conception"
+ },
+ {
+  "id": "forme-rodage",
+  "domaine": "score-de-forme",
+  "condition": "moins de 14 jours de réponses",
+  "action": "afficher « score en rodage » et utiliser l'échelle absolue ; pas d'alerte au coach",
+  "parametres": {
+   "jours_min": 14
+  },
+  "preuve": "D",
+  "sources": [
+   "plews2014"
+  ],
+  "limite": "choix de conception"
+ },
+ {
+  "id": "forme-vfc",
+  "domaine": "score-de-forme",
+  "condition": "VFC disponible dans intervals.icu",
+  "action": "ne l'utiliser que s'il y a au moins 3 mesures sur 7 jours ; moyenne 7 jours sous la moyenne 28 jours moins 1 écart-type : au mieux orange",
+  "parametres": {
+   "mesures_min_7j": 3,
+   "ecart_type": 1,
+   "poids_max_pct": 15
+  },
+  "preuve": "B",
+  "sources": [
+   "plews2014",
+   "kiviniemi2007",
+   "duking2021"
+  ],
+  "limite": "la VFC guidée n'améliore pas nettement la performance ; chez les très entraînés, elle peut baisser en bonne forme"
+ },
+ {
+  "id": "forme-affutage",
+  "domaine": "score-de-forme",
+  "condition": "semaine d'affûtage ou veille de course",
+  "action": "le score ne peut qu'alléger la séance, jamais ajouter du volume",
+  "parametres": {},
+  "preuve": "D",
+  "sources": [
+   "bosquet2007"
+  ],
+  "limite": "choix de conception"
+ },
+ {
+  "id": "alerte-tendance-basse",
+  "domaine": "alerte",
+  "condition": "3 jours rouges de suite, ou moyenne du score sur 7 jours sous 55",
+  "action": "notifier le coach : « tendance basse cette semaine, on en parle ? » ; côté athlète : « parles-en à ton coach » ; ne jamais écrire « surentraînement »",
+  "parametres": {
+   "rouges_consecutifs": 3,
+   "moyenne_7j": 55
+  },
+  "preuve": "D",
+  "sources": [
+   "meeusen2013"
+  ],
+  "limite": "aucun marqueur ne détecte le surentraînement ; c'est un signal de conversation, pas un diagnostic"
+ },
+ {
+  "id": "alerte-veille-energie",
+  "domaine": "alerte",
+  "condition": "réponse « oui » à une des questions de veille (fatigue qui dure, perte de poids non voulue, règles irrégulières, fracture de fatigue passée)",
+  "action": "afficher « parles-en à un médecin » ; ne pas afficher de score ni l'étiquette REDs ; ne jamais proposer de poids cible",
+  "parametres": {
+   "questions": 4,
+   "poids_cible": false
+  },
+  "preuve": "A",
+  "sources": [
+   "mountjoy2023",
+   "hilkens2023"
+  ],
+  "limite": "consensus du CIO ; l'appli ne dépiste pas, elle oriente"
+ },
+ {
+  "id": "alerte-sommeil-bas",
+  "domaine": "alerte",
+  "condition": "sommeil sous la moyenne de l'athlète 7 jours de suite",
+  "action": "proposer au coach d'en parler (examens, stress, écrans) avant de toucher au plan",
+  "parametres": {
+   "jours": 7
+  },
+  "preuve": "B",
+  "sources": [
+   "gao2019",
+   "walsh2021"
+  ],
+  "limite": "association mesurée chez des moins de 19 ans ; pas une cause"
+ },
+ {
+  "id": "alerte-adhesion",
+  "domaine": "alerte",
+  "condition": "moins de 75 % des séances de force prévues faites sur 4 semaines",
+  "action": "alerter le coach, proposer la version courte (20 min) et un message positif pré-rédigé ; jamais de reproche à l'athlète",
+  "parametres": {
+   "seuil_pct": 75,
+   "fenetre_semaines": 4,
+   "version_courte_min": 20
+  },
+  "preuve": "A",
+  "sources": [
+   "viiala2026",
+   "milkman2021"
+  ],
+  "limite": "le seuil d'environ 74 % vient des programmes de prévention en sports collectifs"
+ },
+ {
+  "id": "nutrition-muscu",
+  "domaine": "nutrition",
+  "condition": "fin d'une séance de musculation lourde ou de pliométrie",
+  "action": "conseiller 0,3 à 0,4 g de protéines par kg au repas suivant (dans les 2 h) et de boire à la soif ; glucides 0,5 à 1 g par kg au repas",
+  "parametres": {
+   "proteines_g_kg": [
+    0.3,
+    0.4
+   ],
+   "glucides_g_kg": [
+    0.5,
+    1.0
+   ],
+   "delai_h": 2
+  },
+  "preuve": "A",
+  "sources": [
+   "jager2017",
+   "morton2018"
+  ],
+  "limite": "preuve A pour les protéines, D pour les glucides après la musculation ; repères généraux, pas une prescription"
+ },
+ {
+  "id": "nutrition-double-seance",
+  "domaine": "nutrition",
+  "condition": "deuxième séance (endurance ou musculation) prévue moins de 8 h après",
+  "action": "conseiller environ 1 g de glucides par kg et par heure jusqu'à la 2e séance (4 h au plus), 0,3 g de protéines par kg, et environ 1,5 L de boisson par kg perdu",
+  "parametres": {
+   "glucides_g_kg_h": 1.0,
+   "heures_max": 4,
+   "proteines_g_kg": 0.3,
+   "boisson_l_par_kg_perdu": 1.5
+  },
+  "preuve": "A",
+  "sources": [
+   "burke2017",
+   "craven2021"
+  ],
+  "limite": "exige le poids de l'athlète ; la pesée avant et après est facultative"
+ },
+ {
+  "id": "nutrition-veille-course",
+  "domaine": "nutrition",
+  "condition": "veille d'une course A de plus de 90 min",
+  "action": "conseiller environ 10 g de glucides par kg sur la journée (8 à 12), des aliments connus, pas d'alcool",
+  "parametres": {
+   "glucides_g_kg_jour": [
+    8,
+    12
+   ],
+   "duree_course_min": 90
+  },
+  "preuve": "B",
+  "sources": [
+   "bussau2002",
+   "kerksick2017"
+  ],
+  "limite": "à adapter à la tolérance digestive ; renvoyer vers un diététicien pour un plan personnel"
+ },
+ {
+  "id": "nutrition-jamais-poids",
+  "domaine": "nutrition",
+  "condition": "tout conseil de nutrition affiché par l'appli",
+  "action": "ne jamais afficher de poids cible, de déficit calorique ni de conseil de perte de poids ; ne jamais afficher de dose de complément comme une prescription",
+  "parametres": {
+   "poids_cible": false,
+   "doses_complements": false
+  },
+  "preuve": "A",
+  "sources": [
+   "mountjoy2023"
+  ],
+  "limite": "choix de sécurité : risque de déficit énergétique chez les jeunes athlètes d'endurance"
+ },
+ {
+  "id": "nutrition-pas-de-froid-apres-muscu",
+  "domaine": "nutrition",
+  "condition": "conseils de récupération après une séance de musculation en phase de développement",
+  "action": "ne pas proposer de bain froid ; le proposer seulement après une course, une séance d'endurance dure, ou entre deux jours de compétition",
+  "parametres": {
+   "phases_sans_froid": [
+    "PPG",
+    "PPO"
+   ]
+  },
+  "preuve": "A",
+  "sources": [
+   "malta2021",
+   "grgic2023",
+   "pinero2024"
+  ],
+  "limite": "l'effet sur l'hypertrophie est probable, moins sûr que celui sur la force"
+ },
+ {
+  "id": "recup-routine-zones",
+  "domaine": "recuperation",
+  "condition": "génération d'une routine Récup & mobilité",
+  "action": "écarter tout exercice dont une zone est déclarée douloureuse ; insister sur les zones « focus » du coach ; privilégier les muscles sollicités par la séance du jour",
+  "parametres": {
+   "exclusion": "zones douloureuses",
+   "priorite": [
+    "focus",
+    "seance du jour"
+   ]
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "logique de bon sens déjà dans l'appli ; aucune étude sur la composition d'une routine"
+ },
+ {
+  "id": "recup-etirements-duree",
+  "domaine": "recuperation",
+  "condition": "étirement statique placé avant une séance de force ou de puissance",
+  "action": "limiter à 30 s par muscle et le faire suivre d'un échauffement dynamique ; réserver les étirements longs (60 s et plus) à l'après-séance ou à une séance à part",
+  "parametres": {
+   "avant_max_s": 30,
+   "long_min_s": 60
+  },
+  "preuve": "A",
+  "sources": [
+   "behm2016"
+  ],
+  "limite": "l'effet négatif des étirements longs est petit et bref"
+ },
+ {
+  "id": "recup-respiration-apres-dur",
+  "domaine": "recuperation",
+  "condition": "fin d'une séance très dure (RPE de séance de 8 ou plus)",
+  "action": "proposer 5 min de respiration à 6 cycles par minute (5 s d'inspiration, 5 s d'expiration) plutôt que la respiration carrée",
+  "parametres": {
+   "inspire_s": 5,
+   "expire_s": 5,
+   "duree_min": 5,
+   "rpe_min": 8
+  },
+  "preuve": "B",
+  "sources": [
+   "laborde2022",
+   "kasap2025"
+  ],
+  "limite": "effet mesuré sur la variabilité cardiaque, pas sur la performance du lendemain"
+ },
+ {
+  "id": "recup-rouleau",
+  "domaine": "recuperation",
+  "condition": "choix « auto-massage » dans la routine",
+  "action": "le proposer pour le confort et les courbatures (5 à 12 min), sans promesse de performance",
+  "parametres": {
+   "duree_min": [
+    5,
+    12
+   ]
+  },
+  "preuve": "A",
+  "sources": [
+   "dupuy2018",
+   "poppendieck2016"
+  ],
+  "limite": "effet surtout sur le ressenti"
+ },
+ {
+  "id": "recup-sommeil-court",
+  "domaine": "recuperation",
+  "condition": "nuit de 6 h ou moins signalée, séance prévue le soir",
+  "action": "proposer de faire la séance le matin, ou la version allégée le soir",
+  "parametres": {
+   "sommeil_h": 6
+  },
+  "preuve": "A",
+  "sources": [
+   "craven2022"
+  ],
+  "limite": "effet moyen sur la performance ; grande variabilité individuelle"
+ },
+ {
+  "id": "test-frequence",
+  "domaine": "tests",
+  "condition": "planification des tests",
+  "action": "tests de force toutes les 6 à 8 semaines (fin de bloc) ; tests de mobilité toutes les 8 à 12 semaines ; mêmes heure, échauffement, matériel et montage du téléphone",
+  "parametres": {
+   "force_semaines": [
+    6,
+    8
+   ],
+   "mobilite_semaines": [
+    8,
+    12
+   ]
+  },
+  "preuve": "D",
+  "sources": [
+   "hopkins2000",
+   "weir2005"
+  ],
+  "limite": "la fréquence est un choix de terrain ; la preuve porte sur la nécessité de conditions identiques"
+ },
+ {
+  "id": "test-sous-erreur-stable",
+  "domaine": "tests",
+  "condition": "changement entre deux tests inférieur à l'erreur de mesure du test (mdc)",
+  "action": "afficher « stable », sans féliciter ni alerter",
+  "parametres": {
+   "champ": "mdc de tests.json"
+  },
+  "preuve": "B",
+  "sources": [
+   "weir2005",
+   "hopkins2000"
+  ],
+  "limite": "plusieurs mdc de l'appli ne sont pas vérifiables dans la littérature (assis-debout, pont, équilibre) ; celui de la rotation interne de hanche est trop optimiste (10° au lieu de 6°)"
+ },
+ {
+  "id": "test-familiarisation",
+  "domaine": "tests",
+  "condition": "première passation d'un test de saut ou d'un test nouveau",
+  "action": "la marquer « découverte » et prendre la deuxième passation comme référence",
+  "parametres": {
+   "passation_reference": 2
+  },
+  "preuve": "B",
+  "sources": [
+   "munro2011"
+  ],
+  "limite": "étudié pour les tests de saut"
+ },
+ {
+  "id": "test-rm-conditions",
+  "domaine": "tests",
+  "condition": "test de max estimé",
+  "action": "série test de 3 à 6 répétitions, arrêt à 1 ou 2 répétitions en réserve ; refuser le calcul au-delà de 10 répétitions ou de 4 répétitions en réserve ; marge affichée ±5 % (±8 à 10 % si plus de 8 répétitions ou 3 en réserve)",
+  "parametres": {
+   "reps": [
+    3,
+    6
+   ],
+   "rir": [
+    1,
+    2
+   ],
+   "reps_max": 10,
+   "rir_max": 4,
+   "marge_pct": 5,
+   "marge_large_pct": [
+    8,
+    10
+   ]
+  },
+  "preuve": "B",
+  "sources": [
+   "reynolds2006",
+   "zourdos2021",
+   "halperin2022"
+  ],
+  "limite": "l'équation d'Epley n'a pas de méta-analyse dédiée ; un max par exercice"
+ },
+ {
+  "id": "test-max-mise-a-jour",
+  "domaine": "tests",
+  "condition": "nouveau max estimé qui diffère de moins de 5 % du précédent",
+  "action": "garder l'ancien max pour le calcul des charges en % ; ne le changer qu'après deux tests concordants ou un écart de plus de 5 %",
+  "parametres": {
+   "seuil_pct": 5,
+   "tests_concordants": 2
+  },
+  "preuve": "B",
+  "sources": [
+   "reynolds2006",
+   "nuzzo2024"
+  ],
+  "limite": "ralentit la progression des charges en % ; l'ajustement au RPE pendant la séance compense"
+ },
+ {
+  "id": "asymetrie-confirmee",
+  "domaine": "asymetrie",
+  "condition": "écart gauche-droite au-dessus du seuil du test",
+  "action": "n'afficher l'écart comme « à travailler » que s'il dépasse le seuil sur 2 passations de suite, toujours du même côté ; texte neutre",
+  "parametres": {
+   "passations": 2,
+   "meme_cote": true
+  },
+  "preuve": "B",
+  "sources": [
+   "reid2007",
+   "howe2020",
+   "parkinson2021"
+  ],
+  "limite": "les seuils de 10 à 15 % sont arbitraires ; un écart isolé n'a pas de sens"
+ },
+ {
+  "id": "asymetrie-pas-de-prediction",
+  "domaine": "asymetrie",
+  "condition": "affichage d'un résultat de test ou d'un écart",
+  "action": "ne jamais écrire qu'un test prédit une blessure ; écrire « ça montre quoi travailler »",
+  "parametres": {},
+  "preuve": "A",
+  "sources": [
+   "moran2017b",
+   "opar2021",
+   "guan2022"
+  ],
+  "limite": "les tests de terrain ne prédisent pas la blessure à l'échelle individuelle"
+ },
+ {
+  "id": "asymetrie-action",
+  "domaine": "asymetrie",
+  "condition": "asymétrie confirmée",
+  "action": "proposer au coach d'ajouter une série pour le côté faible sur les exercices unilatéraux et de commencer par ce côté ; retester en fin de bloc",
+  "parametres": {
+   "series_plus_cote_faible": 1
+  },
+  "preuve": "D",
+  "sources": [
+   "bishop2023"
+  ],
+  "limite": "pas de preuve que réduire une asymétrie améliore la performance"
+ },
+ {
+  "id": "douleur-pendant-exercice",
+  "domaine": "douleur",
+  "condition": "bouton « gêne » pressé pendant un exercice",
+  "action": "arrêter l'exercice, proposer l'alternative qui ne sollicite pas la zone, noter la zone et prévenir le coach",
+  "parametres": {
+   "alternative": "première alternative hors zone"
+  },
+  "preuve": "D",
+  "sources": [
+   "besomi2025"
+  ],
+  "limite": "l'appli ne distingue pas une gêne d'une blessure : elle ne pose aucun diagnostic"
+ },
+ {
+  "id": "douleur-retrait",
+  "domaine": "douleur",
+  "condition": "même zone signalée sur 2 séances de suite, ou gêne signalée au repos",
+  "action": "retirer les exercices de cette zone des séances à venir jusqu'à la décision du coach ; afficher « parles-en à un kiné ou à un médecin »",
+  "parametres": {
+   "seances": 2
+  },
+  "preuve": "D",
+  "sources": [
+   "besomi2025"
+  ],
+  "limite": "seuil de prudence ; les coureurs ont tendance à continuer malgré la gêne"
+ },
+ {
+  "id": "douleur-pas-de-programme-soin",
+  "domaine": "douleur",
+  "condition": "gêne au tendon ou au genou signalée",
+  "action": "ne pas lancer de programme « tendon » ou « genou » : orienter vers un kiné ; si le kiné valide, le coach peut prescrire une charge lente et lourde",
+  "parametres": {},
+  "preuve": "B",
+  "sources": [
+   "beyer2015",
+   "vandervlist2021",
+   "neal2024"
+  ],
+  "limite": "ligne à ne pas franchir : un programme personnalisé destiné à soulager une pathologie est un dispositif médical"
+ },
+ {
+  "id": "douleur-chute",
+  "domaine": "douleur",
+  "condition": "case « chute ou choc récent » cochée (VTT)",
+  "action": "bloquer les exercices du haut du corps concerné et demander un feu vert médical avant de reprendre",
+  "parametres": {},
+  "preuve": "C",
+  "sources": [
+   "braybrook2023"
+  ],
+  "limite": "données d'épidémiologie des chutes en VTT, pas d'essai sur la reprise"
+ },
+ {
+  "id": "plafond-progression-code",
+  "domaine": "douleur",
+  "condition": "toute charge proposée par l'appli (ajustement, charge en %, test)",
+  "action": "refuser une charge supérieure à 110 % de la plus lourde déjà réussie sur cet exercice, et tout saut de plus de 10 % entre deux séances sans validation du coach",
+  "parametres": {
+   "plafond_pct_record": 110,
+   "saut_max_pct": 10
+  },
+  "preuve": "D",
+  "sources": [],
+  "limite": "garde-fou de sécurité logicielle (responsabilité en cas de bug), sans base scientifique"
+ }
+]

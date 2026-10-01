@@ -18,6 +18,10 @@ def split(m):
     return ' '.join(f'[@{k}]' for k in keys)
 corps = re.sub(r'\[(@[A-Za-z0-9_\-]+(?:\s*;\s*@[A-Za-z0-9_\-]+)+)\]', split, corps)
 cites = set(re.findall(r'\[@([A-Za-z0-9_\-]+)\]', corps))
+_glob = {s['cle']: s for s in json.load(open(os.path.join(R, 'sources.json')))} if os.path.exists(os.path.join(R, 'sources.json')) else {}
+_prop = {s['cle'] for s in ok}
+ok = ok + [_glob[k] for k in sorted(cites) if k not in _prop and k in _glob]   # clés réutilisées d'un autre domaine
+forts = [s for s in ok if s.get('type') in ('meta-analyse', 'revue-systematique', 'consensus')]
 manq = cites - {s['cle'] for s in ok}
 sections = ['## En 1 minute', "## Tableau d'affirmations", '## Chiffres clés', '## Mythes et verdicts', "## Règles pour l'entraîneur", "## Ce que l'appli devrait faire"]
 absentes = [s for s in sections if s not in corps]
