@@ -1,0 +1,3054 @@
+[
+ {
+  "id": "soleaire-assis-charge",
+  "nom": "Montées sur pointes assis, haltères sur les genoux (soléaire)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète assis au bord d'un banc, buste droit, genoux pliés à 90°, avant-pieds posés sur une marche basse (ou un disque), talons dans le vide. Un haltère posé à plat sur chaque cuisse juste au-dessus du genou, tenu par les mains. s=0 : talons descendus sous le niveau de la marche (cheville fléchie d'environ 15°). s=1 : talons montés le plus haut possible (pointe de pied, environ 35° d'extension), genoux qui montent de quelques centimètres avec les haltères. Seules les chevilles bougent.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Soléaire (mollet profond), tendon d'Achille",
+  "materiel": [
+   "banc",
+   "halteres",
+   "marche"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, avant-pieds sur la marche",
+   "Haltères posés sur le bas des cuisses",
+   "Monte haut, redescends en 3 s"
+  ],
+  "erreurs": [
+   "Rebondir en bas",
+   "Monter à moitié"
+  ],
+  "pourquoi": "Genou plié, c'est le soléaire qui travaille : le muscle qui porte ton appui en course et en montée de trail.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Charge lourde mais propre. Si ça tire fort derrière la cheville, allège et parles-en à un kiné.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollets-marche",
+   "mollets-debout",
+   "mollet-unijambe-marche"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/weighted-seated-calf-raise/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×8-12, tempo 3-1-2-1, 90 s. Lourd : les 2 dernières reps sont dures.",
+  "preuve": "B · [@dorn2012] [@albracht2013]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "mollet-unijambe-genou-flechi-marche",
+  "nom": "Montée sur pointe une jambe, genou plié (marche)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète debout sur une marche, en appui sur l'avant d'un seul pied, talon dans le vide, l'autre pied décollé derrière. Une main posée au mur devant lui. Le genou d'appui reste plié à environ 30° pendant tout le mouvement (hanche légèrement fléchie, buste droit). s=0 : talon descendu sous la marche. s=1 : talon monté au maximum, sur la pointe, genou toujours plié à 30°. Comme l'animation slcalf mais genou fléchi en permanence.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Soléaire, mollet, tendon d'Achille",
+  "materiel": [
+   "marche",
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Une jambe sur la marche, genou un peu plié",
+   "Garde le même angle de genou tout du long",
+   "Monte en 2 s, descends en 3 s"
+  ],
+  "erreurs": [
+   "Tendre le genou pour monter",
+   "Monter en poussant avec les cuisses"
+  ],
+  "pourquoi": "Sans matériel, c'est le meilleur moyen de charger le soléaire, celui qui encaisse chaque appui en course.",
+  "respiration": "Souffle en montant.",
+  "securite": "Une main au mur pour l'équilibre. Si ça tire derrière la cheville, réduis l'amplitude.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-unijambe-marche",
+   "mollets-marche",
+   "mollet-excentrique-marche"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-12/jambe, tempo 3-0-2-1, 60 s. Quand 12 passent facile, ajoute un sac lesté.",
+  "preuve": "B · [@dorn2012] [@albracht2013]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": "mollet-unijambe-marche"
+ },
+ {
+  "id": "mollet-unijambe-leste-marche",
+  "nom": "Montée sur pointe une jambe avec haltère (marche)",
+  "famille": "mollet-cheville",
+  "anim": "slcalf",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, tendon d'Achille",
+  "materiel": [
+   "marche",
+   "mur",
+   "halteres"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Haltère dans la main côté jambe d'appui",
+   "Autre main au mur, genou tendu",
+   "Monte haut, pause 1 s, descends en 3 s"
+  ],
+  "erreurs": [
+   "Raccourcir l'amplitude avec la charge",
+   "Se pencher pour se tirer au mur"
+  ],
+  "pourquoi": "Un mollet fort et un tendon raide renvoient mieux l'énergie à chaque foulée et en relance en danseuse.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Passe au lesté seulement si tu fais 15 reps propres sans charge. Si ça tire au tendon, allège.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "explosivite",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-unijambe-marche",
+   "mollets-barre",
+   "mollet-excentrique-marche"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/single-leg-calf-raise/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×6-10/jambe, tempo 3-0-2-1, 90 s à 2 min. Charge : 10 à 30 % du poids du corps.",
+  "preuve": "B · [@dorn2012] [@albracht2013]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": "mollet-unijambe-marche"
+ },
+ {
+  "id": "mollets-barre-marche-lent",
+  "nom": "Montées sur pointes lentes et lourdes, barre sur le dos, sur une marche",
+  "famille": "mollet-cheville",
+  "anim": "calfraise",
+  "opts": {
+   "bar": true
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, tendon d'Achille",
+  "materiel": [
+   "barre",
+   "marche"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Avant-pieds sur la marche, barre sur le dos",
+   "Monte en 3 s, descends en 3 s",
+   "Amplitude complète, talons sous la marche"
+  ],
+  "erreurs": [
+   "Rebondir en bas pour repartir",
+   "Plier les genoux pour aider"
+  ],
+  "pourquoi": "Lent et lourd : c'est la charge qui rend le tendon d'Achille plus raide, donc la foulée plus économique.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Fais-le dans un rack, barre sécurisée. Si le tendon tire, baisse la charge.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollets-barre",
+   "mollets-marche",
+   "mollet-unijambe-marche"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "3",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×6-8, tempo 3-0-3-0, 2 min. Charge lourde, 2 reps en réserve.",
+  "preuve": "B · [@bohm2015] [@beyer2015] [@albracht2013]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "mollets-barre"
+ },
+ {
+  "id": "mollets-genoux-flechis-barre",
+  "nom": "Montées sur pointes genoux pliés, barre sur le dos (soléaire)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète debout, barre posée sur le haut du dos (comme squat backBar), pieds largeur de bassin à plat au sol. Genoux pliés à environ 40°, hanches fléchies à environ 30°, buste légèrement incliné : position de quart de squat tenue pendant tout le mouvement. s=0 : talons au sol. s=1 : talons levés au maximum, sur les pointes, les angles de genou et de hanche ne changent pas, tout le corps monte de quelques centimètres.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "quads"
+  ],
+  "musclesTxt": "Soléaire, quadriceps (en tenue)",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre sur le dos, descends en quart de squat",
+   "Garde les genoux pliés, sans bouger",
+   "Monte sur les pointes, redescends en 3 s"
+  ],
+  "erreurs": [
+   "Tendre les jambes en montant",
+   "Laisser les genoux rentrer"
+  ],
+  "pourquoi": "Tu charges lourd le soléaire dans la position genou plié de la course et du pédalage en danseuse.",
+  "respiration": "Souffle en montant sur les pointes.",
+  "securite": "Dans un rack avec les sécurités. Commence avec la barre seule pour trouver l'équilibre.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail",
+   "genou"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollets-barre",
+   "mollets-debout",
+   "chaise-mur"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10, tempo 3-0-2-1, 2 min.",
+  "preuve": "B · [@dorn2012] [@albracht2013]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "mollet-excentrique-genou-flechi-marche",
+  "nom": "Descente lente du mollet genou plié, sur une jambe (marche)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Même décor que l'animation calfecc : athlète sur une marche, une main au mur, appui sur l'avant d'un seul pied, l'autre pied décollé derrière. Différence : le genou d'appui reste plié à environ 30° pendant toute la descente. s=0 : sur la pointe, talon au plus haut, genou plié à 30°. s=1 : talon descendu sous le niveau de la marche, cheville fléchie au maximum, genou toujours plié à 30°. La remontée se fait avec les deux pieds posés.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Soléaire, tendon d'Achille",
+  "materiel": [
+   "marche",
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur la pointe avec les 2 pieds",
+   "Plie un peu le genou, lève l'autre pied",
+   "Descends en 4 s, talon sous la marche"
+  ],
+  "erreurs": [
+   "Tendre le genou pendant la descente",
+   "Lâcher d'un coup en bas"
+  ],
+  "pourquoi": "La descente lente genou plié prépare le soléaire aux longues descentes de trail, là où il freine le plus.",
+  "respiration": "Souffle pendant la descente.",
+  "securite": "Une main au mur. Si le tendon est sensible, descends moins bas et parles-en à un kiné.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "montee"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-excentrique-marche",
+   "mollet-unijambe-marche",
+   "mollets-marche"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12/jambe, descente 4 s, 60 s. Ajoute un sac lesté quand c'est facile.",
+  "preuve": "B · [@bohm2015] [@beyer2015]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "mollet-excentrique-marche"
+ },
+ {
+  "id": "mollet-excentrique-leste-marche",
+  "nom": "Descente lente du mollet avec sac lesté (marche)",
+  "famille": "mollet-cheville",
+  "anim": "calfecc",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, tendon d'Achille",
+  "materiel": [
+   "marche",
+   "mur",
+   "sac-leste"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sac lesté sur le dos, une main au mur",
+   "Monte à 2 pieds, descends sur un seul",
+   "Descente en 4 s, genou tendu"
+  ],
+  "erreurs": [
+   "Remonter sur une seule jambe",
+   "Raccourcir la descente"
+  ],
+  "pourquoi": "Plus de charge sur la descente : c'est l'étape suivante quand la version sans poids ne te coûte plus rien.",
+  "respiration": "Souffle pendant la descente.",
+  "securite": "Ajoute 5 kg à la fois. Si le tendon tire le lendemain matin, reviens à la charge d'avant.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "montee"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-excentrique-marche",
+   "mollet-unijambe-marche",
+   "mollets-barre"
+  ],
+  "tempoConseille": [
+   "4",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10/jambe, descente 4 s, 90 s. Sac de 5 à 20 kg.",
+  "preuve": "B · [@bohm2015] [@beyer2015]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "mollet-excentrique-marche"
+ },
+ {
+  "id": "isometrie-mollet-unijambe",
+  "nom": "Tenue sur la pointe d'un pied (main au mur)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, pose fixe. Athlète debout face à un mur, deux doigts d'une main posés au mur à hauteur d'épaule. Appui sur l'avant d'un seul pied au sol, genou tendu, talon levé à mi-hauteur (environ 5 cm du sol, cheville à environ 20° d'extension). L'autre pied est décollé, genou plié à 90° derrière. s=0 et s=1 : même pose, avec un léger tremblement vertical du talon (1 cm) pour montrer l'effort.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, tendon d'Achille, pied",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur la pointe d'un pied, genou tendu",
+   "Reste à mi-hauteur, talon immobile",
+   "Deux doigts au mur, pas plus"
+  ],
+  "erreurs": [
+   "Laisser le talon redescendre peu à peu",
+   "Rouler sur le bord externe du pied"
+  ],
+  "pourquoi": "Tenir sans bouger charge le tendon longtemps et sans choc : pratique en période de grosse charge à pied.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Arrête la tenue si le talon tremble trop ou si ça tire derrière la cheville.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "montee"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-unijambe-marche",
+   "mollets-debout",
+   "marche-pointes"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 40,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4×30-45 s/jambe, 60 s de repos. Trop facile : ajoute un haltère.",
+  "preuve": "B · [@bohm2015] [@beyer2015] [@holden2020]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-mollets-barre",
+  "nom": "Tenue sur les pointes, barre lourde sur le dos",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, pose fixe. Identique à la position haute de l'animation calfraise avec l'option bar, mais figée à mi-hauteur : athlète debout, barre posée sur le haut du dos, mains sur la barre, pieds largeur de bassin, genoux tendus, talons levés d'environ 5 cm (cheville à 20° d'extension). s=0 et s=1 : même pose, avec un léger tremblement des talons pour montrer l'effort.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, tendon d'Achille",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Barre sur le dos, monte sur les pointes",
+   "Tiens à mi-hauteur, genoux tendus",
+   "Poids sur le gros orteil, sans rouler"
+  ],
+  "erreurs": [
+   "Redescendre petit à petit sans le voir",
+   "Verrouiller les genoux en arrière"
+  ],
+  "pourquoi": "Une tenue lourde met beaucoup de tension dans le tendon sans courbatures : idéal en saison.",
+  "respiration": "Respire court et régulier, sans bloquer.",
+  "securite": "Dans un rack, sécurités réglées juste sous la barre. Repose dès que les talons descendent.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollets-barre",
+   "mollets-debout",
+   "mollet-unijambe-marche"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×20-30 s, charge lourde, 2 min de repos.",
+  "preuve": "B · [@bohm2015] [@beyer2015] [@holden2020]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "mollets-barre"
+ },
+ {
+  "id": "mollets-balle-entre-talons",
+  "nom": "Montées sur pointes, balle serrée entre les talons",
+  "famille": "mollet-cheville",
+  "anim": "calfraise",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, muscles qui tiennent la voûte du pied",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Serre une balle de tennis entre les talons",
+   "Monte sur les pointes sans lâcher la balle",
+   "Descends en 3 s, talons toujours serrés"
+  ],
+  "erreurs": [
+   "Laisser les chevilles partir vers l'extérieur",
+   "Perdre la balle en haut"
+  ],
+  "pourquoi": "La balle oblige ta cheville à monter bien droite : un appui plus stable sur les sentiers et à la relance.",
+  "respiration": "Souffle en montant.",
+  "securite": "Tiens-toi à un mur si tu perds l'équilibre. Arrête si ça pince sous la malléole.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "proprio"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles",
+   "pieds"
+  ],
+  "alternatives": [
+   "mollets-debout",
+   "mollets-marche",
+   "inversion-cheville-elastique"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×12-15, tempo 3-0-2-1, 45 s. (Balle de tennis placée juste sous les malléoles.)",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": "mollets-debout"
+ },
+ {
+  "id": "marche-pointes-cote",
+  "nom": "Marche sur les pointes en côte",
+  "famille": "mollet-cheville",
+  "anim": "heeltoewalk",
+  "opts": {
+   "mode": "toes"
+  },
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollets, pied",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Trouve une côte ou une rampe régulière",
+   "Monte en marchant, talons jamais posés",
+   "Petits pas, pousse fort sur le gros orteil"
+  ],
+  "erreurs": [
+   "Poser les talons quand ça brûle",
+   "Se pencher en avant, fesses en arrière"
+  ],
+  "pourquoi": "En côte, le mollet pousse plus longtemps à chaque pas : c'est le geste de la montée raide en trail.",
+  "respiration": "Respire en rythme avec tes pas.",
+  "securite": "Redescends en marchant normalement. Arrête si une crampe arrive.",
+  "tags": [
+   "cheville",
+   "montee",
+   "foulee",
+   "trail",
+   "echauffement"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "marche-pointes",
+   "mollets-debout",
+   "marche-talons-pointes"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3-4×30 s de montée, retour en marchant.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "marche-pointes"
+ },
+ {
+  "id": "rebonds-cheville-sans-decoller",
+  "nom": "Rebonds de cheville sans décoller les orteils",
+  "famille": "mollet-cheville",
+  "anim": "pogo",
+  "opts": {},
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollets, chevilles",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Jambes presque tendues, mains aux hanches",
+   "Rebondis sur les pointes, orteils au sol",
+   "Rythme rapide et régulier"
+  ],
+  "erreurs": [
+   "Plier les genoux pour rebondir",
+   "Poser les talons entre chaque rebond"
+  ],
+  "pourquoi": "Premier pas vers les sauts : la cheville réapprend l'effet ressort sans aucun choc.",
+  "respiration": "Respire en rythme, sans bloquer.",
+  "securite": "Cheville fragile : commence ici, sur sol plat et dur. Arrête si ça tire ou si ça gonfle après.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "echauffement"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "pogo-jumps",
+   "mollets-debout",
+   "marche-pointes"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "sauts-de-cheville",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20 s (environ 40 rebonds), 40 s de repos.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pogo-jumps"
+ },
+ {
+  "id": "pogo-avant-arriere",
+  "nom": "Pogo d'avant en arrière au-dessus d'une ligne",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Une ligne au sol. Athlète debout pieds serrés, jambes presque tendues, mains aux hanches. s=0 : en appui sur les avant-pieds 15 cm derrière la ligne. s=1 : en appui sur les avant-pieds 15 cm devant la ligne. Entre les deux, petit saut bas (5 cm) à deux pieds, genoux presque tendus, talons qui ne touchent jamais le sol. Même logique que l'animation lathops deux pieds, mais dans le sens avant-arrière.",
+  "type": "plyo",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollets, chevilles",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds serrés derrière une ligne",
+   "Saute devant, derrière, sans t'arrêter",
+   "Petits sauts bas, contacts très courts"
+  ],
+  "erreurs": [
+   "Sauter haut au lieu de sauter vite",
+   "Atterrir sur les talons"
+  ],
+  "pourquoi": "La cheville apprend à rebondir en avançant et en reculant, comme sur un sentier qui change de pente.",
+  "respiration": "Respire en rythme, sans bloquer.",
+  "securite": "Sol plat et dur. Arrête la série dès que les contacts deviennent lourds.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "explosivite"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "sauts-ligne-deux-pieds",
+   "pogo-jumps",
+   "marche-pointes"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "sauts-de-cheville",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15-20 contacts, 45 s de repos.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pogo-unijambe-avance",
+  "nom": "Pogo sur une jambe en avançant",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète qui se déplace vers la droite par petits bonds sur le même pied. Jambe d'appui presque tendue (genou 10-15°), l'autre jambe pliée à 70°, genou devant, bras en balancier comme en course. s=0 : contact sur l'avant-pied, talon décollé, buste droit. s=1 : phase de vol, pied à 8-10 cm du sol, corps déplacé d'environ 40 cm vers l'avant. Le cycle se répète en avançant.",
+  "type": "plyo",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins",
+   "glutes"
+  ],
+  "musclesTxt": "Mollets, cheville, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sur un pied, avance par petits bonds",
+   "Contact court, talon jamais posé",
+   "Bassin haut, regard loin devant"
+  ],
+  "erreurs": [
+   "Faire de grands bonds lents",
+   "Laisser le genou rentrer à l'appui"
+  ],
+  "pourquoi": "C'est la foulée de trail au ralenti : appui court sur un pied, cheville raide, tu avances.",
+  "respiration": "Respire en rythme, sans bloquer.",
+  "securite": "Seulement si le pogo sur une jambe sur place est propre. Sol régulier, arrête dès que l'appui s'écrase.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "explosivite",
+   "proprio"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "sauts-unipodaux-multidirectionnels",
+   "sauts-ligne-unipodal",
+   "pogo-jumps"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "sauts-de-cheville",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10 bonds/jambe (sur 5-8 m), retour en marchant, 90 s.",
+  "preuve": "B · [@ramirezcampillo2023] [@schiftan2015]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tibial-elastique-assis",
+  "nom": "Relevé du pied contre élastique (tibial antérieur)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète assis au sol sur un tapis, une jambe tendue devant, l'autre pliée pied à plat, mains en appui derrière. Un élastique est accroché à un point fixe bas devant lui (pied de meuble) et passe autour du dessus du pied tendu, au niveau des orteils. s=0 : pied en pointe (cheville à 30° d'extension), élastique peu tendu. s=1 : orteils ramenés vers le tibia (cheville à 15° de flexion), élastique étiré. Seule la cheville bouge. Même décor que l'animation invev, mais le pied bouge de bas en haut.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "shins"
+  ],
+  "musclesTxt": "Tibial antérieur (devant du tibia)",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, jambe tendue, élastique sur le pied",
+   "Ramène les orteils vers toi, à fond",
+   "Reviens en 3 s, sans lâcher"
+  ],
+  "erreurs": [
+   "Plier le genou pour tirer",
+   "Laisser l'élastique te ramener d'un coup"
+  ],
+  "pourquoi": "Le tibial relève ton pied à chaque foulée et le freine à la pose en descente : il fatigue vite en trail.",
+  "respiration": "Souffle en tirant le pied vers toi.",
+  "securite": "Si ça brûle devant le tibia avant 10 reps, prends un élastique plus souple.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "chevilles"
+  ],
+  "alternatives": [
+   "releve-pointes-mur",
+   "marche-talons",
+   "eversion-cheville-elastique"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×12-15/jambe, tempo 3-0-1-1, 45 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tibial-kettlebell-assis",
+  "nom": "Relevé du pied avec kettlebell, assis en hauteur (tibial)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète assis sur un banc haut ou une box (pieds qui ne touchent pas le sol), cuisses à l'horizontale, genoux pliés à 90°, mains posées sur le bord du banc. Une kettlebell légère pend au pied de travail : l'anse est posée sur le dessus du pied, près des orteils. s=0 : pied en pointe vers le bas (cheville à 25° d'extension), kettlebell au plus bas. s=1 : orteils relevés vers le tibia (cheville à 15° de flexion), kettlebell montée de 8 à 10 cm. La jambe ne bouge pas, seule la cheville travaille.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "shins"
+  ],
+  "musclesTxt": "Tibial antérieur (devant du tibia)",
+  "materiel": [
+   "kettlebell",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Assis haut, jambe dans le vide",
+   "Glisse le pied dans l'anse de la kettlebell",
+   "Relève les orteils, descends en 3 s"
+  ],
+  "erreurs": [
+   "Balancer la jambe pour s'aider",
+   "Monter à moitié"
+  ],
+  "pourquoi": "Un tibial chargé lourd encaisse mieux les longues descentes et t'aide à tirer la pédale vers le haut.",
+  "respiration": "Souffle en relevant le pied.",
+  "securite": "Commence léger (4-6 kg). Garde le talon sous le genou. Arrête si ça gêne devant la cheville.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "chevilles"
+  ],
+  "alternatives": [
+   "releve-pointes-mur",
+   "marche-talons",
+   "mollets-debout"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12/jambe, tempo 3-0-1-1, 60 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "releve-pointes-mur-unijambe",
+  "nom": "Relevés de pointe dos au mur, une jambe",
+  "famille": "mollet-cheville",
+  "anim": "tibraise",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "shins"
+  ],
+  "musclesTxt": "Tibial antérieur (devant du tibia)",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dos et fesses au mur, un seul pied au sol",
+   "Talon à 30 cm du mur, jambe tendue",
+   "Relève la pointe, redescends en 2 s"
+  ],
+  "erreurs": [
+   "Décoller les fesses du mur",
+   "Poser l'autre pied quand ça brûle"
+  ],
+  "pourquoi": "Tout ton poids sur un seul tibial : la version dure quand la version à deux pieds ne suffit plus.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Rapproche le talon du mur si tu ne tiens pas 10 reps.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "chevilles"
+  ],
+  "alternatives": [
+   "releve-pointes-mur",
+   "marche-talons",
+   "mollets-debout"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-15/jambe, 45 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": "releve-pointes-mur"
+ },
+ {
+  "id": "eversion-isometrique-mur",
+  "nom": "Poussée du bord externe du pied contre un mur (tenue)",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face ou de trois-quarts. Athlète assis sur une chaise ou un banc, genoux à 90°, un pied à plat au sol placé le long d'un mur : le bord externe du pied (côté petit orteil) touche le mur. Mains sur les cuisses. s=0 : pied relâché contre le mur. s=1 : même pose, le pied pousse vers le mur (flèche vers l'extérieur), les muscles du côté externe de la jambe se contractent, rien ne bouge.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "shins",
+   "calves"
+  ],
+  "musclesTxt": "Péroniers (côté externe de la jambe)",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, bord externe du pied contre un mur",
+   "Pousse le pied vers l'extérieur, fort",
+   "Le genou et la cuisse ne bougent pas"
+  ],
+  "erreurs": [
+   "Pousser avec toute la jambe",
+   "Bloquer la respiration"
+  ],
+  "pourquoi": "Les péroniers retiennent ta cheville quand le pied part en dedans : c'est eux qui te rattrapent sur un caillou.",
+  "respiration": "Respire calmement pendant la poussée.",
+  "securite": "Cheville fragile : pousse à 50 % au début, sans aucune gêne. Si ça pince, parles-en à un kiné.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "chevilles"
+  ],
+  "alternatives": [
+   "eversion-cheville-elastique",
+   "alphabet-cheville",
+   "marche-talons-pointes"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5×10 s de poussée/pied, 10 s de repos.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "marche-bord-externe-pied",
+  "nom": "Marche sur le bord externe des pieds",
+  "famille": "mollet-cheville",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Athlète pieds nus qui marche lentement vers la caméra, bras le long du corps. Les deux pieds sont basculés sur leur bord externe (côté petit orteil) : la plante du pied est tournée vers l'intérieur d'environ 20°, le bord interne décollé du sol de 2-3 cm. Genoux légèrement écartés et souples. s=0 : appui sur le pied gauche, pied droit en l'air qui avance. s=1 : appui sur le pied droit, pied gauche en l'air. Cycle de marche comme heeltoewalk.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "shins",
+   "calves"
+  ],
+  "musclesTxt": "Chevilles, pieds, tibial",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds nus, roule sur le bord externe",
+   "Marche lentement, petits pas",
+   "Genoux souples, buste droit"
+  ],
+  "erreurs": [
+   "Aller vite et taper le sol",
+   "Forcer la cheville plus loin que confortable"
+  ],
+  "pourquoi": "Tu apprends à contrôler la cheville dans la position où elle part d'habitude, mais lentement et sans risque.",
+  "respiration": "Respire normalement.",
+  "securite": "Sol plat et dégagé. À éviter les semaines où ta cheville est gonflée ou sensible.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "echauffement",
+   "trail"
+  ],
+  "zones": [
+   "chevilles",
+   "pieds"
+  ],
+  "alternatives": [
+   "marche-talons-pointes",
+   "marche-talons",
+   "alphabet-cheville"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2-3×20 s (10-15 m), en échauffement.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pied-court-assis",
+  "nom": "Pied court assis (voûte du pied)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan de profil sur le pied et la jambe (côté interne visible). Pied nu à plat au sol, orteils longs et détendus. s=0 : voûte relâchée, légèrement affaissée. s=1 : la base du gros orteil glisse de 5 à 10 mm vers le talon sans que les orteils se plient, la voûte interne monte d'environ 1 cm, le talon et les orteils restent au sol. Cadre : athlète assis sur un banc ou une chaise, genou à 90°, tibia vertical, mains sur les cuisses.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Petits muscles du pied, voûte plantaire",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, pied nu à plat, genou à 90°",
+   "Rapproche la base du gros orteil du talon",
+   "Orteils longs, sans les crisper"
+  ],
+  "erreurs": [
+   "Griffer le sol avec les orteils",
+   "Rouler sur le bord externe du pied"
+  ],
+  "pourquoi": "Le pied est ton premier amortisseur : une voûte qui tient rend chaque appui plus stable en course et en ski.",
+  "respiration": "Respire normalement.",
+  "securite": "Une crampe sous le pied au début, c'est fréquent : relâche, secoue, recommence.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "alphabet-cheville",
+   "equilibre-unipodal-sol"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pied-court",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5×10 s/pied, 5 s de repos. Tous les jours si tu veux.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pied-court-debout",
+  "nom": "Pied court debout",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan de profil sur le pied et la jambe (côté interne visible). Pied nu à plat au sol, orteils longs et détendus. s=0 : voûte relâchée, légèrement affaissée. s=1 : la base du gros orteil glisse de 5 à 10 mm vers le talon sans que les orteils se plient, la voûte interne monte d'environ 1 cm, le talon et les orteils restent au sol. Cadre : athlète debout pieds nus, pieds largeur de bassin, genoux déverrouillés, bras le long du corps ; les deux pieds font le mouvement en même temps.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Petits muscles du pied, voûte plantaire",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout pieds nus, largeur de bassin",
+   "Remonte les deux voûtes, orteils longs",
+   "Poids réparti talon, gros et petit orteil"
+  ],
+  "erreurs": [
+   "Crisper les orteils",
+   "Tourner les genoux vers l'extérieur"
+  ],
+  "pourquoi": "Debout, la voûte doit tenir sous ton poids : c'est la base d'un appui solide en trail et sur la pédale.",
+  "respiration": "Respire normalement.",
+  "securite": "Si le pied crampe, repasse à la version assise quelques jours.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "equilibre-unipodal-sol",
+   "marche-talons-pointes"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pied-court",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 15,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5×15 s, 10 s de repos.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pied-court-unipodal",
+  "nom": "Pied court sur une jambe",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan de profil sur le pied et la jambe (côté interne visible). Pied nu à plat au sol, orteils longs et détendus. s=0 : voûte relâchée, légèrement affaissée. s=1 : la base du gros orteil glisse de 5 à 10 mm vers le talon sans que les orteils se plient, la voûte interne monte d'environ 1 cm, le talon et les orteils restent au sol. Cadre : athlète debout pieds nus en appui sur une seule jambe, genou d'appui plié à 10°, l'autre pied décollé de 10 cm, mains aux hanches. Posture proche de bosubalance au sol, mais pieds nus et avec la voûte du pied d'appui qui monte.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes"
+  ],
+  "musclesTxt": "Petits muscles du pied, cheville, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pieds nus, remonte la voûte du pied",
+   "Lève l'autre pied, genou d'appui souple",
+   "Garde la voûte haute sans crisper"
+  ],
+  "erreurs": [
+   "Laisser la voûte s'écraser",
+   "Agripper le sol avec les orteils"
+  ],
+  "pourquoi": "Sur un pied, la voûte travaille comme pendant l'appui de course : elle tient pendant que tu t'équilibres.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Reste près d'un mur. Pose le pied dès que la voûte lâche.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "foulee",
+   "trail"
+  ],
+  "zones": [
+   "pieds",
+   "chevilles"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "etirement-voute-plantaire",
+   "alphabet-cheville"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "pied-court",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×20-30 s/pied, 20 s de repos.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lever-orteils-alternes",
+  "nom": "Lever d'orteils alternés (gros orteil, puis les autres)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan de trois-quarts avant sur un ou deux pieds nus posés à plat au sol (athlète assis, genou à 90°). s=0 : seul le gros orteil est levé de 2-3 cm, les quatre autres orteils restent plaqués au sol. s=1 : le gros orteil est plaqué au sol et les quatre autres orteils sont levés de 2 cm. Talon et avant-pied restent au sol, la cheville ne bouge pas.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Petits muscles du pied, orteils",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds nus à plat, assis ou debout",
+   "Lève le gros orteil seul, les 4 autres au sol",
+   "Puis l'inverse : gros orteil au sol"
+  ],
+  "erreurs": [
+   "Rouler le pied sur le côté pour tricher",
+   "Décoller le talon"
+  ],
+  "pourquoi": "Un gros orteil que tu contrôles pousse mieux en fin d'appui : c'est lui qui finit ta foulée.",
+  "respiration": "Respire normalement.",
+  "securite": "C'est dur au début, c'est normal. Aide-toi de la main les premières fois.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "foulee",
+   "trail",
+   "echauffement"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "alphabet-cheville",
+   "cercles-chevilles-assis"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×10 alternances/pied. Tous les jours si tu veux.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "ecartement-orteils",
+  "nom": "Écartement des orteils",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan vu de dessus ou de trois-quarts avant sur un pied nu posé à plat au sol (athlète assis, genou à 90°). s=0 : orteils serrés et détendus. s=1 : les cinq orteils écartés en éventail, le gros orteil part vers l'intérieur et le petit vers l'extérieur (environ 1 cm d'espace entre chaque orteil), tous restent au contact du sol.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Petits muscles du pied, orteils",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds nus à plat au sol",
+   "Écarte tous les orteils en éventail",
+   "Tiens 3 s, puis relâche"
+  ],
+  "erreurs": [
+   "Lever les orteils au lieu de les écarter",
+   "Crisper tout le pied"
+  ],
+  "pourquoi": "Des orteils qui s'écartent élargissent ton appui : plus de stabilité dans les chaussures de ski ou de trail.",
+  "respiration": "Respire normalement.",
+  "securite": "Si rien ne bouge au début, écarte-les avec les doigts puis essaie de tenir.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "foulee",
+   "recuperation"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "cercles-chevilles-assis",
+   "alphabet-cheville"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×10 par pied, tenue 3 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "gros-orteil-elastique",
+  "nom": "Appui du gros orteil contre élastique",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Gros plan de profil sur le pied (athlète assis, genou à 90°, talon et avant-pied au sol). Un élastique fin passe sous le gros orteil ; les deux bouts sont tenus dans la main du même côté, tirés vers le haut et vers le genou. s=0 : le gros orteil est relevé à environ 40° par l'élastique, les autres orteils restent au sol. s=1 : le gros orteil pousse vers le bas jusqu'à toucher le sol, élastique plus tendu. Talon et autres orteils immobiles.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Fléchisseur du gros orteil, voûte du pied",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, talon au sol, élastique sous l'orteil",
+   "Tire l'élastique : le gros orteil se lève",
+   "Appuie l'orteil vers le sol, reviens en 3 s"
+  ],
+  "erreurs": [
+   "Plier tous les orteils en griffe",
+   "Décoller le talon"
+  ],
+  "pourquoi": "Le gros orteil donne la dernière poussée de chaque foulée : plus il est fort, plus l'appui est franc.",
+  "respiration": "Souffle en appuyant.",
+  "securite": "Élastique fin. Arrête si ça gêne à la base du gros orteil.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "montee"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "mollets-debout",
+   "alphabet-cheville"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×12/pied, tempo 3-0-1-1, 30 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "serviette-orteils",
+  "nom": "Serviette ramenée avec les orteils",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil rapprochée. Athlète assis sur une chaise, genou à 90°, pied nu posé sur une petite serviette étalée à plat au sol devant lui, talon au bord de la serviette. s=0 : orteils tendus et écartés, posés loin sur la serviette. s=1 : orteils repliés qui agrippent le tissu et le ramènent vers le talon ; la serviette forme des plis sous la voûte. Le talon ne décolle jamais.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Fléchisseurs des orteils, voûte du pied",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, pied nu sur une serviette à plat",
+   "Ramène la serviette avec les orteils",
+   "Talon au sol, du début à la fin"
+  ],
+  "erreurs": [
+   "Décoller le talon pour tirer",
+   "Aller vite avec de petites prises"
+  ],
+  "pourquoi": "Des orteils forts agrippent mieux le sol dans les appuis fuyants en trail.",
+  "respiration": "Respire normalement.",
+  "securite": "Si le pied crampe, relâche et étire les orteils quelques secondes.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "trail",
+   "recuperation"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "alphabet-cheville",
+   "cercles-chevilles-assis"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3 serviettes complètes par pied. Plus dur : pose un livre au bout.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "bascule-avant-orteils",
+  "nom": "Bascule en avant, orteils qui retiennent",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète debout pieds nus face à un mur situé à environ 60 cm, pieds largeur de bassin à plat, bras tendus devant sans toucher le mur. s=0 : corps vertical. s=1 : tout le corps penché en avant d'un seul bloc d'environ 10 à 15°, comme une planche qui pivote autour des chevilles ; hanches et genoux tendus, talons au sol, orteils qui appuient fort dans le sol. Position tenue.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "abs"
+  ],
+  "musclesTxt": "Fléchisseurs des orteils, mollets, gainage",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Debout pieds nus, à un pas d'un mur",
+   "Penche-toi d'un bloc, talons au sol",
+   "Retiens-toi avec les orteils, sans casser"
+  ],
+  "erreurs": [
+   "Plier à la hanche au lieu de pencher",
+   "Décoller les talons"
+  ],
+  "pourquoi": "Tes orteils te retiennent comme en fin d'appui en montée : ça renforce le pied dans le geste réel.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Le mur est là pour te rattraper : mains prêtes devant toi.",
+  "tags": [
+   "cheville",
+   "foulee",
+   "montee",
+   "trail",
+   "gainage"
+  ],
+  "zones": [
+   "pieds",
+   "mollets"
+  ],
+  "alternatives": [
+   "marche-pointes",
+   "mollets-debout",
+   "etirement-voute-plantaire"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×15-20 s, 20 s de repos.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "massage-balle-pied",
+  "nom": "Massage de la plante du pied avec une balle",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Athlète debout, une main au mur ou sur un dossier, poids sur une jambe. L'autre pied, nu, est posé sur une balle de tennis au sol, genou légèrement plié. s=0 : la balle est sous l'avant du talon. s=1 : la balle est sous la base des orteils ; le pied a reculé d'environ 12 cm en roulant sur la balle. Va-et-vient lent.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Plante du pied, voûte plantaire",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout ou assis, balle sous le pied nu",
+   "Roule lentement du talon aux orteils",
+   "Appuie un peu plus sur les zones dures"
+  ],
+  "erreurs": [
+   "Écraser la balle de tout ton poids",
+   "Rouler vite sans sentir"
+  ],
+  "pourquoi": "Après une longue sortie ou des heures en chaussures rigides, ça détend la plante du pied.",
+  "respiration": "Respire lentement et relâche le pied.",
+  "securite": "Pression agréable, jamais douloureuse. Évite un point qui fait très mal et parles-en à un kiné.",
+  "tags": [
+   "recuperation",
+   "retour-au-calme",
+   "mobilite",
+   "cheville"
+  ],
+  "zones": [
+   "pieds"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "cercles-chevilles-assis",
+   "etirement-mollet-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 60,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "1-2 min par pied, après la séance ou le soir. (Balle de tennis ou de massage.)",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "equilibre-unipodal-rotation-tete",
+  "nom": "Équilibre sur une jambe, rotations de tête",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "surface": "floor"
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Cheville, mollets, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur une jambe, genou souple",
+   "Tourne la tête à gauche, à droite, lentement",
+   "Puis regarde en haut, en bas"
+  ],
+  "erreurs": [
+   "Tourner les épaules avec la tête",
+   "Verrouiller le genou d'appui"
+  ],
+  "pourquoi": "À vélo comme en trail, tu tournes la tête pour regarder derrière ou lire le terrain : l'équilibre doit suivre.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Près d'un mur. Pose le pied si la tête tourne.",
+  "tags": [
+   "cheville",
+   "genou",
+   "proprio",
+   "trail",
+   "descente-vtt",
+   "velo"
+  ],
+  "zones": [
+   "chevilles",
+   "genoux"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "equilibre-demi-swissball",
+   "etoile-plots-proches"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-tache",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×30 s/jambe, 15 s de repos.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "equilibre-unipodal-sol"
+ },
+ {
+  "id": "equilibre-unipodal-yeux-fermes",
+  "nom": "Équilibre sur une jambe au sol, yeux fermés",
+  "famille": "proprio",
+  "anim": "t_slseyes",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Cheville, mollets, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur une jambe, mains aux hanches",
+   "Stable d'abord, puis ferme les yeux",
+   "Genou souple, pied bien étalé au sol"
+  ],
+  "erreurs": [
+   "Sautiller pour se rattraper",
+   "Coller la jambe libre contre l'autre"
+  ],
+  "pourquoi": "Sans les yeux, ta cheville se débrouille seule : comme quand ton regard est loin devant en descente.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Près d'un mur, sol dégagé. Ouvre les yeux et pose le pied dès que tu pars.",
+  "tags": [
+   "cheville",
+   "genou",
+   "proprio",
+   "trail",
+   "descente-vtt",
+   "foulee"
+  ],
+  "zones": [
+   "chevilles",
+   "genoux"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "equilibre-demi-swissball-yeux-fermes",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-tache",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-30 s/jambe, 15 s de repos. Aucun matériel : faisable partout.",
+  "preuve": "A · [@schiftan2015] [@doherty2017] [@springer2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "equilibre-unipodal-sol"
+ },
+ {
+  "id": "equilibre-unipodal-lancer-mur",
+  "nom": "Équilibre sur une jambe, lancer-rattraper contre un mur",
+  "famille": "proprio",
+  "anim": "bosubalance",
+  "opts": {
+   "surface": "floor",
+   "ball": true
+  },
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs",
+   "delts"
+  ],
+  "musclesTxt": "Cheville, mollets, fessiers, gainage, épaules",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur une jambe, à 2 m d'un mur",
+   "Lance la balle au mur, rattrape-la",
+   "Change de main, vise haut, bas, sur les côtés"
+  ],
+  "erreurs": [
+   "Regarder son pied au lieu de la balle",
+   "Poser le pied à chaque rattrapage"
+  ],
+  "pourquoi": "Ton attention est sur la balle, pas sur ton pied : l'équilibre devient automatique, comme en course ou en pilotage.",
+  "respiration": "Respire normalement, sans bloquer.",
+  "securite": "Sol dégagé autour de toi. Rapproche-toi du mur si tu rates trop.",
+  "tags": [
+   "cheville",
+   "genou",
+   "proprio",
+   "trail",
+   "descente-vtt"
+  ],
+  "zones": [
+   "chevilles",
+   "genoux"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball-balle",
+   "equilibre-unipodal-sol",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-tache",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×30 s/jambe (15-20 lancers), 20 s de repos. (Balle de tennis.)",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "equilibre-unipodal-yeux-fermes-tete",
+  "nom": "Équilibre sur une jambe, yeux fermés et rotations de tête",
+  "famille": "proprio",
+  "anim": "t_slseyes",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Cheville, mollets, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sur une jambe, ferme les yeux",
+   "Tourne lentement la tête, gauche et droite",
+   "Genou souple, épaules relâchées"
+  ],
+  "erreurs": [
+   "Tourner la tête trop vite",
+   "Se raidir de la tête aux pieds"
+  ],
+  "pourquoi": "Yeux fermés et tête qui bouge : il ne reste que ta cheville pour sentir le sol. Le niveau le plus fin.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Toujours à portée de main d'un mur. Ouvre les yeux dès que tu perds l'appui.",
+  "tags": [
+   "cheville",
+   "genou",
+   "proprio",
+   "trail",
+   "descente-vtt"
+  ],
+  "zones": [
+   "chevilles",
+   "genoux"
+  ],
+  "alternatives": [
+   "equilibre-demi-swissball-yeux-fermes",
+   "equilibre-unipodal-sol",
+   "equilibre-demi-swissball-retourne-balle"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-tache",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×15-20 s/jambe, 20 s de repos.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "saut-avant-reception-deux-pieds",
+  "nom": "Saut en avant, réception à deux pieds tenue",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : athlète debout pieds largeur de bassin, bras en arrière, genoux pliés à 40°, prêt à sauter. Il fait un petit saut vers l'avant (50 à 80 cm). s=1 : réception sur les deux pieds en même temps, avant-pied puis talon, genoux pliés à environ 70°, hanches fléchies à 60°, buste penché à 30°, bras devant ; position figée 3 s. Genoux alignés au-dessus des pieds.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Saute court devant toi, à deux pieds",
+   "Atterris en silence, genoux pliés",
+   "Fige 3 s, genoux dans l'axe des pieds"
+  ],
+  "erreurs": [
+   "Atterrir jambes raides, avec du bruit",
+   "Laisser les genoux rentrer"
+  ],
+  "pourquoi": "Avant de sauter haut ou sur un pied, apprends à bien atterrir : c'est la base de toute la pliométrie.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Saute court (50 cm) au début. Arrête si ça gêne dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "trail",
+   "explosivite"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "hop-stick",
+   "sauts-lateraux-skater-facile"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "hop-stick",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×5-6 sauts, 3 s de tenue, 45 s de repos.",
+  "preuve": "B · [@lauersen2014] [@schiftan2015]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "hop-stick-avant",
+  "nom": "Saut en avant sur une jambe, réception tenue",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : athlète en appui sur un pied, genou plié à 30°, l'autre pied décollé derrière, bras en arrière. Il saute vers l'avant sur environ 50 cm. s=1 : réception sur le même pied, genou plié à 50°, hanche fléchie à 40°, buste légèrement penché, bras devant, pied libre toujours en l'air ; position figée 2 s. Comme l'animation hopstick mais avec un déplacement horizontal vers l'avant.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur un pied, saute devant toi",
+   "Atterris sur le même pied, genou plié",
+   "Fige 2 s sans bouger le pied"
+  ],
+  "erreurs": [
+   "Sauter trop loin et sautiller",
+   "Laisser le bassin tomber sur le côté"
+  ],
+  "pourquoi": "Chaque foulée de descente est une réception sur un pied vers l'avant : ici tu la répètes proprement.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Distance courte d'abord (une longueur de pied). Arrête si le genou ou la cheville gêne.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "trail",
+   "foulee",
+   "explosivite"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "alternatives": [
+   "hop-stick",
+   "reception-unijambe",
+   "sauts-unipodaux-multidirectionnels"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "hop-stick",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×5/jambe, tenue 2 s, 60 s de repos.",
+  "preuve": "B · [@schiftan2015] [@munro2011]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": "hop-stick"
+ },
+ {
+  "id": "reception-unijambe-depuis-marche",
+  "nom": "Descente d'une marche, réception sur une jambe tenue",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : athlète debout au bord d'une marche de 20 cm, un pied avancé dans le vide, bras le long du corps. Il se laisse tomber vers l'avant sans impulsion. s=1 : réception au sol 20 cm devant la marche, sur le pied qui était dans le vide, genou plié à 50°, hanche à 40°, buste un peu penché, bras devant pour l'équilibre, l'autre pied en l'air derrière ; figé 2 s. Proche de boxlanding, mais marche basse et réception au sol.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Debout sur la marche, avance un pied",
+   "Laisse-toi tomber, sans sauter",
+   "Atterris sur un pied, fige 2 s"
+  ],
+  "erreurs": [
+   "Sauter vers le haut avant de tomber",
+   "Atterrir jambe tendue"
+  ],
+  "pourquoi": "Tu encaisses une petite chute sur un pied, comme une marche de sentier ou une descente de trottoir en courant.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Marche de 15 à 20 cm, pas plus. Arrête si ça tape dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "trail",
+   "descente-vtt"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "alternatives": [
+   "reception-unijambe",
+   "hop-stick",
+   "step-down-lateral"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "hop-stick",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5/jambe, tenue 2 s, 60 s de repos.",
+  "preuve": "B · [@schiftan2015] [@munro2011]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "hop-stick-rotation",
+  "nom": "Saut sur une jambe avec quart de tour, réception tenue",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts. s=0 : athlète en appui sur un pied, de face, genou plié à 30°, bras prêts. Petit saut vertical (10 cm) pendant lequel tout le corps tourne de 90°. s=1 : réception sur le même pied, corps maintenant de profil, genou plié à 50° et aligné avec les orteils, hanche à 40°, bras écartés ; figé 2 s. Comme hopstick avec une rotation du corps d'un quart de tour en l'air.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves",
+   "obliques"
+  ],
+  "musclesTxt": "Quadriceps, fessiers, mollets, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sur un pied, saute et tourne d'un quart de tour",
+   "Atterris sur le même pied, genou plié",
+   "Fige 2 s, genou face aux orteils"
+  ],
+  "erreurs": [
+   "Tourner avec le pied déjà au sol",
+   "Laisser le genou vriller à la réception"
+  ],
+  "pourquoi": "En épingle de trail ou pied à terre en VTT, tu te reçois en tournant : le genou doit rester dans l'axe.",
+  "respiration": "Souffle à la réception.",
+  "securite": "Tourne en l'air, jamais pied posé. Arrête à la moindre gêne dans le genou.",
+  "tags": [
+   "genou",
+   "cheville",
+   "proprio",
+   "trail",
+   "descente-vtt",
+   "explosivite"
+  ],
+  "zones": [
+   "genoux",
+   "chevilles"
+  ],
+  "alternatives": [
+   "hop-stick",
+   "reception-unijambe-laterale",
+   "sauts-unipodaux-multidirectionnels"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "hop-stick",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×4/jambe dans chaque sens, tenue 2 s, 60 s.",
+  "preuve": "B · [@schiftan2015] [@munro2011]",
+  "sports": [
+   "trail",
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "hop-stick"
+ },
+ {
+  "id": "equilibre-tandem",
+  "nom": "Équilibre pieds en ligne (tandem)",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant, pose fixe. Une ligne droite au sol. Athlète debout, les deux pieds sur la ligne, l'un exactement devant l'autre : le talon du pied avant touche les orteils du pied arrière. Genoux souples (5°), mains aux hanches, buste droit, regard devant. s=0 et s=1 : même pose avec de petites oscillations latérales du bassin (1 à 2 cm) pour montrer la recherche d'équilibre.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Chevilles, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Un pied juste devant l'autre, sur une ligne",
+   "Talon avant contre les orteils arrière",
+   "Mains aux hanches, regard loin devant"
+  ],
+  "erreurs": [
+   "Écarter les pieds de la ligne",
+   "Regarder ses pieds"
+  ],
+  "pourquoi": "Un appui étroit, comme sur une trace de sentier ou une trace de ski : tes chevilles apprennent à corriger petit.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Près d'un mur au début. Change de pied avant à chaque série.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "trail",
+   "hanche"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "marche-talons-pointes",
+   "etoile-plots-proches"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-ligne",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×30 s par pied devant. Trop facile : ferme les yeux.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "marche-sur-ligne",
+  "nom": "Marche sur une ligne, talon contre pointe",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Une ligne droite au sol. Athlète qui avance lentement sur la ligne, bras légèrement écartés. s=0 : pied gauche devant sur la ligne, pied droit derrière, talon gauche contre orteils droits. s=1 : le pied droit est passé devant et se pose talon contre les orteils du pied gauche. Entre les deux, court appui sur un seul pied. Cycle de marche lent, pieds toujours sur la ligne.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Chevilles, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Marche sur une ligne au sol",
+   "Pose le talon juste devant les orteils",
+   "Lentement, regard loin devant"
+  ],
+  "erreurs": [
+   "Regarder ses pieds",
+   "Aller vite pour ne pas tomber"
+  ],
+  "pourquoi": "Marcher sur un fil prépare aux singles étroits et aux crêtes : chaque pas est un petit équilibre sur un pied.",
+  "respiration": "Respire normalement.",
+  "securite": "Sol dégagé de chaque côté de la ligne.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "trail",
+   "echauffement",
+   "hanche"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "marche-talons-pointes",
+   "equilibre-unipodal-sol",
+   "etoile-plots-proches"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-ligne",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-12 pas, retour en marchant. Bien en échauffement.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "marche-sur-ligne-arriere",
+  "nom": "Marche arrière sur une ligne, pointe contre talon",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Même décor que marche-sur-ligne : une ligne au sol, athlète bras légèrement écartés, regard devant. Il recule. s=0 : pied droit derrière, pied gauche devant, orteils droits contre talon gauche. s=1 : le pied gauche est passé derrière et se pose, sa pointe contre le talon du pied droit. Cycle de marche arrière lent, pieds toujours sur la ligne.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Chevilles, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Recule sur la ligne, sans te retourner",
+   "Pose la pointe juste derrière le talon",
+   "Lentement, buste droit"
+  ],
+  "erreurs": [
+   "Tourner la tête pour regarder derrière",
+   "Faire de grands pas hors de la ligne"
+  ],
+  "pourquoi": "En reculant, tu ne vois pas où tu poses le pied : la cheville doit sentir le sol toute seule.",
+  "respiration": "Respire normalement.",
+  "securite": "Vérifie que rien ne traîne derrière toi avant de commencer.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "trail",
+   "hanche"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "marche-talons-pointes",
+   "equilibre-unipodal-sol",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-ligne",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×10 pas en arrière.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "marche-sur-poutre",
+  "nom": "Marche sur une poutre basse ou une bordure",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Une poutre basse au sol (10 cm de large, 15 à 20 cm de haut, 3 m de long). Athlète debout sur la poutre, bras écartés à 45° en balancier, regard devant. s=0 : pied gauche devant sur la poutre, pied droit derrière. s=1 : le pied droit est passé devant, posé dans l'axe de la poutre. Entre les deux, appui sur un seul pied avec légère oscillation des bras. Cycle de marche lent.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes",
+   "abs"
+  ],
+  "musclesTxt": "Chevilles, pieds, fessiers, gainage",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur une poutre basse ou une bordure",
+   "Avance lentement, un pied devant l'autre",
+   "Demi-tour au bout, sans descendre"
+  ],
+  "erreurs": [
+   "Regarder ses pieds tout le long",
+   "Se précipiter pour finir"
+  ],
+  "pourquoi": "Sur un appui étroit et surélevé, tu n'as pas le droit de sortir : comme sur une passerelle ou une racine.",
+  "respiration": "Respire normalement, sans bloquer.",
+  "securite": "Hauteur maximale 30 cm, sol dégagé autour. Descends d'un pas si tu pars.",
+  "tags": [
+   "cheville",
+   "proprio",
+   "trail",
+   "descente-vtt",
+   "hanche"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "marche-talons-pointes",
+   "equilibre-unipodal-sol",
+   "etoile-plots"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "equilibre-ligne",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "dureeConseillee": 40,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3 allers-retours de 3-5 m. (Bordure de trottoir, poutre de gym, tronc au sol.)",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "surplace-velo-mur",
+  "nom": "Surplace à vélo, roue avant contre un mur",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Athlète debout sur les pédales d'un VTT à l'arrêt, manivelles à l'horizontale (pied fort devant), fesses décollées de la selle, genoux et coudes souples (20°), regard 3 m devant. Roue avant tournée d'environ 30° du côté du pied avant. s=0 : vélo qui recule de 5 cm, poids un peu en arrière. s=1 : petite pression sur la pédale avant, vélo qui avance de 5 cm. Micro va-et-vient continu, le vélo reste sur place. Variante de cette fiche : roue avant droite, appuyée contre un mur, pas de va-et-vient : le pneu pousse légèrement contre le mur.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "abs",
+   "forearms"
+  ],
+  "musclesTxt": "Gainage, cuisses, mollets, avant-bras",
+  "materiel": [
+   "velo",
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Roue avant contre le mur, debout, pédales à plat",
+   "Appuie doucement sur la pédale avant",
+   "Lâche les freins, tiens sans poser le pied"
+  ],
+  "erreurs": [
+   "Rester assis sur la selle",
+   "Regarder la roue avant"
+  ],
+  "pourquoi": "Tenir à l'arrêt t'apprend à doser l'appui sur la pédale : utile dans chaque passage lent et technique en VTT.",
+  "respiration": "Respire calmement, épaules relâchées.",
+  "securite": "Pédales plates ou chaussures déclipsées au début. Sol plat, sans circulation.",
+  "tags": [
+   "velo",
+   "descente-vtt",
+   "proprio",
+   "gainage",
+   "coup-de-pedale"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "equilibre-genoux-swissball",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "surplace-velo",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5×15-20 s, pied fort devant puis pied faible devant.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "surplace-velo-pente",
+  "nom": "Surplace à vélo en légère montée",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Athlète debout sur les pédales d'un VTT à l'arrêt, manivelles à l'horizontale (pied fort devant), fesses décollées de la selle, genoux et coudes souples (20°), regard 3 m devant. Roue avant tournée d'environ 30° du côté du pied avant. s=0 : vélo qui recule de 5 cm, poids un peu en arrière. s=1 : petite pression sur la pédale avant, vélo qui avance de 5 cm. Micro va-et-vient continu, le vélo reste sur place. Variante de cette fiche : le sol monte légèrement (pente de 3 à 5 %) vers l'avant du vélo.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "abs",
+   "forearms"
+  ],
+  "musclesTxt": "Gainage, cuisses, mollets, avant-bras",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Face à une légère montée, debout",
+   "Roue tournée vers le pied avant",
+   "Pousse la pédale, puis relâche pour reculer"
+  ],
+  "erreurs": [
+   "Serrer les freins pour tenir",
+   "Crisper les bras sur le guidon"
+  ],
+  "pourquoi": "La pente te renvoie en arrière toute seule : tu apprends le va-et-vient qui te garde debout au départ et en trial.",
+  "respiration": "Respire calmement, épaules relâchées.",
+  "securite": "Pédales plates conseillées. Prêt à poser le pied du côté où la roue est tournée.",
+  "tags": [
+   "velo",
+   "descente-vtt",
+   "proprio",
+   "gainage",
+   "coup-de-pedale"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "equilibre-genoux-swissball",
+   "equilibre-demi-swissball"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "surplace-velo",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5×20-30 s, change de pied avant à chaque série.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "surplace-velo-plat",
+  "nom": "Surplace à vélo sur le plat",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Athlète debout sur les pédales d'un VTT à l'arrêt, manivelles à l'horizontale (pied fort devant), fesses décollées de la selle, genoux et coudes souples (20°), regard 3 m devant. Roue avant tournée d'environ 30° du côté du pied avant. s=0 : vélo qui recule de 5 cm, poids un peu en arrière. s=1 : petite pression sur la pédale avant, vélo qui avance de 5 cm. Micro va-et-vient continu, le vélo reste sur place. Variante de cette fiche : sol parfaitement plat, un doigt sur le levier de frein avant, le va-et-vient est très petit (2-3 cm).",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "abs",
+   "forearms"
+  ],
+  "musclesTxt": "Gainage, cuisses, mollets, avant-bras",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sur le plat, debout, pédales à l'horizontale",
+   "Roue tournée, un doigt sur le frein avant",
+   "Équilibre avec les hanches, pas les bras"
+  ],
+  "erreurs": [
+   "Donner de grands coups de guidon",
+   "Fixer la roue au lieu de regarder devant"
+  ],
+  "pourquoi": "Sur une grille de départ XCO ou avant une marche technique, celui qui tient à l'arrêt repart le premier.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Entraîne-toi sur l'herbe au début. Déclipse un pied si tu n'es pas sûr.",
+  "tags": [
+   "velo",
+   "descente-vtt",
+   "proprio",
+   "gainage"
+  ],
+  "alternatives": [
+   "equilibre-genoux-swissball",
+   "equilibre-unipodal-sol",
+   "equilibre-demi-swissball-yeux-fermes"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "surplace-velo",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5×30 s, vise 1 min. Alterne le pied avant.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "surplace-velo-une-main",
+  "nom": "Surplace à vélo, une main lâchée",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Athlète debout sur les pédales d'un VTT à l'arrêt, manivelles à l'horizontale (pied fort devant), fesses décollées de la selle, genoux et coudes souples (20°), regard 3 m devant. Roue avant tournée d'environ 30° du côté du pied avant. s=0 : vélo qui recule de 5 cm, poids un peu en arrière. s=1 : petite pression sur la pédale avant, vélo qui avance de 5 cm. Micro va-et-vient continu, le vélo reste sur place. Variante de cette fiche : une seule main tient le guidon (côté frein avant), l'autre main est posée sur la hanche ; le buste reste centré au-dessus du cadre.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "abs",
+   "forearms"
+  ],
+  "musclesTxt": "Gainage, cuisses, mollets, avant-bras",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Tiens le surplace, puis lâche une main",
+   "Main libre sur la hanche, 5 s",
+   "Change de main sans poser le pied"
+  ],
+  "erreurs": [
+   "Lâcher la main avant d'être stable",
+   "Se pencher du côté de la main qui tient"
+  ],
+  "pourquoi": "Si tu tiens à une main, attraper un bidon ou corriger une trajectoire à basse vitesse devient facile.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Seulement si tu tiens 30 s à deux mains. Sur l'herbe, pédales plates.",
+  "tags": [
+   "velo",
+   "descente-vtt",
+   "proprio",
+   "gainage"
+  ],
+  "alternatives": [
+   "equilibre-genoux-swissball",
+   "equilibre-demi-swissball-retourne-balle",
+   "equilibre-unipodal-sol"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "surplace-velo",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "4×20 s en changeant de main toutes les 5 s.",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "equilibre-unipodal-elastique-genou",
+  "nom": "Équilibre sur une jambe, élastique qui tire le genou en dedans",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Athlète debout en appui sur une jambe, genou plié à 20°, l'autre pied décollé derrière, mains aux hanches. Un élastique est fixé à un point fixe sur le côté, à hauteur de genou, du côté de la jambe libre ; il entoure le genou d'appui juste au-dessus de l'articulation et le tire vers l'intérieur. s=0 et s=1 : pose tenue, genou aligné au-dessus du 2e orteil malgré la traction, petites oscillations du genou de 1-2 cm. Élastique visible et tendu.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers (côté), quadriceps, cheville",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique autour du genou, fixé sur le côté",
+   "Sur cette jambe, genou un peu plié",
+   "Résiste : genou au-dessus du 2e orteil"
+  ],
+  "erreurs": [
+   "Laisser le genou partir vers l'intérieur",
+   "Pencher le buste pour compenser"
+  ],
+  "pourquoi": "L'élastique pousse ton genou dans le mauvais sens : tu apprends à le tenir dans l'axe, à l'appui comme sur la pédale.",
+  "respiration": "Respire lentement, sans bloquer.",
+  "securite": "Élastique léger. Arrête si ça gêne sur le côté ou devant le genou.",
+  "tags": [
+   "genou",
+   "hanche",
+   "proprio",
+   "coup-de-pedale",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "genoux",
+   "hanches"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "mini-squat-unipodal-sol",
+   "etoile-plots-proches"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×20-30 s/jambe, 20 s de repos.",
+  "preuve": "B · [@lauersen2014]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "mini-squat-unipodal-elastique-genou",
+  "nom": "Mini-squat sur une jambe, élastique qui tire le genou en dedans",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Même montage que equilibre-unipodal-elastique-genou : athlète sur une jambe, élastique fixé sur le côté à hauteur de genou (côté jambe libre), passé autour du genou d'appui et qui le tire vers l'intérieur. s=0 : debout, genou d'appui plié à 10°, mains aux hanches. s=1 : mini-squat, genou plié à 45°, hanche fléchie à 30°, bassin horizontal, genou aligné au-dessus du 2e orteil malgré la traction. Corps identique à bosusquat au sol, avec l'élastique en plus.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "quads",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers (côté), quadriceps, cheville",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique au genou, fixé sur le côté",
+   "Descends en 3 s, genou vers le petit orteil",
+   "Remonte sans laisser le genou rentrer"
+  ],
+  "erreurs": [
+   "Laisser le genou céder vers l'intérieur",
+   "Descendre trop bas, bassin qui bascule"
+  ],
+  "pourquoi": "Ton genou reste dans l'axe malgré la traction : le même contrôle qu'il te faut en appui de course et en poussée de pédale.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Petite amplitude, élastique léger. Arrête si ça gêne devant ou sur le côté du genou.",
+  "tags": [
+   "genou",
+   "hanche",
+   "proprio",
+   "coup-de-pedale",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "genoux",
+   "hanches"
+  ],
+  "alternatives": [
+   "mini-squat-unipodal-sol",
+   "mini-squat-demi-swissball",
+   "step-down-lateral"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10/jambe, tempo 3-1-1-0, 45 s.",
+  "preuve": "B · [@lauersen2014]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "mini-squat-unipodal-sol"
+ },
+ {
+  "id": "equilibre-unipodal-elastique-jambe-libre",
+  "nom": "Équilibre sur une jambe, l'autre tire un élastique dans 4 directions",
+  "famille": "proprio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois-quarts avant. Athlète debout en appui sur une jambe, genou plié à 15°, mains aux hanches. Un élastique est fixé à un point bas (pied de meuble, 10 cm du sol) et attaché à la cheville de la jambe libre. s=0 : jambe libre près de la jambe d'appui, pied à 5 cm du sol, élastique à peine tendu. s=1 : jambe libre tendue écartée de 30 à 40 cm contre l'élastique (ici vers l'avant ; les séries suivantes vers le côté, l'arrière, l'intérieur en changeant d'orientation). Le bassin et la jambe d'appui restent immobiles.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "glutes",
+   "hipflex",
+   "adductors",
+   "abs"
+  ],
+  "musclesTxt": "Cheville et fessiers (appui), hanche (jambe libre)",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique à la cheville libre, fixé bas",
+   "Sur l'autre jambe, tire devant puis sur le côté",
+   "Puis derrière et en dedans, sans poser"
+  ],
+  "erreurs": [
+   "Laisser la cheville d'appui s'écraser",
+   "Balancer le buste pour tirer"
+  ],
+  "pourquoi": "La jambe qui tire déséquilibre celle qui tient : ta cheville d'appui corrige sans arrêt, comme sur terrain cassant.",
+  "respiration": "Respire en rythme, souffle quand tu tires.",
+  "securite": "Cheville fragile : mets-la en appui, tiens un mur du bout des doigts au début. Arrête si elle se dérobe.",
+  "tags": [
+   "cheville",
+   "hanche",
+   "proprio",
+   "trail",
+   "foulee",
+   "genou"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches"
+  ],
+  "alternatives": [
+   "equilibre-unipodal-sol",
+   "etoile-plots",
+   "eversion-cheville-elastique"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2-3×6 tirages par direction et par jambe, 45 s.",
+  "preuve": "A · [@schiftan2015] [@doherty2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ }
+]
