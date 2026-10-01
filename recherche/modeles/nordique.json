@@ -1,0 +1,1015 @@
+{
+ "seances": [
+  {
+   "id": "nordique-ppg-force-max-corps-entier",
+   "titre": "Force max corps entier (PPG)",
+   "rpe": "7 à 8",
+   "dureeMin": 60,
+   "message": "Objectif : devenir plus fort des jambes et des tirages, les deux moteurs du ski. Charges lourdes, peu de reps, vraies récups : garde toujours 2 reps en réserve.",
+   "sport": "nordique",
+   "phase": "PPG",
+   "duree": 60,
+   "materiel": "salle",
+   "niveau": 2,
+   "contextes": [
+    "force-max"
+   ],
+   "pourquoi": "De mai à août, la force lourde du haut et du bas du corps prépare la double poussée et le pas de patineur ; le transfert est lent, d'où 2 séances par semaine sur 12 semaines et plus.",
+   "preuve": "D · construction d'expert, principes B [@losnegard2011] [@stoggl2022]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "charniere-hanche-baton",
+       "reps": 8
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "dead-bug",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 180,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Monte en 2 séries légères avant. Charge lourde : environ 80-85 % de ton max, 2 reps en réserve."
+      },
+      {
+       "ex": "tirage-poitrine-machine",
+       "series": 4,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 150,
+       "note": "Lourd : environ 80-85 % de ton max. Tire les coudes vers les hanches, sans te pencher en arrière. Si tu fais 6 tractions propres, remplace par des tractions."
+      },
+      {
+       "ex": "souleve-de-terre-trap-bar",
+       "series": 3,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 180,
+       "note": "Environ 80 % de ton max, dos plat du début à la fin. Pas de trap bar ? Soulevé de terre jambes tendues à la barre."
+      },
+      {
+       "ex": "rowing-barre-penche",
+       "series": 2,
+       "reps": 6,
+       "rpe": 7,
+       "recup": 120,
+       "note": "Buste fixe, la barre vient au nombril. 2-3 reps en réserve."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rollout-swissball",
+       "series": 2,
+       "reps": 8,
+       "recup": 60,
+       "note": "Le bassin ne s'affaisse jamais : c'est la position de fin de double poussée."
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "rameur",
+       "duree": 180,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-ppg-haut-du-corps-double-poussee",
+   "titre": "Haut du corps et double poussée (PPG)",
+   "rpe": "7 à 8",
+   "dureeMin": 50,
+   "message": "Objectif : des tirages forts pour la double poussée. Tu tires lourd, tu contrôles la descente, et ton tronc reste dur comme une planche. Biathlète : évite cette séance juste avant un entraînement de tir.",
+   "sport": "nordique",
+   "phase": "PPG",
+   "duree": 50,
+   "materiel": "salle",
+   "niveau": 3,
+   "contextes": [
+    "force-max"
+   ],
+   "pourquoi": "La double poussée demande tirage vertical, extension d'épaule, triceps et un tronc qui ne plie pas : cette séance les charge lourd, en plus de la séance corps entier de la semaine.",
+   "preuve": "D · construction d'expert, principes B [@losnegard2011] [@osteras2016] ; dos : [@bahr2004]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "ski-erg",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      },
+      {
+       "ex": "suspension-active",
+       "reps": 6
+      },
+      {
+       "ex": "planche-avant-bras",
+       "duree": 20
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "tractions",
+       "series": 4,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 150,
+       "note": "Garde 2 reps en réserve. Trop facile : leste-toi. Trop dur : élastique sous le genou ou descentes lentes."
+      },
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "series": 3,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ],
+       "note": "C'est le geste de la double poussée. Élastique fort, ou poulie haute si ta salle en a une : bras presque tendus, mains jusqu'aux cuisses."
+      },
+      {
+       "ex": "rowing-haltere",
+       "series": 3,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 60,
+       "note": "Haltère lourd, 2 reps en réserve. Le buste ne tourne pas."
+      },
+      {
+       "ex": "extension-triceps-elastique",
+       "series": 2,
+       "reps": 10,
+       "rpe": 7,
+       "recup": 60,
+       "note": "La fin de poussée du bâton : tends les bras jusqu'au bout."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage anti-extension",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rollout-swissball",
+       "series": 3,
+       "reps": 8,
+       "recup": 60,
+       "note": "Fesses serrées, côtes rentrées. Arrête-toi avant que le bas du dos se creuse."
+      },
+      {
+       "ex": "hollow-hold",
+       "series": 2,
+       "duree": 20,
+       "recup": 45
+      },
+      {
+       "ex": "extension-dos-banc-45",
+       "series": 2,
+       "reps": 10,
+       "recup": 60,
+       "rpe": 6,
+       "note": "Pour le dos : monte jusqu'à l'alignement, pas plus haut."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-ppo-force-puissance-haut-du-corps",
+   "titre": "Force + puissance du haut du corps (PPO)",
+   "rpe": "7 à 8",
+   "dureeMin": 50,
+   "message": "Objectif : transformer ta force en vitesse de poussée. Les lancers et les tirages explosifs d'abord, à fond, quand tu es frais. Si le geste ralentit, arrête la série.",
+   "sport": "nordique",
+   "phase": "PPO",
+   "duree": 50,
+   "materiel": "salle",
+   "niveau": 2,
+   "contextes": [
+    "puissance",
+    "force-max"
+   ],
+   "pourquoi": "En fin d'été, on garde un tirage lourd et on ajoute des lancers et des tirages explosifs : la puissance courte en double poussée dépend de la force du haut du corps, surtout en sprint.",
+   "preuve": "D · construction d'expert, principes B-C [@losnegard2011] [@osteras2016] [@hebertlosier2017]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "ski-erg",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "cercles-bras",
+       "reps": 10
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "squat-pdc",
+       "reps": 8
+      },
+      {
+       "ex": "planche-touche-epaule",
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "nom": "Puissance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "slam-medecine-ball",
+       "series": 3,
+       "reps": 6,
+       "recup": 75,
+       "intention": "Explosif",
+       "note": "Balle de 3 à 6 kg. Grandis-toi puis claque la balle au sol avec tout le corps : bras, ventre, hanches."
+      },
+      {
+       "ex": "lancer-arriere-medecine-ball",
+       "series": 3,
+       "reps": 5,
+       "recup": 75,
+       "intention": "Explosif",
+       "note": "Pousse avec les jambes, lance le plus loin possible. Marche chercher la balle : c'est ta récup."
+      },
+      {
+       "ex": "double-poussee-elastique",
+       "series": 4,
+       "reps": 6,
+       "recup": 75,
+       "intention": "Explosif",
+       "note": "Élastique moyen, accroché haut. Le ventre lance le geste, les bras finissent. Chaque rep aussi vite que la première."
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "tirage-poitrine-machine",
+       "series": 3,
+       "reps": 5,
+       "rpe": 8,
+       "recup": 150,
+       "note": "Lourd : environ 80-85 % de ton max, 2 reps en réserve."
+      },
+      {
+       "ex": "developpe-couche-halteres",
+       "series": 2,
+       "reps": 6,
+       "rpe": 7,
+       "recup": 120,
+       "note": "Une poussée pour équilibrer les tirages. 2-3 reps en réserve."
+      },
+      {
+       "ex": "rowing-inverse-jambes-tendues",
+       "series": 2,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 90,
+       "note": "Corps gainé de la tête aux talons."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "chop-elastique",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "recup": 45,
+       "note": "Le bassin ne bouge pas, ce sont les bras et le buste qui tirent."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-ppo-unilateral-equilibre-glisse",
+   "titre": "Une jambe et équilibre de glisse (PPO)",
+   "rpe": "7",
+   "dureeMin": 45,
+   "message": "Objectif : tenir fort et stable sur une seule jambe, comme sur un ski qui glisse. Les sauts d'abord (44 réceptions au total), chaque réception tenue 2 s sans bouger. Ensuite la force, jambe par jambe.",
+   "sport": "nordique",
+   "phase": "PPO",
+   "duree": 45,
+   "materiel": "halteres",
+   "niveau": 2,
+   "pourquoi": "En skating comme en classique, tu pousses et tu glisses sur une jambe : force unilatérale, hanche stable et équilibre préparent le ski-roues et la neige (44 réceptions de saut).",
+   "preuve": "D · construction d'expert, principes B [@stoggl2022] [@lauersen2018] ; contacts : repère D [@ramirezcampillo2018]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "pas-chasses",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "fente-laterale",
+       "reps": 6,
+       "parCote": true
+      },
+      {
+       "ex": "cercles-hanche-debout",
+       "reps": 5,
+       "parCote": true
+      },
+      {
+       "ex": "equilibre-unipodal-sol",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "pont-fessier-unijambe",
+       "reps": 8,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Sauts et réceptions (44 contacts)",
+     "type": "series",
+     "items": [
+      {
+       "ex": "sauts-lateraux-skater",
+       "series": 3,
+       "reps": 8,
+       "recup": 60,
+       "intention": "Explosif",
+       "note": "24 contacts. Pousse sur le côté comme en pas de patineur, tiens la réception 2 s."
+      },
+      {
+       "ex": "hop-stick",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "recup": 60,
+       "note": "20 contacts. Genou dans l'axe du pied, bassin à plat."
+      }
+     ]
+    },
+    {
+     "nom": "Force sur une jambe",
+     "type": "series",
+     "items": [
+      {
+       "ex": "fente-bulgare",
+       "series": 3,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 8,
+       "recup": 90,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Haltères lourds, 2 reps en réserve. Le genou avant suit la pointe du pied."
+      },
+      {
+       "ex": "rdl-unijambe-haltere",
+       "series": 3,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 75,
+       "note": "Bassin à plat, dos long. Lourd mais sans perdre l'équilibre."
+      },
+      {
+       "ex": "squat-patineur",
+       "series": 2,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 75,
+       "note": "Le genou arrière vient frôler le coussin, le buste se penche comme en glisse."
+      }
+     ]
+    },
+    {
+     "nom": "Hanche et équilibre",
+     "type": "series",
+     "items": [
+      {
+       "ex": "gainage-lateral-jambe-levee",
+       "series": 2,
+       "duree": 20,
+       "parCote": true,
+       "recup": 30
+      },
+      {
+       "ex": "equilibre-unipodal-yeux-fermes",
+       "series": 2,
+       "duree": 30,
+       "parCote": true,
+       "recup": 20,
+       "note": "Biathlète : c'est aussi ta stabilité au tir debout."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-pps-puissance-gainage-court",
+   "titre": "Puissance + gainage, séance courte (PPS)",
+   "rpe": "6 à 7",
+   "dureeMin": 30,
+   "message": "Objectif : rester explosif sans te fatiguer, alors que la neige et les intensités arrivent. Peu de reps, toutes à vitesse maximale. 33 contacts de saut au total. Tu dois finir plus frais qu'en commençant.",
+   "sport": "nordique",
+   "phase": "PPS",
+   "duree": 30,
+   "materiel": "elastique",
+   "niveau": 2,
+   "contextes": [
+    "puissance"
+   ],
+   "pourquoi": "En octobre-novembre, le ski spécifique prend la place : une séance courte garde la puissance des bras, des jambes et un tronc solide, sans courbatures (33 contacts de saut).",
+   "preuve": "D · construction d'expert, principes B-C [@hebertlosier2017] [@losnegard2011] [@bahr2004] ; contacts : repère D [@ramirezcampillo2018]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "pas-chasses",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "cercles-bras",
+       "reps": 10
+      },
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "fente-rotation-debout",
+       "reps": 5,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Puissance",
+     "type": "series",
+     "items": [
+      {
+       "ex": "double-poussee-elastique",
+       "series": 4,
+       "reps": 6,
+       "recup": 60,
+       "intention": "Explosif",
+       "note": "Le ventre lance, les bras finissent. Stoppe la série si tu ralentis."
+      },
+      {
+       "ex": "squat-saute",
+       "series": 3,
+       "reps": 5,
+       "recup": 60,
+       "intention": "Explosif",
+       "note": "15 contacts. Saute haut, réception douce et silencieuse."
+      },
+      {
+       "ex": "sauts-lateraux-skater",
+       "series": 3,
+       "reps": 6,
+       "recup": 60,
+       "intention": "Explosif",
+       "note": "18 contacts. Poussée latérale franche, comme en pas de patineur."
+      }
+     ]
+    },
+    {
+     "nom": "Force rapide du haut",
+     "type": "series",
+     "items": [
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "series": 2,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 60,
+       "intention": "Rapide",
+       "note": "Élastique fort. Tire vite, reviens lentement."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 15,
+     "recupTour": 45,
+     "items": [
+      {
+       "ex": "pallof-press",
+       "reps": 8,
+       "parCote": true
+      },
+      {
+       "ex": "planche-touche-epaule",
+       "reps": 10
+      },
+      {
+       "ex": "superman-brasse",
+       "reps": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-ppc-maintien-saison",
+   "titre": "Maintien en saison (PPC)",
+   "rpe": "6 à 7",
+   "dureeMin": 28,
+   "message": "Objectif : garder la force construite cet été, sans fatigue pour les courses. Peu de séries, mais la charge reste lourde. Tu repars avec 3 reps en réserve à chaque série. Place-la au moins 3 jours avant la course.",
+   "sport": "nordique",
+   "phase": "PPC",
+   "duree": 28,
+   "materiel": "salle",
+   "niveau": 2,
+   "contextes": [
+    "maintien-saison"
+   ],
+   "pourquoi": "De décembre à mars, une séance courte par semaine avec la charge lourde gardée semble suffire à maintenir la force ; sans elle, les acquis de l'été se perdent en quelques semaines.",
+   "preuve": "C · [@ronnestad2010b] [@spiering2021] ; ski : [@losnegard2011]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "dead-bug",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force (lourd, peu de séries)",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 2,
+       "reps": 4,
+       "rpe": 7,
+       "recup": 150,
+       "note": "1 série légère avant. Même charge qu'en préparation (environ 80-85 % de ton max), mais 3 reps en réserve."
+      },
+      {
+       "ex": "tirage-poitrine-machine",
+       "series": 2,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 120,
+       "note": "Charge lourde gardée, 3 reps en réserve. Ou tractions si tu les maîtrises."
+      },
+      {
+       "ex": "rdl-barre",
+       "series": 1,
+       "reps": 6,
+       "rpe": 6,
+       "recup": 90,
+       "note": "Une seule série, propre, dos plat : entretien de l'arrière des cuisses et du dos."
+      },
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "series": 2,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 60,
+       "note": "Le geste de la double poussée, élastique fort ou poulie haute."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rollout-swissball",
+       "series": 2,
+       "reps": 8,
+       "recup": 45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-affutage-veille-course",
+   "titre": "Activation de veille de course",
+   "rpe": "3 à 4",
+   "dureeMin": 14,
+   "message": "Objectif : réveiller le corps, pas l'entraîner. Tout est facile et vif. Aucun saut dur, aucune descente lente, aucune courbature demain. Si tu hésites, fais-en moins.",
+   "sport": "nordique",
+   "phase": "AFFUTAGE",
+   "duree": 14,
+   "materiel": "elastique",
+   "niveau": 1,
+   "contextes": [
+    "veille-course"
+   ],
+   "pourquoi": "La veille d'une course, un quart d'heure d'activation gardent les sensations de vitesse des bras et des jambes sans créer de fatigue ni de courbatures.",
+   "preuve": "D · construction d'expert, principes A-C [@wang2023] [@mcgowan2015]",
+   "blocs": [
+    {
+     "nom": "Mise en route",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "montees-de-genoux",
+       "duree": 45,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Mobilité",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 5,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "cercles-bras",
+       "reps": 10
+      },
+      {
+       "ex": "balancier-jambe",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "fente-rotation-debout",
+       "reps": 5,
+       "parCote": true
+      },
+      {
+       "ex": "chat-vache-debout",
+       "reps": 6
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 15,
+     "recupTour": 45,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 8,
+       "intention": "Rapide"
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 10
+      },
+      {
+       "ex": "double-poussee-elastique",
+       "reps": 5,
+       "intention": "Explosif",
+       "note": "Élastique léger. 5 gestes vifs, pas plus."
+      },
+      {
+       "ex": "equilibre-unipodal-sol",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "planche-avant-bras",
+       "duree": 20
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "respiration-carree-4-4-4-4",
+       "duree": 120,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nordique-transition-retour-coupure",
+   "titre": "Reprise après la coupure de printemps",
+   "rpe": "5 à 6",
+   "dureeMin": 32,
+   "message": "Objectif : remettre le corps en route après la coupure, sans courbatures qui gâchent la semaine. Charges légères, gestes propres, 4 reps en réserve partout. Ta force revient vite : inutile de rattraper.",
+   "sport": "nordique",
+   "phase": "TRANSITION",
+   "duree": 32,
+   "materiel": "halteres",
+   "niveau": 1,
+   "contextes": [
+    "retour-coupure"
+   ],
+   "pourquoi": "En avril-mai, après la coupure, deux semaines de charges légères et de gestes complets relancent la force, qui baisse lentement et revient vite, avant le bloc lourd de l'été.",
+   "preuve": "D · construction d'expert, principes A-C [@bosquet2013] [@mujika2000b] [@halonen2024]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Mobilité",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 0,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      },
+      {
+       "ex": "fente-rotation-thoracique",
+       "reps": 6
+      },
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "cercles-bras",
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "nom": "Reprise",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-goblet",
+       "series": 2,
+       "reps": 10,
+       "rpe": 6,
+       "recup": 75,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Haltère léger à moyen : tu pourrais en faire 4 de plus."
+      },
+      {
+       "ex": "rdl-halteres",
+       "series": 2,
+       "reps": 10,
+       "rpe": 6,
+       "recup": 75,
+       "note": "Dos plat, sens l'arrière des cuisses s'étirer."
+      },
+      {
+       "ex": "rowing-haltere",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "rpe": 6,
+       "recup": 45
+      },
+      {
+       "ex": "pompes-mains-surelevees",
+       "series": 2,
+       "reps": 8,
+       "rpe": 6,
+       "recup": 60,
+       "note": "Mains sur une chaise ou un banc."
+      },
+      {
+       "ex": "split-squat-halteres",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 6,
+       "recup": 60
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 15,
+     "recupTour": 30,
+     "items": [
+      {
+       "ex": "dead-bug",
+       "reps": 8
+      },
+      {
+       "ex": "gainage-lateral-genoux",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "superman",
+       "reps": 10
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
