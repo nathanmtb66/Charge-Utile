@@ -39,6 +39,19 @@
   "note": "9 études sur 10 relient le cyclisme professionnel à une DMO basse ; la natation et le vélo n'améliorent pas la DMO."
  },
  {
+  "cle": "acsm2009",
+  "auteurs": "American College of Sports Medicine",
+  "annee": 2009,
+  "titre": "American College of Sports Medicine position stand. Progression models in resistance training for healthy adults",
+  "revue": "Med Sci Sports Exerc 41(3):687-708",
+  "doi": "10.1249/MSS.0b013e3181915670",
+  "url": "https://doi.org/10.1249/MSS.0b013e3181915670",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Novices : 8-12 RM, 2-3 j/sem ; avancés : 1-12 RM avec accent 1-6 RM, repos 3-5 min ; hausse de charge de 2-10 % quand on fait 1-2 reps de plus que la cible (PMID 19204579)."
+ },
+ {
   "cle": "afonso2026",
   "auteurs": "Afonso J, Andrade R, Oliveira E, Turner A, Warneke K, Bishop C",
   "annee": 2026,
@@ -89,6 +102,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "13 contre 13, 14 sem de renforcement du triceps sural : force +7 %, raideur du tendon +16 %, coût en O2 -4 %."
+ },
+ {
+  "cle": "alkhaldi2016",
+  "auteurs": "Alkhaldi G, Hamilton FL, Lau R, Webster R, Michie S, Murray E",
+  "annee": 2016,
+  "titre": "The Effectiveness of Prompts to Promote Engagement With Digital Interventions: A Systematic Review",
+  "revue": "J Med Internet Res 18(1):e6",
+  "doi": "10.2196/jmir.4790",
+  "url": "https://doi.org/10.2196/jmir.4790",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "14 études, n = 8774 : relances → engagement RR 1,27 (IC 1,01-1,60), forte hétérogénéité ; mieux si contenu nouveau et tôt."
  },
  {
   "cle": "allied-online-coaching-2023",
@@ -143,6 +169,19 @@
   "note": "Recommandations par série, RIR, Pro 12,99 $/mois ou 79,99 $/an."
  },
  {
+  "cle": "amano2024",
+  "auteurs": "Amano T, Agata N, Yamamoto T, Mori K",
+  "annee": 2024,
+  "titre": "Reliability of range of motion in straight leg raise and hip extension tests among healthy young adults using a smartphone application",
+  "revue": "J Bodyw Mov Ther 40:683-688",
+  "doi": "10.1016/j.jbmt.2024.05.033",
+  "url": "https://doi.org/10.1016/j.jbmt.2024.05.033",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "36 jeunes, mesure passive à l'iPhone : ICC ≥ 0,82 ; MDC95 jambe tendue 3,3° (même examinateur) et 10,2° (entre examinateurs) ; extension de hanche 3,9° et 9,6°."
+ },
+ {
   "cle": "an-qe-714-coachs-en-ligne",
   "auteurs": "Assemblée nationale / ministère des Sports",
   "annee": 2025,
@@ -154,6 +193,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Réponse du 29/04/2025 : L.212-1 s'applique au distanciel ; qualification, carte, honorabilité, RC ; contrôles avec la DGCCRF."
+ },
+ {
+  "cle": "andersen2013",
+  "auteurs": "Andersen CA, Clarsen B, Johansen TV, Engebretsen L",
+  "annee": 2013,
+  "titre": "High prevalence of overuse injury among iron-distance triathletes",
+  "revue": "Br J Sports Med 47(13):857-861",
+  "doi": "10.1136/bjsports-2013-092397",
+  "url": "https://doi.org/10.1136/bjsports-2013-092397",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "174 triathlètes, 26 sem : prévalence d'usure 56 % (20 % importante) ; genou 25 %, jambe 23 %, bas du dos 23 % ; aiguës 0,97/1000 h (PMID 23902775)."
  },
  {
   "cle": "andersson2017",
@@ -312,6 +364,19 @@
   "note": "15 % sous 1 M$ de produit annuel ; 10 % dans l'UE sur conditions alternatives après 1 an d'abonnement."
  },
  {
+  "cle": "argent2018",
+  "auteurs": "Argent R, Daly A, Caulfield B",
+  "annee": 2018,
+  "titre": "Patient Involvement With Home-Based Exercise Programs: Can Connected Health Interventions Influence Adherence?",
+  "revue": "JMIR Mhealth Uhealth 6(3):e47",
+  "doi": "10.2196/mhealth.8518",
+  "url": "https://doi.org/10.2196/mhealth.8518",
+  "type": "revue",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Point de vue : non-adhésion aux exercices à domicile jusqu'à 50 % ; technologies connectées pour mesurer et soutenir."
+ },
+ {
   "cle": "arntz2023",
   "auteurs": "Arntz F, Markov A, Behm DG, et al.",
   "annee": 2023,
@@ -336,6 +401,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "25 études ; hypertrophie SMD 0,118 (IP −0,23 à 0,47), effet incertain ; plus de temps sous étirement = plus d'effet ; amplitude β 0,70."
+ },
+ {
+  "cle": "ashford2010",
+  "auteurs": "Ashford S, Edmunds J, French DP",
+  "annee": 2010,
+  "titre": "What is the best way to change self-efficacy to promote lifestyle and recreational physical activity? A systematic review with meta-analysis",
+  "revue": "Br J Health Psychol 15(2):265-288",
+  "doi": "10.1348/135910709x461752",
+  "url": "https://doi.org/10.1348/135910709x461752",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "27 études, n = 5501 : d = 0,16 ; feedback sur performances passées/d'autrui et expérience vicariante les plus efficaces ; persuasion moins."
  },
  {
   "cle": "athlete360-appstore",
@@ -390,6 +468,19 @@
   "note": "19,90 $/mois, 99 $/6 mois, 189 $/an ; l'IA ne modifie pas seule le plan."
  },
  {
+  "cle": "aulton2025",
+  "auteurs": "Aulton C, Wakili L, Strafford BW, Davids K, Chiu CY",
+  "annee": 2025,
+  "titre": "The Application of Deep Learning Human Pose Estimation in Sport: A Systematic Review",
+  "revue": "Sports Med Open 11:155",
+  "doi": "10.1186/s40798-025-00953-3",
+  "url": "https://doi.org/10.1186/s40798-025-00953-3",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "371 articles triés : estimation de pose par IA utilisée pour l'analyse de gestes, la reconnaissance d'actions, le coaching ; jeux de données privés, peu reproductible."
+ },
+ {
   "cle": "baar2017",
   "auteurs": "Baar K",
   "annee": 2017,
@@ -401,6 +492,58 @@
   "niveau": "C",
   "verifie": true,
   "note": "Ligaments cultivés en labo : ils deviennent vite insensibles au stimulus ; l'auteur propose moins de 10 min d'activité et environ 6 h de repos."
+ },
+ {
+  "cle": "babatunde2017",
+  "auteurs": "Babatunde F, MacDermid J, MacIntyre N",
+  "annee": 2017,
+  "titre": "Characteristics of therapeutic alliance in musculoskeletal physiotherapy and occupational therapy practice: a scoping review of the literature",
+  "revue": "BMC Health Serv Res 17(1):375",
+  "doi": "10.1186/s12913-017-2311-3",
+  "url": "https://doi.org/10.1186/s12913-017-2311-3",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue de portée, 130 articles : 57 % des 26 articles concernés trouvent un lien alliance-adhésion ; meilleur chez les jeunes et avec soutien de l'autonomie."
+ },
+ {
+  "cle": "bae2024",
+  "auteurs": "Bae K, Lee S, Bak SY et al.",
+  "annee": 2024,
+  "titre": "Concurrent validity and test reliability of the deep learning markerless motion capture system during the overhead squat",
+  "revue": "Sci Rep 14:29462",
+  "doi": "10.1038/s41598-024-79707-2",
+  "url": "https://doi.org/10.1038/s41598-024-79707-2",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Système 3D sans marqueur (multi-caméras) au squat bras levés : R² 0,88-0,99 vs marqueurs, angles max ICC 0,75-1,0, test-retest 0,92-0,99 ; développé par les auteurs."
+ },
+ {
+  "cle": "bahr2004",
+  "auteurs": "Bahr R, Andersen SO, Løken S et al.",
+  "annee": 2004,
+  "titre": "Low back pain among endurance athletes with and without specific back loading--a cross-sectional survey of cross-country skiers, rowers, orienteerers, and nonathletic controls",
+  "revue": "Spine 29(4):449-454",
+  "doi": "10.1097/01.BRS.0000096176.92881.37",
+  "url": "https://doi.org/10.1097/01.BRS.0000096176.92881.37",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "257 fondeurs élites : lombalgie 63 % sur 12 mois, OR 1,94 vs non-sportifs ; plus fréquente en classique et en période de forte charge (PMID 15094542)."
+ },
+ {
+  "cle": "bahr2015",
+  "auteurs": "Bahr R, Thorborg K, Ekstrand J",
+  "annee": 2015,
+  "titre": "Evidence-based hamstring injury prevention is not adopted by the majority of Champions League or Norwegian Premier League football teams: the Nordic Hamstring survey",
+  "revue": "Br J Sports Med 49(22):1466-1471",
+  "doi": "10.1136/bjsports-2015-094826",
+  "url": "https://doi.org/10.1136/bjsports-2015-094826",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "150 saisons-club : programme Nordic complet dans 10,7 %, partiel 6 %, 83,3 % non conformes."
  },
  {
   "cle": "balban2023",
@@ -429,6 +572,45 @@
   "note": "5 études, 93 coureurs VO2max > 60 : économie SMD −1,42 ; 2-3 séances/sem, 8-12 sem (PMID 26694507)."
  },
  {
+  "cle": "balsalobrefernandez2018",
+  "auteurs": "Balsalobre-Fernández C, Marchante D, Muñoz-López M, Jiménez SL",
+  "annee": 2018,
+  "titre": "Validity and reliability of a novel iPhone app for the measurement of barbell velocity and 1RM on the bench-press exercise",
+  "revue": "J Sports Sci 36(1):64-70",
+  "doi": "10.1080/02640414.2017.1280610",
+  "url": "https://doi.org/10.1080/02640414.2017.1280610",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "10 powerlifters, appli PowerLift (ex-My Lift) vs capteur linéaire : r = 0,94, ICC 0,965, léger biais ; 1RM estimé vs réel r = 0,98, écart 5,5 ± 9,6 kg."
+ },
+ {
+  "cle": "balsalobrefernandez2019",
+  "auteurs": "Balsalobre-Fernández C, Romero-Franco N, Jiménez-Reyes P",
+  "annee": 2019,
+  "titre": "Concurrent validity and reliability of an iPhone app for the measurement of ankle dorsiflexion and inter-limb asymmetries",
+  "revue": "J Sports Sci 37(3):249-253",
+  "doi": "10.1080/02640414.2018.1494908",
+  "url": "https://doi.org/10.1080/02640414.2018.1494908",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "12 sujets, genou au mur mesuré en angle par l'iPhone vs inclinomètre : r = 0,989, erreur 0,48° ; CV 5,1 % vs 4,9 %."
+ },
+ {
+  "cle": "balsalobrefernandez2023",
+  "auteurs": "Balsalobre-Fernández C, Xu J, Jarvis P, Thompson S, Tannion K, Bishop C",
+  "annee": 2023,
+  "titre": "Validity of a Smartphone App Using Artificial Intelligence for the Real-Time Measurement of Barbell Velocity in the Bench Press Exercise",
+  "revue": "J Strength Cond Res 37(12):e640-e645",
+  "doi": "10.1519/jsc.0000000000004593",
+  "url": "https://doi.org/10.1519/jsc.0000000000004593",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "27 étudiants, My Jump Lab (IA, iPhone 12 Pro) vs GymAware : r = 0,90-0,92, biais -0,01 à -0,03 m/s ; CV appli 8-14 % proche du capteur (6,5-12 %)."
+ },
+ {
   "cle": "barnes2021",
   "auteurs": "Barnes KR, Ludge AR",
   "annee": 2021,
@@ -453,6 +635,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "1 274 cyclistes amateurs : mal de dos sur 12 mois 26,5 % ; être suivi par un coach OR 0,53 ; antécédent de mal de dos OR 4,2."
+ },
+ {
+  "cle": "baumel2019",
+  "auteurs": "Baumel A, Muench F, Edan S, Kane JM",
+  "annee": 2019,
+  "titre": "Objective User Engagement With Mental Health Apps: Systematic Search and Panel-Based Usage Analysis",
+  "revue": "J Med Internet Res 21(9):e14567",
+  "doi": "10.2196/14567",
+  "url": "https://doi.org/10.2196/14567",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "93 applis : rétention médiane J15 3,9 %, J30 3,3 % ; trackers J30 6,1 % ; utilisateurs actifs quotidiens 4 %."
  },
  {
   "cle": "bayeux-barometre-2025",
@@ -507,6 +702,19 @@
   "note": "20 coureurs, 40 sem : force max et réactive, économie et vVO2max améliorées sans changement de composition corporelle (PMID 27135468)."
  },
  {
+  "cle": "behm2008",
+  "auteurs": "Behm DG, Faigenbaum AD, Falk B, Klentrou P",
+  "annee": 2008,
+  "titre": "Canadian Society for Exercise Physiology position paper: resistance training in children and adolescents",
+  "revue": "Appl Physiol Nutr Metab 33(3):547-561",
+  "doi": "10.1139/H08-020",
+  "url": "https://doi.org/10.1139/H08-020",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Pas d'âge minimum ; 2-3 séances/sem non consécutives, 1-2 séries au début puis jusqu'à 4 × 8-15 reps, 8-12 exercices ; encadrement qualifié et matériel adapté (PMID 18461111)."
+ },
+ {
   "cle": "behm2016",
   "auteurs": "Behm DG, Blazevich AJ, Kay AD, McHugh M",
   "annee": 2016,
@@ -518,6 +726,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "SS −3,7 %, PNF −4,4 %, dynamique +1,3 % ; ≥ 60 s −4,6 % vs < 60 s −1,1 % ; gain d'amplitude < 30 min ; pas d'effet clair du SS/PNF sur les blessures."
+ },
+ {
+  "cle": "behringer2010",
+  "auteurs": "Behringer M, Vom Heede A, Yue Z, Mester J",
+  "annee": 2010,
+  "titre": "Effects of resistance training in children and adolescents: a meta-analysis",
+  "revue": "Pediatrics 126(5):e1199-e1210",
+  "doi": "10.1542/peds.2010-0445",
+  "url": "https://doi.org/10.1542/peds.2010-0445",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ES global 1,12 [0,9-1,3] sur la force ; gains croissants avec l'âge et la maturité, sans « bond » à la puberté ; durée et nombre de séries favorables (PMID 20974785)."
  },
  {
   "cle": "bejder2019",
@@ -533,6 +754,19 @@
   "note": "11 vététistes : VO2pic relative, résistance à la fatigue sur 30 s et couple max du quadriceps expliquent 98 % ; 4 × 30 s explique 88 % (PMID 30430912)."
  },
  {
+  "cle": "bergeron2015",
+  "auteurs": "Bergeron MF, Mountjoy M, Armstrong N et al.",
+  "annee": 2015,
+  "titre": "International Olympic Committee consensus statement on youth athletic development",
+  "revue": "Br J Sports Med 49(13):843-851",
+  "doi": "10.1136/bjsports-2015-094962",
+  "url": "https://doi.org/10.1136/bjsports-2015-094962",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Consensus CIO : recommandations pour former des jeunes sportifs en bonne santé, résilients et compétents, à tous les niveaux ; résumé sans chiffres (PMID 26084524)."
+ },
+ {
   "cle": "bernardi2001",
   "auteurs": "Bernardi L, Gabutti A, Porta C, Spicuzza L",
   "annee": 2001,
@@ -544,6 +778,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "15 sujets ; à 6/min, réponses chémoréflexes à l'hypoxie et l'hypercapnie réduites ; baroréflexe plus sensible."
+ },
+ {
+  "cle": "besomi2025",
+  "auteurs": "Besomi M, Roa-Alcaino S, Lombardi Á, et al.",
+  "annee": 2025,
+  "titre": "Exploring contextual factors for management and prevention of running-related injuries: runners and experts' perspectives",
+  "revue": "BMJ Open Sport Exerc Med 11(2):e002413",
+  "doi": "10.1136/bmjsem-2024-002413",
+  "url": "https://doi.org/10.1136/bmjsem-2024-002413",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "15 coureurs et 6 experts (qualitatif) : tendance générale à refuser le repos en cas de gêne ; poids des pairs et de l'information en ligne."
  },
  {
   "cle": "beyer2015",
@@ -570,6 +817,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Portrait de David Tinker (21/05/2026) : équipe de 3, USA puis France puis UK, Uno-X Mobility, freemium."
+ },
+ {
+  "cle": "bidargaddi2018",
+  "auteurs": "Bidargaddi N, Almirall D, Murphy S, et al.",
+  "annee": 2018,
+  "titre": "To Prompt or Not to Prompt? A Microrandomized Trial of Time-Varying Push Notifications to Increase Proximal Engagement With a Mobile Health App",
+  "revue": "JMIR Mhealth Uhealth 6(11):e10123",
+  "doi": "10.2196/10123",
+  "url": "https://doi.org/10.2196/10123",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "1255 utilisateurs, 89 j : notification → +3,9 % d'engagement sur 24 h (RR 1,039) ; +8,7 % le week-end."
  },
  {
   "cle": "bikeradar-systm",
@@ -609,6 +869,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "9 non-cyclistes ; ±3 cm de selle modifie la cinématique hanche, genou, cheville et la part de travail de la cheville."
+ },
+ {
+  "cle": "birinci2026",
+  "auteurs": "Birinci MC, Makaracı Y, Aktaş BS, Atasever G, Ruiz-Cárdenas JD",
+  "annee": 2026,
+  "titre": "The single-leg sit-to-stand test is valid and reliable for assessing lower limb performance and asymmetry in international cross-country skiers",
+  "revue": "Gait Posture 125:110100",
+  "doi": "10.1016/j.gaitpost.2026.110100",
+  "url": "https://doi.org/10.1016/j.gaitpost.2026.110100",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "22 skieurs de fond internationaux, appli mobile : ICC 0,81-0,89, CV 6-10 % ; asymétrie stable entre séances ; lien modéré avec couple isocinétique (r 0,34-0,54) et CMJ (0,46-0,75)."
  },
  {
   "cle": "bishop2018",
@@ -728,6 +1001,19 @@
   "note": "27 études, 264 personnes : raideur SMD 0,70, module 0,69, section 0,24 ; l'intensité de charge compte, pas le type de contraction."
  },
  {
+  "cle": "boissy2017",
+  "auteurs": "Boissy P, Diop-Fallou S, Lebel K et al.",
+  "annee": 2017,
+  "titre": "Trueness and Minimal Detectable Change of Smartphone Inclinometer Measurements of Shoulder Range of Motion",
+  "revue": "Telemed J E Health 23(6):503-506",
+  "doi": "10.1089/tmj.2016.0205",
+  "url": "https://doi.org/10.1089/tmj.2016.0205",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "25 sujets vs capture 3D : écart moyen 5,8° en flexion, 8,7° en abduction, 1,7° en rotation externe ; biais moyen 3,4° (IC -8,9 à 15,8°)."
+ },
+ {
   "cle": "bonello2021",
   "auteurs": "Bonello C, Girdwood M, De Souza K, Trinder NK, Lewis J, Lazarczuk SL, Gaida JE, et al.",
   "annee": 2021,
@@ -739,6 +1025,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "13 études, 346 personnes : pas d'effet antidouleur constant de l'isométrie en cas de douleur locale."
+ },
+ {
+  "cle": "borges2016",
+  "auteurs": "Borges N, Reaburn P, Driller M, Argus C",
+  "annee": 2016,
+  "titre": "Age-Related Changes in Performance and Recovery Kinetics in Masters Athletes: A Narrative Review",
+  "revue": "J Aging Phys Act 24(1):149-157",
+  "doi": "10.1123/japa.2015-0021",
+  "url": "https://doi.org/10.1123/japa.2015-0021",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Revue narrative : effet de l'âge sur performance et récupération peut-être plus faible qu'annoncé ; la sédentarité pèse plus ; récupération possiblement ralentie, peu de données (PMID 25880787)."
  },
  {
   "cle": "boullosa2018",
@@ -936,6 +1235,19 @@
   "note": "19 €/mois ou 149 €/an ; plans trail et ultra, séances de renfo avec vidéos ; 4,8/5 sur plus de 4 400 avis."
  },
  {
+  "cle": "canever2025",
+  "auteurs": "Canever JB, Nonnenmacher CH, Lima KMM",
+  "annee": 2025,
+  "titre": "Reliability of range of motion measurements obtained by goniometry, photogrammetry and smartphone applications in lower limb: A systematic review",
+  "revue": "J Bodyw Mov Ther 42:793-802",
+  "doi": "10.1016/j.jbmt.2025.01.009",
+  "url": "https://doi.org/10.1016/j.jbmt.2025.01.009",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "12 études, jeunes sains : ICC goniomètre 0,18-0,99, photogrammétrie 0,78-1,00, smartphone 0,33-0,98 ; familiarisation conseillée."
+ },
+ {
   "cle": "catapult-eyesup",
   "auteurs": "eyesup.football",
   "annee": 2026,
@@ -1001,6 +1313,19 @@
   "note": "Applicable au 02/08/2026 ; appli sur API tierce = fournisseur ; marquage jusqu'au 02/12/2026 pour l'existant."
  },
  {
+  "cle": "chamorro2017",
+  "auteurs": "Chamorro C, Armijo-Olivo S, De la Fuente C, Fuentes J, Chirosa LJ",
+  "annee": 2017,
+  "titre": "Absolute Reliability and Concurrent Validity of Hand Held Dynamometry and Isokinetic Dynamometry in the Hip, Knee and Ankle Joint: Systematic Review and Meta-analysis",
+  "revue": "Open Med (Wars) 12:359-375",
+  "doi": "10.1515/med-2017-0052",
+  "url": "https://doi.org/10.1515/med-2017-0052",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "17 études : dynamomètre à main, limites d'accord ±34 % en extension de genou et ±49 % en flexion plantaire, contre < 15 % à l'isocinétique."
+ },
+ {
   "cle": "chen2022",
   "auteurs": "Chen Z, Sherk VD, Sharma-Ghimire P, Bemben MG, Bemben DA",
   "annee": 2022,
@@ -1012,6 +1337,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "18 coureurs contre 19 routiers : DMO de hanche et os trabéculaire du tibia plus forts chez les coureurs ; métabolisme de repos plus bas chez les cyclistes."
+ },
+ {
+  "cle": "chesterton2022",
+  "auteurs": "Chesterton P, Draper G, Portas M, Tears C",
+  "annee": 2022,
+  "titre": "The Uptake of Nordic Hamstring Exercise Program for Injury Prevention in Major League Soccer and Its Barriers to Implementation in Practice",
+  "revue": "J Sport Rehabil 31(5):576-581",
+  "doi": "10.1123/jsr.2021-0262",
+  "url": "https://doi.org/10.1123/jsr.2021-0262",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "24 clubs MLS : 21 % conformes au programme Nordic complet ; 83 % citent perception des joueurs et courbatures comme freins."
+ },
+ {
+  "cle": "chougule2026",
+  "auteurs": "Chougule A, Dowsett M, Ekundayomi D et al.",
+  "annee": 2026,
+  "titre": "Accuracy and Validity of 3D Markerless Motion Capture Compared to Marker-Based Systems for Lower-Limb Biomechanical Assessment: A Systematic Review",
+  "revue": "Sensors (Basel) 26(12):3956",
+  "doi": "10.3390/s26123956",
+  "url": "https://doi.org/10.3390/s26123956",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Réceptions de saut (dépistage LCA) : validité modérée à haute surtout dans le plan sagittal ; variable selon articulation et tâche ; validation supplémentaire nécessaire."
  },
  {
   "cle": "christensen2015",
@@ -1038,6 +1389,58 @@
   "niveau": "B",
   "verifie": true,
   "note": "15 coureurs amateurs ; aucun effet sur les sprints répétés ; SpO2 60 ± 12 % en fin d'apnée ; alcalose respiratoire."
+ },
+ {
+  "cle": "claassen2026",
+  "auteurs": "Claassen N, Siegel SD, Sproll M et al.",
+  "annee": 2026,
+  "titre": "Reliability, Device Agreement and Validity of Load-Velocity Profiles: A Systematic Review with Meta-analysis",
+  "revue": "Sports Med Open 12:131",
+  "doi": "10.1186/s40798-026-01102-0",
+  "url": "https://doi.org/10.1186/s40798-026-01102-0",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "63 études capteurs : validité ICC 0,91-0,92, fiabilité 0,90-0,91, capteurs à câble plus constants que les centrales inertielles ; 38 études 1RM : ICC ≈ 0,90 mais forte hétérogénéité au bas du corps."
+ },
+ {
+  "cle": "clapis2008",
+  "auteurs": "Clapis PA, Davis SM, Davis RO",
+  "annee": 2008,
+  "titre": "Reliability of inclinometer and goniometric measurements of hip extension flexibility using the modified Thomas test",
+  "revue": "Physiother Theory Pract 24(2):135-141",
+  "doi": "10.1080/09593980701378256",
+  "url": "https://doi.org/10.1080/09593980701378256",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "42 sujets sains, mesures par un examinateur : inclinomètre et goniomètre ICC 0,89-0,92 entre évaluateurs, interchangeables."
+ },
+ {
+  "cle": "clarsen2010",
+  "auteurs": "Clarsen B, Krosshaug T, Bahr R",
+  "annee": 2010,
+  "titre": "Overuse injuries in professional road cyclists",
+  "revue": "Am J Sports Med 38(12):2494-2501",
+  "doi": "10.1177/0363546510376816",
+  "url": "https://doi.org/10.1177/0363546510376816",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "109 pros : 45 % des blessures d'usure au bas du dos, 23 % au genou ; 58 % lombalgie sur 12 mois ; genou = 57 % des blessures avec arrêt (PMID 20847225)."
+ },
+ {
+  "cle": "clemente2021",
+  "auteurs": "Clemente FM, Akyildiz Z, Pino-Ortega J, Rico-González M",
+  "annee": 2021,
+  "titre": "Validity and Reliability of the Inertial Measurement Unit for Barbell Velocity Assessments: A Systematic Review",
+  "revue": "Sensors (Basel) 21(7):2511",
+  "doi": "10.3390/s21072511",
+  "url": "https://doi.org/10.3390/s21072511",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "22 études, 8 modèles de centrales inertielles : 7 valides et fiables pour la vitesse de barre en trajectoire linéaire."
  },
  {
   "cle": "clinometer-mjssm-2021",
@@ -1209,6 +1612,19 @@
   "note": "14 types de traitements ; vise les établissements de santé, pas nommément les applis sportives."
  },
  {
+  "cle": "cnil-mineurs-reco4",
+  "auteurs": "CNIL",
+  "annee": 2021,
+  "titre": "Recommandation 4 : rechercher le consentement d'un parent pour les mineurs de moins de 15 ans",
+  "revue": "site officiel CNIL",
+  "doi": null,
+  "url": "https://www.cnil.fr/fr/recommandation-4-rechercher-le-consentement-dun-parent-pour-les-mineurs-de-moins-de-15-ans",
+  "type": "site",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Consentement conjoint parent + enfant pour les traitements fondés sur le consentement ; l'accord d'un seul titulaire de l'autorité parentale suffit ; ne s'applique pas aux traitements fondés sur un contrat (lu le 01/10/2026 ; année de publication non vérifiée sur la page)."
+ },
+ {
   "cle": "cnil-mots-de-passe",
   "auteurs": "CNIL",
   "annee": 2022,
@@ -1246,6 +1662,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Version corrigée du 08/04/2025, modifications non substantielles."
+ },
+ {
+  "cle": "cnil-rgpd-art8",
+  "auteurs": "CNIL",
+  "annee": 2016,
+  "titre": "RGPD, chapitre II (art. 5 à 11) — article 8 : consentement des enfants",
+  "revue": "site officiel CNIL",
+  "doi": null,
+  "url": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Art. 8 RGPD : consentement de l'enfant valable à partir de 16 ans ; les États peuvent abaisser l'âge sans descendre sous 13 ans ; le responsable doit s'efforcer raisonnablement de vérifier l'accord parental (lu le 01/10/2026)."
  },
  {
   "cle": "cnil-rgpd-chapitre1",
@@ -1391,6 +1820,19 @@
   "note": "29 $ (1-5), 79 $ (6-50), 199 $ (51-150) par mois ; essai 14 jours."
  },
  {
+  "cle": "colensosemple2023",
+  "auteurs": "Colenso-Semple LM, D'Souza AC, Elliott-Sale KJ, Phillips SM",
+  "annee": 2023,
+  "titre": "Current evidence shows no influence of women's menstrual cycle phase on acute strength performance or adaptations to resistance exercise training",
+  "revue": "Front Sports Act Living 5:1054542",
+  "doi": "10.3389/fspor.2023.1054542",
+  "url": "https://doi.org/10.3389/fspor.2023.1054542",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue parapluie (classée « Review » par Europe PMC) de méta-analyses et revues : résultats très variables, méthodes de vérification du cycle faibles ; prématuré de conclure à un effet de la phase sur la force ou l'hypertrophie (PMID 37033884)."
+ },
+ {
   "cle": "collins2018",
   "auteurs": "Collins NJ, Barton CJ, van Middelkoop M, Callaghan MJ, Rathleff MS, Vicenzino BT, et al.",
   "annee": 2018,
@@ -1415,6 +1857,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "Date limite de dépôt des dossiers et du budget 2026 : 1er novembre 2025."
+ },
+ {
+  "cle": "correia2024",
+  "auteurs": "Correia CK, Machado JM, Dominski FH et al.",
+  "annee": 2024,
+  "titre": "Risk factors for running-related injuries: An umbrella systematic review",
+  "revue": "J Sport Health Sci 13(6):793-804",
+  "doi": "10.1016/j.jshs.2024.04.011",
+  "url": "https://doi.org/10.1016/j.jshs.2024.04.011",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "13 revues de qualité basse à critique, 207 facteurs ; charge d'entraînement, santé/mode de vie, morphologie et biomécanique liés au risque ; prudence (PMID 38697289)."
  },
  {
   "cle": "cowley2025",
@@ -1493,6 +1948,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "225-1 295 $/mois (12 mois) ou 245-1 295 $+ sans engagement ; muscu incluse à partir de Premium."
+ },
+ {
+  "cle": "cuchna2016",
+  "auteurs": "Cuchna JW, Hoch MC, Hoch JM",
+  "annee": 2016,
+  "titre": "The interrater and intrarater reliability of the functional movement screen: A systematic review with meta-analysis",
+  "revue": "Phys Ther Sport 19:57-65",
+  "doi": "10.1016/j.ptsp.2015.12.002",
+  "url": "https://doi.org/10.1016/j.ptsp.2015.12.002",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "7 articles : fiabilité inter-évaluateur du score FMS total ICC 0,84 (IC 0,64-0,94), preuve modérée."
  },
  {
   "cle": "cyclist-join",
@@ -1651,6 +2119,19 @@
   "note": "109 964 licenciés au 30/09/2025 (+2,15 %) ; route -0,92 % ; VTT en baisse ; BMX +11,66 %."
  },
  {
+  "cle": "direito2017",
+  "auteurs": "Direito A, Carraça E, Rawstorn J, Whittaker R, Maddison R",
+  "annee": 2017,
+  "titre": "mHealth Technologies to Influence Physical Activity and Sedentary Behaviors: Behavior Change Techniques, Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+  "revue": "Ann Behav Med 51(2):226-239",
+  "doi": "10.1007/s12160-016-9846-0",
+  "url": "https://doi.org/10.1007/s12160-016-9846-0",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "21 ECR : AP totale SMD 0,14 (NS), MVPA 0,37 (NS), sédentarité −0,26 ; 6,9 BCT en moyenne."
+ },
+ {
   "cle": "distances-nolio-2022",
   "auteurs": "Distances+",
   "annee": 2022,
@@ -1677,6 +2158,19 @@
   "note": "Vu via recherche web : directive 2024/2853, logiciels inclus, transposition au 09/12/2026."
  },
  {
+  "cle": "dobbs2019",
+  "auteurs": "Dobbs WC, Fedewa MV, MacDonald HV et al.",
+  "annee": 2019,
+  "titre": "The Accuracy of Acquiring Heart Rate Variability from Portable Devices: A Systematic Review and Meta-Analysis",
+  "revue": "Sports Med 49(3):417-435",
+  "doi": "10.1007/s40279-019-01061-5",
+  "url": "https://doi.org/10.1007/s40279-019-01061-5",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "23 études, 301 effets : la VFC des appareils portables diffère peu de l'ECG (ES 0,23), très hétérogène ; erreur jugée acceptable vu le gain pratique."
+ },
+ {
   "cle": "doherty2017",
   "auteurs": "Doherty C, Bleakley C, Delahunt E, Holden S",
   "annee": 2017,
@@ -1688,6 +2182,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "46 revues : preuve forte pour l'attelle, modérée pour l'entraînement neuromusculaire, contre la récidive d'entorse."
+ },
+ {
+  "cle": "doherty2024",
+  "auteurs": "Doherty C, Baldwin M, Keogh A, Caulfield B, Argent R",
+  "annee": 2024,
+  "titre": "Keeping Pace with Wearables: A Living Umbrella Review of Systematic Reviews Evaluating the Accuracy of Consumer Wearable Technologies in Health Measurement",
+  "revue": "Sports Med 54(11):2907-2926",
+  "doi": "10.1007/s40279-024-02077-2",
+  "url": "https://doi.org/10.1007/s40279-024-02077-2",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Revue parapluie de 24 revues (249 études) : FC biais ±3 % ; VO2max surestimée de ±15 % (au repos) et ±10 % (à l'effort) ; dépense énergétique erreur -21 à +15 % ; sommeil total surestimé (> 10 %) ; seuls ~11 % des appareils validés."
  },
  {
   "cle": "dorn2012",
@@ -1820,6 +2327,32 @@
   "note": "22 études : économie lourd g −0,32 vs plyo g −0,13 ; ≥ 90 % 1RM g −0,31 ; 10-14 sem g −0,45 vs 6-8 sem −0,21 (PMID 36370207)."
  },
  {
+  "cle": "eimiller2024",
+  "auteurs": "Eimiller K, Stoddard E, Janes B, Smith M, Vincek A",
+  "annee": 2024,
+  "titre": "Reliability of Goniometric Techniques for Measuring Hip Flexor Length Using the Modified Thomas Test",
+  "revue": "Int J Sports Phys Ther 19(8):997-1002",
+  "doi": "10.26603/001c.120899",
+  "url": "https://doi.org/10.26603/001c.120899",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "64 jeunes sains, bassin contrôlé par palpation : ICC intra 0,91, inter 0,85 ; extension moyenne 5,4 ± 9,7°."
+ },
+ {
+  "cle": "elliottsale2020",
+  "auteurs": "Elliott-Sale KJ, McNulty KL, Ansdell P et al.",
+  "annee": 2020,
+  "titre": "The Effects of Oral Contraceptives on Exercise Performance in Women: A Systematic Review and Meta-analysis",
+  "revue": "Sports Med 50(10):1785-1812",
+  "doi": "10.1007/s40279-020-01317-5",
+  "url": "https://doi.org/10.1007/s40279-020-01317-5",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "42 études, 590 femmes, 83 % de qualité moyenne à très basse : performance peut-être légèrement inférieure sous pilule, effet trivial ; stable pendant le cycle de pilule ; pas de consigne générale (PMID 32666247)."
+ },
+ {
   "cle": "enduco-accueil",
   "auteurs": "Enduco",
   "annee": 2026,
@@ -1922,6 +2455,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "280 h en centre + 300 h en structure, 3 640 €, ouverture sous réserve d'effectif."
+ },
+ {
+  "cle": "erdman2024",
+  "auteurs": "Erdman A, Loewen A, Dressing M et al.",
+  "annee": 2024,
+  "titre": "A 2D video-based assessment is associated with 3D biomechanical contributors to dynamic knee valgus in the coronal plane",
+  "revue": "Front Sports Act Living 6:1352286",
+  "doi": "10.3389/fspor.2024.1352286",
+  "url": "https://doi.org/10.3389/fspor.2024.1352286",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "41 volleyeuses : critère visuel « genou à l'intérieur du bord interne de la chaussure » le plus lié au 3D (AUC 0,67-0,93) ; angles réels de valgus petits (2,4-4,6°)."
  },
  {
   "cle": "euipo-frais",
@@ -2039,6 +2585,32 @@
   "niveau": "D",
   "verifie": true,
   "note": "Aucun prix affiché : devis et démo uniquement."
+ },
+ {
+  "cle": "faigenbaum2009",
+  "auteurs": "Faigenbaum AD, Kraemer WJ, Blimkie CJ et al.",
+  "annee": 2009,
+  "titre": "Youth resistance training: updated position statement paper from the national strength and conditioning association",
+  "revue": "J Strength Cond Res 23(5 Suppl):S60-S79",
+  "doi": "10.1519/JSC.0b013e31819df407",
+  "url": "https://doi.org/10.1519/JSC.0b013e31819df407",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position NSCA : beaucoup des bénéfices de la muscu adulte sont accessibles aux enfants et ados qui suivent des consignes adaptées à l'âge, avec prescription et encadrement appropriés (PMID 19620931)."
+ },
+ {
+  "cle": "fallon2025",
+  "auteurs": "Fallon T, Palmer D, Bigard X, Heron N",
+  "annee": 2025,
+  "titre": "Epidemiology of injury and illness across all the competitive cycling disciplines: a systematic review and meta-analysis",
+  "revue": "BMJ Open Sport Exerc Med 11(3):e002364",
+  "doi": "10.1136/bmjsem-2024-002364",
+  "url": "https://doi.org/10.1136/bmjsem-2024-002364",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "44 études : aucune sur gravel ou cyclocross ; membre supérieur = 48 % des blessures sur route ; plaies puis fractures les plus fréquentes ; maladies respiratoires 32 % en VTT (PMID 40692620)."
  },
  {
   "cle": "fernandezlazaro2021",
@@ -3159,6 +3731,19 @@
   "note": "Demande de charge basée sur le tonnage ; planification en tableur ; débat sur la charge."
  },
  {
+  "cle": "fragala2019",
+  "auteurs": "Fragala MS, Cadore EL, Dorgo S et al.",
+  "annee": 2019,
+  "titre": "Resistance Training for Older Adults: Position Statement From the National Strength and Conditioning Association",
+  "revue": "J Strength Cond Res 33(8):2019-2052",
+  "doi": "10.1519/JSC.0000000000003230",
+  "url": "https://doi.org/10.1519/JSC.0000000000003230",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position NSCA : la muscu est une intervention puissante contre la perte de force et de masse musculaire liée à l'âge ; recommandations de programmation en 4 parties (PMID 31343601)."
+ },
+ {
   "cle": "franceinfo-biathlon-licencies",
   "auteurs": "franceinfo",
   "annee": 2025,
@@ -3185,6 +3770,19 @@
   "note": "42 études : force excentrique ES 0,98 ; aucun lien avec le volume ; 29-64 répétitions par semaine sur 2-3 séances suffisent ; certitude faible."
  },
  {
+  "cle": "freckleton2014",
+  "auteurs": "Freckleton G, Cook J, Pizzari T",
+  "annee": 2014,
+  "titre": "The predictive validity of a single leg bridge test for hamstring injuries in Australian Rules Football Players",
+  "revue": "Br J Sports Med 48(8):713-717",
+  "doi": "10.1136/bjsports-2013-092356",
+  "url": "https://doi.org/10.1136/bjsports-2013-092356",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "482 footballeurs australiens : score plus bas au pont unipodal droit chez ceux blessés ensuite à droite ; 28 blessures seulement, facteurs confondants."
+ },
+ {
   "cle": "freeletics-appstore",
   "auteurs": "Freeletics",
   "annee": 2026,
@@ -3196,6 +3794,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "4,6/5 (22 000), Coach 34,99-79,99 $, avis sur manque de personnalisation."
+ },
+ {
+  "cle": "fry2009",
+  "auteurs": "Fry JP, Neff RA",
+  "annee": 2009,
+  "titre": "Periodic prompts and reminders in health promotion and health behavior interventions: systematic review",
+  "revue": "J Med Internet Res 11(2):e16",
+  "doi": "10.2196/jmir.1138",
+  "url": "https://doi.org/10.2196/jmir.1138",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "19 articles, n = 15 655 ; 11 positifs ; meilleurs si fréquents et avec contact humain."
  },
  {
   "cle": "fsgt-velo",
@@ -3222,6 +3833,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Avis positif général, sans détail sur la force."
+ },
+ {
+  "cle": "fuller2020",
+  "auteurs": "Fuller D, Colwell E, Low J et al.",
+  "annee": 2020,
+  "titre": "Reliability and Validity of Commercially Available Wearable Devices for Measuring Steps, Energy Expenditure, and Heart Rate: Systematic Review",
+  "revue": "JMIR Mhealth Uhealth 8(9):e18694",
+  "doi": "10.2196/18694",
+  "url": "https://doi.org/10.2196/18694",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "158 publications, 9 marques : pas et FC corrects en labo (Apple Watch et Garmin les plus justes en FC) ; aucune marque n'est juste pour la dépense énergétique."
  },
  {
   "cle": "future-appstore",
@@ -3261,6 +3885,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "Critères pour qualifier les données d'applis bien-être de données de santé ; mesures dans le temps et conclusions tirées = santé."
+ },
+ {
+  "cle": "gallo2022",
+  "auteurs": "Gallo G, Leo P, Mateo-March M et al.",
+  "annee": 2022,
+  "titre": "Cross-Sectional Differences in Race Demands Between Junior, Under 23, and Professional Road Cyclists",
+  "revue": "Int J Sports Physiol Perform 17(3):450-457",
+  "doi": "10.1123/ijspp.2021-0256",
+  "url": "https://doi.org/10.1123/ijspp.2021-0256",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 coureurs : courses juniors plus courtes mais plus de temps en zones hautes ; pros et U23 produisent plus de puissance sur 5-180 min (PMID 34996033)."
+ },
+ {
+  "cle": "ganokroj2021",
+  "auteurs": "Ganokroj P, Sompornpanich N, Kerdsomnuek P, Vanadurongwan B, Lertwanich P",
+  "annee": 2021,
+  "titre": "Validity and reliability of smartphone applications for measurement of hip rotation, compared with three-dimensional motion analysis",
+  "revue": "BMC Musculoskelet Disord 22:166",
+  "doi": "10.1186/s12891-021-03995-2",
+  "url": "https://doi.org/10.1186/s12891-021-03995-2",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "24 sujets, rotation passive par examinateur : validité rotation interne ICC 0,81-0,94, rotation externe assis 0,70-0,73 ; fiabilité entre examinateurs seulement passable à bonne."
  },
  {
   "cle": "gao2023",
@@ -3367,6 +4017,19 @@
   "note": "Du blog (2013) à l'appli (2020) : plus de 5 M€ de revenu récurrent déclaré, 50 personnes."
  },
  {
+  "cle": "gencoglu2023",
+  "auteurs": "Gençoğlu C, Ulupınar S, Özbay S et al.",
+  "annee": 2023,
+  "titre": "Validity and reliability of \"My Jump app\" to assess vertical jump performance: a meta-analytic review",
+  "revue": "Sci Rep 13:20137",
+  "doi": "10.1038/s41598-023-46935-x",
+  "url": "https://doi.org/10.1038/s41598-023-46935-x",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "21 études : pas de différence de hauteur entre My Jump et les méthodes de référence, corrélations élevées, fiabilité quasi parfaite ; limité au temps de vol."
+ },
+ {
   "cle": "getwaitlist-benchmarks",
   "auteurs": "Waitlist LLC",
   "annee": 2025,
@@ -3445,6 +4108,32 @@
   "note": "Article 13 : source à offrir aux utilisateurs réseau d'une version modifiée."
  },
  {
+  "cle": "gomezredondo2024",
+  "auteurs": "Gómez-Redondo P, Valenzuela PL, Morales JS, Ara I, Mañas A",
+  "annee": 2024,
+  "titre": "Supervised Versus Unsupervised Exercise for the Improvement of Physical Function and Well-Being Outcomes in Older Adults: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+  "revue": "Sports Med 54(7):1877-1906",
+  "doi": "10.1007/s40279-024-02024-1",
+  "url": "https://doi.org/10.1007/s40279-024-02024-1",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "34 ECR, n = 2830 (≥ 60 ans) : assiduité ~81 % dans les deux cas ; supervision → force genou SMD 0,18."
+ },
+ {
+  "cle": "goodrum2025",
+  "auteurs": "Goodrum M, Viljoen C, Kaulback K",
+  "annee": 2025,
+  "titre": "Incidence, severity, and risk factors for injuries in female trail runners - A retrospective cross-sectional study",
+  "revue": "Phys Ther Sport 71:1-7",
+  "doi": "10.1016/j.ptsp.2024.11.004",
+  "url": "https://doi.org/10.1016/j.ptsp.2024.11.004",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "62 traileuses : 14,3 blessures/1000 h ; membre inférieur 63 % ; tendinopathie 25 % (PMID 39566445)."
+ },
+ {
   "cle": "google-play-12-testeurs",
   "auteurs": "Google",
   "annee": 2024,
@@ -3484,6 +4173,19 @@
   "note": "Vu via recherche web : 25 $ d'inscription une fois."
  },
  {
+  "cle": "greig2023",
+  "auteurs": "Greig L, Aspe RR, Hall A, Comfort P, Cooper K, Swinton PA",
+  "annee": 2023,
+  "titre": "The Predictive Validity of Individualised Load-Velocity Relationships for Predicting 1RM: A Systematic Review and Individual Participant Data Meta-analysis",
+  "revue": "Sports Med 53(9):1693-1708",
+  "doi": "10.1007/s40279-023-01854-9",
+  "url": "https://doi.org/10.1007/s40279-023-01854-9",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "20 études, 434 sujets : erreur d'estimation 9,8 % (IC 7,4-12,2 %) ; surestimation moyenne 4,5 kg (3,7 % du 1RM), quelle que soit la méthode."
+ },
+ {
   "cle": "grgic2022",
   "auteurs": "Grgic J, Schoenfeld BJ, Orazem J, Sabol F",
   "annee": 2022,
@@ -3495,6 +4197,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "15 études : échec vs non-échec, force ES −0,09 NS, hypertrophie 0,22 NS ; volume non égalisé : non-échec meilleur pour la force (ES −0,32) (PMID 33497853)."
+ },
+ {
+  "cle": "grgic2022b",
+  "auteurs": "Grgic J, Scapec B, Mikulic P, Pedisic Z",
+  "annee": 2022,
+  "titre": "Test-retest reliability of isometric mid-thigh pull maximum strength assessment: a systematic review",
+  "revue": "Biol Sport 39(2):407-414",
+  "doi": "10.5114/biolsport.2022.106149",
+  "url": "https://doi.org/10.5114/biolsport.2022.106149",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "16 études : ICC 0,73-0,99 (médiane 0,96), CV 0,7-11,1 % (médiane 4,9 %) pour la force max en tirage isométrique mi-cuisse."
  },
  {
   "cle": "guan2022",
@@ -3523,6 +4238,19 @@
   "note": "Liste de ce que Strava ne fait pas (programmation, minuteurs, technique) — source partisane."
  },
  {
+  "cle": "hahn2021",
+  "auteurs": "Hahn S, Kröger I, Willwacher S, Augat P",
+  "annee": 2021,
+  "titre": "Reliability and validity varies among smartphone apps for range of motion measurements of the lower extremity: a systematic review",
+  "revue": "Biomed Tech (Berl) 66(6):537-555",
+  "doi": "10.1515/bmt-2021-0015",
+  "url": "https://doi.org/10.1515/bmt-2021-0015",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "25 études : quelques applis bonnes pour genou et cheville ; aucune appli recommandable sans réserve pour la hanche."
+ },
+ {
   "cle": "hajghanbari2013",
   "auteurs": "HajGhanbari B, Yamabayashi C, Buna TR, et al.",
   "annee": 2013,
@@ -3549,6 +4277,19 @@
   "note": "12 études, 414 sujets : sous-estimation moyenne de 0,95 rep ; meilleure précision près de l'échec et pour ≤ 12 reps ; I² = 97,9 % (PMID 34542869)."
  },
  {
+  "cle": "harkin2016",
+  "auteurs": "Harkin B, Webb TL, Chang BP, et al.",
+  "annee": 2016,
+  "titre": "Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence",
+  "revue": "Psychol Bull 142(2):198-229",
+  "doi": "10.1037/bul0000025",
+  "url": "https://doi.org/10.1037/bul0000025",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "138 études, n = 19 951 : suivi des progrès d = 0,40 sur l'atteinte du but ; plus fort si noté physiquement ou rendu public."
+ },
+ {
   "cle": "haroy2019",
   "auteurs": "Harøy J, Clarsen B, Wiger EG, Øyen MG, Serner A, Thorborg K, Hölmich P, Andersen TE, Bahr R",
   "annee": 2019,
@@ -3560,6 +4301,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "652 footballeurs : problèmes d'aine 13,5 % contre 21,3 %, OR 0,59 ; Copenhague 3 fois par semaine en préparation, 1 fois par semaine en saison."
+ },
+ {
+  "cle": "hays2018",
+  "auteurs": "Hays A, Devys S, Bertin D, Marquet LA, Brisswalter J",
+  "annee": 2018,
+  "titre": "Understanding the Physiological Requirements of the Mountain Bike Cross-Country Olympic Race Format",
+  "revue": "Front Physiol 9:1062",
+  "doi": "10.3389/fphys.2018.01062",
+  "url": "https://doi.org/10.3389/fphys.2018.01062",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "16 coureurs nationaux/internationaux : 37 % de la course au-dessus du 2e seuil, 87 % VO2max moyen, 25 % au-dessus de la PMA, efforts de 5-30 s ; effort comparable à un sport collectif (PMID 30158873)."
  },
  {
   "cle": "hays2021",
@@ -3588,6 +4342,32 @@
   "note": "Seul l'en-tête (auteurs, date, accroche) a pu être lu : contenu payant."
  },
  {
+  "cle": "hebertlosier2017",
+  "auteurs": "Hébert-Losier K, Zinner C, Platt S, Stöggl T, Holmberg HC",
+  "annee": 2017,
+  "titre": "Factors that Influence the Performance of Elite Sprint Cross-Country Skiers",
+  "revue": "Sports Med 47(2):319-342",
+  "doi": "10.1007/s40279-016-0573-2",
+  "url": "https://doi.org/10.1007/s40279-016-0573-2",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "31 articles : sprint = 4 manches de ~3 min avec 15-60 min de récupération ; aérobie et anaérobie importants ; vitesse élevée nécessaire (PMID 27334280)."
+ },
+ {
+  "cle": "hebertlosier2017b",
+  "auteurs": "Hébert-Losier K, Wessman C, Alricsson M, Svantesson U",
+  "annee": 2017,
+  "titre": "Updated reliability and normative values for the standing heel-rise test in healthy adults",
+  "revue": "Physiotherapy 103(4):446-452",
+  "doi": "10.1016/j.physio.2017.03.002",
+  "url": "https://doi.org/10.1016/j.physio.2017.03.002",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "566 adultes 20-81 ans sur plan incliné 10° : ICC 1,0, limites d'accord ±6 reps entre jours ; médiane 24 (hommes) et 21 (femmes)."
+ },
+ {
   "cle": "held2026",
   "auteurs": "Held S, Wolf L, Rappelt L, Bloch W, Donath L, Micke F, Geisler S, Isenmann E",
   "annee": 2026,
@@ -3599,6 +4379,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Revue parapluie de 17 méta-analyses (144 études, 1492 sujets) : CT vs RT force/puissance/hypertrophie comparables, VO2 SMD 0,77 ; pas d'effet net de l'ordre ; données élites rares (PMID 41762427)."
+ },
+ {
+  "cle": "hellsten2025",
+  "auteurs": "Hellstén T, Arokoski J, Karlsson J, Ristolainen L, Kettunen J",
+  "annee": 2025,
+  "titre": "Reliability and validity of computer vision-based markerless human pose estimation for measuring hip and knee range of motion",
+  "revue": "Healthc Technol Lett 12(1):e70002",
+  "doi": "10.1049/htl2.70002",
+  "url": "https://doi.org/10.1049/htl2.70002",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 jeunes : appli de vision par ordinateur, ICC 0,93 rotation interne de hanche active, 0,74-0,83 autres amplitudes ; validé contre une image de référence, pas contre la 3D."
  },
  {
   "cle": "helms2016",
@@ -3731,6 +4524,19 @@
   "note": "21 patients, essai préenregistré : douleur -0,9/10 seulement, autant qu'avec l'exercice dynamique ; effet disparu à 45 min."
  },
  {
+  "cle": "hopkins2000",
+  "auteurs": "Hopkins WG",
+  "annee": 2000,
+  "titre": "Measures of reliability in sports medicine and science",
+  "revue": "Sports Med 30(1):1-15",
+  "doi": "10.2165/00007256-200030010-00001",
+  "url": "https://doi.org/10.2165/00007256-200030010-00001",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Recommande l'erreur typique (écart-type des mesures répétées d'un individu, souvent en % CV) comme mesure de référence ; l'ICC dépend de l'hétérogénéité de l'échantillon ; ~50 sujets et 3 essais pour une estimation précise."
+ },
+ {
   "cle": "hopper2019",
   "auteurs": "Hopper SI, Murray SL, Ferrara LR, Singleton JK",
   "annee": 2019,
@@ -3742,6 +4548,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "3 études ; respiration diaphragmatique : baisse de marqueurs de stress (fréquence respiratoire, cortisol salivaire, tension)."
+ },
+ {
+  "cle": "howe2020",
+  "auteurs": "Howe LP, Bampouras TM, North JS, Waldron M",
+  "annee": 2020,
+  "titre": "Within-session reliability for inter-limb asymmetries in ankle dorsiflexion range of motion measured during the weight-bearing lunge test",
+  "revue": "Int J Sports Phys Ther 15(1):64-73",
+  "doi": "10.26603/ijspt20200064",
+  "url": "https://doi.org/10.26603/ijspt20200064",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "50 actifs : un côté ICC 0,98, MDC 1,7° ; l'asymétrie est moins fiable (ICC 0,85, MDC 2,1°) que la mesure d'un seul côté."
  },
  {
   "cle": "hudl-capterra",
@@ -3861,6 +4680,19 @@
   "note": "46 études ; +6,0 % par 10 mL/kg/min de VO2max en moins ; +0,4 % par minute de test ; IMT = RMET ; inspi+expi +12,8 %."
  },
  {
+  "cle": "impellizzeri2007",
+  "auteurs": "Impellizzeri FM, Marcora SM",
+  "annee": 2007,
+  "titre": "The physiology of mountain biking",
+  "revue": "Sports Med 37(1):59-71",
+  "doi": "10.2165/00007256-200737010-00005",
+  "url": "https://doi.org/10.2165/00007256-200737010-00005",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue : course XC ~120 min à ~90 % FCmax (84 % VO2max), > 80 % du temps au-dessus du seuil lactique, pics jusqu'à 500 W ; VO2max > 70 ml/kg/min ; contractions isométriques bras/jambes pour le pilotage (PMID 17190536)."
+ },
+ {
   "cle": "impellizzeri2020",
   "auteurs": "Impellizzeri FM, Tenan MS, Kempton T, Novak A, Coutts AJ",
   "annee": 2020,
@@ -3885,6 +4717,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Seulement 5 vrais essais randomisés sur 15 : RR 0,56 (IC 0,20-1,52), puis RR 0,59 (0,27-1,29) après mise à jour ; effet non concluant."
+ },
+ {
+  "cle": "ingalls2026",
+  "auteurs": "Ingalls EE, Larade N, Ozakinci G, et al.",
+  "annee": 2026,
+  "titre": "The dark side of streaking: Examining the backfire potential of run streaking in recreational runners who broke a long-term streak",
+  "revue": "PLoS One 21(5):e0317254",
+  "doi": "10.1371/journal.pone.0317254",
+  "url": "https://doi.org/10.1371/journal.pone.0317254",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "17 coureurs ayant rompu une série ≥ 100 jours : certains ont couru blessés ; tristesse/« deuil » à la rupture ; pas d'effet négatif durable."
  },
  {
   "cle": "injep-cereq-diplomes-js",
@@ -3924,6 +4769,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "6 300 licenciés STAPS 2016 dont 19 % Entraînement sportif ; 67 % en emploi à 2 ans."
+ },
+ {
+  "cle": "ino2024",
+  "auteurs": "Ino T, Samukawa M, Ishida T et al.",
+  "annee": 2024,
+  "titre": "Validity and Reliability of OpenPose-Based Motion Analysis in Measuring Knee Valgus during Drop Vertical Jump Test",
+  "revue": "J Sports Sci Med 23(1):515-525",
+  "doi": "10.52082/jssm.2024.515",
+  "url": "https://doi.org/10.52082/jssm.2024.515",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "21 jeunes, vidéo de face : OpenPose erreur 2,4° sur le valgus vs 3D (kiné 3,2°), r = 0,97 ; conditions de labo, saut sans charge."
+ },
+ {
+  "cle": "inoue2026",
+  "auteurs": "Inoue A, Mateo-March M, Protzen G et al.",
+  "annee": 2026,
+  "titre": "Power Profile of Olympic Cross-Country Mountain Biking: Durability Matters",
+  "revue": "J Strength Cond Res (sous presse)",
+  "doi": "10.1519/JSC.0000000000005669",
+  "url": "https://doi.org/10.1519/JSC.0000000000005669",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "25 vététistes : après 140 min de fatigue, puissance 5 s-10 min en baisse ; −4-8 % chez les meilleurs contre −14-20 % chez les moins bons (PMID 42715393)."
  },
  {
   "cle": "inpi-base-marques",
@@ -4420,6 +5291,19 @@
   "note": "Coach de juniors cherchant un flux d'enregistrement muscu peu pénible."
  },
  {
+  "cle": "iversen2021",
+  "auteurs": "Iversen VM, Norum M, Schoenfeld BJ, Fimland MS",
+  "annee": 2021,
+  "titre": "No Time to Lift? Designing Time-Efficient Training Programs for Strength and Hypertrophy: A Narrative Review",
+  "revue": "Sports Med 51(10):2079-2095",
+  "doi": "10.1007/s40279-021-01490-1",
+  "url": "https://doi.org/10.1007/s40279-021-01490-1",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Manque de temps = frein courant ; ≥ 4 séries/sem/groupe, 6-15RM ; supersets/drop sets/rest-pause ≈ moitié du temps ; échauffement spécifique."
+ },
+ {
   "cle": "jarvis2022",
   "auteurs": "Jarvis P, Turner A, Read P, Bishop C",
   "annee": 2022,
@@ -4576,6 +5460,19 @@
   "note": "18 études aiguës, 19 longitudinales : la perte de vitesse n'influence pas les gains de force ; plus elle est grande, plus d'hypertrophie (b = 0,006) mais moins de CMJ (b = −0,040) et de sprint (PMID 36178597)."
  },
  {
+  "cle": "kakouris2021",
+  "auteurs": "Kakouris N, Yener N, Fong DTP",
+  "annee": 2021,
+  "titre": "A systematic review of running-related musculoskeletal injuries in runners",
+  "revue": "J Sport Health Sci 10(5):513-522",
+  "doi": "10.1016/j.jshs.2021.04.001",
+  "url": "https://doi.org/10.1016/j.jshs.2021.04.001",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Incidence ~40 % ; Achille 10,3 %, périostite tibiale 9,4 %, fémoro-patellaire 6,3 % ; ultra : cheville 34,5 %, genou 28,1 % (PMID 33862272)."
+ },
+ {
   "cle": "karsten2018",
   "auteurs": "Karsten M, Ribeiro GS, Esquivel MS, Matte DL",
   "annee": 2018,
@@ -4602,6 +5499,58 @@
   "note": "40 étudiants actifs ; après HIIT, 5-5 : FC 154,8 vs carré 4-4-4-4 : 164,7 bpm ; Borg 15,25 vs 17,27."
  },
  {
+  "cle": "kaushal2015",
+  "auteurs": "Kaushal N, Rhodes RE",
+  "annee": 2015,
+  "titre": "Exercise habit formation in new gym members: a longitudinal study",
+  "revue": "J Behav Med 38(4):652-663",
+  "doi": "10.1007/s10865-015-9640-7",
+  "url": "https://doi.org/10.1007/s10865-015-9640-7",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "111 nouveaux membres de salle : ≥ 4 séances/sem pendant 6 sem pour une habitude ; régularité, simplicité, environnement, plaisir prédisent l'habitude."
+ },
+ {
+  "cle": "keogh2017",
+  "auteurs": "Keogh JW, Winwood PW",
+  "annee": 2017,
+  "titre": "The Epidemiology of Injuries Across the Weight-Training Sports",
+  "revue": "Sports Med 47(3):479-501",
+  "doi": "10.1007/s40279-016-0575-0",
+  "url": "https://doi.org/10.1007/s40279-016-0575-0",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "20 études : culturisme 0,24-1 blessure/1000 h ; strongman 4,5-6,1 ; Highland Games 7,5 ; épaule, bas du dos, genou, coude, poignet ; taux bas par rapport aux sports collectifs (PMID 27328853)."
+ },
+ {
+  "cle": "keogh2019",
+  "auteurs": "Keogh JWL, Cox A, Anderson S et al.",
+  "annee": 2019,
+  "titre": "Reliability and validity of clinically accessible smartphone applications to measure joint range of motion: A systematic review",
+  "revue": "PLoS One 14(5):e0215806",
+  "doi": "10.1371/journal.pone.0215806",
+  "url": "https://doi.org/10.1371/journal.pone.0215806",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "25 études (adultes) : fiabilité et validité correctes pour > 50 % des mesures, mais preuve plus faible pour l'erreur absolue (MDC, limites d'accord) que pour l'ICC ; peut remplacer le goniomètre."
+ },
+ {
+  "cle": "kerr2010",
+  "auteurs": "Kerr ZY, Collins CL, Comstock RD",
+  "annee": 2010,
+  "titre": "Epidemiology of weight training-related injuries presenting to United States emergency departments, 1990 to 2007",
+  "revue": "Am J Sports Med 38(4):765-771",
+  "doi": "10.1177/0363546509351560",
+  "url": "https://doi.org/10.1177/0363546509351560",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "25 335 cas (≈ 970 801 estimés) : entorses/élongations 46,1 % ; poids tombé sur la personne 65,5 % ; poids libres 90,4 % ; ≤ 12 ans : mains 37,9 % (PMID 20139328)."
+ },
+ {
   "cle": "khassetarash2023",
   "auteurs": "Khassetarash A, Baggaley M, Vernillo G, Millet GY, Edwards WB",
   "annee": 2023,
@@ -4613,6 +5562,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "11 hommes, 2 descentes de 30 min à 3 sem d'écart : moins de perte de force et de douleur, foulée moins altérée au 2e bout (PMID 35225166)."
+ },
+ {
+  "cle": "kidman2024",
+  "auteurs": "Kidman PG, Curtis RG, Watson A, Maher CA",
+  "annee": 2024,
+  "titre": "When and Why Adults Abandon Lifestyle Behavior and Mental Health Mobile Apps: Scoping Review",
+  "revue": "J Med Internet Res 26:e56897",
+  "doi": "10.2196/56897",
+  "url": "https://doi.org/10.2196/56897",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "18 études, 525 824 participants : médiane 70 % d'abandon dans les 100 premiers jours ; 22 raisons en 6 catégories."
  },
  {
   "cle": "kifit-play",
@@ -4732,6 +5694,58 @@
   "note": "25 jeunes hommes, 2 × 15 g de collagène par jour pendant 1 sem : synthèse du tissu conjonctif musculaire 1,97 contre 2,00 %/jour sous placebo, donc aucun effet."
  },
  {
+  "cle": "kissow2022",
+  "auteurs": "Kissow J, Jacobsen KJ, Gunnarsson TP, Jessen S, Hostrup M",
+  "annee": 2022,
+  "titre": "Effects of Follicular and Luteal Phase-Based Menstrual Cycle Resistance Training on Muscle Strength and Mass",
+  "revue": "Sports Med 52(12):2813-2819",
+  "doi": "10.1007/s40279-022-01679-y",
+  "url": "https://doi.org/10.1007/s40279-022-01679-y",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Article d'opinion critique : la muscu centrée sur la phase folliculaire est « peut-être » supérieure ; besoin de recherches (PMID 35471634)."
+ },
+ {
+  "cle": "klasnja2019",
+  "auteurs": "Klasnja P, Smith S, Seewald NJ, et al.",
+  "annee": 2019,
+  "titre": "Efficacy of Contextually Tailored Suggestions for Physical Activity: A Micro-randomized Optimization Trial of HeartSteps",
+  "revue": "Ann Behav Med 53(6):573-582",
+  "doi": "10.1093/abm/kay067",
+  "url": "https://doi.org/10.1093/abm/kay067",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "44 adultes, 6 sem : suggestion → +35 pas/30 min (p = 0,06) ; +167 pas au début, effet qui décroît avec le temps."
+ },
+ {
+  "cle": "klomstenandersen2018",
+  "auteurs": "Klomsten Andersen O, Clarsen B, Garthe I, Mørland M, Stensrud T",
+  "annee": 2018,
+  "titre": "Bone health in elite Norwegian endurance cyclists and runners: a cross-sectional study",
+  "revue": "BMJ Open Sport Exerc Med 4(1):e000449",
+  "doi": "10.1136/bmjsem-2018-000449",
+  "url": "https://doi.org/10.1136/bmjsem-2018-000449",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "19 routiers et 21 coureurs élites : DMO plus basse chez les cyclistes ; 10 cyclistes sur 19 avec Z ≤ −1 malgré de la muscu lourde ; hommes aussi touchés (PMID 30687513)."
+ },
+ {
+  "cle": "kockum2015",
+  "auteurs": "Kockum B, Heijne AI",
+  "annee": 2015,
+  "titre": "Hop performance and leg muscle power in athletes: Reliability of a test battery",
+  "revue": "Phys Ther Sport 16(3):222-227",
+  "doi": "10.1016/j.ptsp.2014.09.002",
+  "url": "https://doi.org/10.1016/j.ptsp.2014.09.002",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "14 athlètes : ICC 0,84-0,98, SEM 3,4-11,1 % et plus petite différence réelle 9,3-30,7 % pour les hop tests ; erreur ≈ 10 %."
+ },
+ {
   "cle": "koivisto2025",
   "auteurs": "Koivisto K, Oddo Rodriguez F, Finnoff J, Provance A, Willick S",
   "annee": 2025,
@@ -4743,6 +5757,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "En VTT, la tête et le membre supérieur restent les zones les plus touchées ; peu d'études sur la prévention."
+ },
+ {
+  "cle": "kolber2011",
+  "auteurs": "Kolber MJ, Vega F, Widmayer K, Cheng MS",
+  "annee": 2011,
+  "titre": "The reliability and minimal detectable change of shoulder mobility measurements using a digital inclinometer",
+  "revue": "Physiother Theory Pract 27(2):176-184",
+  "doi": "10.3109/09593985.2010.481011",
+  "url": "https://doi.org/10.3109/09593985.2010.481011",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 sujets, épaule active à l'inclinomètre : ICC intra 0,83-0,94 ; MDC90 entre examinateurs 8° flexion, 9° rotation externe, 8° rotation interne."
  },
  {
   "cle": "konrad2022",
@@ -4810,6 +5837,19 @@
   "note": "13 études, 556 participants ; gain ES 0,93 ; après 2-6 sem d'arrêt encore ES 0,55 au-dessus du départ ; perte ES −0,41."
  },
  {
+  "cle": "koo2016",
+  "auteurs": "Koo TK, Li MY",
+  "annee": 2016,
+  "titre": "A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research",
+  "revue": "J Chiropr Med 15(2):155-163",
+  "doi": "10.1016/j.jcm.2016.02.012",
+  "url": "https://doi.org/10.1016/j.jcm.2016.02.012",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "ICC < 0,5 faible, 0,5-0,75 modéré, 0,75-0,9 bon, > 0,9 excellent (à juger sur l'IC95) ; 10 formes d'ICC, à préciser."
+ },
+ {
   "cle": "kox2014",
   "auteurs": "Kox M, van Eijk LT, Zwaag J, et al.",
   "annee": 2014,
@@ -4834,6 +5874,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "28 cyclistes : sprint court > muscu lourde pour sprint 6 s (+4,7 vs +1,1 %), après effort long (+6,1 vs +1,8 %) ; muscu lourde 1RM +9,3 vs −3,9 % (PMID 31555153)."
+ },
+ {
+  "cle": "laaksonen2018",
+  "auteurs": "Laaksonen MS, Finkenzeller T, Holmberg HC, Sattlecker G",
+  "annee": 2018,
+  "titre": "The influence of physiobiomechanical parameters, technical aspects of shooting, and psychophysiological factors on biathlon performance: A review",
+  "revue": "J Sport Health Sci 7(4):394-404",
+  "doi": "10.1016/j.jshs.2018.09.003",
+  "url": "https://doi.org/10.1016/j.jshs.2018.09.003",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Revue narrative : le biathlon combine les exigences du ski de fond et un contrôle moteur fin au tir sous fatigue et stress ; connaissances encore limitées (PMID 30450247)."
  },
  {
   "cle": "laborde2022",
@@ -4888,6 +5941,19 @@
   "note": "Programmes de coachs, coaching audio, iOS et web, pas d'Android."
  },
  {
+  "cle": "laranjo2021",
+  "auteurs": "Laranjo L, Ding D, Heleno B, et al.",
+  "annee": 2021,
+  "titre": "Do smartphone applications and activity trackers increase physical activity in adults? Systematic review, meta-analysis and metaregression",
+  "revue": "Br J Sports Med 55(8):422-432",
+  "doi": "10.1136/bjsports-2020-102892",
+  "url": "https://doi.org/10.1136/bjsports-2020-102892",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "28 ECR, n = 7454 : SDM 0,35 ≈ +1850 pas/j ; SMS et personnalisation plus efficaces."
+ },
+ {
   "cle": "lauersen2014",
   "auteurs": "Lauersen JB, Bertelsen DM, Andersen LB",
   "annee": 2014,
@@ -4938,6 +6004,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "Cas unique réussi ; limites : pas de capteurs, pas de proactivité, pas de garde-fous."
+ },
+ {
+  "cle": "lee2002",
+  "auteurs": "Lee H, Martin DT, Anson JM, Grundy D, Hahn AG",
+  "annee": 2002,
+  "titre": "Physiological characteristics of successful mountain bikers and professional road cyclists",
+  "revue": "J Sports Sci 20(12):1001-1008",
+  "doi": "10.1080/026404102321011760",
+  "url": "https://doi.org/10.1080/026404102321011760",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "VTT vs route : 65 vs 75 kg ; 6,3 vs 5,8 W/kg à l'effort max ; VO2max 78 vs 73 ml/kg/min ; profils proches des grimpeurs (PMID 12477010)."
+ },
+ {
+  "cle": "lee2025",
+  "auteurs": "Lee YJ, Lee JY, Cho JH, Kang YJ, Choi JH",
+  "annee": 2025,
+  "titre": "Performance of consumer wrist-worn sleep tracking devices compared to polysomnography: a meta-analysis",
+  "revue": "J Clin Sleep Med 21(3):573-582",
+  "doi": "10.5664/jcsm.11460",
+  "url": "https://doi.org/10.5664/jcsm.11460",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "24 études, 798 sujets : écarts significatifs avec la polysomnographie (temps de sommeil ≈ 17 min, efficacité ≈ 4,7 points, éveils ≈ 13 min) ; utile pour les tendances, pas pour une mesure exacte."
  },
  {
   "cle": "legalis-bestwater",
@@ -5018,6 +6110,19 @@
   "note": "Champ de l'HDS (prévention, diagnostic, soins, suivi médico-social), localisation UE/EEE, interdiction de cession onéreuse ; version du 01/07/2025."
  },
  {
+  "cle": "legifrance-lil-art45",
+  "auteurs": "Légifrance",
+  "annee": 2019,
+  "titre": "Article 45 de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés",
+  "revue": "Légifrance (texte officiel)",
+  "doi": null,
+  "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037823135",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "En vigueur depuis le 1er juin 2019 : un mineur consent seul à partir de 15 ans pour une offre directe de services de la société de l'information ; avant 15 ans, consentement conjoint du mineur et du ou des titulaires de l'autorité parentale ; information en termes clairs et simples (lu le 01/10/2026)."
+ },
+ {
   "cle": "legifrance-sport-l212-1",
   "auteurs": "Légifrance",
   "annee": 2019,
@@ -5042,6 +6147,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Vu via recherche web : assurance RC obligatoire pour l'exploitant d'un établissement d'APS et ses enseignants."
+ },
+ {
+  "cle": "lemense2024",
+  "auteurs": "LeMense AT, Malone GT, Kinderman MA, Fedewa MV, Winchester LJ",
+  "annee": 2024,
+  "titre": "Validity of Using the Load-Velocity Relationship to Estimate 1 Repetition Maximum in the Back Squat Exercise: A Systematic Review and Meta-Analysis",
+  "revue": "J Strength Cond Res 38(3):612-619",
+  "doi": "10.1519/jsc.0000000000004709",
+  "url": "https://doi.org/10.1519/jsc.0000000000004709",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "4 études, 71 sujets 17-25 ans : la méthode de vitesse seuil surestime le 1RM au squat (ES 0,53) ; jugée non viable au squat libre."
  },
  {
   "cle": "lemire2021",
@@ -5070,6 +6188,19 @@
   "note": "Repères de rétention à 6 mois par modèle (synthèse de 20 experts)."
  },
  {
+  "cle": "lesinski2016",
+  "auteurs": "Lesinski M, Prieske O, Granacher U",
+  "annee": 2016,
+  "titre": "Effects and dose-response relationships of resistance training on physical performance in youth athletes: a systematic review and meta-analysis",
+  "revue": "Br J Sports Med 50(13):781-795",
+  "doi": "10.1136/bjsports-2015-095497",
+  "url": "https://doi.org/10.1136/bjsports-2015-095497",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "43 études (6-18 ans) : force et saut SMD 0,8-1,09 ; sprint, agilité, perf spécifique 0,58-0,75 ; optimum : > 23 sem, 5 séries, 6-8 reps, 80-89 % 1RM, 3-4 min de repos (PMID 26851290)."
+ },
+ {
   "cle": "lesswrong-momtest",
   "auteurs": "LessWrong (contributeur)",
   "annee": 2026,
@@ -5094,6 +6225,45 @@
   "niveau": "A",
   "verifie": true,
   "note": "6 études, 124 sujets : VBT vs %1RM, 1RM squat +3,03 kg NS, saut SMD 0,27 NS, sprint NS (PMID 34793506)."
+ },
+ {
+  "cle": "ling2022",
+  "auteurs": "Ling DI, Boyle C, Schneider B, et al.",
+  "annee": 2022,
+  "titre": "Coach Education Improves Adherence to Anterior Cruciate Ligament Injury Prevention Programs: A Cluster-Randomized Controlled Trial",
+  "revue": "Clin J Sport Med 32(4):348-354",
+  "doi": "10.1097/jsm.0000000000000936",
+  "url": "https://doi.org/10.1097/jsm.0000000000000936",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "21 équipes : atelier coach de 60 min → programme complet OR 4,62 et plus de corrections techniques."
+ },
+ {
+  "cle": "linton2020",
+  "auteurs": "Linton L, Valentin S",
+  "annee": 2020,
+  "titre": "Running coaches and running group leaders' engagement with, and beliefs and perceived barriers to prehabilitation and injury prevention strategies for runners",
+  "revue": "Phys Ther Sport 46:54-62",
+  "doi": "10.1016/j.ptsp.2020.08.004",
+  "url": "https://doi.org/10.1016/j.ptsp.2020.08.004",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "100 coachs UK : 67 % incluent de la prehab ; freins = conseils contradictoires, temps, lieu, résistance des coureurs ; supervision recommandée."
+ },
+ {
+  "cle": "linton2025",
+  "auteurs": "Linton L, Culpan J, Lane J",
+  "annee": 2025,
+  "titre": "Running-Centred Injury Prevention Support: A Scoping Review on Current Injury Risk Reduction Practices for Runners",
+  "revue": "Transl Sports Med 2025:3007544",
+  "doi": "10.1155/tsm2/3007544",
+  "url": "https://doi.org/10.1155/tsm2/3007544",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue de portée, 106 études : supervision et soutien critiques pour l'effet ; écart entre pratiques des coureurs et conseils d'experts."
  },
  {
   "cle": "llanoslagos2024a",
@@ -5135,6 +6305,19 @@
   "note": "17 études, 262 cyclistes : efficacité ES 0,353, puissance anaérobie 0,560, performance 0,463 ; VO2max et MMSS NS ; certitude faible (PMID 40632222)."
  },
  {
+  "cle": "lloyd2014",
+  "auteurs": "Lloyd RS, Faigenbaum AD, Stone MH et al.",
+  "annee": 2014,
+  "titre": "Position statement on youth resistance training: the 2014 International Consensus",
+  "revue": "Br J Sports Med 48(7):498-505",
+  "doi": "10.1136/bjsports-2013-092952",
+  "url": "https://doi.org/10.1136/bjsports-2013-092952",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Consensus international adapté de la position UKSCA, relu et approuvé par des organisations de médecine du sport, de sciences du sport et de pédiatrie ; résumé sans chiffres, texte intégral non relu (PMID 24055781)."
+ },
+ {
   "cle": "lopes2025",
   "auteurs": "Lopes AD, Rizzo RR, Hespanhol L, Costa LO, Kamper SJ",
   "annee": 2025,
@@ -5159,6 +6342,45 @@
   "niveau": "C",
   "verifie": true,
   "note": "Skieurs 18-27 ans, 12 sem : 1RM tirage +19 %, demi-squat +12 % ; pas de changement de CSA du quadriceps ; VO2max en skating +7 % (PMID 20136751)."
+ },
+ {
+  "cle": "louis2012",
+  "auteurs": "Louis J, Hausswirth C, Easthope C, Brisswalter J",
+  "annee": 2012,
+  "titre": "Strength training improves cycling efficiency in master endurance athletes",
+  "revue": "Eur J Appl Physiol 112(2):631-640",
+  "doi": "10.1007/s00421-011-2013-1",
+  "url": "https://doi.org/10.1007/s00421-011-2013-1",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "9 masters (51,5 ans) et 8 jeunes, 3 sem de 10 × 10 extensions à 70 % : force +17,8 % vs +5,9 % ; rendement à vélo amélioré chez les masters ; r = 0,79 (PMID 21638070)."
+ },
+ {
+  "cle": "luckin2021",
+  "auteurs": "Luckin KM, Badenhorst CE, Cripps AJ et al.",
+  "annee": 2021,
+  "titre": "Strength Training in Long-Distance Triathletes: Barriers and Characteristics",
+  "revue": "J Strength Cond Res 35(2):495-502",
+  "doi": "10.1519/JSC.0000000000002716",
+  "url": "https://doi.org/10.1519/JSC.0000000000002716",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "390 triathlètes : 54,6 % font de la muscu ; freins : manque de temps 53,1 %, manque de connaissances sur la progression et la technique 52,5 % (PMID 29985217)."
+ },
+ {
+  "cle": "luckinbaldwin2021",
+  "auteurs": "Luckin-Baldwin KM, Badenhorst CE, Cripps AJ et al.",
+  "annee": 2021,
+  "titre": "Strength Training Improves Exercise Economy in Triathletes During a Simulated Triathlon",
+  "revue": "Int J Sports Physiol Perform 16(5):663-673",
+  "doi": "10.1123/ijspp.2020-0170",
+  "url": "https://doi.org/10.1123/ijspp.2020-0170",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "ECR, 25 triathlètes longue distance, 26 sem : économie vélo (sem 0-14) et course (sem 14-26) améliorées, masse inchangée ; 8-12 reps ≤ 75 % puis 1-6 reps ≥ 85 % 1RM (PMID 33571959)."
  },
  {
   "cle": "lum2019",
@@ -5239,6 +6461,19 @@
   "note": "Modèles exportés en CC0, usage commercial libre ; squelette non détaillé."
  },
  {
+  "cle": "mansfield2020",
+  "auteurs": "Mansfield SK, Peiffer JJ, Hughes LJ, Scott BR",
+  "annee": 2020,
+  "titre": "Estimating Repetitions in Reserve for Resistance Exercise: An Analysis of Factors Which Impact on Prediction Accuracy",
+  "revue": "J Strength Cond Res (en ligne 2020)",
+  "doi": "10.1519/jsc.0000000000003779",
+  "url": "https://doi.org/10.1519/jsc.0000000000003779",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "20 hommes entraînés : RIR sous-estimé à la 1re série (ES 1,3-2,9), précision meilleure aux séries 2-3 ; connaître la charge ne change rien."
+ },
+ {
   "cle": "marathons-influenceurs-2025",
   "auteurs": "Marathons.com",
   "annee": 2025,
@@ -5278,6 +6513,45 @@
   "note": "19 coureurs de 16-17 ans ; 4 sem, ~20 min/jour : pas de changement de l'économie respiratoire."
  },
  {
+  "cle": "markovic2004",
+  "auteurs": "Markovic G, Dizdar D, Jukic I, Cardinale M",
+  "annee": 2004,
+  "titre": "Reliability and factorial validity of squat and countermovement jump tests",
+  "revue": "J Strength Cond Res 18(3):551-555",
+  "doi": "10.1519/1533-4287(2004)18<551:rafvos>2.0.co;2",
+  "url": "https://doi.org/10.1519/1533-4287(2004)18<551:rafvos>2.0.co;2",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "93 étudiants : CMJ et squat jump sur tapis de contact, alpha 0,97-0,98, CV intra-sujet 2,4-4,6 % ; CMJ = meilleure validité factorielle (r = 0,87)."
+ },
+ {
+  "cle": "martineznavarro2026a",
+  "auteurs": "Martinez-Navarro I, Vicente-Mampel J, López-Grueso R et al.",
+  "annee": 2026,
+  "titre": "Downhill Running-Induced Muscle Damage in Trail Runners: An Exploratory Study Regarding Training Background and Running Gait",
+  "revue": "Sports (Basel) 14(1):12",
+  "doi": "10.3390/sports14010012",
+  "url": "https://doi.org/10.3390/sports14010012",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "36 traileurs, 5 km à −15 % : marqueurs de dégâts musculaires en hausse ; habitués des descentes répétées : CK 182 vs 290 U/L et force au squat +4 % vs −9 % (PMID 41590954)."
+ },
+ {
+  "cle": "martineznavarro2026b",
+  "auteurs": "Martinez-Navarro I, Vicente-Mampel J, López-Grueso R, Collado-Boira E, Hernando C",
+  "annee": 2026,
+  "titre": "Uphill Walking Economy and Maximal Oxygen Consumption in Trail Runners: Relationship with Ultra-Trail Performance",
+  "revue": "Int J Sports Med 47(8):613-621",
+  "doi": "10.1055/a-2813-3109",
+  "url": "https://doi.org/10.1055/a-2813-3109",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "36 athlètes avant un 106 km : la VO2max en montée seule prédit 79 % de la performance ; l'économie en marche n'est pas un facteur indépendant (PMID 41688062)."
+ },
+ {
   "cle": "mathis2018",
   "auteurs": "Mathis SL, Caputo JL",
   "annee": 2018,
@@ -5289,6 +6563,45 @@
   "niveau": "C",
   "verifie": true,
   "note": "40 cyclistes : les heures de muscu sont le seul facteur associé à une DMO plus haute (colonne lombaire, hanche, col du fémur)."
+ },
+ {
+  "cle": "mayhew2008",
+  "auteurs": "Mayhew JL, Johnson BD, Lamonte MJ, Lauber D, Kemmler W",
+  "annee": 2008,
+  "titre": "Accuracy of prediction equations for determining one repetition maximum bench press in women before and after resistance training",
+  "revue": "J Strength Cond Res 22(5):1570-1577",
+  "doi": "10.1519/jsc.0b013e31817b02ad",
+  "url": "https://doi.org/10.1519/jsc.0b013e31817b02ad",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "103 femmes, 12 semaines : les équations sont plus précises sous 10 reps ; la relation reps-force change avec l'entraînement (variation individuelle large)."
+ },
+ {
+  "cle": "mazeas2022",
+  "auteurs": "Mazeas A, Duclos M, Pereira B, Chalabaev A",
+  "annee": 2022,
+  "titre": "Evaluating the Effectiveness of Gamification on Physical Activity: Systematic Review and Meta-analysis of Randomized Controlled Trials",
+  "revue": "J Med Internet Res 24(1):e26779",
+  "doi": "10.2196/26779",
+  "url": "https://doi.org/10.2196/26779",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "16 ECR, 2407 participants : g = 0,42 ; vs intervention non gamifiée g = 0,23 ; à ~14 sem de suivi g = 0,15."
+ },
+ {
+  "cle": "mcewan2016",
+  "auteurs": "McEwan D, Harden SM, Zumbo BD, et al.",
+  "annee": 2016,
+  "titre": "The effectiveness of multi-component goal setting interventions for changing physical activity behaviour: a systematic review and meta-analysis",
+  "revue": "Health Psychol Rev 10(1):67-88",
+  "doi": "10.1080/17437199.2015.1104258",
+  "url": "https://doi.org/10.1080/17437199.2015.1104258",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "45 articles, 52 interventions, n = 5912 : fixation d'objectifs d = 0,55 sur l'activité physique."
  },
  {
   "cle": "mcf-ecoles",
@@ -5315,6 +6628,45 @@
   "niveau": "B",
   "verifie": true,
   "note": "Effets thermiques, métaboliques, neuraux, psychologiques ; intérêt de garder la chaleur pendant la transition avant l'épreuve."
+ },
+ {
+  "cle": "mckay2014",
+  "auteurs": "McKay CD, Steffen K, Romiti M, Finch CF, Emery CA",
+  "annee": 2014,
+  "titre": "The effect of coach and player injury knowledge, attitudes and beliefs on adherence to the FIFA 11+ programme in female youth soccer",
+  "revue": "Br J Sports Med 48(17):1281-1286",
+  "doi": "10.1136/bjsports-2014-093543",
+  "url": "https://doi.org/10.1136/bjsports-2014-093543",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "31 équipes : 13,8 % des coachs croient qu'un échauffement prévient les blessures musculaires ; croyances sans effet sur l'adhésion."
+ },
+ {
+  "cle": "mckay2021",
+  "auteurs": "McKay B, Yantha ZD, Hussien J, Carter MJ, Ste-Marie DM",
+  "annee": 2021,
+  "titre": "Meta-Analytic Findings in the Self-Controlled Motor Learning Literature: Underpowered, Biased, and Lacking Evidential Value",
+  "revue": "PsyArXiv (prépublication, Europe PMC PPR322881)",
+  "doi": "10.31234/osf.io/8d3nb",
+  "url": "https://doi.org/10.31234/osf.io/8d3nb",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "52 expériences : g = 0,44 naïf → 0,11 après correction du biais de sélection ; pas de valeur probante."
+ },
+ {
+  "cle": "mcnulty2020",
+  "auteurs": "McNulty KL, Elliott-Sale KJ, Dolan E et al.",
+  "annee": 2020,
+  "titre": "The Effects of Menstrual Cycle Phase on Exercise Performance in Eumenorrheic Women: A Systematic Review and Meta-Analysis",
+  "revue": "Sports Med 50(10):1813-1827",
+  "doi": "10.1007/s40279-020-01319-3",
+  "url": "https://doi.org/10.1007/s40279-020-01319-3",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "78 études (51 en méta-analyse) : effet trivial, performance légèrement réduite en début de phase folliculaire (ES −0,06 [−0,16 ; 0,04]) ; qualité des preuves basse ; approche individuelle conseillée (PMID 32661839)."
  },
  {
   "cle": "mdcg-2019-11-rev1",
@@ -5382,6 +6734,84 @@
   "note": "Solo 89,99 $/an ; Coach dès 199 $/an pour 5 athlètes."
  },
  {
+  "cle": "meyerowitzkatz2020",
+  "auteurs": "Meyerowitz-Katz G, Ravi S, Arnolda L, et al.",
+  "annee": 2020,
+  "titre": "Rates of Attrition and Dropout in App-Based Interventions for Chronic Disease: Systematic Review and Meta-Analysis",
+  "revue": "J Med Internet Res 22(9):e20283",
+  "doi": "10.2196/20283",
+  "url": "https://doi.org/10.2196/20283",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "17 études : abandon 43 % (IC 29-57) ; 49 % observationnel, 40 % ECR ; I² > 99 %."
+ },
+ {
+  "cle": "michie2009",
+  "auteurs": "Michie S, Abraham C, Whittington C, McAteer J, Gupta S",
+  "annee": 2009,
+  "titre": "Effective techniques in healthy eating and physical activity interventions: a meta-regression",
+  "revue": "Health Psychol 28(6):690-701",
+  "doi": "10.1037/a0016136",
+  "url": "https://doi.org/10.1037/a0016136",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "122 évaluations (n = 44 747) : ES 0,31 ; l'auto-suivi explique le plus d'hétérogénéité ; auto-suivi + autre technique 0,42 vs 0,26."
+ },
+ {
+  "cle": "michie2011",
+  "auteurs": "Michie S, van Stralen MM, West R",
+  "annee": 2011,
+  "titre": "The behaviour change wheel: a new method for characterising and designing behaviour change interventions",
+  "revue": "Implement Sci 6:42",
+  "doi": "10.1186/1748-5908-6-42",
+  "url": "https://doi.org/10.1186/1748-5908-6-42",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Revue de 19 cadres ; propose COM-B (capacité, opportunité, motivation) + 9 fonctions d'intervention + 7 catégories de politiques."
+ },
+ {
+  "cle": "michie2013",
+  "auteurs": "Michie S, Richardson M, Johnston M, et al.",
+  "annee": 2013,
+  "titre": "The behavior change technique taxonomy (v1) of 93 hierarchically clustered techniques",
+  "revue": "Ann Behav Med 46(1):81-95",
+  "doi": "10.1007/s12160-013-9486-6",
+  "url": "https://doi.org/10.1007/s12160-013-9486-6",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Delphi d'experts : 93 techniques de changement de comportement en 16 groupes."
+ },
+ {
+  "cle": "milani2014",
+  "auteurs": "Milani P, Coccetta CA, Rabini A et al.",
+  "annee": 2014,
+  "titre": "Mobile smartphone applications for body position measurement in rehabilitation: a review of goniometric tools",
+  "revue": "PM R 6(11):1038-1043",
+  "doi": "10.1016/j.pmrj.2014.05.003",
+  "url": "https://doi.org/10.1016/j.pmrj.2014.05.003",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "17 articles, 12 applis (accéléromètre, magnétomètre, caméra) validées en statique ; manque de validation en conditions dynamiques (marche, exercices)."
+ },
+ {
+  "cle": "milkman2021",
+  "auteurs": "Milkman KL, Gromet D, Ho H, et al.",
+  "annee": 2021,
+  "titre": "Megastudies improve the impact of applied behavioural science",
+  "revue": "Nature 600(7889):478-483",
+  "doi": "10.1038/s41586-021-04128-4",
+  "url": "https://doi.org/10.1038/s41586-021-04128-4",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "61 293 clients de salle, 54 programmes de 4 sem : 45 % efficaces (+9 à +27 % de visites) ; meilleur = micro-récompense au retour après séance manquée ; 8 % durables."
+ },
+ {
   "cle": "miller2017",
   "auteurs": "Miller MC, Macdermid PW, Fink PW, Stannard SR",
   "annee": 2017,
@@ -5395,6 +6825,32 @@
   "note": "Pédaler en descente n'améliore pas le temps ; les vibrations off-road augmentent FC et VO2 par rapport à la route (PMID 27712198)."
  },
  {
+  "cle": "mirasmoreno2025",
+  "auteurs": "Miras-Moreno S, Pérez-Castilla A, Weakley J, Rojas-Ruiz FJ, García-Ramos A",
+  "annee": 2025,
+  "titre": "Improving the Use of Lifting Velocity to Predict Repetitions to Failure: A Systematic Review",
+  "revue": "Int J Sports Physiol Perform 20(3):335-344",
+  "doi": "10.1123/ijspp.2024-0337",
+  "url": "https://doi.org/10.1123/ijspp.2024-0337",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "6 études : la vitesse prédit bien les reps jusqu'à l'échec au repos, mais la précision chute en fatigue (repos courts), sauf chez les très expérimentés."
+ },
+ {
+  "cle": "molinagarcia2022",
+  "auteurs": "Molina-Garcia P, Notbohm HL, Schumann M et al.",
+  "annee": 2022,
+  "titre": "Validity of Estimating the Maximal Oxygen Consumption by Consumer Wearables: A Systematic Review with Meta-analysis and Expert Statement of the INTERLIVE Network",
+  "revue": "Sports Med 52(7):1577-1597",
+  "doi": "10.1007/s40279-021-01639-y",
+  "url": "https://doi.org/10.1007/s40279-021-01639-y",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "14 études : algorithmes à l'effort, biais -0,09 mais limites d'accord -9,9 à +9,7 ml/kg/min ; au repos, biais +2,2 et limites -13 à +17 ; bon au niveau d'un groupe, erreur individuelle grande."
+ },
+ {
   "cle": "momtest-site",
   "auteurs": "Fitzpatrick R.",
   "annee": 2026,
@@ -5406,6 +6862,71 @@
   "niveau": "C",
   "verifie": true,
   "note": "Site du livre : apprendre à parler aux clients quand tout le monde ment."
+ },
+ {
+  "cle": "monninghoff2021",
+  "auteurs": "Mönninghoff A, Kramer JN, Hess AJ, et al.",
+  "annee": 2021,
+  "titre": "Long-term Effectiveness of mHealth Physical Activity Interventions: Systematic Review and Meta-analysis of Randomized Controlled Trials",
+  "revue": "J Med Internet Res 23(4):e26699",
+  "doi": "10.2196/26699",
+  "url": "https://doi.org/10.2196/26699",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "117 ECR : marche SMD 0,46 fin → 0,25 > 6 mois ; MVPA 0,28 → 0,19 ; 80 % à haut risque de biais."
+ },
+ {
+  "cle": "montalvo2021",
+  "auteurs": "Montalvo S, Gonzalez MP, Dietze-Hermosa MS et al.",
+  "annee": 2021,
+  "titre": "Common Vertical Jump and Reactive Strength Index Measuring Devices: A Validity and Reliability Analysis",
+  "revue": "J Strength Cond Res 35(5):1234-1243",
+  "doi": "10.1519/jsc.0000000000003988",
+  "url": "https://doi.org/10.1519/jsc.0000000000003988",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "30 sujets : hauteur de CMJ ICC ≥ 0,98, CV ≤ 8 % sur tous les appareils ; RSI : ICC ≥ 0,92 mais CV ≥ 12,5 % partout ; apps MyJump2 et What'sMyVert valides vs plateforme."
+ },
+ {
+  "cle": "moore2020",
+  "auteurs": "Moore AJ, Holden MA, Foster NE, Jinks C",
+  "annee": 2020,
+  "titre": "Therapeutic alliance facilitates adherence to physiotherapy-led exercise and physical activity for older adults with knee pain: a longitudinal qualitative study",
+  "revue": "J Physiother 66(1):45-53",
+  "doi": "10.1016/j.jphys.2019.11.004",
+  "url": "https://doi.org/10.1016/j.jphys.2019.11.004",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 participants suivis 12 mois : freins = motivation, temps, lieu, absence de supervision ; l'alliance facilite l'adhésion à long terme."
+ },
+ {
+  "cle": "moran2017",
+  "auteurs": "Moran J, Sandercock GR, Ramírez-Campillo R, Meylan C, Collison J, Parry DA",
+  "annee": 2017,
+  "titre": "A meta-analysis of maturation-related variation in adolescent boy athletes' adaptations to short-term resistance training",
+  "revue": "J Sports Sci 35(11):1041-1051",
+  "doi": "10.1080/02640414.2016.1209306",
+  "url": "https://doi.org/10.1080/02640414.2016.1209306",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "19 études, garçons sportifs 10-18 ans : ES 0,98 ; 0,5 avant le pic de croissance, 1,11 pendant, 1,01 après (PMID 27454545)."
+ },
+ {
+  "cle": "moran2017b",
+  "auteurs": "Moran RW, Schneiders AG, Mason J, Sullivan SJ",
+  "annee": 2017,
+  "titre": "Do Functional Movement Screen (FMS) composite scores predict subsequent injury? A systematic review with meta-analysis",
+  "revue": "Br J Sports Med 51(23):1661-1669",
+  "doi": "10.1136/bjsports-2016-096938",
+  "url": "https://doi.org/10.1136/bjsports-2016-096938",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "24 cohortes : lien faible FMS ≤ 14 - blessure (RR 1,47 chez des militaires), déconseillé en football ; ne soutient pas l'usage du FMS pour prédire la blessure."
  },
  {
   "cle": "mountjoy2023",
@@ -5432,6 +6953,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "Revue : la muscu de maintien est essentielle en saison ; cyclistes femmes à plus de masse maigre des jambes : ~4-9 % de puissance max moyenne par kg en plus (PMID 27068517)."
+ },
+ {
+  "cle": "munozdelacruz2026",
+  "auteurs": "Muñoz de la Cruz V, González-Mohíno F, García-Pinillos F, Jaén-Carrillo D",
+  "annee": 2026,
+  "titre": "Decoding Neuromuscular Fatigue in Trail Running: A Systematic Review Across Distances and Sex Differences",
+  "revue": "Int J Sports Physiol Perform 21(6):698-707",
+  "doi": "10.1123/ijspp.2025-0544",
+  "url": "https://doi.org/10.1123/ijspp.2025-0544",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "24 études, 674 coureurs (168 femmes) : fatigue surtout centrale sur courses courtes, périphérique et dégâts musculaires sur ≥ 100 km ; différences hommes-femmes faibles (PMID 42114829)."
+ },
+ {
+  "cle": "munro2011",
+  "auteurs": "Munro AG, Herrington LC",
+  "annee": 2011,
+  "titre": "Between-session reliability of four hop tests and the agility T-test",
+  "revue": "J Strength Cond Res 25(5):1470-1477",
+  "doi": "10.1519/jsc.0b013e3181d83335",
+  "url": "https://doi.org/10.1519/jsc.0b013e3181d83335",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "22 sportifs loisir, 3 semaines : effet d'apprentissage sur tous les hop tests, ICC 0,76-0,92 ; tous les sujets sains ≥ 90 % de symétrie, d'où un seuil conseillé à 90 %."
  },
  {
   "cle": "murlasits2018",
@@ -5551,6 +7098,58 @@
   "note": "65 essais de bonne qualité, 3 796 personnes : exercices genou ± hanche et éducation en premier ; semelles, thérapie manuelle et taping selon le cas."
  },
  {
+  "cle": "ng2012",
+  "auteurs": "Ng JY, Ntoumanis N, Thøgersen-Ntoumani C, et al.",
+  "annee": 2012,
+  "titre": "Self-Determination Theory Applied to Health Contexts: A Meta-Analysis",
+  "revue": "Perspect Psychol Sci 7(4):325-340",
+  "doi": "10.1177/1745691612447309",
+  "url": "https://doi.org/10.1177/1745691612447309",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "184 jeux de données : soutien de l'autonomie → satisfaction des besoins → motivation autonome → meilleure santé."
+ },
+ {
+  "cle": "nichols2011",
+  "auteurs": "Nichols JF, Rauh MJ",
+  "annee": 2011,
+  "titre": "Longitudinal changes in bone mineral density in male master cyclists and nonathletes",
+  "revue": "J Strength Cond Res 25(3):727-734",
+  "doi": "10.1519/JSC.0b013e3181c6a116",
+  "url": "https://doi.org/10.1519/JSC.0b013e3181c6a116",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "19 cyclistes masters suivis 7 ans : ostéopénie/ostéoporose 84,2 % → 89,5 % (non-sportifs 50 % → 61,1 %) ; 6/19 deviennent ostéoporotiques ; moins de perte avec muscu ou impacts (PMID 20581701)."
+ },
+ {
+  "cle": "nishi2024",
+  "auteurs": "Nishi SK, Kavanagh ME, Ramboanga K, et al.",
+  "annee": 2024,
+  "titre": "Effect of digital health applications with or without gamification on physical activity and cardiometabolic risk factors: a systematic review and meta-analysis of randomized controlled trials",
+  "revue": "EClinicalMedicine 76:102798",
+  "doi": "10.1016/j.eclinm.2024.102798",
+  "url": "https://doi.org/10.1016/j.eclinm.2024.102798",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "36 essais, n = 10 079 : gamification vs appli non gamifiée = +489 pas/j (trivial, certitude élevée)."
+ },
+ {
+  "cle": "nolan2024",
+  "auteurs": "Nolan D, McNulty KL, Manninen M, Egan B",
+  "annee": 2024,
+  "titre": "The Effect of Hormonal Contraceptive Use on Skeletal Muscle Hypertrophy, Power and Strength Adaptations to Resistance Exercise Training: A Systematic Review and Multilevel Meta-analysis",
+  "revue": "Sports Med 54(1):105-125",
+  "doi": "10.1007/s40279-023-01911-3",
+  "url": "https://doi.org/10.1007/s40279-023-01911-3",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "8 études, 325 participantes (pilule orale seulement) : pas d'effet sur l'hypertrophie (0,01), la puissance (−0,04) ni la force (0,10 [−0,08 ; 0,28]) (PMID 37755666)."
+ },
+ {
   "cle": "nolio-appstore-fr",
   "auteurs": "Nolio",
   "annee": 2026,
@@ -5616,6 +7215,71 @@
   "note": "200+ exercices vidéo, cibles kg/RPE/RIR/%, supersets, lecteur mobile, saisie des valeurs réelles."
  },
  {
+  "cle": "ntoumanis2021",
+  "auteurs": "Ntoumanis N, Ng JYY, Prestwich A, et al.",
+  "annee": 2021,
+  "titre": "A meta-analysis of self-determination theory-informed intervention studies in the health domain",
+  "revue": "Health Psychol Rev 15(2):214-244",
+  "doi": "10.1080/17437199.2020.1718529",
+  "url": "https://doi.org/10.1080/17437199.2020.1718529",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "73 études : effets petits à moyens sur les construits SDT et le comportement ; seule la motivation autonome et le soutien des besoins sont liés au changement."
+ },
+ {
+  "cle": "nuzzo2024",
+  "auteurs": "Nuzzo JL, Pinto MD, Nosaka K, Steele J",
+  "annee": 2024,
+  "titre": "Maximal Number of Repetitions at Percentages of the One Repetition Maximum: A Meta-Regression and Moderator Analysis of Sex, Age, Training Status, and Exercise",
+  "revue": "Sports Med 54(2):303-321",
+  "doi": "10.1007/s40279-023-01937-7",
+  "url": "https://doi.org/10.1007/s40279-023-01937-7",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "269 études, 7 289 sujets : nombre de reps à un %1RM variable entre individus ; plus de reps à la presse qu'au développé couché ; peu d'effet du sexe, de l'âge, du niveau."
+ },
+ {
+  "cle": "oberhofer2021",
+  "auteurs": "Oberhofer K, Erni R, Sayers M et al.",
+  "annee": 2021,
+  "titre": "Validation of a Smartwatch-Based Workout Analysis Application in Exercise Recognition, Repetition Count and Prediction of 1RM in the Strength Training-Specific Setting",
+  "revue": "Sports (Basel) 9(9):118",
+  "doi": "10.3390/sports9090118",
+  "url": "https://doi.org/10.3390/sports9090118",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 sportifs, Apple Watch : exercice reconnu dans 88 % des séries ; comptage correct au squat et soulevé de terre, mauvais au développé couché ; 1RM estimé réussi dans 9 % des essais seulement."
+ },
+ {
+  "cle": "ogura2026",
+  "auteurs": "Ogura A, Florio E, Wileman TM, Dennison L, Psarakis M",
+  "annee": 2026,
+  "titre": "Are we there yet? A systematic review and meta-analysis of the validity and reliability of automated markerless motion capture systems during jumping tasks",
+  "revue": "J Sports Sci 44(10):1275-1295",
+  "doi": "10.1080/02640414.2025.2589689",
+  "url": "https://doi.org/10.1080/02640414.2025.2589689",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "20 études, sauts : erreur (RMSE) sagittale 4,4° genou, 5,3° hanche, 4,9° cheville ; frontale 3,0° hanche, 7,5° cheville ; hauteur de saut biais -2,9 cm ; forte variabilité entre systèmes."
+ },
+ {
+  "cle": "oliosi2026",
+  "auteurs": "Oliosi E, Ferreira S, Giordano AP et al.",
+  "annee": 2026,
+  "titre": "Evaluation of Smartphone Camera Positioning on Artificial Intelligence Pose Estimation Accuracy for Exercise Detection: Observational Study",
+  "revue": "JMIR Mhealth Uhealth 14:e82412",
+  "doi": "10.2196/82412",
+  "url": "https://doi.org/10.2196/82412",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "44 étudiants, ~2 640 reps : détection moyenne 61 %, erreur de comptage ≈ 1,1 rep ; squat au mieux en diagonale à 2 m (95,5 %, erreur 0,05 rep), au pire de profil à 90 cm (0 %)."
+ },
+ {
   "cle": "olmedillas2012",
   "auteurs": "Olmedillas H, González-Agüero A, Moreno LA, Casajus JA, Vicente-Rodríguez G",
   "annee": 2012,
@@ -5679,6 +7343,32 @@
   "niveau": "D",
   "verifie": true,
   "note": "70 / 90 / 120 €/mois, engagement 6 mois."
+ },
+ {
+  "cle": "ortiz2016",
+  "auteurs": "Ortiz A, Rosario-Canales M, Rodríguez A et al.",
+  "annee": 2016,
+  "titre": "Reliability and concurrent validity between two-dimensional and three-dimensional evaluations of knee valgus during drop jumps",
+  "revue": "Open Access J Sports Med 7:65-73",
+  "doi": "10.2147/oajsm.s100242",
+  "url": "https://doi.org/10.2147/oajsm.s100242",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "16 sujets, drop jump 40 cm : mesures 2D fiables (ICC 0,89-0,99) ; ratio d'écart genoux/chevilles bien corrélé au 3D (0,94-0,96) mais angle de projection frontale mal corrélé (ICC 0-0,57)."
+ },
+ {
+  "cle": "osteras2016",
+  "auteurs": "Østerås S, Welde B, Danielsen J et al.",
+  "annee": 2016,
+  "titre": "Contribution of Upper-Body Strength, Body Composition, and Maximal Oxygen Uptake to Predict Double Poling Power and Overall Performance in Female Cross-Country Skiers",
+  "revue": "J Strength Cond Res 30(9):2557-2564",
+  "doi": "10.1519/JSC.0000000000001345",
+  "url": "https://doi.org/10.1519/JSC.0000000000001345",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "13 skieuses élites : masse maigre et force du haut du corps prédisent la puissance en double poussée sur 30 s (R = 0,84 et 0,81), moins sur 3 min où la VO2max compte (PMID 26817743)."
  },
  {
   "cle": "osullivan2012",
@@ -5837,6 +7527,19 @@
   "note": "53 articles : 15 études sur 18 appliquent un seuil de 10-15 % souvent sans preuve ; seuls 4 indices sur 12 sont robustes ; les seuils sont arbitraires."
  },
  {
+  "cle": "patel2019",
+  "auteurs": "Patel MS, Small DS, Harrison JD, et al.",
+  "annee": 2019,
+  "titre": "Effectiveness of Behaviorally Designed Gamification Interventions With Social Incentives for Increasing Physical Activity Among Overweight and Obese Adults Across the United States: The STEP UP Randomized Clinical Trial",
+  "revue": "JAMA Intern Med 179(12):1624-1632",
+  "doi": "10.1001/jamainternmed.2019.3505",
+  "url": "https://doi.org/10.1001/jamainternmed.2019.3505",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "602 adultes, 24 sem : compétition +920 pas/j, soutien +689, collaboration +637 ; au suivi seule la compétition reste supérieure (+569)."
+ },
+ {
   "cle": "peakstrength-site",
   "auteurs": "Peak Strength (Garage Strength)",
   "annee": 2026,
@@ -5850,6 +7553,45 @@
   "note": "Appli de force par sport (32 sports), charges recommandées en temps réel selon la performance, iOS et Android ; prix non affiché."
  },
  {
+  "cle": "pedlar2018",
+  "auteurs": "Pedlar CR, Brugnara C, Bruinvels G, Burden R",
+  "annee": 2018,
+  "titre": "Iron balance and iron supplementation for the female athlete: A practical approach",
+  "revue": "Eur J Sport Sci 18(2):295-305",
+  "doi": "10.1080/17461391.2017.1416178",
+  "url": "https://doi.org/10.1080/17461391.2017.1416178",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Revue pratique : règles abondantes, altitude et entraînement pèsent sur le fer ; ferritine et hémoglobine isolées ont des limites ; suivi longitudinal conseillé (PMID 29280410)."
+ },
+ {
+  "cle": "peek2016",
+  "auteurs": "Peek K, Sanson-Fisher R, Mackenzie L, Carey M",
+  "annee": 2016,
+  "titre": "Interventions to aid patient adherence to physiotherapist prescribed self-management strategies: a systematic review",
+  "revue": "Physiotherapy 102(2):127-135",
+  "doi": "10.1016/j.physio.2015.10.003",
+  "url": "https://doi.org/10.1016/j.physio.2015.10.003",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "12 ECR : moniteur + feedback, consignes écrites, programme avec rappels, objectifs ; données insuffisantes pour recommander."
+ },
+ {
+  "cle": "pengelly2025",
+  "auteurs": "Pengelly M, Pumpa K, Pyne DB, Etxebarria N",
+  "annee": 2025,
+  "titre": "Iron deficiency, supplementation, and sports performance in female athletes: A systematic review",
+  "revue": "J Sport Health Sci 14:101009",
+  "doi": "10.1016/j.jshs.2024.101009",
+  "url": "https://doi.org/10.1016/j.jshs.2024.101009",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "23 études, 669 athlètes : jusqu'à 60 % de carence ; endurance −3 à −4 % ; +2 à +20 % après 100 mg/j de fer chez les carencées ; groupes ≤ 20 dans 18 études (PMID 39536912)."
+ },
+ {
   "cle": "petre2021",
   "auteurs": "Petré H, Hemmingsson E, Rosdahl H, Psilander N",
   "annee": 2021,
@@ -5861,6 +7603,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "27 études : 1RM jambes ES −0,35 chez entraînés, −0,20 NS modérés, 0,03 non entraînés ; même séance −0,66 vs séances séparées −0,10 NS (PMID 33751469)."
+ },
+ {
+  "cle": "piacentini2013",
+  "auteurs": "Piacentini MF, De Ioannon G, Comotto S, Spedicato A, Vernillo G, La Torre A",
+  "annee": 2013,
+  "titre": "Concurrent strength and endurance training effects on running economy in master endurance runners",
+  "revue": "J Strength Cond Res 27(8):2295-2303",
+  "doi": "10.1519/JSC.0b013e3182794485",
+  "url": "https://doi.org/10.1519/JSC.0b013e3182794485",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "ECR, 16 marathoniens masters (~44 ans) : force maximale → 1RM +16,34 %, économie +6,17 % à allure marathon ; rien dans les autres groupes ; masse inchangée (PMID 23207882)."
+ },
+ {
+  "cle": "plisky2021",
+  "auteurs": "Plisky P, Schwartkopf-Phifer K, Huebner B, Garner MB, Bullock G",
+  "annee": 2021,
+  "titre": "Systematic Review and Meta-Analysis of the Y-Balance Test Lower Quarter: Reliability, Discriminant Validity, and Predictive Validity",
+  "revue": "Int J Sports Phys Ther 16(5):1190-1209",
+  "doi": "10.26603/001c.27634",
+  "url": "https://doi.org/10.26603/001c.27634",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "57 études : fiabilité intra-évaluateur 0,85-0,91 ; scores différents selon sexe et sport ; avec des seuils généraux, le Y-balance ne prédit pas la blessure."
  },
  {
   "cle": "polar-fitspark",
@@ -5900,6 +7668,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "26 athlètes ; yoga 2×/sem, 10 sem : gains de souplesse (sit-reach, épaule) et d'équilibre."
+ },
+ {
+  "cle": "powden2015",
+  "auteurs": "Powden CJ, Hoch JM, Hoch MC",
+  "annee": 2015,
+  "titre": "Reliability and minimal detectable change of the weight-bearing lunge test: A systematic review",
+  "revue": "Man Ther 20(4):524-532",
+  "doi": "10.1016/j.math.2015.01.004",
+  "url": "https://doi.org/10.1016/j.math.2015.01.004",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "12 études : ICC inter 0,80-0,99, intra 0,65-0,99 ; MDC moyen 1,6 cm (4,6°) entre cliniciens et 1,9 cm (4,7°) pour un même clinicien."
+ },
+ {
+  "cle": "pratap2020",
+  "auteurs": "Pratap A, Neto EC, Snyder P, et al.",
+  "annee": 2020,
+  "titre": "Indicators of retention in remote digital health studies: a cross-study evaluation of 100,000 participants",
+  "revue": "NPJ Digit Med 3:21",
+  "doi": "10.1038/s41746-020-0224-8",
+  "url": "https://doi.org/10.1038/s41746-020-0224-8",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "8 études, > 100 000 participants : rétention médiane 5,5 j ; orientation par un clinicien +40 j ; rémunération +22 j."
  },
  {
   "cle": "precart2025",
@@ -6123,6 +7917,19 @@
   "note": "15 études : avantage trivial de l'échec pour l'hypertrophie (ES 0,19) ; échec momentané vs non-échec NS ; perte de vitesse > 25 % vs 20-25 % NS (PMID 36334240)."
  },
  {
+  "cle": "refalo2024",
+  "auteurs": "Refalo MC, Remmert JF, Pelland JC et al.",
+  "annee": 2024,
+  "titre": "Accuracy of Intraset Repetitions-in-Reserve Predictions During the Bench Press Exercise in Resistance-Trained Male and Female Subjects",
+  "revue": "J Strength Cond Res 38(3):e78-e85",
+  "doi": "10.1519/jsc.0000000000004653",
+  "url": "https://doi.org/10.1519/jsc.0000000000004653",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "24 entraînés, développé couché 75 % : erreur absolue 0,65 ± 0,78 rep à RIR 1 et 3, légère sous-estimation ; pas d'effet du sexe ni de l'expérience."
+ },
+ {
   "cle": "region-cphp-2021",
   "auteurs": "Région Occitanie",
   "annee": 2021,
@@ -6149,6 +7956,19 @@
   "note": "184 stages et 1 526 athlètes (janv. 2023-août 2024), 850 lycéens et 550 étudiants STAPS sur le plateau."
  },
  {
+  "cle": "reid2007",
+  "auteurs": "Reid A, Birmingham TB, Stratford PW, Alcock GK, Giffin JR",
+  "annee": 2007,
+  "titre": "Hop testing provides a reliable and valid outcome measure during rehabilitation after anterior cruciate ligament reconstruction",
+  "revue": "Phys Ther 87(3):337-349",
+  "doi": "10.2522/ptj.20060143",
+  "url": "https://doi.org/10.2522/ptj.20060143",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "42 opérés du LCA : indice de symétrie ICC 0,82-0,93, SEM 3,0-5,6 %, MDC90 7,1-13,0 % (exprimé en % de symétrie, pas en cm)."
+ },
+ {
   "cle": "researchandmarkets-sports-coaching-2024",
   "auteurs": "ResearchAndMarkets",
   "annee": 2024,
@@ -6173,6 +7993,58 @@
   "niveau": "C",
   "verifie": true,
   "note": "Toutes catégories : passage au payant à J35 médian 2,1 % en freemium, 10,7 % avec paywall dur ; rétention annuelle an 1 ≈ 28 % ; revenu par installation à J60 0,38 $ (freemium) vs 3,09 $ (paywall dur). Pas de chiffre propre au sport dans cet article."
+ },
+ {
+  "cle": "revenuecat2025",
+  "auteurs": "RevenueCat",
+  "annee": 2025,
+  "titre": "State of Subscription Apps 2025",
+  "revue": "rapport d'entreprise (site officiel), page lue le 01/10/2026",
+  "doi": null,
+  "url": "https://www.revenuecat.com/state-of-subscription-apps-2025/",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Santé & Forme : conversion d'essai médiane 39,9 % ; rétention à 1 an ≈ 22,5 % (mensuel) et ≈ 48-54 % (annuel) ; remboursements 4,71 %. Lu via résumé automatique : à revérifier."
+ },
+ {
+  "cle": "reynolds2006",
+  "auteurs": "Reynolds JM, Gordon TJ, Robergs RA",
+  "annee": 2006,
+  "titre": "Prediction of one repetition maximum strength from multiple repetition maximum testing and anthropometry",
+  "revue": "J Strength Cond Res 20(3):584-592",
+  "doi": "10.1519/r-15304.1",
+  "url": "https://doi.org/10.1519/r-15304.1",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "70 sujets : le 5RM prédit le mieux le 1RM (R² 0,97-0,99) ; ne pas dépasser 10 reps dans une équation linéaire ; erreur ≈ 3 kg au développé couché, 16 kg à la presse."
+ },
+ {
+  "cle": "rhea2003",
+  "auteurs": "Rhea MR, Alvar BA, Burkett LN, Ball SD",
+  "annee": 2003,
+  "titre": "A meta-analysis to determine the dose response for strength development",
+  "revue": "Med Sci Sports Exerc 35(3):456-464",
+  "doi": "10.1249/01.MSS.0000053727.63505.D4",
+  "url": "https://doi.org/10.1249/01.MSS.0000053727.63505.D4",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "140 études, 1 433 tailles d'effet : gains maximaux à 60 % 1RM, 3 j/sem chez les non-entraînés ; 80 % 1RM, 2 j/sem chez les entraînés ; 4 séries par groupe musculaire (PMID 12618576)."
+ },
+ {
+  "cle": "rhodes2015",
+  "auteurs": "Rhodes RE, Kates A",
+  "annee": 2015,
+  "titre": "Can the Affective Response to Exercise Predict Future Motives and Physical Activity Behavior? A Systematic Review of Published Evidence",
+  "revue": "Ann Behav Med 49(5):715-731",
+  "doi": "10.1007/s12160-015-9704-5",
+  "url": "https://doi.org/10.1007/s12160-015-9704-5",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "24 études : le ressenti positif pendant l'effort prédit la pratique future ; le ressenti après, non."
  },
  {
   "cle": "ridestrong-page",
@@ -6266,6 +8138,19 @@
   "note": "Audit du 25/08/2026 de 14 offres (CycleCoach 99-899 £, FasCat 153-461 $/4 sem., Team Wilpers 299-375 $)."
  },
  {
+  "cle": "roberts2020",
+  "auteurs": "Roberts BM, Nuckols G, Krieger JW",
+  "annee": 2020,
+  "titre": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+  "revue": "J Strength Cond Res 34(5):1448-1460",
+  "doi": "10.1519/JSC.0000000000003521",
+  "url": "https://doi.org/10.1519/JSC.0000000000003521",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Hypertrophie : pas de différence hommes-femmes (ES 0,07) ; force du bas du corps : pas de différence ; force relative du haut du corps : avantage femmes (ES −0,60) (PMID 32218059)."
+ },
+ {
   "cle": "robineau2016",
   "auteurs": "Robineau J, Babault N, Piscione J, Lacome M, Bigard AX",
   "annee": 2016,
@@ -6290,6 +8175,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Méta-régressions : gains de force similaires quel que soit le RIR ; hypertrophie plus grande quand on s'approche de l'échec ; analyse exploratoire (PMID 38970765)."
+ },
+ {
+  "cle": "romeo2019",
+  "auteurs": "Romeo A, Edney S, Plotnikoff R, et al.",
+  "annee": 2019,
+  "titre": "Can Smartphone Apps Increase Physical Activity? Systematic Review and Meta-Analysis",
+  "revue": "J Med Internet Res 21(3):e12053",
+  "doi": "10.2196/12053",
+  "url": "https://doi.org/10.2196/12053",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "6 ECR : +476,75 pas/j (NS) ; plus efficace sur < 3 mois et si l'appli cible l'activité seule."
  },
  {
   "cle": "ronnestad2010a",
@@ -6578,6 +8476,32 @@
   "note": "16 étudiants ; 30 inspirations à 50 % PImax, 2×/jour, 5 j/sem, 6 sem ; CLM amélioré (intra-groupe) en normoxie et hypoxie (FiO2 16,45 %)."
  },
  {
+  "cle": "salmani2025",
+  "auteurs": "Salmani B, Prapavessis H, Vanderloo LM, Mitchell MS",
+  "annee": 2025,
+  "titre": "Financial incentives for physical activity in adults: Systematic review and meta-analysis update",
+  "revue": "Prev Med 192:108237",
+  "doi": "10.1016/j.ypmed.2025.108237",
+  "url": "https://doi.org/10.1016/j.ypmed.2025.108237",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "29 ECR, n = 9604 : SMD 0,52 pendant l'incitation, 0,20 après retrait."
+ },
+ {
+  "cle": "samdal2017",
+  "auteurs": "Samdal GB, Eide GE, Barth T, Williams G, Meland E",
+  "annee": 2017,
+  "titre": "Effective behaviour change techniques for physical activity and healthy eating in overweight and obese adults; systematic review and meta-regression analyses",
+  "revue": "Int J Behav Nutr Phys Act 14(1):42",
+  "doi": "10.1186/s12966-017-0494-y",
+  "url": "https://doi.org/10.1186/s12966-017-0494-y",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "48 ECR : ES 0,37 court terme, 0,24 long terme ; objectifs et auto-suivi prédisent l'effet ; style soutenant l'autonomie pour le maintien."
+ },
+ {
   "cle": "sanchezalvarado2024",
   "auteurs": "Sanchez-Alvarado A, Bokil C, Cassel M, Engel T",
   "annee": 2024,
@@ -6602,6 +8526,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "Fake door, métriques ILI et OLI."
+ },
+ {
+  "cle": "saw2015a",
+  "auteurs": "Saw AE, Main LC, Gastin PB",
+  "annee": 2015,
+  "titre": "Monitoring athletes through self-report: factors influencing implementation",
+  "revue": "J Sports Sci Med 14(1):137-146",
+  "doi": null,
+  "url": "https://europepmc.org/article/MED/25729301",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "30 entretiens, 20 sports : facteurs = accessibilité, moment, adhésion de l'entourage, renforcement ; faible charge pour l'athlète."
+ },
+ {
+  "cle": "saw2015b",
+  "auteurs": "Saw AE, Main LC, Gastin PB",
+  "annee": 2015,
+  "titre": "Impact of Sport Context and Support on the Use of a Self-Report Measure for Athlete Monitoring",
+  "revue": "J Sports Sci Med 14(4):732-739",
+  "doi": null,
+  "url": "https://europepmc.org/article/MED/26664269",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "131 athlètes, 16 sem : 70 essaient ; remplissage 84 % si soutenus par le coach vs 28 % et 8 % en autonomie."
  },
  {
   "cle": "sawtooth-van-westendorp",
@@ -6669,6 +8619,19 @@
   "note": "IAP Health & Fitness janv. 2025 : 385 M$ ; > 4 Md$ attendus en 2025 ; 3,6 Md de téléchargements en 2024 ; États-Unis > 50 %, Royaume-Uni ~8 %."
  },
  {
+  "cle": "servicepublic-certificat-sport",
+  "auteurs": "Service-Public.fr (DILA)",
+  "annee": 2025,
+  "titre": "Certificat médical et pratique sportive (fiche F1030)",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1030",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Page vérifiée le 18/02/2025 : mineurs = questionnaire de santé rempli avec les parents, certificat de moins de 6 mois si une réponse l'exige ; certificat de moins d'1 an pour les sports à contraintes particulières ; majeurs = selon la fédération ; code du sport L231-2 à L231-4, décret 2021-564 (lu le 01/10/2026)."
+ },
+ {
   "cle": "sgieurope-garmin-2025",
   "auteurs": "SGI Europe",
   "annee": 2026,
@@ -6693,6 +8656,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "8 hommes : 15 g de gélatine + vitamine C 1 h avant 6 min de corde à sauter doublent le PINP sanguin."
+ },
+ {
+  "cle": "sheeran2020",
+  "auteurs": "Sheeran P, Wright CE, Avishai A, et al.",
+  "annee": 2020,
+  "titre": "Self-determination theory interventions for health behavior change: Meta-analysis and meta-analytic structural equation modeling of randomized controlled trials",
+  "revue": "J Consult Clin Psychol 88(8):726-737",
+  "doi": "10.1037/ccp0000501",
+  "url": "https://doi.org/10.1037/ccp0000501",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "65 tests : d = 0,23 (≥ 0,15 après correction) ; activité physique 0,16-0,29 ; médié par motivation autonome et compétence perçue."
+ },
+ {
+  "cle": "sherk2014",
+  "auteurs": "Sherk VD, Barry DW, Villalon KL et al.",
+  "annee": 2014,
+  "titre": "Bone loss over 1 year of training and competition in female cyclists",
+  "revue": "Clin J Sport Med 24(4):331-336",
+  "doi": "10.1097/JSM.0000000000000050",
+  "url": "https://doi.org/10.1097/JSM.0000000000000050",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "14 cyclistes femmes 26-41 ans : DMO hanche −1,4 % et sous-trochantérienne −2,1 % en 1 an ; perte proche de celle des hommes (PMID 24326929)."
  },
  {
   "cle": "shiri2018",
@@ -6721,6 +8710,19 @@
   "note": "Résumé des trois règles du Mom Test."
  },
  {
+  "cle": "silva2021",
+  "auteurs": "Silva R, Rico-González M, Lima R et al.",
+  "annee": 2021,
+  "titre": "Validity and Reliability of Mobile Applications for Assessing Strength, Power, Velocity, and Change-of-Direction: A Systematic Review",
+  "revue": "Sensors (Basel) 21(8):2623",
+  "doi": "10.3390/s21082623",
+  "url": "https://doi.org/10.3390/s21082623",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "23 études, 11 applis : valides et fiables pour la vitesse de barre, mais biais systématique aux charges lourdes."
+ },
+ {
   "cle": "singh2025",
   "auteurs": "Singh D, Kalra S, Mohammad M, Munjal J, Danish M, Ajmera P",
   "annee": 2025,
@@ -6732,6 +8734,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "Athlètes d'athlétisme ; qualité moyenne ; souplesse, équilibre, santé mentale améliorés ; 2-4 séances/sem, 8-15 sem."
+ },
+ {
+  "cle": "skattebo2016",
+  "auteurs": "Skattebo Ø, Hallén J, Rønnestad BR, Losnegard T",
+  "annee": 2016,
+  "titre": "Upper body heavy strength training does not affect performance in junior female cross-country skiers",
+  "revue": "Scand J Med Sci Sports 26(9):1007-1016",
+  "doi": "10.1111/sms.12517",
+  "url": "https://doi.org/10.1111/sms.12517",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "16 juniores (17 ans), 10 sem, 2 séances/sem : 1RM tirage +15 % vs contrôle, effet trivial sur la puissance en double poussée (PMID 26146761)."
  },
  {
   "cle": "slowtwitch-coaching-types",
@@ -6825,6 +8840,19 @@
   "note": "Pas de prix, peu adapté aux petites structures."
  },
  {
+  "cle": "smith2020",
+  "auteurs": "Smith DM, Duque L, Huffman JC, Healy BC, Celano CM",
+  "annee": 2020,
+  "titre": "Text Message Interventions for Physical Activity: A Systematic Review and Meta-Analysis",
+  "revue": "Am J Prev Med 58(1):142-151",
+  "doi": "10.1016/j.amepre.2019.08.014",
+  "url": "https://doi.org/10.1016/j.amepre.2019.08.014",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "13 ECR, n = 1346 : SMS → pas/j d = 0,38 ; MVPA d = 0,31 (NS)."
+ },
+ {
   "cle": "socialinsider-engagement-2026",
   "auteurs": "Socialinsider",
   "annee": 2026,
@@ -6862,6 +8890,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "14 skieurs nationaux ; 8 × 100 m progressifs = ~35 min traditionnel (199 vs 200 s)."
+ },
+ {
+  "cle": "souissi2021",
+  "auteurs": "Souissi MA, Ammar A, Trabelsi O, et al.",
+  "annee": 2021,
+  "titre": "Distance Motor Learning during the COVID-19 Induced Confinement: Video Feedback with a Pedagogical Activity Improves the Snatch Technique in Young Athletes",
+  "revue": "Int J Environ Res Public Health 18(6):3069",
+  "doi": "10.3390/ijerph18063069",
+  "url": "https://doi.org/10.3390/ijerph18063069",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "35 jeunes haltérophiles, 6 séances à distance : vidéo + activité pédagogique d = 0,58-1,1, maintenu à 1 sem ; vidéo seule non maintenue."
  },
  {
   "cle": "sp-cotisations-micro-2026",
@@ -6940,6 +8981,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "Revue narrative : force et masse maintenues jusqu'à 32 sem avec 1 séance/sem et 1 série/exercice si la charge relative est maintenue ; l'intensité est la variable clé (PMID 33629972)."
+ },
+ {
+  "cle": "spork2021",
+  "auteurs": "Spork P, O'Brien J, Sepoetro M, Plachel M, Stöggl T",
+  "annee": 2021,
+  "titre": "The Intra- and Inter-Rater Reliability of a Hip Rotation Range-of-Motion Measurement Using a Smartphone Application in Academy Football (Soccer) Players",
+  "revue": "Sports (Basel) 9(11):148",
+  "doi": "10.3390/sports9110148",
+  "url": "https://doi.org/10.3390/sports9110148",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "41 footballeurs 14-15 ans, conditions réelles, téléphone sur la jambe : ICC intra 0,54-0,75, MDC 10,9-16,4° ; utilité pratique limitée."
  },
  {
   "cle": "sporsora-ffa-2025",
@@ -7046,6 +9100,32 @@
   "note": "Rachat de Runna (avril 2025), montant non publié ; Runna 19,99 $/mois, Strava 79,99 $/an."
  },
  {
+  "cle": "springer2007",
+  "auteurs": "Springer BA, Marin R, Cyhan T, Roberts H, Gill NW",
+  "annee": 2007,
+  "titre": "Normative values for the unipedal stance test with eyes open and closed",
+  "revue": "J Geriatr Phys Ther 30(1):8-15",
+  "doi": "10.1519/00139143-200704000-00003",
+  "url": "https://doi.org/10.1519/00139143-200704000-00003",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "549 adultes : temps sur une jambe baisse avec l'âge, ne dépend pas du sexe ; ICC inter-évaluateur meilleur de 3 essais 0,998 yeux fermés (les normes par âge ne sont pas dans le résumé)."
+ },
+ {
+  "cle": "steffen2013",
+  "auteurs": "Steffen K, Meeuwisse WH, Romiti M, et al.",
+  "annee": 2013,
+  "titre": "Evaluation of how different implementation strategies of an injury prevention programme (FIFA 11+) impact team adherence and injury risk in Canadian female youth football players: a cluster-randomised trial",
+  "revue": "Br J Sports Med 47(8):480-487",
+  "doi": "10.1136/bjsports-2012-091887",
+  "url": "https://doi.org/10.1136/bjsports-2012-091887",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "31 équipes : adhésion 85,6 % et 81,3 % après atelier coach vs 73,5 % via site web seul (NS) ; forte adhésion IRR 0,43 (NS après ajustement)."
+ },
+ {
   "cle": "steffens2016",
   "auteurs": "Steffens D, Maher CG, Pereira LS, Stevens ML, Oliveira VC, Chapple M, Teixeira-Salmela LF, Hancock MJ",
   "annee": 2016,
@@ -7057,6 +9137,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "21 essais, 30 850 personnes : exercice + éducation RR 0,55 ; exercice seul 0,65 ; éducation seule, ceinture et semelles sans effet."
+ },
+ {
+  "cle": "stoggl2022",
+  "auteurs": "Stöggl T, Holmberg HC",
+  "annee": 2022,
+  "titre": "A Systematic Review of the Effects of Strength and Power Training on Performance in Cross-Country Skiers",
+  "revue": "J Sports Sci Med 21(4):555-579",
+  "doi": "10.52082/jssm.2022.555",
+  "url": "https://doi.org/10.52082/jssm.2022.555",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "12 ECR de qualité faible à moyenne : 1RM ES 0,8-6,8 ; performance spécifique ES moyen 0,56, inconstant ; économie et VO2max non concluants (PMID 36523891)."
+ },
+ {
+  "cle": "stoop2019",
+  "auteurs": "Stoop R, Hohenauer E, Vetsch T, Deliens T, Clijsen R",
+  "annee": 2019,
+  "titre": "Acute Injuries in Male Elite and Amateur Mountain Bikers: Results of a Survey",
+  "revue": "J Sports Sci Med 18(2):207-212",
+  "doi": null,
+  "url": "https://europepmc.org/article/MED/31191089",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "99 vététistes hommes : prévalence de blessures aiguës 74 % (élites) et 69 % (amateurs) ; pas de facteur prédictif de blessure grave (PMID 31191089)."
  },
  {
   "cle": "strava-abonnement",
@@ -7150,6 +9256,19 @@
   "note": "Minuteur de tempo par phase (excentrique, pause, concentrique) avec sons distincts et vibrations ; 3,99 $/mois à 79,99 $ à vie ; lancé en mars 2025."
  },
  {
+  "cle": "stricker2020",
+  "auteurs": "Stricker PR, Faigenbaum AD, McCambridge TM; Council on Sports Medicine and Fitness",
+  "annee": 2020,
+  "titre": "Resistance Training for Children and Adolescents",
+  "revue": "Pediatrics 145(6):e20201011",
+  "doi": "10.1542/peds.2020-1011",
+  "url": "https://doi.org/10.1542/peds.2020-1011",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Rapport clinique de l'Académie américaine de pédiatrie (révision de 2008) : bénéfices et risques de la muscu chez l'enfant et l'ado ; la muscu est conseillée aux sportifs comme aux non-sportifs (PMID 32457216)."
+ },
+ {
   "cle": "stripe-prix-fr",
   "auteurs": "Stripe",
   "annee": 2026,
@@ -7202,6 +9321,19 @@
   "note": "Liste des fonctions (RPE, Apple Health, Apple Watch) ; pas de prix affiché."
  },
  {
+  "cle": "suominen2021",
+  "auteurs": "Suominen TH, Alén M, Törmäkangas T et al.",
+  "annee": 2021,
+  "titre": "Regular Strength and Sprint Training Counteracts Bone Aging: A 10-Year Follow-Up in Male Masters Athletes",
+  "revue": "JBMR Plus 5(7):e10513",
+  "doi": "10.1002/jbm4.10513",
+  "url": "https://doi.org/10.1002/jbm4.10513",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "69 sprinteurs de 40-85 ans, 10 ans : os du tibia maintenu ou amélioré avec force + sprint ≥ 2 fois/sem, en baisse sinon ; écart de 2 à 5 % (PMID 34258508)."
+ },
+ {
   "cle": "suunto-forum-lacking",
   "auteurs": "Suunto (forum)",
   "annee": 2020,
@@ -7226,6 +9358,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Appli SuuntoPlus comptant les reps et calculant un score de charge mécanique ; détection imparfaite."
+ },
+ {
+  "cle": "taim2023",
+  "auteurs": "Taim BC, Ó Catháin C, Renard M, Elliott-Sale KJ, Madigan S, Ní Chéilleachair N",
+  "annee": 2023,
+  "titre": "The Prevalence of Menstrual Cycle Disorders and Menstrual Cycle-Related Symptoms in Female Athletes: A Systematic Literature Review",
+  "revue": "Sports Med 53(10):1963-1984",
+  "doi": "10.1007/s40279-023-01871-8",
+  "url": "https://doi.org/10.1007/s40279-023-01871-8",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "60 études, 6 380 athlètes sans contraception hormonale : dysménorrhée 32,3 % (7,8-85,6 %) ; 90 % des études en auto-déclaration ; suivi prospectif du cycle et des symptômes conseillé (PMID 37389782)."
  },
  {
   "cle": "teambuildr-appstore",
@@ -7423,6 +9568,19 @@
   "note": "35 études ; force dynamique ES 0,33 ; étirement avant la muscu ES −0,43 ; association négative avec la durée (> 8 sem)."
  },
  {
+  "cle": "thompson2020",
+  "auteurs": "Thompson B, Almarjawi A, Sculley D, Janse de Jonge X",
+  "annee": 2020,
+  "titre": "The Effect of the Menstrual Cycle and Oral Contraceptives on Acute Responses and Chronic Adaptations to Resistance Training: A Systematic Review of the Literature",
+  "revue": "Sports Med 50(1):171-185",
+  "doi": "10.1007/s40279-019-01219-1",
+  "url": "https://doi.org/10.1007/s40279-019-01219-1",
+  "type": "revue-systematique",
+  "niveau": "C",
+  "verifie": true,
+  "note": "17 études, 418 participantes : 3 études en faveur d'une muscu centrée sur la phase folliculaire ; résultats contradictoires, petits effectifs, limites de méthode (PMID 31677121)."
+ },
+ {
   "cle": "todaysplan-accueil",
   "auteurs": "Today's Plan",
   "annee": 2026,
@@ -7434,6 +9592,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Message indiquant que le service n'est plus en activité."
+ },
+ {
+  "cle": "tong2018",
+  "auteurs": "Tong HL, Laranjo L",
+  "annee": 2018,
+  "titre": "The use of social features in mobile health interventions to promote physical activity: a systematic review",
+  "revue": "NPJ Digit Med 1:43",
+  "doi": "10.1038/s41746-018-0051-3",
+  "url": "https://doi.org/10.1038/s41746-018-0051-3",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "19 études ; méta de 4 ECR non significative ; préférences partagées entre soutien et compétition."
  },
  {
   "cle": "tp-communique-2024",
@@ -8242,6 +10413,32 @@
   "note": "Classement performance/notoriété de traileurs (4 août 2026) avec audiences."
  },
  {
+  "cle": "valenzuela2022",
+  "auteurs": "Valenzuela PL, Muriel X, van Erp T et al.",
+  "annee": 2022,
+  "titre": "The Record Power Profile of Male Professional Cyclists: Normative Values Obtained From a Large Database",
+  "revue": "Int J Sports Physiol Perform 17(5):701-710",
+  "doi": "10.1123/ijspp.2021-0263",
+  "url": "https://doi.org/10.1123/ijspp.2021-0263",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "144 pros, 129 262 fichiers : sprinteurs meilleurs sur 5-30 s, leaders de classement général meilleurs de 1 à 240 min en W/kg (PMID 35193109)."
+ },
+ {
+  "cle": "vandehoef2022",
+  "auteurs": "van de Hoef PA, Brink MS, Brauers JJ, et al.",
+  "annee": 2022,
+  "titre": "Adherence to an injury prevention program in male amateur football players is affected by players' age, experience and perceptions",
+  "revue": "BMJ Open Sport Exerc Med 8(3):e001328",
+  "doi": "10.1136/bmjsem-2022-001328",
+  "url": "https://doi.org/10.1136/bmjsem-2022-001328",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "98 joueurs : adhésion meilleure si plus âgés/expérimentés et programme jugé utile, peu intense, fonctionnel, peu chronophage."
+ },
+ {
   "cle": "vandervlist2020",
   "auteurs": "van der Vlist AC, van Veldhoven PLJ, van Oosterom RF, Verhaar JAN, de Vos RJ",
   "annee": 2020,
@@ -8372,6 +10569,84 @@
   "note": "Vu via WebSearch seulement : bonne fiabilité, surestimation de la hauteur de +4,6 à +7,6 cm."
  },
  {
+  "cle": "vicari2026",
+  "auteurs": "Vicari DSS, Filipas L, Giustino V, Drid P, Bianco A",
+  "annee": 2026,
+  "titre": "Strength training in the gym versus specific strength training on the bike in young off-road cyclists",
+  "revue": "Br Med Bull 157(1):ldaf024",
+  "doi": "10.1093/bmb/ldaf024",
+  "url": "https://doi.org/10.1093/bmb/ldaf024",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "19 jeunes vététistes, 12 sem, 2 séances/sem : Wingate moyen (p = 0,002) et max (p < 0,001) améliorés seulement avec la muscu en salle ; saut inchangé ; petit échantillon (PMID 41482961)."
+ },
+ {
+  "cle": "videbaek2015",
+  "auteurs": "Videbæk S, Bueno AM, Nielsen RO, Rasmussen S",
+  "annee": 2015,
+  "titre": "Incidence of Running-Related Injuries Per 1000 h of running in Different Types of Runners: A Systematic Review and Meta-Analysis",
+  "revue": "Sports Med 45(7):1017-1026",
+  "doi": "10.1007/s40279-015-0333-8",
+  "url": "https://doi.org/10.1007/s40279-015-0333-8",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "13 études : 17,8 blessures/1000 h chez les débutants vs 7,7 chez les coureurs loisirs (PMID 25951917)."
+ },
+ {
+  "cle": "vigotsky2016",
+  "auteurs": "Vigotsky AD, Lehman GJ, Beardsley C et al.",
+  "annee": 2016,
+  "titre": "The modified Thomas test is not a valid measure of hip extension unless pelvic tilt is controlled",
+  "revue": "PeerJ 4:e2325",
+  "doi": "10.7717/peerj.2325",
+  "url": "https://doi.org/10.7717/peerj.2325",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "29 étudiants : sans contrôle de la bascule du bassin, validité faible (sensibilité 32 %, spécificité 57 % pour un déficit d'extension) ; bassin contrôlé : r = 0,98."
+ },
+ {
+  "cle": "viiala2026",
+  "auteurs": "Viiala J, Čech P, Bakalár P, Paravlic A, et al.",
+  "annee": 2026,
+  "titre": "Effect of adherence to exercise-based injury prevention programmes on the risk of sports injuries: a systematic review and meta-analysis of randomised controlled trials",
+  "revue": "Inj Prev 32(1):31-40",
+  "doi": "10.1136/ip-2025-045632",
+  "url": "https://doi.org/10.1136/ip-2025-045632",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "35 ECR : adhésion ≥ 84 % RR 0,53 ; 74-83 % RR 0,50 ; < 74 % RR 0,87 (NS) ; l'adhésion modère l'effet (β = −0,013)."
+ },
+ {
+  "cle": "vikestad2024",
+  "auteurs": "Vikestad V, Dalen T",
+  "annee": 2024,
+  "titre": "Strength Training Among Male Master Cyclists-Practices, Challenges, and Rationales",
+  "revue": "J Funct Morphol Kinesiol 9(4):232",
+  "doi": "10.3390/jfmk9040232",
+  "url": "https://doi.org/10.3390/jfmk9040232",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "555 cyclistes masters ≥ 35 ans : moins de muscu en saison ; freins = fatigue induite et manque de temps ; l'os est une raison majeure chez les ≥ 50 ans (PMID 39584885)."
+ },
+ {
+  "cle": "vikestad2025",
+  "auteurs": "Vikestad V, Lyngstad IK, Dalen T",
+  "annee": 2025,
+  "titre": "Strength training among professional UCI road cyclists: Practices, challenges, and rationales",
+  "revue": "PLoS One 20(7):e0328195",
+  "doi": "10.1371/journal.pone.0328195",
+  "url": "https://doi.org/10.1371/journal.pone.0328195",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "147 pros UCI : 2 séances/sem hors saison, 1 en saison ; en saison 66,1 % des femmes vs 36,4 % des hommes ; freins = voyages, fatigue, courses ; choix guidés par le coach."
+ },
+ {
   "cle": "vikmoen2016",
   "auteurs": "Vikmoen O, Ellefsen S, Trøen Ø, Hollan I, Hanestadhaugen M, Raastad T, Rønnestad BR",
   "annee": 2016,
@@ -8409,6 +10684,32 @@
   "niveau": "C",
   "verifie": true,
   "note": "Revue : effets similaires chez hommes et femmes ; la hausse de CSA des muscles moteurs est une adaptation importante, à rechercher (PMID 33803041)."
+ },
+ {
+  "cle": "viljoen2024",
+  "auteurs": "Viljoen C, du Toit E, van Niekerk T et al.",
+  "annee": 2024,
+  "titre": "Training for shorter ultra-trail races results in a higher injury rate, a more diverse injury profile, and more severe injuries: 2022 Mac ultra races",
+  "revue": "Phys Ther Sport 65:7-13",
+  "doi": "10.1016/j.ptsp.2023.10.004",
+  "url": "https://doi.org/10.1016/j.ptsp.2023.10.004",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "162 traileurs : 3,09 blessures/1000 h pour le 46 km vs 0,68 (80 km) et 1,09 (161 km) ; 89 % au membre inférieur ; muscle/tendon 56 % (PMID 37976906)."
+ },
+ {
+  "cle": "visentini2022",
+  "auteurs": "Visentini PJ, McDowell AH, Pizzari T",
+  "annee": 2022,
+  "titre": "Factors associated with overuse injury in cyclists: A systematic review",
+  "revue": "J Sci Med Sport 25(5):391-398",
+  "doi": "10.1016/j.jsams.2021.12.008",
+  "url": "https://doi.org/10.1016/j.jsams.2021.12.008",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "18 études (3 à faible risque de biais) : preuve modérée d'un lien charge-symptômes ; preuve modérée d'absence de lien avec beaucoup de mesures de bike fit (PMID 35151569)."
  },
  {
   "cle": "vo2cycling-muscu-hivernale",
@@ -8502,6 +10803,45 @@
   "note": "Core 4,99 €/mois ; Pro 17,99 €/mois ou 179,99 €/an avec force/yoga/mobilité SYSTM."
  },
  {
+  "cle": "wakefield2015",
+  "auteurs": "Wakefield CB, Halls A, Difilippo N, Cottrell GT",
+  "annee": 2015,
+  "titre": "Reliability of goniometric and trigonometric techniques for measuring hip-extension range of motion using the modified Thomas test",
+  "revue": "J Athl Train 50(5):460-466",
+  "doi": "10.4085/1062-6050-50.2.05",
+  "url": "https://doi.org/10.4085/1062-6050-50.2.05",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "22 adultes, 2 jours : Thomas au goniomètre peu fiable (ICC 0,30-0,65), méthode trigonométrique fiable (0,90-0,95) ; le repérage des points pèse lourd."
+ },
+ {
+  "cle": "waldhelm2020",
+  "auteurs": "Waldhelm A, Gubler C, Sullivan K et al.",
+  "annee": 2020,
+  "titre": "Inter-rater and test-retest reliability of two new single leg sit-to-stand tests",
+  "revue": "Int J Sports Phys Ther 15(3):388-394",
+  "doi": "10.26603/ijspt20200388",
+  "url": "https://doi.org/10.26603/ijspt20200388",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "20 étudiants : assis-debout unipodal 30 s, ICC test-retest 0,92-0,94 ; 5 reps chronométrées 0,87-0,94."
+ },
+ {
+  "cle": "walker2025",
+  "auteurs": "Walker K, Phillips N, Sheeran L",
+  "annee": 2025,
+  "titre": "Exploring the use of digital technology for injury prevention and self-management among recreational runners",
+  "revue": "Phys Ther Sport 71:85-91",
+  "doi": "10.1016/j.ptsp.2024.12.004",
+  "url": "https://doi.org/10.1016/j.ptsp.2024.12.004",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "232 coureurs : 97 % utilisent la technologie mais la jugent peu utile pour la prévention ; 84,5 % intéressés par un outil dédié."
+ },
+ {
   "cle": "wang2020",
   "auteurs": "Wang C, Vargas JT, Stokes T, Steele R, Shrier I",
   "annee": 2020,
@@ -8526,6 +10866,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "14 études : contre-la-montre SMD −0,45 ; volume −41-60 %, intensité et fréquence maintenues, ≤ 21 j ; mieux avec surcharge avant (PMID 37163550)."
+ },
+ {
+  "cle": "wannouch2025",
+  "auteurs": "Wannouch YJ, Leahey SR, Ramírez-Campillo R et al.",
+  "annee": 2025,
+  "titre": "A systematic review using a multi-layered criteria framework for assessing the validity and reliability of velocity monitoring devices in resistance training",
+  "revue": "PLoS One 20(9):e0324606",
+  "doi": "10.1371/journal.pone.0324606",
+  "url": "https://doi.org/10.1371/journal.pone.0324606",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "75 études : seules 5/66 études de validité et 16/56 de fiabilité passent tous les critères ; outils prometteurs : GymAware, Perch, Flex, VmaxPro."
  },
  {
   "cle": "warneke2022",
@@ -8645,6 +10998,32 @@
   "note": "Programmes ChatGPT réalistes mais à affiner par un expert (brouillon)."
  },
  {
+  "cle": "weakley2020",
+  "auteurs": "Weakley J, Wilson K, Till K, et al.",
+  "annee": 2020,
+  "titre": "Show Me, Tell Me, Encourage Me: The Effect of Different Forms of Feedback on Resistance Training Performance",
+  "revue": "J Strength Cond Res 34(11):3157-3163",
+  "doi": "10.1519/jsc.0000000000002887",
+  "url": "https://doi.org/10.1519/jsc.0000000000002887",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "12 rugbymen : feedback visuel, verbal et encouragement améliorent tous la vitesse au squat ; différences triviales entre eux."
+ },
+ {
+  "cle": "weakley2023",
+  "auteurs": "Weakley J, Cowley N, Schoenfeld BJ, et al.",
+  "annee": 2023,
+  "titre": "The Effect of Feedback on Resistance Training Performance and Adaptations: A Systematic Review and Meta-analysis",
+  "revue": "Sports Med 53(9):1789-1803",
+  "doi": "10.1007/s40279-023-01877-2",
+  "url": "https://doi.org/10.1007/s40279-023-01877-2",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "20 études : feedback → vitesse +8,4 % (g = 0,63) ; visuel g = 1,11 > verbal 0,47 ; sprint chronique g = 0,47 ; plus de motivation."
+ },
+ {
   "cle": "webkit-itp-7-jours",
   "auteurs": "WebKit",
   "annee": 2020,
@@ -8684,6 +11063,32 @@
   "note": "Web Push depuis iOS 16.4 pour les web apps ajoutées à l'écran d'accueil ; API Badging."
  },
  {
+  "cle": "weir2005",
+  "auteurs": "Weir JP",
+  "annee": 2005,
+  "titre": "Quantifying test-retest reliability using the intraclass correlation coefficient and the SEM",
+  "revue": "J Strength Cond Res 19(1):231-240",
+  "doi": "10.1519/15184.1",
+  "url": "https://doi.org/10.1519/15184.1",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Explique les formes d'ICC, l'erreur systématique (apprentissage, fatigue) à retirer, et comment le SEM sert à calculer le plus petit changement réel d'un individu."
+ },
+ {
+  "cle": "werner2014",
+  "auteurs": "Werner BC, Holzgrefe RE, Griffin JW et al.",
+  "annee": 2014,
+  "titre": "Validation of an innovative method of shoulder range-of-motion measurement using a smartphone clinometer application",
+  "revue": "J Shoulder Elbow Surg 23(11):e275-282",
+  "doi": "10.1016/j.jse.2014.02.030",
+  "url": "https://doi.org/10.1016/j.jse.2014.02.030",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "24 sains + 15 opérés : ICC entre examinateurs 0,80 au smartphone (0,69 goniomètre, 0,61 à l'œil) chez les sains ; 0,89 chez les opérés."
+ },
+ {
   "cle": "whatsonzwift-strength",
   "auteurs": "What's on Zwift",
   "annee": 2026,
@@ -8695,6 +11100,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Séance « Strength » = intervalles sur le vélo."
+ },
+ {
+  "cle": "whitfield2026",
+  "auteurs": "Whitfield J, Mujika I, Burke LM",
+  "annee": 2026,
+  "titre": "UCI Sports Nutrition Project: Nutrition for the Emerging Cycling Disciplines of Esports and Gravel",
+  "revue": "Int J Sport Nutr Exerc Metab 36(3):268-278",
+  "doi": "10.1123/ijsnem.2025-0189",
+  "url": "https://doi.org/10.1123/ijsnem.2025-0189",
+  "type": "revue",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Revue + entretiens : très peu de recherche sur les exigences du gravel ; logistique de ravitaillement spécifique (PMID 41569815)."
  },
  {
   "cle": "whoop-forum-ia-muscu",
@@ -8827,6 +11245,19 @@
   "note": "18 cyclistes entraînés, 6 séances en 3 sem ; sprints répétés 846 → 911 W ; Wingate 723 → 768 W (VHL seulement)."
  },
  {
+  "cle": "worst2026",
+  "auteurs": "Worst H, Henderson N",
+  "annee": 2026,
+  "titre": "Establishing Normative Values and Clinician Assessment Accuracy for the Single Leg Bridge Endurance Test",
+  "revue": "Int J Sports Phys Ther 21(1):34-40",
+  "doi": "10.26603/001c.154592",
+  "url": "https://doi.org/10.26603/001c.154592",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "77 jeunes (78 % femmes) : pont unipodal tenu 65 ± 33 s ; jugement visuel vs appli d'angle r = 0,82-0,84 (version tenue en temps, pas en reps)."
+ },
+ {
   "cle": "wu2024",
   "auteurs": "Wu H, Brooke-Wavell K, Fong DTP, Paquette MR, Blagrove RC",
   "annee": 2024,
@@ -8879,6 +11310,32 @@
   "note": "24 ECR : unilatéral meilleur pour force unilatérale (g 0,42) et saut unilatéral (g 0,35) ; bilatéral meilleur pour force bilatérale (g −0,28) ; hypertrophie et sprint NS (PMID 42458613)."
  },
  {
+  "cle": "xu2022",
+  "auteurs": "Xu L, Shi H, Shen M, et al.",
+  "annee": 2022,
+  "titre": "The Effects of mHealth-Based Gamification Interventions on Participation in Physical Activity: Systematic Review",
+  "revue": "JMIR Mhealth Uhealth 10(2):e27794",
+  "doi": "10.2196/27794",
+  "url": "https://doi.org/10.2196/27794",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "50 études : éléments les plus utilisés = objectifs, barres de progression, récompenses, points, feedback ; résultats mitigés, effets modestes."
+ },
+ {
+  "cle": "xu2023",
+  "auteurs": "Xu J, Turner A, Comfort P et al.",
+  "annee": 2023,
+  "titre": "A Systematic Review of the Different Calculation Methods for Measuring Jump Height During the Countermovement and Drop Jump Tests",
+  "revue": "Sports Med 53(5):1055-1072",
+  "doi": "10.1007/s40279-023-01828-x",
+  "url": "https://doi.org/10.1007/s40279-023-01828-x",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "21 articles : temps de vol et saut-touche rapides mais sensibles aux conditions ; les méthodes donnent des hauteurs différentes, donc ne pas mélanger les méthodes ; plateforme de force (impulsion) = référence."
+ },
+ {
   "cle": "yamamoto2010",
   "auteurs": "Yamamoto LM, Klau JF, Casa DJ, Kraemer WJ, Armstrong LE, Maresh CM",
   "annee": 2010,
@@ -8903,6 +11360,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Amplitudes articulaires mesurées par la caméra du téléphone, rapports pour coachs de force ; 9,99 à 74,99 $/mois."
+ },
+ {
+  "cle": "yoma2025",
+  "auteurs": "Yoma M, Llurda-Almuzara L, Herrington L, Jones R",
+  "annee": 2025,
+  "titre": "Reliability and validity of lower extremity and trunk kinematics measured with markerless motion capture during sports-related and functional tasks: A systematic review",
+  "revue": "J Sports Sci 43(17):1703-1730",
+  "doi": "10.1080/02640414.2025.2518359",
+  "url": "https://doi.org/10.1080/02640414.2025.2518359",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "53 études : fiabilité souvent bonne (SEM < 5°, squats et réceptions les meilleurs) mais écarts au marqueur de 0,2 à 28,6° selon tâche, plan et articulation ; pas interchangeable avec le 3D."
  },
  {
   "cle": "youtube-conditions",
@@ -8957,6 +11427,45 @@
   "note": "28 coureurs, force max + plyo 2×/sem 10 sem : économie à 90 min −2,1 % vs +0,6 % ; temps limite en fin de run +35 % vs −8 % (PMID 40016936)."
  },
  {
+  "cle": "zarei2026",
+  "auteurs": "Zarei M, Aslani M, Yaghoubitajani Z, Sheikhhoseini R",
+  "annee": 2026,
+  "titre": "The Effects of Adherence to the FIFA 11+ Program on Injury Risk in Soccer Players: A Systematic Review and Meta-analysis",
+  "revue": "Am J Sports Med 54(8):2030-2036",
+  "doi": "10.1177/03635465261434222",
+  "url": "https://doi.org/10.1177/03635465261434222",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "5 ECR, 2025 joueurs : adhésion au 11+ associée à une forte baisse du risque (IC 0,12-0,22), hétérogénéité I² ≈ 89 %."
+ },
+ {
+  "cle": "zhang2016",
+  "auteurs": "Zhang J, Brackbill D, Yang S, Becker J, Herbert N, Centola D",
+  "annee": 2016,
+  "titre": "Support or competition? How online social networks increase physical activity: A randomized controlled trial",
+  "revue": "Prev Med Rep 4:453-458",
+  "doi": "10.1016/j.pmedr.2016.08.008",
+  "url": "https://doi.org/10.1016/j.pmedr.2016.08.008",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "790 étudiants : présence aux cours +90 % avec comparaison sociale ; soutien social seul = pas mieux que le contrôle."
+ },
+ {
+  "cle": "zhang2020",
+  "auteurs": "Zhang Y, Weaver RG, Armstrong B, Burkart S, Zhang S, Beets MW",
+  "annee": 2020,
+  "titre": "Validity of Wrist-Worn photoplethysmography devices to measure heart rate: A systematic review and meta-analysis",
+  "revue": "J Sports Sci 38(17):2021-2034",
+  "doi": "10.1080/02640414.2020.1767348",
+  "url": "https://doi.org/10.1080/02640414.2020.1767348",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "44 articles, 15 marques : écart ≈ 0 bpm au repos et -0,5 bpm sur tapis, mais -7,3 bpm en musculation et -4,6 bpm à vélo ; l'erreur en musculation grandit de 3 bpm par 10 bpm de FC."
+ },
+ {
   "cle": "zhao2014",
   "auteurs": "Zhao R, Zhao M, Zhang L",
   "annee": 2014,
@@ -8970,6 +11479,19 @@
   "note": "6 études : sauts +0,017 g/cm² au col du fémur et +0,021 au trochanter ; aucun effet sur la colonne lombaire."
  },
  {
+  "cle": "zhu2026",
+  "auteurs": "Zhu L, Tao Y, Zhou B, et al.",
+  "annee": 2026,
+  "titre": "Not all cues are equal: A systematic review and three-level meta-analysis of context consistency, physical activity and habit strength",
+  "revue": "Appl Psychol Health Well Being 18(4):e70204",
+  "doi": "10.1111/aphw.70204",
+  "url": "https://doi.org/10.1111/aphw.70204",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "14 études, n = 6069 : constance du contexte r = 0,11 (comportement) et 0,20 (habitude) ; repères temporels et de routine les plus utiles."
+ },
+ {
   "cle": "zourdos2016",
   "auteurs": "Zourdos MC, Klemp A, Dolan C et al.",
   "annee": 2016,
@@ -8981,6 +11503,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "29 sujets : RPE-10 = 0 RIR ; corrélation vitesse-RPE r = −0,88 (expérimentés), −0,77 (novices) ; outil pratique de régulation quotidienne (PMID 26049792)."
+ },
+ {
+  "cle": "zourdos2021",
+  "auteurs": "Zourdos MC, Goldsmith JA, Helms ER et al.",
+  "annee": 2021,
+  "titre": "Proximity to Failure and Total Repetitions Performed in a Set Influences Accuracy of Intraset Repetitions in Reserve-Based Rating of Perceived Exertion",
+  "revue": "J Strength Cond Res 35(Suppl 1):S158-S165",
+  "doi": "10.1519/jsc.0000000000002995",
+  "url": "https://doi.org/10.1519/jsc.0000000000002995",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "25 hommes entraînés, squat 70 % (16 reps) : erreur 2,1 reps à RIR 1, 3,7 à RIR 3, 5,2 à RIR 5 ; plus de reps = plus d'erreur."
  },
  {
   "cle": "zwift-forum-force",
