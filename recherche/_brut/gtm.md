@@ -129,3 +129,34 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 **Lecture** : le trail a des créateurs à très forte audience, le VTT XCO très peu. Pour Charge Utile, un créateur **coach** (type Running Addict / Campus Coach) est plus utile qu'un athlète star : son audience vient pour apprendre à s'entraîner.
 
+---
+
+## 2. Canal photo/vidéo : le contenu comme canal d'acquisition
+
+### 2.1 Exemples réels d'entreprises d'entraînement nées du contenu
+
+- **Running Addict → Campus Coach (France)** — le cas le plus proche. Blog éducatif lancé en 2013 ; en 2020 le créateur quitte son poste d'ingénieur pour lancer l'appli. En avril 2025 : « plus de 5 millions d'euros » de revenu récurrent annuel déclaré, 50 personnes, croissance autofinancée, 350 000 à 500 000 abonnés YouTube (épisode #463 du podcast Génération Do It Yourself, 13 avril 2025, [gdiy.fr](https://www.gdiy.fr/podcast/nicolas-spiess-running-addict/) — chiffres déclarés par le fondateur, non audités). Le Journal du Geek (11 avril 2025) décrit les canaux : blog avec une newsletter partie de 5 000 abonnés, chaîne YouTube d'un cofondateur, une trentaine de groupes de course en présentiel, webinaires qui expliquent la méthode ; les applis gratuites sont vues comme des « portes d'entrée » ([journaldugeek.com](https://www.journaldugeek.com/2025/04/11/campus-coach-au-coeur-du-marathon-de-paris-on-veut-devenir-les-meilleurs/)). **Leçon** : sept ans de contenu pédagogique avant l'appli ; l'audience venait pour apprendre à s'entraîner, pas pour du divertissement.
+- **Uphill Athlete (États-Unis)** — livre *Training for the New Alpinism* (2014) puis *Training for the Uphill Athlete* (2017) ; après les livres, « des milliers de messages » de lecteurs ; constat qu'un livre est figé alors que l'entraînement est vivant → création d'une offre de plans, coaching de groupe et coaching individuel ([uphillathlete.com](https://uphillathlete.com/steve-house-and-the-roots-of-uphill-athlete)). Le résumé WebSearch d'une page tierce indique plus de 100 000 exemplaires vendus en Amérique du Nord en 2020 (non ouvert, non cité comme vérifié). **Leçon** : un contenu de référence sur la force et l'endurance en montagne a créé la demande de coaching.
+- **TrainerRoad** — podcast hebdomadaire « Ask a Cycling Coach » depuis 2015, environ 590 épisodes sur 11 ans (résumé WebSearch, [Apple Podcasts](https://podcasts.apple.com/us/podcast/ask-a-cycling-coach-podcast-presented-by-trainerroad/id1035433041)) : l'éditeur d'un logiciel d'entraînement répond chaque semaine aux questions d'entraînement. Audience non publiée.
+- **Nolio** — contre-exemple utile : croissance **sans** gros contenu grand public, par le bouche-à-oreille entre coachs et les fédérations (voir 1.4).
+
+### 2.2 Ce que disent les chiffres de portée Instagram (2025-2026)
+
+- **Socialinsider, étude « reach » mise à jour le 3 septembre 2026** (872 075 publications Facebook + Instagram, janvier 2025 – août 2026) : taux de portée Instagram moyen **3,20 % des abonnés**, en baisse de 14 % sur un an ; par format : carrousels 4,50 %, Reels 4,10 %, images 4,00 % ; **par taille de compte : 6,65 % pour 1-5 k abonnés**, 5,75 % (5-10 k), 5,50 % (10-50 k), 4,50 % (50-100 k), 3,50 % (100 k-1 M) ([socialinsider.io](https://www.socialinsider.io/blog/social-media-reach/)).
+- **Socialinsider, benchmarks d'engagement publiés le 20 février 2026** (35 millions de publications, 447 613 comptes, année 2025) : engagement moyen **0,48 %** (-24 % sur un an) ; carrousels 0,55 %, Reels 0,52 %, images 0,37 % ([socialinsider.io](https://www.socialinsider.io/social-media-benchmarks/instagram)).
+- **Rival IQ, rapport 2025** (25 février 2025, 150 marques par secteur, comptes de 25 000 à 1 million de fans Facebook) : engagement Instagram en baisse de 16 % ; les équipes sportives sont **deuxièmes** sur Instagram, portées par la vidéo ([rivaliq.com](https://www.rivaliq.com/blog/social-media-industry-benchmark-report/)). Le chiffre « 1,30 % pour les équipes sportives » n'apparaît que dans le résumé WebSearch, pas dans la page ouverte : **non vérifié**.
+- **Ce que ça veut dire pour Nathan** : un compte de 2 000 abonnés touche en moyenne ~130 personnes par publication. La portée organique vers ses propres abonnés est faible ; ce qui fait grandir, c'est (a) le partage et la sauvegarde (contenu utile, à garder), (b) la découverte par des non-abonnés (Reels), (c) les comptes des autres (collabs avec un pôle, un team, un athlète). Les sources mesurent des marques, pas des créateurs individuels : à prendre comme ordre de grandeur.
+
+### 2.3 Comment un photographe-vidéaste peut s'en servir (analyse, pas une source)
+
+L'avantage de Nathan est rare : il sait filmer, il est sur place au CREPS, et il a un produit à montrer. Le contenu sert surtout à **ouvrir des portes B2B** (pôles, teams, coachs), pas à vendre directement aux athlètes.
+
+Formats probables, du plus utile au moins utile pour l'acquisition B2B :
+1. **« Une séance de force pour VTT XCO en 20 min »** filmée proprement, avec l'écran de l'appli en incrustation (mannequin 3D, bips de tempo, RPE). Utile, sauvegardable, et montre le produit sans le vendre.
+2. **Démonstrations d'exercices courtes** (un exercice, une erreur fréquente, la correction) : format carrousel ou Reel de 15-30 s ; réutilisable comme bibliothèque.
+3. **Coulisses d'un pôle ou d'un team** (avec accord écrit, surtout pour les mineurs) : le pôle reçoit des images de qualité gratuitement, Nathan reçoit un contact et une crédibilité. **C'est l'échange le plus fort : « je vous filme votre stage, vos athlètes testent l'appli ».**
+4. **Tests filmés** (max estimé, mobilité mesurée au téléphone) : montre une fonction différenciante.
+5. **Format « question de coach »** : répondre en vidéo à une question d'entraîneur (comment caser la muscu en période de courses ?). C'est le format TrainerRoad / Running Addict appliqué à la force.
+
+Points de vigilance : droit à l'image (autorisation écrite, parentale pour les mineurs de pôle espoir), logos fédéraux, ne pas promettre des résultats. Mesurer : nombre de **messages entrants de coachs ou de structures**, pas les vues.
+
