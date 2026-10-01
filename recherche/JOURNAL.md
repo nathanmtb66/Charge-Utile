@@ -47,6 +47,9 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 
 ## Décisions
 
+- 01/10 — Les sous-agents de collecte écrivent un brut « presque final » ; j'écris la tête de chaque livrable (synthèse, verdicts, recommandations) et j'intègre le brut relu comme partie détaillée. Les corrections du contradicteur priment et sont listées en tête quand elles touchent la partie brute.
+- 01/10 — Comme des fichiers bruts sont en cours d'écriture par les sous-agents, `verifie.py` est lancé sur l'état indexé exact (`_outils/verifie_index.sh`) avant chaque commit.
+
 - Les sous-agents de collecte écrivent dans `recherche/_brut/` ; seules les sources qu'ils ont réellement ouvertes (WebFetch) passent dans `sources.json`.
 
 ## Problèmes rencontrés
@@ -59,3 +62,5 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - 30/09 20 h 55 — les 6 sous-agents de la 1re vague ont été coupés par la limite de session (HTTP 429) avant d'écrire. Relancés à 21 h 00 sur les crédits disponibles, avec consigne d'écrire leur fichier au fur et à mesure.
 
 ## Revues contradictoires
+
+- **01 concurrence + 04 douleurs** (01/10, sous-agent contradicteur, rapport `_brut/revue-01-04.md`) : 26 faits rouverts → 17 confirmés, 6 faux, 3 non étayés ; 90 citations de 04 revérifiées mot pour mot, aucune inventée. **Corrigé** : 4 affirmations d'exclusivité fausses (créneau intervals « vide », « aucun outil de coach n'ajuste », « bips de tempo nulle part », « mobilité au téléphone nulle part ») ; Garmin présenté en hypothèse (avis contraire de DC Rainmaker) ; WHOOP en bêta ; prix coach TrainingPeaks ; Nolio a un lecteur avec minuteurs ; TrainingPeaks n'exporte pas la force vers les montres ; 7 produits ajoutés (Watts & Weights, PacePartner, CoachingPortal, Peak Strength, StrengthTempo, Kiprun Pacer, Campus Coach) ; 04 : une citation reclassée (T2 → T8), une exclue (promo), datation signalée, total corrigé (68/188 et non 70/189). 05 aligné sur ces corrections.

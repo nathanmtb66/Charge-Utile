@@ -4,14 +4,28 @@
 
 ## En 30 secondes
 
-- **Le besoin le plus massif ne porte pas sur un outil.** Il porte sur la **cohabitation muscu ↔ endurance** : 70 citations sur 189 (37 %). Peur de la fatigue ou du poids (34), manque de temps (14), ne pas savoir quoi faire ni où placer la muscu (19). Charge Utile gagne sur ce terrain s'il **dose et place** la muscu, pas s'il la note seulement.
+- **Le besoin le plus massif ne porte pas sur un outil.** Il porte sur la **cohabitation muscu ↔ endurance** : 68 citations sur 188 comptées (36 %). Peur de la fatigue ou du poids (34), manque de temps (15), ne pas savoir quoi faire ni où placer la muscu (19). Charge Utile gagne sur ce terrain s'il **dose et place** la muscu, pas s'il la note seulement.
 - **Le besoin « outil » est prouvé, mais chez un public très data** (forums intervals.icu, TrainerRoad, TrainingPeaks) :
   - la muscu ne compte pas dans la charge d'endurance : 30 citations en thème principal, 33 mentions ;
   - la ressaisie entre applis : 15 / 21 ;
   - le bricolage multi-applis : 22 / 27.
-- **« Le coach ne sait pas si l'athlète a fait sa muscu » est à peine documenté** : 5 citations en thème principal, 6 mentions, dont 4 venues d'athlètes. C'est pourtant l'hypothèse de départ du produit côté coach. **Elle n'est pas démontrée en ligne** et doit être testée en entretien (voir `08-go-to-market.md`).
+- **« Le coach ne sait pas si l'athlète a fait sa muscu » est à peine documenté** : 4 citations en thème principal après relecture, 5 mentions, dont 3 venues d'athlètes. C'est pourtant l'hypothèse de départ du produit côté coach. **Elle n'est pas démontrée en ligne** et doit être testée en entretien (voir `08-go-to-market.md`).
 - **Les contre-preuves sont sérieuses** : 19 citations en thème principal, 24 mentions. Beaucoup se satisfont de Strong, Hevy, d'un tableur ou d'un carnet. Un simple carnet de muscu de plus n'a aucune chance.
-- **88 % des plaintes viennent d'athlètes** (166 sur 189). Les coachs d'endurance s'expriment peu en public, et surtout sur l'éparpillement des plateformes.
+- **88 % des citations viennent d'athlètes** (166 sur 189, contre-preuves comprises). Les coachs d'endurance s'expriment peu en public, et surtout sur l'éparpillement des plateformes.
+
+## Relecture contradictoire (1er octobre 2026)
+
+- **Fidélité** : 90 citations sur 189 revérifiées **mot pour mot** par un sous-agent contradicteur (intervals.icu et TrainerRoad lus en JSON Discourse, Slowtwitch, vo2cycling). **Aucune citation inventée ni déformée**, toutes ≤ 15 mots.
+- **Corrections appliquées** :
+  - « accountability… TR calendar » reclassée de T2 vers T8 : l'auteur parle de son propre engagement, pas d'un coach ;
+  - la citation « math homework » est sortie du comptage (message promotionnel).
+- **Datation** : environ **15 citations datent d'avant 2024** et visent des problèmes en partie réglés depuis :
+  - fil UserVoice TrainingPeaks de 2015-2018, avant le Strength Builder de juillet 2024 ;
+  - fil TrainerRoad de 2019 sur le TSS muscu, avant la saisie des séries en 2024 ;
+  - fil intervals.icu n° 685, marqué « résolu ».
+
+  Les thèmes T1, T4 et T6 sont donc **un peu surestimés** pour 2026. Le classement des thèmes ne change pas.
+- **Côté coach, nuance** : 2 coachs d'endurance demandent un **suivi centralisé** de la muscu de leurs athlètes (fils intervals.icu 113468 et 128015). Ce n'est toujours pas « je ne sais pas s'ils la font ». Le verdict « non démontré » tient.
 
 ## Méthode et biais
 
@@ -29,15 +43,15 @@
 | T4 | Trop compliqué / trop d'applis / outil inadapté | 22 | 27 | 9 | 18 | Prouvée, y compris chez les coachs (« 2-3 plateformes par client ») |
 | T10 | Je ne sais pas quoi faire / programmes génériques | 19 | 22 | 2 | 20 | Prouvée : demande de programmes pensés pour cyclistes et coureurs |
 | T12 | **Contre-preuves** : satisfaits (Strong, Hevy, tableur, papier) | 19 | 24 | 2 | 22 | Frein sérieux : la simplicité gratuite suffit à beaucoup |
-| T5 | Double saisie / ressaisie à la main | 15 | 21 | 1 | 20 | Prouvée : copier-coller, doublons, scripts perso |
-| T8 | Pas le temps / je saute la muscu | 14 | 15 | 0 | 15 | Prouvée : argument pour des séances courtes |
+| T5 | Double saisie / ressaisie à la main | 14 (+1 exclue) | 20 | 1 | 19 | Prouvée : copier-coller, doublons, scripts perso |
+| T8 | Pas le temps / je saute la muscu | 15 | 16 | 0 | 16 | Prouvée : argument pour des séances courtes |
 | T1 | La muscu n'est pas suivie / pas enregistrée | 13 | 15 | 4 | 11 | Moyenne |
 | T7 | Prix | 9 | 11 | 1 | 10 | Modérée : surtout « pas un 2e abonnement » |
-| T2 | Le coach ne sait pas si c'est fait | 5 | 6 | 2 | 4 | **Faible / non démontrée** |
+| T2 | Le coach ne sait pas si c'est fait | 4 | 5 | 2 | 3 | **Faible / non démontrée** |
 | T3 | Exos mal faits / technique | 3 | 5 | 2 | 3 | Faible en ligne (mais les coachs en parlent : voir T13) |
 | T13 | Besoin de vidéos / démonstrations | 3 | 4 | 2 | 2 | Faible mais concrète : liens vidéo collés dans les descriptions |
 | T11 | Pas de salle / voyage | 3 | 3 | 0 | 3 | Quasi absente (seulement le COVID) |
-| | **Total** | **189** | | **23** | **166** | |
+| | **Total** | **189 (188 comptées)** | | **23** | **166** | |
 
 *5 des 23 citations de coachs viennent de personnes hors endurance (BMX, préparateurs TrueCoach et TrainHeroic).*
 
@@ -89,10 +103,9 @@ Format : citation d'origine — traduction — qui — [thèmes] — lien. Les p
 - « Garmin removes the exercise names and workout structure from the API export. » *Garmin retire noms d'exercices et structure dans l'export API.* — athlète — [T1 / T5] — <https://forum.intervals.icu/t/strength-training-exercises-as-intervals-laps-on-the-timeline-hr-per-exercise-possible/128015>
 - « Unfortunately, Intervals isn't using that data… » *malheureusement intervals n'utilise pas ces données.* — pratiquant — [T1] — <https://forum.intervals.icu/t/strength-training-exercises-as-intervals-laps-on-the-timeline-hr-per-exercise-possible/128015>
 
-### T2 — Le coach ne sait pas si l'athlète a fait sa séance (5 citations en thème principal)
+### T2 — Le coach ne sait pas si l'athlète a fait sa séance (4 citations en thème principal après relecture)
 
 - « copy/paste the workout from Strong to a TrainingPeaks comment as text for my coach » *copier-coller la séance en commentaire TrainingPeaks pour que mon coach la voie.* — cycliste coaché — [T2 / T5] — <https://www.trainerroad.com/forum/t/app-for-strength-training/101664>
-- « I like the accountability of having sessions in the TR calendar » *j'aime l'engagement que donne la séance inscrite au calendrier.* — cycliste — [T2 / T12] — <https://www.trainerroad.com/forum/t/recording-strength-training-in-tr/113435>
 - « This also allows my coach to see. » *ça permet aussi à mon coach de voir.* — athlète coaché — [T2] — <https://peaksware.uservoice.com/forums/106657-trainingpeaks-customer-feedback/suggestions/45506320-strength-training-interface>
 - « We answer more questions about strength workouts, which is more time spent » *on répond à plus de questions sur la muscu : plus de temps perdu.* — coach (2015) — [T2 / T3] — <https://peaksware.uservoice.com/forums/106657-trainingpeaks-customer-feedback/suggestions/9594369-bring-back-functionality-of-strength-workouts>
 - « you might need a coach for motivation and accountability » *il te faut peut-être un coach pour la motivation et le suivi.* — triathlète — [T2] — <https://forum.slowtwitch.com/t/strength-training-coaching-types/1281977>
@@ -128,7 +141,7 @@ Format : citation d'origine — traduction — qui — [thèmes] — lien. Les p
 - « crashes approximately every 90 seconds » *[l'appli coach] plante environ toutes les 90 secondes.* — coach, TrainHeroic (hors endurance) — [T4] — <https://apps.apple.com/us/app/955074569?see-all=reviews&platform=iphone>
 - « it is a bit clumsy to use the program in my phone's browser » *un peu maladroit à utiliser dans le navigateur du téléphone.* — coach, TrueCoach (hors endurance, août 2022) — [T4] — <https://capterra.com/p/155784/truecoach/reviews/>
 
-### T5 — Double saisie / ressaisie à la main (15 citations en thème principal)
+### T5 — Double saisie / ressaisie à la main (14 citations comptées en thème principal, 1 exclue car promotionnelle)
 
 - « I would not bother entering details like reps or weights on the watch » *je ne m'embêterais pas à saisir reps et charges sur la montre.* — athlète — [T5] — <https://forum.intervals.icu/t/strength-training-feature-set/114622>
 - « so I have to manually edit the description again » *je dois ré-éditer la description à la main.* — athlète — [T5] — <https://forum.intervals.icu/t/strength-training-feature-set/114622>
@@ -139,7 +152,7 @@ Format : citation d'origine — traduction — qui — [thèmes] — lien. Les p
 - « The weight lifted has to be entered manually, however. » *le poids soulevé doit être saisi à la main.* — athlète — [T5] — <https://forum.intervals.icu/t/weight-lifting-improvements/56656>
 - « you still need to manually enter the total weight lifted and load (tss) » *il faut quand même saisir à la main tonnage et TSS.* — cycliste (Hevy → Strava → intervals) — [T5 / T6] — <https://www.trainerroad.com/forum/t/app-for-strength-training/101664>
 - « I just wished it sync to TR but it doesn't at the moment. » *j'aimerais que ça se synchronise avec TR, ce n'est pas le cas.* — cycliste — [T5 / T4] — <https://www.trainerroad.com/forum/t/app-for-strength-training/101664>
-- « scribbling sets and reps like I'm doing math homework in the squat rack » *griffonner séries et reps comme un devoir de maths sous la barre.* — cycliste (ton promotionnel possible) — [T5] — <https://www.trainerroad.com/forum/t/app-for-strength-training/101664>
+- « scribbling sets and reps like I'm doing math homework in the squat rack » *griffonner séries et reps comme un devoir de maths sous la barre.* — cycliste (ton promotionnel possible) — [T5] — <https://www.trainerroad.com/forum/t/app-for-strength-training/101664> — **exclue du comptage (message promotionnel pour PT Distinction)**
 - « I create a blank strength workout below the new strength workout and input TSS » *je crée une séance muscu vide en dessous pour y mettre le TSS.* — coach — [T5 / T6] — <https://evokeendurance.com/forums/topic/new-strength-builder-in-trainingpeaks-opinions/>
 - « an old Strength Builder session to record duration and TSS, and a new one » *une ancienne séance pour durée et TSS, une nouvelle pour séries et reps.* — athlète — [T5] — <https://evokeendurance.com/forums/topic/new-strength-builder-in-trainingpeaks-opinions/>
 - « If direct integration with intervals.icu was available that would be much easier for everyone. » (14 mots) *une intégration directe simplifierait la vie de tous.* — athlète — [T5] — <https://forum.intervals.icu/t/integration-with-hevy/114887>
@@ -191,8 +204,9 @@ Format : citation d'origine — traduction — qui — [thèmes] — lien. Les p
 - « It is super expensive » *c'est super cher.* — coureur (Runna) — [T7] — <https://justuseapp.com/en/app/1594204443/runna-running-training-plans/reviews>
 - « Its bit expensive compared to others in the same market. » *un peu cher par rapport au marché.* — préparateur physique, TrueCoach (hors endurance, déc. 2023) — [T7] — <https://capterra.com/p/155784/truecoach/reviews/>
 
-### T8 — Pas le temps / je saute la muscu (14 citations en thème principal)
+### T8 — Pas le temps / je saute la muscu (15 citations en thème principal après relecture)
 
+- « I like the accountability of having sessions in the TR calendar » *j'aime l'engagement que donne la séance inscrite au calendrier.* — cycliste — [T8 (reclassée : engagement personnel, pas le coach) ; était T2 / T12] — <https://www.trainerroad.com/forum/t/recording-strength-training-in-tr/113435>
 - « I am struggling to fit in strength training. » *J'ai du mal à caser la muscu.* — athlète vélo — [T8] — <https://forum.intervals.icu/t/tips-for-fitting-in-off-the-bike-strength-training/64203>
 - « If you are like me and hate to spend time in the gym » *Si comme moi tu détestes passer du temps en salle.* — athlète endurance, ~60 ans — [T8] — <https://forum.intervals.icu/t/tips-for-fitting-in-off-the-bike-strength-training/64203>
 - « super hard to schedule a strength workout 6h distant from my hard bike workouts » *très dur de placer la muscu à 6 h des séances vélo dures.* — cycliste (critérium) — [T8] — <https://www.trainerroad.com/forum/t/manageable-strength-training-routines/113784>

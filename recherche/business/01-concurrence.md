@@ -1,117 +1,147 @@
-# 01 — Concurrence : 67 produits passés au crible
+# 01 — Concurrence : 74 lignes, environ 66 produits passés au crible
 
-*Collecte du 30 septembre 2026, 3 sous-agents plus une vérification de ma part. Prix relevés sur les pages officielles le 30/09/2026, sauf mention contraire. Tableau complet : `concurrents.csv` (67 produits ; TrainingPeaks et TrainerRoad ont deux fiches, une par angle). Fiches détaillées plus bas. Sources brutes : `_brut/concurrence-*.md`.*
+*Collecte du 30 septembre 2026 (3 sous-agents), relue par un contradicteur le 1er octobre 2026 (26 faits rouverts : 17 confirmés, 6 faux, 3 non étayés, tous corrigés ci-dessous ; détail dans `_brut/revue-01-04.md`). Prix relevés sur les pages officielles le 30/09 ou le 01/10/2026, sauf mention contraire. Tableau complet : `concurrents.csv` (74 lignes ; Garmin, Strava, TrainingPeaks et TrainerRoad ont deux lignes, une par angle ; quelques lignes sont des contenus ou des services fermés). Fiches détaillées plus bas. Sources brutes : `_brut/concurrence-*.md`.*
 
-> Légende des verdicts : « non trouvé » veut dire « absent des pages ouvertes », pas « n'existe pas ».
+> Légende des verdicts : « non trouvé » veut dire « absent des pages ouvertes », pas « n'existe pas ». La relecture a montré que les affirmations d'exclusivité (« personne », « nulle part ») étaient notre point faible. Elles sont désormais formulées au plus juste.
 
 ## En 1 minute
 
 1. **Le fait majeur : le 22 juillet 2026, Garmin a racheté TrainingPeaks et TrainHeroic** [@garmin-rachat-trainingpeaks-trainheroic] [@dcrainmaker-garmin-tp].
-   - Ils réunissent le leader de la planification d'endurance (TrainingPeaks), un acteur majeur de la muscu coachée (TrainHeroic : environ 500 000 utilisateurs et 10 000 coachs selon DC Rainmaker) et le premier fabricant de montres pour cyclistes et coureurs.
-   - Aucune intégration n'est annoncée. Dans 12 à 24 mois, une offre « endurance + force » Garmin est probable.
-   - **C'est le concurrent structurel n° 1 du créneau de Charge Utile.** La fenêtre existe, mais elle se ferme.
-2. **Le créneau « muscu prescrite par un coach + exécution guidée + remontée dans la plateforme d'endurance » n'est occupé par personne**, et en particulier pas sur intervals.icu.
-   - **Aucun** des 18 logiciels de force étudiés n'envoie les séances vers intervals.icu. Un seul (BridgeAthletic) annonce TrainingPeaks.
-   - Les plateformes d'endurance ont, au mieux, un constructeur de séances de force avec vidéos : TrainingPeaks Strength [@tp-strength-coachs], Nolio [@nolio-strength-builder]. Aucun guidage d'exécution ni ajustement automatique n'a été trouvé.
-   - Sur intervals.icu, seuls existent des ponts bricolés : Hevy → intervals par webhook ou scripts [@intervals-hevy-integration].
-3. **Ce qui n'est plus un avantage** : écrire une séance par IA.
-   - Trainerize (dès 9 $/mois), Everfit, PT Distinction, My PT Hub, CoachRx et BridgeAthletic le font.
-   - WHOOP génère des séances de muscu à partir d'une phrase depuis février 2026 [@whoop-ia-muscu-2026].
-   - TrainingPeaks a un générateur texte → séance pour l'endurance.
+   - Garmin réunit ainsi le leader de la planification d'endurance, un acteur majeur de la muscu coachée (TrainHeroic : environ 500 000 utilisateurs et 10 000 coachs selon DC Rainmaker) et le premier fabricant de montres pour cyclistes et coureurs.
+   - **Aucune intégration n'est annoncée.** DC Rainmaker juge **quasi nulle** la probabilité d'une intégration native de TrainingPeaks dans Garmin Connect et attend plutôt des partenariats ; TrainingPeaks promet de rester multiplateforme.
+   - Notre hypothèse (pas un fait) : à terme, une offre « endurance + force » plus intégrée chez Garmin réduirait l'espace de Charge Utile. **À surveiller, sans en faire une certitude.**
+2. **Le créneau « muscu + intervals.icu » est en train d'être investi**, mais **personne ne combine coach humain + exécution guidée + remontée dans la plateforme d'endurance.**
+   - Parmi les 18 logiciels de force étudiés, aucun n'envoie vers intervals.icu ; un seul (BridgeAthletic) annonce TrainingPeaks.
+   - **Mais une dizaine de projets indépendants sont nés sur intervals.icu entre novembre 2025 et septembre 2026**, tous jeunes (bêta, prototype) et orientés athlète seul + IA :
+     - **Watts & Weights** : PWA de muscu qui écrit les séances faites dans intervals avec une charge de Foster ou TRIMP [@forum-watts-weights] ;
+     - **PacePartner** : coach IA en OAuth, synchro force en bêta, **fonctions coach en essai pour des coachs de 2 à 10 athlètes**, le profil exact de Nathan [@forum-pacepartner] ;
+     - Trevo, MyTrainPal, LOAD, ponts Hevy → intervals [@intervals-hevy-integration]. Voir `03-intervals-ecosysteme.md`.
+   - Les plateformes d'endurance ont un constructeur de séances de force avec vidéos (TrainingPeaks Strength [@tp-strength-coachs], qui **n'exporte pas vers les montres**) ; **Nolio a même un lecteur mobile avec vidéos et minuteurs** [@nolio-strength-builder]. Ni tempo sonore, ni ajustement automatique, ni animation n'ont été trouvés chez eux.
+3. **Ce qui n'est plus un avantage : écrire une séance par IA.**
+   - Trainerize (dès 9 $/mois), Everfit, PT Distinction, My PT Hub, CoachRx, BridgeAthletic et PacePartner le font.
+   - WHOOP le **teste en bêta** depuis février 2026 [@whoop-ia-muscu-2026] ; TrainingPeaks **aurait** un générateur texte → séance (page d'aide non lue directement).
    - N'importe quel coach peut brancher Claude ou ChatGPT sur intervals.icu avec un serveur MCP libre [@intervals-mcp-github].
-   - **La dictée vocale d'une séance n'a été vue nulle part**, mais c'est une interface, pas une barrière.
-4. **Ce qui est rare mais pas unique : l'ajustement automatique de la charge au RPE/RIR.**
-   - Volt, JuggernautAI, RP Hypertrophy, Alpha Progression et Enode le font, **pour un athlète seul**.
-   - **Aucun outil de coach** (TrainHeroic, TrueCoach, Everfit, Hevy Coach, TrainingPeaks, Nolio) ne le fait. Chez eux, le RPE n'est qu'une consigne ou une case.
-   - La combinaison « coach humain qui prescrit + ajustement série par série » n'a été trouvée **que chez Charge Utile**.
-5. **Ce qui n'a été vu nulle part ailleurs** :
-   - les **bips de tempo** (un avis sur l'appli 10W2S reproche justement l'absence de repères sonores) ;
-   - l'accès **sans compte athlète** ;
-   - la **mobilité mesurée au capteur du téléphone** sans matériel ;
-   - la **proprio en 4 niveaux auto-ajustés**.
+   - La dictée vocale d'une séance n'a été vue nulle part, mais c'est une interface, pas une barrière.
+4. **L'ajustement automatique de la charge existe, y compris dans des outils de coach.**
+   - Pour l'athlète seul : Volt, JuggernautAI, RP Hypertrophy, Alpha Progression, Enode, Peak Strength [@peakstrength-site].
+   - Dans des outils de coach : **CoachingPortal** (charge de la séance suivante calculée, le coach accepte ou modifie) [@coachingportal-autoperiodisation] ; **Volt** (équipes et lycées) ; BridgeAthletic (annoncé). L'ajustement s'y fait **d'une séance à l'autre**.
+   - Ce qui n'a pas été trouvé : **l'ajustement série par série au RPE/RIR dans un outil où un coach humain écrit la séance**. C'est le seul énoncé défendable.
+5. **Ce qui est rare (pas unique)** :
+   - **Le tempo guidé au son** : des métronomes de tempo existent (StrengthTempo [@strengthtempo-appstore]) et Ladder guide le rythme à l'oreille. Mais **aucun outil de coach ni outil d'endurance étudié** ne guide le tempo au son pendant une séance prescrite.
+   - **L'accès sans compte athlète** : aucun des concurrents étudiés.
+   - **La mobilité mesurée au téléphone** : elle existe (inclinomètres validés comme Clinometer [@clinometer-mjssm-2021], analyse caméra Yogger [@yogger-appstore]) ; ce qui est rare, c'est de **l'intégrer au suivi coach-athlète d'endurance**.
+   - **La proprio en 4 niveaux auto-ajustés** : pas vue ailleurs.
 6. **Là où Charge Utile perd, franchement** :
    - 190 exercices animés à la main, contre 200 à 3 000 vidéos réelles ailleurs ;
-   - pas d'application native, pas d'Apple Watch ni de synchro montre, pas de fréquence cardiaque pendant la séance ;
+   - pas d'application native, pas de synchro montre, pas de fréquence cardiaque pendant la séance ;
    - un seul développeur, aucune marque, pas de paiement, pas de messagerie ;
-   - il faut un coach qui dicte : aucun programme prêt à l'emploi pour un athlète seul ;
-   - hébergé sur GitHub Pages, **interdit pour un SaaS commercial** [@github-pages-limites].
-7. **Pour un coach qui veut « un outil qui marche demain »**, les alternatives les plus crédibles sont :
-   - **Nolio** (français, 19,90-39,90 €/mois pour le coach, gratuit pour l'athlète, constructeur de force avec vidéos et RPE/RIR/%1RM) [@nolio-prix] ;
-   - **Hevy Coach** (25 $/mois, clients gratuits) [@hevycoach-prix] ;
-   - **Everfit** (gratuit jusqu'à 5 clients) [@everfit-prix] ;
-   - **TrainingPeaks** avec son module Strength.
+   - il faut un coach qui dicte, sans programme prêt à l'emploi pour un athlète seul ;
+   - un hébergement sur GitHub Pages **interdit pour un SaaS commercial** [@github-pages-limites].
+7. **Pour un coach qui veut « un outil qui marche demain »** :
+   - **Nolio** : français, 19,90-39,90 €/mois pour le coach, gratuit pour l'athlète, constructeur de force avec vidéos, minuteurs, RPE/RIR/%1RM [@nolio-prix] ;
+   - **Hevy Coach** : dès 25 $/mois, 1 à 500 clients, Hevy Pro offert aux clients [@hevycoach-prix] ;
+   - **Everfit** : gratuit jusqu'à 5 clients, Pro à 19 $/mois en mensuel [@everfit-prix] ;
+   - **TrainingPeaks** Coach Edition : 21,99 $/mois + 99 $ d'ouverture, 4 athlètes Basic + 1 Premium inclus, puis 9 $ par athlète Premium [@trainingpeaks-prix-coach].
 
-   Pour un athlète VTT ou route seul : **RideStrong** (20 $/mois, appli web installable de force pour cyclistes) [@ridestrong-page] et **Dialed Health** (30 $/mois, via TrainingPeaks) [@dialed-prix].
+   Pour un athlète seul :
+   - VTT ou route : **RideStrong** (20 $/mois, PWA) [@ridestrong-page], **Dialed Health** (30 $/mois, via TrainingPeaks) [@dialed-prix] ;
+   - trail en France : **Kiprun Pacer** (Decathlon, gratuit, renforcement inclus dans les plans) [@kiprun-pacer-appstore] et **Campus Coach** (19 €/mois, plans trail avec renfo en vidéo) [@campus-coach-appstore]. **Kiprun Pacer est le vrai « gratuit » face auquel un traileur jugera Charge Utile.**
 
 ## Les concurrents par menace
 
 | Rang | Produit | Pourquoi c'est une menace | Ce qui le retient |
 |---|---|---|---|
-| 1 | **Garmin (TrainingPeaks + TrainHeroic + Connect+)** | Montre, plateforme d'endurance, muscu coachée et 1 600+ exercices animés sur la montre sous un même toit ; Garmin teste une « charge de force » (sondage, avril 2026) | Intégration pas annoncée ; TrainHeroic reste tourné vers le bodybuilding et les équipes US ; pas d'intervals.icu |
-| 2 | **Nolio** | Français, grenoblois, gratuit pour l'athlète, constructeur de force vidéo + RPE/RIR/%1RM, déjà chez les coachs d'endurance français | Pas de guidage d'exécution, pas d'ajustement auto trouvé, pas de lien intervals |
-| 3 | **TrainingPeaks Strength** | 1 000+ vidéos, standard des coachs d'endurance, athlète gratuit | TSS muscu manuel, séance non guidée, plaintes de coachs (Evoke 2024) [@evoke-tp-strength-builder] |
-| 4 | **Strava + Runna** | Audience énorme, journal de muscu refait en mai 2026 avec 14 partenaires [@strava-force-2026], muscu auto dans Runna [@runna-aide-force] | Grand public, programmes génériques, pas de coach |
-| 5 | **LLM + MCP intervals.icu** | Gratuit, n'importe quel coach technophile peut « dicter » à Claude ou ChatGPT et écrire dans intervals | Pas d'exécution guidée, rien côté athlète |
-| 6 | **Hevy / Hevy Coach** | Carnet de muscu préféré des endurants data ; ponts vers intervals bricolés par la communauté | Refus Garmin, pas d'endurance, pas de guidage |
-| 7 | **RideStrong, Dialed Health, 10W2S, StrengthApp** | Déjà « la force pour cyclistes / coureurs », vendue à l'athlète 7-30 $/mois | Programmes figés, pas de coach, pas de lien de charge |
-| 8 | **Volt** | Seul acteur de la force à proposer des programmes d'endurance, avec ajustement auto | Générique, pas de VTT, pas de coach, pas d'endurance réelle |
+| 1 | **Nolio** | Français, gratuit pour l'athlète, constructeur de force avec vidéos, minuteurs, RPE/RIR/%1RM et lecteur mobile, déjà chez plus de 4 500 coachs revendiqués | Pas de tempo sonore, pas d'ajustement automatique trouvé, pas de lien intervals |
+| 2 | **Garmin (TrainingPeaks + TrainHeroic + Connect+)** | Montre, plateforme d'endurance, muscu coachée et 1 600+ exercices animés sur la montre sous un même toit ; « charge de force » testée par sondage en avril 2026 | Aucune intégration annoncée, DC Rainmaker sceptique ; TrainingPeaks Strength n'exporte pas vers les montres |
+| 3 | **PacePartner / Watts & Weights** (et la vague d'applis sur intervals) | Même tuyau (intervals.icu), même public, IA ; PacePartner teste des fonctions pour **petits coachs** | Jeunes, en bêta ; orientés athlète seul ; pas d'exécution guidée |
+| 4 | **TrainingPeaks Strength** | 1 000+ vidéos, standard des coachs d'endurance | TSS muscu manuel, pas d'export vers les montres, plaintes de coachs (Evoke 2024) [@evoke-tp-strength-builder] |
+| 5 | **Strava + Runna** | Audience énorme ; journal de force refait le 21/05/2026 (séries, reps, poids, cartes musculaires, 14 partenaires) [@strava-force-2026] ; muscu dans Runna [@runna-aide-force] | Pas de prescription ni de séance guidée côté Strava ; Runna générique, sans RPE |
+| 6 | **Kiprun Pacer / Campus Coach** (trail, France) | Gratuit (Decathlon) ou 19 €/mois ; renfo intégré aux plans trail ; très bien notés | Renfo générique, pas de coach, pas de guidage fin |
+| 7 | **LLM + MCP intervals.icu** | Gratuit ; un coach technophile peut « dicter » à Claude ou ChatGPT et écrire dans intervals | Pas d'exécution guidée, rien côté athlète |
+| 8 | **Hevy / Hevy Coach** | Carnet préféré des endurants « data » ; ponts communautaires vers intervals | Refus d'accès de Garmin, pas d'endurance, pas de guidage |
+| 9 | **RideStrong, Dialed Health, 10W2S, StrengthApp, Peak Strength** | « La force pour cyclistes et coureurs » vendue à l'athlète 7-39 $/mois | Programmes figés ou génériques, pas de coach, pas de lien de charge |
+| 10 | **Volt, CoachingPortal** | Ajustement automatique d'une séance à l'autre, pour des structures ou des coachs | Pas d'endurance réelle (Volt : programmes génériques), pas de VTT |
 
 ## Matrice fonctions × produits
 
-Légende : ● oui (constaté) · ◐ partiel / annoncé / indirect · ○ non trouvé · ? non vérifié. « Ajust. auto » = la charge ou le niveau de la série suivante change automatiquement selon le ressenti.
+Légende : ● oui (constaté) · ◐ partiel, annoncé, en bêta ou indirect · ○ non trouvé · ? non vérifié. « Ajust. auto série » = la charge de la série suivante change automatiquement selon le ressenti, **dans la même séance**.
 
-| Produit | Coach prescrit la muscu | Séance guidée (vidéo/anim.) | Bips de tempo | Ajust. auto série par série | IA crée la séance | Sans compte athlète | Hors-ligne | Proprio à niveaux | Tests au capteur du téléphone | Vers intervals.icu | Vers TrainingPeaks | Muscu dans la charge d'endurance | Pensé endurance | Prix d'entrée 2026 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Charge Utile** | ● (dictée) | ● anim. 3D | ● | ● RPE/RIR | ● (Claude) | ● | ● | ● | ● | ● relais | ○ | ◐ (RPE × durée) | ● VTT/route/trail | 0 (non vendu) |
-| TrainingPeaks (+ Strength) | ● | ◐ vidéos, saisie | ○ | ○ (consigne) | ◐ endurance seulement | ○ | ? | ○ | ○ | ○ | ● | ◐ TSS manuel | ● | Premium 19,95 $/mois ; athlète Basic gratuit |
-| Nolio | ● | ◐ vidéos | ○ | ○ (consigne) | ? | ○ | ? | ○ | ○ | ○ | ○ | ? | ● | coach 19,90-39,90 €/mois |
-| intervals.icu | ◐ (texte) | ○ | ○ | ○ | ○ (via MCP tiers) | ○ | ○ | ○ | ○ | — | ○ | ◐ RPE/durée, kg soulevés | ● | gratuit ; soutien 4 $/mois |
-| TrainHeroic | ● | ● vidéos | ○ | ○ (RPE en note) | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 17,99 $/mois (5 ath.) |
-| TrueCoach | ● | ● vidéos | ○ | ○ | ○ | ○ | ● | ○ | ○ | ○ | ○ | ○ | ○ | 26,34 $/mois |
-| Everfit | ● | ● vidéos | ○ | ○ | ● | ○ | ● | ○ | ○ | ○ | ○ | ○ | ○ | 0 $ (≤ 5 clients) |
-| ABC Trainerize | ● | ● vidéos | ○ | ○ | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 9 $/mois (2 clients) |
-| BridgeAthletic | ● | ● vidéos | ○ | ◐ annoncé | ● bêta | ○ | ? | ○ | ○ | ○ | ◐ annoncé | ○ | ○ | 49 $/mois |
-| Hevy Coach | ● | ● vidéos | ○ | ○ (RPE saisi) | ○ | ○ | ● | ○ | ○ | ◐ ponts tiers | ○ | ○ | ○ | 25 $/mois, clients gratuits |
-| Volt Athletics | ◐ équipes | ● vidéos | ○ | ● | ◐ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ◐ générique | 19,99 $/mois |
-| JuggernautAI | ○ (IA) | ● | ○ | ● RPE/RIR | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 34,99 $/mois |
-| Alpha Progression | ○ (IA) | ● 795 vidéos | ○ | ● | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 12,99 $/mois |
-| Ladder | ○ (programmes) | ● audio + vidéo | ◐ rythme audio | ○ | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 29,99 $/mois |
-| Strong | ○ (carnet) | ◐ | ○ | ○ | ○ | ? | ● | ○ | ○ | ○ | ○ | ○ | ○ | 4,99 $/mois |
-| Runna | ○ (auto) | ● anim. | ○ | ○ | ● | ○ | ? | ○ | ○ | ○ | ○ | ? | ● course | 19,99 $/mois |
-| RideStrong | ○ (programmes) | ● vidéos | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ● vélo | 20 $/mois |
-| Dialed Health | ○ (programmes) | ● vidéos (via TP) | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ● | ◐ via TP | ● vélo | 30 $/mois |
-| TrainerRoad | ○ | ○ | ○ | ○ | ● (vélo) | ○ | ● | ○ | ○ | ○ | ○ | ● (séries saisies → IA vélo) | ● vélo | 21,99 $/mois |
-| Garmin (Connect / Connect+) | ◐ | ● anim. sur la montre, reps auto | ○ | ○ | ● (Connect+) | ○ | ● | ○ | ○ | ◐ activité | ◐ | ◐ en test | ● | Connect+ 6,99-8,99 /mois |
-| WHOOP | ○ (IA) | ◐ | ○ | ○ | ● | ○ | ? | ○ | ○ | ○ | ○ | ● (strain) | ◐ | 199 $/an |
-| Strava | ○ | ○ (journal) | ○ | ○ | ◐ analyse | ○ | ? | ○ | ○ | ◐ | ◐ | ? | ● | 59,99 €/an |
-| ThePerfClub (FR) | ◐ | ◐ | ○ | ◐ séance du jour (bien-être) | ? | ○ | ? | ○ | ○ | ○ | ○ | ● ACWR | ◐ | 78 €/an |
-| Enode | ◐ | ◐ | ○ | ● (VBT/RIR) | ◐ | ○ | ? | ○ | ◐ capteur 329 € | ○ | ○ | ○ | ○ | capteur 329 € |
-| MyCoach Pro (FR) | ● (clubs) | ? | ○ | ○ | ? | ○ | ? | ○ | ○ | ○ | ○ | ◐ RPE club | ○ | 20-50 € HT/mois/staff |
-| LLM + MCP intervals | ● (texte) | ○ | ○ | ○ | ● | — | ○ | ○ | ○ | ● | ◐ non officiel | ○ | ◐ | abonnement LLM |
+| Produit | Coach prescrit la muscu | Séance guidée (vidéo/anim.) | Tempo guidé au son | Ajust. auto série par série | Ajust. auto séance à séance | IA crée la séance | Sans compte athlète | Hors-ligne | Proprio à niveaux | Mobilité au téléphone | Vers intervals.icu | Vers TrainingPeaks | Muscu dans la charge d'endurance | Pensé endurance | Prix d'entrée 2026 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Charge Utile** | ● (dictée) | ● anim. 3D | ● | ● RPE/RIR | ◐ (charges en % du max) | ● (Claude) | ● | ● | ● | ● capteur | ● relais | ○ | ◐ (RPE × durée) | ● VTT/route/trail | 0 (non vendu) |
+| TrainingPeaks (+ Strength) | ● | ◐ vidéos, saisie | ○ | ○ | ○ | ◐ endurance (non vérifié) | ○ | ? | ○ | ○ | ○ | ● | ◐ TSS manuel | ● | coach 21,99 $/mois + 99 $ ; athlète Premium 19,95 $/mois |
+| Nolio | ● | ● vidéos + minuteurs | ○ | ○ | ○ | ? | ○ | ? | ○ | ○ | ○ | ○ | ? | ● | coach 19,90-39,90 €/mois |
+| intervals.icu | ◐ (texte) | ○ | ○ | ○ | ○ | ○ (via MCP tiers) | ○ | ○ | ○ | ○ | — | ○ | ◐ RPE/durée, « kg soulevés » | ● | gratuit ; soutien 4 $/mois |
+| Watts & Weights | ○ (IA) | ? | ? | ? | ◐ | ● | ? | ● PWA | ○ | ○ | ● | ○ | ● Foster/TRIMP | ● | prototype |
+| PacePartner | ◐ coachs en essai | ? | ○ | ? | ? | ● | ○ | ? | ○ | ○ | ● OAuth | ○ | ◐ | ● | non vérifié |
+| TrainHeroic | ● | ● vidéos | ○ | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 17,99 $/mois (5 ath.) |
+| TrueCoach | ● | ● vidéos | ○ | ○ | ○ | ○ | ○ | ● | ○ | ○ | ○ | ○ | ○ | ○ | 26,34 $/mois |
+| Everfit | ● | ● vidéos | ○ | ○ | ○ | ● | ○ | ● | ○ | ○ | ○ | ○ | ○ | ○ | 0 $ (≤ 5 clients) |
+| ABC Trainerize | ● | ● vidéos | ○ | ○ | ○ | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 9 $/mois (2 clients) |
+| CoachingPortal | ● | ? | ○ | ○ | ● | ? | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | gratuit ≤ 3 clients |
+| BridgeAthletic | ● | ● vidéos | ○ | ○ | ◐ annoncé | ● bêta | ○ | ? | ○ | ○ | ○ | ◐ annoncé | ○ | ○ | 49 $/mois |
+| Hevy Coach | ● | ● vidéos | ○ | ○ | ○ | ○ | ○ | ● | ○ | ○ | ◐ ponts tiers | ○ | ○ | ○ | dès 25 $/mois |
+| Volt Athletics | ◐ équipes | ● vidéos | ○ | ? | ● | ◐ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ◐ générique | 19,99 $/mois ; 900 $/an équipe |
+| JuggernautAI | ○ (IA) | ● | ○ | ? | ● RPE/RIR | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 34,99 $/mois |
+| Alpha Progression | ○ (IA) | ● 795 vidéos | ○ | ● | ● | ● | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 12,99 $/mois |
+| Peak Strength | ○ (programmes) | ● | ? | ● « temps réel » | ● | ? | ○ | ? | ○ | ○ | ○ | ○ | ○ | ◐ (sprint vélo) | ~39 $/mois (selon un utilisateur) |
+| Ladder | ○ (programmes) | ● audio + vidéo | ◐ rythme à l'oreille | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ○ | 29,99 $/mois |
+| StrengthTempo | ○ | ○ | ● (métronome) | ○ | ○ | ○ | ? | ● | ○ | ○ | ○ | ○ | ○ | ○ | App Store |
+| Strong / Hevy | ○ (carnet) | ◐ | ○ | ○ | ○ | ○ | ○ | ● | ○ | ○ | ◐ ponts | ○ | ○ | ○ | 0-4,99 $/mois |
+| Runna | ○ (auto) | ● anim. | ○ | ○ | ○ | ● | ○ | ? | ○ | ○ | ○ | ○ | ? | ● course | 19,99 $/mois |
+| Kiprun Pacer | ○ (plans) | ? | ○ | ○ | ○ | ◐ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ● course/trail | gratuit |
+| Campus Coach | ○ (plans) | ● vidéo (selon un avis) | ○ | ○ | ○ | ? | ○ | ? | ○ | ○ | ○ | ○ | ○ | ● course/trail | 19 €/mois ; 149 €/an |
+| RideStrong | ○ (programmes) | ● vidéos | ○ | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ○ | ○ | ● vélo | 20 $/mois |
+| Dialed Health | ○ (programmes) | ● vidéos (via TP) | ○ | ○ | ○ | ○ | ○ | ? | ○ | ○ | ○ | ● | ◐ via TP | ● vélo | 30 $/mois |
+| TrainerRoad | ○ | ○ | ○ | ○ | ○ | ● (vélo) | ○ | ● | ○ | ○ | ○ | ○ | ● (séries saisies → IA vélo) | ● vélo | 21,99 $/mois |
+| Garmin (Connect / Connect+) | ◐ | ● anim. sur la montre, reps auto | ○ | ○ | ○ | ● (Connect+) | ○ | ● | ○ | ○ | ◐ activité | ◐ | ◐ en test | ● | Connect+ 6,99 $ (US) / 8,99 € (FR), prix 2025 |
+| WHOOP | ○ (IA) | ◐ | ○ | ○ | ○ | ◐ bêta | ○ | ? | ○ | ○ | ○ | ○ | ● (strain) | ◐ | 199 $/an |
+| Strava | ○ | ○ (journal) | ○ | ○ | ○ | ◐ analyse | ○ | ? | ○ | ○ | ◐ | ◐ | ? | ● | 59,99 €/an |
+| Yogger | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ? | ○ | ● caméra | ○ | ○ | ○ | ○ | 9,99-74,99 $/mois |
+| ThePerfClub (FR) | ◐ | ◐ | ○ | ○ | ◐ séance du jour (bien-être) | ? | ○ | ? | ○ | ○ | ○ | ○ | ● ACWR | ◐ | 78 €/an |
+| Enode | ◐ | ◐ | ○ | ● (VBT/RIR) | ● | ◐ | ○ | ? | ○ | ◐ capteur 329 € | ○ | ○ | ○ | ○ | capteur 329 € |
+| LLM + MCP intervals | ● (texte) | ○ | ○ | ○ | ○ | ● | — | ○ | ○ | ○ | ● | ◐ non officiel | ○ | ◐ | abonnement LLM |
 
-**Lecture** : la ligne Charge Utile est la seule pleine sur les colonnes « guidage », « tempo », « ajustement auto côté coach », « proprio », « capteur » et « intervals.icu ». Elle est vide ou faible là où l'argent se gagne aujourd'hui : applis natives, intégrations montres et TrainingPeaks, bibliothèque vidéo, paiement. **L'avantage est réel mais étroit**, et chaque cellule verte est copiable par un acteur doté d'une équipe (voir `05-positionnement.md`).
+**Lecture** :
+- La ligne Charge Utile est la seule à réunir à la fois les colonnes « coach prescrit », « séance guidée », « tempo au son », « ajustement série par série » et « vers intervals.icu ». **Chaque colonne prise seule existe ailleurs** : c'est la **combinaison** qui est rare, pas une fonction.
+- Elle est vide ou faible là où l'argent se gagne aujourd'hui : applis natives, montres, TrainingPeaks, bibliothèque vidéo, paiement.
+- **L'avantage est réel mais étroit, et copiable** (voir `05-positionnement.md`).
 
 ## Ce que chaque groupe fait mieux que Charge Utile, en une phrase
 
-- **Logiciels de coaching force** (TrainHeroic, TrueCoach, Everfit, Trainerize…) : produits mûrs, applis natives, paiement, messagerie, milliers de vidéos réelles, support.
-- **Applis grand public** (Hevy, Strong, Fitbod, Ladder…) : simplicité, millions d'utilisateurs, gratuité ou prix bas, historique riche.
+- **Logiciels de coaching force** (TrainHeroic, TrueCoach, Everfit, Trainerize, CoachingPortal…) : produits mûrs, applis natives, paiement, messagerie, milliers de vidéos réelles, support.
+- **Applis grand public** (Hevy, Strong, Fitbod, Ladder, Kiprun Pacer…) : simplicité, millions d'utilisateurs, gratuité ou prix bas, historique riche.
 - **Plateformes d'endurance** (TrainingPeaks, Nolio, TrainerRoad…) : ce sont elles que les coachs utilisent déjà. Charge Utile doit s'y greffer, pas les remplacer.
+- **Applis nées sur intervals.icu** (Watts & Weights, PacePartner…) : elles avancent vite, avec l'IA, sur le même tuyau.
 - **Mesure** (Enode, Output, VERT, Metric) : une vraie mesure physique (vitesse de barre, saut). Charge Utile estime à partir du ressenti.
-- **Haut de gamme** (Catapult, Kinexon, Smartabase, Hudl) : conformité, données médicales, contrats fédéraux. Athlète 360 (INSEP), qui tourne sur Smartabase, est peut-être déjà utilisé par les athlètes listés du CREPS [@athlete360-appstore].
+- **Haut de gamme** (Catapult, Kinexon, Smartabase, Hudl) : conformité, données médicales, contrats fédéraux. Athlète 360 (INSEP, sur Smartabase) est peut-être déjà utilisé par les athlètes listés du CREPS [@athlete360-appstore].
 - **IA de coaching** : plans complets automatiques, sans coach.
 
-## Ce que Charge Utile fait qu'aucun (ou presque) ne fait
+## Ce que Charge Utile réunit, et que nous n'avons trouvé réuni nulle part
 
-1. Séance de muscu **dictée par un coach humain** puis **exécutée guidée**, avec mannequin 3D, bips de tempo et minuteurs, **hors-ligne**, **sans compte**.
-2. **Ajustement série par série** au RPE/RIR **dans un outil de coach**.
-3. **Proprio en 4 niveaux** qui montent et descendent selon le ressenti ; pliométrie avec question adaptée.
-4. **Tests de mobilité au capteur du téléphone**, sans matériel à 200-2 300 €.
-5. **Remontée automatique dans intervals.icu**, et calendrier des séances posé dans intervals.
-6. **Pensé pour VTT XCO, route et trail**, pas pour le bodybuilding.
+1. Une séance de muscu **dictée par un coach humain** puis **exécutée guidée** (mannequin 3D, **tempo au son**, minuteurs), **hors-ligne** et **sans compte**.
+2. L'**ajustement série par série** au RPE/RIR **dans un outil où le coach écrit la séance**. D'autres ajustent d'une séance à l'autre (CoachingPortal, Volt) ou pour un athlète seul (Alpha Progression, Enode, Peak Strength).
+3. La **proprio en 4 niveaux** qui montent et descendent selon le ressenti ; la pliométrie avec une question adaptée.
+4. Des **tests de mobilité au capteur du téléphone intégrés au suivi coach-athlète**. La mesure seule existe ailleurs (Clinometer, Yogger).
+5. La **remontée automatique dans intervals.icu et le calendrier posé dans intervals**, **avec** l'exécution guidée. La remontée seule est en train de se banaliser (Watts & Weights, PacePartner, ponts Hevy).
+6. Un outil **pensé pour le VTT XCO, la route et le trail**, pas pour le bodybuilding.
+
+## Corrections apportées aux fiches détaillées (après relecture contradictoire)
+
+Les fiches ci-dessous sont la collecte brute. **Ces corrections priment sur elles** :
+- **TrainingPeaks** : les séances de force **ne partent pas vers la montre** (« cannot be exported to 3rd party apps and devices », page officielle) ; prix coach réel : 21,99 $/mois + 99 $ d'ouverture ; les offres à 149-359 $/mois sont des **services de coaching** achetés par l'athlète, pas le logiciel.
+- **Nolio** : lecteur mobile avec vidéos et **minuteurs** de séries et de récupération (pas de son, pas d'ajustement automatique).
+- **Hevy Coach** : offre unique dès 25 $/mois, 1 à 500 clients. **Everfit** : Pro 16 $/mois en annuel, 19 $/mois en mensuel.
+- **10W2S** : l'avis cité reproche l'absence de **minuteur sonore** (fin de travail, début de repos), pas de bip de tempo.
+- **Strava** : depuis le 21/05/2026, journal de force avec séries, reps, poids et cartes musculaires. « Pas de musculation » est faux ; « pas de prescription ni de séance guidée » est juste. Strava + Runna : 139,99 €/an (page d'abonnement 2026).
+- **Garmin** : la fiche Connect+ (« pas de programmation de musculation ») est à lire avec la fiche Garmin (1 600+ exercices, Fitness Coach avec séances de force). Prix Connect+ : 6,99 $ (US) / 8,99 € (FR), chiffres 2025 non revérifiés en 2026.
+- **WHOOP** : génération de séances de force par IA **en bêta**, déploiement progressif (blog non officiel).
+- **intervals.icu** : un champ « Weight Lifted » existe depuis le 22/05/2026 [@forum-intervals-weight-lifted-field] ; les séries Garmin arrivent dans le fichier mais ne sont pas exploitées ; les séances de force prévues envoyées vers Garmin perdent exercices, reps et charges.
+- **Volt** : ce n'est pas « le seul acteur de la force à proposer des programmes d'endurance » (voir aussi Runna, RideStrong, Dialed Health, StrengthApp, 10W2S). Volt est le seul à **combiner** programmes d'endurance et ajustement automatique.
 
 ## Sources
 
-Fiches ci-dessous : chaque affirmation renvoie à une page ouverte (lien direct dans le texte). Entrées principales de `sources.json` : [@trainheroic-prix] [@hevycoach-prix] [@everfit-prix] [@nolio-prix] [@tp-strength-coachs] [@tp-communique-2024] [@runna-prix] [@strava-force-2026] [@ridestrong-page] [@dialed-prix] [@trainerroad-working-sets] [@garmin-connectplus-2025] [@whoop-ia-muscu-2026] [@lecoach-vs-trainingpeaks] [@intervals-mcp-github] [@theperfclub-accueil] [@mycoachpro-site] [@catapult-fy26] [@enode-prix] [@alphaprogression-site] [@volt-individuels] [@juggernautai-site] [@ladder-prix] [@intervals-prix].
+Fiches ci-dessous : chaque affirmation renvoie à une page ouverte (lien direct dans le texte). Entrées principales de `sources.json` : [@trainheroic-prix] [@hevycoach-prix] [@everfit-prix] [@nolio-prix] [@tp-strength-coachs] [@tp-communique-2024] [@trainingpeaks-prix-coach] [@runna-prix] [@strava-force-2026] [@ridestrong-page] [@dialed-prix] [@trainerroad-working-sets] [@garmin-connectplus-2025] [@whoop-ia-muscu-2026] [@lecoach-vs-trainingpeaks] [@intervals-mcp-github] [@theperfclub-accueil] [@mycoachpro-site] [@catapult-fy26] [@enode-prix] [@alphaprogression-site] [@volt-individuels] [@juggernautai-site] [@ladder-prix] [@intervals-prix] [@coachingportal-autoperiodisation] [@strengthtempo-appstore] [@peakstrength-site] [@clinometer-mjssm-2021] [@yogger-appstore] [@kiprun-pacer-appstore] [@campus-coach-appstore] [@forum-watts-weights] [@forum-pacepartner].
 
 ---
 
