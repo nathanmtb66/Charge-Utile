@@ -22,7 +22,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - [x] ≥ 50 règles codables. *(70, dont 24 de niveau D assumé)*
 
 **Produit**
-- [ ] vision, fonctionnalités (avec liste « à ne pas faire »), MVP vendable, expériences, idées folles.
+- [x] vision, fonctionnalités (avec liste « à ne pas faire »), MVP vendable, expériences, idées folles. *(5 fichiers dans `produit/`)*
 
 **Qualité**
 - [ ] `python3 recherche/verifie.py` passe (0 problème).
@@ -49,7 +49,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 | 3 — Exercices | 01/10 13 h 30 | |
 | 4 — Séances modèles | | |
 | 5 — Règles | 01/10 13 h 45 | 01/10 14 h 30 |
-| 6 — Produit | | |
+| 6 — Produit | 01/10 14 h 45 | 01/10 19 h 00 |
 
 ## Décisions
 
