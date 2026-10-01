@@ -12,7 +12,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - [x] Section « Ce qui est faux dans nos hypothèses » (09). *(14 points)*
 
 **Science**
-- [x] 9 domaines A à I écrits, chacun avec ≥ 30 sources vérifiées dont ≥ 10 méta-analyses/consensus, tableau d'affirmations, chiffres clés, mythes, règles, « ce que l'appli devrait faire ». *(sources / dont méta-analyses, revues systématiques, consensus : A 74/33 · B 63/37 · C 66/29 · D 63/27 · E 87/42 · F 76/33 · G 62/34 · H 72/31 · I 100/36 ; quotas contrôlés par `_outils/publie_science.py`)*
+- [x] 9 domaines A à I écrits, chacun avec ≥ 30 sources vérifiées dont ≥ 10 méta-analyses/consensus, tableau d'affirmations, chiffres clés, mythes, règles, « ce que l'appli devrait faire ». *(sources / dont méta-analyses, revues systématiques, consensus : A 74/33 · B 63/37 · C 66/29 · D 63/27 · E 87/42 · F 76/33 · G 62/34 · H 72/31 · I 100/30 ; quotas contrôlés par `_outils/publie_science.py`)*
 - [x] 8 protocoles de respiration codables (C) ; score de forme (D) ; tableau nutrition de fin de séance (E). *(tableau + JSON dans chaque fichier)*
 
 **Exercices, séances, règles**
