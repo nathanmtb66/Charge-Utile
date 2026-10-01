@@ -1,0 +1,2189 @@
+[
+ {
+  "id": "respiration-coherence-5-5",
+  "nom": "Cohérence cardiaque 5-5 (6 respirations par minute, 5 min)",
+  "famille": "cardio",
+  "anim": "tm_seatbreath",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis ou allongé, une main sur le ventre",
+   "Inspire 5 s par le nez, le ventre gonfle",
+   "Souffle 5 s, sans pause, 30 fois"
+  ],
+  "erreurs": [
+   "Forcer pour remplir les poumons à fond",
+   "Bloquer l'air entre l'inspiration et l'expiration"
+  ],
+  "pourquoi": "5 minutes à ce rythme te calment. Après une séance dure, c'est un meilleur choix que la respiration carrée.",
+  "respiration": "Inspire 5 s, souffle 5 s, sans pause : 30 cycles, 5 minutes.",
+  "securite": "Reste assis ou allongé. Si la tête tourne, arrête et respire normalement.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 300,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5 min : 30 cycles 5-0-5-0 (inspire / pause / souffle / pause), après une séance dure ou le soir, pour te calmer",
+  "preuve": "C · [@laborde2022] [@kasap2025] [@bernardi2001]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "respiration-assis"
+ },
+ {
+  "id": "respiration-soupir-cyclique",
+  "nom": "Soupir cyclique (double inspiration, longue expiration, 5 min)",
+  "famille": "cardio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Assis sur une chaise, dos droit, pieds à plat, une main sur le ventre, l'autre sur la cuisse, épaules basses. s=0 : poumons vides, ventre rentré. Rythme : 2 s d'inspiration par le nez (le ventre puis les côtes se gonflent), puis 1 s de petite recharge par le nez (la cage monte encore un peu) = s=1. Puis 6 s d'expiration lente par la bouche, lèvres pincées, retour à s=0. Cycle de 9 s, 33 fois. Un cercle qui gonfle en deux temps puis se vide lentement.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre, cage thoracique",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Inspire par le nez, puis une 2e petite gorgée",
+   "Souffle très lentement par la bouche, 6 s",
+   "Assis, épaules basses, 5 minutes"
+  ],
+  "erreurs": [
+   "Souffler d'un coup",
+   "Chercher à faire la 2e inspiration aussi longue que la 1re"
+  ],
+  "pourquoi": "5 minutes par jour font baisser le stress : utile en période d'examens ou la veille d'une course.",
+  "respiration": "Inspire 2 s par le nez + 1 s de recharge, souffle 6 s par la bouche : 33 cycles.",
+  "securite": "Si la tête tourne, reviens à une respiration normale. Tu peux tout faire par le nez si tu préfères.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 300,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5 min par jour : 33 cycles 3-0-6-0 (inspiration en deux temps 2 s + 1 s), période de stress ou veille de course",
+  "preuve": "C · [@balban2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "respiration-expiration-longue-4-8",
+  "nom": "Expiration longue 4-8 (retour au calme rapide, 3 min)",
+  "famille": "cardio",
+  "anim": "tm_breath",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Inspire 4 s par le nez, le ventre gonfle",
+   "Souffle 8 s, comme dans une paille",
+   "15 cycles, 3 minutes"
+  ],
+  "erreurs": [
+   "Prendre une énorme inspiration",
+   "Pousser l'air jusqu'à forcer en fin d'expiration"
+  ],
+  "pourquoi": "Souffler deux fois plus longtemps que tu n'inspires calme vite : après un départ raté, entre deux manches ou avant de dormir.",
+  "respiration": "Inspire 4 s, souffle 8 s, sans pause : 15 cycles.",
+  "securite": "Si la longue expiration te gêne, raccourcis-la à 6 s. Assis ou allongé.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "alternatives": [
+   "respiration-allonge",
+   "respiration-assis"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 180,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3 min : 15 cycles 4-0-8-0, entre deux manches, après un départ raté ou avant de dormir",
+  "preuve": "C · [@zaccaro2018] [@balban2023]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "respiration-carree-4-4-4-4",
+  "nom": "Respiration carrée 4-4-4-4 (concentration avant un départ, 5 min)",
+  "famille": "cardio",
+  "anim": "tm_seatbreath",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Inspire 4 s, garde l'air 4 s",
+   "Souffle 4 s, reste vide 4 s",
+   "Assis, dos droit, 5 minutes"
+  ],
+  "erreurs": [
+   "L'utiliser pour récupérer après une séance dure",
+   "Forcer sur les pauses jusqu'à manquer d'air"
+  ],
+  "pourquoi": "Elle t'aide à te concentrer avant un départ ou un test. Après une séance dure, prends plutôt le 5-5.",
+  "respiration": "Inspire 4 s, pause 4 s, souffle 4 s, pause 4 s : 19 cycles.",
+  "securite": "Si tu forces, passe à 3 s par côté du carré. Si la tête tourne, arrête.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation",
+   "avant-effort"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 300,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5 min : 19 cycles 4-4-4-4, avant un départ, un test ou un examen. Pas après une séance dure.",
+  "preuve": "C · [@balban2023] [@dujawara2026] [@kasap2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "respiration-ventrale-4-6-2",
+  "nom": "Respiration par le ventre, rythme 4-6-2 (apprentissage, 5 min)",
+  "famille": "cardio",
+  "anim": "tm_breath",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, une main sur le ventre",
+   "Inspire 4 s : seule la main du ventre monte",
+   "Souffle 6 s, puis reste vide 2 s"
+  ],
+  "erreurs": [
+   "Gonfler la poitrine et lever les épaules",
+   "Pousser le ventre en forçant"
+  ],
+  "pourquoi": "Tu apprends à respirer avec le ventre, la base de tous les autres exercices de respiration et d'un souffle calme à l'effort.",
+  "respiration": "Inspire 4 s, souffle 6 s, pause 2 s poumons vides : 25 cycles.",
+  "securite": "Rien de particulier : si la tête tourne, respire normalement.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "alternatives": [
+   "respiration-allonge",
+   "respiration-assis"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 300,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5 min : 25 cycles 4-0-6-2, allongé, avant d'apprendre les autres rythmes",
+  "preuve": "C · [@hopper2019]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "respiration-allonge"
+ },
+ {
+  "id": "respiration-altitude-6-par-minute",
+  "nom": "Respiration lente en altitude (6 par minute, 15 min au repos)",
+  "famille": "cardio",
+  "anim": "tm_seatbreath",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Au repos, assis ou allongé, au chaud",
+   "Inspire 5 s par le nez, souffle 5 s",
+   "Garde ce rythme 15 minutes"
+  ],
+  "erreurs": [
+   "Croire que ça remplace les jours d'adaptation",
+   "Le faire pendant l'effort"
+  ],
+  "pourquoi": "En stage ou en course en haute montagne, respirer lentement au repos peut améliorer ton oxygénation les premiers jours.",
+  "respiration": "Inspire 5 s, souffle 5 s, sans pause : 90 cycles.",
+  "securite": "Ça ne remplace pas l'adaptation à l'altitude. Gros mal de tête ou nausées là-haut : redescends et préviens ton coach.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 900,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "15 min : 90 cycles 5-0-5-0, au repos, les premiers jours en altitude (effet mesuré très haut, au-dessus de 4 500 m)",
+  "preuve": "C · [@bilo2012] [@bernardi2001]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "respiration-muscles-inspiratoires-appareil",
+  "nom": "Renforcement des muscles inspiratoires (appareil à seuil, 30 inspirations)",
+  "famille": "cardio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout ou assis, dos droit, épaules basses. Une main tient l'appareil à seuil (petit tube avec embout) dans la bouche, pince sur le nez, l'autre main à plat sur le ventre. s=0 : poumons vides, ventre rentré. s=1 : inspiration forte et rapide en 2 s contre la résistance, le ventre et les côtes basses s'écartent nettement, les épaules ne montent pas. Retour à s=0 en 3 s d'expiration passive. 30 cycles de 5 s.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, muscles entre les côtes",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Inspire fort et vite dans l'appareil, 2 s",
+   "Souffle sans forcer, 3 s",
+   "30 inspirations, épaules basses"
+  ],
+  "erreurs": [
+   "Régler trop dur et tricher avec les épaules",
+   "Enchaîner trop vite : la tête tourne"
+  ],
+  "pourquoi": "Des muscles inspiratoires plus forts retardent l'essoufflement sur les efforts longs, surtout en trail et en altitude.",
+  "respiration": "Inspire fort 2 s dans l'appareil, souffle 3 s sans effort : 30 cycles.",
+  "securite": "Il faut un appareil réglable. Si tu as déjà eu un souci aux poumons ou un asthme mal réglé, demande d'abord à ton médecin. Tête qui tourne : pause.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation",
+   "cardio"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 150,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "30 inspirations à environ 50 % de ta force d'inspiration max, 2×/jour, 5 jours/semaine, 6 semaines",
+  "preuve": "A · [@illi2012] [@karsten2018] [@salazarmartinez2017]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pont-fessier-marche",
+  "nom": "Pont fessier en marche (genoux levés en alternance)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Sur le dos sur un tapis, bras le long du corps, genoux pliés à 90°, pieds à plat écartés largeur de bassin. s=0 : bassin levé, ligne droite épaules-hanches-genoux, deux pieds au sol. s=1 : même hauteur de bassin, un pied décolle et le genou monte au-dessus de la hanche (hanche à 90°), l'autre pied reste à plat. Retour à s=0, puis l'autre côté. Le bassin reste horizontal.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "abs"
+  ],
+  "musclesTxt": "Fessiers, ischios, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Monte le bassin et garde-le haut",
+   "Lève un genou, repose, change de côté",
+   "Bassin à plat, il ne penche pas"
+  ],
+  "erreurs": [
+   "Laisser le bassin tomber du côté du pied levé",
+   "Creuser le bas du dos"
+  ],
+  "pourquoi": "Tu réveilles les fessiers avant le squat ou le soulevé de terre : ce sont eux qui poussent en montée, à vélo comme à pied.",
+  "respiration": "Respire normalement, souffle à chaque lever de genou.",
+  "securite": "Si l'arrière de la cuisse se crispe, rapproche les talons des fesses.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "hanche",
+   "chaine-posterieure"
+  ],
+  "alternatives": [
+   "pont-fessier",
+   "pont-fessier-unijambe"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "1-2×10 levers alternés, sans fatigue, en début d'échauffement de muscu",
+  "preuve": "C · [@girginer2025] [@mcgowan2015]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "elevation-jambe-cote-couche",
+  "nom": "Élévation de jambe couché sur le côté (fessier du côté)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Couché sur le côté sur un tapis, tête posée sur le bras du dessous tendu, main du dessus au sol devant la poitrine. Jambe du dessous pliée à 45° pour la stabilité, jambe du dessus tendue dans l'axe du tronc, pied fléchi, orteils vers l'avant. s=0 : jambe du dessus à l'horizontale, juste au-dessus de l'autre. s=1 : jambe du dessus levée à environ 35-40°, légèrement en arrière de l'axe, talon plus haut que les orteils, bassin immobile.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes"
+  ],
+  "musclesTxt": "Moyen fessier (côté de la hanche)",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Couché sur le côté, corps bien aligné",
+   "Lève la jambe du dessus, talon en premier",
+   "Redescends lentement, sans poser"
+  ],
+  "erreurs": [
+   "Basculer le bassin vers l'arrière",
+   "Monter la jambe vers l'avant au lieu du côté"
+  ],
+  "pourquoi": "Le fessier du côté tient ton bassin à chaque foulée et garde le genou dans l'axe au pédalage.",
+  "respiration": "Souffle en levant la jambe, inspire en descendant.",
+  "securite": "Petite amplitude suffit. Si la hanche pince, lève moins haut.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "hanche",
+   "genou"
+  ],
+  "alternatives": [
+   "cercles-hanche-quadrupedie",
+   "gainage-lateral-jambe-levee"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "1-2×12 par côté, lent, avant la muscu ou une séance de course",
+  "preuve": "D · pratique de terrain ; activation dans un échauffement RAMP [@girginer2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "respiration-nasale-retour-au-calme",
+  "nom": "Respiration lente par le nez pendant le retour au calme (marche ou roue libre)",
+  "famille": "cardio",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Marche lente, buste droit, bras relâchés qui balancent, épaules basses, bouche fermée. s=0 : fin d'expiration, ventre rentré. s=1 : fin d'inspiration par le nez (4 s), ventre et côtes basses gonflés, épaules immobiles. Retour à s=0 en 5 s d'expiration par le nez. Environ 4 pas par inspiration et 5 pas par expiration. Variante à dessiner : même rythme assis sur le vélo en roue libre, mains sur le cintre, regard devant.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs"
+  ],
+  "musclesTxt": "Diaphragme, ventre",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "En marchant ou en roue libre, épaules basses",
+   "Inspire 4 s par le nez, le ventre gonfle",
+   "Souffle 5 s par le nez, 3 à 5 minutes"
+  ],
+  "erreurs": [
+   "Commencer encore très essoufflé : attends 1 à 2 min",
+   "Forcer par le nez jusqu'à manquer d'air"
+  ],
+  "pourquoi": "En fin de séance, respirer lentement par le nez t'aide à te calmer et marque la fin de l'effort avant de rentrer.",
+  "respiration": "Inspire 4 s, souffle 5 s, tout par le nez : 6 à 8 cycles par minute.",
+  "securite": "Si tu manques d'air, ouvre la bouche et reprends plus tard. À vélo : portion facile, yeux sur la route, mains sur le cintre.",
+  "tags": [
+   "retour-au-calme",
+   "recuperation",
+   "velo"
+  ],
+  "alternatives": [
+   "respiration-assis",
+   "respiration-allonge"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 240,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-5 min en fin de séance, à la marche ou en roue libre : inspire 4 s, souffle 5 s par le nez (secondes = paramétrage proposé, 6 à 8 cycles/min)",
+  "preuve": "C · [@zaccaro2018] [@laborde2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-barre-vide-tempo",
+  "nom": "Squat barre à vide, tempo lent (échauffement)",
+  "famille": "echauffement",
+  "anim": "squat",
+  "opts": {
+   "hold": "backBar"
+  },
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, fessiers",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Barre vide sur le dos, pieds largeur d'épaules",
+   "Descends en 3 s, pause 2 s en bas",
+   "Remonte fort, genoux dans l'axe des pieds"
+  ],
+  "erreurs": [
+   "Charger tout de suite sans passer par la barre vide",
+   "Bâcler la pause en bas"
+  ],
+  "pourquoi": "Tu répètes le geste et tu chauffes hanches et genoux avant les séries lourdes qui font progresser ton coup de pédale.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Aucune fatigue ici. Si une zone tire, réduis l'amplitude et dis-le à ton coach.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "genou",
+   "hanche"
+  ],
+  "alternatives": [
+   "squat-barre",
+   "squat-pdc"
+  ],
+  "tempoConseille": [
+   "3",
+   "2",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×5-6 à la barre vide, tempo 3-2-1-0, puis tes séries de montée en charge",
+  "preuve": "C · [@girginer2025] [@mcgowan2015]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-barre"
+ },
+ {
+  "id": "charniere-hanche-baton",
+  "nom": "Charnière de hanche au bâton (3 points de contact, manche à balai)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout, pieds largeur de bassin. Un bâton (manche à balai) tenu verticalement dans le dos : une main derrière la nuque, l'autre au creux des reins ; le bâton touche l'arrière de la tête, le haut du dos et le sacrum. s=0 : debout droit. s=1 : fesses poussées loin derrière, buste penché à 45-60° par rapport à la verticale, genoux pliés à 15-20°, tibias verticaux, dos plat, les 3 contacts gardés, poids sur le milieu du pied.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "glutes",
+   "lowback"
+  ],
+  "musclesTxt": "Ischios, fessiers, bas du dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bâton collé : tête, haut du dos, bassin",
+   "Pousse les fesses loin derrière",
+   "Genoux souples, tibias droits"
+  ],
+  "erreurs": [
+   "Arrondir le dos : le bâton décolle du bassin",
+   "Plier les genoux comme pour un squat"
+  ],
+  "pourquoi": "Tu apprends à plier aux hanches, dos plat : la base du soulevé de terre et de la position d'attaque en VTT.",
+  "respiration": "Inspire en te penchant, souffle en te redressant.",
+  "securite": "Arrête la descente dès que le bâton décolle. Si le bas du dos tire, penche-toi moins.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "chaine-posterieure",
+   "dos",
+   "hanche"
+  ],
+  "alternatives": [
+   "good-morning",
+   "rdl-halteres",
+   "rdl-unijambe"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×8 lentes avant le soulevé de terre, le RDL ou le swing",
+  "preuve": "D · pratique de terrain ; étape « mobiliser » d'un échauffement RAMP [@girginer2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "ecarte-elastique-epaules",
+  "nom": "Écarté d'élastique devant soi (band pull-apart)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout, pieds largeur de bassin, buste droit. Élastique léger tenu à deux mains devant soi, bras tendus à hauteur d'épaules, mains écartées largeur d'épaules, paumes vers le bas. s=0 : bras tendus devant, élastique à peine tendu. s=1 : bras tendus ouverts sur les côtés (en croix), élastique étiré contre le milieu de la poitrine, omoplates serrées, épaules basses, côtes rentrées.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Haut du dos, arrière des épaules",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bras tendus devant, élastique léger",
+   "Écarte jusqu'à toucher la poitrine",
+   "Serre les omoplates, épaules basses"
+  ],
+  "erreurs": [
+   "Hausser les épaules vers les oreilles",
+   "Cambrer le dos pour finir le geste"
+  ],
+  "pourquoi": "Tu réveilles le haut du dos avant la muscu et tu contres la posture enroulée du vélo.",
+  "respiration": "Souffle en écartant, inspire en revenant.",
+  "securite": "Élastique léger : ça doit chauffer, pas forcer. Si l'épaule pince, écarte moins loin.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "tirage-visage-elastique",
+   "y-t-w-plat-ventre"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×12-15, élastique léger, avant les tirages, les pompes ou une séance VTT",
+  "preuve": "D · pratique de terrain ; étape « activer » d'un échauffement RAMP [@girginer2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "passage-epaules-elastique",
+  "nom": "Passage d'épaules à l'élastique (par-dessus la tête, prise large)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout, pieds largeur de bassin. Élastique (ou bâton) tenu à deux mains, prise très large (environ 2 fois la largeur des épaules), bras tendus, paumes vers l'arrière. s=0 : élastique devant les cuisses. s=0,5 : bras tendus à la verticale au-dessus de la tête. s=1 : élastique derrière le dos au niveau des fesses, bras toujours tendus, côtes basses, tête immobile. Retour par le même chemin.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "delts",
+   "upperback",
+   "pecs"
+  ],
+  "musclesTxt": "Épaules, haut du dos, pectoraux",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Prise très large, bras tendus",
+   "Passe au-dessus de la tête, puis derrière",
+   "Lent, côtes basses, sans cambrer"
+  ],
+  "erreurs": [
+   "Plier les coudes pour passer",
+   "Prise trop serrée qui force l'épaule"
+  ],
+  "pourquoi": "Des épaules qui bougent bien avant les tirages et les développés ; utile aussi au nageur et au fondeur.",
+  "respiration": "Inspire en montant les bras, souffle en passant derrière.",
+  "securite": "Si l'épaule pince, élargis la prise ou arrête-toi avant. Jamais en force.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "haut-du-corps",
+   "mobilite"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "glisse-au-mur",
+   "etirement-epaule-bras-croise"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "1-2×8 lentes avant une séance haut du corps",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tirage-elastique-debout",
+  "nom": "Tirage horizontal à l'élastique, debout (rowing)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout face au point d'attache (poignée de porte fermée, poteau) placé à hauteur de nombril, pieds largeur de bassin, genoux pliés à 10-15°, buste droit. Un brin d'élastique dans chaque main, paumes face à face. s=0 : bras tendus devant, élastique déjà tendu. s=1 : coudes tirés en arrière le long du corps (pliés à 90°), mains aux côtes basses, omoplates serrées, buste immobile.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps"
+  ],
+  "musclesTxt": "Dorsaux, haut du dos, biceps",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique fixé à hauteur du nombril",
+   "Tire les coudes en arrière, près du corps",
+   "Serre les omoplates 1 s, reviens lentement"
+  ],
+  "erreurs": [
+   "Se pencher en arrière pour tirer",
+   "Hausser les épaules"
+  ],
+  "pourquoi": "Un dos fort tient le cintre en relance et en descente VTT ; c'est aussi le tirage qui manque quand tu n'as pas de salle.",
+  "respiration": "Souffle en tirant, inspire en revenant.",
+  "securite": "Vérifie que le point d'attache est solide et que l'élastique n'est pas abîmé.",
+  "tags": [
+   "haut-du-corps",
+   "echauffement",
+   "avant-effort",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tirage-visage-elastique"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "Échauffement (avant XCO ou muscu) : 2×12 léger. Renfo en voyage : 3×12-15, élastique fort, 1 min",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "accelerations-velo-10s",
+  "nom": "3 accélérations de 10 s sur le vélo (échauffement)",
+  "famille": "cardio",
+  "anim": "bike",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Lance-toi assis, monte en cadence 10 s",
+   "Fort mais pas à fond : 8 sur 10",
+   "Roule souple 1 à 2 min entre chaque"
+  ],
+  "erreurs": [
+   "Sprinter à fond et arriver entamé au départ",
+   "Les faire dans les 10 dernières minutes"
+  ],
+  "pourquoi": "Elles réveillent les jambes pour le départ XCO ou le début d'un chrono, sans te coûter d'énergie.",
+  "respiration": "Souffle fort pendant l'accélération, reprends ton souffle en roulant souple.",
+  "securite": "Route dégagée ou home-trainer. Finis 10 à 15 min avant le départ et reste au chaud.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "velo",
+   "coup-de-pedale",
+   "cardio"
+  ],
+  "alternatives": [
+   "velo-sprint",
+   "velo"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "Après 10-15 min progressifs : 3×10 s en accélération, 1-2 min souple entre. Fin 10-15 min avant le départ.",
+  "preuve": "C · [@solli2020] [@christensen2015] [@burnley2005]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "echauffement-velo-3x5-progressif",
+  "nom": "Échauffement vélo progressif 3 × 5 min (du facile au seuil)",
+  "famille": "cardio",
+  "anim": "bike",
+  "opts": {},
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "5 min faciles : tu peux parler",
+   "5 min soutenues : phrases courtes",
+   "5 min près du seuil, puis roule souple"
+  ],
+  "erreurs": [
+   "Partir trop fort dès le premier bloc",
+   "Finir collé au départ, déjà fatigué"
+  ],
+  "pourquoi": "Un échauffement modéré puis soutenu prépare mieux un chrono ou un départ XCO qu'un échauffement très dur, qui te coûte des watts.",
+  "respiration": "Respiration libre, de plus en plus ample à chaque bloc.",
+  "securite": "Garde une veste entre la fin de l'échauffement et le départ pour rester chaud.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "velo",
+   "cardio"
+  ],
+  "alternatives": [
+   "velo"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 900,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×5 min enchaînés à environ 70, 80 puis 90 % de ton seuil. Départ 10 à 20 min après.",
+  "preuve": "C · [@johnson2014] [@burnley2005] [@christensen2015]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "gamme-cheville-petits-pas",
+  "nom": "Gamme de cheville (tout petits pas déroulés, rapides)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout, buste droit, bras de coureur pliés à 90°. Très petits pas rapides (une demi-longueur de pied), genoux presque tendus et peu levés. s=0 : pied gauche à plat au sol, pied droit sur la pointe, talon levé de 8-10 cm, cheville en extension. s=1 : l'inverse. Le pied se pose par l'avant puis le talon effleure le sol ; avancée lente, fréquence élevée (3-4 appuis par seconde).",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Mollets, avant de la jambe, pieds",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Tout petits pas, très rapides",
+   "Pose l'avant du pied, déroule, repousse",
+   "Genoux bas, buste grand"
+  ],
+  "erreurs": [
+   "Faire de grands pas",
+   "Taper le talon au sol"
+  ],
+  "pourquoi": "Tu réveilles pieds et chevilles avant un trail : des appuis plus vifs sur les cailloux et en descente.",
+  "respiration": "Respiration libre et régulière.",
+  "securite": "Sol plat et régulier. Si le mollet ou le tendon tire, ralentis ou passe à la marche.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "cheville",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "marche-talons-pointes",
+   "pogo-jumps"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×15-20 m après 5 min de footing, retour en marchant",
+  "preuve": "C · [@panasci2025] [@opplert2018]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "montees-de-genoux-cote",
+  "nom": "Montées de genoux en côte",
+  "famille": "echauffement",
+  "anim": "highknees",
+  "opts": {},
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "hipflex",
+   "calves",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, fléchisseurs de hanche, mollets, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Côte douce, 15 à 20 m",
+   "Genou à hauteur de hanche, pied vif",
+   "Buste grand, bras qui rythment"
+  ],
+  "erreurs": [
+   "Se pencher en arrière",
+   "Chercher la vitesse au lieu du rythme"
+  ],
+  "pourquoi": "La pente t'oblige à pousser et à lever le genou : c'est la foulée de montée en trail.",
+  "respiration": "Souffle court et rythmé sur les appuis.",
+  "securite": "Sol sec et régulier. Redescends en marchant.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "montee",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "montees-de-genoux",
+   "talons-fesses"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×15-20 m en côte douce, retour en marchant",
+  "preuve": "C · [@panasci2025]",
+  "sports": [
+   "trail",
+   "nordique"
+  ],
+  "varianteDe": "montees-de-genoux"
+ },
+ {
+  "id": "descente-controlee-petits-pas",
+  "nom": "Descente courte contrôlée, petits pas rapides (avant un trail)",
+  "famille": "echauffement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Course en descente sur une pente douce (5-8°), sol dessiné incliné. Buste légèrement penché vers l'avant, perpendiculaire à la pente, bras écartés à 30-40° du corps pour l'équilibre, coudes pliés. Foulée courte et rapide. s=0 : appui du pied gauche sous le bassin, pose à plat (milieu du pied), genou plié à 25-30°, jambe droite repliée derrière. s=1 : même appui sur le pied droit. Regard 3 à 5 m devant.",
+  "type": "cardio",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "calves",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, mollets, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pente douce, 30 à 50 m, allure facile",
+   "Petits pas rapides, pied sous le bassin",
+   "Buste un peu en avant, bras écartés"
+  ],
+  "erreurs": [
+   "Freiner en arrière sur les talons",
+   "Allonger la foulée et taper fort"
+  ],
+  "pourquoi": "Tu prépares les cuisses à freiner et tu trouves ton rythme d'appuis avant les vraies descentes du trail.",
+  "respiration": "Respiration libre, relâche les épaules.",
+  "securite": "Sol sec et régulier pour commencer. Si le genou tire, descends en marchant.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "genou",
+   "foulee"
+  ],
+  "alternatives": [
+   "step-down-lateral",
+   "montees-de-genoux"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×30-50 m en pente douce, remontée en marchant, en fin d'échauffement",
+  "preuve": "D · pratique de terrain ; échauffement dynamique avant la course [@panasci2025]",
+  "sports": [
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-lent-5-5",
+  "nom": "Squat lent 5-5 au poids du corps (5 s pour descendre, 5 s pour monter)",
+  "famille": "squat",
+  "anim": "bwsquat",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Descends en 5 s, sans t'arrêter",
+   "Remonte en 5 s, sans te redresser à fond",
+   "Talons au sol, genoux dans l'axe"
+  ],
+  "erreurs": [
+   "Accélérer quand ça brûle",
+   "Se reposer debout entre deux répétitions"
+  ],
+  "pourquoi": "Sans charge, la lenteur garde les cuisses sous tension : de quoi entretenir tes jambes en déplacement, entre deux vraies séances.",
+  "respiration": "Respire sans bloquer : inspire en descendant, souffle en montant.",
+  "securite": "Si le genou gêne, descends moins bas.",
+  "tags": [
+   "genou",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "alternatives": [
+   "squat-pdc",
+   "chaise-mur"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "5",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10, tempo 5-0-5-0, 90 s. La série doit finir dure (2 reps en réserve) ; sinon passe sur une jambe.",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-pdc"
+ },
+ {
+  "id": "squat-une-et-demie",
+  "nom": "Squat une et demie (une répétition + une demi-remontée en bas)",
+  "famille": "squat",
+  "anim": "bwsquat",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, fessiers",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Descends en bas, remonte à mi-hauteur",
+   "Redescends, puis remonte tout en haut",
+   "Ça compte 1. Garde un rythme lent"
+  ],
+  "erreurs": [
+   "Raccourcir la demi-remontée",
+   "Rebondir en bas"
+  ],
+  "pourquoi": "Tu passes deux fois dans la zone dure du bas : plus de travail pour les cuisses, sans aucun matériel.",
+  "respiration": "Inspire en descendant, souffle sur la grande remontée.",
+  "securite": "Si le genou gêne en bas, réduis l'amplitude.",
+  "tags": [
+   "genou",
+   "coup-de-pedale",
+   "montee"
+  ],
+  "alternatives": [
+   "squat-pdc",
+   "chaise-mur"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8, tempo lent, 90 s. Plus dur : avec un sac à dos chargé.",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-pdc"
+ },
+ {
+  "id": "fente-arriere-lente-pause",
+  "nom": "Fente arrière lente avec pause en bas (poids du corps)",
+  "famille": "fente",
+  "anim": "lunge",
+  "opts": {
+   "dir": "back"
+  },
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hams"
+  ],
+  "musclesTxt": "Cuisses, fessiers, ischios",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Recule un pied, descends en 4 s",
+   "Pause 2 s, genou arrière près du sol",
+   "Remonte en poussant sur le pied avant"
+  ],
+  "erreurs": [
+   "Pousser avec la jambe arrière",
+   "Laisser le genou avant rentrer vers l'intérieur"
+  ],
+  "pourquoi": "Une jambe à la fois, lentement : tu gardes la force de poussée utile en côte, même dans une chambre d'hôtel.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Si le genou avant gêne, fais un pas plus grand et descends moins bas.",
+  "tags": [
+   "genou",
+   "montee",
+   "coup-de-pedale",
+   "foulee"
+  ],
+  "alternatives": [
+   "fente-arriere",
+   "fente-bulgare-sans-charge"
+  ],
+  "tempoConseille": [
+   "4",
+   "2",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8 par jambe, tempo 4-2-1-0, 60 s",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "fente-arriere"
+ },
+ {
+  "id": "pompes-hindoues",
+  "nom": "Pompes hindoues (du chien tête en bas au buste relevé)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "s=0 : chien tête en bas ; mains et pieds au sol écartés un peu plus que les épaules, fesses hautes, bras et jambes tendus, hanches fléchies à environ 90°, tête entre les bras. Passage : les coudes plient, la poitrine plonge vers l'avant et rase le sol entre les mains. s=1 : bras tendus, poitrine vers l'avant et le haut, hanches à 10 cm du sol, jambes tendues, appui sur les orteils, regard devant. Retour à s=0 en repoussant les fesses vers le haut, bras tendus.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "delts",
+   "triceps",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, épaules, triceps, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Fesses hautes, puis plonge la poitrine",
+   "Rase le sol et remonte, regard devant",
+   "Reviens en poussant les fesses en haut"
+  ],
+  "erreurs": [
+   "Creuser fort le bas du dos en haut",
+   "Écarter les coudes à l'horizontale"
+  ],
+  "pourquoi": "Épaules, bras et dos travaillent ensemble sur une grande amplitude : pratique en voyage pour tenir le cintre en descente.",
+  "respiration": "Inspire fesses hautes, souffle en plongeant et en remontant.",
+  "securite": "Si le bas du dos tire en haut, monte moins et serre les fesses.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "mobilite"
+  ],
+  "alternatives": [
+   "pompes",
+   "chien-tete-en-bas-pedalage"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, 90 s",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tirage-serviette-isometrique-assis",
+  "nom": "Tirage isométrique à la serviette, assis (serviette sous les pieds)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Assis au sol, jambes devant, genoux pliés à 30-40°, talons au sol. Une serviette roulée (ou une sangle) passe sous la plante des deux pieds ; une extrémité dans chaque main, paumes face à face. Buste droit, penché de 10° vers l'arrière. s=0 : coudes pliés à 90° près des côtes, serviette tendue sans effort. s=1 : même position, rien ne bouge : traction maximale, omoplates serrées, épaules tirées vers l'arrière et le bas, pieds qui résistent. Montrer la tension (léger tremblement, serviette tendue).",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps",
+   "forearms"
+  ],
+  "musclesTxt": "Dorsaux, haut du dos, biceps, avant-bras",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Serviette sous les pieds, dos droit",
+   "Tire les coudes en arrière, monte en force",
+   "Tiens 5 s à fond, relâche, recommence"
+  ],
+  "erreurs": [
+   "Arrondir le dos pour tirer",
+   "Donner un coup sec au lieu de monter en force"
+  ],
+  "pourquoi": "Sans barre ni haltères, tu fais travailler fort le dos et les bras : ceux qui tirent sur le cintre en relance.",
+  "respiration": "Souffle pendant l'effort, ne bloque pas l'air.",
+  "securite": "Monte en force en 2 s, jamais d'un coup. Vérifie que la serviette ne glisse pas des pieds.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tractions"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4-6×5 s presque à fond, 30 s de repos. Serviette de bain roulée ou sangle.",
+  "preuve": "C · [@lum2019]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "poussee-mur-isometrique",
+  "nom": "Poussée isométrique contre un mur ou un montant de porte",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout face à un mur, pieds décalés (un pied 50 cm devant l'autre), genou avant plié à 20°, jambe arrière tendue, corps gainé incliné de 15-20° vers le mur. Mains à plat sur le mur à hauteur de poitrine, écartées largeur d'épaules, coudes pliés à 90° et à 45° du buste. s=0 : contact sans pousser. s=1 : même position, rien ne bouge : poussée maximale des deux mains dans le mur, ligne droite talon arrière-hanche-tête.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Mains au mur, coudes pliés à 90°",
+   "Pieds décalés, corps gainé, penché en avant",
+   "Pousse 5 s à fond, comme pour le déplacer"
+  ],
+  "erreurs": [
+   "Cambrer le dos",
+   "Bloquer l'air pendant toute la poussée"
+  ],
+  "pourquoi": "Tu gardes de la force de poussée dans les bras sans matériel : utile pour encaisser les chocs dans le cintre.",
+  "respiration": "Souffle pendant l'effort, ne bloque pas l'air.",
+  "securite": "Monte en force en 2 s, jamais d'un coup. Chaussures ou sol qui ne glisse pas.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "gainage"
+  ],
+  "alternatives": [
+   "pompes",
+   "pompes-genoux"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4-6×5 s presque à fond, 30 s de repos",
+  "preuve": "C · [@lum2019]",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "poussee-jambe-cadre-porte-isometrique",
+  "nom": "Poussée isométrique d'une jambe dans un cadre de porte (dos contre un montant)",
+  "famille": "squat",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Assis au sol dans l'embrasure d'une porte (largeur 70-80 cm), dos et bassin plaqués contre un montant, mains au sol de chaque côté des fesses. Un pied à plat contre le montant opposé à 20-30 cm du sol, genou plié à 90-100°, hanche fléchie à environ 90° ; l'autre jambe pliée, pied au sol. s=0 : pied en contact, sans pousser. s=1 : même position, rien ne bouge : poussée maximale du pied dans le montant, cuisse contractée, dos écrasé contre le montant.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes"
+  ],
+  "musclesTxt": "Cuisses, fessiers",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis dans la porte, dos contre un montant",
+   "Un pied à plat sur l'autre montant",
+   "Pousse 5 s à fond, sans bouger"
+  ],
+  "erreurs": [
+   "Décoller le bas du dos du montant",
+   "Pousser d'un coup sec"
+  ],
+  "pourquoi": "Tu pousses à fond à l'angle du coup de pédale, sans charge : ça fatigue peu, parfait en saison ou en déplacement.",
+  "respiration": "Souffle pendant l'effort, ne bloque pas l'air.",
+  "securite": "Monte en force en 2 s. Si le genou gêne, change un peu l'angle ou pousse moins fort.",
+  "tags": [
+   "coup-de-pedale",
+   "genou",
+   "montee"
+  ],
+  "alternatives": [
+   "chaise-mur-unijambe",
+   "chaise-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4-5×5 s presque à fond par jambe, 30 s de repos. Genou plié à environ 90-100°.",
+  "preuve": "C · [@lum2019]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "planche-glisse-sac",
+  "nom": "Planche avec glissé de sac (tirer le sac d'un côté à l'autre)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Planche sur les mains, bras tendus sous les épaules, pieds écartés de 60-70 cm, corps droit des talons à la tête. Un sac lesté (ou petite valise couchée) posé au sol à côté de la main gauche, à hauteur de poitrine. s=0 : planche, deux mains au sol, sac à gauche. s=1 : la main droite passe sous la poitrine, attrape le sac et le fait glisser au sol jusqu'à droite ; pendant le tirage, appui sur la seule main gauche, hanches parallèles au sol. Puis l'inverse avec la main gauche.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts"
+  ],
+  "musclesTxt": "Abdos, obliques, épaules",
+  "materiel": [
+   "sac-leste",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Planche sur les mains, pieds écartés",
+   "Une main passe dessous et tire le sac",
+   "Hanches immobiles, face au sol"
+  ],
+  "erreurs": [
+   "Tourner le bassin à chaque tirage",
+   "Monter les fesses"
+  ],
+  "pourquoi": "Ton tronc refuse la rotation pendant qu'un bras travaille : comme sur le vélo quand tu relances en tirant sur le cintre.",
+  "respiration": "Souffle en tirant le sac, inspire en reposant la main.",
+  "securite": "Si le bas du dos se creuse, écarte plus les pieds ou pose les genoux.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "planche-touche-epaule",
+   "planche-transfert-poids"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8 tirages par côté, 60 s. En voyage : sac à dos ou petite valise chargée.",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-sac-un-bras",
+  "nom": "Rowing un bras avec sac à dos ou valise (main sur une chaise ou le lit)",
+  "famille": "haut-du-corps",
+  "anim": "dbrow",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps"
+  ],
+  "musclesTxt": "Dorsaux, haut du dos, biceps",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Une main en appui sur le lit ou une chaise",
+   "Dos plat, tire le sac vers la hanche",
+   "Redescends en 3 s, bras presque tendu"
+  ],
+  "erreurs": [
+   "Tourner le buste pour monter le sac",
+   "Tirer avec l'épaule vers l'oreille"
+  ],
+  "pourquoi": "Le tirage est ce qui manque le plus sans salle : ton dos reste fort pour tenir le vélo en relance et en descente.",
+  "respiration": "Souffle en tirant, inspire en descendant.",
+  "securite": "Vérifie que la poignée du sac tient. Si le bas du dos tire, prends un appui plus haut.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tractions"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-12 par bras, tempo 3-0-1-1, 60 s. Charge le sac avec des bouteilles d'eau.",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "rowing-haltere"
+ },
+ {
+  "id": "ecarte-serviette-isometrique",
+  "nom": "Écarté isométrique à la serviette (tirer la serviette vers les côtés)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Debout, pieds largeur de bassin, buste droit. Une serviette roulée (ou une sangle) tenue à deux mains devant la poitrine, bras tendus à l'horizontale, mains écartées de 60 cm, paumes vers le bas. s=0 : serviette tendue sans effort. s=1 : même position, rien ne bouge : les mains tirent au maximum vers l'extérieur, omoplates serrées, épaules basses, serviette très tendue (léger tremblement).",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "delts",
+   "forearms"
+  ],
+  "musclesTxt": "Haut du dos, arrière des épaules, avant-bras",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Serviette tendue devant la poitrine",
+   "Tire les mains vers l'extérieur, à fond",
+   "Tiens 5 s, omoplates serrées"
+  ],
+  "erreurs": [
+   "Hausser les épaules",
+   "Plier les coudes pour tricher"
+  ],
+  "pourquoi": "Sans élastique ni salle, tu fais travailler le haut du dos qui te tient droit sur le vélo et en fin de course à pied.",
+  "respiration": "Souffle pendant l'effort, ne bloque pas l'air.",
+  "securite": "Monte en force en 2 s, jamais d'un coup. Si l'épaule pince, descends les mains plus bas.",
+  "tags": [
+   "haut-du-corps",
+   "dos"
+  ],
+  "alternatives": [
+   "tirage-visage-elastique",
+   "y-t-w-plat-ventre"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "4-6×5 s presque à fond, 30 s de repos. Serviette roulée ou sangle.",
+  "preuve": "C · [@lum2019]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "montee-escalier-deux-marches",
+  "nom": "Montée d'escalier lente, deux marches à la fois",
+  "famille": "fente",
+  "anim": "stepup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, fessiers, mollets",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pose le pied entier deux marches plus haut",
+   "Pousse sur la jambe du haut, lentement",
+   "Buste un peu en avant, sans élan"
+  ],
+  "erreurs": [
+   "Se propulser avec le pied du bas",
+   "Tirer sur la rampe"
+  ],
+  "pourquoi": "Chaque marche est une poussée sur une jambe, genou bien plié : c'est la montée raide du trail ou la relance assise à vélo.",
+  "respiration": "Souffle à chaque poussée.",
+  "securite": "Garde une main près de la rampe. Redescends en marchant, marche par marche.",
+  "tags": [
+   "montee",
+   "coup-de-pedale",
+   "genou",
+   "trail"
+  ],
+  "alternatives": [
+   "step-up",
+   "fente-avant"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4-6 montées de 2 étages, descente en marchant comme repos. Plus dur : sac à dos chargé.",
+  "preuve": "D · pratique de terrain ; version sans salle [@vikestad2025] [@iversen2021]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-baton-bras-tendus",
+  "nom": "Squat bras tendus au-dessus de la tête (bâton ou serviette)",
+  "famille": "echauffement",
+  "anim": "t_ohsquat",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Cuisses, fessiers, haut du dos, épaules",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Bâton au-dessus de la tête, prise large",
+   "Descends lentement, talons au sol",
+   "Bras tendus, bâton au-dessus des pieds"
+  ],
+  "erreurs": [
+   "Laisser les bras tomber vers l'avant",
+   "Décoller les talons"
+  ],
+  "pourquoi": "En un seul geste, tu mobilises chevilles, hanches, haut du dos et épaules avant ta séance de muscu.",
+  "respiration": "Inspire en descendant, souffle en remontant.",
+  "securite": "Descends seulement tant que les talons restent au sol et que rien ne pince.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "mobilite",
+   "hanche",
+   "cheville"
+  ],
+  "zones": [
+   "chevilles",
+   "hanches",
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "squat-pdc",
+   "squat-profond-tenu"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×6-8 lentes, sans charge, avant le squat ou les fentes",
+  "preuve": "D · pratique de terrain ; étape « mobiliser » d'un échauffement RAMP [@girginer2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "velocite-velo-30s",
+  "nom": "Vélocité : 3 × 30 s à cadence très haute, petit braquet (échauffement)",
+  "famille": "cardio",
+  "anim": "bike",
+  "opts": {},
+  "type": "effort",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "hams",
+   "hipflex",
+   "calves"
+  ],
+  "musclesTxt": "Cuisses, ischios, fléchisseurs de hanche, mollets",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Petit braquet, monte la cadence au maximum",
+   "Bassin calé : tu ne rebondis pas",
+   "30 s, puis 1 min souple"
+  ],
+  "erreurs": [
+   "Mettre trop de braquet : ça devient un sprint",
+   "Rebondir sur la selle"
+  ],
+  "pourquoi": "Tu réveilles la coordination du pédalage sans fatigue, utile avant un départ XCO où la cadence s'envole.",
+  "respiration": "Respiration libre, épaules relâchées.",
+  "securite": "Reste assis, mains sur le cintre. Réduis la cadence dès que tu rebondis.",
+  "tags": [
+   "echauffement",
+   "avant-effort",
+   "velo",
+   "coup-de-pedale",
+   "cardio"
+  ],
+  "alternatives": [
+   "velo",
+   "velo-sprint"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×30 s à cadence très haute (110-130 tr/min), effort léger, 1 min souple entre, au milieu de l'échauffement",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "relachement-epaules-cou-sur-velo",
+  "nom": "Relâchement des épaules et du cou sur le vélo (à plat, en roulant)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Cycliste assis sur le vélo, de profil, les deux mains en haut du cintre (cocottes ou poignées), coudes souples pliés à 15-20°, regard loin devant, jambes en roue libre ou pédalage souple. s=0 : épaules basses et relâchées, loin des oreilles. s=1 : épaules haussées vers les oreilles (3-4 cm), tenues 2 s, puis relâchées d'un coup. Variante enchaînée : cercles des épaules vers l'arrière. La tête reste droite et immobile.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Trapèzes, épaules, nuque",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Route plate et dégagée, mains sur le cintre",
+   "Monte les épaules 2 s, relâche d'un coup",
+   "Roule les épaules en arrière, coudes souples"
+  ],
+  "erreurs": [
+   "Quitter la route des yeux",
+   "Le faire en groupe serré ou en descente"
+  ],
+  "pourquoi": "Sur les longues sorties, les épaules montent sans que tu le sentes : les relâcher soulage le cou et les mains.",
+  "respiration": "Inspire en montant les épaules, souffle en relâchant.",
+  "securite": "Seulement à plat, route dégagée, loin des autres. Les yeux restent sur la route et les deux mains sur le cintre.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "haut-du-corps",
+   "recuperation"
+  ],
+  "zones": [
+   "cou",
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "etirement-cou-lateral",
+   "glisse-au-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "5 haussements + 5 roulements d'épaules, toutes les 30 à 45 min de selle",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "secouer-mains-vtt",
+  "nom": "Secouer les mains, une à la fois (VTT, sur une portion facile)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "VTTiste debout sur les pédales à l'horizontale (position d'attaque haute), genoux et coudes souples, une main sur la poignée, un doigt sur le frein, regard devant. s=0 : deux mains sur le cintre. s=1 : une main lâchée, bras pendant le long du corps, main relâchée qui secoue (petites oscillations rapides du poignet et des doigts). Retour au cintre, puis l'autre main.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Avant-bras, mains",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Portion lisse et roulante seulement",
+   "Lâche une main, secoue-la 3 s, bras pendant",
+   "Reprends le cintre, puis l'autre main"
+  ],
+  "erreurs": [
+   "Lâcher une main dans un passage technique",
+   "Serrer le cintre à fond tout le reste du temps"
+  ],
+  "pourquoi": "En longue descente VTT, les avant-bras durcissent et tu freines moins bien : 3 secondes de relâchement te rendent tes mains.",
+  "respiration": "Souffle longuement pendant que tu secoues la main.",
+  "securite": "Jamais dans les cailloux, les racines ou à haute vitesse. Une main à la fois, sur une portion lisse ; dans le doute, arrête-toi.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "descente-vtt",
+   "haut-du-corps",
+   "recuperation"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 3,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3 s par main dès qu'une portion facile se présente ; à l'arrêt entre deux descentes sinon",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-dos-appui-velo",
+  "nom": "Étirement du dos, mains sur la selle et le cintre (à l'arrêt)",
+  "famille": "etirement",
+  "anim": "st_wallback",
+  "opts": {},
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback"
+  ],
+  "musclesTxt": "Dorsaux, haut du dos, épaules",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Une main sur la selle, une sur le cintre",
+   "Recule les pieds, buste à l'horizontale",
+   "Laisse la poitrine descendre, bras tendus"
+  ],
+  "erreurs": [
+   "Arrondir le dos",
+   "S'appuyer sur un vélo qui roule : serre un frein"
+  ],
+  "pourquoi": "À la pause ou à l'arrivée, tu allonges le dos et les épaules restés enroulés sur le cintre.",
+  "respiration": "Souffle lentement, relâche un peu plus à chaque expiration.",
+  "securite": "Cale le vélo contre un mur ou serre le frein arrière. Si l'épaule pince, descends moins.",
+  "tags": [
+   "etirement",
+   "velo",
+   "dos",
+   "recuperation"
+  ],
+  "zones": [
+   "haut-du-dos",
+   "epaules",
+   "ischios"
+  ],
+  "alternatives": [
+   "etirement-dos-mur",
+   "posture-enfant"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2×20-30 s à la pause ou à l'arrivée",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": "etirement-dos-mur"
+ },
+ {
+  "id": "debout-pedales-talon-bas",
+  "nom": "Debout sur les pédales, talon bas et hanches en avant (roue libre, à plat)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Cycliste debout sur les pédales, en roue libre, de profil, mains sur le cintre, bras presque tendus. Manivelles verticales : un pied en bas (6 h), l'autre en haut. s=0 : debout, jambe du bas tendue, cheville neutre, hanches au-dessus de la selle. s=1 : talon du pied du bas descendu sous la pédale (cheville fléchie de 15-20°), hanches avancées vers le cintre et poitrine ouverte, jambe du bas tendue, dos légèrement creusé.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "hipflex",
+   "lowback"
+  ],
+  "musclesTxt": "Mollets, avant des hanches, bas du dos",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, une pédale en bas, talon qui descend",
+   "Avance les hanches vers le cintre, 5 s",
+   "Change de pied, 3 fois par côté"
+  ],
+  "erreurs": [
+   "Le faire en descente rapide ou en groupe serré",
+   "Verrouiller les bras et quitter la route des yeux"
+  ],
+  "pourquoi": "Tu détends mollets, hanches et dos sans t'arrêter : précieux sur les sorties de plus de 2 heures.",
+  "respiration": "Souffle lentement pendant les 5 s.",
+  "securite": "Seulement à plat ou en faux plat, route dégagée, mains sur le cintre, yeux sur la route.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "dos",
+   "hanche",
+   "recuperation"
+  ],
+  "zones": [
+   "mollets",
+   "hanches",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "etirement-mollet-mur",
+   "etirement-soleaire-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 3,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5 s par côté, toutes les 30 à 45 min de selle",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "dos-rond-dos-creux-sur-velo",
+  "nom": "Dos rond, dos creux sur le vélo (roue libre, à plat)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Cycliste assis sur la selle, de profil, en roue libre, manivelles à l'horizontale, mains en haut du cintre, coudes pliés à 15-20°, tête relevée, regard devant. s=0 : dos arrondi, bassin basculé vers l'arrière (rétroversion), nombril rentré, bras presque tendus. s=1 : dos légèrement creusé, bassin basculé vers l'avant, poitrine avancée entre les bras, omoplates serrées. La tête reste relevée dans les deux positions.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lowback",
+   "abs",
+   "upperback"
+  ],
+  "musclesTxt": "Bas du dos, abdos, haut du dos",
+  "materiel": [
+   "velo"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "En roue libre, mains en haut du cintre",
+   "Arrondis le dos, bassin qui bascule",
+   "Puis creuse doucement, poitrine en avant"
+  ],
+  "erreurs": [
+   "Baisser la tête et quitter la route des yeux",
+   "Le faire en descente ou dans un peloton"
+  ],
+  "pourquoi": "Après une longue montée assis, bouger le bassin sur la selle détend le bas du dos sans poser le pied.",
+  "respiration": "Souffle en arrondissant, inspire en creusant.",
+  "securite": "Seulement à plat, route dégagée, mains sur le cintre, yeux sur la route. Petit mouvement, sans forcer.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "dos",
+   "recuperation"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "chat-vache",
+   "enroulement-vertebral"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 6,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5-6 allers-retours lents, toutes les 30 à 45 min ou en haut d'une bosse",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ }
+]

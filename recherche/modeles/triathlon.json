@@ -1,0 +1,1081 @@
+{
+ "seances": [
+  {
+   "id": "triathlon-ppg-force-generale",
+   "titre": "Force générale corps entier (PPG)",
+   "rpe": "6 à 7",
+   "dureeMin": 50,
+   "message": "Objectif : construire une base de force pour tes trois sports, sans prendre de poids. Séries de 10, 3 reps en réserve : tu apprends le geste avant de charger.",
+   "sport": "triathlon",
+   "phase": "PPG",
+   "duree": 50,
+   "materiel": "salle",
+   "niveau": 1,
+   "contextes": [
+    "decouverte"
+   ],
+   "pourquoi": "En préparation générale, un bloc à charge modérée (8 à 12 reps) prépare le bloc lourd qui améliore l'économie à vélo et à pied.",
+   "preuve": "D · construction d'expert, principes B [@luckinbaldwin2021]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "rameur",
+       "duree": 300,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "pont-fessier",
+       "reps": 10
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      },
+      {
+       "ex": "dead-bug",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "presse-a-cuisses",
+       "series": 3,
+       "reps": 10,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Environ 70 % de ton max : 3 reps en réserve."
+      },
+      {
+       "ex": "rdl-halteres",
+       "series": 3,
+       "reps": 10,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Dos plat, fesses loin derrière."
+      },
+      {
+       "ex": "tirage-poitrine-machine",
+       "series": 3,
+       "reps": 10,
+       "rpe": 7,
+       "recup": 75,
+       "note": "Le geste de traction de la nage : coudes vers les poches."
+      },
+      {
+       "ex": "pompes-mains-surelevees",
+       "series": 3,
+       "reps": 8,
+       "rpe": 7,
+       "recup": 60,
+       "note": "Mains sur un banc. Trop facile ? Passe aux pompes au sol."
+      },
+      {
+       "ex": "step-up-halteres",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 60
+      },
+      {
+       "ex": "mollets-marche",
+       "series": 3,
+       "reps": 12,
+       "rpe": 7,
+       "recup": 45,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "duree": 30
+      },
+      {
+       "ex": "gainage-lateral-genoux",
+       "duree": 20,
+       "parCote": true
+      },
+      {
+       "ex": "superman",
+       "reps": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-ppg-epaule-nageur",
+   "titre": "Épaule du nageur et haut du dos (PPG)",
+   "rpe": "5 à 6",
+   "dureeMin": 30,
+   "message": "Objectif : des épaules stables et un haut du dos fort pour nager longtemps et tenir la position sur le vélo. Élastique léger, gestes lents, épaules basses. Séance de renforcement pour un athlète sans douleur : si tu as une gêne, parles-en à ton coach ou à un kiné.",
+   "sport": "triathlon",
+   "phase": "PPG",
+   "duree": 30,
+   "materiel": "elastique",
+   "niveau": 1,
+   "contextes": [
+    "epaule"
+   ],
+   "pourquoi": "Le crawl répète des milliers de fois le même geste : renforcer l'arrière de l'épaule et les omoplates équilibre ce travail dès l'hiver.",
+   "preuve": "D · construction d'expert, principes C [@andersson2017] [@andersen2013]",
+   "blocs": [
+    {
+     "nom": "Mise en route",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 5,
+     "recupTour": 15,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      },
+      {
+       "ex": "livre-ouvert",
+       "reps": 6,
+       "parCote": true
+      },
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 12
+      },
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Épaule et omoplates",
+     "type": "series",
+     "items": [
+      {
+       "ex": "rotation-externe-elastique",
+       "series": 3,
+       "reps": 12,
+       "rpe": 6,
+       "recup": 40,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ],
+       "note": "Coudes collés au corps, épaules basses."
+      },
+      {
+       "ex": "tirage-visage-elastique",
+       "series": 3,
+       "reps": 12,
+       "rpe": 6,
+       "recup": 40,
+       "note": "Tire vers les yeux, coudes hauts."
+      },
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "series": 3,
+       "reps": 10,
+       "rpe": 7,
+       "recup": 45,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "C'est la fin de ta traction en crawl : bras tendus jusqu'aux cuisses."
+      },
+      {
+       "ex": "tirage-elastique-debout",
+       "series": 2,
+       "reps": 12,
+       "rpe": 7,
+       "recup": 45,
+       "note": "Serre les omoplates 1 s."
+      },
+      {
+       "ex": "y-t-w-plat-ventre",
+       "series": 2,
+       "reps": 8,
+       "rpe": 6,
+       "recup": 40
+      },
+      {
+       "ex": "pompe-plus",
+       "series": 2,
+       "reps": 8,
+       "rpe": 6,
+       "recup": 40,
+       "note": "Bras tendus : seules les omoplates bougent."
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "etirement-pectoraux-cadre-porte",
+       "duree": 30,
+       "parCote": true,
+       "niveau": "Très facile"
+      },
+      {
+       "ex": "posture-enfant",
+       "duree": 45,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-ppo-force-jambes-aero",
+   "titre": "Force jambes + gainage aéro (PPO)",
+   "rpe": "7 à 8",
+   "dureeMin": 60,
+   "message": "Objectif : des jambes fortes pour pousser gros à vélo et rester économe à pied, et un tronc qui tient la position aéro. Charges lourdes, 2 reps en réserve, vraies récups.",
+   "sport": "triathlon",
+   "phase": "PPO",
+   "duree": 60,
+   "materiel": "salle",
+   "niveau": 3,
+   "contextes": [
+    "force-max"
+   ],
+   "pourquoi": "En préparation orientée, le bloc lourd (1 à 6 reps) est celui qui améliore l'économie à vélo puis à pied chez le triathlète, sans prise de poids.",
+   "preuve": "D · construction d'expert, principes B [@luckinbaldwin2021] [@vikmoen2017]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 360,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 30,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "charniere-hanche-baton",
+       "reps": 8
+      },
+      {
+       "ex": "pont-fessier-unijambe",
+       "reps": 8,
+       "parCote": true
+      },
+      {
+       "ex": "bird-dog",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-barre",
+       "series": 4,
+       "reps": 4,
+       "rpe": 8,
+       "recup": 180,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Deux séries de montée avant. Environ 85 % de ton max, 2 reps en réserve."
+      },
+      {
+       "ex": "souleve-de-terre",
+       "series": 3,
+       "reps": 4,
+       "rpe": 7,
+       "recup": 180,
+       "note": "Environ 80 % de ton max. Dos plat du début à la fin, sinon tu allèges."
+      },
+      {
+       "ex": "presse-a-cuisses-unijambe",
+       "series": 3,
+       "reps": 6,
+       "parCote": true,
+       "rpe": 8,
+       "recup": 75,
+       "note": "Pousse vite, freine en redescendant : chaque jambe fait sa part, comme sur les pédales."
+      },
+      {
+       "ex": "mollets-barre",
+       "series": 2,
+       "reps": 8,
+       "rpe": 8,
+       "recup": 75,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Gainage aéro",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-aero-swissball",
+       "series": 3,
+       "duree": 40,
+       "rpe": 7,
+       "recup": 40,
+       "note": "Coudes serrés comme sur tes prolongateurs. Sans ballon : planche sur les avant-bras, coudes serrés."
+      },
+      {
+       "ex": "extension-cou-position-velo",
+       "series": 2,
+       "duree": 30,
+       "recup": 30,
+       "note": "Regard 2 m devant, menton rentré."
+      },
+      {
+       "ex": "superman-brasse",
+       "series": 2,
+       "reps": 10,
+       "recup": 30
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "velo",
+       "duree": 180,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-pps-puissance-mollet",
+   "titre": "Puissance courte + mollet (PPS)",
+   "rpe": "7 à 8",
+   "dureeMin": 40,
+   "message": "Objectif : un pied qui rebondit pour courir vite après le vélo. Les sauts d'abord, à fond et frais (65 contacts), puis le mollet lourd et lent. Dès qu'un saut ralentit, arrête la série.",
+   "sport": "triathlon",
+   "phase": "PPS",
+   "duree": 40,
+   "materiel": "halteres",
+   "niveau": 2,
+   "contextes": [
+    "puissance"
+   ],
+   "pourquoi": "Avant la saison, sauts courts et mollet lourd entretiennent le ressort de la cheville, qui fait l'économie de la course à pied après le vélo.",
+   "preuve": "D · construction d'expert, principes B [@eihara2022] [@albracht2013] ; contacts : repère D [@ramirezcampillo2018]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 90,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "gamme-a-skip",
+       "duree": 45,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "talons-fesses",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 10,
+     "recupTour": 20,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 8
+      },
+      {
+       "ex": "rebonds-cheville-sans-decoller",
+       "reps": 15
+      },
+      {
+       "ex": "fente-arriere",
+       "reps": 5,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Puissance (65 contacts)",
+     "type": "series",
+     "items": [
+      {
+       "ex": "pogo-jumps",
+       "series": 3,
+       "reps": 10,
+       "recup": 60,
+       "intention": "Réactif",
+       "note": "30 contacts. Contact court, genoux presque tendus."
+      },
+      {
+       "ex": "jump-squat-halteres",
+       "series": 3,
+       "reps": 5,
+       "rpe": 7,
+       "recup": 90,
+       "intention": "Explosif",
+       "note": "15 contacts. Haltères légers : la hauteur du saut ne doit pas baisser."
+      },
+      {
+       "ex": "step-up-explosif",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "recup": 60,
+       "intention": "Explosif",
+       "note": "20 contacts. Sur une chaise stable ou une marche haute."
+      }
+     ]
+    },
+    {
+     "nom": "Mollet lourd",
+     "type": "series",
+     "items": [
+      {
+       "ex": "mollet-unijambe-marche",
+       "series": 3,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 8,
+       "recup": 45,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "1"
+       ],
+       "note": "Haltère dans la main du côté de la jambe d'appui. 2 reps en réserve."
+      },
+      {
+       "ex": "soleaire-assis-charge",
+       "series": 3,
+       "reps": 8,
+       "rpe": 8,
+       "recup": 60,
+       "tempo": [
+        "3",
+        "0",
+        "1",
+        "1"
+       ]
+      },
+      {
+       "ex": "isometrie-mollet-unijambe",
+       "series": 2,
+       "duree": 30,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 20
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "gainage-lateral",
+       "series": 2,
+       "duree": 30,
+       "parCote": true,
+       "recup": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-ppc-maintien-saison",
+   "titre": "Maintien de saison 25 min (PPC)",
+   "rpe": "6 à 7",
+   "dureeMin": 25,
+   "message": "Objectif : garder ta force entre les courses avec une seule séance courte par semaine. 2 séries par exercice, haltères lourds, 3 reps en réserve. Place-la un jour de natation ou de vélo facile.",
+   "sport": "triathlon",
+   "phase": "PPC",
+   "duree": 25,
+   "materiel": "halteres",
+   "niveau": 2,
+   "contextes": [
+    "maintien-saison"
+   ],
+   "pourquoi": "En période de course, une séance courte par semaine avec 1 à 2 séries lourdes suffit à conserver la force gagnée en préparation.",
+   "preuve": "C · [@ronnestad2010b] [@spiering2021]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Activation",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 10,
+     "recupTour": 20,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 10
+      },
+      {
+       "ex": "pont-fessier",
+       "reps": 10
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Force",
+     "type": "series",
+     "items": [
+      {
+       "ex": "fente-bulgare",
+       "series": 2,
+       "reps": 5,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Tes haltères les plus lourds : 3 reps en réserve."
+      },
+      {
+       "ex": "rdl-halteres",
+       "series": 2,
+       "reps": 6,
+       "rpe": 7,
+       "recup": 90,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ],
+       "note": "Lourd, dos plat."
+      },
+      {
+       "ex": "rowing-haltere",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 45
+      },
+      {
+       "ex": "mollet-unijambe-marche",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 7,
+       "recup": 45,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ],
+       "note": "Haltère en main."
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "planche-avant-bras",
+       "series": 1,
+       "duree": 45,
+       "recup": 15
+      },
+      {
+       "ex": "gainage-lateral",
+       "series": 1,
+       "duree": 30,
+       "parCote": true,
+       "recup": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-ppc-hotel-sans-materiel",
+   "titre": "Séance d'hôtel sans matériel (PPC)",
+   "rpe": "6",
+   "dureeMin": 25,
+   "message": "Objectif : garder le fil en déplacement ou en stage. Rien d'autre qu'un bout de moquette et un mur. La lenteur remplace la charge : respecte les tempos.",
+   "sport": "triathlon",
+   "phase": "PPC",
+   "duree": 25,
+   "materiel": "aucun",
+   "niveau": 2,
+   "contextes": [
+    "voyage",
+    "express"
+   ],
+   "pourquoi": "En déplacement, une séance lente au poids du corps entretient jambes, épaules et tronc jusqu'au retour à la maison.",
+   "preuve": "D · construction d'expert, principes C [@spiering2021] [@luckin2021]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "jumping-jack",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Mobilité",
+     "type": "circuit",
+     "tours": 1,
+     "recupExo": 5,
+     "recupTour": 15,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      },
+      {
+       "ex": "spiderman",
+       "reps": 6
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Circuit",
+     "type": "circuit",
+     "tours": 3,
+     "recupExo": 10,
+     "recupTour": 45,
+     "items": [
+      {
+       "ex": "squat-lent-5-5",
+       "reps": 5
+      },
+      {
+       "ex": "fente-arriere-lente-pause",
+       "reps": 5,
+       "parCote": true
+      },
+      {
+       "ex": "pompes",
+       "reps": 8
+      },
+      {
+       "ex": "pont-fessier-unijambe",
+       "reps": 10,
+       "parCote": true
+      },
+      {
+       "ex": "superman-brasse",
+       "reps": 10
+      },
+      {
+       "ex": "releve-pointes-mur-unijambe",
+       "reps": 10,
+       "parCote": true
+      },
+      {
+       "ex": "planche-touche-epaule",
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "nom": "Retour au calme",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "posture-enfant",
+       "duree": 45,
+       "niveau": "Très facile"
+      },
+      {
+       "ex": "etirement-mollet-mur",
+       "duree": 30,
+       "parCote": true,
+       "niveau": "Très facile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-affutage-veille-course",
+   "titre": "Activation de veille de course",
+   "rpe": "3 à 4",
+   "dureeMin": 14,
+   "message": "Objectif : réveiller épaules et jambes sans rien dépenser. Moins d'un quart d'heure, élastique léger, tout est facile. Garde l'envie pour demain.",
+   "sport": "triathlon",
+   "phase": "AFFUTAGE",
+   "duree": 14,
+   "materiel": "elastique",
+   "niveau": 1,
+   "contextes": [
+    "veille-course"
+   ],
+   "pourquoi": "La veille d'une course, une activation courte sans charge, sans descente lente et sans sauts réveille les muscles des trois sports sans fatigue.",
+   "preuve": "D · construction d'expert, principes C [@devantierthomas2024] [@mcgowan2015]",
+   "blocs": [
+    {
+     "nom": "Mise en route",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "talons-fesses",
+       "duree": 45,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Épaules",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 5,
+     "recupTour": 15,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "ecarte-elastique-epaules",
+       "reps": 10
+      },
+      {
+       "ex": "tirage-bras-tendus-elastique",
+       "reps": 10
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Jambes",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 5,
+     "recupTour": 15,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "squat-pdc",
+       "reps": 8
+      },
+      {
+       "ex": "pont-fessier",
+       "reps": 10
+      },
+      {
+       "ex": "mollets-debout",
+       "reps": 10
+      },
+      {
+       "ex": "balancier-jambe",
+       "duree": 15,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Réveil",
+     "type": "series",
+     "items": [
+      {
+       "ex": "lignes-droites-progressives",
+       "series": 3,
+       "duree": 15,
+       "rpe": 6,
+       "recup": 45,
+       "intention": "Fluide",
+       "note": "Jusqu'à ton allure de course, relâché. Reviens en marchant."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triathlon-transition-reprise-coupure",
+   "titre": "Reprise après la coupure",
+   "rpe": "4 à 5",
+   "dureeMin": 35,
+   "message": "Objectif : retrouver les gestes et réhabituer le corps, sans chercher la performance. Haltères légers, 4 reps en réserve partout. Deux fois par semaine pendant 2 à 3 semaines avant de recharger.",
+   "sport": "triathlon",
+   "phase": "TRANSITION",
+   "duree": 35,
+   "materiel": "halteres",
+   "niveau": 1,
+   "contextes": [
+    "retour-coupure"
+   ],
+   "pourquoi": "Après la coupure, une reprise légère du corps entier remet muscles et tendons en route avant le premier bloc de force.",
+   "preuve": "D · construction d'expert, principes B [@bosquet2013] [@mujika2000a]",
+   "blocs": [
+    {
+     "nom": "Échauffement",
+     "type": "cardio",
+     "items": [
+      {
+       "ex": "montees-de-genoux",
+       "duree": 60,
+       "niveau": "Facile"
+      },
+      {
+       "ex": "talons-fesses",
+       "duree": 60,
+       "niveau": "Facile"
+      }
+     ]
+    },
+    {
+     "nom": "Mobilité",
+     "type": "circuit",
+     "tours": 2,
+     "recupExo": 5,
+     "recupTour": 15,
+     "noRpe": true,
+     "items": [
+      {
+       "ex": "chat-vache",
+       "reps": 8
+      },
+      {
+       "ex": "spiderman",
+       "reps": 6
+      },
+      {
+       "ex": "glisse-au-mur",
+       "reps": 8
+      },
+      {
+       "ex": "mobilisation-cheville-debout-mur",
+       "reps": 8,
+       "parCote": true
+      }
+     ]
+    },
+    {
+     "nom": "Renforcement",
+     "type": "series",
+     "items": [
+      {
+       "ex": "squat-goblet",
+       "series": 2,
+       "reps": 10,
+       "rpe": 5,
+       "recup": 60,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "rdl-halteres",
+       "series": 2,
+       "reps": 10,
+       "rpe": 5,
+       "recup": 60,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "0"
+       ]
+      },
+      {
+       "ex": "rowing-haltere",
+       "series": 2,
+       "reps": 10,
+       "parCote": true,
+       "rpe": 5,
+       "recup": 40
+      },
+      {
+       "ex": "pompes-genoux",
+       "series": 2,
+       "reps": 8,
+       "rpe": 5,
+       "recup": 40
+      },
+      {
+       "ex": "elevation-plan-omoplate",
+       "series": 2,
+       "reps": 10,
+       "rpe": 5,
+       "recup": 40,
+       "note": "Très léger, pouces vers le haut."
+      },
+      {
+       "ex": "fente-arriere",
+       "series": 2,
+       "reps": 8,
+       "parCote": true,
+       "rpe": 5,
+       "recup": 40
+      },
+      {
+       "ex": "mollets-marche",
+       "series": 2,
+       "reps": 12,
+       "rpe": 5,
+       "recup": 30,
+       "tempo": [
+        "2",
+        "0",
+        "1",
+        "1"
+       ]
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "type": "series",
+     "items": [
+      {
+       "ex": "dead-bug",
+       "series": 2,
+       "reps": 8,
+       "recup": 20
+      },
+      {
+       "ex": "planche-avant-bras",
+       "series": 2,
+       "duree": 30,
+       "recup": 20
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
