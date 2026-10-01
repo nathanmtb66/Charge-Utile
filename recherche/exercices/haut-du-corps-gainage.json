@@ -1,0 +1,3772 @@
+[
+ {
+  "id": "suspension-barre-pieds-appui",
+  "nom": "Suspension à la barre, pieds en appui",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : mains en pronation sur la barre de traction, largeur d'épaules, bras tendus à la verticale, épaules légèrement abaissées, buste vertical, genoux fléchis à 90°, pointes de pieds posées sur une box placée sous la barre. Petit balancement de respiration seulement. Matériel : barre de traction, box sous les pieds.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "lats",
+   "upperback"
+  ],
+  "musclesTxt": "Avant-bras, mains, dos",
+  "materiel": [
+   "barre-traction",
+   "box"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Mains largeur d'épaules, pouces autour",
+   "Laisse pendre, pieds posés sur la box",
+   "Épaules loin des oreilles, ventre serré"
+  ],
+  "erreurs": [
+   "Pousser fort sur les jambes",
+   "Épaules collées aux oreilles"
+  ],
+  "pourquoi": "Tes mains et tes avant-bras apprennent à tenir longtemps : c'est ce qui lâche en premier dans une longue descente en VTT.",
+  "respiration": "Respire calmement par le nez pendant toute la tenue.",
+  "securite": "Enlève de plus en plus de poids des pieds, séance après séance. Lâche si ça tire à l'épaule ou au coude.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "tractions"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "suspension-barre",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-30 s, 60 s de repos. Passe à la suspension complète quand 30 s sont faciles",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "suspension-barre",
+  "nom": "Suspension à la barre (dead hang)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : suspendu à la barre de traction, mains en pronation largeur d'épaules, bras tendus, épaules légèrement abaissées (cou dégagé), corps droit et vertical, jambes tendues serrées, pieds à 20 cm du sol, légèrement devant. Matériel : barre de traction.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "lats",
+   "upperback",
+   "abs"
+  ],
+  "musclesTxt": "Avant-bras, mains, dos, abdos",
+  "materiel": [
+   "barre-traction"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Mains largeur d'épaules, pouces autour",
+   "Pends bras tendus, pieds décollés",
+   "Épaules basses, ventre serré, sans balancer"
+  ],
+  "erreurs": [
+   "Se balancer",
+   "Lâcher d'un coup et tomber sur les talons"
+  ],
+  "pourquoi": "Tenir le guidon en descente, c'est serrer longtemps sous les secousses. La suspension muscle exactement cette prise de main.",
+  "respiration": "Respire calmement, sans bloquer.",
+  "securite": "Descends en posant les pieds, sans sauter. Arrête si ça tire à l'épaule, au coude ou si la main s'engourdit.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "tractions"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "suspension-barre",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/dead-hang/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-40 s, 90 s de repos. Vise 60 s d'une traite avant de passer à la serviette",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "suspension-serviette",
+  "nom": "Suspension à la serviette",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : deux serviettes pliées passées par-dessus la barre de traction, espacées de la largeur d'épaules ; chaque main serre les deux pans d'une serviette, poings fermés, pouces vers le haut (prise neutre) ; bras tendus, épaules basses, corps vertical, pieds à 15 cm du sol. Matériel : barre de traction, 2 serviettes.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "biceps",
+   "lats"
+  ],
+  "musclesTxt": "Avant-bras, mains, doigts, dos",
+  "materiel": [
+   "barre-traction",
+   "sangle"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Passe 2 serviettes sur la barre",
+   "Serre une serviette dans chaque main",
+   "Pends bras tendus, épaules basses"
+  ],
+  "erreurs": [
+   "Serviette mal coincée qui glisse",
+   "Tenir en apnée, visage crispé"
+  ],
+  "pourquoi": "La serviette est épaisse et fuyante comme une poignée mouillée : tes doigts apprennent à serrer fort, longtemps.",
+  "respiration": "Respire court et régulier.",
+  "securite": "Vérifie que la serviette ne peut pas glisser. Pieds près du sol. Arrête si ça tire au coude ou aux doigts.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "tractions"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "suspension-barre",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15-25 s, 90 s de repos, 1 à 2 fois par semaine",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "suspension-une-main-assistee",
+  "nom": "Suspension une main, l'autre en aide",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : main gauche en pronation sur la barre de traction, bras tendu vertical ; main droite 30 cm plus bas, tenant une sangle ou une serviette accrochée à la barre, coude fléchi à 30° ; épaules à la même hauteur, bassin de face, jambes tendues, pieds à 10 cm du sol. Matériel : barre de traction, sangle courte.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "lats",
+   "obliques"
+  ],
+  "musclesTxt": "Avant-bras, main, dos, côté du ventre",
+  "materiel": [
+   "barre-traction",
+   "sangle"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Une main sur la barre, l'autre sur la sangle",
+   "Mets le poids dans la main de la barre",
+   "Bassin de face, épaule basse"
+  ],
+  "erreurs": [
+   "Le corps qui tourne",
+   "Épaule qui remonte à l'oreille"
+  ],
+  "pourquoi": "En VTT, une main encaisse parfois presque tout, un court instant. Ici tu apprends à tenir fort d'un seul côté.",
+  "respiration": "Respire calmement.",
+  "securite": "Garde toujours l'autre main en aide. Pieds près du sol. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "tractions"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "suspension-barre",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "dureeConseillee": 15,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×10-20 s par main, 90 s de repos. Réservé à ceux qui tiennent 60 s à deux mains",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "suspension-active",
+  "nom": "Suspension active (épaules qui descendent)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 : suspendu à la barre de traction, bras tendus, épaules relâchées remontées près des oreilles. s=1 : bras toujours tendus (coudes à 0°), épaules abaissées et omoplates serrées vers le bas, le corps monte de 5 à 8 cm, poitrine légèrement ouverte. Jambes tendues, immobiles. Matériel : barre de traction.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "forearms"
+  ],
+  "musclesTxt": "Dos, bas des omoplates, avant-bras",
+  "materiel": [
+   "barre-traction"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pends bras tendus",
+   "Descends les épaules sans plier les coudes",
+   "Tiens 2 s, relâche lentement"
+  ],
+  "erreurs": [
+   "Plier les coudes",
+   "Cambrer et lancer les jambes"
+  ],
+  "pourquoi": "Tu apprends à tenir tes épaules en place, bras tendus : la base pour encaisser les chocs au guidon et pour réussir une traction.",
+  "respiration": "Souffle en descendant les épaules, inspire en relâchant.",
+  "securite": "Petit mouvement, contrôlé. Arrête si ça tire dans l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "tractions",
+   "y-t-w-plat-ventre",
+   "pompe-plus"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "2"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8, tempo 2-0-1-2, 60 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "porte-valise",
+  "nom": "Porté valise (charge d'un seul côté)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, marche sur place ou vers l'avant. s=0 : debout, kettlebell tenu dans la main droite bras tendu le long de la cuisse, main gauche libre légèrement écartée, épaules horizontales, buste vertical. s=1 : milieu du pas, un pied devant l'autre, buste toujours vertical sans inclinaison, épaules horizontales. Matériel : un kettlebell ou un haltère lourd, dans une seule main.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "forearms",
+   "abs",
+   "upperback"
+  ],
+  "musclesTxt": "Côté du ventre, avant-bras, haut du dos",
+  "materiel": [
+   "kettlebell",
+   "halteres"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Une charge lourde dans une seule main",
+   "Marche droit, épaules à la même hauteur",
+   "Petits pas, ventre serré"
+  ],
+  "erreurs": [
+   "Pencher le buste du côté vide",
+   "Laisser la charge cogner la cuisse"
+  ],
+  "pourquoi": "Ton tronc refuse de se pencher pendant que ta main serre : c'est le gainage du vététiste qui pilote d'un côté et du coureur à chaque appui.",
+  "respiration": "Respire court et régulier en marchant.",
+  "securite": "Ramasse la charge dos plat, jambes fléchies. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "dos",
+   "trail"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "gainage-lateral",
+   "pallof-press"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-30 m (ou 30 s) par côté, 60 s. Charge : un quart à un tiers de ton poids",
+  "preuve": "C · [@macdermid2014] [@steffens2016]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "porte-serveur",
+  "nom": "Porté serveur (charge au-dessus de la tête)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, marche lente. s=0 : debout, bras droit tendu à la verticale, coude verrouillé, kettlebell posé contre l'avant-bras (ou haltère), poignet droit, biceps à côté de l'oreille ; bras gauche le long du corps ; buste vertical, côtes basses. s=1 : milieu du pas, même position du haut du corps, sans inclinaison. Matériel : kettlebell ou haltère dans une main, au-dessus de la tête.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "delts",
+   "upperback",
+   "obliques",
+   "abs",
+   "triceps"
+  ],
+  "musclesTxt": "Épaule, haut du dos, abdos, côté du ventre",
+  "materiel": [
+   "kettlebell",
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Bras tendu en l'air, biceps près de l'oreille",
+   "Poignet droit, côtes rentrées",
+   "Marche lentement, regard devant"
+  ],
+  "erreurs": [
+   "Cambrer le dos pour tenir la charge",
+   "Coude plié, épaule vers l'oreille"
+  ],
+  "pourquoi": "Ton épaule apprend à rester stable sous charge, bras tendu, pendant que tu bouges : utile pour le pilotage et pour la nage.",
+  "respiration": "Respire calmement, sans gonfler les côtes vers l'avant.",
+  "securite": "Commence léger. Si ça pince ou si ça tire dans l'épaule, repose la charge et parles-en à un kiné.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "developpe-militaire-halteres",
+   "marche-du-fermier",
+   "elevation-plan-omoplate"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×15-20 m (ou 20-30 s) par bras, 60 s. Charge légère : tu dois pouvoir la presser 8 fois",
+  "preuve": "D · [@braybrook2023] [@andersson2017]",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "porte-bottom-up",
+  "nom": "Porté kettlebell à l'envers (bottom-up)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, marche lente. s=0 : debout, bras droit coude fléchi à 90° et levé devant l'épaule (bras à l'horizontale, avant-bras vertical), main serrant la poignée d'un kettlebell tenu à l'envers, la boule au-dessus de la main ; poignet droit ; bras gauche le long du corps. s=1 : milieu du pas, même pose, légère oscillation du kettlebell. Matériel : un kettlebell léger.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "delts",
+   "upperback",
+   "abs"
+  ],
+  "musclesTxt": "Avant-bras, main, épaule, abdos",
+  "materiel": [
+   "kettlebell"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Kettlebell à l'envers, fond vers le plafond",
+   "Coude à 90°, devant l'épaule",
+   "Serre fort la poignée et marche lentement"
+  ],
+  "erreurs": [
+   "Poignet cassé vers l'arrière",
+   "Charge trop lourde qui bascule"
+  ],
+  "pourquoi": "La charge veut tomber à chaque pas : ta main serre et ton épaule corrige sans arrêt, comme sur un guidon qui vibre.",
+  "respiration": "Respire calmement.",
+  "securite": "Kettlebell léger (4 à 8 kg). Écarte ta tête de sa trajectoire. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "proprio",
+   "gainage"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "rotation-externe-elastique-90",
+   "elevation-plan-omoplate"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15 m (ou 20 s) par bras, 60 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pince-disques",
+  "nom": "Pince de disques (tenue)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : debout, pieds largeur de hanches, bras droit tendu le long du corps, deux disques collés l'un contre l'autre tenus verticalement en pince entre le pouce (côté cuisse) et les quatre doigts tendus (côté extérieur), 10 cm à l'écart de la cuisse ; bras gauche libre. Matériel : 2 disques de 5 kg.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Doigts, pouce, avant-bras",
+  "materiel": [
+   "disque"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "2 disques face lisse dehors, dans une main",
+   "Pince entre le pouce et les doigts",
+   "Debout bien droit, bras le long du corps"
+  ],
+  "erreurs": [
+   "Coincer les disques contre la cuisse",
+   "Lâcher les disques sur les pieds"
+  ],
+  "pourquoi": "Le pouce et les doigts travaillent comme sur une poignée et un levier de frein : une pince solide fatigue moins vite en descente.",
+  "respiration": "Respire normalement.",
+  "securite": "Garde les pieds écartés des disques. Pose-les avant qu'ils glissent.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15-30 s par main, 60 s. Commence avec 2 disques de 5 kg",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "enroulement-poignets",
+  "nom": "Enroulement de poignets (wrist roller)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 : debout, coudes fléchis à 90° collés au corps, les deux mains en pronation tiennent un bâton horizontal ; une corde de 1 m pend du milieu du bâton avec un disque au bout, près du sol. s=1 : même posture, la corde est enroulée autour du bâton, le disque est remonté à 10 cm du bâton ; les poignets tournent en alternance. Matériel : bâton, corde, disque léger.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms",
+   "delts"
+  ],
+  "musclesTxt": "Avant-bras (dessus et dessous), épaules",
+  "materiel": [
+   "disque",
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Bâton à deux mains, coudes pliés au corps",
+   "Enroule la corde en tournant les poignets",
+   "Déroule lentement, sans laisser filer"
+  ],
+  "erreurs": [
+   "Monter les épaules et bouger les bras",
+   "Laisser redescendre le disque d'un coup"
+  ],
+  "pourquoi": "Freiner, serrer, corriger le guidon : tes avant-bras font ça pendant toute une descente. Ici tu les rends endurants.",
+  "respiration": "Respire régulièrement, sans bloquer.",
+  "securite": "Charge légère (1 à 3 kg). Arrête si ça tire sur le coude ou le poignet.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": null,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/wrist-roller/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3 montées-descentes complètes, 60-90 s de repos. Un disque de 1,25 à 2,5 kg suffit",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-poignet-haltere",
+  "nom": "Extension de poignet (haltère)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Assis ou à genoux devant un banc, avant-bras droit posé à plat sur le banc, coude fléchi à 90°, poignet et main dépassant du bord, paume vers le sol, haltère léger dans la main. s=0 : poignet fléchi, main qui pend à 45° vers le sol. s=1 : poignet en extension, dos de la main relevé à 45° au-dessus de l'horizontale. L'avant-bras ne bouge pas. Matériel : haltère 2-5 kg, banc.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Dessus de l'avant-bras",
+  "materiel": [
+   "halteres",
+   "banc"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Avant-bras posé sur le banc, paume vers le sol",
+   "Monte le dos de la main vers le plafond",
+   "Redescends en 3 secondes"
+  ],
+  "erreurs": [
+   "Décoller l'avant-bras du banc",
+   "Prendre trop lourd et donner un élan"
+  ],
+  "pourquoi": "Ce sont les muscles qui tiennent ton poignet droit quand tu freines à un doigt : plus solides, ils brûlent moins vite en descente.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Charge légère. Si ça tire sur le côté du coude, allège ou arrête.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2-3×12-15 par main, tempo 3-0-1-1, 45-60 s de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "flexion-poignet-haltere",
+  "nom": "Flexion de poignet (haltère)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Assis ou à genoux devant un banc, avant-bras droit posé à plat sur le banc, coude à 90°, poignet et main dépassant du bord, paume vers le plafond, haltère dans la main. s=0 : poignet en extension, main ouverte vers le bas, haltère retenu par les doigts. s=1 : main refermée, poignet fléchi à 45° vers le haut. L'avant-bras reste collé au banc. Matériel : haltère 4-8 kg, banc.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Dessous de l'avant-bras, doigts",
+  "materiel": [
+   "halteres",
+   "banc"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Avant-bras posé sur le banc, paume vers le haut",
+   "Laisse rouler l'haltère au bout des doigts",
+   "Referme la main et enroule le poignet"
+  ],
+  "erreurs": [
+   "Décoller l'avant-bras du banc",
+   "Aller vite, sans amplitude"
+  ],
+  "pourquoi": "Ces muscles ferment ta main sur la poignée. Plus forts, ils te laissent serrer moins fort pour le même contrôle.",
+  "respiration": "Souffle en enroulant, inspire en descendant.",
+  "securite": "Charge modérée. Arrête si ça tire au poignet ou à l'intérieur du coude.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/dumbbell-wrist-curl/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×12-15 par main, tempo 3-0-1-1, 45-60 s de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-inverse-sangle-debout",
+  "nom": "Rowing à la sangle, presque debout (TRX)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Sangles accrochées en hauteur (2 m), une poignée dans chaque main. s=0 : corps droit des talons à la tête, incliné à 60° par rapport au sol (penché en arrière), bras tendus vers l'ancrage, talons au sol, pointes relevées. s=1 : même inclinaison du corps gainé, coudes fléchis à 100° près des côtes, mains de chaque côté de la poitrine, omoplates serrées. Matériel : sangles de suspension.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lats",
+   "biceps",
+   "abs"
+  ],
+  "musclesTxt": "Haut du dos, grands dorsaux, biceps, abdos",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Tiens les poignées, penche-toi en arrière",
+   "Corps en planche, talons au sol",
+   "Tire la poitrine entre tes mains"
+  ],
+  "erreurs": [
+   "Bassin qui tombe en arrière",
+   "Épaules qui montent aux oreilles"
+  ],
+  "pourquoi": "Tirer ton corps vers tes mains, c'est tirer sur le guidon pour relancer ou lever la roue avant, sans aucune machine.",
+  "respiration": "Souffle en tirant, inspire en revenant.",
+  "securite": "Vérifie l'ancrage de la sangle avant de te pencher. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "dos",
+   "velo"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tirage-visage-elastique",
+   "tractions"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "rowing-inverse",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12, tempo 2-0-1-1, 60 s. Avance les pieds pour durcir",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-inverse-genoux-plies",
+  "nom": "Rowing inversé, genoux pliés (barre basse ou sangle)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Barre fixée dans un rack à 90 cm du sol (ou poignées de sangle à cette hauteur). s=0 : sous la barre, mains en pronation un peu plus larges que les épaules, bras tendus, pieds à plat au sol, genoux fléchis à 90°, hanches levées : genoux, hanches et épaules alignés à l'horizontale (position de table). s=1 : coudes fléchis à 100°, poitrine contre la barre, corps toujours aligné. Matériel : barre dans un rack ou sangles.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lats",
+   "biceps",
+   "glutes"
+  ],
+  "musclesTxt": "Haut du dos, grands dorsaux, biceps, fessiers",
+  "materiel": [
+   "barre",
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sous la barre, pieds à plat, genoux à 90°",
+   "Hanches hautes : des genoux aux épaules",
+   "Tire la poitrine jusqu'à la barre"
+  ],
+  "erreurs": [
+   "Hanches qui tombent en montant",
+   "Menton en avant pour toucher la barre"
+  ],
+  "pourquoi": "C'est le tirage horizontal au poids du corps : un dos fort pour tenir le buste et tirer sur le guidon dans les relances.",
+  "respiration": "Souffle en tirant, inspire en descendant.",
+  "securite": "Barre bien calée dans le rack, à hauteur de hanches. Arrête si ça tire à l'épaule ou au coude.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "dos",
+   "velo"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tractions",
+   "tirage-visage-elastique"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "rowing-inverse",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10, tempo 2-0-1-1, 90 s de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-inverse-jambes-tendues",
+  "nom": "Rowing inversé, jambes tendues",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Barre fixée dans un rack à 90 cm du sol. s=0 : sous la barre, mains en pronation un peu plus larges que les épaules, bras tendus, corps rectiligne de la tête aux talons, incliné à 20° du sol, talons au sol, pointes relevées. s=1 : coudes fléchis à 100°, poitrine contre la barre, corps toujours rectiligne. Matériel : barre dans un rack ou sangles de suspension.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lats",
+   "biceps",
+   "abs",
+   "glutes"
+  ],
+  "musclesTxt": "Haut du dos, grands dorsaux, biceps, abdos",
+  "materiel": [
+   "barre",
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sous la barre, jambes tendues, talons au sol",
+   "Corps raide comme une planche",
+   "Tire la poitrine à la barre, tiens 1 s"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse",
+   "Ne monter qu'à moitié"
+  ],
+  "pourquoi": "Tu tires tout ton poids en restant gainé des talons à la tête : la force de dos qu'il te faut quand le vélo secoue.",
+  "respiration": "Souffle en tirant, inspire en descendant.",
+  "securite": "Barre bien calée. Si tu ne touches plus la barre proprement, reviens genoux pliés.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "dos",
+   "gainage"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "tractions",
+   "tirage-visage-elastique"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "rowing-inverse",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/inverted-row/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 2-0-1-1, 90 s de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-inverse-pieds-sureleves",
+  "nom": "Rowing inversé, pieds surélevés",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Barre dans un rack à 90 cm du sol, banc placé devant. s=0 : sous la barre, bras tendus, mains en pronation, talons posés sur le banc (40 cm de haut), corps rectiligne et horizontal, 10 cm sous la barre à bout de bras. s=1 : coudes fléchis à 100°, poitrine contre la barre, corps toujours rectiligne et horizontal. Matériel : barre dans un rack, banc.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lats",
+   "biceps",
+   "abs",
+   "glutes"
+  ],
+  "musclesTxt": "Haut du dos, grands dorsaux, biceps, abdos",
+  "materiel": [
+   "barre",
+   "banc"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Talons sur le banc, corps à l'horizontale",
+   "Fessiers et ventre serrés",
+   "Tire la poitrine à la barre, descends lent"
+  ],
+  "erreurs": [
+   "Hanches qui tombent",
+   "Tirer par à-coups"
+  ],
+  "pourquoi": "La version la plus dure du tirage horizontal sans machine : beaucoup de force de dos pour peu de matériel.",
+  "respiration": "Souffle en tirant, inspire en descendant.",
+  "securite": "Banc stable, barre calée. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "rowing-inverse",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×5-8, tempo 3-0-1-1, 2 min. Ensuite ajoute un sac lesté sur le ventre",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rowing-barre-penche",
+  "nom": "Rowing barre, buste penché",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : debout, pieds largeur de hanches, genoux fléchis à 20°, hanches fléchies : buste penché à 45°, dos plat, bras tendus à la verticale, barre tenue en pronation un peu plus large que les épaules, devant les genoux. s=1 : buste immobile, coudes fléchis à 100° et tirés vers l'arrière le long des côtes, barre contre le nombril. Matériel : barre chargée.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lats",
+   "biceps",
+   "lowback",
+   "hams"
+  ],
+  "musclesTxt": "Haut du dos, grands dorsaux, biceps, lombaires",
+  "materiel": [
+   "barre"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Buste penché à 45°, dos plat, genoux souples",
+   "Tire la barre vers le nombril",
+   "Descends bras tendus, sans bouger le buste"
+  ],
+  "erreurs": [
+   "Redresser le buste pour tricher",
+   "Dos rond en fin de série"
+  ],
+  "pourquoi": "Tu tires lourd pendant que ton dos tient la position penchée : exactement ce que demande un vélo, buste en avant, mains qui tirent.",
+  "respiration": "Souffle en tirant, inspire en descendant.",
+  "securite": "Dos plat du début à la fin. Si le bas du dos tire, allège ou passe au rowing haltère avec appui.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "chaine-posterieure",
+   "velo",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "rowing-haltere",
+   "rdl-barre",
+   "tractions"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/barbell-bent-over-row/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3-4×6-8, tempo 2-0-1-1, 2 min. Garde 2 répétitions en réserve",
+  "preuve": "C · [@macdermid2014] [@losnegard2011]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tirage-vertical-elastique",
+  "nom": "Tirage vertical à genoux (élastique)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Élastique accroché en hauteur (2,2 m), un brin dans chaque main. s=0 : à genoux, buste droit, bras tendus en V vers l'ancrage, élastique tendu, épaules basses. s=1 : coudes tirés vers le bas et l'arrière jusqu'aux côtes (coudes à 60°), mains à hauteur des épaules, poitrine ouverte, buste toujours vertical. Matériel : élastique long fixé en hauteur.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps"
+  ],
+  "musclesTxt": "Grands dorsaux, haut du dos, biceps",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique fixé haut, à genoux en dessous",
+   "Tire les coudes vers les poches",
+   "Remonte en 3 s, bras presque tendus"
+  ],
+  "erreurs": [
+   "Se pencher en arrière pour tirer",
+   "Épaules qui montent en haut"
+  ],
+  "pourquoi": "C'est la traction de la maison : tu muscles le dos qui tire, sans barre et sans devoir soulever tout ton poids.",
+  "respiration": "Souffle en tirant, inspire en remontant.",
+  "securite": "Vérifie l'ancrage en haut de la porte. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere",
+   "tirage-visage-elastique"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×12-15, tempo 3-0-1-1, 60 s. Élastique fort : les 3 dernières doivent être dures",
+  "preuve": "C · [@losnegard2011] [@macdermid2014]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tractions-assistees-elastique",
+  "nom": "Tractions assistées (élastique sous le genou)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme pullup, avec un élastique en boucle. Vue de face. Élastique noué à la barre de traction, pendant en boucle ; un genou fléchi à 90° posé dans la boucle. s=0 : suspendu bras tendus, élastique très étiré. s=1 : menton au-dessus de la barre, coudes fléchis près des côtes, élastique moins étiré. Matériel : barre de traction, élastique en boucle.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps",
+   "forearms"
+  ],
+  "musclesTxt": "Grands dorsaux, haut du dos, biceps, avant-bras",
+  "materiel": [
+   "barre-traction",
+   "elastique"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique noué à la barre, genou dedans",
+   "Tire le menton au-dessus de la barre",
+   "Descends en 3 s jusqu'aux bras tendus"
+  ],
+  "erreurs": [
+   "Rebondir en bas sur l'élastique",
+   "Ne faire que des demi-tractions"
+  ],
+  "pourquoi": "L'élastique t'enlève quelques kilos : tu apprends la vraie traction, en entier, avant de la faire seul.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Entre et sors de l'élastique avec un appui stable. Arrête si ça tire à l'épaule ou au coude.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "traction",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/band-assisted-pull-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-8, tempo 3-0-1-0, 2 min. Prends un élastique plus fin dès que tu fais 8",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "tractions"
+ },
+ {
+  "id": "tractions-negatives",
+  "nom": "Tractions négatives (descente lente)",
+  "famille": "haut-du-corps",
+  "anim": "pullup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps",
+   "forearms"
+  ],
+  "musclesTxt": "Grands dorsaux, haut du dos, biceps, avant-bras",
+  "materiel": [
+   "barre-traction",
+   "box"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur la box, menton au-dessus de la barre",
+   "Décolle les pieds, tiens 1 s en haut",
+   "Descends en 5 s jusqu'aux bras tendus"
+  ],
+  "erreurs": [
+   "Tomber d'un coup à mi-hauteur",
+   "Sauter pour remonter avec élan"
+  ],
+  "pourquoi": "Freiner ton propre poids en descendant, c'est le moyen le plus rapide de gagner ta première traction, et un dos solide pour le pilotage.",
+  "respiration": "Inspire en haut, souffle lentement pendant la descente.",
+  "securite": "Peu de répétitions : ça courbature beaucoup les premières fois. Arrête si ça tire au coude ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "5",
+   "0",
+   "1",
+   "1"
+  ],
+  "progression": {
+   "groupe": "traction",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "4×3-5 descentes de 5 s, 2 min de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "tractions"
+ },
+ {
+  "id": "tractions-prise-neutre",
+  "nom": "Tractions prise neutre (paumes face à face)",
+  "famille": "haut-du-corps",
+  "anim": "pullup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "biceps",
+   "upperback",
+   "forearms"
+  ],
+  "musclesTxt": "Grands dorsaux, biceps, haut du dos, avant-bras",
+  "materiel": [
+   "barre-traction"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Paumes face à face, poignées parallèles",
+   "Tire les coudes vers les hanches",
+   "Descends jusqu'aux bras tendus"
+  ],
+  "erreurs": [
+   "Donner un coup de reins",
+   "S'arrêter avant les bras tendus"
+  ],
+  "pourquoi": "La prise neutre est la plus douce pour les épaules et les coudes : la bonne traction si la prise large te gêne.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Descente contrôlée. Arrête si ça tire au coude ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/neutral-grip-pull-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3-4×4-8, tempo 2-0-1-0, 2 min de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "tractions"
+ },
+ {
+  "id": "tractions-lestees",
+  "nom": "Tractions lestées",
+  "famille": "haut-du-corps",
+  "anim": "pullup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps",
+   "forearms"
+  ],
+  "musclesTxt": "Grands dorsaux, haut du dos, biceps, avant-bras",
+  "materiel": [
+   "barre-traction",
+   "sac-leste"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sac lesté ou haltère entre les pieds",
+   "Tire fort, menton au-dessus de la barre",
+   "Descends en 2 s, bras tendus en bas"
+  ],
+  "erreurs": [
+   "Charge qui se balance",
+   "Raccourcir l'amplitude"
+  ],
+  "pourquoi": "La force lourde de tirage est celle qui a amélioré la double poussée de skieurs de fond de haut niveau. Utile aussi au vététiste déjà fort.",
+  "respiration": "Inspire en bas, souffle en montant.",
+  "securite": "Il te faut 8 tractions propres sans lest avant d'essayer. Arrête si ça tire au coude ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "traction",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/weighted-pull-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×3-5, tempo 2-0-1-0, 2-3 min. Ajoute 2,5 kg quand tu fais 4×5",
+  "preuve": "B · [@losnegard2011] [@stoggl2022]",
+  "sports": [
+   "nordique",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": "tractions"
+ },
+ {
+  "id": "tirage-poitrine-machine",
+  "nom": "Tirage poitrine à la poulie haute",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Assis sur le siège d'une poulie haute, cuisses sous les boudins, pieds à plat. s=0 : bras tendus en V vers le haut, mains en pronation sur une barre large au-dessus de la tête, buste incliné de 10° en arrière. s=1 : barre tirée devant le visage jusqu'au haut de la poitrine, coudes vers le bas et l'arrière (fléchis à 70°), omoplates serrées. Matériel : machine à poulie haute, barre large.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "biceps"
+  ],
+  "musclesTxt": "Grands dorsaux, haut du dos, biceps",
+  "materiel": [
+   "machine"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis, cuisses calées, buste presque droit",
+   "Tire la barre vers le haut de la poitrine",
+   "Remonte en 3 s, bras tendus"
+  ],
+  "erreurs": [
+   "Tirer derrière la nuque",
+   "Se jeter en arrière pour descendre la barre"
+  ],
+  "pourquoi": "C'est le tirage lourd utilisé dans l'étude sur les skieurs de fond : facile à charger, pour progresser en force semaine après semaine.",
+  "respiration": "Souffle en tirant, inspire en remontant.",
+  "securite": "Toujours devant le visage, jamais derrière la nuque. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "dos"
+  ],
+  "alternatives": [
+   "tractions",
+   "rowing-haltere"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/lat-pulldown/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3-4×5-8 lourd, tempo 3-0-1-0, 2 min de repos",
+  "preuve": "B · [@losnegard2011] [@stoggl2022]",
+  "sports": [
+   "nordique",
+   "xco",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pompes-mains-surelevees",
+  "nom": "Pompes mains surélevées (banc ou box)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme pushup, corps incliné. Vue de profil. Mains posées sur le bord d'un banc (45 cm), largeur d'épaules, pointes de pieds au sol. s=0 : bras tendus, corps rectiligne de la tête aux talons, incliné à 30° du sol. s=1 : coudes fléchis à 90°, à 45° du buste, poitrine à 3 cm du banc, corps toujours rectiligne. Matériel : banc ou box.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "banc"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Mains sur le banc, corps en planche",
+   "Descends la poitrine jusqu'au banc",
+   "Coudes à 45° du corps, pousse fort"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse",
+   "Coudes ouverts en croix"
+  ],
+  "pourquoi": "Une vraie pompe, corps gainé, mais plus légère : meilleure que la pompe sur les genoux pour apprendre à pousser en restant solide.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Banc calé contre un mur. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pompes-genoux",
+   "pompes",
+   "planche-mains"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "pompes",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/incline-push-up/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-12, tempo 3-0-1-0, 60-90 s. Baisse l'appui quand 12 sont faciles",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pompes"
+ },
+ {
+  "id": "pompes-pieds-sureleves",
+  "nom": "Pompes pieds surélevés",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme pushup, pieds en hauteur. Vue de profil. Pointes de pieds posées sur un banc (45 cm), mains au sol sous les épaules. s=0 : bras tendus, corps rectiligne, tête plus basse que les pieds (corps incliné à 15° vers l'avant). s=1 : coudes fléchis à 90°, à 45° du buste, poitrine et nez à 5 cm du sol, corps toujours rectiligne. Matériel : banc ou box.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "delts",
+   "triceps",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux (haut), épaules, triceps, abdos",
+  "materiel": [
+   "banc"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Pieds sur le banc, mains sous les épaules",
+   "Corps droit, ventre et fessiers serrés",
+   "Descends le nez près du sol, pousse"
+  ],
+  "erreurs": [
+   "Creuser le bas du dos",
+   "Tête qui plonge avant la poitrine"
+  ],
+  "pourquoi": "Plus de poids sur les bras et les épaules : tu te prépares à encaisser une réception ou un gros freinage, buste en avant.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Il te faut 15 pompes propres au sol avant. Arrête si ça tire à l'épaule ou au poignet.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pompes",
+   "developpe-couche-barre",
+   "planche-mains"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "pompes",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/decline-push-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-0-1-0, 90 s de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "nordique",
+   "triathlon"
+  ],
+  "varianteDe": "pompes"
+ },
+ {
+  "id": "pompes-pike",
+  "nom": "Pompes en V (pike push-up)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : mains au sol largeur d'épaules, pointes de pieds au sol à 80 cm des mains, jambes tendues, hanches très hautes fléchies à 90° : corps en V inversé, bras tendus dans l'alignement du dos, tête entre les bras. s=1 : coudes fléchis à 90° vers l'arrière, sommet du crâne à 3 cm du sol, 20 cm devant la ligne des mains, hanches toujours hautes. Matériel : tapis.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "delts",
+   "triceps",
+   "upperback"
+  ],
+  "musclesTxt": "Épaules, triceps, haut du dos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Fesses hautes, corps en V à l'envers",
+   "Descends le haut du crâne entre les mains",
+   "Pousse le sol loin, bras près des oreilles"
+  ],
+  "erreurs": [
+   "Redevenir une pompe normale, fesses basses",
+   "Coudes qui partent sur les côtés"
+  ],
+  "pourquoi": "C'est le développé au-dessus de la tête sans matériel : des épaules fortes pour pousser et tenir bras hauts, à l'hôtel comme à la maison.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Pose la tête doucement, jamais d'appui dessus. Arrête si ça pince dans l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "developpe-militaire-halteres",
+   "pompes",
+   "elevation-plan-omoplate"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/pike-push-up/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-10, tempo 3-0-1-0, 90 s. Pieds sur un banc pour durcir",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pompes-lestees",
+  "nom": "Pompes lestées (sac ou disque sur le dos)",
+  "famille": "haut-du-corps",
+  "anim": "pushup",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "sac-leste"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sac à dos chargé, sangles bien serrées",
+   "Corps en planche, descends poitrine au sol",
+   "Pousse fort, sans casser la planche"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse sous la charge",
+   "Amplitude qui diminue"
+  ],
+  "pourquoi": "Quand 15 pompes sont faciles, ajouter du poids développe la force au lieu de l'endurance : moins de répétitions, plus d'effet, sans prendre de volume.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Charge haute sur le dos, pas sur les lombaires. Arrête si ça tire à l'épaule ou dans le bas du dos.",
+  "tags": [
+   "haut-du-corps",
+   "gainage"
+  ],
+  "alternatives": [
+   "pompes",
+   "developpe-couche-barre"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "0"
+  ],
+  "progression": {
+   "groupe": "pompes",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/weighted-push-up/",
+  "valide": false,
+  "priorite": 3,
+  "prescription": "4×5-8, tempo 2-0-1-0, 2 min. Ajoute 2-5 kg quand tu fais 4×8",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "nordique"
+  ],
+  "varianteDe": "pompes"
+ },
+ {
+  "id": "pompes-mains-swissball",
+  "nom": "Pompes mains sur swissball",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Swissball de 65 cm au sol ; mains posées sur le haut et les côtés du ballon, doigts orientés vers le bas, pointes de pieds au sol écartées de 50 cm. s=0 : bras tendus, corps rectiligne incliné à 30° du sol. s=1 : coudes fléchis à 90° près du corps, poitrine posée sur le ballon, corps toujours rectiligne. Léger tremblement du ballon. Matériel : swissball.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts",
+   "abs",
+   "forearms"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules, abdos",
+  "materiel": [
+   "swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Mains sur les côtés du ballon, doigts en bas",
+   "Corps en planche, pieds écartés",
+   "Descends la poitrine au ballon, lentement"
+  ],
+  "erreurs": [
+   "Ballon qui roule : pieds trop serrés",
+   "Aller vite pour ne pas trembler"
+  ],
+  "pourquoi": "Le ballon bouge sous tes mains comme un guidon dans un pierrier : tes épaules et ton tronc apprennent à pousser en stabilisant.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Ballon bien gonflé, sol non glissant, ou ballon calé contre un mur au début. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "proprio",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "pompes",
+   "pompe-plus",
+   "planche-transfert-poids"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/stability-ball-push-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-1-1-0, 90 s de repos",
+  "preuve": "D · [@macdermid2014]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": "pompes"
+ },
+ {
+  "id": "developpe-couche-halteres",
+  "nom": "Développé couché (haltères)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Comme benchpress, avec deux haltères. Vue de profil. Couché sur le dos sur un banc plat, pieds à plat au sol, genoux à 90°. s=0 : bras tendus à la verticale au-dessus de la poitrine, un haltère dans chaque main, paumes vers les pieds. s=1 : coudes fléchis à 90°, à 45° du buste, haltères de chaque côté de la poitrine, à hauteur du sternum. Matériel : 2 haltères, banc.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "triceps",
+   "delts"
+  ],
+  "musclesTxt": "Pectoraux, triceps, épaules",
+  "materiel": [
+   "halteres",
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Couché, pieds au sol, omoplates serrées",
+   "Descends les haltères au niveau de la poitrine",
+   "Pousse vers le plafond, poignets droits"
+  ],
+  "erreurs": [
+   "Coudes à 90° du buste, épaules en avant",
+   "Décoller les fesses du banc"
+  ],
+  "pourquoi": "Chaque bras pousse seul : tu corriges un côté plus faible et tu gagnes la force de poussée qui sert à tenir le buste sur le vélo.",
+  "respiration": "Inspire en descendant, souffle en poussant.",
+  "securite": "Monte les haltères depuis les cuisses, repose-les de la même façon. Arrête si ça tire à l'épaule.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "developpe-couche-barre",
+   "pompes"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-0-1-0, 2 min de repos",
+  "preuve": "C · [@macdermid2014] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "developpe-couche-barre"
+ },
+ {
+  "id": "developpe-demi-genou-un-bras",
+  "nom": "Développé un bras, un genou au sol",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Position chevalier servant : genou droit au sol, pied gauche à plat devant, les deux genoux à 90°, buste vertical. s=0 : haltère dans la main droite à hauteur d'épaule, coude fléchi sous le poignet, paume vers l'intérieur ; main gauche sur la hanche. s=1 : bras droit tendu à la verticale, biceps près de l'oreille, buste toujours vertical, bassin de face. Matériel : un haltère ou un kettlebell, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "delts",
+   "triceps",
+   "obliques",
+   "abs",
+   "glutes"
+  ],
+  "musclesTxt": "Épaule, triceps, côté du ventre, fessier",
+  "materiel": [
+   "halteres",
+   "kettlebell",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Un genou au sol, charge du même côté",
+   "Fessier serré, côtes rentrées",
+   "Pousse droit au plafond sans te pencher"
+  ],
+  "erreurs": [
+   "Se pencher sur le côté pour pousser",
+   "Cambrer le bas du dos"
+  ],
+  "pourquoi": "Tu pousses au-dessus de la tête d'un seul bras pendant que ton tronc empêche de tourner et de pencher : épaule et gainage dans le même geste.",
+  "respiration": "Souffle en poussant, inspire en descendant.",
+  "securite": "Si ça pince en haut de l'épaule, raccourcis l'amplitude ou allège.",
+  "tags": [
+   "haut-du-corps",
+   "gainage",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "developpe-militaire-halteres",
+   "pallof-press",
+   "elevation-plan-omoplate"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8 par bras, tempo 2-0-1-1, 90 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-triceps-elastique",
+  "nom": "Extension des triceps à l'élastique",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Élastique accroché en hauteur (2 m), un brin dans chaque main. s=0 : debout face à l'ancrage, buste incliné de 10° en avant, coudes fléchis à 110° collés aux côtes, mains devant la poitrine. s=1 : coudes au même endroit, bras tendus vers le bas, mains devant les cuisses, élastique étiré. Matériel : élastique fixé en hauteur.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "triceps",
+   "abs"
+  ],
+  "musclesTxt": "Triceps, abdos",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique fixé haut, coudes collés aux côtes",
+   "Tends les bras vers les cuisses",
+   "Remonte en 3 s, sans bouger les coudes"
+  ],
+  "erreurs": [
+   "Coudes qui s'écartent ou avancent",
+   "Se pencher pour appuyer avec le poids du corps"
+  ],
+  "pourquoi": "Le triceps termine chaque poussée de bâton en ski de fond. En vélo, il tient tes bras fléchis pendant des heures.",
+  "respiration": "Souffle en tendant, inspire en remontant.",
+  "securite": "Vérifie l'ancrage. Arrête si ça tire au coude.",
+  "tags": [
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "pompes",
+   "ski-erg"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/band-pushdown/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-15, tempo 3-0-1-1, 60 s de repos",
+  "preuve": "C · [@losnegard2011] [@osteras2016]",
+  "sports": [
+   "nordique",
+   "triathlon",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tenue-ours",
+  "nom": "Tenue de l'ours (genoux décollés)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : à quatre pattes, mains sous les épaules, bras tendus, hanches et genoux fléchis à 90°, genoux décollés à 3 cm du sol sous les hanches, appui sur les pointes de pieds, dos plat et horizontal, regard vers le sol entre les mains. Matériel : tapis.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "delts",
+   "quads",
+   "obliques"
+  ],
+  "musclesTxt": "Abdos, épaules, cuisses",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À quatre pattes, orteils crochetés",
+   "Décolle les genoux de 3 cm",
+   "Dos plat comme une table, pousse le sol"
+  ],
+  "erreurs": [
+   "Fesses qui montent",
+   "Dos rond, tête rentrée"
+  ],
+  "pourquoi": "Bras tendus, dos plat, jambes fléchies : c'est une position de pilotage. Tu apprends à la tenir sans bouger le bassin.",
+  "respiration": "Respire par le nez, ventre serré.",
+  "securite": "Si les poignets gênent, appuie-toi sur les poings ou sur deux haltères.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-mains",
+   "bird-dog",
+   "planche-touche-epaule"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "ours",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×20-30 s, 45 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "marche-de-l-ours",
+  "nom": "Marche de l'ours",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, déplacement vers l'avant. s=0 : position d'ours : mains sous les épaules, bras tendus, hanches et genoux à 90°, genoux à 3 cm du sol, dos plat horizontal. s=1 : main droite avancée de 20 cm et pied gauche avancé de 20 cm en même temps, dos toujours plat, genoux toujours près du sol ; puis l'autre diagonale. Matériel : aucun.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "delts",
+   "obliques",
+   "quads",
+   "triceps"
+  ],
+  "musclesTxt": "Abdos, épaules, côté du ventre, cuisses",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "À quatre pattes, genoux à 3 cm du sol",
+   "Avance main droite et pied gauche ensemble",
+   "Petits pas, dos plat, bassin qui ne roule pas"
+  ],
+  "erreurs": [
+   "Fesses en l'air",
+   "Grands pas, bassin qui se dandine"
+  ],
+  "pourquoi": "Tes épaules portent ton poids pendant que tu bouges, et ton tronc empêche le bassin de tourner : le gainage du pilotage, en mouvement.",
+  "respiration": "Respire régulièrement, sans bloquer.",
+  "securite": "Sol non glissant. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "proprio"
+  ],
+  "alternatives": [
+   "planche-touche-epaule",
+   "mountain-climbers",
+   "planche-transfert-poids"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "ours",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10 m aller en avant, retour en arrière, 60 s de repos",
+  "preuve": "C · [@blechschmied2026] [@macdermid2014]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "releve-turc-coude",
+  "nom": "Relevé turc 1 : jusqu'au coude (sans charge)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois quarts. s=0 : couché sur le dos, bras droit tendu à la verticale poing fermé, genou droit fléchi pied à plat, jambe gauche tendue écartée à 30°, bras gauche au sol écarté à 45°. s=1 : buste relevé à 45° en appui sur l'avant-bras gauche (coude sous l'épaule), poitrine ouverte, bras droit toujours vertical, regard sur le poing. Matériel : tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts"
+  ],
+  "musclesTxt": "Abdos, côté du ventre, épaule",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Couché, bras droit au plafond, genou droit plié",
+   "Roule sur le coude gauche, poitrine ouverte",
+   "Garde les yeux sur la main levée"
+  ],
+  "erreurs": [
+   "Se relever d'un coup comme un abdo",
+   "Bras levé qui part vers l'avant"
+  ],
+  "pourquoi": "Première étape du relevé turc : ton épaule garde un bras stable au-dessus de toi pendant que le tronc te soulève.",
+  "respiration": "Souffle en montant, inspire en redescendant.",
+  "securite": "Mouvement lent. Arrête si ça tire dans l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "mobilite"
+  ],
+  "alternatives": [
+   "dead-bug",
+   "crunch-croise",
+   "gainage-lateral-genoux"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "1"
+  ],
+  "progression": {
+   "groupe": "releve-turc",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2-3×5 par côté, lent, 45 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "releve-turc-pont",
+  "nom": "Relevé turc 2 : jusqu'au pont (sans charge)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois quarts. s=0 : couché sur le dos, bras droit tendu à la verticale, genou droit fléchi pied à plat, jambe gauche tendue, bras gauche au sol à 45°. s=1 : appui sur la main gauche bras tendu (main 30 cm derrière la hanche) et sur le pied droit, hanches levées : ligne droite épaule-hanche-genou droit, jambe gauche tendue talon au sol, bras droit vertical, regard sur le poing. Matériel : tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts",
+   "glutes"
+  ],
+  "musclesTxt": "Abdos, côté du ventre, épaules, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Monte sur le coude, puis sur la main",
+   "Pousse dans le talon, lève les hanches haut",
+   "Bras du haut vertical, tiens 2 s"
+  ],
+  "erreurs": [
+   "Épaule d'appui qui s'enfonce",
+   "Hanches qui restent basses"
+  ],
+  "pourquoi": "Tu portes ton poids sur un bras tendu, hanches hautes : l'épaule d'appui devient solide, comme pour te rattraper sur une main.",
+  "respiration": "Souffle en montant, respire en haut.",
+  "securite": "Main d'appui bien à plat, doigts vers l'arrière. Arrête si ça tire dans l'épaule ou le poignet.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "hanche"
+  ],
+  "alternatives": [
+   "gainage-lateral",
+   "pont-fessier-unijambe",
+   "planche-touche-epaule"
+  ],
+  "tempoConseille": [
+   "3",
+   "2",
+   "2",
+   "1"
+  ],
+  "progression": {
+   "groupe": "releve-turc",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×4 par côté, lent, 60 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique",
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "releve-turc-complet-leger",
+  "nom": "Relevé turc 3 : complet, chaussure sur le poing",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois quarts, 5 étapes. s=0 : couché sur le dos, bras droit vertical, une chaussure posée à plat sur le poing, genou droit fléchi. Étapes : appui sur le coude gauche ; appui sur la main gauche ; pont hanches hautes ; jambe gauche ramenée sous le corps, genou gauche au sol (chevalier servant, buste redressé) ; s=1 : debout pieds joints, bras droit toujours tendu à la verticale. Matériel : tapis, une chaussure.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts",
+   "glutes",
+   "quads"
+  ],
+  "musclesTxt": "Abdos, épaules, fessiers, cuisses",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pose une chaussure en équilibre sur le poing",
+   "Coude, main, pont, genou, debout",
+   "Redescends par le même chemin, lentement"
+  ],
+  "erreurs": [
+   "Sauter une étape",
+   "Quitter la main des yeux"
+  ],
+  "pourquoi": "La chaussure tombe si ton bras bouge : tu apprends le relevé complet, du sol à debout, avec une épaule qui ne lâche jamais.",
+  "respiration": "Une respiration par étape, sans bloquer.",
+  "securite": "Prends ton temps : 20 à 30 s par répétition. Arrête si ça tire dans l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "proprio",
+   "hanche"
+  ],
+  "alternatives": [
+   "gainage-lateral",
+   "fente-arriere",
+   "planche-touche-epaule"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "releve-turc",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×2-3 par côté, 60-90 s de repos",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique",
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "releve-turc-kettlebell",
+  "nom": "Relevé turc 4 : complet avec kettlebell",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois quarts, 5 étapes, identiques au relevé turc sans charge. s=0 : couché sur le dos, bras droit tendu à la verticale tenant un kettlebell (boule contre l'avant-bras), genou droit fléchi. Étapes : coude gauche ; main gauche ; pont ; genou gauche au sol sous le corps, buste redressé ; s=1 : debout, kettlebell à bout de bras au-dessus de l'épaule droite. Matériel : kettlebell, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts",
+   "glutes",
+   "quads",
+   "forearms"
+  ],
+  "musclesTxt": "Abdos, épaules, fessiers, cuisses",
+  "materiel": [
+   "kettlebell",
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Kettlebell au-dessus de l'épaule, bras tendu",
+   "Coude, main, pont, genou, debout",
+   "Poignet droit, yeux sur la charge"
+  ],
+  "erreurs": [
+   "Coude du bras levé qui plie",
+   "Aller vite pour s'en débarrasser"
+  ],
+  "pourquoi": "Du sol à debout avec une charge au-dessus de toi : épaule, tronc et hanches travaillent ensemble, sous tous les angles.",
+  "respiration": "Une respiration par étape, sans bloquer.",
+  "securite": "Prends la charge à deux mains, couché sur le côté. Commence à 4-8 kg. Arrête si ça tire dans l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "proprio",
+   "hanche"
+  ],
+  "alternatives": [
+   "developpe-militaire-halteres",
+   "gainage-lateral",
+   "fente-arriere"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "releve-turc",
+   "niveau": 4,
+   "nom": "Hardcore"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/turkish-get-up/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×1-2 par côté, 90 s de repos. La qualité avant la charge",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rotation-externe-haltere-couche",
+  "nom": "Rotation externe couché sur le côté (haltère)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (personne couchée sur le côté gauche, face à nous). Tête posée sur le bras gauche, genoux un peu fléchis. Bras droit : coude fléchi à 90° posé contre les côtes sur une petite serviette roulée, haltère léger en main. s=0 : avant-bras droit pendant devant le ventre, main près du sol. s=1 : avant-bras tourné vers le haut, à 30° au-dessus de l'horizontale, coude toujours contre les côtes. Matériel : haltère 1-3 kg, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Arrière de l'épaule, muscles profonds de l'épaule",
+  "materiel": [
+   "halteres",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Couché sur le côté, coude du haut à 90°",
+   "Serviette roulée entre coude et côtes",
+   "Monte la main vers le plafond, descends en 3 s"
+  ],
+  "erreurs": [
+   "Décoller le coude des côtes",
+   "Prendre trop lourd et rouler le buste"
+  ],
+  "pourquoi": "Les petits muscles qui tiennent ton épaule en place se chargent ici avec un vrai poids : utile au vététiste qui chute et au triathlète qui nage.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "1 à 3 kg suffisent. Si ça pince ou si ça tire dans l'épaule, arrête et parles-en à un kiné.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt"
+  ],
+  "alternatives": [
+   "rotation-externe-elastique",
+   "rotation-externe-elastique-moyen",
+   "y-t-w-plat-ventre"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-12 par bras, tempo 3-0-1-1, 45 s de repos",
+  "preuve": "C · [@andersson2017] [@andersen2013]",
+  "sports": [
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-cou-arriere",
+  "nom": "Cou : pousser la tête vers l'arrière (contre les mains)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : assis ou debout, buste droit, tête dans l'axe (oreille au-dessus de l'épaule), menton légèrement rentré, les deux mains croisées derrière le crâne, coudes écartés sur les côtés. Une flèche de poussée de la tête vers l'arrière, les mains résistent : aucun mouvement visible. Matériel : aucun.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Arrière du cou, haut du dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Mains croisées derrière la tête",
+   "Pousse la tête en arrière, les mains résistent",
+   "La tête ne bouge pas, menton rentré"
+  ],
+  "erreurs": [
+   "Lever le menton, nuque cassée",
+   "Pousser d'un coup, à fond"
+  ],
+  "pourquoi": "Sur le vélo, l'arrière de ton cou porte ta tête et ton casque pendant des heures. Un cou plus fort fatigue moins et tient mieux quand ça secoue.",
+  "respiration": "Respire normalement, sans bloquer.",
+  "securite": "Monte la force en 2 s, à 50-70 % seulement. Arrête si ça tire, si ça fourmille dans un bras ou si la tête tourne.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "superman",
+   "y-t-w-plat-ventre"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10 s de poussée, 10 s de repos entre, 2 à 3 fois par semaine",
+  "preuve": "D · [@koivisto2025]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-cou-cote",
+  "nom": "Cou : pousser la tête sur le côté (contre la main)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 et s=1 identiques (tenue) : assis ou debout, buste droit, tête droite dans l'axe, main droite à plat contre le côté droit de la tête au-dessus de l'oreille, coude écarté à l'horizontale ; bras gauche le long du corps ; épaules horizontales. Flèche de poussée de la tête vers la main : aucun mouvement visible. Matériel : aucun.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Côtés du cou",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Main à plat au-dessus de l'oreille",
+   "Pousse la tête contre la main, sans bouger",
+   "Épaules basses, regard droit devant"
+  ],
+  "erreurs": [
+   "Pencher la tête",
+   "Monter l'épaule vers l'oreille"
+  ],
+  "pourquoi": "En cas de chute ou de gros choc, ce sont les côtés du cou qui retiennent la tête. Ici tu les rends plus solides, sans matériel.",
+  "respiration": "Respire normalement.",
+  "securite": "Force moyenne, montée en 2 s. Arrête si ça tire, si ça fourmille dans un bras ou si la tête tourne.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "gainage-lateral"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10 s par côté, 10 s de repos entre",
+  "preuve": "D · [@koivisto2025]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "isometrie-cou-avant",
+  "nom": "Cou : pousser la tête vers l'avant (contre la main)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : assis ou debout, buste droit, tête dans l'axe, menton légèrement rentré, paume de la main droite à plat sur le front, coude levé devant ; bras gauche le long du corps. Flèche de poussée du front vers la main : aucun mouvement visible. Matériel : aucun.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Avant du cou",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Paume sur le front",
+   "Pousse le front dans la main, sans bouger",
+   "Menton rentré, nuque longue"
+  ],
+  "erreurs": [
+   "Avancer le menton",
+   "Bloquer la respiration"
+  ],
+  "pourquoi": "L'avant du cou est le plus faible chez le cycliste. Il équilibre l'arrière et aide à tenir la tête quand tu es secoué.",
+  "respiration": "Respire normalement.",
+  "securite": "Force moyenne. Arrête si ça tire, si ça fourmille dans un bras ou si la tête tourne.",
+  "tags": [
+   "haut-du-corps",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "hollow-hold-facile"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10 s, 10 s de repos entre",
+  "preuve": "D · [@koivisto2025]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-cou-position-velo",
+  "nom": "Tenue du cou en position de vélo (à plat ventre)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : à plat ventre sur un banc, buste et bassin sur le banc, épaules au bord, tête et cou dans le vide ; bras le long du corps ou mains tenant les pieds du banc ; tête légèrement relevée (20° d'extension), menton rentré, regard vers le sol 2 m devant. Petite oscillation de 2 cm. Matériel : banc (option : casque de vélo sur la tête).",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "lowback"
+  ],
+  "musclesTxt": "Arrière du cou, haut du dos",
+  "materiel": [
+   "banc"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "À plat ventre, tête dans le vide au bout du banc",
+   "Menton rentré, puis regarde 2 m devant toi",
+   "Tiens la tête sans la laisser tomber"
+  ],
+  "erreurs": [
+   "Casser la nuque pour regarder loin",
+   "Hausser les épaules vers les oreilles"
+  ],
+  "pourquoi": "C'est ta position sur le vélo : buste couché, regard devant, casque sur la tête. Tu entraînes le cou à la tenir longtemps.",
+  "respiration": "Respire calmement par le nez.",
+  "securite": "Commence sans charge. Arrête si ça tire, si ça fourmille dans un bras ou si la tête tourne.",
+  "tags": [
+   "haut-du-corps",
+   "velo",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "superman",
+   "y-t-w-plat-ventre",
+   "activation-lombaires-ventre"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-30 s, 30 s de repos. Ensuite avec ton casque sur la tête",
+  "preuve": "D · [@koivisto2025] [@clarsen2010]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "retraction-menton",
+  "nom": "Rentrer le menton (double menton)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Assis sur un banc, buste droit, mains sur les cuisses. s=0 : tête en position habituelle, menton légèrement avancé (oreille 3 cm devant l'épaule). s=1 : tête reculée à l'horizontale sans s'incliner (oreille au-dessus de l'épaule), menton rentré, léger pli sous le menton, regard toujours horizontal. Matériel : aucun.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Muscles profonds du cou",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis droit, regard à l'horizontale",
+   "Recule la tête, comme un double menton",
+   "Tiens 3 s, relâche"
+  ],
+  "erreurs": [
+   "Baisser le menton vers la poitrine",
+   "Reculer tout le buste"
+  ],
+  "pourquoi": "Des heures tête en avant sur le vélo : ce petit geste réveille les muscles qui remettent ta tête au-dessus des épaules.",
+  "respiration": "Respire normalement.",
+  "securite": "Geste doux, sans forcer. Arrête si ça tire ou si ça fourmille.",
+  "tags": [
+   "haut-du-corps",
+   "velo",
+   "dos",
+   "retour-au-calme"
+  ],
+  "alternatives": [
+   "y-t-w-plat-ventre"
+  ],
+  "tempoConseille": [
+   "1",
+   "0",
+   "1",
+   "3"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/chin-tuck/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×10, tenue 3 s, tous les jours si tu veux (au bureau, après la sortie)",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rollout-swissball",
+  "nom": "Rollout au swissball (à genoux)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : à genoux sur un tapis, buste presque vertical, avant-bras et poings posés sur le haut d'un swissball de 65 cm placé devant les cuisses, coudes à 90°. s=1 : ballon roulé de 40 cm vers l'avant, bras allongés (épaules ouvertes à 130°), appui sur les coudes au sommet du ballon, ligne droite genoux-hanches-épaules inclinée à 45°, dos plat. Matériel : swissball, tapis.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "lats",
+   "obliques"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux",
+  "materiel": [
+   "swissball",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À genoux, avant-bras sur le ballon",
+   "Roule le ballon devant, hanches qui suivent",
+   "Reviens en tirant avec les coudes"
+  ],
+  "erreurs": [
+   "Creuser le bas du dos",
+   "Reculer les fesses au lieu de s'allonger"
+  ],
+  "pourquoi": "Tes abdos empêchent ton dos de se creuser pendant que tes bras s'éloignent : c'est le gainage qui tient ton bassin quand tu tires fort sur le guidon.",
+  "respiration": "Inspire en allant vers l'avant, souffle en revenant.",
+  "securite": "Ne va que jusqu'où ton dos reste plat. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "dos",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-avant-bras",
+   "dead-bug",
+   "hollow-hold-facile"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "progression": {
+   "groupe": "rollout",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10, tempo 3-1-2-0, 60 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rollout-sangle",
+  "nom": "Rollout à la sangle (chute avant, TRX)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Sangles accrochées en hauteur, poignées à hauteur de hanches. s=0 : debout dos à l'ancrage, corps rectiligne incliné de 20° vers l'avant, bras tendus vers le bas, mains dans les poignées devant les cuisses. s=1 : corps rectiligne incliné à 45°, bras tendus dans le prolongement du corps au-dessus de la tête, appui sur les pointes de pieds, dos plat. Matériel : sangles de suspension.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "lats",
+   "obliques",
+   "delts"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux, épaules",
+  "materiel": [
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Debout penché, mains dans les poignées basses",
+   "Laisse partir les bras devant, corps raide",
+   "Reviens en tirant les mains vers les cuisses"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse en avant",
+   "Plier les coudes"
+  ],
+  "pourquoi": "Même travail que la roulette, mais réglable : plus tu recules les pieds, plus tes abdos doivent tenir ton dos.",
+  "respiration": "Inspire en descendant, souffle en revenant.",
+  "securite": "Vérifie l'ancrage. Petite amplitude au début. Arrête si ça tire dans le bas du dos ou l'épaule.",
+  "tags": [
+   "gainage",
+   "dos",
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "planche-avant-bras",
+   "hollow-hold",
+   "pull-over-swissball"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "progression": {
+   "groupe": "rollout",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-10, tempo 3-1-2-0, 60-90 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rollout-roulette-genoux",
+  "nom": "Rollout à la roulette (à genoux)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 : à genoux sur un tapis, hanches au-dessus des genoux, dos légèrement rond, bras tendus à la verticale, mains sur les poignées d'une roulette d'abdos posée au sol sous les épaules. s=1 : roulette à 70 cm devant, bras tendus dans le prolongement du buste, ligne droite genoux-hanches-épaules-mains à 20° du sol, ventre à 15 cm du sol, dos plat. Matériel : roulette d'abdos (ou barre avec disques), tapis.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "lats",
+   "obliques",
+   "triceps"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux, triceps",
+  "materiel": [
+   "barre",
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "À genoux, mains sur la roulette, dos rond",
+   "Roule loin devant, hanches qui avancent",
+   "Reviens en tirant, sans casser aux hanches"
+  ],
+  "erreurs": [
+   "Dos qui se creuse en bas",
+   "Revenir en reculant les fesses d'abord"
+  ],
+  "pourquoi": "Le plus exigeant des gainages anti-cambrure : abdos et dorsaux tiennent ton tronc bras loin devant, comme en fin de double poussée ou en position aéro.",
+  "respiration": "Inspire en roulant, souffle en revenant.",
+  "securite": "Il te faut 10 rollouts propres au swissball avant. Mets un mur devant pour limiter la course. Arrête si le bas du dos tire.",
+  "tags": [
+   "gainage",
+   "dos",
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "hollow-hold",
+   "planche-avant-bras",
+   "pull-over-swissball"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "2",
+   "0"
+  ],
+  "progression": {
+   "groupe": "rollout",
+   "niveau": 3,
+   "nom": "Difficile"
+  },
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/ab-wheel-rollout/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-8, tempo 3-0-2-0, 90 s. Roulette d'abdos, ou barre avec deux disques ronds",
+  "preuve": "C · [@blechschmied2026] [@losnegard2011]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "body-saw",
+  "nom": "Planche scie (body saw)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Planche sur les avant-bras, pointes de pieds posées sur un chiffon qui glisse (ou pieds dans des sangles à 15 cm du sol). s=0 : coudes sous les épaules, corps rectiligne. s=1 : tout le corps reculé de 10-15 cm : coudes devant les épaules (au niveau du front), épaules ouvertes à 110°, corps toujours rectiligne, bassin à la même hauteur. Matériel : tapis, chiffon ou sangles.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "delts",
+   "lats"
+  ],
+  "musclesTxt": "Abdos, épaules, grands dorsaux",
+  "materiel": [
+   "tapis",
+   "sangle"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Planche avant-bras, pieds sur un chiffon",
+   "Recule le corps de 10 cm avec les épaules",
+   "Reviens, sans bouger le bassin"
+  ],
+  "erreurs": [
+   "Bassin qui tombe en reculant",
+   "Fesses qui montent pour se soulager"
+  ],
+  "pourquoi": "En reculant, le levier s'allonge et tes abdos doivent tenir plus fort : une planche qui continue de te faire progresser après 60 s.",
+  "respiration": "Respire court et régulier.",
+  "securite": "Petite amplitude. Arrête si le bas du dos tire.",
+  "tags": [
+   "gainage",
+   "dos",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-avant-bras",
+   "planche-transfert-poids",
+   "hollow-hold"
+  ],
+  "tempoConseille": [
+   "2",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10 allers-retours lents, 60 s. Pieds sur un chiffon, des chaussettes ou dans des sangles",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "planche-levier-long",
+  "nom": "Planche levier long (coudes devant)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : planche sur les avant-bras, coudes posés 15 cm devant les épaules (sous les yeux), avant-bras parallèles, pointes de pieds au sol, corps rectiligne de la tête aux talons, bassin légèrement basculé vers l'arrière (bas du dos plat), fessiers contractés. Matériel : tapis.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "lats",
+   "delts",
+   "glutes"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux, fessiers",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Avant-bras au sol, coudes sous les yeux",
+   "Fessiers serrés à fond, bassin rentré",
+   "Tire les coudes vers les pieds, sans bouger"
+  ],
+  "erreurs": [
+   "Dos qui se creuse",
+   "Tenir longtemps mais mollement"
+  ],
+  "pourquoi": "20 secondes ici valent 2 minutes de planche classique : tu gagnes de la force de gainage, pas seulement de la patience.",
+  "respiration": "Respire court, ventre dur.",
+  "securite": "Arrête dès que le bas du dos se creuse ou tire.",
+  "tags": [
+   "gainage",
+   "dos",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-avant-bras",
+   "hollow-hold",
+   "planche-mains"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 15,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "4×10-20 s à fond, 45 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "planche-avant-bras"
+ },
+ {
+  "id": "dead-bug-charge",
+  "nom": "Dead bug chargé (haltère ou kettlebell)",
+  "famille": "gainage",
+  "anim": "deadbug",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "hipflex",
+   "lats"
+  ],
+  "musclesTxt": "Abdos profonds, côté du ventre, fléchisseurs de hanche",
+  "materiel": [
+   "halteres",
+   "kettlebell",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Couché, charge à deux mains, bras au plafond",
+   "Descends la charge derrière la tête",
+   "Tends une jambe en même temps, dos collé au sol"
+  ],
+  "erreurs": [
+   "Bas du dos qui décolle",
+   "Côtes qui s'ouvrent vers le plafond"
+  ],
+  "pourquoi": "Bras et jambes s'éloignent sous charge, le bas du dos reste collé : tes abdos apprennent à tenir ton bassin quand les jambes poussent fort.",
+  "respiration": "Souffle en éloignant bras et jambe, inspire en revenant.",
+  "securite": "Charge légère (4-8 kg). Réduis l'amplitude si le dos décolle. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "dos",
+   "coup-de-pedale",
+   "foulee"
+  ],
+  "alternatives": [
+   "dead-bug",
+   "hollow-hold-facile",
+   "pull-over-swissball"
+  ],
+  "tempoConseille": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8 par jambe, tempo 3-1-2-0, 60 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "dead-bug"
+ },
+ {
+  "id": "planche-aero-swissball",
+  "nom": "Planche en position aéro (avant-bras sur swissball)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. s=0 et s=1 identiques (tenue) : avant-bras posés sur le haut d'un swissball de 65 cm, coudes serrés (10 cm d'écart) sous les épaules, mains jointes devant ; pointes de pieds au sol, écartées de 40 cm ; corps rectiligne de la tête aux talons, incliné à 25° du sol ; tête dans l'axe, regard vers le sol 2 m devant. Léger tremblement du ballon. Matériel : swissball.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts",
+   "lats"
+  ],
+  "musclesTxt": "Abdos, épaules, grands dorsaux",
+  "materiel": [
+   "swissball"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Avant-bras serrés sur le ballon, coudes proches",
+   "Pieds écartés au sol, corps droit",
+   "Tête basse, regard 2 m devant, sans bouger"
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse",
+   "Épaules qui s'effondrent entre les bras"
+  ],
+  "pourquoi": "Coudes serrés, appui instable, tête basse : c'est la position aéro du triathlète et du rouleur. Tu apprends à la tenir sans te tasser.",
+  "respiration": "Respire par le ventre, comme en position sur le vélo.",
+  "securite": "Ballon bien gonflé, sol non glissant. Arrête si le bas du dos ou le cou tire.",
+  "tags": [
+   "gainage",
+   "velo",
+   "dos",
+   "proprio"
+  ],
+  "alternatives": [
+   "planche-avant-bras",
+   "planche-transfert-poids",
+   "hollow-hold"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "planche-swissball",
+   "niveau": 1,
+   "nom": "Facile"
+  },
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×20-40 s, 45 s de repos. Resserre les pieds pour durcir",
+  "preuve": "D · [@blechschmied2026]",
+  "sports": [
+   "triathlon",
+   "route",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "planche-swissball-cercles",
+  "nom": "Planche sur swissball avec cercles (remuer la marmite)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Planche avant-bras sur un swissball de 65 cm, mains jointes, pointes de pieds au sol écartées de 40 cm, corps rectiligne incliné à 25°. s=0 : coudes sous les épaules. s=1 : coudes déplacés de 10 cm vers l'avant et vers la droite (le ballon roule), bassin et jambes immobiles ; le mouvement complet est un cercle de 20 cm de diamètre des coudes. Matériel : swissball.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "delts",
+   "lats"
+  ],
+  "musclesTxt": "Abdos, côté du ventre, épaules",
+  "materiel": [
+   "swissball"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Avant-bras sur le ballon, corps en planche",
+   "Dessine de petits cercles avec les coudes",
+   "Seuls les bras bougent, bassin immobile"
+  ],
+  "erreurs": [
+   "Bassin qui tourne avec les bras",
+   "Cercles trop grands, dos qui se creuse"
+  ],
+  "pourquoi": "Tes bras bougent, ton tronc ne doit pas suivre : c'est ce que tu fais en danseuse et dans les passages techniques.",
+  "respiration": "Respire court et régulier.",
+  "securite": "Maîtrise 40 s de planche sur le ballon avant. Arrête si le bas du dos tire.",
+  "tags": [
+   "gainage",
+   "proprio",
+   "descente-vtt",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-transfert-poids",
+   "planche-touche-epaule",
+   "planche-avant-bras"
+  ],
+  "tempoConseille": null,
+  "progression": {
+   "groupe": "planche-swissball",
+   "niveau": 2,
+   "nom": "Moyen"
+  },
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×6-8 cercles dans chaque sens, 60 s de repos",
+  "preuve": "C · [@blechschmied2026]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "planche-guidon-instable",
+  "nom": "Gainage en position de pilotage (mains sur demi-swissball)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (trois quarts avant). Demi-swissball retourné, dôme au sol, plateau en haut. s=0 : position de planche, mains agrippant les deux bords du plateau (écart 50 cm, comme un guidon), coudes fléchis à 120° et ouverts vers l'extérieur, tête relevée regard devant, corps rectiligne, pointes de pieds au sol écartées de 40 cm, plateau horizontal. s=1 : plateau incliné de 15° vers la droite, coude droit plus fléchi, épaules et bassin restés horizontaux. Matériel : demi-swissball.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "delts",
+   "triceps",
+   "forearms",
+   "obliques",
+   "pecs"
+  ],
+  "musclesTxt": "Abdos, épaules, triceps, avant-bras",
+  "materiel": [
+   "demi-swissball"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dôme au sol, mains sur les bords du plateau",
+   "Planche, coudes pliés et ouverts, tête haute",
+   "Bascule le plateau gauche-droite, bassin fixe"
+  ],
+  "erreurs": [
+   "Bras tendus et verrouillés",
+   "Bassin qui suit la bascule"
+  ],
+  "pourquoi": "Le plateau, c'est ton guidon : coudes ouverts en position d'attaque, tu l'inclines pendant que ton corps reste calme, comme en descente.",
+  "respiration": "Respire régulièrement, sans bloquer.",
+  "securite": "Sol non glissant. Arrête si ça tire au poignet ou à l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "proprio",
+   "velo"
+  ],
+  "alternatives": [
+   "planche-transfert-poids",
+   "planche-mains",
+   "pompe-plus"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 25,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×20-30 s, 60 s de repos. D'abord immobile, puis en basculant",
+  "preuve": "C · [@blechschmied2026] [@macdermid2014]",
+  "sports": [
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pallof-tenue",
+  "nom": "Pallof tenu, bras tendus (élastique)",
+  "famille": "gainage",
+  "anim": "pallof",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "glutes"
+  ],
+  "musclesTxt": "Côté du ventre, abdos, fessiers",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "De profil à l'élastique, mains à la poitrine",
+   "Tends les bras devant toi et reste là",
+   "Bassin et épaules de face, genoux souples"
+  ],
+  "erreurs": [
+   "Se laisser tourner vers l'ancrage",
+   "Se pencher du côté opposé pour compenser"
+  ],
+  "pourquoi": "L'élastique veut te faire tourner, tu refuses : c'est le gainage qui garde ton bassin droit quand tu appuies fort sur une pédale.",
+  "respiration": "Respire calmement, ventre serré.",
+  "securite": "Vérifie l'ancrage. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "coup-de-pedale",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "pallof-press",
+   "gainage-lateral",
+   "bird-dog"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15-25 s par côté, 45 s de repos. Écarte-toi de l'ancrage pour durcir",
+  "preuve": "C · [@blechschmied2026] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pallof-press"
+ },
+ {
+  "id": "pallof-demi-genou",
+  "nom": "Pallof press, un genou au sol (élastique)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, élastique fixé à hauteur de poitrine (personne à genoux) sur le côté droit. Position chevalier servant : genou droit au sol, pied gauche à plat devant, genoux à 90°, buste vertical. s=0 : mains jointes sur l'élastique contre le sternum, coudes fléchis. s=1 : bras tendus à l'horizontale devant la poitrine, élastique tendu partant vers la droite, bassin et épaules de face. Matériel : élastique, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "glutes",
+   "adductors"
+  ],
+  "musclesTxt": "Côté du ventre, abdos, fessier",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Genou côté élastique au sol, l'autre pied devant",
+   "Tends les bras devant la poitrine, tiens 2 s",
+   "Fessier serré, buste grand, bassin de face"
+  ],
+  "erreurs": [
+   "Bassin qui tourne vers l'ancrage",
+   "Buste qui s'affaisse sur la hanche"
+  ],
+  "pourquoi": "Base étroite, une hanche tendue : tes hanches et ton tronc doivent tenir ensemble contre la rotation, comme en pédalant assis ou en courant.",
+  "respiration": "Souffle en tendant les bras, inspire en revenant.",
+  "securite": "Mets un tapis sous le genou. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "coup-de-pedale",
+   "foulee",
+   "hanche"
+  ],
+  "alternatives": [
+   "pallof-press",
+   "gainage-lateral",
+   "dead-bug"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "2"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10 par côté, tenue 2 s bras tendus, 45 s de repos",
+  "preuve": "C · [@blechschmied2026] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "pallof-press"
+ },
+ {
+  "id": "renegade-row",
+  "nom": "Rowing en planche (renegade row)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de trois quarts avant. s=0 : planche bras tendus, chaque main sur la poignée d'un haltère hexagonal posé au sol sous l'épaule, pieds écartés de 60 cm, corps rectiligne. s=1 : haltère droit tiré jusqu'à la hanche droite, coude fléchi à 90° pointé vers le plafond, appui sur la main gauche et les deux pieds, épaules et bassin restés parallèles au sol. Matériel : 2 haltères hexagonaux.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "lats",
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Abdos, côté du ventre, dos, épaules",
+  "materiel": [
+   "halteres"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Planche mains sur 2 haltères, pieds écartés",
+   "Tire un haltère à la hanche, sans tourner",
+   "Repose-le sans bruit, change de bras"
+  ],
+  "erreurs": [
+   "Bassin qui tourne et monte",
+   "Pieds serrés, corps qui bascule"
+  ],
+  "pourquoi": "Un bras tire, l'autre te porte, le bassin ne tourne pas : tirage et gainage anti-rotation ensemble, comme pour relancer en danseuse.",
+  "respiration": "Souffle en tirant, inspire en reposant.",
+  "securite": "Haltères à pans plats, qui ne roulent pas. Arrête si ça tire au poignet ou dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "dos"
+  ],
+  "alternatives": [
+   "planche-touche-epaule",
+   "rowing-haltere",
+   "planche-transfert-poids"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×5-6 par bras, tempo 2-0-1-1, 90 s de repos",
+  "preuve": "C · [@blechschmied2026] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "nordique",
+   "triathlon",
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "chop-elastique",
+  "nom": "Chop à l'élastique (de haut en bas, un genou au sol)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Élastique fixé en hauteur (2 m) du côté gauche. Position chevalier servant : genou droit au sol, pied gauche à plat devant (jambe côté ancrage devant), buste vertical. s=0 : les deux mains sur l'élastique, bras presque tendus en haut à gauche, au-dessus de l'épaule gauche. s=1 : mains tirées en diagonale jusqu'à l'extérieur de la hanche droite, bras presque tendus, épaules légèrement tournées, bassin de face. Matériel : élastique fixé en hauteur, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "lats",
+   "glutes"
+  ],
+  "musclesTxt": "Côté du ventre, abdos, grands dorsaux",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique fixé haut, genou opposé au sol",
+   "Tire en diagonale, de l'épaule à la hanche",
+   "Les bras bougent, le bassin reste de face"
+  ],
+  "erreurs": [
+   "Tourner tout le buste et le bassin",
+   "Arrondir le dos pour tirer plus bas"
+  ],
+  "pourquoi": "Tes bras tirent en diagonale pendant que ton bassin reste fixe : la force passe des épaules aux hanches sans fuite, en pilotage comme en double poussée.",
+  "respiration": "Souffle en tirant vers le bas, inspire en remontant.",
+  "securite": "Vérifie l'ancrage. Remonte lentement. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "descente-vtt",
+   "hanche"
+  ],
+  "alternatives": [
+   "pallof-press",
+   "gainage-lateral-rotation",
+   "cross-body"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×8-10 par côté, tempo 3-0-1-1, 60 s de repos",
+  "preuve": "C · [@blechschmied2026] [@losnegard2011]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "lift-elastique",
+  "nom": "Lift à l'élastique (de bas en haut, un genou au sol)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Élastique fixé au ras du sol du côté gauche. Position chevalier servant : genou gauche au sol (côté ancrage), pied droit à plat devant, buste vertical. s=0 : les deux mains sur l'élastique à l'extérieur de la hanche gauche, bras presque tendus. s=1 : mains montées en diagonale au-dessus de l'épaule droite, bras presque tendus, épaules légèrement tournées, bassin de face. Matériel : élastique fixé bas, tapis.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "abs",
+   "delts",
+   "glutes"
+  ],
+  "musclesTxt": "Côté du ventre, abdos, épaules",
+  "materiel": [
+   "elastique",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Élastique fixé bas, genou côté ancrage au sol",
+   "Monte en diagonale, de la hanche à l'épaule",
+   "Bassin de face, buste grand"
+  ],
+  "erreurs": [
+   "Se pencher en arrière en haut",
+   "Hausser les épaules"
+  ],
+  "pourquoi": "Le contraire du chop : tu montes la charge en diagonale sans laisser tourner le bassin. Utile pour lever le vélo, pousser un bâton, tenir le buste en côte.",
+  "respiration": "Souffle en montant, inspire en descendant.",
+  "securite": "Vérifie l'ancrage. Arrête si ça tire dans le bas du dos ou l'épaule.",
+  "tags": [
+   "gainage",
+   "haut-du-corps",
+   "hanche",
+   "montee"
+  ],
+  "alternatives": [
+   "pallof-press",
+   "gainage-lateral-rotation",
+   "cross-body"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×8-10 par côté, tempo 3-0-1-1, 60 s de repos",
+  "preuve": "C · [@blechschmied2026] [@impellizzeri2007]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "gainage-lateral-leste",
+  "nom": "Gainage latéral lesté (haltère sur la hanche)",
+  "famille": "gainage",
+  "anim": "sideplankstatic",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "glutes",
+   "abs",
+   "delts"
+  ],
+  "musclesTxt": "Côté du ventre, fessier, épaule",
+  "materiel": [
+   "halteres",
+   "tapis"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Gainage latéral sur l'avant-bras, pieds empilés",
+   "Pose un haltère ou un disque sur la hanche",
+   "Hanches hautes, corps en ligne droite"
+  ],
+  "erreurs": [
+   "Hanche qui descend",
+   "Bassin qui recule, fesses en arrière"
+  ],
+  "pourquoi": "Quand 45 s de gainage latéral sont faciles, ajoute du poids plutôt que du temps : un côté du tronc plus fort pour tenir le bassin à chaque appui.",
+  "respiration": "Respire court et régulier.",
+  "securite": "Tiens la charge avec la main du dessus. Arrête si ça tire à l'épaule d'appui ou dans le dos.",
+  "tags": [
+   "gainage",
+   "hanche",
+   "dos",
+   "foulee",
+   "trail"
+  ],
+  "alternatives": [
+   "gainage-lateral",
+   "gainage-lateral-jambe-levee",
+   "copenhague-court"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×15-25 s par côté avec 5 à 10 kg, 45 s de repos",
+  "preuve": "C · [@blechschmied2026] [@steffens2016]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "gainage-lateral"
+ },
+ {
+  "id": "souleve-valise",
+  "nom": "Soulevé valise (charge d'un seul côté)",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. s=0 : debout, pieds largeur de hanches, kettlebell lourd tenu main droite bras tendu le long de la cuisse droite, épaules horizontales, bras gauche légèrement écarté. s=1 : hanches fléchies à 80°, genoux à 70°, dos plat incliné à 45°, kettlebell posé au sol à l'extérieur du pied droit, épaules toujours à la même hauteur l'une que l'autre, bassin de face. Matériel : un kettlebell ou un haltère lourd.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "glutes",
+   "quads",
+   "forearms",
+   "lowback"
+  ],
+  "musclesTxt": "Côté du ventre, fessiers, cuisses, avant-bras",
+  "materiel": [
+   "kettlebell",
+   "halteres"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Charge au sol à côté d'un pied",
+   "Fléchis hanches et genoux, dos plat",
+   "Relève-toi sans pencher ni tourner le buste"
+  ],
+  "erreurs": [
+   "Épaule qui plonge vers la charge",
+   "Dos rond au départ"
+  ],
+  "pourquoi": "Tu soulèves lourd d'un seul côté et ton tronc refuse de se pencher : gainage latéral chargé, force des jambes et prise de main en un geste.",
+  "respiration": "Inspire en bas, souffle en te relevant.",
+  "securite": "Dos plat. Pose la charge sur une cale si tu n'arrives pas en bas dos plat. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "chaine-posterieure",
+   "dos",
+   "haut-du-corps",
+   "trail"
+  ],
+  "alternatives": [
+   "marche-du-fermier",
+   "rdl-halteres",
+   "gainage-lateral"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×6-8 par côté, tempo 3-0-1-1, 90 s de repos",
+  "preuve": "C · [@blechschmied2026] [@steffens2016]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "tirage-bras-tendus-elastique",
+  "nom": "Tirage bras tendus debout (élastique)",
+  "famille": "haut-du-corps",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Élastique accroché en hauteur (2,2 m), un brin dans chaque main. s=0 : debout face à l'ancrage à 1 m, genoux souples, buste incliné de 15° en avant, dos plat, bras tendus devant et au-dessus du front (épaules à 130°). s=1 : même posture du buste, bras toujours tendus ramenés le long du corps, mains à côté des cuisses, élastique étiré. Matériel : élastique fixé en hauteur.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "triceps",
+   "abs",
+   "upperback"
+  ],
+  "musclesTxt": "Grands dorsaux, triceps, abdos",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Élastique fixé haut, bras tendus devant le front",
+   "Descends les mains aux cuisses, coudes tendus",
+   "Buste fixe, côtes rentrées, remonte en 3 s"
+  ],
+  "erreurs": [
+   "Plier les coudes",
+   "Cambrer en fin de mouvement"
+  ],
+  "pourquoi": "C'est le bras de la double poussée et de la traction en natation : les dorsaux tirent bras tendus pendant que les abdos tiennent le buste.",
+  "respiration": "Souffle en tirant, inspire en remontant.",
+  "securite": "Vérifie l'ancrage. Arrête si ça tire à l'épaule ou au coude.",
+  "tags": [
+   "haut-du-corps",
+   "gainage"
+  ],
+  "alternatives": [
+   "ski-erg",
+   "pull-over-swissball",
+   "tractions"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "3×10-12, tempo 3-0-1-1, 60 s. Élastique fort : force lente, pas de vitesse",
+  "preuve": "C · [@losnegard2011] [@osteras2016]",
+  "sports": [
+   "nordique",
+   "triathlon",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "crunch-debout-elastique",
+  "nom": "Crunch debout à l'élastique",
+  "famille": "gainage",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Élastique accroché en hauteur (2,2 m) derrière la personne. s=0 : debout dos à l'ancrage, genoux souples, buste droit, mains tenant l'élastique de chaque côté de la tête, coudes fléchis pointés vers l'avant. s=1 : dos enroulé, buste fléchi de 45°, côtes rapprochées du bassin, coudes vers les cuisses, mains toujours aux tempes, hanches et genoux inchangés. Matériel : élastique fixé en hauteur.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "obliques",
+   "lats"
+  ],
+  "musclesTxt": "Abdos, grands dorsaux",
+  "materiel": [
+   "elastique"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Dos à l'ancrage, élastique tenu près des tempes",
+   "Enroule le buste, côtes vers le bassin",
+   "Hanches fixes, remonte en 3 s"
+  ],
+  "erreurs": [
+   "Plier les hanches au lieu d'enrouler le dos",
+   "Tirer avec les bras"
+  ],
+  "pourquoi": "En double poussée, ce sont les abdos qui lancent le mouvement en fermant le buste. Ici tu les charges debout, comme sur les skis.",
+  "respiration": "Souffle en enroulant, inspire en remontant.",
+  "securite": "Ne tire pas sur la nuque. Arrête si ça tire dans le bas du dos.",
+  "tags": [
+   "gainage",
+   "haut-du-corps"
+  ],
+  "alternatives": [
+   "crunch",
+   "ski-erg",
+   "hollow-hold"
+  ],
+  "tempoConseille": [
+   "3",
+   "0",
+   "1",
+   "1"
+  ],
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/standing-cable-crunch/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3×10-12, tempo 3-0-1-1, 60 s de repos. Élastique fort",
+  "preuve": "C · [@losnegard2011] [@bahr2004]",
+  "sports": [
+   "nordique"
+  ],
+  "varianteDe": null
+ }
+]
