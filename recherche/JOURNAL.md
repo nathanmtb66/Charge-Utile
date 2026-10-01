@@ -17,7 +17,7 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 
 **Exercices, séances, règles**
 - [ ] Carte de couverture ; ≥ 250 fiches candidates dont ≥ 80 en priorité 1 ; chaque case vide de la carte comblée ou justifiée.
-- [ ] ≥ 12 tests de terrain proposés.
+- [x] ≥ 12 tests de terrain proposés. *(15 tests + 1 questionnaire, 12 écartés avec la raison, batterie C)*
 - [ ] ≥ 60 séances modèles couvrant toutes les phases et tous les contextes listés.
 - [x] ≥ 50 règles codables. *(70, dont 24 de niveau D assumé)*
 
