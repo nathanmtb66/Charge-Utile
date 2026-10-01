@@ -6,7 +6,7 @@
 
 ## Le principe de tri
 
-1. **Ce qui augmente le taux de séances faites passe avant tout.** Sous environ 75 % de séances faites, rien d'autre ne compte [@viiala2026].
+1. **Ce qui augmente le taux de séances faites passe avant tout.** Un programme peu suivi ne sert à rien : le repère d'environ 75 % de séances faites vient des programmes de prévention en sports collectifs (borne entre groupes d'études, pas un seuil mesuré) [@viiala2026].
 2. **Ce qui protège l'endurance de l'athlète passe ensuite** : c'est la douleur n° 1 (`04`).
 3. **Une donnée qui ne sert à aucune décision coûte un tap** (principe déjà écrit dans `SCHEMA.md`).
 4. **Tout ce qui ressemble à du soin est exclu** (`business/07`).
@@ -16,14 +16,14 @@
 | # | Fonctionnalité | Problème résolu (preuve) | Ce que font les concurrents | Impact | Effort | Verdict |
 |---|---|---|---|---|---|---|
 | A1 | **Corriger les deux défauts de sécurité** du site et du relais | Données d'athlètes exposées (`07`, détails hors dépôt) | — | 5 | S-M | **À faire en premier** |
-| A2 | **Taux d'adhésion par athlète** dans la vue coach (séances faites ÷ prévues sur 4 et 8 semaines, alerte sous 75 %) | L'effet d'un programme disparaît sous environ 75 % de séances faites [@viiala2026] ; l'adhésion n'est pas mesurée aujourd'hui (`09`) | TrainingPeaks : conformité par couleur | 5 | S | **À faire** (le relais donne déjà « faites / ratées ») |
+| A2 | **Taux d'adhésion par athlète** dans la vue coach (séances faites ÷ prévues sur 4 et 8 semaines, alerte sous 75 %) | L'effet d'un programme n'est démontré que quand il est suivi (repère d'environ 75 %) [@viiala2026] ; l'adhésion n'est pas mesurée aujourd'hui (`09`) | TrainingPeaks : conformité par couleur | 5 | S | **À faire** (le relais donne déjà « faites / ratées ») |
 | A3 | **Boucle coach visible** : « vu par Nathan » + retour d'une ligne après chaque séance | Sans coach qui répond, le remplissage tombe de 84 % à 8-28 % [@saw2015b] | TrueCoach, TrainHeroic : commentaires | 5 | M | **À faire** |
-| A4 | **Bouton « j'ai 20 min »** : version courte de la séance (exercices clés, 1 série de moins) | Les cyclistes lâchent par fatigue et manque de temps [@vikestad2025] ; 1 série par exercice maintient la force [@spiering2021] | Runna : 30/45/60 min | 5 | M | **À faire** |
-| A5 | **Mode de saison automatique** : développement, maintien (1 séance par semaine), affûtage selon les blocs et les courses A/B/C | Arrêter la force en saison fait perdre les acquis en 8 semaines [@ronnestad2016] ; règles `saison-maintien`, `course-a-affutage` | Aucun outil de coach étudié | 4 | M | **À faire** |
-| A6 | **Garde-fou de calendrier** : alerte si une séance de jambes lourde tombe à moins de 6 h d'une séance clé, à moins de 48 h d'une course | Douleur n° 1 : peur de casser l'endurance (`04`) ; [@robineau2016] [@petre2021] | TrainerRoad : les séries saisies allègent le vélo du lendemain | 4 | M | **À faire** (dépend des heures de séance dans intervals) |
+| A4 | **Bouton « j'ai 20 min »** : version courte de la séance (exercices clés, 1 série de moins) | Les cyclistes lâchent par fatigue et manque de temps [@vikestad2025] ; en population générale, 1 série par exercice suffit à maintenir la force [@spiering2021] | Runna : 30/45/60 min | 5 | M | **À faire** |
+| A5 | **Mode de saison automatique** : développement, maintien (1 séance par semaine), affûtage selon les blocs et les courses A/B/C | Arrêter la force en saison fait perdre les acquis en 8 semaines, d'après un essai de 7 cyclistes par groupe [@ronnestad2016] (preuve C) ; règles `saison-maintien`, `course-a-affutage` | Aucun outil de coach étudié | 4 | M | **À faire** |
+| A6 | **Garde-fou de calendrier** : **information** (pas alerte) si une séance de jambes lourde tombe dans la même demi-journée qu'une séance clé (seuil réglable, 6 h par défaut) ; **signal** si une séance au seuil de course suit dans les 8 h, ou une course dans les 48 h | Douleur n° 1 : peur de casser l'endurance (`04`) ; repères de niveau C [@robineau2016] [@palmer2001] | TrainerRoad : les séries saisies allègent le vélo du lendemain | 4 | M | **À faire** (dépend des heures de séance dans intervals) |
 | A7 | **Ajustement de charge amélioré** : pas proportionnel, plafond de +10 % par séance, pas de hausse sur la 1re série, arrêt après 2 séries incomplètes | Le RIR est faux d'environ 1 répétition [@halperin2022] ; sécurité (`07`) | Alpha Progression, Enode | 4 | S | **À faire** (règles `autoreg-*`) |
 | A8 | **Charge finale proposée pour la séance suivante**, validée par le coach | Aujourd'hui : « Nathan montera la prochaine fois », à la main | CoachingPortal | 4 | S | **À faire** |
-| A9 | **Charge sRPE envoyée à intervals** et nommée ainsi | 30 citations sur « la muscu ne compte pas » (`04`) ; méthode valide [@foster2001] | Watts & Weights | 3 | S | **À faire** (vérifier ce que le relais envoie déjà) |
+| A9 | **Charge sRPE** calculée, nommée ainsi, et **envoyée à intervals en option** (choix du coach) | 30 citations sur « la muscu ne compte pas » (`04`) ; méthode validée en endurance et en sports collectifs, **pas en musculation** [@foster2001] | Watts & Weights | 3 | S | **À faire** (vérifier ce que le relais envoie déjà) |
 | A10 | **Marge d'erreur visible sur chaque test** (« stable » sous l'erreur de mesure) et correction de 3 valeurs de `tests.json` | Plusieurs `mdc` trop optimistes (`science/H`) | — | 3 | S | **À faire** |
 | A11 | **Asymétrie confirmée sur 2 passations** avant d'être affichée | Les seuils de 10-15 % sont arbitraires [@parkinson2021] | — | 3 | S | **À faire** |
 | A12 | **Raison d'une séance sautée en un tap** (fatigue, temps, matériel, gêne, pas envie) | Sert au coach à comprendre ; cadre capacité-opportunité-motivation [@michie2011] | — | 3 | S | **À faire** |
@@ -34,7 +34,7 @@
 | A17 | **Intégration des fiches candidates** (phase 3), en commençant par les 20 premières de `SYNTHESE.md` | Trous de la carte de couverture | Bibliothèques de 1 000+ vidéos | 4 | L (animations) | **À faire, par lots** |
 | A18 | **Vraies vidéos tournées par Nathan** pour les 30 exercices les plus prescrits | Les animations faites main sont le point faible (`05`) ; lien externe = risque (`07`) ; contenu réutilisable sur Instagram (`08`) | Tous les concurrents | 4 | M | **À faire** |
 | A19 | **Score de forme du matin** (5 taps) qui propose garder / alléger / remplacer | Le subjectif suit mieux la charge que l'objectif [@saw2016], mais le score n'est **pas validé** (`science/D`) | WHOOP, ThePerfClub | 2 | M | **Plus tard** : tester d'abord à la main avec les 7 athlètes |
-| A20 | **Respiration : passer à 6 cycles par minute après une séance dure**, garder la carrée pour avant un départ | [@laborde2022] | — | 2 | S | **À faire** (réglage) |
+| A20 | **Respiration : ne plus proposer la carrée après une séance dure** (respiration libre ou 6 cycles par minute, pour le confort) ; garder la carrée pour avant un départ | Un essai de 40 étudiants [@kasap2025] : preuve C | — | 2 | S | **À faire** (réglage) |
 | A21 | **Conseils de fin de séance alignés sur `science/E`** : pas de froid après la muscu en développement, pas de poids cible | [@malta2021] [@mountjoy2023] | — | 3 | S | **À faire** |
 
 ## B. Pour vendre (seulement si les critères de `business/08` sont atteints)
@@ -85,7 +85,7 @@
 
 1. **Les liens « Voir en vrai » vers des recherches YouTube** : à remplacer peu à peu par des vidéos de Nathan (`A18`). Garder le lien simple vers les fiches officielles d'ici là.
 2. **Les questions de ressenti sans décision** : toute question dont la réponse ne change rien (ni la série suivante, ni ce que voit le coach) doit disparaître.
-3. **La respiration carrée après une séance dure** : la remplacer par le 6 cycles par minute (`A20`).
+3. **La respiration carrée après une séance dure** : la retirer de ce moment-là (`A20`).
 4. **Le conseil de bain froid après la musculation** en phase de développement (`A21`).
 5. **Les repères de tests non vérifiés affichés comme des normes** (13 s d'équilibre, 25 répétitions de pont, 30° de rotation de hanche) : les présenter comme des repères d'usage, ou les retirer (`science/H`).
 6. **Le mot « douleur »** dans l'interface et dans les messages envoyés à intervals : « gêne » (`A15`).
@@ -96,4 +96,4 @@ Voir `SYNTHESE.md`. Dans l'ordre : A1, A2, A3, A7 + A8, A4, A5, A6, A15 + A16, A
 
 ## Sources
 
-[@viiala2026] [@saw2015b] [@vikestad2025] [@spiering2021] [@ronnestad2016] [@robineau2016] [@petre2021] [@halperin2022] [@foster2001] [@parkinson2021] [@michie2011] [@ramirezcampillo2023] [@hilkens2024] [@besomi2025] [@saw2016] [@laborde2022] [@malta2021] [@mountjoy2023] [@github-pages-limites] [@kidman2024] [@mazeas2022] [@ntoumanis2021] [@ingalls2026] [@tong2018] [@bidargaddi2018] [@impellizzeri2020] [@moran2017b] [@ortiz2016] [@greig2023] [@fuller2020] [@zhang2020] [@mcnulty2020].
+[@viiala2026] [@saw2015b] [@vikestad2025] [@spiering2021] [@ronnestad2016] [@robineau2016] [@petre2021] [@halperin2022] [@foster2001] [@parkinson2021] [@michie2011] [@ramirezcampillo2023] [@hilkens2024] [@besomi2025] [@saw2016] [@kasap2025] [@palmer2001] [@malta2021] [@mountjoy2023] [@github-pages-limites] [@kidman2024] [@mazeas2022] [@ntoumanis2021] [@ingalls2026] [@tong2018] [@bidargaddi2018] [@impellizzeri2020] [@moran2017b] [@ortiz2016] [@greig2023] [@fuller2020] [@zhang2020] [@mcnulty2020].
