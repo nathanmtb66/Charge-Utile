@@ -18,19 +18,15 @@
 | **IA** (AI Act, art. 50, applicable depuis le 02/08/2026) | Obligation faible tant que le coach relit. Le faire quand même par défaut : mention « séance écrite avec l'aide d'une IA, relue par ton coach » et champ `"genere_par"` dans le JSON. | Moyenne |
 | **Marque « Charge Utile »** | **Disponibilité NON vérifiée** (bases INPI et EUIPO inaccessibles aux outils). Un **magazine « Charge Utile » existe depuis 1992** (camions anciens) : risque de confusion faible, mais à vérifier en priorité. Le nom est une marque faible (mots courants). Dépôt INPI en classes 9, 41 et 42 : **270 €**. | Faible (disponibilité) |
 
-## ⚠️ À corriger tout de suite, même en gratuit (sécurité du dépôt actuel)
+## ⚠️ À corriger tout de suite, même en gratuit (sécurité du site actuel)
 
-Constats faits en lecture seule le 01/10/2026. Je ne les ai pas modifiés : la consigne interdit de toucher à `docs/` et `relais/`.
+Constats faits en lecture seule le 01/10/2026. Je n'ai rien modifié : la consigne interdit de toucher à `docs/` et `relais/`.
 
-**Deux défauts de sécurité ont été relevés dans le site et le relais actuels** (accès aux plans des athlètes ; intégrité des écritures vers intervals.icu). Les détails sont volontairement **hors du dépôt public** : voir `recherche/_prive/securite-relais.md` sur le Mac de Nathan.
-3. Le PIN de la vue coach est comparé à temps constant (bien), mais **aucune limite du nombre d'essais** n'a été repérée (à vérifier).
-4. La **clé API du coach** donne accès à tous les athlètes : c'est le secret le plus sensible. Elle est bien stockée en variable secrète du Worker : à garder ainsi.
-
-**Correctifs minimaux** :
-- codes longs et aléatoires, plus aucune liste publique ;
-**Deux défauts de sécurité ont été relevés dans le site et le relais actuels** (accès aux plans des athlètes ; intégrité des écritures vers intervals.icu). Les détails sont volontairement **hors du dépôt public** : voir `recherche/_prive/securite-relais.md` sur le Mac de Nathan.
-- limite de débit sur le PIN ;
-- `focus` exprimé sans vocabulaire de santé, ou servi seulement après authentification.
+- **Deux défauts de sécurité ont été relevés dans le site et le relais actuels** : l'un touche l'accès aux plans des athlètes, l'autre l'intégrité des écritures vers intervals.icu.
+- **Les détails sont volontairement hors du dépôt public** : ils sont dans `recherche/_prive/securite-relais.md`, sur le Mac de Nathan (dossier exclu de git). Ils ne doivent pas être publiés avant le correctif.
+- Après le correctif, il faudra **changer tous les codes des athlètes**.
+- Le PIN de la vue coach est comparé à temps constant (bien). Aucune limite du nombre d'essais n'a été repérée (à vérifier).
+- La clé API du coach est bien stockée en variable secrète du relais : à garder ainsi.
 
 Ce point est repris dans `audit.md`.
 
