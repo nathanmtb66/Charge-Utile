@@ -1,12 +1,131 @@
-# Mise sur le marché de Charge Utile en France — matériaux bruts
+# 08 — Mise sur le marché : premiers clients, contenu, entretiens, critères d'arrêt
 
-Collecte du 30/09 au 01/10/2026. Seules les pages réellement ouvertes (WebFetch) ou renvoyées par WebSearch avec leur URL exacte sont citées. Les limites sont signalées.
+*Collecte du 30 septembre au 1er octobre 2026 : sites des CREPS, FFC, FFS, comité Occitanie, études de portée Instagram, The Mom Test, Jobs To Be Done, SaaStr, Lenny's Newsletter. Détail et liens : `_brut/gtm.md`.*
+
+## En 1 minute
+
+- **La fenêtre, c'est maintenant.**
+  - En VTT et sur route, le **bloc de force hivernal se programme d'octobre à mi-novembre**, et les teams VTT bouclent leur dossier et leur **budget avant le 1er novembre** [@comite-occitanie-labellisation-2026].
+  - Les CREPS votent leur budget en **novembre-décembre** : trop tard pour un achat en 2027, assez tôt pour un **pilote gratuit** qui prépare une ligne budgétaire.
+  - En ski nordique et biathlon, la bonne fenêtre est **avril-juin**.
+- **Les premiers utilisateurs les plus réalistes ne sont pas des clients, mais des testeurs à Font-Romeu** :
+  - les **16 stagiaires DEJEPS VTT** du CREPS Montpellier / Font-Romeu, en formation depuis le 21 septembre 2026 [@creps-montpellier-dejeps-vtt] ;
+  - les **étudiants de la licence STAPS Entraînement sportif**, qui ont 200 h de stage en L3 ;
+  - les **structures jeunes** VTT et nordique locales.
+- **Attention au CREPS** : il a déjà ses outils de suivi (Sport Data Hub, portail de suivi quotidien), les athlètes listés utilisent peut-être Athlète 360, et le statut « pôle espoir VTT » de Font-Romeu est **contradictoire** entre les sources (office de tourisme contre plan de performance FFC 2025-2029). Le CREPS est une **vitrine et un lieu de rencontre**, pas un premier client.
+- **Le contenu photo/vidéo de Nathan sert à ouvrir des portes B2B, pas à vendre aux athlètes.**
+  - La portée organique d'Instagram est faible : 3,2 % des abonnés en moyenne, 6,65 % pour les comptes de 1 000 à 5 000 abonnés [@socialinsider-reach-2026].
+  - L'échange qui marche : **« je filme votre stage, vos athlètes testent l'appli »**.
+  - Le modèle à suivre est **Campus Coach** (ex-Running Addict) : 7 ans de contenu pédagogique avant l'appli, puis plus de 5 M€ de revenu récurrent annuel déclaré [@gdiy-running-addict-2025].
+- **Avant de coder quoi que ce soit pour vendre** : 20 entretiens Mom Test (script ci-dessous), puis une page « coach » avec une fausse porte de prix (« fake door »), puis des préventes pour la saison 2027.
+- **Les critères d'arrêt sont fixés à l'avance** (tableau plus bas). Par exemple : **zéro paiement après une offre explicite à 10 coachs engagés → on arrête la piste « vendre le logiciel »** et l'appli reste l'outil de Nathan.
+
+## Les 10 premiers contacts (classés par chance d'obtenir un vrai test d'ici fin novembre 2026)
+
+| # | Qui | Ce qu'on leur propose | Ce qu'on attend |
+|---|---|---|---|
+| 1 | **Stagiaires DEJEPS VTT 2026-2027** (CREPS Montpellier / Font-Romeu, 16 places) | Outil gratuit pour leurs séances de stage | Retours écrits ; 5 utilisateurs actifs |
+| 2 | **Licence STAPS ES et master de Font-Romeu** (enseignants, étudiants) | Support de TD ou de projet tutoré ; outil pour le stage de L3 | 5-10 étudiants qui l'utilisent avec leurs athlètes |
+| 3 | **Section VTT du collège-lycée et club support** de Font-Romeu | Vue coach + séances au poids du corps, **accord parental** | Un groupe jeune pilote |
+| 4 | **Club des sports de Font-Romeu, biathlon et ski de fond** | Préparation physique d'automne | Un groupe pilote (mineurs : précautions) |
+| 5 | **Préparateurs physiques du CREPS** (via le département haute performance) | Avis d'expert ; test sur un groupe en stage ; **vidéo de leur stage en échange** | Critique experte, crédibilité |
+| 6 | **Coachs VTT et trail indépendants** (602 coachs sur la marketplace Nolio [@nolio-marketplace], annuaire intervals.icu) | Entretien Mom Test, puis test de 4 semaines | 20 entretiens, 5 tests |
+| 7 | **Comité régional FFC Occitanie** (équipe technique régionale, commission VTT) | Séances de renforcement standard pour les stages régionaux | Accès aux clubs et aux jeunes sélectionnés |
+| 8 | **Teams VTT XCO de club d'Occitanie et du Sud** (Team National 2, DN) | Préparation physique (service M5) ou outil gratuit | Premier client payant probable : un entraîneur seul pour 8-15 pilotes, sans préparateur |
+| 9 | **Structures d'entraînement voisines** (Mende, Blagnac, Nice) | Même offre qu'en 8 | Références FFC |
+| 10 | **Pôle France relève VTT, pôle espoirs triathlon** | Rendez-vous d'avis, **après** avoir 3-5 coachs utilisateurs à montrer | Une référence |
+
+## Comment Nathan utilise son talent de photographe-vidéaste
+
+Formats, du plus utile au moins utile pour trouver des clients professionnels :
+1. **« Une séance de force pour VTT XCO en 20 min »**, filmée proprement, avec l'écran de l'appli en incrustation (mannequin 3D, bips de tempo, RPE). Ce format est utile, se sauvegarde et montre le produit sans le vendre.
+2. **Un exercice, une erreur, la correction** : Reel ou carrousel de 15-30 s. C'est aussi le début d'une **bibliothèque de vraies vidéos**, qui répond à une faiblesse de l'appli (`05`) et supprime le risque juridique des liens externes (`07`).
+3. **Coulisses d'un pôle ou d'un team**, avec autorisation écrite (parentale pour les mineurs). Le pôle reçoit des images de qualité, Nathan reçoit un contact et de la crédibilité.
+4. **Tests filmés** (max estimé, mobilité au téléphone).
+5. **« Question de coach »** : « comment caser la muscu en période de courses ? », réponse en vidéo appuyée sur la base scientifique de la phase 2.
+
+**À mesurer** : le nombre de **messages entrants de coachs ou de structures**, pas les vues. **Les Mondiaux UCI 2027 en Haute-Savoie** (fin août-début septembre 2027) sont une occasion de visibilité pour le VTT français.
+
+## Script d'entretien de découverte (15 questions)
+
+À faire avec 20 coachs **avant** de coder la version vendue. Méthode : The Mom Test (on parle de leur vie et de faits passés, pas de l'idée ; les compliments ne comptent pas ; on finit sur un engagement) [@momtest-site] et Jobs To Be Done (reconstituer un vrai changement d'outil récent : poussée, attraction, anxiété, habitude) [@jtbd-org]. Durée : 20-30 min. **Pas de démonstration avant la question 13.**
+
+*Leur situation aujourd'hui*
+1. Raconte-moi ta semaine type avec tes athlètes : combien, quel niveau, quelles disciplines ?
+2. La dernière séance de renforcement que tu as donnée : comment l'as-tu construite, et comment est-elle arrivée à l'athlète (papier, PDF, appli, message) ?
+3. Comment as-tu su s'il l'avait faite, et avec quelles charges ?
+4. La dernière fois qu'une séance de muscu s'est mal passée (trop lourd, exercice mal fait, séance sautée) : que s'est-il passé, et qu'as-tu fait ensuite ?
+
+*La difficulté, et ce qu'ils ont déjà essayé*
+
+5. Quel outil utilises-tu pour l'endurance ? Depuis quand, et qu'est-ce qui t'a fait l'adopter ?
+6. As-tu déjà essayé un outil pour la muscu ? Lequel, combien de temps, pourquoi l'as-tu gardé ou abandonné ?
+7. Combien de temps passes-tu par semaine à préparer et suivre la partie force ?
+8. La dernière fois que tu as voulu vérifier la technique d'un athlète à distance, qu'as-tu fait ?
+
+*Argent et décision*
+
+9. Combien paies-tu aujourd'hui pour tes outils de coaching, et qui paie ?
+10. La dernière fois que ta structure a acheté un outil : qui a décidé, à quel moment de l'année, avec quel budget ?
+11. Si tu arrêtais de suivre la muscu de tes athlètes demain, que se passerait-il concrètement ?
+
+*La question qui fait peur*
+
+12. Qu'est-ce qui ferait que tu n'utiliserais jamais ce type d'outil (mineurs, données, temps, téléphone interdit en salle…) ?
+
+*Seulement ensuite : montrer, puis demander un engagement*
+
+13. (Démo de 3 min) Qu'est-ce qui te paraît inutile ou faux ? Que manque-t-il pour que tu l'utilises la semaine prochaine ?
+14. Serais-tu d'accord pour l'essayer avec 2 ou 3 athlètes pendant 4 semaines, à partir d'une date précise ? *(engagement de temps)*
+15. Qui d'autre devrais-je rencontrer ? Peux-tu me présenter ? *(engagement de réputation)*
+
+**Règles** : noter les faits (nombres, outils, dates), pas les compliments. Un « oui » aux questions 14 ou 15 compte ; un « c'est génial » ne compte pas. **Ajout pour Charge Utile** : la question 3 teste directement l'hypothèse « le coach ne sait pas si la muscu est faite », que la collecte en ligne n'a **pas** démontrée (`04`).
+
+## Tests de prix et de demande
+
+1. **Page « coach » avec une fausse porte de prix** : présentation, puis bouton « Équiper mon groupe », puis choix d'une formule (gratuit 3 athlètes / coach / structure), puis « bêta fermée, laisse ton e-mail ». Mesurer **actions ÷ occasions** (méthode du prétotypage [@savoia-pretotype-it]) sur un trafic **qualifié** : coachs contactés, abonnés de Nathan.
+2. **Van Westendorp** en fin d'entretien, sur les coachs qui paient déjà un outil : 4 questions de prix (trop cher, trop bon marché, commence à être cher, bonne affaire). Avec 20-40 réponses, on obtient une **fourchette** de prix, pas un prix [@sawtooth-van-westendorp].
+3. **Prévente saison 2027** : un tarif fondateur payé d'avance pour les 5-10 coachs les plus engagés. Ou bien **un pilote payant symbolique** pour une structure : un pilote payant se convertit beaucoup mieux qu'un pilote gratuit (avis d'investisseur SaaStr, pas une étude) [@saastr-pilot-conversion].
+4. **Fausses portes de fonctions** dans la vue coach existante (« Exporter le bilan PDF pour le club », « Ajouter un 2e coach »), pour savoir quoi construire.
+
+**Repères de conversion** : quelques pour cent des visiteurs laissent un e-mail, et 10 à 25 % des inscrits paient, d'autant moins que l'attente est longue. **Ces chiffres viennent d'éditeurs d'outils, pas d'études** : à prendre comme ordres de grandeur.
+
+## Critères d'arrêt ou de pivot (à fixer avant de commencer)
+
+Fenêtre de test : **novembre 2026 → fin février 2027** (bloc de force hivernal).
+
+| Signal | Continuer | Pivoter ou recentrer | Arrêter la piste « vendre le logiciel » |
+|---|---|---|---|
+| Entretiens | ≥ 15 par segment ; la muscu suivie à distance est citée **spontanément** comme un problème par au moins un tiers | Problème réel, mais dans un autre segment (préparateurs de structures plutôt que coachs indépendants) | Personne ne cite de vraie difficulté ni d'action passée pour la résoudre |
+| Engagements | ≥ 5 coachs testent avec ≥ 3 athlètes pendant ≥ 4 semaines ; ≥ 3 présentations à un autre coach ou décideur | Tests abandonnés pour une raison précise et réparable | Moins de 2 tests réels sur 20 contacts qualifiés |
+| Rétention coach | ≥ 60 % programment encore à 8 semaines (repère SaaS pour petites entreprises [@lenny-retention-2020]) | 30-60 % | < 30 % |
+| Score de Sean Ellis (à partir de 40 répondants) | ≥ 40 % « très déçu » dans un segment [@firstround-superhuman] | 25-40 % : segmenter | < 25 % partout |
+| Paiement | ≥ 3 préventes ou 1 pilote payant de structure pour 2027 | Intérêt sans paiement : tester un autre prix ou un autre payeur | **Zéro paiement après une offre explicite à 10 coachs engagés** |
+
+**Pour le service M5 (préparation physique par Nathan)** : continuer si ≥ 3 athlètes paient à 40 €/mois ou plus d'ici fin février 2027 et que ≥ 2 sur 3 renouvellent après 3 mois. Arrêter ou revoir le prix si personne ne paie après 15 propositions.
+
+**Signal d'arrêt global** : si les **7 athlètes de Nathan** eux-mêmes ne font pas ≥ 75 % des séances de force prévues pendant 8 semaines avec l'appli, le problème est le produit ou l'adhésion (phase 2 G), pas le marché. Il faut le régler avant tout le reste.
+
+## Calendrier de saison
+
+| Période | Ce qui se passe | Action pour Charge Utile |
+|---|---|---|
+| **Oct. → mi-nov. 2026** | Coupure puis reprise VTT et route ; programmation du bloc de force hivernal ; budgets des teams avant le 1er novembre | **Fenêtre n° 1** : entretiens, tests avec des coachs et des teams, service M5 |
+| Nov. → déc. | Budgets des CREPS votés | Pilotes gratuits pour préparer 2028 |
+| Nov. → févr. | Bloc de force hivernal | Mesurer l'adhésion, la rétention, les préventes |
+| Mars → sept. 2027 | Saison VTT (Coupe de France : calendrier 2027 non publié au 01/10/2026) | Séances de maintien courtes ; contenu en course |
+| Avril → mai | Subventions ANS (Projet sportif fédéral) | Proposer d'inscrire la préparation physique outillée dans le dossier d'un club |
+| **Avril → juin** | Fin de saison du ski nordique et du biathlon, admissions en centres interrégionaux (environ 370 jeunes dans 6 centres FFS, comptage de notre collecte) | **Fenêtre nordique** |
+| 24 août → 5 sept. 2027 | Mondiaux UCI en Haute-Savoie | Contenu VTT |
+| Trail | Pas de date fixe ; le coach décide seul | Démarchage coach par coach toute l'année |
 
 ---
 
-## 1. Premiers clients réalistes
+# Étude détaillée
 
-### 1.1 CREPS Occitanie, site de Font-Romeu (CNEA — Centre national d'entraînement en altitude)
+### 1. Premiers clients réalistes
+
+#### 1.1 CREPS Occitanie, site de Font-Romeu (CNEA — Centre national d'entraînement en altitude)
 
 **Ce qui est vérifié**
 
@@ -34,7 +153,7 @@ Aucune page ouverte ne dit qui choisit les logiciels. D'après l'organisation d�
 - **Dans la cartographie officielle FFC 2025-2029**, « Font-Romeu (VTT) » apparaît dans la ligne Occitanie parmi les structures d'accession territoriale (SEF, structures d'entraînement et de formation), et **l'Occitanie n'a pas de pôle espoir régional cyclisme** (seulement un pôle « hors murs ») ([PPF FFC 2025-2029, version du 15 avril 2026, p. « Cartographie des structures d'accession »](https://ffc.fr/ressources/projet-performance-federal-ffc/)). Le libellé « pôle espoir VTT » de l'office de tourisme est donc probablement un raccourci. Le catalogue en ligne des SEF d'Occitanie ne mentionne d'ailleurs pas Font-Romeu (il liste Mende, Sérignan, Montpellier, Blagnac) ([velo.ffc.fr/Occitanie](https://velo.ffc.fr/poles-de-performance/poles-espoirs/occitanie/)). **À vérifier sur place : qui encadre le VTT au lycée, combien de jeunes, avec quel club support.**
 - **Un pôle France FFC sur le site** : le **Pôle France olympique BMX freestyle** est rattaché au « CREPS de Montpellier – CNEA Font-Romeu » dans le PPF (même document). Peu pertinent pour Charge Utile (discipline acrobatique), mais c'est un staff fédéral présent sur le site.
 
-### 1.2 Pôles France / pôles espoirs en France (disciplines d'endurance)
+#### 1.2 Pôles France / pôles espoirs en France (disciplines d'endurance)
 
 **Cyclisme (FFC) — cartographie PPF 2025-2029, version du 15 avril 2026** ([ffc.fr](https://ffc.fr/ressources/projet-performance-federal-ffc/), PDF de 143 pages lu intégralement en texte)
 
@@ -71,7 +190,7 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 **Lecture pour Charge Utile** : les sites où se croisent plusieurs publics cibles sont **Boulouris** (pôle France relève VTT XCO + triathlon), **Besançon** (VTT + triathlon + CIE jurassien à proximité), **Montpellier** (triathlon + CREPS Occitanie) et **Font-Romeu** (SEF VTT + CIE Pyrénées + stages de tout le monde). Le pôle France relève VTT XCO est l'endroit où le « besoin musculation » VTT est le plus structuré, mais aussi le plus équipé.
 
-### 1.3 Comité régional FFC Occitanie, clubs et teams VTT
+#### 1.3 Comité régional FFC Occitanie, clubs et teams VTT
 
 - **Comité régional de cyclisme d'Occitanie** (FFC), siège à Ramonville-Saint-Agne (31) ; site [comiteoccitanieffc.com](https://www.comiteoccitanieffc.com/). Il a une équipe technique régionale (ETR) et une commission VTT ; la sélection régionale jeunes VTT compte 24 pilotes (8 benjamins, 8 minimes, 8 cadets) (résumé WebSearch d'un règlement du comité, non ouvert). L'ETR (conseillers techniques) est la porte d'entrée vers les clubs et les jeunes du Trophée régional.
 - **Labellisation des teams VTT 2026** : dossier et paiement à rendre au plus tard le **samedi 1er novembre 2025** (effectifs, diplômes, contrats pour la DN1, **budget 2026**, bilan 2025) ([comiteoccitanieffc.com](https://www.comiteoccitanieffc.com/post/labellisation-teams-vtt-2026)). → Les teams bouclent leur budget de la saison suivante **en octobre**.
@@ -79,7 +198,7 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 - **Coupe de France VTT** : mars à août, 8 à 10 manches de 2 à 4 jours, 150 à 1 600 compétiteurs par manche, **environ 80 teams** ([structures.ffc.fr](https://structures.ffc.fr/epreuves-ffc-disciplines/vtt/coupe-de-france-vtt/)). C'est l'endroit physique où rencontrer d'un coup les staffs de teams.
 - **Championnats de France VTT XCO 2026** : 16-19 juillet 2026 au Dévoluy (05), plus de 1 400 pilotes ([velo.ffc.fr](https://velo.ffc.fr/championnats-france-vtt-xco-2026-repetition-championnats-deurope-monde/)).
 
-### 1.4 Coachs indépendants : où les trouver, combien
+#### 1.4 Coachs indépendants : où les trouver, combien
 
 | Canal | Ce qui est vérifié | Utilité pour Nathan |
 |---|---|---|
@@ -94,13 +213,13 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 **Précédent utile — comment Nolio a grandi** (article de Distances+, 7 décembre 2022) : 1 000 coachs et 20 000 utilisateurs cinq ans après sa création en 2017, avec une équipe de 6 personnes ; la croissance est attribuée au **bouche-à-oreille entre coachs**, au recrutement précoce de **coachs influents dans des groupes de test**, et à l'implication volontaire de coachs réticents à la technologie ; incubation à l'Outdoor Sport Valley (Annecy) ([distances.plus](https://distances.plus/entrainement/application-nolio-plateforme-entrainement-suivi-trail-running/)). De 1 000 coachs (2022) à plus de 4 500 (2026) : c'est le chemin « coach par coach » que Charge Utile peut reproduire à petite échelle.
 
-### 1.5 Étudiants STAPS « Entraînement sportif »
+#### 1.5 Étudiants STAPS « Entraînement sportif »
 
 - **Oui, la licence STAPS mention Entraînement sportif de l'université de Perpignan (UPVD) se fait au campus de Font-Romeu** : 3 ans, 180 ECTS, 1 637 heures (35 % de pratique), **stages de 50 h en L2 et 200 h en L3**, spécialisation à partir de la L2 (quatre mentions : Éducation et motricité, Management du sport, Entraînement sportif, APAS) ; poursuite possible en master STAPS « Entraînement et optimisation de la performance sportive » à Font-Romeu ([formations.univ-perp.fr](https://formations.univ-perp.fr/diplome/licences/licence-sciences-et-techniques-des-activites-physiques-et-sportives-staps-mention-entrainement-sportif)). Le master est présenté sur L'Étudiant sous l'intitulé « Altitude et performance » (résumé WebSearch, [letudiant.fr](https://www.letudiant.fr/etudes/annuaire-enseignement-superieur/formation/formation-master-altitude-et-performance-231225.html)).
 - La Région parle de 550 étudiants STAPS résidant sur le plateau (2024, [laregion.fr](https://www.laregion.fr/JO-comment-les-Creps-d-Occitanie-preparent-les-champions)). Effectif de la mention Entraînement sportif : **non trouvé**.
 - **Pourquoi c'est un canal** : les L3 doivent faire 200 h de stage d'entraînement et encadrer de vrais athlètes ; un outil gratuit qui leur permet de programmer, montrer et suivre des séances de muscu est un argument de stage. Nathan y est lui-même étudiant : accès direct aux enseignants de méthodologie de l'entraînement / préparation physique (à solliciter pour un TD « programmer une séance de force pour un athlète d'endurance » où Charge Utile sert de support). Pas de source publique sur les outils utilisés en cours.
 
-### 1.6 Communautés, forums, podcasts francophones
+#### 1.6 Communautés, forums, podcasts francophones
 
 **Forums (vérifiés comme existants par WebSearch, non ouverts en détail)**
 - Forum **Velo 101** : sections route, CX, gravel, VTT, piste, dont entraînement et santé ; sujet dédié « Cyclisme et musculation » ([velo101.com/forum](https://www.velo101.com/forum/voirsujet/cyclisme-et-musculation--32906)).
@@ -117,7 +236,7 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 **Newsletters** : aucune newsletter francophone d'entraînement d'endurance avec audience publiée trouvée.
 
-### 1.7 Créateurs et athlètes trail/VTT francophones (comptes publics)
+#### 1.7 Créateurs et athlètes trail/VTT francophones (comptes publics)
 
 **Trail / running** (chiffres déclarés par des articles, non recoupés sur les plateformes)
 - Article u-Trail du 4 août 2026 : Mathieu Blanchard ≈ 650 000 abonnés ; Clément Deffrenne ≈ 686 000 abonnés Instagram ; Dorian Louvet ≈ 262 000 ([u-trail.com](https://www2.u-trail.com/influenceurs-running-ont-ils-vraiment-le-cerveau-dans-leurs-chaussures-et-leur-audience-dans-les-stats/)). Constat de l'article : la notoriété en ligne n'est pas proportionnelle aux résultats sportifs.
@@ -131,23 +250,23 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 ---
 
-## 2. Canal photo/vidéo : le contenu comme canal d'acquisition
+### 2. Canal photo/vidéo : le contenu comme canal d'acquisition
 
-### 2.1 Exemples réels d'entreprises d'entraînement nées du contenu
+#### 2.1 Exemples réels d'entreprises d'entraînement nées du contenu
 
 - **Running Addict → Campus Coach (France)** — le cas le plus proche. Blog éducatif lancé en 2013 ; en 2020 le créateur quitte son poste d'ingénieur pour lancer l'appli. En avril 2025 : « plus de 5 millions d'euros » de revenu récurrent annuel déclaré, 50 personnes, croissance autofinancée, 350 000 à 500 000 abonnés YouTube (épisode #463 du podcast Génération Do It Yourself, 13 avril 2025, [gdiy.fr](https://www.gdiy.fr/podcast/nicolas-spiess-running-addict/) — chiffres déclarés par le fondateur, non audités). Le Journal du Geek (11 avril 2025) décrit les canaux : blog avec une newsletter partie de 5 000 abonnés, chaîne YouTube d'un cofondateur, une trentaine de groupes de course en présentiel, webinaires qui expliquent la méthode ; les applis gratuites sont vues comme des « portes d'entrée » ([journaldugeek.com](https://www.journaldugeek.com/2025/04/11/campus-coach-au-coeur-du-marathon-de-paris-on-veut-devenir-les-meilleurs/)). **Leçon** : sept ans de contenu pédagogique avant l'appli ; l'audience venait pour apprendre à s'entraîner, pas pour du divertissement.
 - **Uphill Athlete (États-Unis)** — livre *Training for the New Alpinism* (2014) puis *Training for the Uphill Athlete* (2017) ; après les livres, « des milliers de messages » de lecteurs ; constat qu'un livre est figé alors que l'entraînement est vivant → création d'une offre de plans, coaching de groupe et coaching individuel ([uphillathlete.com](https://uphillathlete.com/steve-house-and-the-roots-of-uphill-athlete)). Le résumé WebSearch d'une page tierce indique plus de 100 000 exemplaires vendus en Amérique du Nord en 2020 (non ouvert, non cité comme vérifié). **Leçon** : un contenu de référence sur la force et l'endurance en montagne a créé la demande de coaching.
 - **TrainerRoad** — podcast hebdomadaire « Ask a Cycling Coach » depuis 2015, environ 590 épisodes sur 11 ans (résumé WebSearch, [Apple Podcasts](https://podcasts.apple.com/us/podcast/ask-a-cycling-coach-podcast-presented-by-trainerroad/id1035433041)) : l'éditeur d'un logiciel d'entraînement répond chaque semaine aux questions d'entraînement. Audience non publiée.
 - **Nolio** — contre-exemple utile : croissance **sans** gros contenu grand public, par le bouche-à-oreille entre coachs et les fédérations (voir 1.4).
 
-### 2.2 Ce que disent les chiffres de portée Instagram (2025-2026)
+#### 2.2 Ce que disent les chiffres de portée Instagram (2025-2026)
 
 - **Socialinsider, étude « reach » mise à jour le 3 septembre 2026** (872 075 publications Facebook + Instagram, janvier 2025 – août 2026) : taux de portée Instagram moyen **3,20 % des abonnés**, en baisse de 14 % sur un an ; par format : carrousels 4,50 %, Reels 4,10 %, images 4,00 % ; **par taille de compte : 6,65 % pour 1-5 k abonnés**, 5,75 % (5-10 k), 5,50 % (10-50 k), 4,50 % (50-100 k), 3,50 % (100 k-1 M) ([socialinsider.io](https://www.socialinsider.io/blog/social-media-reach/)).
 - **Socialinsider, benchmarks d'engagement publiés le 20 février 2026** (35 millions de publications, 447 613 comptes, année 2025) : engagement moyen **0,48 %** (-24 % sur un an) ; carrousels 0,55 %, Reels 0,52 %, images 0,37 % ([socialinsider.io](https://www.socialinsider.io/social-media-benchmarks/instagram)).
 - **Rival IQ, rapport 2025** (25 février 2025, 150 marques par secteur, comptes de 25 000 à 1 million de fans Facebook) : engagement Instagram en baisse de 16 % ; les équipes sportives sont **deuxièmes** sur Instagram, portées par la vidéo ([rivaliq.com](https://www.rivaliq.com/blog/social-media-industry-benchmark-report/)). Le chiffre « 1,30 % pour les équipes sportives » n'apparaît que dans le résumé WebSearch, pas dans la page ouverte : **non vérifié**.
 - **Ce que ça veut dire pour Nathan** : un compte de 2 000 abonnés touche en moyenne ~130 personnes par publication. La portée organique vers ses propres abonnés est faible ; ce qui fait grandir, c'est (a) le partage et la sauvegarde (contenu utile, à garder), (b) la découverte par des non-abonnés (Reels), (c) les comptes des autres (collabs avec un pôle, un team, un athlète). Les sources mesurent des marques, pas des créateurs individuels : à prendre comme ordre de grandeur.
 
-### 2.3 Comment un photographe-vidéaste peut s'en servir (analyse, pas une source)
+#### 2.3 Comment un photographe-vidéaste peut s'en servir (analyse, pas une source)
 
 L'avantage de Nathan est rare : il sait filmer, il est sur place au CREPS, et il a un produit à montrer. Le contenu sert surtout à **ouvrir des portes B2B** (pôles, teams, coachs), pas à vendre directement aux athlètes.
 
@@ -162,9 +281,9 @@ Points de vigilance : droit à l'image (autorisation écrite, parentale pour les
 
 ---
 
-## 3. Entretiens de découverte : méthodes et script
+### 3. Entretiens de découverte : méthodes et script
 
-### 3.1 The Mom Test (Rob Fitzpatrick)
+#### 3.1 The Mom Test (Rob Fitzpatrick)
 
 Le sous-titre du livre résume l'enjeu : apprendre si son idée est bonne alors que « tout le monde vous ment » ([momtestbook.com](https://www.momtestbook.com/)). Principes (d'après le site du livre, le résumé Shortform et un résumé LessWrong) :
 
@@ -175,7 +294,7 @@ Le sous-titre du livre résume l'enjeu : apprendre si son idée est bonne alors 
 5. **Chercher un engagement à la fin** : du temps (tester un prototype), de la réputation (présenter un collègue ou un décideur — le plus parlant en B2B), de l'argent (précommande). Un entretien sans engagement ni étape suivante est un échec poli ([lesswrong.com](https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts)).
 6. **Préparer ses 3 questions les plus importantes**, y compris les « questions qui font peur » (celles qui peuvent tuer le projet), et **rester informel** : si l'autre a l'impression de rendre un service, c'est trop formel ([lesswrong.com](https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts)).
 
-### 3.2 Jobs To Be Done (Christensen ; entretien « switch » de Moesta et Spiek)
+#### 3.2 Jobs To Be Done (Christensen ; entretien « switch » de Moesta et Spiek)
 
 - Concept popularisé par Clayton Christensen et coauteurs dans la Harvard Business Review (septembre 2016, « Know Your Customers' Jobs to Be Done ») : les gens « embauchent » un produit pour faire un progrès dans une situation donnée ([hbr.org](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) — seul l'en-tête de l'article a pu être lu, le contenu est payant).
 - **Méthode d'entretien** (site de Bob Moesta et Chris Spiek, [jobstobedone.org](https://jobstobedone.org/)) :
@@ -184,7 +303,7 @@ Le sous-titre du livre résume l'enjeu : apprendre si son idée est bonne alors 
   - **Quatre forces** : poussée (le problème actuel), attraction (la nouvelle solution) contre anxiété (peur du nouveau) et habitude (confort de l'existant). On ne change que si poussée + attraction l'emportent.
 - **Application à Charge Utile** : le vrai concurrent est souvent l'**habitude** (tableur, PDF, WhatsApp, séance notée sur papier) et l'**anxiété** (« mes athlètes vont-ils l'utiliser ? », « mes données ? »). Il faut trouver des coachs qui ont **déjà changé d'outil** récemment et reconstituer pourquoi.
 
-### 3.3 Script de 15 questions (proposition, à adapter)
+#### 3.3 Script de 15 questions (proposition, à adapter)
 
 Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physique, responsable de team. Durée : 20-30 min. **Pas de démonstration avant la question 13.**
 
@@ -217,16 +336,16 @@ Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physiqu
 
 ---
 
-## 4. Tests de prix et de demande
+### 4. Tests de prix et de demande
 
-### 4.1 Principes
+#### 4.1 Principes
 
 - **Pretotypage et « fake door » (Alberto Savoia, *Pretotype It*, 2e édition, PDF de pretotyping.org)** : avant de construire, créer une « entrée » (lien, bouton, annonce) vers un produit ou une fonction qui n'existe pas encore et compter qui clique. Le nom vient d'une présentation de la cofondatrice de Polyvore. Métrique proposée : **niveau d'intérêt initial (ILI) = nombre d'actions faites / nombre d'occasions offertes**, puis un **niveau d'intérêt dans la durée (OLI)** qui se suit dans le temps ([pretotyping.org, PDF](https://www.pretotyping.org/uploads/1/4/0/9/14099067/pretotype_it_2nd_pretotype_edition-2.pdf), lu en texte). L'idée d'exiger un engagement réel (« skin in the game » : temps, argent, informations) apparaît dans les résumés WebSearch du livre *The Right It* (non ouvert).
 - **Landing page + page de prix (cas Buffer, 2011)** : deux pages sans produit — une description, puis un clic « Plans et prix » qui mène à « pas encore prêt, laissez votre e-mail ». La page de prix mesure à la fois l'intérêt pour le prix et l'intensité de la demande (un clic de plus). Premier client payant **4 jours** après le lancement du 30 novembre 2010 ; l'article mentionne environ **4 %** d'utilisateurs passés à une offre payante après le lancement ([buffer.com, 16 février 2011](https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/)). Cas célèbre, un seul produit, grand public : à lire comme une illustration.
 - **Van Westendorp (1976)** : quatre questions ouvertes à chaque répondant — trop cher pour acheter, si bon marché qu'on doute de la qualité, commence à être cher, bonne affaire. On trace les courbes cumulées : la zone entre les points de « bon marché marginal » et de « cher marginal » donne la fourchette acceptable. **Limites** : prix déclaré et non choix réel, pas de concurrents dans la question, pas de prédiction de volume ; l'extension Newton-Miller-Smith (1993) ajoute une question d'intention d'achat aux deux prix-clés ([sawtoothsoftware.com](https://sawtoothsoftware.com/resources/blog/posts/van-westendorp-pricing-sensitivity-meter)). Avec 20-40 coachs interrogés, la méthode donne une fourchette, pas un prix.
 - **Préventes / engagement payant** : c'est la forme la plus forte de l'engagement « argent » du Mom Test (section 3.1). En B2B : bon de commande pour la saison 2027, ou pilote payant à prix réduit.
 
-### 4.2 Taux de conversion typiques (à prendre avec prudence)
+#### 4.2 Taux de conversion typiques (à prendre avec prudence)
 
 | Étape | Repère | Source et fiabilité |
 |---|---|---|
@@ -237,7 +356,7 @@ Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physiqu
 
 **Aucune étude indépendante et solide** sur la conversion liste d'attente → payant n'a été trouvée. Retenir l'ordre de grandeur : quelques % des visiteurs laissent un e-mail, et une minorité (10-25 %) des inscrits paie, d'autant moins que l'attente est longue.
 
-### 4.3 Application à Charge Utile (proposition)
+#### 4.3 Application à Charge Utile (proposition)
 
 1. **Page « coach » avec fake door de prix** : présentation + bouton « Équiper mon groupe » → choix d'une formule (ex. : gratuit 3 athlètes / formule coach / formule structure) → « bêta fermée, laissez votre e-mail ». Mesurer l'ILI sur un trafic **qualifié** (coachs contactés, abonnés de Nathan), pas sur des vues.
 2. **Van Westendorp en fin d'entretien** (après la question 15 de la section 3.3) sur les coachs qui utilisent déjà un outil payant : on obtient une fourchette par segment (indépendant vs structure).
@@ -246,26 +365,26 @@ Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physiqu
 
 ---
 
-## 5. Critères d'arrêt ou de pivot : repères publiés
+### 5. Critères d'arrêt ou de pivot : repères publiés
 
-### 5.1 Le test de Sean Ellis (40 % « très déçu »)
+#### 5.1 Le test de Sean Ellis (40 % « très déçu »)
 
 - Question : « Que ressentiriez-vous si vous ne pouviez plus utiliser [produit] ? » — très déçu / un peu déçu / pas déçu. Sean Ellis (premier responsable marketing de Dropbox, LogMeIn, Eventbrite) a comparé environ 100 startups : au-dessus de **40 % de « très déçu »**, la croissance devient durable ; en dessous, les produits peinent presque toujours (récit repris par la First Round Review, [review.firstround.com](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/)). Wikipedia le décrit comme une **heuristique** popularisée par Ellis, pas une loi ([wikipedia](https://en.wikipedia.org/wiki/Product-market_fit)).
 - **Cas Superhuman** (même article) : 22 % de « très déçu » au départ → 33 % en ne gardant que le segment le plus exigeant → **58 % trois trimestres plus tard**. Quatre questions : la question d'Ellis + « quel type de personne en profiterait le plus ? » + « quel est le principal bénéfice ? » + « comment l'améliorer ? ». Environ **40 réponses** suffisent pour un résultat indicatif. **Leçon** : le score se calcule sur un segment précis (pour Charge Utile : coach VTT/trail qui suit déjà ses athlètes sur intervals.icu ?), pas sur tout le monde.
 - **Limite pour Charge Utile** : il faut d'abord des utilisateurs actifs. Avec 7 athlètes, le score n'a pas de sens ; viser ≥ 40 répondants (coachs + athlètes séparés) avant de l'utiliser.
 
-### 5.2 Rétention
+#### 5.2 Rétention
 
 Repères de Lenny Rachitsky (lettre du 9 juin 2020, synthèse de 20 praticiens de la croissance) : rétention des utilisateurs **à 6 mois** — logiciel grand public par abonnement ≈ 40 % bon / ≈ 70 % excellent ; **SaaS PME** ≈ 60 % bon / ≈ 80 % excellent ; SaaS grands comptes ≈ 70 % / ≈ 90 %. Rétention nette du revenu à 12 mois, SaaS grand public : ≈ 55 % bon / ≈ 80 % excellent ([lennysnewsletter.com](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29)). Repères d'experts, pas une étude statistique.
 
 Pour Charge Utile, deux rétentions distinctes : **coach** (proche d'un SaaS PME : il programme encore des séances 6 mois après ?) et **athlète** (fait-il encore ≥ 1 séance/semaine prévue après 8 semaines ?). La saisonnalité du sport fausse la lecture : comparer à la même période du plan de saison.
 
-### 5.3 Conversion d'essai et de pilote
+#### 5.3 Conversion d'essai et de pilote
 
 - **Essais logiciels** (synthèse d'un éditeur, [pulseahead.com](https://www.pulseahead.com/blog/trial-to-paid-conversion-benchmarks-in-saas)) : essai sans carte bancaire → payant **8,9 %** (ChartMogul 2026, 200 produits) à 18,2 % (First Page Sage 2025, 86 entreprises) ; essai avec carte → 31,4 % à 48,8 % ; **freemium → payant 5,6 %** (« bon » 3-5 %, « excellent » 8-12 %). Chiffres de seconde main (études originales non ouvertes).
 - **Pilotes B2B** (Jason Lemkin, SaaStr) : un **pilote payant** bien mené se convertit en contrat annuel à **70 % et plus** (60 % si le pilote demande de changer les processus, plus de 90 % quand la valeur est immédiate) ; les **pilotes gratuits** échouent selon lui dans 95 % des cas faute d'engagement des deux côtés ([saastr.com](https://www.saastr.com/what-is-the-typical-conversion-from-paid-pilot-to-annual-contract-in-b2b-saas-2)). Avis d'un investisseur, fondé sur son expérience, pas une étude ; pertinent pour Charge Utile, qui est gratuit aujourd'hui.
 
-### 5.4 Critères de décision proposés pour Nathan (à fixer **avant** de commencer)
+#### 5.4 Critères de décision proposés pour Nathan (à fixer **avant** de commencer)
 
 Fenêtre proposée : saison de préparation hivernale, **novembre 2026 → fin février 2027**.
 
@@ -281,9 +400,9 @@ Ces seuils sont des **choix de pilotage** inspirés des repères ci-dessus, pas 
 
 ---
 
-## 6. Calendrier de saison : quand on choisit ses outils et qui paie quand
+### 6. Calendrier de saison : quand on choisit ses outils et qui paie quand
 
-### 6.1 Repères vérifiés
+#### 6.1 Repères vérifiés
 
 | Date / période | Événement | Source |
 |---|---|---|
@@ -301,7 +420,7 @@ Ces seuils sont des **choix de pilotage** inspirés des repères ci-dessus, pas 
 
 Non vérifié : la page Nordic Magazine sur les stages de préparation 2026-2027 de l'équipe de France B de biathlon (Prémanon, Ceillac, Bessans, **Font-Romeu**) est payante (erreur 402) ; seul son titre est connu.
 
-### 6.2 Lecture : fenêtres d'action pour Charge Utile (analyse)
+#### 6.2 Lecture : fenêtres d'action pour Charge Utile (analyse)
 
 - **VTT XCO / route** : saison de courses mars → septembre. **Octobre-novembre = coupure puis reprise**, c'est **le moment où l'on programme le bloc de force hivernal** (novembre → février) et où les teams montent leur budget (dossier de labellisation fin octobre). → **Fenêtre principale : maintenant jusqu'à mi-novembre 2026** pour proposer un test sur le bloc de force hivernal. Deuxième fenêtre : fin de saison (septembre) pour le budget de l'année suivante.
 - **Ski nordique / biathlon** : compétitions en hiver ; la préparation physique (force incluse) se fait **de mai à novembre**. En octobre, les plans sont déjà en place : la bonne fenêtre est **avril-juin** (après la saison, au moment des admissions en CIE), pour un démarrage en mai.
@@ -311,7 +430,7 @@ Non vérifié : la page Nordic Magazine sur les stages de préparation 2026-2027
 
 ---
 
-## Les 10 premiers contacts les plus réalistes pour Nathan
+### Les 10 premiers contacts les plus réalistes pour Nathan
 
 Classés par probabilité d'obtenir un test réel d'ici fin novembre 2026 (proximité × besoin × liberté de décision). Types de structures uniquement, pas de noms de personnes.
 
@@ -328,689 +447,6 @@ Classés par probabilité d'obtenir un test réel d'ici fin novembre 2026 (proxi
 
 **Ce qui manque pour aller vite** : une page « coach » avec fake door de prix (section 4.3), un formulaire de consentement pour mineurs et une note RGPD d'une page, et 3 vidéos de démonstration filmées par Nathan (section 2.3).
 
----
+## Sources
 
-## Sources vérifiées
-
-Uniquement les pages ouvertes avec WebFetch (PDF lus en texte quand le rendu échouait). Les pages citées dans le texte « d'après un résumé WebSearch » ne sont pas reprises ici.
-
-```json
-[
- {
-  "cle": "sports-gouv-creps-font-romeu",
-  "auteurs": "Ministère des Sports",
-  "annee": 2026,
-  "titre": "CREPS Occitanie - Font-Romeu site",
-  "revue": "sports.gouv.fr",
-  "doi": null,
-  "url": "https://www.sports.gouv.fr/en/creps-occitanie-site-de-font-romeu",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "CNEA : 3 000 athlètes/an, 105 sportifs de haut niveau à l'année, 8 structures permanentes, services (kiné, muscu, hypoxie)."
- },
- {
-  "cle": "font-romeu-cnea",
-  "auteurs": "Office de tourisme de Font-Romeu",
-  "annee": null,
-  "titre": "CREPS-CNEA (Centre national d'entraînement en altitude)",
-  "revue": "font-romeu.fr",
-  "doi": null,
-  "url": "https://font-romeu.fr/en/accommodations/creps-cnea-centre-national-dentrainement-en-altitude/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Liste des pôles du site, dont un « pôle espoir VTT », équipe médicale et préparateurs physiques ; page non datée."
- },
- {
-  "cle": "region-creps-jo-2024",
-  "auteurs": "Région Occitanie",
-  "annee": 2024,
-  "titre": "JO : comment les Creps d'Occitanie préparent les champions",
-  "revue": "laregion.fr",
-  "doi": null,
-  "url": "https://www.laregion.fr/JO-comment-les-Creps-d-Occitanie-preparent-les-champions",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "184 stages et 1 526 athlètes (janv. 2023-août 2024), 850 lycéens et 550 étudiants STAPS sur le plateau."
- },
- {
-  "cle": "region-cphp-2021",
-  "auteurs": "Région Occitanie",
-  "annee": 2021,
-  "titre": "Font-Romeu, un site sportif à « Haute Performance »",
-  "revue": "laregion.fr",
-  "doi": null,
-  "url": "https://www.laregion.fr/Font-Romeu-un-site-sportif-a-Haute-Performance",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Centre de préparation à la haute performance : 45 M€, livraison 2023-2024, laboratoire performance-santé-altitude."
- },
- {
-  "cle": "creps-montpellier-haute-perf",
-  "auteurs": "CREPS de Montpellier",
-  "annee": null,
-  "titre": "Les missions (haute performance)",
-  "revue": "creps-montpellier.org",
-  "doi": null,
-  "url": "https://www.creps-montpellier.org/haute-performance.missions",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Département haute performance du CREPS Occitanie : 4 axes, Sport Data Hub, portail de suivi quotidien, Font-Romeu spécialisé hypoxie."
- },
- {
-  "cle": "club-sports-fr-pole-espoir",
-  "auteurs": "Club des sports de Font-Romeu",
-  "annee": null,
-  "titre": "Section sportive / Pôle espoir (biathlon-ski de fond)",
-  "revue": "club-sports-font-romeu.com",
-  "doi": null,
-  "url": "https://www.club-sports-font-romeu.com/nos-clubs/biathlon-ski-de-fond/pole-espoir-section-sportive/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Dès 11 ans, 4-6 séances/semaine, entraînement croisé incluant VTT et haltérophilie."
- },
- {
-  "cle": "upvd-licence-es",
-  "auteurs": "Université de Perpignan Via Domitia",
-  "annee": 2026,
-  "titre": "Licence STAPS mention Entraînement sportif",
-  "revue": "formations.univ-perp.fr",
-  "doi": null,
-  "url": "https://formations.univ-perp.fr/diplome/licences/licence-sciences-et-techniques-des-activites-physiques-et-sportives-staps-mention-entrainement-sportif",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Licence au campus de Font-Romeu, 1 637 h, stages 50 h (L2) et 200 h (L3), master à Font-Romeu."
- },
- {
-  "cle": "ffc-ppf-2025-2029",
-  "auteurs": "Fédération française de cyclisme - DTN",
-  "annee": 2026,
-  "titre": "Projet de performance fédéral 2025-2029 (version du 15 avril 2026)",
-  "revue": "ffc.fr",
-  "doi": null,
-  "url": "https://ffc.fr/ressources/projet-performance-federal-ffc/",
-  "type": "rapport",
-  "niveau": "B",
-  "verifie": true,
-  "note": "Cartographie des pôles France, pôles espoirs et SEF ; pôle France relève VTT XCO à Boulouris (actuellement Besançon) ; Font-Romeu (VTT) en Occitanie."
- },
- {
-  "cle": "ffc-sef-occitanie",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Pôles espoirs et SEF - Occitanie",
-  "revue": "velo.ffc.fr",
-  "doi": null,
-  "url": "https://velo.ffc.fr/poles-de-performance/poles-espoirs/occitanie/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Catalogue en ligne : Mende, Sérignan, Montpellier, Blagnac ; Font-Romeu absent."
- },
- {
-  "cle": "ffs-cie-2026",
-  "auteurs": "Fédération française de ski",
-  "annee": 2026,
-  "titre": "Délibérations de la commission nationale d'admission et de maintien du 11 mai 2026 - CIE",
-  "revue": "ffs.fr",
-  "doi": null,
-  "url": "https://ffs.fr/app/uploads/DELIBERATIONS-CIE-12.05.2026.pdf",
-  "type": "rapport",
-  "niveau": "B",
-  "verifie": true,
-  "note": "Liste nominative des admis en CIE ; comptage agrégé ≈ 370 fondeurs/biathlètes répartis sur 6 CIE."
- },
- {
-  "cle": "fftri-structures-2026",
-  "auteurs": "Fédération française de triathlon",
-  "annee": 2026,
-  "titre": "Structures d'entraînement",
-  "revue": "fftri.com",
-  "doi": null,
-  "url": "https://www.fftri.com/haut-niveau/projet-de-performance-federal/structures-dentrainement/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Pôle France et pôle espoirs à Boulouris, pôle espoirs à Montpellier, 4 centres régionaux, 8 clubs structures (au 1er janv. 2026)."
- },
- {
-  "cle": "ffc-annuaire-equipes",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Équipes (annuaire des structures)",
-  "revue": "structures.ffc.fr",
-  "doi": null,
-  "url": "https://structures.ffc.fr/equipes/?_discipline=vtt",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Annuaire de 555 équipes labellisées toutes disciplines ; liste VTT filtrée non accessible."
- },
- {
-  "cle": "ffc-coupe-france-vtt-presentation",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Coupe de France VTT",
-  "revue": "structures.ffc.fr",
-  "doi": null,
-  "url": "https://structures.ffc.fr/epreuves-ffc-disciplines/vtt/coupe-de-france-vtt/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Mars-août, 8-10 manches, 150-1 600 compétiteurs par manche, environ 80 teams."
- },
- {
-  "cle": "comite-occitanie-labellisation-2026",
-  "auteurs": "Comité régional de cyclisme d'Occitanie",
-  "annee": 2025,
-  "titre": "Labellisation - Teams VTT 2026",
-  "revue": "comiteoccitanieffc.com",
-  "doi": null,
-  "url": "https://www.comiteoccitanieffc.com/post/labellisation-teams-vtt-2026",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Date limite de dépôt des dossiers et du budget 2026 : 1er novembre 2025."
- },
- {
-  "cle": "ffc-cf-xco-2026",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Championnats de France VTT XCO 2026",
-  "revue": "velo.ffc.fr",
-  "doi": null,
-  "url": "https://velo.ffc.fr/championnats-france-vtt-xco-2026-repetition-championnats-deurope-monde/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "16-19 juillet 2026 au Dévoluy, plus de 1 400 pilotes."
- },
- {
-  "cle": "trainingpeaks-coach-match",
-  "auteurs": "TrainingPeaks",
-  "annee": 2026,
-  "titre": "Coach Match",
-  "revue": "trainingpeaks.com",
-  "doi": null,
-  "url": "https://www.trainingpeaks.com/coach-match/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Service de mise en relation par questionnaire, pas d'annuaire filtrable."
- },
- {
-  "cle": "nolio-coach",
-  "auteurs": "Nolio",
-  "annee": 2026,
-  "titre": "Nolio pour les coachs",
-  "revue": "nolio.io",
-  "doi": null,
-  "url": "https://www.nolio.io/en/coach/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Plus de 4 500 coachs revendiqués ; 19,90/29,90/39,90 € par mois (vérifié le 01/10/2026)."
- },
- {
-  "cle": "nolio-marketplace",
-  "auteurs": "Nolio",
-  "annee": 2026,
-  "titre": "Marketplace coachs",
-  "revue": "nolio.io",
-  "doi": null,
-  "url": "https://www.nolio.io/marketplace/coach/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "602 coachs affichés, filtres par sport dont VTT et trail."
- },
- {
-  "cle": "distances-nolio-2022",
-  "auteurs": "Distances+",
-  "annee": 2022,
-  "titre": "Nolio : la jeune pousse française de l'entraînement devenue l'outil de référence des coachs",
-  "revue": "distances.plus",
-  "doi": null,
-  "url": "https://distances.plus/entrainement/application-nolio-plateforme-entrainement-suivi-trail-running/",
-  "type": "presse",
-  "niveau": "C",
-  "verifie": true,
-  "note": "1 000 coachs et 20 000 utilisateurs fin 2022, croissance par bouche-à-oreille entre coachs."
- },
- {
-  "cle": "ownsport-velo",
-  "auteurs": "Ownsport",
-  "annee": 2026,
-  "titre": "Coach en cyclisme",
-  "revue": "ownsport.fr",
-  "doi": null,
-  "url": "https://www.ownsport.fr/sport/velo",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "903 coachs sportifs cyclisme/VTT en France métropolitaine (marketplace de coachs à domicile)."
- },
- {
-  "cle": "ecole-de-trail-coaching",
-  "auteurs": "École de Trail",
-  "annee": 2026,
-  "titre": "Coaching à distance",
-  "revue": "ecole-de-trail.com",
-  "doi": null,
-  "url": "https://www.ecole-de-trail.com/coaching-a-distance/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Réseau de coachs référencés après au moins 42 h de formation."
- },
- {
-  "cle": "creps-montpellier-dejeps-vtt",
-  "auteurs": "CREPS de Montpellier",
-  "annee": 2026,
-  "titre": "DEJEPS Activités du cyclisme option VTT",
-  "revue": "creps-montpellier.org",
-  "doi": null,
-  "url": "https://www.creps-montpellier.org/formation.fiche-DEJEPS-VTT",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "16 places 2026-2027, du 21 sept. 2026 au 1er oct. 2027, à Montpellier et Font-Romeu, 8 820 €."
- },
- {
-  "cle": "trailaddict-podcasts",
-  "auteurs": "Trail Addict",
-  "annee": 2026,
-  "titre": "12 podcasts trail à écouter absolument",
-  "revue": "trail-addict.fr",
-  "doi": null,
-  "url": "https://trail-addict.fr/podcasts-trail/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Liste de 12 podcasts trail francophones (25 août 2026), sans audiences."
- },
- {
-  "cle": "marathons-influenceurs-2025",
-  "auteurs": "Marathons.com",
-  "annee": 2025,
-  "titre": "Influenceurs running : les 10 Français à suivre en 2025",
-  "revue": "marathons.com",
-  "doi": null,
-  "url": "https://www.marathons.com/fr/marathon/influenceurs-running-les-10-francais-a-suivre-en-2025_kjzx",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Audiences déclarées de 10 créateurs running/trail (10 sept. 2025)."
- },
- {
-  "cle": "utrail-influenceurs-2026",
-  "auteurs": "u-Trail",
-  "annee": 2026,
-  "titre": "Influenceurs running : ont-ils vraiment le cerveau dans leurs chaussures ?",
-  "revue": "u-trail.com",
-  "doi": null,
-  "url": "https://www2.u-trail.com/influenceurs-running-ont-ils-vraiment-le-cerveau-dans-leurs-chaussures-et-leur-audience-dans-les-stats/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Classement performance/notoriété de traileurs (4 août 2026) avec audiences."
- },
- {
-  "cle": "camminus-youtube-velo",
-  "auteurs": "Camminus",
-  "annee": 2020,
-  "titre": "Les meilleures chaînes YouTube en français pour les cyclistes",
-  "revue": "camminus.cc",
-  "doi": null,
-  "url": "https://camminus.cc/meilleures-chaines-youtube-cyclistes/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Liste de chaînes vélo/VTT francophones (déc. 2020), sans chiffres."
- },
- {
-  "cle": "socialinsider-engagement-2026",
-  "auteurs": "Socialinsider",
-  "annee": 2026,
-  "titre": "2026 Instagram Organic Engagement Benchmarks",
-  "revue": "socialinsider.io",
-  "doi": null,
-  "url": "https://www.socialinsider.io/social-media-benchmarks/instagram",
-  "type": "rapport",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Engagement moyen 0,48 % en 2025 (-24 %), 35 M de publications, 447 613 comptes."
- },
- {
-  "cle": "socialinsider-reach-2026",
-  "auteurs": "Socialinsider",
-  "annee": 2026,
-  "titre": "Social Media Reach Statistics 2026",
-  "revue": "socialinsider.io",
-  "doi": null,
-  "url": "https://www.socialinsider.io/blog/social-media-reach/",
-  "type": "rapport",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Portée Instagram 3,20 % des abonnés (-14 %), 6,65 % pour 1-5 k abonnés ; 872 075 publications."
- },
- {
-  "cle": "rivaliq-2025",
-  "auteurs": "Rival IQ",
-  "annee": 2025,
-  "titre": "2025 Social Media Industry Benchmark Report",
-  "revue": "rivaliq.com",
-  "doi": null,
-  "url": "https://www.rivaliq.com/blog/social-media-industry-benchmark-report/",
-  "type": "rapport",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Engagement Instagram -16 % ; équipes sportives deuxièmes sur Instagram."
- },
- {
-  "cle": "gdiy-running-addict-2025",
-  "auteurs": "Génération Do It Yourself",
-  "annee": 2025,
-  "titre": "#463 - Nicolas Spiess (Running Addict) - Campus",
-  "revue": "gdiy.fr",
-  "doi": null,
-  "url": "https://www.gdiy.fr/podcast/nicolas-spiess-running-addict/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Du blog (2013) à l'appli (2020) : plus de 5 M€ de revenu récurrent déclaré, 50 personnes."
- },
- {
-  "cle": "jdg-campus-coach-2025",
-  "auteurs": "Journal du Geek",
-  "annee": 2025,
-  "titre": "Campus Coach au Marathon de Paris : « on veut devenir les meilleurs »",
-  "revue": "journaldugeek.com",
-  "doi": null,
-  "url": "https://www.journaldugeek.com/2025/04/11/campus-coach-au-coeur-du-marathon-de-paris-on-veut-devenir-les-meilleurs/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Canaux d'acquisition : blog, newsletter, YouTube, 30 groupes de course, webinaires."
- },
- {
-  "cle": "uphill-athlete-roots",
-  "auteurs": "Uphill Athlete",
-  "annee": null,
-  "titre": "Steve House and the Roots of Uphill Athlete",
-  "revue": "uphillathlete.com",
-  "doi": null,
-  "url": "https://uphillathlete.com/steve-house-and-the-roots-of-uphill-athlete",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Livres 2014 et 2017 puis création d'une offre de plans et de coaching."
- },
- {
-  "cle": "momtest-site",
-  "auteurs": "Fitzpatrick R.",
-  "annee": null,
-  "titre": "The Mom Test",
-  "revue": "momtestbook.com",
-  "doi": null,
-  "url": "https://www.momtestbook.com/",
-  "type": "livre",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Site du livre : apprendre à parler aux clients quand tout le monde ment."
- },
- {
-  "cle": "hbr-jtbd-2016",
-  "auteurs": "Christensen C.M., Hall T., Dillon K., Duncan D.S.",
-  "annee": 2016,
-  "titre": "Know Your Customers' Jobs to Be Done",
-  "revue": "Harvard Business Review",
-  "doi": null,
-  "url": "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done",
-  "type": "article",
-  "niveau": "B",
-  "verifie": true,
-  "note": "Seul l'en-tête (auteurs, date, accroche) a pu être lu : contenu payant."
- },
- {
-  "cle": "shortform-momtest",
-  "auteurs": "Shortform",
-  "annee": null,
-  "titre": "What Is the Mom Test? 3 Rules for Talking to Customers",
-  "revue": "shortform.com",
-  "doi": null,
-  "url": "https://www.shortform.com/blog/what-is-the-mom-test/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Résumé des trois règles du Mom Test."
- },
- {
-  "cle": "jtbd-org",
-  "auteurs": "Moesta B., Spiek C.",
-  "annee": null,
-  "titre": "Jobs to be Done",
-  "revue": "jobstobedone.org",
-  "doi": null,
-  "url": "https://jobstobedone.org/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Forces du progrès, chronologie du changement, moment de difficulté."
- },
- {
-  "cle": "lesswrong-momtest",
-  "auteurs": "LessWrong (contributeur)",
-  "annee": null,
-  "titre": "The Mom Test: Summary and Thoughts",
-  "revue": "lesswrong.com",
-  "doi": null,
-  "url": "https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Engagements temps/réputation/argent, déviation des compliments, rester informel."
- },
- {
-  "cle": "getwaitlist-benchmarks",
-  "auteurs": "Waitlist LLC",
-  "annee": 2025,
-  "titre": "How Does Your Conversion Rate Stack Up?",
-  "revue": "getwaitlist.com",
-  "doi": null,
-  "url": "https://getwaitlist.com/blog/waitlist-benchmarks-conversion-rates",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Repères de conversion liste d'attente (contenu marketing d'éditeur, anecdotique)."
- },
- {
-  "cle": "sawtooth-van-westendorp",
-  "auteurs": "Sawtooth Software",
-  "annee": null,
-  "titre": "Van Westendorp Pricing Model",
-  "revue": "sawtoothsoftware.com",
-  "doi": null,
-  "url": "https://sawtoothsoftware.com/resources/blog/posts/van-westendorp-pricing-sensitivity-meter",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Les 4 questions, forces et limites, extension Newton-Miller-Smith (1993)."
- },
- {
-  "cle": "buffer-7-weeks-2011",
-  "auteurs": "Gascoigne J. (Buffer)",
-  "annee": 2011,
-  "titre": "Idea to Paying Customers in 7 Weeks: How We Did It",
-  "revue": "buffer.com",
-  "doi": null,
-  "url": "https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Landing page + page de prix ; premier client payant en 4 jours."
- },
- {
-  "cle": "savoia-pretotype-it",
-  "auteurs": "Savoia A.",
-  "annee": null,
-  "titre": "Pretotype It (2nd pretotype edition)",
-  "revue": "pretotyping.org",
-  "doi": null,
-  "url": "https://www.pretotyping.org/uploads/1/4/0/9/14099067/pretotype_it_2nd_pretotype_edition-2.pdf",
-  "type": "livre",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Fake door, métriques ILI et OLI."
- },
- {
-  "cle": "lenny-retention-2020",
-  "auteurs": "Rachitsky L.",
-  "annee": 2020,
-  "titre": "What is good retention",
-  "revue": "Lenny's Newsletter",
-  "doi": null,
-  "url": "https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Repères de rétention à 6 mois par modèle (synthèse de 20 experts)."
- },
- {
-  "cle": "wikipedia-pmf",
-  "auteurs": "Wikipédia",
-  "annee": 2026,
-  "titre": "Product-market fit",
-  "revue": "en.wikipedia.org",
-  "doi": null,
-  "url": "https://en.wikipedia.org/wiki/Product-market_fit",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Le seuil de 40 % « très déçu » présenté comme une heuristique popularisée par Sean Ellis."
- },
- {
-  "cle": "firstround-superhuman",
-  "auteurs": "First Round Review (Vohra R.)",
-  "annee": null,
-  "titre": "How Superhuman Built an Engine to Find Product/Market Fit",
-  "revue": "review.firstround.com",
-  "doi": null,
-  "url": "https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/",
-  "type": "presse",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Score Ellis 22 % → 33 % → 58 % ; 4 questions ; environ 40 réponses suffisent."
- },
- {
-  "cle": "saastr-pilot-conversion",
-  "auteurs": "Lemkin J. (SaaStr)",
-  "annee": null,
-  "titre": "What Is The Typical Conversion from Paid Pilot to Annual Contract in SaaS?",
-  "revue": "saastr.com",
-  "doi": null,
-  "url": "https://www.saastr.com/what-is-the-typical-conversion-from-paid-pilot-to-annual-contract-in-b2b-saas-2",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Pilote payant → contrat : 70 %+ ; pilotes gratuits inefficaces selon l'auteur."
- },
- {
-  "cle": "pulseahead-trial-benchmarks",
-  "auteurs": "PulseAhead",
-  "annee": 2026,
-  "titre": "Trial-to-Paid Conversion Benchmarks in SaaS",
-  "revue": "pulseahead.com",
-  "doi": null,
-  "url": "https://www.pulseahead.com/blog/trial-to-paid-conversion-benchmarks-in-saas",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Synthèse : essai sans carte 8,9-18,2 %, avec carte 31,4-48,8 %, freemium 5,6 %."
- },
- {
-  "cle": "brujula-xco-2027",
-  "auteurs": "Brújula Bike",
-  "annee": 2026,
-  "titre": "A draft of the 2027 XCO World Cup calendar has been leaked",
-  "revue": "brujulabike.com",
-  "doi": null,
-  "url": "https://en.brujulabike.com/a-draft-of-the-2027-xco-world-cup-calendar-has-been-leaked-it-will-expand-to-12-events/",
-  "type": "presse",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Calendrier provisoire 2027 (12 manches) ; Mondiaux UCI 2027 en Haute-Savoie du 24 août au 5 sept."
- },
- {
-  "cle": "ffc-infos-cdf-vtt-2026",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Coupe de France VTT 2026",
-  "revue": "velo.ffc.fr",
-  "doi": null,
-  "url": "https://velo.ffc.fr/informations-coupe-france-vtt/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Manches 3 à 5 de 2026 ; aucune info 2027 hors Mondiaux Haute-Savoie."
- },
- {
-  "cle": "ffroller-psf-2026",
-  "auteurs": "Fédération française de roller et skateboard",
-  "annee": 2026,
-  "titre": "Projet sportif fédéral 2026 : la campagne ouvre le 3 avril",
-  "revue": "ffroller-skateboard.fr",
-  "doi": null,
-  "url": "https://ffroller-skateboard.fr/blog/projet-sportif-federal-psf-2026-la-campagne-de-depot-de-dossier-est-ouverte/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Campagne ANS PSF 2026 du 3 avril au 10 mai via Le Compte Asso."
- },
- {
-  "cle": "creps-pdl-ca-2021",
-  "auteurs": "CREPS des Pays de la Loire",
-  "annee": 2021,
-  "titre": "Procès-verbal du conseil d'administration du 14 décembre 2021",
-  "revue": "creps-pdl.sports.gouv.fr",
-  "doi": null,
-  "url": "https://www.creps-pdl.sports.gouv.fr/assets/images/docedit/pv_ca_14_decembre_2021.pdf",
-  "type": "rapport",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Budget initial 2022 adopté à l'unanimité en décembre 2021."
- },
- {
-  "cle": "ffc-licence-club",
-  "auteurs": "Fédération française de cyclisme",
-  "annee": 2026,
-  "titre": "Prendre une licence dans un club",
-  "revue": "velo.ffc.fr",
-  "doi": null,
-  "url": "https://velo.ffc.fr/se-licencier/licence-club/",
-  "type": "site",
-  "niveau": "C",
-  "verifie": true,
-  "note": "Licence valable du 1er janvier au 31 décembre ; 16 mois pour les nouveaux licenciés dès septembre."
- },
- {
-  "cle": "wikipedia-cf-trail",
-  "auteurs": "Wikipédia",
-  "annee": 2026,
-  "titre": "Championnat de France de trail",
-  "revue": "fr.wikipedia.org",
-  "doi": null,
-  "url": "https://fr.wikipedia.org/wiki/Championnat_de_France_de_trail",
-  "type": "site",
-  "niveau": "D",
-  "verifie": true,
-  "note": "Dates des éditions 2022-2026 (mars à juillet selon les années)."
- }
-]
-```
+Liens directs dans le texte ; entrées de `sources.json` : [@sportsgouv-creps-font-romeu] [@fontromeu-creps-cnea] [@region-creps-jo-2024] [@region-cphp-2021] [@creps-montpellier-haute-perf] [@club-sports-fr-pole-espoir] [@upvd-licence-es] [@ffc-ppf-2025-2029] [@ffc-sef-occitanie] [@ffs-cie-2026] [@fftri-structures-2026] [@ffc-annuaire-equipes] [@ffc-coupe-france-vtt-presentation] [@comite-occitanie-labellisation-2026] [@ffc-cf-xco-2026] [@trainingpeaks-coach-match] [@nolio-coach] [@nolio-marketplace] [@distances-nolio-2022] [@ownsport-velo] [@ecole-de-trail-coaching] [@creps-montpellier-dejeps-vtt] [@trailaddict-podcasts] [@marathons-influenceurs-2025] [@utrail-influenceurs-2026] [@camminus-youtube-velo] [@socialinsider-engagement-2026] [@socialinsider-reach-2026] [@rivaliq-2025] [@gdiy-running-addict-2025] [@jdg-campus-coach-2025] [@uphill-athlete-roots] [@momtest-site] [@hbr-jtbd-2016] [@shortform-momtest] [@jtbd-org] [@lesswrong-momtest] [@getwaitlist-benchmarks] [@sawtooth-van-westendorp] [@buffer-7-weeks-2011] [@savoia-pretotype-it] [@lenny-retention-2020] [@wikipedia-pmf] [@firstround-superhuman] [@saastr-pilot-conversion] [@pulseahead-trial-benchmarks] [@brujula-xco-2027] [@ffc-infos-cdf-vtt-2026] [@ffroller-psf-2026] [@creps-pdl-ca-2021] [@ffc-licence-club] [@wikipedia-cf-trail].
