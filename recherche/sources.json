@@ -52,6 +52,19 @@
   "note": "Novices : 8-12 RM, 2-3 j/sem ; avancés : 1-12 RM avec accent 1-6 RM, repos 3-5 min ; hausse de charge de 2-10 % quand on fait 1-2 reps de plus que la cible (PMID 19204579)."
  },
  {
+  "cle": "afnor-en17444",
+  "auteurs": "AFNOR",
+  "annee": 2021,
+  "titre": "NF EN 17444 — Prévention du dopage dans le sport — Bonnes pratiques de développement et de fabrication visant à prévenir la présence de substances interdites dans les denrées alimentaires destinées aux sportifs et les compléments alimentaires",
+  "revue": "Norm'Info AFNOR",
+  "doi": null,
+  "url": "https://norminfo.afnor.org/norme/nf-v94-001/prevention-du-dopage-dans-le-sport-complements-alimentaires-et-autres-denrees-alimentaires-destines-aux-sportifs-bonnes/125918",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Fiche AFNOR : norme publiée en 2021, statut « en réexamen » ; le texte de la norme (payant) n'a pas été lu (fiche lue le 01/10/2026)."
+ },
+ {
   "cle": "afonso2026",
   "auteurs": "Afonso J, Andrade R, Oliveira E, Turner A, Warneke K, Bishop C",
   "annee": 2026,
@@ -89,6 +102,71 @@
   "niveau": "D",
   "verifie": true,
   "note": "Mensuel/annuel, essai 14 jours ; montants non affichés en statique."
+ },
+ {
+  "cle": "ais-cadre",
+  "auteurs": "Australian Institute of Sport",
+  "annee": 2026,
+  "titre": "Supplements — AIS Sports Supplement Framework",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.ausport.gov.au/ais/nutrition/supplements",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Page officielle : classement ABCD des aliments du sport et compléments selon les preuves ; trois questions (sûr ? autorisé ? efficace ?) ; pas de date de mise à jour affichée (lu le 01/10/2026)."
+ },
+ {
+  "cle": "ais-groupe-a",
+  "auteurs": "Australian Institute of Sport",
+  "annee": 2026,
+  "titre": "Supplements — Group A",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_a",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Groupe A (preuves solides) : aliments du sport ; calcium, folates, fer, vitamine D, zinc ; caféine, bêta-alanine, nitrate/betterave, bicarbonate, créatine monohydrate, glycérol (lu le 01/10/2026)."
+ },
+ {
+  "cle": "ais-groupe-b",
+  "auteurs": "Australian Institute of Sport",
+  "annee": 2026,
+  "titre": "Supplements — Group B",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_b",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Groupe B (preuves émergentes ou mitigées, usage sous suivi) : polyphénols de fruits, vitamine C, menthol, jus de cornichon, quinine, carnitine, collagène, curcumine, huile de poisson, cétones, multivitamines, NAC, probiotiques, prébiotiques (lu le 01/10/2026)."
+ },
+ {
+  "cle": "ais-groupe-c",
+  "auteurs": "Australian Institute of Sport",
+  "annee": 2026,
+  "titre": "Supplements — Group C",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_c",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Groupe C (pas de bénéfice démontré ou pas de recherche) : magnésium, acide alpha-lipoïque, HMB, BCAA, phosphate, SAMe, tyrosine, vitamine E (lu le 01/10/2026)."
+ },
+ {
+  "cle": "ais-groupe-d",
+  "auteurs": "Australian Institute of Sport",
+  "annee": 2026,
+  "titre": "Supplements — Group D",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_d",
+  "type": "site",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Groupe D (interdit ou haut risque de contamination, à ne pas utiliser) : stimulants (éphédrine, DMAA, synéphrine), prohormones (DHEA, tribulus, maca), peptides, higénamine, SARMs, GW1516, colostrum (lu le 01/10/2026)."
  },
  {
   "cle": "albracht2013",
@@ -143,6 +221,19 @@
   "note": "9 articles ; possible baisse de l'inflammation ; effets sur la performance mitigés."
  },
  {
+  "cle": "almond2005",
+  "auteurs": "Almond CS, Shin AY, Fortescue EB, et al.",
+  "annee": 2005,
+  "titre": "Hyponatremia among runners in the Boston Marathon",
+  "revue": "N Engl J Med 352(15):1550-1556",
+  "doi": "10.1056/nejmoa043901",
+  "url": "https://doi.org/10.1056/nejmoa043901",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "488 coureurs : 13 % d'hyponatrémie (≤ 135 mmol/L), 0,6 % critique (≤ 120) ; liée à la prise de poids (OR 4,2), > 3 L bus, temps > 4 h (résumé, PMID 15829535)."
+ },
+ {
   "cle": "alphaprogression-appstore",
   "auteurs": "Alpha Progression",
   "annee": 2026,
@@ -167,6 +258,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Recommandations par série, RIR, Pro 12,99 $/mois ou 79,99 $/an."
+ },
+ {
+  "cle": "alsaad2026",
+  "auteurs": "Al-Saad N, Aljaal S, Alessa J, Santhosh ME",
+  "annee": 2026,
+  "titre": "Systematic review of undeclared prohibited substances and pharmacological adulterants in dietary supplements: prevalence, detection, and risks in sport",
+  "revue": "Front Sports Act Living 8:1740663",
+  "doi": "10.3389/fspor.2026.1740663",
+  "url": "https://doi.org/10.3389/fspor.2026.1740663",
+  "type": "revue-systematique",
+  "niveau": "A",
+  "verifie": true,
+  "note": "44 études : ~9-15 % des compléments testés contaminés par des substances interdites ou non approuvées, surtout stimulants et anabolisants ; pré-entraînement, minceur et prise de muscle les plus touchés (résumé, PMID 41908212)."
  },
  {
   "cle": "amano2024",
@@ -364,6 +468,19 @@
   "note": "15 % sous 1 M$ de produit annuel ; 10 % dans l'UE sur conditions alternatives après 1 an d'abonnement."
  },
  {
+  "cle": "areta2013",
+  "auteurs": "Areta JL, Burke LM, Ross ML, et al.",
+  "annee": 2013,
+  "titre": "Timing and distribution of protein ingestion during prolonged recovery from resistance exercise alters myofibrillar protein synthesis",
+  "revue": "J Physiol 591(9):2319-2331",
+  "doi": "10.1113/jphysiol.2012.244897",
+  "url": "https://doi.org/10.1113/jphysiol.2012.244897",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "24 hommes entraînés, 80 g de whey sur 12 h : 4 × 20 g toutes les 3 h supérieur à 8 × 10 g ou 2 × 40 g pour la synthèse myofibrillaire (résumé, PMID 23459753)."
+ },
+ {
   "cle": "argent2018",
   "auteurs": "Argent R, Daly A, Caulfield B",
   "annee": 2018,
@@ -546,6 +663,19 @@
   "note": "150 saisons-club : programme Nordic complet dans 10,7 %, partiel 6 %, 83,3 % non conformes."
  },
  {
+  "cle": "baker2022",
+  "auteurs": "Baker LB, De Chavez PJD, Nuccio RP, et al.",
+  "annee": 2022,
+  "titre": "Explaining variation in sweat sodium concentration: effect of individual characteristics and exercise, environmental, and dietary factors",
+  "revue": "J Appl Physiol 133(6):1250-1259",
+  "doi": "10.1152/japplphysiol.00391.2022",
+  "url": "https://doi.org/10.1152/japplphysiol.00391.2022",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "1 944 tests : les modèles n'expliquent que 17-23 % de la variation du sodium sudoral ; dépense énergétique et saison (acclimatation) sont les facteurs principaux ; l'apport en sel n'a pas d'effet (résumé, PMID 36227164)."
+ },
+ {
   "cle": "balban2023",
   "auteurs": "Balban MY, Neri E, Kogon MM, et al.",
   "annee": 2023,
@@ -609,6 +739,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "27 étudiants, My Jump Lab (IA, iPhone 12 Pro) vs GymAware : r = 0,90-0,92, biais -0,01 à -0,03 m/s ; CV appli 8-14 % proche du capteur (6,5-12 %)."
+ },
+ {
+  "cle": "barnes2019",
+  "auteurs": "Barnes KA, Anderson ML, Stofan JR, et al.",
+  "annee": 2019,
+  "titre": "Normative data for sweating rate, sweat sodium concentration, and sweat sodium loss in athletes: An update and analysis by sport",
+  "revue": "J Sports Sci 37(20):2356-2366",
+  "doi": "10.1080/02640414.2019.1633159",
+  "url": "https://doi.org/10.1080/02640414.2019.1633159",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "1 303 athlètes : sports d'endurance, sudation 1,28 ± 0,57 L/h et perte de sodium 51,7 ± 27,8 mmol/h (résumé, PMID 31230518)."
  },
  {
   "cle": "barnes2021",
@@ -1222,6 +1365,19 @@
   "note": "Standard 49 $, Professional 69 $, Business 167 $/mois ; IA d'import et génération bêta."
  },
  {
+  "cle": "brooks2022",
+  "auteurs": "Brooks E, Lamothe G, Nagpal TS, et al.",
+  "annee": 2022,
+  "titre": "Acute Ingestion of Ketone Monoesters and Precursors Do Not Enhance Endurance Exercise Performance: A Systematic Review and Meta-Analysis",
+  "revue": "Int J Sport Nutr Exerc Metab 32(3):214-225",
+  "doi": "10.1123/ijsnem.2021-0280",
+  "url": "https://doi.org/10.1123/ijsnem.2021-0280",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "8 études, 80 sujets : cétones exogènes sans effet sur la performance d'endurance, g = 0,136 [−0,195 ; 0,467], p = 0,42 (résumé, PMID 35042186)."
+ },
+ {
   "cle": "brown2017",
   "auteurs": "Brown F, Gissane C, Howatson G, et al.",
   "annee": 2017,
@@ -1274,6 +1430,71 @@
   "note": "Landing page + page de prix ; premier client payant en 4 jours."
  },
  {
+  "cle": "burden2015",
+  "auteurs": "Burden RJ, Morton K, Richards T, Whyte GP, Pedlar CR",
+  "annee": 2015,
+  "titre": "Is iron treatment beneficial in, iron-deficient but non-anaemic (IDNA) endurance athletes? A systematic review and meta-analysis",
+  "revue": "Br J Sports Med 49(21):1389-1397",
+  "doi": "10.1136/bjsports-2014-093624",
+  "url": "https://doi.org/10.1136/bjsports-2014-093624",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "17 études : chez l'endurant carencé non anémique, le traitement par fer améliore fortement la ferritine (g = 1,09) et la capacité aérobie (résumé, PMID 25361786)."
+ },
+ {
+  "cle": "burke2003",
+  "auteurs": "Burke LM, Collier GR, Broad EM, et al.",
+  "annee": 2003,
+  "titre": "Effect of alcohol intake on muscle glycogen storage after prolonged exercise",
+  "revue": "J Appl Physiol 95(3):983-990",
+  "doi": "10.1152/japplphysiol.00115.2003",
+  "url": "https://doi.org/10.1152/japplphysiol.00115.2003",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Cyclistes entraînés : quand l'alcool (1,5 g/kg) remplace des glucides, glycogène à 8 h 24,4 vs 44,6 mmol/kg ; ajouté aux glucides, pas de différence à 24 h ; effet surtout indirect (résumé, PMID 12740311)."
+ },
+ {
+  "cle": "burke2011",
+  "auteurs": "Burke LM, Hawley JA, Wong SH, Jeukendrup AE",
+  "annee": 2011,
+  "titre": "Carbohydrates for training and competition",
+  "revue": "J Sports Sci 29 Suppl 1:S17-27",
+  "doi": "10.1080/02640414.2011.585473",
+  "url": "https://doi.org/10.1080/02640414.2011.585473",
+  "type": "revue",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Revue issue du consensus CIO 2010 : ~1 h intense = petites quantités voire rinçage de bouche ; 30-60 g/h pour plus long ; jusqu'à 90 g/h au-delà de 2,5 h avec mélanges de sucres ; bénéfice du train-low incertain (résumé, PMID 21660838)."
+ },
+ {
+  "cle": "burke2017",
+  "auteurs": "Burke LM, van Loon LJC, Hawley JA",
+  "annee": 2017,
+  "titre": "Postexercise muscle glycogen resynthesis in humans",
+  "revue": "J Appl Physiol 122(5):1055-1067",
+  "doi": "10.1152/japplphysiol.00860.2016",
+  "url": "https://doi.org/10.1152/japplphysiol.00860.2016",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue : 0-4 h après l'effort, ~1 g/kg de glucides optimise la resynthèse ; 4-24 h, la quantité totale compte plus que le type ; protéines utiles si glucides limités (résumé, PMID 27789774)."
+ },
+ {
+  "cle": "burke2020",
+  "auteurs": "Burke LM, Sharma AP, Heikura IA, Forbes SF, et al.",
+  "annee": 2020,
+  "titre": "Crisis of confidence averted: Impairment of exercise economy and performance in elite race walkers by ketogenic low carbohydrate, high fat (LCHF) diet is reproducible",
+  "revue": "PLoS One 15(6):e0234027",
+  "doi": "10.1371/journal.pone.0234027",
+  "url": "https://doi.org/10.1371/journal.pone.0234027",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Marcheurs élites, 25 j : riche en glucides (8,6 g/kg/j) = +4,8 % (134 s) sur 10 km ; cétogène = oxydation des graisses 0,6 → 1,3 g/min mais coût en O2 accru et pas de bénéfice (résumé, PMID 32497061)."
+ },
+ {
   "cle": "burnley2005",
   "auteurs": "Burnley M, Doust JH, Jones AM",
   "annee": 2005,
@@ -1285,6 +1506,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "12 cyclistes ; échauffement modéré ou lourd +2-3 % sur 7 min (338-339 W vs 330 W) ; sprint 324 W ; 10 min de récup."
+ },
+ {
+  "cle": "bussau2002",
+  "auteurs": "Bussau VA, Fairchild TJ, Rao A, Steele P, Fournier PA",
+  "annee": 2002,
+  "titre": "Carbohydrate loading in human muscle: an improved 1 day protocol",
+  "revue": "Eur J Appl Physiol 87(3):290-295",
+  "doi": "10.1007/s00421-002-0621-5",
+  "url": "https://doi.org/10.1007/s00421-002-0621-5",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "8 endurants, 10 g/kg/j de glucides au repos : glycogène 95 → 180 mmol/kg dès 24 h, stable ensuite (résumé, PMID 12111292)."
  },
  {
   "cle": "camminus-youtube-velo",
@@ -1404,6 +1638,19 @@
   "note": "Applicable au 02/08/2026 ; appli sur API tierce = fournisseur ; marquage jusqu'au 02/12/2026 pour l'existant."
  },
  {
+  "cle": "cespharm2021",
+  "auteurs": "Cespharm (Ordre national des pharmaciens)",
+  "annee": 2021,
+  "titre": "Compléments alimentaires et dopage : une norme européenne pour limiter les risques",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://www.cespharm.fr/prevention-sante/actualites/Archives/2021/Complements-alimentaires-et-dopage-une-norme-europeenne-pour-limiter-les-risques",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "La norme européenne NF EN 17444 (février 2021) remplace la norme française NF V94-001 ; depuis le 21/08/2021 l'ancienne norme n'est plus utilisable ; application volontaire ; exigences : personnel, ingrédients, procédés, traçabilité, analyse du produit fini (lu le 01/10/2026)."
+ },
+ {
   "cle": "chamorro2017",
   "auteurs": "Chamorro C, Armijo-Olivo S, De la Fuente C, Fuentes J, Chirosa LJ",
   "annee": 2017,
@@ -1506,6 +1753,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "12 cyclistes très entraînés ; 20 min d'échauffement ; HI + 6 min récup 402 W vs modéré 416 W vs HI + 20 min 409 W."
+ },
+ {
+  "cle": "churchwardvenne2020",
+  "auteurs": "Churchward-Venne TA, Pinckaers PJM, Smeets JSJ, et al.",
+  "annee": 2020,
+  "titre": "Dose-response effects of dietary protein on muscle protein synthesis during recovery from endurance exercise in young men: a double-blind randomized trial",
+  "revue": "Am J Clin Nutr 112(2):303-317",
+  "doi": "10.1093/ajcn/nqaa073",
+  "url": "https://doi.org/10.1093/ajcn/nqaa073",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "48 endurants, 0/15/30/45 g de protéines + 45 g de glucides après l'effort : bilan protéique dose-dépendant ; 30 g suffisent à maximiser la synthèse myofibrillaire (résumé, PMID 32359142)."
  },
  {
   "cle": "citherlet2021",
@@ -2041,6 +2301,19 @@
   "note": "19 coureurs ; moins de dorsiflexion (r 0,65) et de rotation de hanche (r 0,53) = plus économique."
  },
  {
+  "cle": "craven2021",
+  "auteurs": "Craven J, Desbrow B, Sabapathy S, et al.",
+  "annee": 2021,
+  "titre": "The Effect of Consuming Carbohydrate With and Without Protein on the Rate of Muscle Glycogen Re-synthesis During Short-Term Post-exercise Recovery: a Systematic Review and Meta-analysis",
+  "revue": "Sports Med Open 7(1):9",
+  "doi": "10.1186/s40798-020-00297-0",
+  "url": "https://doi.org/10.1186/s40798-020-00297-0",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "29 essais, 246 sujets : glucides ~1,02 g/kg/h = +23,5 mmol/kg ms/h vs eau ; ajouter des protéines (0,27 g/kg/h) n'accélère pas la resynthèse (+0,4, p = 0,81) (résumé, PMID 33507402)."
+ },
+ {
   "cle": "craven2022",
   "auteurs": "Craven J, McCartney D, Desbrow B, et al.",
   "annee": 2022,
@@ -2130,6 +2403,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Revue du 21/12/2023 : adaptatif, intégrations, lecteur peu lisible."
+ },
+ {
+  "cle": "damasceno2024",
+  "auteurs": "Damasceno YO, Leitão CVFS, de Oliveira GM, et al.",
+  "annee": 2024,
+  "titre": "Plant-based diets benefit aerobic performance and do not compromise strength/power performance: a systematic review and meta-analysis",
+  "revue": "Br J Nutr 131(5):829-840",
+  "doi": "10.1017/s0007114523002258",
+  "url": "https://doi.org/10.1017/s0007114523002258",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "10 études : effet positif modéré sur l'aérobie (0,55), aucun effet sur force/puissance (−0,30 NS), IMC −0,27 (résumé, PMID 37869973)."
  },
  {
   "cle": "davies2021",
@@ -2223,6 +2509,19 @@
   "note": "56 études : plus de 10 semaines, plus de 20 séances et plus de 50 sauts par séance maximisent le gain en saut ; mélanger les types de sauts ; le lest n'apporte rien de plus."
  },
  {
+  "cle": "dezfuli2025",
+  "auteurs": "Dezfuli ZG, Rashedi MH, Naeini F, et al.",
+  "annee": 2025,
+  "titre": "Comparing the Effects of Glucose-Fructose versus Glucose on the Oxidation Rate: A Systematic Review and Meta-Analysis",
+  "revue": "Iran J Public Health 54(4):723-738",
+  "doi": "10.18502/ijph.v54i4.18411",
+  "url": "https://doi.org/10.18502/ijph.v54i4.18411",
+  "type": "meta-analyse",
+  "niveau": "B",
+  "verifie": true,
+  "note": "14 ECR, 125 endurants : glucose-fructose augmente l'oxydation exogène (+0,27 g/min) et réduit l'oxydation endogène vs glucose seul (résumé, PMID 40321909)."
+ },
+ {
   "cle": "dhondt2024",
   "auteurs": "D'Hondt J, Chapelle L, Bishop C, Aerenhouts D, De Pauw K, Clarys P, D'Hondt E",
   "annee": 2024,
@@ -2260,6 +2559,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "30 $/mois ou 300 $/an avec TrainingPeaks Premium ; coaching 300-1 250 $/mois."
+ },
+ {
+  "cle": "diazlara2025",
+  "auteurs": "Diaz-Lara J, Prieto-Bellver G, Guadalupe-Grau A, Bishop DJ",
+  "annee": 2025,
+  "titre": "Responses to Exercise with Low Carbohydrate Availability on Muscle Glycogen and Cell Signaling: A Systematic Review and Meta-analysis",
+  "revue": "Sports Med 55(1):79-100",
+  "doi": "10.1007/s40279-024-02119-9",
+  "url": "https://doi.org/10.1007/s40279-024-02119-9",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "19 ECR : faible disponibilité en glucides ↑ PDK4, GLUT4, UCP3 ; PGC-1α ↑ seulement si l'écart de glycogène dépasse 200 mmol/kg ms (résumé, PMID 39352665)."
  },
  {
   "cle": "directvelo-ffc-2025",
@@ -2808,6 +3120,19 @@
   "note": "44 études : aucune sur gravel ou cyclocross ; membre supérieur = 48 % des blessures sur route ; plaies puis fractures les plus fréquentes ; maladies respiratoires 32 % en VTT (PMID 40692620)."
  },
  {
+  "cle": "farrokhyar2017",
+  "auteurs": "Farrokhyar F, Sivakumar G, Savage K, et al.",
+  "annee": 2017,
+  "titre": "Effects of Vitamin D Supplementation on Serum 25-Hydroxyvitamin D Concentrations and Physical Performance in Athletes: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+  "revue": "Sports Med 47(11):2323-2339",
+  "doi": "10.1007/s40279-017-0749-4",
+  "url": "https://doi.org/10.1007/s40279-017-0749-4",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "13 ECR, 532 athlètes : 3 000-5 000 UI/j ramènent à la suffisance en hiver (+15 à +28 ng/ml) ; aucun des 7 essais mesurant la performance ne montre de gain à 12 sem (résumé, PMID 28577257)."
+ },
+ {
   "cle": "fernandezlazaro2021",
   "auteurs": "Fernández-Lázaro D, Gallego-Gallego D, Corchete LA, et al.",
   "annee": 2021,
@@ -3170,6 +3495,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Liste des pôles du site, dont un « pôle espoir VTT », équipe médicale et préparateurs physiques ; page non datée."
+ },
+ {
+  "cle": "forbes2023",
+  "auteurs": "Forbes SC, Candow DG, Neto JHF, et al.",
+  "annee": 2023,
+  "titre": "Creatine supplementation and endurance performance: surges and sprints to win the race",
+  "revue": "J Int Soc Sports Nutr 20(1):2204071",
+  "doi": "10.1080/15502783.2023.2204071",
+  "url": "https://doi.org/10.1080/15502783.2023.2204071",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Revue narrative : la créatine augmente le temps limite à haute intensité ; contre-la-montre mitigés ; utile pour relances et sprints finaux (VTT, ski de fond, cyclisme cités) ; la prise de masse peut annuler le gain en sport porté (résumé, PMID 37096381)."
  },
  {
   "cle": "fornasiersantos2018",
@@ -4134,6 +4472,19 @@
   "note": "7 études, ≤ 19 ans : mauvais sommeil chronique associé à plus de blessures (OR 1,58 [1,05 ; 2,37])."
  },
  {
+  "cle": "gao2021",
+  "auteurs": "Gao C, Gupta S, Adli T, et al.",
+  "annee": 2021,
+  "titre": "The effects of dietary nitrate supplementation on endurance exercise performance and cardiorespiratory measures in healthy adults: a systematic review and meta-analysis",
+  "revue": "J Int Soc Sports Nutr 18(1):55",
+  "doi": "10.1186/s12970-021-00450-4",
+  "url": "https://doi.org/10.1186/s12970-021-00450-4",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "73 études, 1 061 sujets : le nitrate améliore la puissance (+4,6 W) et d'autres mesures d'endurance ; pas d'effet sur VO2max ni lactate (résumé, PMID 34243756)."
+ },
+ {
   "cle": "gao2023",
   "auteurs": "Gao J, Yu L",
   "annee": 2023,
@@ -4251,6 +4602,32 @@
   "note": "Du blog (2013) à l'appli (2020) : plus de 5 M€ de revenu récurrent déclaré, 50 personnes."
  },
  {
+  "cle": "gejl2017",
+  "auteurs": "Gejl KD, Thams LB, Hansen M, et al.",
+  "annee": 2017,
+  "titre": "No Superior Adaptations to Carbohydrate Periodization in Elite Endurance Athletes",
+  "revue": "Med Sci Sports Exerc 49(12):2486-2497",
+  "doi": "10.1249/mss.0000000000001377",
+  "url": "https://doi.org/10.1249/mss.0000000000001377",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "26 endurants élites, 4 sem, restriction 3 j/sem : VO2max et puissance 30 min +5 % dans les deux groupes, aucun avantage du train-low (résumé, PMID 28723843)."
+ },
+ {
+  "cle": "gejl2021",
+  "auteurs": "Gejl KD, Nybo L",
+  "annee": 2021,
+  "titre": "Performance effects of periodized carbohydrate restriction in endurance trained athletes - a systematic review and meta-analysis",
+  "revue": "J Int Soc Sports Nutr 18(1):37",
+  "doi": "10.1186/s12970-021-00435-3",
+  "url": "https://doi.org/10.1186/s12970-021-00435-3",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "9 études chez des endurants (VO2max ≥ 55/60) : pas d'effet de la restriction périodisée de glucides sur la performance, SMD 0,17 [−0,15 ; 0,49], p = 0,29 (résumé, PMID 34001184)."
+ },
+ {
   "cle": "gencoglu2023",
   "auteurs": "Gençoğlu C, Ulupınar S, Özbay S et al.",
   "annee": 2023,
@@ -4275,6 +4652,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Repères de conversion liste d'attente (contenu marketing d'éditeur, anecdotique)."
+ },
+ {
+  "cle": "geyer2008",
+  "auteurs": "Geyer H, Parr MK, Koehler K, Mareck U, Schänzer W, Thevis M",
+  "annee": 2008,
+  "titre": "Nutritional supplements cross-contaminated and faked with doping substances",
+  "revue": "J Mass Spectrom 43(7):892-902",
+  "doi": "10.1002/jms.1452",
+  "url": "https://doi.org/10.1002/jms.1452",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Étude internationale 2001-2002 sur 634 compléments de 13 pays : ~15 % des produits non hormonaux contaminés par des stéroïdes ; cas de vitamine C et magnésium contaminés (résumé, PMID 18563865)."
  },
  {
   "cle": "giandolini2016a",
@@ -4355,6 +4745,19 @@
   "note": "34 ECR, n = 2830 (≥ 60 ans) : assiduité ~81 % dans les deux cas ; supervision → force genou SMD 0,18."
  },
  {
+  "cle": "gonzalez2026",
+  "auteurs": "Gonzalez DE, Dickerson BL, Roberts BM, et al.",
+  "annee": 2026,
+  "titre": "International Society of Sports Nutrition position stand: effects of dietary antioxidants on exercise and sports performance",
+  "revue": "J Int Soc Sports Nutr 23(1):2629828",
+  "doi": "10.1080/15502783.2026.2629828",
+  "url": "https://doi.org/10.1080/15502783.2026.2629828",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : les antioxydants à dose supraphysiologique peuvent gêner les adaptations ; privilégier les aliments ; compléments réservés aux insuffisances ou aux périodes de très forte charge (résumé, PMID 41701327)."
+ },
+ {
   "cle": "goodrum2025",
   "auteurs": "Goodrum M, Viljoen C, Kaulback K",
   "annee": 2025,
@@ -4420,6 +4823,32 @@
   "note": "17 études : Hbmass +1,1 % par 100 h d'altitude ; +3,3 % jusqu'à 20 jours après ; réponse individuelle 1,1-6 % à 300 h."
  },
  {
+  "cle": "goulet2011",
+  "auteurs": "Goulet ED",
+  "annee": 2011,
+  "titre": "Effect of exercise-induced dehydration on time-trial exercise performance: a meta-analysis",
+  "revue": "Br J Sports Med 45(14):1149-1156",
+  "doi": "10.1136/bjsm.2010.077966",
+  "url": "https://doi.org/10.1136/bjsm.2010.077966",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "5 études de CLM vélo : perte de 2,2 % du poids sans effet (+0,06 %) ; boire à la soif +5,2 % vs boire moins que la soif (résumé, PMID 21454440)."
+ },
+ {
+  "cle": "goulet2013",
+  "auteurs": "Goulet ED",
+  "annee": 2013,
+  "titre": "Effect of exercise-induced dehydration on endurance performance: evaluating the impact of exercise protocols on outcomes using a meta-analytic procedure",
+  "revue": "Br J Sports Med 47(11):679-686",
+  "doi": "10.1136/bjsports-2012-090958",
+  "url": "https://doi.org/10.1136/bjsports-2012-090958",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "15 articles, 122 sujets : déshydratation ≤ 4 % sans effet en contre-la-montre (+0,09 %) mais −1,91 % à intensité imposée ; la règle des 2 % ne s'applique pas dehors ; boire à la soif (résumé, PMID 22763119)."
+ },
+ {
   "cle": "govus2015",
   "auteurs": "Govus AD, Garvican-Lewis LA, Abbiss CR, Peeling P, Gore CJ",
   "annee": 2015,
@@ -4457,6 +4886,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "20 études, 434 sujets : erreur d'estimation 9,8 % (IC 7,4-12,2 %) ; surestimation moyenne 4,5 kg (3,7 % du 1RM), quelle que soit la méthode."
+ },
+ {
+  "cle": "grgic2020",
+  "auteurs": "Grgic J, Grgic I, Pickering C, Schoenfeld BJ, Bishop DJ, Pedisic Z",
+  "annee": 2020,
+  "titre": "Wake up and smell the coffee: caffeine supplementation and exercise performance-an umbrella review of 21 published meta-analyses",
+  "revue": "Br J Sports Med 54(11):681-688",
+  "doi": "10.1136/bjsports-2018-100278",
+  "url": "https://doi.org/10.1136/bjsports-2018-100278",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Revue parapluie de 21 méta-analyses : caféine ergogène pour endurance, force, puissance, saut, vitesse ; preuve de qualité modérée ; effet plus grand en aérobie ; surtout des jeunes hommes (résumé, PMID 30926628)."
+ },
+ {
+  "cle": "grgic2021",
+  "auteurs": "Grgic J, Pedisic Z, Saunders B, Artioli GG, et al.",
+  "annee": 2021,
+  "titre": "International Society of Sports Nutrition position stand: sodium bicarbonate and exercise performance",
+  "revue": "J Int Soc Sports Nutr 18(1):61",
+  "doi": "10.1186/s12970-021-00458-w",
+  "url": "https://doi.org/10.1186/s12970-021-00458-w",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : bicarbonate 0,2-0,5 g/kg (optimum 0,3) 60-180 min avant, utile pour les efforts intenses de 30 s à 12 min ; ballonnements, nausées, vomissements possibles (résumé, PMID 34503527)."
  },
  {
   "cle": "grgic2022",
@@ -4509,6 +4964,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "28 cohortes prospectives : résultats très incohérents sur le lien entre asymétrie et blessure."
+ },
+ {
+  "cle": "guest2021",
+  "auteurs": "Guest NS, VanDusseldorp TA, Nelson MT, Grgic J, et al.",
+  "annee": 2021,
+  "titre": "International society of sports nutrition position stand: caffeine and exercise performance",
+  "revue": "J Int Soc Sports Nutr 18(1):1",
+  "doi": "10.1186/s12970-020-00383-4",
+  "url": "https://doi.org/10.1186/s12970-020-00383-4",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : caféine efficace à 3-6 mg/kg, ~60 min avant ; minimum possible 2 mg/kg ; 9 mg/kg = effets indésirables ; endurance aérobie la plus sensible ; 4-6 mg/kg en altitude ; variabilité individuelle (résumé, PMID 33388079)."
  },
  {
   "cle": "gymlog-strava-force",
@@ -4600,6 +5068,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "652 footballeurs : problèmes d'aine 13,5 % contre 21,3 %, OR 0,59 ; Copenhague 3 fois par semaine en préparation, 1 fois par semaine en saison."
+ },
+ {
+  "cle": "hartono2022",
+  "auteurs": "Hartono FA, Martin-Arrowsmith PW, Peeters WM, Churchward-Venne TA",
+  "annee": 2022,
+  "titre": "The Effects of Dietary Protein Supplementation on Acute Changes in Muscle Protein Synthesis and Longer-Term Changes in Muscle Mass, Strength, and Aerobic Capacity in Response to Concurrent Resistance and Endurance Exercise in Healthy Adults: A Systematic Review",
+  "revue": "Sports Med 52(6):1295-1328",
+  "doi": "10.1007/s40279-021-01620-9",
+  "url": "https://doi.org/10.1007/s40279-021-01620-9",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Concurrent : protéines ↑ synthèse myofibrillaire (pas mitochondriale) ; 5/9 études gain de masse, 5/9 gain de force ; 6/6 aucun effet sur VO2max (résumé, PMID 35113389)."
  },
  {
   "cle": "hays2018",
@@ -4745,6 +5226,19 @@
   "note": "21 hommes entraînés, 8 sem : gains de 1RM et d'épaisseur musculaire similaires ; petite tendance en faveur du RPE (squat ES 0,50 ± 0,63) (PMID 29628895)."
  },
  {
+  "cle": "henselmans2022",
+  "auteurs": "Henselmans M, Bjørnsen T, Hedderman R, Vårvik FT",
+  "annee": 2022,
+  "titre": "The Effect of Carbohydrate Intake on Strength and Resistance Training Performance: A Systematic Review",
+  "revue": "Nutrients 14(4):856",
+  "doi": "10.3390/nu14040856",
+  "url": "https://doi.org/10.3390/nu14040856",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "49 études : les glucides n'améliorent pas la performance en muscu à l'état nourri pour des séances ≤ 10 séries par groupe musculaire ; bénéfice possible à jeun, à gros volume ou en séance biquotidienne (résumé, PMID 35215506)."
+ },
+ {
   "cle": "hevy-appstore",
   "auteurs": "Hevy",
   "annee": 2026,
@@ -4834,6 +5328,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "20 cyclistes d'élite femmes : DMO lombaire basse chez 35 %, épaisseur corticale du tibia basse chez 60 %, résistance du tibia basse chez 20 %."
+ },
+ {
+  "cle": "hoffman2015",
+  "auteurs": "Hoffman MD, Stuempfle KJ",
+  "annee": 2015,
+  "titre": "Sodium Supplementation and Exercise-Associated Hyponatremia during Prolonged Exercise",
+  "revue": "Med Sci Sports Exerc 47(9):1781-1787",
+  "doi": "10.1249/mss.0000000000000599",
+  "url": "https://doi.org/10.1249/mss.0000000000000599",
+  "type": "observationnelle",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Western States 161 km : 6,6 % d'hyponatrémie, 93,9 % prenaient du sel ; apport en sel identique entre hypo- et normonatrémiques ; la surhydratation est la cause principale (résumé, PMID 25551404)."
  },
  {
   "cle": "holden2020",
@@ -5068,6 +5575,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "22 étudiants, stage 13 jours à 1 100 m : signes de déshydratation les premiers jours, réduits par les bains contrastés, sans effet sur la performance."
+ },
+ {
+  "cle": "informedsport-processus",
+  "auteurs": "Informed Sport (LGC)",
+  "annee": 2026,
+  "titre": "Certification process",
+  "revue": "site officiel",
+  "doi": null,
+  "url": "https://sport.wetestyoutrust.com/about/certification-process",
+  "type": "site",
+  "niveau": "D",
+  "verifie": true,
+  "note": "Page officielle : chaque lot (toutes saveurs) testé avant mise en vente pour plus de 285 substances interdites, laboratoire LGC accrédité ISO 17025 ; seuils de détection non précisés (lu le 01/10/2026)."
  },
  {
   "cle": "ingalls2026",
@@ -5655,6 +6175,32 @@
   "note": "Manque de temps = frein courant ; ≥ 4 séries/sem/groupe, 6-15RM ; supersets/drop sets/rest-pause ≈ moitié du temps ; échauffement spécifique."
  },
  {
+  "cle": "jager2017",
+  "auteurs": "Jäger R, Kerksick CM, Campbell BI, et al.",
+  "annee": 2017,
+  "titre": "International Society of Sports Nutrition Position Stand: protein and exercise",
+  "revue": "J Int Soc Sports Nutr 14:20",
+  "doi": "10.1186/s12970-017-0177-8",
+  "url": "https://doi.org/10.1186/s12970-017-0177-8",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : 1,4-2,0 g/kg/j pour la plupart des sportifs ; 0,25 g/kg ou 20-40 g par prise avec 700-3 000 mg de leucine, toutes les 3-4 h ; 30-40 g de caséine avant le coucher ; les endurants doivent d'abord assurer leurs glucides (résumé, PMID 28642676)."
+ },
+ {
+  "cle": "jager2025",
+  "auteurs": "Jäger R, Heileson JL, Abou Sawan S, et al.",
+  "annee": 2025,
+  "titre": "International Society of Sports Nutrition Position Stand: Long-Chain Omega-3 Polyunsaturated Fatty Acids",
+  "revue": "J Int Soc Sports Nutr 22(1):2441775",
+  "doi": "10.1080/15502783.2024.2441775",
+  "url": "https://doi.org/10.1080/15502783.2024.2441775",
+  "type": "consensus",
+  "niveau": "B",
+  "verifie": true,
+  "note": "ISSN : les athlètes sont à risque d'insuffisance en oméga-3 ; EPA/DHA peuvent améliorer capacité d'endurance et réduire les courbatures ressenties ; pas d'effet hypertrophique chez les jeunes (résumé, PMID 39810703)."
+ },
+ {
   "cle": "jarvis2022",
   "auteurs": "Jarvis P, Turner A, Read P, Bishop C",
   "annee": 2022,
@@ -5705,6 +6251,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Canaux d'acquisition : blog, newsletter, YouTube, 30 groupes de course, webinaires."
+ },
+ {
+  "cle": "jeukendrup2017",
+  "auteurs": "Jeukendrup AE",
+  "annee": 2017,
+  "titre": "Training the Gut for Athletes",
+  "revue": "Sports Med 47(Suppl 1):101-110",
+  "doi": "10.1007/s40279-017-0690-6",
+  "url": "https://doi.org/10.1007/s40279-017-0690-6",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue : vidange gastrique, confort et absorption s'entraînent ; une alimentation riche en glucides augmente les transporteurs SGLT1 ; adaptations spécifiques au nutriment (résumé, PMID 28332114)."
  },
  {
   "cle": "jimenezmorgan2017",
@@ -5863,6 +6422,19 @@
   "note": "40 étudiants actifs ; après HIIT, 5-5 : FC 154,8 vs carré 4-4-4-4 : 164,7 bpm ; Borg 15,25 vs 17,27."
  },
  {
+  "cle": "kato2016",
+  "auteurs": "Kato H, Suzuki K, Bannai M, Moore DR",
+  "annee": 2016,
+  "titre": "Protein Requirements Are Elevated in Endurance Athletes after Exercise as Determined by the Indicator Amino Acid Oxidation Method",
+  "revue": "PLoS One 11(6):e0157406",
+  "doi": "10.1371/journal.pone.0157406",
+  "url": "https://doi.org/10.1371/journal.pone.0157406",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "6 coureurs entraînés après 20 km : besoin moyen 1,65 g/kg/j, apport recommandé 1,83 g/kg/j (méthode IAAO), au-dessus des 1,2-1,4 g/kg/j habituels (résumé, PMID 27322029)."
+ },
+ {
   "cle": "kaushal2015",
   "auteurs": "Kaushal N, Rhodes RE",
   "annee": 2015,
@@ -5874,6 +6446,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "111 nouveaux membres de salle : ≥ 4 séances/sem pendant 6 sem pour une habitude ; régularité, simplicité, environnement, plaisir prédisent l'habitude."
+ },
+ {
+  "cle": "keay2018",
+  "auteurs": "Keay N, Francis G, Hind K",
+  "annee": 2018,
+  "titre": "Low energy availability assessed by a sport-specific questionnaire and clinical interview indicative of bone health, endocrine profile and cycling performance in competitive male cyclists",
+  "revue": "BMJ Open Sport Exerc Med 4(1):e000424",
+  "doi": "10.1136/bmjsem-2018-000424",
+  "url": "https://doi.org/10.1136/bmjsem-2018-000424",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "50 cyclistes route hommes : 28 % en faible DE ; DE basse chronique associée à une densité osseuse basse, des marqueurs hormonaux et de performance défavorables (résumé, PMID 30364549)."
  },
  {
   "cle": "keogh2017",
@@ -5902,6 +6487,19 @@
   "note": "25 études (adultes) : fiabilité et validité correctes pour > 50 % des mesures, mais preuve plus faible pour l'erreur absolue (MDC, limites d'accord) que pour l'ICC ; peut remplacer le goniomètre."
  },
  {
+  "cle": "kerksick2017",
+  "auteurs": "Kerksick CM, Arent S, Schoenfeld BJ, et al.",
+  "annee": 2017,
+  "titre": "International society of sports nutrition position stand: nutrient timing",
+  "revue": "J Int Soc Sports Nutr 14:33",
+  "doi": "10.1186/s12970-017-0189-4",
+  "url": "https://doi.org/10.1186/s12970-017-0189-4",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : glycogène maximal avec 8-12 g/kg/j ; resynthèse rapide : glucides 0,8 g/kg/h + protéines 0,2-0,4 g/kg/h ou caféine 3-8 mg/kg ; 30-60 g/h à l'effort > 60-70 min ; 20-40 g de protéines (0,25-0,40 g/kg) toutes les 3-4 h ; 30-40 g de caséine avant le coucher (résumé, PMID 28919842)."
+ },
+ {
   "cle": "kerr2010",
   "auteurs": "Kerr ZY, Collins CL, Comstock RD",
   "annee": 2010,
@@ -5926,6 +6524,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "11 hommes, 2 descentes de 30 min à 3 sem d'écart : moins de perte de force et de douleur, foulée moins altérée au 2e bout (PMID 35225166)."
+ },
+ {
+  "cle": "khatri2021",
+  "auteurs": "Khatri M, Naughton RJ, Clifford T, Harper LD, Corr L",
+  "annee": 2021,
+  "titre": "The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review",
+  "revue": "Amino Acids 53(10):1493-1506",
+  "doi": "10.1007/s00726-021-03072-x",
+  "url": "https://doi.org/10.1007/s00726-021-03072-x",
+  "type": "revue-systematique",
+  "niveau": "C",
+  "verifie": true,
+  "note": "15 ECR : le collagène aide surtout la fonction et la douleur articulaires ; synthèse de collagène ↑ à 15 g/j ; pas d'effet sur la synthèse musculaire vs protéines de meilleure qualité (résumé, PMID 34491424)."
  },
  {
   "cle": "kidman2024",
@@ -5978,6 +6589,19 @@
   "niveau": "D",
   "verifie": true,
   "note": "Capteur inertiel, sauts, charge, pas de prix."
+ },
+ {
+  "cle": "king2022",
+  "auteurs": "King A, Helms E, Zinn C, Jukic I",
+  "annee": 2022,
+  "titre": "The Ergogenic Effects of Acute Carbohydrate Feeding on Resistance Exercise Performance: A Systematic Review and Meta-analysis",
+  "revue": "Sports Med 52(11):2691-2712",
+  "doi": "10.1007/s40279-022-01716-w",
+  "url": "https://doi.org/10.1007/s40279-022-01716-w",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "21 études, 226 sujets : les glucides augmentent le volume de la séance de muscu (SMD 0,61), surtout si séance > 45 min (1,02) ou jeûne ≥ 8 h (0,39) (résumé, PMID 35809162)."
  },
  {
   "cle": "kinvent-accueil",
@@ -6279,6 +6903,32 @@
   "note": "12 vs 12 ; 10 jours d'entraînement (respiration, froid, méditation) : adrénaline accrue, cytokines pro-inflammatoires réduites sous endotoxine."
  },
  {
+  "cle": "kozhuharov2022",
+  "auteurs": "Kozhuharov VR, Ivanov K, Ivanova S",
+  "annee": 2022,
+  "titre": "Dietary Supplements as Source of Unintentional Doping",
+  "revue": "Biomed Res Int 2022:8387271",
+  "doi": "10.1155/2022/8387271",
+  "url": "https://doi.org/10.1155/2022/8387271",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "50 études, 3 132 compléments analysés : 875 (> 28 %) contenaient des substances non déclarées, surtout sibutramine et stéroïdes anabolisants (résumé, PMID 35496041)."
+ },
+ {
+  "cle": "kreider2017",
+  "auteurs": "Kreider RB, Kalman DS, Antonio J, et al.",
+  "annee": 2017,
+  "titre": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine",
+  "revue": "J Int Soc Sports Nutr 14:18",
+  "doi": "10.1186/s12970-017-0173-z",
+  "url": "https://doi.org/10.1186/s12970-017-0173-z",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN : la créatine améliore l'exercice de haute intensité et les adaptations ; supplémentation sûre et bien tolérée jusqu'à 30 g/j pendant 5 ans chez des sujets sains (résumé, PMID 28615996)."
+ },
+ {
   "cle": "kristoffersen2019",
   "auteurs": "Kristoffersen M, Sandbakk Ø, Rønnestad BR, Gundersen H",
   "annee": 2019,
@@ -6357,6 +7007,19 @@
   "note": "Programmes de coachs, coaching audio, iOS et web, pas d'Android."
  },
  {
+  "cle": "lakicevic2019",
+  "auteurs": "Lakićević N",
+  "annee": 2019,
+  "titre": "The Effects of Alcohol Consumption on Recovery Following Resistance Exercise: A Systematic Review",
+  "revue": "J Funct Morphol Kinesiol 4(3):41",
+  "doi": "10.3390/jfmk4030041",
+  "url": "https://doi.org/10.3390/jfmk4030041",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "12 études : après muscu, l'alcool ne modifie pas force, puissance ni courbatures, mais ↑ cortisol et ↓ testostérone et synthèse protéique (résumé, PMID 33467356)."
+ },
+ {
   "cle": "laranjo2021",
   "auteurs": "Laranjo L, Ding D, Heleno B, et al.",
   "annee": 2021,
@@ -6394,6 +7057,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "6 ECR, 7738 sujets : RR 0,338 ; +10 % de volume de muscu = risque réduit de plus de 4 points (PMID 30131332)."
+ },
+ {
+  "cle": "leaf2024",
+  "auteurs": "Leaf A, Rothschild JA, Sharpe TM, Sims ST, et al.",
+  "annee": 2024,
+  "titre": "International society of sports nutrition position stand: ketogenic diets",
+  "revue": "J Int Soc Sports Nutr 21(1):2368167",
+  "doi": "10.1080/15502783.2024.2368167",
+  "url": "https://doi.org/10.1080/15502783.2024.2368167",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position ISSN : le cétogène (< 50 g glucides/j) est neutre ou nuisible à la performance malgré ~1,5 g/min d'oxydation des graisses ; toutes les études chez des élites montrent une baisse (résumé, PMID 38934469)."
  },
  {
   "cle": "lecoach-vs-trainingpeaks",
@@ -6643,6 +7319,19 @@
   "note": "6 études, 124 sujets : VBT vs %1RM, 1RM squat +3,03 kg NS, saut SMD 0,27 NS, sprint NS (PMID 34793506)."
  },
  {
+  "cle": "lim2021",
+  "auteurs": "Lim MT, Pan BJ, Toh DWK, Sutanto CN, Kim JE",
+  "annee": 2021,
+  "titre": "Animal Protein versus Plant Protein in Supporting Lean Mass and Muscle Strength: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+  "revue": "Nutrients 13(2):661",
+  "doi": "10.3390/nu13020661",
+  "url": "https://doi.org/10.3390/nu13020661",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "16 ECR : pas de différence de masse maigre absolue ni de force ; léger avantage des protéines animales sur le % de masse maigre et chez les < 50 ans (+0,41 kg) (résumé, PMID 33670701)."
+ },
+ {
   "cle": "ling2022",
   "auteurs": "Ling DI, Boyle C, Schneider B, et al.",
   "annee": 2022,
@@ -6758,6 +7447,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "Skieurs 18-27 ans, 12 sem : 1RM tirage +19 %, demi-squat +12 % ; pas de changement de CSA du quadriceps ; VO2max en skating +7 % (PMID 20136751)."
+ },
+ {
+  "cle": "loucks2003",
+  "auteurs": "Loucks AB, Thuma JR",
+  "annee": 2003,
+  "titre": "Luteinizing hormone pulsatility is disrupted at a threshold of energy availability in regularly menstruating women",
+  "revue": "J Clin Endocrinol Metab 88(1):297-311",
+  "doi": "10.1210/jc.2002-020369",
+  "url": "https://doi.org/10.1210/jc.2002-020369",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "29 femmes sédentaires, 5 jours : pulsatilité de LH normale à 30 kcal/kg de masse maigre/j, perturbée en dessous (10-20) ; 45 kcal/kg comme référence (résumé, PMID 12519869)."
  },
  {
   "cle": "louis2012",
@@ -6968,6 +7670,19 @@
   "note": "Analyse bayésienne, 2 jeux de données : modèle mal conditionné et surajusté ; la composante fatigue n'améliore pas la prédiction (p > 0,40)."
  },
  {
+  "cle": "margolis2021",
+  "auteurs": "Margolis LM, Allen JT, Hatch-McChesney A, Pasiakos SM",
+  "annee": 2021,
+  "titre": "Coingestion of Carbohydrate and Protein on Muscle Glycogen Synthesis after Exercise: A Meta-analysis",
+  "revue": "Med Sci Sports Exerc 53(2):384-393",
+  "doi": "10.1249/mss.0000000000002476",
+  "url": "https://doi.org/10.1249/mss.0000000000002476",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "20 études : pas d'effet global des protéines ajoutées (g = 0,13 NS) ; effet positif seulement quand elles ajoutent de l'énergie (g = 0,26), nul à énergie égale (résumé, PMID 32826640)."
+ },
+ {
   "cle": "marketreportsworld-coaching-software",
   "auteurs": "Market Reports World",
   "annee": 2025,
@@ -7005,6 +7720,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "93 étudiants : CMJ et squat jump sur tapis de contact, alpha 0,97-0,98, CV intra-sujet 2,4-4,6 % ; CMJ = meilleure validité factorielle (r = 0,87)."
+ },
+ {
+  "cle": "martinez2023",
+  "auteurs": "Martinez IG, Mika AS, Biesiekierski JR, Costa RJS",
+  "annee": 2023,
+  "titre": "The Effect of Gut-Training and Feeding-Challenge on Markers of Gastrointestinal Status in Response to Endurance Exercise: A Systematic Literature Review",
+  "revue": "Sports Med 53(6):1175-1200",
+  "doi": "10.1007/s40279-023-01841-0",
+  "url": "https://doi.org/10.1007/s40279-023-01841-0",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "8 études : inconfort digestif −47 % après 2 sem d'apports répétés, malabsorption −45 à −54 % ; pas d'effet sur la vidange gastrique ni les marqueurs de lésion intestinale (résumé, PMID 37061651)."
  },
  {
   "cle": "martineznavarro2026a",
@@ -7046,6 +7774,19 @@
   "note": "40 cyclistes : les heures de muscu sont le seul facteur associé à une DMO plus haute (colonne lombaire, hanche, col du fémur)."
  },
  {
+  "cle": "maughan2018",
+  "auteurs": "Maughan RJ, Burke LM, Dvorak J, Larson-Meyer DE, Peeling P, et al.",
+  "annee": 2018,
+  "titre": "IOC consensus statement: dietary supplements and the high-performance athlete",
+  "revue": "Br J Sports Med 52(7):439-455",
+  "doi": "10.1136/bjsports-2018-099027",
+  "url": "https://doi.org/10.1136/bjsports-2018-099027",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Consensus CIO : contribution mineure des compléments ; seuls quelques-uns ont de bonnes preuves (caféine, créatine, tampons, nitrate) ; bilan nutritionnel avant usage ; tester à l'entraînement ; risque de dopage involontaire (résumé, PMID 29540367)."
+ },
+ {
   "cle": "mayhew2008",
   "auteurs": "Mayhew JL, Johnson BD, Lamonte MJ, Lauber D, Kemmler W",
   "annee": 2008,
@@ -7070,6 +7811,32 @@
   "niveau": "A",
   "verifie": true,
   "note": "16 ECR, 2407 participants : g = 0,42 ; vs intervention non gamifiée g = 0,23 ; à ~14 sem de suivi g = 0,15."
+ },
+ {
+  "cle": "mccubbin2023",
+  "auteurs": "McCubbin AJ",
+  "annee": 2023,
+  "titre": "Modelling sodium requirements of athletes across a variety of exercise scenarios - Identifying when to test and target, or season to taste",
+  "revue": "Eur J Sport Sci 23(6):992-1000",
+  "doi": "10.1080/17461391.2022.2083526",
+  "url": "https://doi.org/10.1080/17461391.2022.2083526",
+  "type": "revue",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Modélisation : remplacer le sodium est inutile en foot ou marathon élite ; utile sur 160 km si > 80 % des pertes d'eau remplacées et sueur ≥ 40 mmol/L ; sinon sel « au goût » (résumé, PMID 35616504)."
+ },
+ {
+  "cle": "mcdermott2017",
+  "auteurs": "McDermott BP, Anderson SA, Armstrong LE, et al.",
+  "annee": 2017,
+  "titre": "National Athletic Trainers' Association Position Statement: Fluid Replacement for the Physically Active",
+  "revue": "J Athl Train 52(9):877-895",
+  "doi": "10.4085/1062-6050-52.9.02",
+  "url": "https://doi.org/10.4085/1062-6050-52.9.02",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position NATA : hypo- et hyperhydratation nuisent ; éduquer sur le risque d'hyponatrémie ; mesurer la sudation ; boire suffisamment mais pas trop (résumé, PMID 28985128)."
  },
  {
   "cle": "mcewan2016",
@@ -7187,6 +7954,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "Continuum surcharge fonctionnelle, non fonctionnelle, surentraînement ; diagnostic d'exclusion ; aucun marqueur ne remplit tous les critères."
+ },
+ {
+  "cle": "melin2024",
+  "auteurs": "Melin AK, Areta JL, Heikura IA, Stellingwerff T, Torstveit MK, Hackney AC",
+  "annee": 2024,
+  "titre": "Direct and indirect impact of low energy availability on sports performance",
+  "revue": "Scand J Med Sci Sports 34(1):e14327",
+  "doi": "10.1111/sms.14327",
+  "url": "https://doi.org/10.1111/sms.14327",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue narrative : une faible DE modérée et encadrée peut améliorer le rapport poids/puissance, mais sévère ou prolongée elle nuit à la force, l'endurance, l'adaptation et augmente le risque de blessure (résumé, PMID 36894187)."
  },
  {
   "cle": "mesinfos-nolio-2024",
@@ -7384,6 +8164,19 @@
   "note": "Site du livre : apprendre à parler aux clients quand tout le monde ment."
  },
  {
+  "cle": "monedero2023",
+  "auteurs": "Monedero J, Duff C, Egan B",
+  "annee": 2023,
+  "titre": "Dietary Intakes and the Risk of Low Energy Availability in Male and Female Advanced and Elite Rock Climbers",
+  "revue": "J Strength Cond Res 37(3):e8-e15",
+  "doi": "10.1519/jsc.0000000000004317",
+  "url": "https://doi.org/10.1519/jsc.0000000000004317",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "25 grimpeurs avancés/élites : DE sous-optimale (< 45) chez 88 %, basse (< 30 kcal/kg FFM/j) chez 28 % ; glucides 3,4-3,8 g/kg/j (résumé, PMID 35836334)."
+ },
+ {
   "cle": "monninghoff2021",
   "auteurs": "Mönninghoff A, Kramer JN, Hess AJ, et al.",
   "annee": 2021,
@@ -7408,6 +8201,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "30 sujets : hauteur de CMJ ICC ≥ 0,98, CV ≤ 8 % sur tous les appareils ; RSI : ICC ≥ 0,92 mais CV ≥ 12,5 % partout ; apps MyJump2 et What'sMyVert valides vs plateforme."
+ },
+ {
+  "cle": "monteyne2023",
+  "auteurs": "Monteyne AJ, Coelho MOC, Murton AJ, et al.",
+  "annee": 2023,
+  "titre": "Vegan and Omnivorous High Protein Diets Support Comparable Daily Myofibrillar Protein Synthesis Rates and Skeletal Muscle Hypertrophy in Young Adults",
+  "revue": "J Nutr 153(6):1680-1695",
+  "doi": "10.1016/j.tjnut.2023.02.023",
+  "url": "https://doi.org/10.1016/j.tjnut.2023.02.023",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "22 jeunes adultes, 10 sem de muscu à ~2 g/kg/j de protéines : végan vs omnivore, masse maigre +3,1 vs +2,6 kg, volume de cuisse +8,3 % dans les deux groupes, force comparable (résumé, PMID 36822394)."
  },
  {
   "cle": "moore2020",
@@ -7436,6 +8242,19 @@
   "note": "28 études : le bain froid est supérieur aux autres méthodes contre les courbatures, équivalent pour puissance et souplesse."
  },
  {
+  "cle": "moore2024",
+  "auteurs": "Moore DR, Gillen JB, West DWD, Kato H, Volterman KA",
+  "annee": 2024,
+  "titre": "Protein requirements may be lower on a training compared to rest day but are not influenced by moderate training volumes in endurance trained males",
+  "revue": "Appl Physiol Nutr Metab 49(8):1124-1128",
+  "doi": "10.1139/apnm-2023-0297",
+  "url": "https://doi.org/10.1139/apnm-2023-0297",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "Endurants : les besoins protéiques ne diffèrent pas entre 10 et 20 km de course et seraient plus élevés le jour de repos (IAAO) (résumé, PMID 38603808)."
+ },
+ {
   "cle": "moran2017",
   "auteurs": "Moran J, Sandercock GR, Ramírez-Campillo R, Meylan C, Collison J, Parry DA",
   "annee": 2017,
@@ -7460,6 +8279,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "24 cohortes : lien faible FMS ≤ 14 - blessure (RR 1,47 chez des militaires), déconseillé en football ; ne soutient pas l'usage du FMS pour prédire la blessure."
+ },
+ {
+  "cle": "morton2018",
+  "auteurs": "Morton RW, Murphy KT, McKellar SR, et al.",
+  "annee": 2018,
+  "titre": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+  "revue": "Br J Sports Med 52(6):376-384",
+  "doi": "10.1136/bjsports-2017-097608",
+  "url": "https://doi.org/10.1136/bjsports-2017-097608",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "49 ECR, 1 863 participants : la supplémentation protéique augmente force et masse avec la muscu ; plus de gain de masse maigre au-delà de 1,62 g/kg/j (résumé, PMID 28698222)."
  },
  {
   "cle": "mountjoy2023",
@@ -8086,6 +8918,19 @@
   "note": "53 articles : 15 études sur 18 appliquent un seuil de 10-15 % souvent sans preuve ; seuls 4 indices sur 12 sont robustes ; les seuils sont arbitraires."
  },
  {
+  "cle": "parr2014",
+  "auteurs": "Parr EB, Camera DM, Areta JL, Burke LM, Phillips SM, Hawley JA, Coffey VG",
+  "annee": 2014,
+  "titre": "Alcohol ingestion impairs maximal post-exercise rates of myofibrillar protein synthesis following a single bout of concurrent training",
+  "revue": "PLoS One 9(2):e88384",
+  "doi": "10.1371/journal.pone.0088384",
+  "url": "https://doi.org/10.1371/journal.pone.0088384",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "8 hommes, séance concurrente puis 1,5 g/kg d'alcool (~12 verres) : la synthèse myofibrillaire est réduite, même avec 25 g de whey (résumé, PMID 24533082)."
+ },
+ {
   "cle": "patel2019",
   "auteurs": "Patel MS, Small DS, Harrison JD, et al.",
   "annee": 2019,
@@ -8097,6 +8942,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "602 adultes, 24 sem : compétition +920 pas/j, soutien +689, collaboration +637 ; au suivi seule la compétition reste supérieure (+569)."
+ },
+ {
+  "cle": "paulsen2014",
+  "auteurs": "Paulsen G, Cumming KT, Holden G, Hallén J, Rønnestad BR, et al.",
+  "annee": 2014,
+  "titre": "Vitamin C and E supplementation hampers cellular adaptation to endurance training in humans: a double-blind, randomised, controlled trial",
+  "revue": "J Physiol 592(8):1887-1901",
+  "doi": "10.1113/jphysiol.2013.267419",
+  "url": "https://doi.org/10.1113/jphysiol.2013.267419",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "54 sujets, 11 sem, 1 000 mg vit. C + 235 mg vit. E : COX4 +59 % sous placebo vs −13 % ; PGC-1α +19 % vs −13 % ; VO2max +8 % dans les deux groupes (résumé, PMID 24492839)."
  },
  {
   "cle": "peakstrength-site",
@@ -8240,6 +9098,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "57 études : fiabilité intra-évaluateur 0,85-0,91 ; scores différents selon sexe et sport ; avec des seuils généraux, le Y-balance ne prédit pas la blessure."
+ },
+ {
+  "cle": "podlogar2022",
+  "auteurs": "Podlogar T, Bokal S, Cirnski S, Wallis GA",
+  "annee": 2022,
+  "titre": "Increased exogenous but unaltered endogenous carbohydrate oxidation with combined fructose-maltodextrin ingested at 120 g/h versus 90 g/h at different ratios",
+  "revue": "Eur J Appl Physiol 122(11):2393-2401",
+  "doi": "10.1007/s00421-022-05019-w",
+  "url": "https://doi.org/10.1007/s00421-022-05019-w",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "11 cyclistes, 3 h : 120 g/h (0,8:1) = oxydation exogène 1,51 vs 1,29 g/min à 90 g/h (1:2) ; oxydation endogène identique (résumé, PMID 35951130)."
  },
  {
   "cle": "polar-fitspark",
@@ -8591,6 +9462,19 @@
   "niveau": "B",
   "verifie": true,
   "note": "42 opérés du LCA : indice de symétrie ICC 0,82-0,93, SEM 3,0-5,6 %, MDC90 7,1-13,0 % (exprimé en % de symétrie, pas en cm)."
+ },
+ {
+  "cle": "reis2021",
+  "auteurs": "Reis CEG, Loureiro LMR, Roschel H, da Costa THM",
+  "annee": 2021,
+  "titre": "Effects of pre-sleep protein consumption on muscle-related outcomes - A systematic review",
+  "revue": "J Sci Med Sport 24(2):177-182",
+  "doi": "10.1016/j.jsams.2020.07.016",
+  "url": "https://doi.org/10.1016/j.jsams.2020.07.016",
+  "type": "revue-systematique",
+  "niveau": "B",
+  "verifie": true,
+  "note": "9 études : 20-40 g de caséine ~30 min avant le coucher augmentent la synthèse nocturne ; gains possibles sur 10-12 sem chez les jeunes ; prudence car apports totaux inégaux (résumé, PMID 32811763)."
  },
  {
   "cle": "researchandmarkets-sports-coaching-2024",
@@ -9009,6 +9893,19 @@
   "note": "14 VTTistes lombalgiques vs 24 ; souplesse identique (p 0,674) ; endurance du dos plus faible (p 0,016), transverse et multifide plus fins."
  },
  {
+  "cle": "rowlands2015",
+  "auteurs": "Rowlands DS, Houltham S, Musa-Veloso K, Brown F, Paulionis L, Bailey D",
+  "annee": 2015,
+  "titre": "Fructose-Glucose Composite Carbohydrates and Endurance Performance: Critical Review and Future Perspectives",
+  "revue": "Sports Med 45(11):1561-1576",
+  "doi": "10.1007/s40279-015-0381-0",
+  "url": "https://doi.org/10.1007/s40279-015-0381-0",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "14 études : fructose:glucose 0,5-1:1 à 1,3-2,4 g/min = +1 à +9 % de puissance sur 2,5-3 h vs glucose seul ; ratio 0,8:1 le meilleur à 1,5-1,8 g/min ; moins de troubles digestifs (résumé, PMID 26373645)."
+ },
+ {
   "cle": "rp-hypertrophy-appstore",
   "auteurs": "RP Strength",
   "annee": 2026,
@@ -9191,6 +10088,19 @@
   "note": "13 études, 201 coureurs : le renforcement des abducteurs de hanche est la stratégie la plus fréquente ; douleur -27 à -100 % en 2-8 sem ; études hétérogènes."
  },
  {
+  "cle": "saunders2017",
+  "auteurs": "Saunders B, Elliott-Sale K, Artioli GG, et al.",
+  "annee": 2017,
+  "titre": "β-alanine supplementation to improve exercise capacity and performance: a systematic review and meta-analysis",
+  "revue": "Br J Sports Med 51(8):658-669",
+  "doi": "10.1136/bjsports-2016-096396",
+  "url": "https://doi.org/10.1136/bjsports-2016-096396",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "40 études, 1 461 sujets : effet global 0,18 ; pour 0,5-10 min, capacité 0,50 mais performance 0,11 (NS) ; avec bicarbonate 0,43 (résumé, PMID 27797728)."
+ },
+ {
   "cle": "savoia-pretotype-it",
   "auteurs": "Savoia A.",
   "annee": 2026,
@@ -9243,6 +10153,19 @@
   "note": "56 études : les mesures subjectives reflètent la charge aiguë et chronique avec plus de sensibilité et de constance que les mesures objectives."
  },
  {
+  "cle": "sawka2007",
+  "auteurs": "American College of Sports Medicine, Sawka MN, Burke LM, Eichner ER, Maughan RJ, Montain SJ, Stachenfeld NS",
+  "annee": 2007,
+  "titre": "American College of Sports Medicine position stand. Exercise and fluid replacement",
+  "revue": "Med Sci Sports Exerc 39(2):377-390",
+  "doi": "10.1249/mss.0b013e31802ca597",
+  "url": "https://doi.org/10.1249/mss.0b013e31802ca597",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position ACSM : éviter une perte > 2 % du poids par déshydratation ; sudation très variable → programme individualisé, pesée avant/après ; après l'effort, remplacer le déficit en eau et électrolytes (résumé, PMID 17277604)."
+ },
+ {
   "cle": "sawtooth-van-westendorp",
   "auteurs": "Sawtooth Software",
   "annee": 2026,
@@ -9269,6 +10192,19 @@
   "note": "7 essais, 3 726 sportifs : RR 0,65 ; RR 0,64 en cas d'antécédent ; sans antécédent (RR 0,57), preuve non concluante."
  },
  {
+  "cle": "schoenfeld2018",
+  "auteurs": "Schoenfeld BJ, Aragon AA",
+  "annee": 2018,
+  "titre": "How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution",
+  "revue": "J Int Soc Sports Nutr 15:10",
+  "doi": "10.1186/s12970-018-0215-1",
+  "url": "https://doi.org/10.1186/s12970-018-0215-1",
+  "type": "revue",
+  "niveau": "B",
+  "verifie": true,
+  "note": "Revue : viser 0,4 g/kg/repas sur au moins 4 repas (≥ 1,6 g/kg/j), au maximum ~0,55 g/kg/repas (résumé, PMID 29497353)."
+ },
+ {
   "cle": "schumann2022",
   "auteurs": "Schumann M, Feuerbacher JF, Sünkeler M, Freitag N, Rønnestad BR, Doma K, Lundberg TR",
   "annee": 2022,
@@ -9293,6 +10229,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "6 coureurs, 3 sem de sauna post-séance (~31 min) : temps limite +32 % (~1,9 % en chrono), volume plasmatique +7,1 %."
+ },
+ {
+  "cle": "senefeld2020",
+  "auteurs": "Senefeld JW, Wiggins CC, Regimbal RJ, Dominelli PB, Baker SE, Joyner MJ",
+  "annee": 2020,
+  "titre": "Ergogenic Effect of Nitrate Supplementation: A Systematic Review and Meta-analysis",
+  "revue": "Med Sci Sports Exerc 52(10):2250-2261",
+  "doi": "10.1249/mss.0000000000002363",
+  "url": "https://doi.org/10.1249/mss.0000000000002363",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "80 études : effet petit du nitrate (d = 0,174) ; absent chez les endurants très entraînés ≥ 65 ml/kg/min (d = 0,021) et dans les études sur femmes seules ; pas modulé par l'hypoxie (résumé, PMID 32936597)."
  },
  {
   "cle": "sensortower-france-t3-2025",
@@ -9399,6 +10348,19 @@
   "note": "Exercice seul RR 0,67 (8 essais, 1 634 personnes) ; exercice + éducation RR 0,73 ; recommandé : renforcement + étirements ou aérobie, 2 à 3 fois par semaine."
  },
  {
+  "cle": "shirreffs1996",
+  "auteurs": "Shirreffs SM, Taylor AJ, Leiper JB, Maughan RJ",
+  "annee": 1996,
+  "titre": "Post-exercise rehydration in man: effects of volume consumed and drink sodium content",
+  "revue": "Med Sci Sports Exerc 28(10):1260-1271",
+  "doi": "10.1097/00005768-199610000-00009",
+  "url": "https://doi.org/10.1097/00005768-199610000-00009",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "12 hommes déshydratés de 2 % : il faut boire plus que la perte (150 %) et avec assez de sodium (61 vs 23 mmol/L), sinon l'excédent part dans les urines (résumé, PMID 8897383)."
+ },
+ {
   "cle": "shortform-momtest",
   "auteurs": "Shortform",
   "annee": 2026,
@@ -9423,6 +10385,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "23 études, 11 applis : valides et fiables pour la vitesse de barre, mais biais systématique aux charges lourdes."
+ },
+ {
+  "cle": "silva2021b",
+  "auteurs": "Silva AC, Silva A, Edwards BJ, et al.",
+  "annee": 2021,
+  "titre": "Sleep extension in athletes: what we know so far - A systematic review",
+  "revue": "Sleep Med 77:128-135",
+  "doi": "10.1016/j.sleep.2020.11.028",
+  "url": "https://doi.org/10.1016/j.sleep.2020.11.028",
+  "type": "revue-systematique",
+  "niveau": "C",
+  "verifie": true,
+  "note": "2 études incluses, extension de 26 à 106 min : bénéfices possibles, qualité de preuve très faible à modérée."
  },
  {
   "cle": "sim2019",
@@ -9555,6 +10530,19 @@
   "note": "Pas de prix, peu adapté aux petites structures."
  },
  {
+  "cle": "smid2024",
+  "auteurs": "Šmid AN, Golja P, Hadžić V, Abazović E, Drole K, Paravlic AH",
+  "annee": 2024,
+  "titre": "Effects of Oral Iron Supplementation on Blood Iron Status in Athletes: A Systematic Review, Meta-Analysis and Meta-Regression of Randomized Controlled Trials",
+  "revue": "Sports Med 54(5):1231-1247",
+  "doi": "10.1007/s40279-024-01992-8",
+  "url": "https://doi.org/10.1007/s40279-024-01992-8",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "13 ECR, 449 sujets : fer oral ↑ ferritine (SMD 1,27) surtout si ferritine initiale ≤ 12 µg/L ; hémoglobine NS ; VO2max tendance (SMD 0,49, p = 0,086) ; 16-100 mg/j sur 6-8 sem (résumé, PMID 38407751)."
+ },
+ {
   "cle": "smith2020",
   "auteurs": "Smith DM, Duque L, Huffman JC, Healy BC, Celano CM",
   "annee": 2020,
@@ -9566,6 +10554,19 @@
   "niveau": "A",
   "verifie": true,
   "note": "13 ECR, n = 1346 : SMS → pas/j d = 0,38 ; MVPA d = 0,31 (NS)."
+ },
+ {
+  "cle": "snijders2015",
+  "auteurs": "Snijders T, Res PT, Smeets JS, et al.",
+  "annee": 2015,
+  "titre": "Protein Ingestion before Sleep Increases Muscle Mass and Strength Gains during Prolonged Resistance-Type Exercise Training in Healthy Young Men",
+  "revue": "J Nutr 145(6):1178-1184",
+  "doi": "10.3945/jn.114.208371",
+  "url": "https://doi.org/10.3945/jn.114.208371",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "44 jeunes hommes, 12 sem de muscu, 27,5 g de protéines + 15 g de glucides chaque soir : force +164 vs +130 kg (placebo) et plus d'hypertrophie (résumé, PMID 25926415)."
  },
  {
   "cle": "socialinsider-engagement-2026",
@@ -10270,6 +11271,19 @@
   "note": "Vu via recherche web : marche arrière d'Apple le 01/03/2024."
  },
  {
+  "cle": "thomas2016",
+  "auteurs": "Thomas DT, Erdman KA, Burke LM",
+  "annee": 2016,
+  "titre": "American College of Sports Medicine Joint Position Statement. Nutrition and Athletic Performance",
+  "revue": "Med Sci Sports Exerc 48(3):543-568",
+  "doi": "10.1249/mss.0000000000000852",
+  "url": "https://doi.org/10.1249/mss.0000000000000852",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "Position conjointe ACSM/AND/DC : type, quantité et timing des apports à adapter au scénario d'entraînement ; renvoi vers un diététicien du sport. Seul le résumé (sans chiffres) a été lu : les fourchettes chiffrées de ce texte ne sont pas reprises ici sans autre source."
+ },
+ {
   "cle": "thomas2018",
   "auteurs": "Thomas E, Bianco A, Paoli A, Palma A",
   "annee": 2018,
@@ -10307,6 +11321,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "17 études, 418 participantes : 3 études en faveur d'une muscu centrée sur la phase folliculaire ; résultats contradictoires, petits effectifs, limites de méthode (PMID 31677121)."
+ },
+ {
+  "cle": "tiller2019",
+  "auteurs": "Tiller NB, Roberts JD, Beasley L, et al.",
+  "annee": 2019,
+  "titre": "International Society of Sports Nutrition Position Stand: nutritional considerations for single-stage ultra-marathon training and racing",
+  "revue": "J Int Soc Sports Nutr 16(1):50",
+  "doi": "10.1186/s12970-019-0312-9",
+  "url": "https://doi.org/10.1186/s12970-019-0312-9",
+  "type": "consensus",
+  "niveau": "A",
+  "verifie": true,
+  "note": "ISSN ultra : glucides 5-8 g/kg/j à l'entraînement ; protéines ~1,6 g/kg/j (jusqu'à 2,5) ; en course 150-400 kcal/h, 450-750 mL/h, sodium > 575 mg/L ; entraînement de l'intestin ; pas de preuve pour cétogène/cétones (résumé, PMID 31699159)."
  },
  {
   "cle": "todaysplan-accueil",
@@ -10985,6 +12012,19 @@
   "note": "Vu via WebSearch (403 à l'ouverture) : générateur IA texte vers séance, coachs, web, muscu structurée non prise en charge."
  },
  {
+  "cle": "trommelen2023",
+  "auteurs": "Trommelen J, van Lieshout GAA, Nyakayiru J, et al.",
+  "annee": 2023,
+  "titre": "The anabolic response to protein ingestion during recovery from exercise has no upper limit in magnitude and duration in vivo in humans",
+  "revue": "Cell Rep Med 4(12):101324",
+  "doi": "10.1016/j.xcrm.2023.101324",
+  "url": "https://doi.org/10.1016/j.xcrm.2023.101324",
+  "type": "essai",
+  "niveau": "B",
+  "verifie": true,
+  "note": "100 g vs 25 g de protéines après exercice : réponse anabolique plus forte et plus longue (> 12 h), oxydation négligeable (résumé, PMID 38118410)."
+ },
+ {
   "cle": "truecoach-appstore",
   "auteurs": "TrueCoach",
   "annee": 2026,
@@ -11141,6 +12181,19 @@
   "note": "Licence au campus de Font-Romeu, 1 637 h, stages 50 h (L2) et 200 h (L3), master à Font-Romeu."
  },
  {
+  "cle": "urdampilleta2020",
+  "auteurs": "Urdampilleta A, Arribalzaga S, Viribay A, et al.",
+  "annee": 2020,
+  "titre": "Effects of 120 vs. 60 and 90 g/h Carbohydrate Intake during a Trail Marathon on Neuromuscular Function and High Intensity Run Capacity Recovery",
+  "revue": "Nutrients 12(7):2094",
+  "doi": "10.3390/nu12072094",
+  "url": "https://doi.org/10.3390/nu12072094",
+  "type": "essai",
+  "niveau": "C",
+  "verifie": true,
+  "note": "26 traileurs élites, marathon de 4 000 m D+ : 120 g/h = charge interne plus basse et moindre baisse de saut/1RM à 24 h vs 60 et 90 g/h (résumé, PMID 32679728)."
+ },
+ {
   "cle": "utrail-influenceurs-2026",
   "auteurs": "u-Trail",
   "annee": 2026,
@@ -11178,6 +12231,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "98 joueurs : adhésion meilleure si plus âgés/expérimentés et programme jugé utile, peu intense, fonctionnel, peu chronophage."
+ },
+ {
+  "cle": "vandenbogaerde2011",
+  "auteurs": "Vandenbogaerde TJ, Hopkins WG",
+  "annee": 2011,
+  "titre": "Effects of acute carbohydrate supplementation on endurance performance: a meta-analysis",
+  "revue": "Sports Med 41(9):773-792",
+  "doi": "10.2165/11590520-000000000-00000",
+  "url": "https://doi.org/10.2165/11590520-000000000-00000",
+  "type": "meta-analyse",
+  "niveau": "A",
+  "verifie": true,
+  "note": "73 études/122 estimations : effets de +6 % à −2 % selon la formule ; meilleure formule ~0,7 g/kg/h glucose + 0,2 g/kg/h fructose + 0,2 g/kg/h protéines ; > 0,25 g/kg/h de fructose réduit l'effet ; effet du sel trivial (résumé, PMID 21846165)."
  },
  {
   "cle": "vandervlist2020",
@@ -11451,6 +12517,19 @@
   "niveau": "C",
   "verifie": true,
   "note": "162 traileurs : 3,09 blessures/1000 h pour le 46 km vs 0,68 (80 km) et 1,09 (161 km) ; 89 % au membre inférieur ; muscle/tendon 56 % (PMID 37976906)."
+ },
+ {
+  "cle": "viner2015",
+  "auteurs": "Viner RT, Harris M, Berning JR, Meyer NL",
+  "annee": 2015,
+  "titre": "Energy Availability and Dietary Patterns of Adult Male and Female Competitive Cyclists With Lower Than Expected Bone Mineral Density",
+  "revue": "Int J Sport Nutr Exerc Metab 25(6):594-602",
+  "doi": "10.1123/ijsnem.2015-0073",
+  "url": "https://doi.org/10.1123/ijsnem.2015-0073",
+  "type": "observationnelle",
+  "niveau": "C",
+  "verifie": true,
+  "note": "10 cyclistes route/VTT à densité osseuse basse : 70-90 % en DE < 30 kcal/kg FFM/j selon la période ; 70 % mangeurs restrictifs ; glucides 3,7-4,3 g/kg/j (résumé, PMID 26131616)."
  },
  {
   "cle": "visentini2022",

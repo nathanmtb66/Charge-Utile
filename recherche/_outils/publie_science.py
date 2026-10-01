@@ -22,7 +22,9 @@ manq = cites - {s['cle'] for s in ok}
 sections = ['## En 1 minute', "## Tableau d'affirmations", '## Chiffres clés', '## Mythes et verdicts', "## Règles pour l'entraîneur", "## Ce que l'appli devrait faire"]
 absentes = [s for s in sections if s not in corps]
 lignes = len([l for l in corps.split('\n') if re.match(r'^\| .* \| (A|B|C|D)[^|]*\|', l)])
-regles = len(re.findall(r'^\d+\. ', corps[corps.find("## Règles pour l'entraîneur"):corps.find("## Ce que l'appli")], re.M))
+_r = corps[corps.find("## Règles pour l'entraîneur") + 5:]
+_fin = re.search(r'^## ', _r, re.M)
+regles = len(re.findall(r'^\d+\. ', _r[:_fin.start()] if _fin else _r, re.M))
 print(f'{X} : {len(ok)} sources vérifiées, {len(forts)} méta/RS/consensus, {len(cites)} citées, {lignes} lignes d\'affirmations, {regles} règles')
 pb = []
 if len(ok) < 30: pb.append('moins de 30 sources')
