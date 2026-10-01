@@ -1,5 +1,7 @@
 # E — Nutrition et compléments
 
+*Relu par un contradicteur le 1er octobre 2026 : 10 corrections appliquées (voir _brut/revue-science-EH.md).*
+
 *Collecte du 1er octobre 2026. Les articles ont été ouverts via l'API Europe PMC (résumé lu) ; les pages officielles (AIS, Informed Sport, AFNOR, AMA) ont été ouvertes avec WebFetch. Chiffres repris des résumés ou des pages uniquement. Public visé : athlètes d'endurance 18-25 ans (XCO, route, trail court), 8-20 h d'endurance/sem, 1-3 séances de muscu, vivant à 1 800 m (Font-Romeu).*
 
 *Rappel de posture : ce fichier donne des repères d'entraîneur, pas un plan diététique. Tout athlète avec un historique de troubles alimentaires, de fractures de fatigue, d'aménorrhée, d'anémie ou de perte de poids non voulue doit être orienté vers un médecin du sport et un diététicien du sport. L'appli ne doit jamais calculer une « perte de poids cible ».*
@@ -9,11 +11,11 @@
 - **Manger assez passe avant tout.** Le manque d'énergie chronique (REDs) touche filles et garçons, abîme la santé et la performance [@mountjoy2023] [@melin2024]. Les cyclistes sont un public à risque [@viner2015] [@keay2018]. L'appli ne prescrit jamais de perte de poids.
 - **Les glucides sont le carburant de l'intensité.** 8-12 g/kg/j pour remplir le glycogène [@kerksick2017] ; à l'effort 30-60 g/h, jusqu'à 90 g/h au-delà de 2,5 h avec un mélange glucose + fructose [@burke2011] [@rowlands2015]. 120 g/h reste expérimental [@podlogar2022].
 - **« Train low » et cétogène ne rendent pas plus performant** chez l'endurant entraîné (SMD 0,17, NS ; cétogène neutre ou nuisible) [@gejl2021] [@leaf2024] [@burke2020].
-- **Protéines : ~1,6 g/kg/j, en 4 prises de 0,3-0,4 g/kg** ; plateau des gains à 1,62 g/kg/j [@morton2018] [@jager2017] [@schoenfeld2018]. L'endurant a besoin d'environ 1,65-1,83 g/kg/j [@kato2016].
-- **Récupération rapide (< 8 h entre deux séances) : ~1 g/kg/h de glucides pendant 4 h** ; les protéines n'accélèrent pas le glycogène, elles réparent le muscle [@burke2017] [@craven2021] [@margolis2021].
-- **Boire à la soif** suffit le plus souvent ; l'hyponatrémie vient de trop boire, pas de manquer de sel [@goulet2013] [@almond2005] [@hoffman2015]. Pour se réhydrater vite : ~1,5 L par kg perdu, avec du sel [@shirreffs1996].
-- **Compléments : très peu ont des preuves** (groupe A de l'AIS : caféine, créatine, nitrate, bêta-alanine, bicarbonate) [@ais-groupe-a] [@maughan2018]. Caféine 3-6 mg/kg [@guest2021]. Le nitrate ne marche pas chez les très entraînés [@senefeld2020]. Cétones : aucun effet [@brooks2022]. Fortes doses de vitamines C/E : freinent les adaptations [@paulsen2014].
-- **Dopage involontaire : 9 à 28 % des compléments testés contiennent des substances non déclarées** [@alsaad2026] [@kozhuharov2022]. Labels : Informed Sport (chaque lot testé) ; la norme NF V94-001 a été remplacée par NF EN 17444 en 2021 [@informedsport-processus] [@cespharm2021].
+- **Protéines : ~1,6 g/kg/j, en 4 prises de 0,3-0,4 g/kg** ; plateau des gains à 1,62 g/kg/j [@morton2018] [@jager2017] [@schoenfeld2018]. Un essai sur 6 coureurs suggère 1,65-1,83 g/kg/j un jour de gros volume [@kato2016].
+- **Récupération rapide (< 8 h entre deux séances) : 1,0-1,2 g/kg/h de glucides pendant 4 h** ; les protéines n'accélèrent pas le glycogène, elles réparent le muscle [@burke2017] [@kerksick2017] [@craven2021] [@margolis2021].
+- **Boire à la soif** suffit le plus souvent ; l'hyponatrémie vient de trop boire, pas de manquer de sel [@goulet2013] [@almond2005] [@hoffman2015]. Pour se réhydrater vite, si une séance arrive dans la journée : ~1,5 L par kg perdu, avec un repas ou une boisson salés ; sinon à la soif [@shirreffs1996].
+- **Compléments : très peu ont des preuves** (groupe A de l'AIS : caféine, créatine, nitrate, bêta-alanine, bicarbonate) [@ais-groupe-a] [@maughan2018]. Caféine : les essais utilisent 3-6 mg/kg ; l'appli ne calcule pas de dose [@guest2021]. Le nitrate ne marche pas chez les très entraînés [@senefeld2020]. Cétones : aucun effet [@brooks2022]. Fortes doses de vitamines C/E : freinent des marqueurs cellulaires ; VO2max et performance inchangées sur 11 semaines [@paulsen2014].
+- **Dopage involontaire : 9 à 28 % des compléments testés contiennent des substances non déclarées** [@alsaad2026] [@kozhuharov2022]. Le 28 % compte toute substance non déclarée, sur des produits souvent suspects. Préférer un produit **testé par lot** (Informed Sport). La norme NF EN 17444 (qui a remplacé NF V94-001 en 2021) atteste de bonnes pratiques de fabrication : elle réduit le risque, elle ne garantit pas l'absence de substance interdite [@informedsport-processus] [@cespharm2021] [@afnor-en17444].
 
 ## Tableau d'affirmations
 
@@ -24,9 +26,9 @@
 | Manquer d'énergie de façon prolongée (« faible disponibilité énergétique ») provoque un syndrome santé + performance chez les femmes **et les hommes** (REDs) | A | Consensus CIO 2023 ; > 170 nouvelles études depuis 2018 ; nouvel outil clinique (CAT2) | [@mountjoy2023] | Afficher un module d'information REDs ; ne jamais faire de dépistage « maison » : orienter vers un médecin |
 | La faible disponibilité en **glucides** (pas seulement en calories) joue un rôle croissant dans le REDs | A | Mis en avant comme nouveauté du consensus 2023 | [@mountjoy2023] | Ne pas encourager les régimes pauvres en glucides chez l'endurant en charge |
 | Le seuil historique : en dessous de ~30 kcal/kg de masse maigre/jour, le système hormonal se dérègle (chez des femmes sédentaires, 5 jours) | B | LH normale à 30 kcal/kg LBM/j ; perturbée à 10-20 ; « niveau sain » utilisé : 45 | [@loucks2003] | Seuil indicatif, pas un objectif ; l'appli ne doit pas calculer la DE de l'athlète (mesure trop imprécise) |
-| Chez les cyclistes compétiteurs, la faible disponibilité énergétique est fréquente et liée à des os fragiles | C | 70-90 % < 30 kcal/kg FFM selon la période ; 70 % « mangeurs restrictifs » ; glucides 3,7-4,3 g/kg/j (n = 10) | [@viner2015] | Les cyclistes sont un public à risque : rappeler que l'os ne se charge pas sur le vélo |
-| Chez 50 cyclistes route hommes, 28 % en faible DE ; ceux en DE basse chronique ont plus d'os fragiles et de signes hormonaux | C | 28 % de DE basse ; association os/hormones/performance | [@keay2018] | Le REDs n'est pas « un problème féminin » ; message à adresser aux garçons aussi |
-| La faible DE nuit à la performance directement (force, endurance) et indirectement (moins de progrès, plus de blessures) | B | Revue narrative ; une restriction modérée et encadrée peut améliorer le rapport poids/puissance, une restriction sévère ou prolongée nuit | [@melin2024] | Toute démarche « poids » doit être encadrée par un pro, courte, et jamais dans l'appli |
+| Chez 10 cyclistes choisis pour une densité osseuse sous la moyenne (Z < 0), 70 à 90 % étaient en faible disponibilité énergétique selon la période | C | 70-90 % < 30 kcal/kg FFM selon la période ; 70 % « mangeurs restrictifs » ; glucides 3,7-4,3 g/kg/j (n = 10, 29-49 ans) ; tous choisis sur ce critère : l'étude ne montre pas de lien entre énergie et os | [@viner2015] | Les cyclistes sont un public à risque : rappeler que l'os ne se charge pas sur le vélo. Antécédent de fracture de fatigue, règles absentes ou perte de poids non voulue → pas de sauts avant l'accord d'un médecin du sport |
+| Chez 50 cyclistes route hommes, 28 % en faible DE ; ceux en DE basse chronique ont une densité osseuse plus basse et plus de signes hormonaux | C | 28 % de DE basse ; association os/hormones/performance | [@keay2018] | Le REDs n'est pas « un problème féminin » ; message à adresser aux garçons aussi |
+| La faible DE nuit à la performance directement (force, endurance) et indirectement (moins de progrès, plus de blessures) | B | Revue narrative ; une restriction modérée et encadrée peut améliorer le rapport poids/puissance, une restriction sévère ou prolongée nuit (phrase réservée au coach : ne jamais la montrer à l'athlète) | [@melin2024] | Toute démarche « poids » doit être encadrée par un pro, courte, et jamais dans l'appli |
 | Les grimpeurs (escalade) cherchent souvent un poids bas : DE sous-optimale chez 88 %, basse chez 28 % ; glucides ~3,4-3,8 g/kg/j | C | n = 25 grimpeurs avancés/élite | [@monedero2023] | Même culture du « léger » chez les cyclistes grimpeurs : vigilance, pas de prescription de perte de poids |
 | Le régime cétogène est neutre ou nuisible à la performance d'endurance malgré une forte oxydation des graisses | A | Consensus ISSN 2024 : oxydation des graisses ~1,5 g/min ; toutes les études chez des élites montrent une baisse de performance | [@leaf2024] [@burke2020] | Ne jamais proposer de « céto » à un athlète en compétition |
 | Chez des marcheurs élites, le cétogène dégrade l'économie et la performance ; l'alimentation riche en glucides améliore le 10 km | B | HCHO : +4,8 % (134 s) sur 10 km ; LCHF : oxydation des graisses 0,6 → 1,3 g/min mais coût en O2 plus élevé | [@burke2020] | Argument clair contre le « fat adapted » pour les courses intenses (XCO, trail court) |
@@ -36,13 +38,13 @@
 | Affirmation | Preuve | Chiffres | Sources | Application pour l'appli / le coach |
 |---|---|---|---|---|
 | Les besoins en glucides se calent sur la charge d'entraînement du jour (« disponibilité en glucides ») | A | Consensus ACSM/AND/DC : quantités et timing à adapter au scénario ; renvoi vers un diététicien | [@thomas2016] [@burke2011] | Le conseil glucides de l'onglet Récup doit dépendre du type et de la durée de séance, pas être fixe |
-| Les réserves de glycogène sont maximales avec 8-12 g/kg/j de glucides | A | ISSN : 8-12 g/kg/j | [@kerksick2017] | Jours de gros volume / veille de course : viser le haut de la fourchette |
-| Une seule journée à ~10 g/kg de glucides avec repos suffit à remplir le glycogène | B | Glycogène 95 → 180 mmol/kg après 1 jour ; pas de gain les 2 jours suivants (n = 8) | [@bussau2002] | Charge en glucides de veille de course : 24-36 h suffisent, pas une semaine |
+| Les réserves de glycogène sont maximales avec 8-12 g/kg/j de glucides | A | ISSN : 8-12 g/kg/j | [@kerksick2017] | 6-10 g/kg sur la journée après une sortie longue ; 8-12 seulement veille de course longue ou journée de plus de 4-5 h |
+| Une seule journée à ~10 g/kg de glucides avec repos suffit à remplir le glycogène | B | Glycogène 95 → 180 mmol/kg après 1 jour ; pas de gain les 2 jours suivants (n = 8 hommes, au repos) | [@bussau2002] | Charge en glucides de veille de course : 24-36 h suffisent, pas une semaine ; 7-10 g/kg si la course dure moins de 90 min, 10-12 au-delà |
 | Pendant l'effort : petites quantités (voire rinçage de bouche) pour ~1 h ; 30-60 g/h pour plus long ; jusqu'à 90 g/h au-delà de 2,5 h | A | 30-60 g/h ; ≤ 90 g/h si > 2,5 h | [@burke2011] [@kerksick2017] | Conseil « pendant la sortie » selon la durée prévue |
 | Les glucides pendant l'effort améliorent nettement la performance d'endurance | A | 73 études / 122 estimations : de +6 % à −2 % selon la formule ; meilleure formule ~0,7 g/kg/h glucose + 0,2 g/kg/h fructose (+ 0,2 g/kg/h protéines) | [@vandenbogaerde2011] | Calcul en g/kg/h possible, mais afficher plutôt en g/h arrondis |
 | Le mélange glucose(maltodextrine) + fructose fait mieux que le glucose seul quand on mange beaucoup | A | Ratio 0,5-1:1 à 1,3-2,4 g/min : +1 à +9 % de puissance sur 2,5-3 h ; ratio 0,8:1 le meilleur à 1,5-1,8 g/min | [@rowlands2015] [@dezfuli2025] | Au-delà de 60 g/h : conseiller des produits « 2:1 » ou « 1:0,8 » |
 | Le mélange glucose-fructose augmente l'oxydation des glucides ingérés | A | Méta 14 ECR, 125 athlètes : oxydation exogène +0,27 g/min avec glucose-fructose | [@dezfuli2025] | Justification physiologique des boissons « multi-sucres » |
-| 120 g/h (0,8:1) augmente l'oxydation exogène vs 90 g/h, sans épargner davantage le glycogène | B | 1,51 vs 1,29 g/min exogène ; endogène identique (2,15 vs 2,20 g/min) ; n = 11 cyclistes | [@podlogar2022] | 120 g/h n'est pas un objectif par défaut : réservé à des athlètes entraînés de l'intestin, sur courses longues |
+| 120 g/h (0,8:1) augmente l'oxydation exogène vs 90 g/h, sans épargner davantage le glycogène | C | 1,51 vs 1,29 g/min exogène ; endogène identique (2,15 vs 2,20 g/min) ; n = 11 cyclistes hommes ; le ratio diffère aussi entre les deux conditions (0,8:1 contre 1:2) | [@podlogar2022] | 120 g/h n'est pas un objectif par défaut : réservé à des athlètes entraînés de l'intestin, sur courses longues |
 | Sur un marathon de montagne, 120 g/h a limité la fatigue neuromusculaire à 24 h par rapport à 60 et 90 g/h | C | 26 traileurs élites ; moindre baisse de saut et de 1RM demi-squat à 24 h ; charge interne plus basse | [@urdampilleta2020] | Piste intéressante pour le trail, preuve faible (petit essai) |
 | L'intestin s'entraîne : manger régulièrement des glucides à l'effort réduit l'inconfort et la malabsorption | B | Revue systématique 8 études : inconfort −47 % après 2 sem ; malabsorption −45 à −54 % ; pas de changement de vidange gastrique | [@martinez2023] [@jeukendrup2017] | Programme « entraîner l'intestin » sur les sorties longues 4-6 semaines avant l'objectif |
 | « Train low » (s'entraîner glycogène bas) active des signaux moléculaires, surtout si le glycogène est très bas | B | Méta 19 ECR : PDK4, GLUT4, UCP3 ↑ ; PGC-1α ↑ seulement si écart de glycogène > 200 mmol/kg | [@diazlara2025] | Mécanisme réel, mais ne prouve pas un gain de performance |
@@ -55,7 +57,7 @@
 |---|---|---|---|---|
 | Pour construire ou garder du muscle, 1,4-2,0 g/kg/j de protéines suffisent à la plupart des sportifs | A | ISSN : 1,4-2,0 g/kg/j ; 2,3-3,1 g/kg/j seulement en restriction calorique chez des pratiquants de muscu | [@jager2017] | Repère par défaut : 1,6 g/kg/j ; jamais de « plus c'est mieux » |
 | Au-delà d'environ 1,6 g/kg/j, ajouter des protéines n'augmente plus les gains de masse maigre liés à la muscu | A | 49 ECR, 1 863 participants ; plateau à 1,62 g/kg/j (IC jusqu'à ~2,2) | [@morton2018] | Si l'athlète est déjà à ~1,6 g/kg/j via l'alimentation, pas besoin de poudre |
-| Les endurants ont besoin de plus que la recommandation générale (0,8 g/kg/j) | B | Méthode IAAO après 20 km de course : besoin moyen 1,65, recommandé 1,83 g/kg/j (n = 6) | [@kato2016] | Endurant + muscu : viser 1,6-1,8 g/kg/j |
+| Un essai sur 6 coureurs suggère 1,65-1,83 g/kg/j un jour de gros volume, plus que la recommandation générale (0,8 g/kg/j) | C | Méthode IAAO après 20 km de course : besoin moyen 1,65, recommandé 1,83 g/kg/j (n = 6 hommes, un seul jour, protéines en acides aminés libres) | [@kato2016] | Endurant + muscu : viser 1,6-1,8 g/kg/j |
 | Le besoin en protéines ne monte pas avec un volume d'endurance modéré (10 vs 20 km), et serait même plus élevé les jours de repos | C | IAAO, hommes entraînés, apport test 0,93 g/kg/j | [@moore2024] | Garder un apport régulier aussi les jours off |
 | Par repas : ~0,25-0,40 g/kg (20-40 g) de protéines de qualité toutes les 3-4 h | A | ISSN : 0,25 g/kg ou 20-40 g ; 700-3 000 mg de leucine par prise | [@jager2017] [@kerksick2017] | Conseil post-séance : 0,3 g/kg ; répartir sur 4 prises dans la journée |
 | Pour maximiser l'anabolisme : 0,4 g/kg/repas sur au moins 4 repas (≥ 1,6 g/kg/j), au plus ~0,55 g/kg/repas | B | 0,4 g/kg × 4 ; plafond 2,2 g/kg/j → 0,55 g/kg/repas | [@schoenfeld2018] | Afficher « 0,3-0,4 g/kg » comme cible par repas |
@@ -73,8 +75,8 @@
 
 | Affirmation | Preuve | Chiffres | Sources | Application pour l'appli / le coach |
 |---|---|---|---|---|
-| Dans les 0-4 h après l'effort, ~1 g/kg/h de glucides optimise la resynthèse du glycogène ; ensuite, c'est le total sur 24 h qui compte | A | ~1 g/kg ; phase tardive 4-24 h : quantité totale > type ou forme | [@burke2017] | Si une 2e séance arrive dans < 8 h : conseil « 1 g/kg/h pendant 4 h » ; sinon repas normaux riches en glucides |
-| Manger des glucides pendant la récupération courte (≤ 8 h) accélère nettement la resynthèse par rapport à l'eau | A | 1,02 g/kg/h : +23,5 mmol/kg ms/h vs eau ; mieux si apports au moins toutes les heures | [@craven2021] | Prises fractionnées (toutes les 30-60 min) plutôt qu'un seul repas |
+| Dans les 0-4 h après l'effort, 1,0-1,2 g/kg/h de glucides optimise la resynthèse du glycogène ; ensuite, c'est le total sur 24 h qui compte | A | Burke : « ~1 g/kg » (sans « par heure » dans le résumé) ; ISSN : 1,2 g/kg/h si moins de 4 h de récupération ; phase tardive 4-24 h : quantité totale > type ou forme | [@burke2017] [@kerksick2017] | Si une 2e séance arrive dans < 8 h : conseil « 1,0-1,2 g/kg/h pendant 4 h » ; sinon repas normaux riches en glucides |
+| Manger des glucides pendant la récupération courte (≤ 8 h) accélère nettement la resynthèse par rapport à l'eau | A | 1,02 g/kg/h (dose moyenne des essais, pas un optimum) : +23,5 mmol/kg ms/h vs eau ; mieux si apports au moins toutes les heures | [@craven2021] | Prises fractionnées (toutes les 30-60 min) plutôt qu'un seul repas |
 | Ajouter des protéines aux glucides n'accélère pas la resynthèse si les glucides sont déjà suffisants | A | CHO+PRO vs CHO : +0,4 mmol/kg ms/h, p = 0,81 ; méta 20 études : g = 0,13 NS ; bénéfice seulement si les protéines s'ajoutent (pas se substituent) | [@craven2021] [@margolis2021] | Les protéines post-séance servent la réparation musculaire, pas le glycogène ; ne pas remplacer des glucides par des protéines |
 | Si les glucides sont limités, glucides 0,8 g/kg/h + protéines 0,2-0,4 g/kg/h, ou caféine 3-8 mg/kg, aident la resynthèse | B | ISSN nutrient timing | [@kerksick2017] [@burke2017] | Option « appétit faible » : boisson lactée sucrée |
 
@@ -82,7 +84,7 @@
 
 | Affirmation | Preuve | Chiffres | Sources | Application pour l'appli / le coach |
 |---|---|---|---|---|
-| Les pertes de sueur varient énormément d'un athlète à l'autre : la seule façon de les connaître est de se peser avant/après | A | ACSM : programme individualisé ; estimer la sudation par la pesée | [@sawka2007] [@mcdermott2017] | Fonction « test de sudation » : poids avant/après + boisson bue → L/h perdus |
+| Les pertes de sueur varient énormément d'un athlète à l'autre : la seule façon de les connaître est de se peser avant/après | A | ACSM : programme individualisé ; estimer la sudation par la pesée | [@sawka2007] [@mcdermott2017] | Fonction « test de sudation » : différence de poids avant/après + boisson bue → L/h perdus. Facultatif, réservé aux adultes, désactivé pour les mineurs et pour tout athlète signalé à risque |
 | Chez les sportifs d'endurance, la sudation moyenne est ~1,3 L/h et la perte de sodium ~52 mmol/h | B | 1 303 athlètes : endurance 1,28 ± 0,57 L/h ; 51,7 ± 27,8 mmol Na/h (≈ 1,2 g de sodium/h, calcul : 1 mmol = 23 mg) | [@barnes2019] | Valeurs de départ par défaut si l'athlète n'a pas fait son test ; écarts-types énormes → personnaliser |
 | La concentration de sodium dans la sueur s'explique mal : les facteurs connus n'expliquent que 17-23 % des différences | B | 1 944 tests ; principaux facteurs : dépense énergétique et saison (acclimatation) | [@baker2022] | Ne pas prétendre prédire le sodium perdu à partir de l'âge, du sexe ou du poids |
 | L'ACSM vise à éviter une perte de poids par déshydratation > 2 % | A | Seuil de 2 % du poids ; boissons avec électrolytes + glucides utiles dans certains cas | [@sawka2007] | Repère d'alerte, pas une règle absolue (voir ligne suivante) |
@@ -90,7 +92,7 @@
 | L'hyponatrémie (sodium sanguin trop bas) vient surtout de **trop boire**, pas d'un manque de sel | B | Boston 2002 : 13 % des finishers en hyponatrémie (≤ 135 mmol/L), 0,6 % critique ; facteurs : prise de poids pendant la course (OR 4,2), > 3 L bus, temps > 4 h | [@almond2005] | Alerte si l'athlète **prend** du poids pendant une sortie longue : « tu as trop bu » |
 | Les pastilles de sel ne protègent pas de l'hyponatrémie ; c'est la surhydratation qui la provoque | B | Western States 161 km : 6,6 % d'hyponatrémie ; 93,9 % prenaient du sel ; pas de différence d'apport en sel entre groupes | [@hoffman2015] | Ne pas vendre le sel comme assurance anti-hyponatrémie |
 | Remplacer le sodium à l'effort n'est nécessaire que si l'effort est très long, qu'on boit > 80 % de ses pertes et que la sueur est salée (≥ 40 mmol/L) | C | Modélisation : inutile sur un marathon élite ; utile sur 160 km | [@mccubbin2023] | Pour XCO (1h30) et trail court : sel « au goût » ; tests de sueur inutiles pour la plupart |
-| Pour se réhydrater après l'effort, il faut boire **plus** que ce qu'on a perdu, avec du sodium | B | 150 % des pertes ; boisson à 61 mmol/L de Na retient mieux que 23 mmol/L ; à 200 %, on urine l'excédent | [@shirreffs1996] [@sawka2007] | Après séance : ~1,5 L par kg perdu, avec un repas salé ou une boisson salée |
+| Pour se réhydrater après l'effort, il faut boire **plus** que ce qu'on a perdu, avec du sodium | B | 150 % des pertes ; boisson à 61 mmol/L de Na retient mieux que 23 mmol/L ; à 200 %, on urine l'excédent | [@shirreffs1996] [@sawka2007] | Après séance : ~1,5 L par kg perdu, avec un repas ou une boisson salés, si une séance arrive dans la journée ; sinon à la soif |
 | Trop boire et pas assez boire ont chacun des risques ; il faut éduquer et quantifier la sudation | A | Position NATA 2017 | [@mcdermott2017] | Le module hydratation doit parler des deux risques |
 
 ### Compléments : cadre AIS (A/B/C/D) et consensus CIO 2018
@@ -107,7 +109,7 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 | Affirmation | Preuve | Chiffres | Sources | Application pour l'appli / le coach |
 |---|---|---|---|---|
 | Les compléments n'apportent qu'une petite contribution ; seuls quelques-uns ont de bonnes preuves : caféine, créatine, tampons (bicarbonate, bêta-alanine), nitrate | A | Consensus CIO 2018 ; bilan nutritionnel complet avant toute décision ; tester à l'entraînement avant la course | [@maughan2018] [@ais-groupe-a] | L'appli ne « recommande » pas de complément : elle explique le niveau de preuve et renvoie vers un diététicien |
-| Caféine : 3-6 mg/kg ~60 min avant améliore la performance, surtout en endurance | A | ISSN : 3-6 mg/kg ; dose minimale peut-être 2 mg/kg ; 9 mg/kg = effets indésirables sans gain ; en altitude 4-6 mg/kg | [@guest2021] [@grgic2020] | Fiche caféine : commencer bas (2-3 mg/kg), tester à l'entraînement, attention au sommeil et à l'anxiété |
+| Caféine : dans les essais, 3-6 mg/kg ~60 min avant améliore la performance, surtout en endurance | A | ISSN : 3-6 mg/kg ; dose minimale peut-être 2 mg/kg ; 9 mg/kg = effets indésirables sans gain ; en altitude 4-6 mg/kg | [@guest2021] [@grgic2020] | Fiche caféine d'information : l'appli ne calcule pas de dose. Si l'athlète en prend déjà : tester à l'entraînement, jamais en fin de journée, jamais pour un mineur ; attention au sommeil et à l'anxiété |
 | La revue parapluie confirme l'effet de la caféine, plus net en aérobie qu'en anaérobie ; surtout testé chez de jeunes hommes | A | 21 méta-analyses, qualité de preuve modérée | [@grgic2020] | Préciser que les données féminines sont plus rares |
 | Créatine chez l'endurant : aide les relances, les sprints et la fin de course, mais fait prendre de la masse, ce qui peut annuler le gain en sport porté | C | Revue narrative ; temps limite à haute intensité ↑ ; CLM : résultats mitigés ; cite VTT, ski de fond, cyclisme comme sports candidats | [@forbes2023] [@kreider2017] | Possible intérêt en bloc de muscu hivernal et en XCO ; ne pas présenter comme incontournable ; décision avec un pro |
 | La créatine est sûre aux doses usuelles chez l'adulte en bonne santé | A | ISSN : jusqu'à 30 g/j pendant 5 ans bien tolérés | [@kreider2017] | Répondre au mythe « la créatine abîme les reins » chez le sujet sain ; avis médical si antécédent rénal |
@@ -127,11 +129,11 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 
 | Affirmation | Preuve | Chiffres | Sources | Application pour l'appli / le coach |
 |---|---|---|---|---|
-| Une part non négligeable des compléments du commerce contient des substances interdites non déclarées | A | Revue systématique 2026 (44 études) : ~9-15 % ; surtout stimulants et anabolisants ; produits pré-entraînement, minceur, prise de muscle les plus touchés | [@alsaad2026] | Alerte systématique dans l'appli dès qu'on parle de complément |
-| D'autres revues trouvent plus : 28 % des produits analysés avec une substance non déclarée ; ~15 % de compléments non hormonaux contaminés par des stéroïdes (2001-2002) | B | 875/3 132 produits (50 études) ; 634 produits de 13 pays | [@kozhuharov2022] [@geyer2008] | Chiffres variables selon l'échantillon (produits suspects sur-représentés) : dire « de 1 sur 10 à 1 sur 4 » |
+| Une part non négligeable des compléments du commerce contient des substances interdites non déclarées | B | Une seule revue systématique (2026, 44 études), produits non représentatifs : ~9-15 % ; surtout stimulants et anabolisants ; produits pré-entraînement, minceur, prise de muscle les plus touchés | [@alsaad2026] | Alerte systématique dans l'appli dès qu'on parle de complément |
+| D'autres revues trouvent plus : 28 % des produits analysés avec une substance non déclarée ; ~15 % de compléments non hormonaux contaminés par des stéroïdes (2001-2002) | B | 875/3 132 produits (50 études) ; 634 produits de 13 pays | [@kozhuharov2022] [@geyer2008] | Chiffres variables selon l'échantillon (produits suspects sur-représentés ; le 28 % compte toute substance non déclarée) : dire « de 1 sur 10 à 1 sur 4 des produits testés » |
 | Le sportif reste responsable de ce qu'il avale ; un contrôle positif par contamination reste une violation | A | Consensus CIO 2018 : risque de violation des règles antidopage par ingestion involontaire | [@maughan2018] | Rappel pour les athlètes de niveau national (contrôlables) |
 | Informed Sport teste **chaque lot** avant mise en vente, pour plus de 285 substances, dans un laboratoire accrédité ISO 17025 (LGC) | D | Page officielle ; seuils de détection non précisés sur la page | [@informedsport-processus] | Conseiller de vérifier le numéro de lot sur le site du label |
-| La norme française NF V94-001 (2012) a été **remplacée** en 2021 par la norme européenne NF EN 17444 ; elle est volontaire et porte sur les bonnes pratiques de fabrication | D | Publiée en 2021 ; depuis le 21/08/2021 l'ancienne norme ne peut plus être invoquée ; norme « en réexamen » sur la fiche AFNOR | [@cespharm2021] [@afnor-en17444] | Écrire « NF EN 17444 (ex NF V94-001) » dans l'appli ; préciser qu'une norme de fabrication n'est pas une analyse de chaque lot |
+| La norme française NF V94-001 (2012) a été **remplacée** en 2021 par la norme européenne NF EN 17444 ; elle est volontaire et porte sur les bonnes pratiques de fabrication | D | Publiée en 2021 ; depuis le 21/08/2021 l'ancienne norme ne peut plus être invoquée ; norme « en réexamen » sur la fiche AFNOR, qui précise : limiter le risque « sans pour autant en garantir l'absence totale » | [@cespharm2021] [@afnor-en17444] | Écrire « NF EN 17444 (ex NF V94-001) » dans l'appli ; préciser qu'une norme de fabrication n'est pas une analyse de chaque lot |
 
 ### Alcool, altitude
 
@@ -141,7 +143,7 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 | L'alcool gêne la recharge en glycogène surtout parce qu'il prend la place des glucides | B | Glycogène à 8 h : 24,4 vs 44,6 mmol/kg quand l'alcool remplace les glucides ; pas de différence à 24 h si les glucides sont maintenus | [@burke2003] | Si l'athlète boit : manger d'abord le repas de récupération |
 | Après muscu, l'alcool ne change pas la force ni les courbatures à court terme, mais baisse testostérone et synthèse protéique et monte le cortisol | B | Revue systématique, 12 études | [@lakicevic2019] | Ne pas dramatiser un verre ; déconseiller les grosses quantités |
 | À 1 600-2 400 m, deux risques nutritionnels dominent : manquer d'énergie et manquer de fer | B | Revue narrative ; antioxydants : aliments plutôt que fortes doses | [@stellingwerff2019] | Font-Romeu (1 800 m) : rappeler de manger assez, surtout les premières semaines et pour les athlètes en stage |
-| En altitude, la masse d'hémoglobine augmente plus chez ceux qui prennent du fer | B | 178 athlètes, ~21 j à 1 350-3 000 m : Hbmass +1,1 % (sans fer), +3,3 % (105 mg/j), +4,0 % (210 mg/j) ; ferritine −33 % sans fer | [@govus2015] | Avant un stage : bilan sanguin (ferritine) chez le médecin ; le fer se prescrit, il ne s'improvise pas |
+| En altitude, la masse d'hémoglobine augmente plus chez ceux qui prennent du fer | C | Étude d'observation, doses non tirées au sort. 178 athlètes, ~21 j à 1 350-3 000 m : Hbmass +1,1 % (sans fer), +3,3 % (105 mg/j), +4,0 % (210 mg/j) ; ferritine −33 % sans fer. Constat d'étude : ces doses ne passent jamais côté athlète | [@govus2015] | Avant un stage : bilan sanguin (ferritine) chez le médecin ; le fer se prescrit, il ne s'improvise pas |
 | La caféine reste efficace en altitude | A | ISSN : 4-6 mg/kg en altitude | [@guest2021] | Information utile pour les courses en montagne |
 
 ### Compléments du tableau : muscu et glucides, repères ultra
@@ -154,27 +156,27 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 
 ## Chiffres clés
 
-- **Disponibilité énergétique** : seuil historique de 30 kcal/kg de masse maigre/jour, référence « saine » 45 [@loucks2003]. 70-90 % de 10 cyclistes à os fragiles étaient sous ce seuil [@viner2015] ; 28 % de 50 cyclistes route hommes en faible DE [@keay2018].
-- **Glucides/jour** : 8-12 g/kg/j pour maximiser le glycogène [@kerksick2017] ; 5-8 g/kg/j à l'entraînement en ultra [@tiller2019] ; ~10 g/kg sur 24 h au repos suffit à remplir (95 → 180 mmol/kg) [@bussau2002].
-- **Glucides à l'effort** : 30-60 g/h ; jusqu'à 90 g/h au-delà de 2,5 h [@burke2011] ; mélange fructose:glucose 0,5-1:1 = +1 à +9 % de puissance sur 2,5-3 h [@rowlands2015] ; 120 g/h : oxydation exogène 1,51 vs 1,29 g/min, glycogène non épargné [@podlogar2022].
+- **Disponibilité énergétique** : seuil historique de 30 kcal/kg de masse maigre/jour, référence « saine » 45 [@loucks2003]. 70-90 % de 10 cyclistes choisis pour une densité osseuse sous la moyenne (Z < 0) étaient sous ce seuil [@viner2015] ; 28 % de 50 cyclistes route hommes en faible DE [@keay2018].
+- **Glucides/jour** : 8-12 g/kg/j pour maximiser le glycogène (veille de course longue, journée de plus de 4-5 h) [@kerksick2017] ; 5-8 g/kg/j à l'entraînement en ultra [@tiller2019] ; repère retenu après une sortie longue : 6-10 g/kg ; ~10 g/kg sur 24 h au repos suffit à remplir (95 → 180 mmol/kg) [@bussau2002].
+- **Glucides à l'effort** : 30-60 g/h ; jusqu'à 90 g/h au-delà de 2,5 h [@burke2011] ; mélange fructose:glucose 0,5-1:1 = +1 à +9 % de puissance sur 2,5-3 h [@rowlands2015] ; 120 g/h : oxydation exogène 1,51 vs 1,29 g/min, glycogène non épargné ; n = 11, ratios différents entre les deux conditions (C) [@podlogar2022].
 - **Intestin** : 2 semaines d'entraînement = inconfort −47 %, malabsorption −45 à −54 % [@martinez2023].
 - **Train low** : pas de gain de performance, SMD 0,17 (p = 0,29) [@gejl2021].
 - **Cétogène** : 10 km +4,8 % avec glucides, aucun gain en cétogène [@burke2020].
-- **Protéines** : 1,4-2,0 g/kg/j [@jager2017] ; plateau à 1,62 g/kg/j [@morton2018] ; endurant 1,65-1,83 g/kg/j [@kato2016] ; 0,25-0,40 g/kg par prise [@kerksick2017] ; 0,4 g/kg × 4 repas [@schoenfeld2018] ; 30 g après endurance [@churchwardvenne2020] ; 30-40 g de caséine au coucher [@jager2017].
-- **Glycogène après l'effort** : ~1 g/kg/h pendant les 4 premières heures [@burke2017] [@craven2021] ; les protéines n'ajoutent rien si les glucides suffisent (+0,4 mmol/kg/h, NS) [@craven2021].
+- **Protéines** : 1,4-2,0 g/kg/j [@jager2017] ; plateau à 1,62 g/kg/j [@morton2018] ; endurant 1,65-1,83 g/kg/j un jour de gros volume (un essai, 6 coureurs, C) [@kato2016] ; 0,25-0,40 g/kg par prise [@kerksick2017] ; 0,4 g/kg × 4 repas [@schoenfeld2018] ; 30 g après endurance [@churchwardvenne2020] ; 30-40 g de caséine au coucher [@jager2017].
+- **Glycogène après l'effort** : 1,0-1,2 g/kg/h pendant les 4 premières heures [@burke2017] [@kerksick2017] [@craven2021] ; les protéines n'ajoutent rien si les glucides suffisent (+0,4 mmol/kg/h, NS) [@craven2021].
 - **Sueur** : 1,28 ± 0,57 L/h et 51,7 ± 27,8 mmol de sodium/h en endurance [@barnes2019].
 - **Déshydratation** : jusqu'à 4 % du poids sans perte de performance en contre-la-montre ; boire à la soif +5,2 % vs boire moins [@goulet2013] [@goulet2011].
 - **Hyponatrémie** : 13 % des finishers de Boston 2002 ; prise de poids = OR 4,2 [@almond2005] ; 6,6 % sur 161 km malgré 94 % de preneurs de sel [@hoffman2015].
-- **Réhydratation** : 150 % des pertes avec ~60 mmol/L de sodium [@shirreffs1996].
-- **Caféine** : 3-6 mg/kg, 60 min avant ; 9 mg/kg inutile [@guest2021].
+- **Réhydratation** : 150 % des pertes avec ~60 mmol/L de sodium (note de labo : un seul essai, 12 hommes ; pas une recette) [@shirreffs1996].
+- **Caféine** : 3-6 mg/kg, 60 min avant, dans les essais ; 9 mg/kg inutile ; pas de dose calculée par l'appli [@guest2021].
 - **Nitrate** : d = 0,174 en général, 0,021 chez les très entraînés [@senefeld2020].
 - **Bêta-alanine** : ES 0,18 [@saunders2017]. **Bicarbonate** : 0,3 g/kg, efforts de 30 s à 12 min [@grgic2021].
 - **Vitamine D** : 0 essai sur 7 avec gain de performance [@farrokhyar2017]. **Fer** : ferritine g = 1,09 chez les carencés [@burden2015] ; effet surtout si ferritine ≤ 12 µg/L [@smid2024].
 - **Cétones** : g = 0,136 (NS) [@brooks2022].
 - **Vitamines C + E** : COX4 +59 % (placebo) vs −13 % [@paulsen2014].
-- **Contamination** : 9-15 % [@alsaad2026] à 28 % [@kozhuharov2022] des compléments testés.
+- **Contamination** : 9-15 % [@alsaad2026] à 28 % [@kozhuharov2022] des compléments testés ; le 28 % compte toute substance non déclarée, sur des produits souvent suspects.
 - **Alcool** : 1,5 g/kg réduit la synthèse protéique [@parr2014] ; glycogène à 8 h 24,4 vs 44,6 mmol/kg si l'alcool remplace les glucides [@burke2003].
-- **Altitude** : masse d'hémoglobine +1,1 % sans fer vs +3,3 à +4,0 % avec fer [@govus2015].
+- **Altitude** : masse d'hémoglobine +1,1 % sans fer vs +3,3 à +4,0 % avec fer (étude d'observation, C) [@govus2015].
 
 ## Mythes et verdicts
 
@@ -186,10 +188,10 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 6. **« Dès 2 % de déshydratation, la performance s'effondre. »** → Vrai seulement à intensité imposée en labo ; en conditions réelles, pas d'effet jusqu'à ~4 % [@goulet2013]. Preuve A.
 7. **« Les pastilles de sel empêchent les crampes et l'hyponatrémie. »** → L'hyponatrémie vient surtout de trop boire [@almond2005] [@hoffman2015]. Pour les crampes : non vérifié ici. Preuve B.
 8. **« Le jus de betterave marche pour tout le monde. »** → Effet petit, et nul chez les athlètes très entraînés [@senefeld2020]. Preuve A.
-9. **« Les antioxydants aident à récupérer, donc à progresser. »** → À forte dose, ils freinent des adaptations à l'endurance [@paulsen2014] [@gonzalez2026]. Preuve B.
+9. **« Les antioxydants aident à récupérer, donc à progresser. »** → À forte dose, ils freinent des marqueurs cellulaires de l'adaptation ; VO2max et performance inchangées sur 11 semaines [@paulsen2014] [@gonzalez2026]. Preuve B.
 10. **« Les cétones sont l'arme secrète des pros. »** → Pas d'effet mesurable sur la performance [@brooks2022]. Preuve A.
-11. **« Un complément vendu en pharmacie ou en magasin de sport est forcément propre. »** → 9 à 28 % des produits testés contiennent des substances non déclarées [@alsaad2026] [@kozhuharov2022]. Preuve A.
-12. **« Plus léger = plus rapide en bosse. »** → À court terme parfois, mais la faible disponibilité énergétique dégrade santé, os et performance [@mountjoy2023] [@melin2024] [@keay2018]. Preuve A.
+11. **« Un complément vendu en pharmacie ou en magasin de sport est forcément propre. »** → 9 à 28 % des produits testés contiennent des substances non déclarées [@alsaad2026] [@kozhuharov2022]. Preuve B.
+12. **« Plus léger = plus rapide en bosse. »** → À court terme parfois, mais la faible disponibilité énergétique dégrade santé, os et performance [@mountjoy2023] [@melin2024] [@keay2018]. Preuve A. *Mythe réservé au coach : ne pas l'afficher à l'athlète.*
 13. **« La créatine, c'est pour les bodybuilders. »** → Elle peut aider relances et sprints en endurance, avec un coût en masse [@forbes2023]. Preuve C.
 14. **« Le végétal empêche de prendre du muscle. »** → À apport protéique égal et suffisant, résultats comparables [@monteyne2023] [@lim2021]. Preuve B.
 15. **« La vitamine D améliore la performance. »** → Elle corrige un déficit ; aucun gain de performance démontré [@farrokhyar2017]. Preuve A.
@@ -204,7 +206,7 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 6. **Pas de « train low » sur les séances clés** (intervalles, muscu lourde, courses). S'il est utilisé, uniquement sur une sortie facile, athlète adulte, sans antécédent de REDs. (A) [@gejl2021]
 7. **Pas de cétogène en saison.** (A) [@leaf2024] [@burke2020]
 8. **À l'effort, selon la durée** : < 1 h : rien ou un peu ; 1-2,5 h : 30-60 g/h ; > 2,5 h : jusqu'à 90 g/h en mélange glucose + fructose. (A) [@burke2011] [@rowlands2015]
-9. **120 g/h n'est pas une cible par défaut.** Seulement après entraînement de l'intestin, sur courses longues. (B/C) [@podlogar2022] [@urdampilleta2020]
+9. **120 g/h n'est pas une cible par défaut.** Seulement après entraînement de l'intestin, sur courses longues. (C) [@podlogar2022] [@urdampilleta2020]
 10. **Entraîner l'intestin** : répéter l'apport de course sur les sorties longues pendant au moins 2 semaines avant l'objectif. (B) [@martinez2023] [@jeukendrup2017]
 11. **Rien de nouveau le jour de la course** : produits et doses testés à l'entraînement. (A) [@maughan2018]
 12. **Protéines : 1,6 g/kg/j comme repère**, jusqu'à ~2,0 en bloc de muscu ou de gros volume. (A) [@morton2018] [@jager2017] [@kato2016]
@@ -212,42 +214,42 @@ Classement lu sur les pages officielles de l'AIS le 01/10/2026 (aucune date de m
 14. **Après la muscu : 0,3-0,4 g/kg de protéines dans le repas qui suit**, sans stress sur la minute près. (A) [@jager2017]
 15. **Jours de repos : garder les protéines.** (C) [@moore2024]
 16. **Collation protéinée du soir (30-40 g)** possible les jours de muscu ou de double séance. (B) [@snijders2015] [@reis2021]
-17. **Deux séances à moins de 8 h : ~1 g/kg/h de glucides jusqu'à 4 h**, en prises fractionnées. (A) [@burke2017] [@craven2021]
+17. **Deux séances à moins de 8 h : 1,0-1,2 g/kg/h de glucides jusqu'à 4 h**, en prises fractionnées. (A) [@burke2017] [@kerksick2017] [@craven2021]
 18. **Plus de 24 h avant la séance suivante : pas d'urgence**, c'est le total du jour qui compte. (A) [@burke2017]
 19. **Ne pas remplacer des glucides par des protéines** après une séance d'endurance. (A) [@margolis2021]
 20. **Muscu : ne pas arriver à jeun** si la séance dure plus de 45 min. (A) [@king2022]
 21. **Boire à la soif** comme règle par défaut ; plan précis seulement pour chaleur ou efforts > 2-3 h. (A) [@goulet2013] [@goulet2011]
-22. **Faire un test de sudation** (pesée avant/après) une fois par saison chaude. (A) [@sawka2007] [@mcdermott2017]
+22. **Test de sudation** (différence de poids avant/après) une fois par saison chaude : facultatif, réservé aux adultes, désactivé pour les mineurs et pour tout athlète signalé à risque. L'appli n'enregistre que la différence avant/après, jamais le poids. (A) [@sawka2007] [@mcdermott2017]
 23. **Ne jamais finir plus lourd qu'au départ** : c'est le signe d'un excès de boisson. (B) [@almond2005] [@hoffman2015]
-24. **Réhydratation rapide : ~1,5 L par kg perdu, avec du sel** (boisson salée ou repas). (B) [@shirreffs1996]
+24. **Réhydratation rapide : ~1,5 L par kg perdu, avec du sel** (repas ou boisson salés), si une séance arrive dans la journée ; sinon à la soif. (B) [@shirreffs1996]
 25. **Sel à l'effort : au goût** pour XCO, route et trail court. (C) [@mccubbin2023]
-26. **Veille de course : ~10 g/kg de glucides sur la journée**, entraînement léger. Inutile de commencer une semaine avant. (B) [@bussau2002] [@kerksick2017]
+26. **Veille de course : 7-10 g/kg de glucides si la course dure moins de 90 min ; 10-12 au-delà.** Aliments connus, peu de fibres, entraînement léger. Inutile de commencer une semaine avant. (B) [@bussau2002] [@kerksick2017]
 27. **Compléments : alimentation d'abord, bilan avec un pro ensuite.** (A) [@maughan2018]
 28. **Ne parler que du groupe A de l'AIS**, et encore, au cas par cas. (A) [@ais-groupe-a]
-29. **Caféine : 3 mg/kg pour commencer**, 60 min avant, testée à l'entraînement ; pas en fin de journée. (A) [@guest2021]
+29. **Caféine** : les essais utilisent 3-6 mg/kg environ 60 min avant ; des effets existent peut-être dès 2 mg/kg. L'appli ne calcule pas de dose. Si l'athlète en prend déjà : tester à l'entraînement, jamais en fin de journée, jamais pour un mineur. (A) [@guest2021]
 30. **Fer et vitamine D : uniquement après prise de sang et avis médical.** (A) [@smid2024] [@burden2015] [@farrokhyar2017]
 31. **Pas de fortes doses de vitamines C/E** en période de développement. (B) [@paulsen2014] [@gonzalez2026]
-32. **Tout complément = risque de contamination.** Exiger un produit testé par lot (Informed Sport) ou conforme NF EN 17444, et garder le numéro de lot. (A/D) [@alsaad2026] [@informedsport-processus] [@cespharm2021]
+32. **Tout complément = risque de contamination.** Préférer un produit **testé par lot** (Informed Sport) et garder le numéro de lot. La mention NF EN 17444 atteste de bonnes pratiques de fabrication : elle réduit le risque, elle ne garantit pas l'absence de substance interdite. (B/D) [@alsaad2026] [@informedsport-processus] [@cespharm2021] [@afnor-en17444]
 33. **Fuir le groupe D** : « brûle-graisses », « boosters de testostérone », pré-entraînements exotiques. (A) [@ais-groupe-d] [@alsaad2026]
 34. **Alcool : manger d'abord le repas de récupération**, limiter fortement après séance clé ou course. (B) [@parr2014] [@burke2003]
 35. **Athlète végétarien/végan : viser le haut de la fourchette de protéines** et orienter vers un diététicien pour fer et B12 (B12 : non vérifié ici). (B) [@monteyne2023] [@lim2021]
-36. **Altitude (Font-Romeu, stages) : manger plus, pas moins**, et faire vérifier la ferritine avant un stage. (B) [@stellingwerff2019] [@govus2015]
+36. **Altitude (Font-Romeu, stages) : manger plus, pas moins**, et faire vérifier la ferritine avant un stage. (B/C) [@stellingwerff2019] [@govus2015]
 
 ## Tableau « conseil de fin de séance »
 
-Quantités par kg de poids de corps. Ce sont des repères d'entraîneur, pas une prescription. Les fourchettes de glucides « muscu », « plio » et « récup » sont des extrapolations prudentes (preuve D) : aucune étude lue ne les fixe précisément. Liquide : valeur par kg **perdu** pendant la séance (pesée) ; sans pesée, boire à la soif.
+Quantités par kg de poids de corps. Ce sont des repères d'entraîneur, pas une prescription. Les fourchettes de glucides « muscu », « plio » et « récup » sont des extrapolations prudentes (preuve D) : aucune étude lue ne les fixe précisément. Liquide : valeur par kg **perdu** pendant la séance (différence avant/après, adultes seulement), utile si une séance arrive dans la journée ; sinon, ou sans pesée, boire à la soif. Sodium : jamais de recette chiffrée, seulement « repas ou boisson salés ».
 
 | Type de séance | Glucides | Protéines | Liquide | Sodium | Timing | Preuve | Sources |
 |---|---|---|---|---|---|---|---|
-| **Muscu lourde** (45-75 min) | 0,5-1,0 g/kg au repas suivant (plus si endurance dans les 8 h) | 0,3-0,4 g/kg | À la soif ; ~1,5 L par kg perdu | Repas salé normal | Repas dans les 2 h ; option collation du soir 30-40 g de protéines | Protéines A ; glucides D | [@jager2017] [@kerksick2017] [@morton2018] [@henselmans2022] [@snijders2015] |
+| **Muscu lourde** (45-75 min) | 0,5-1,0 g/kg au repas suivant (plus si endurance dans les 8 h) | 0,3-0,4 g/kg | À la soif ; ~1,5 L par kg perdu si une séance arrive dans la journée | Repas salé normal | Repas dans les 2 h ; option collation du soir 30-40 g de protéines | Protéines A ; glucides D | [@jager2017] [@kerksick2017] [@morton2018] [@henselmans2022] [@snijders2015] |
 | **Plio / explosif** (30-45 min) | 0,5 g/kg au repas suivant | 0,3 g/kg | À la soif | Repas normal | Repas dans les 2 h | Protéines A ; glucides D | [@jager2017] [@henselmans2022] |
-| **Endurance longue** (> 2,5 h) | 1,0 g/kg/h pendant 2-4 h, puis repas pour atteindre 8-12 g/kg sur la journée | 0,3-0,4 g/kg | ~1,5 L par kg perdu | Boisson ou repas salés (repère labo : ~60 mmol/L, soit ~1,4 g de sodium/L) | Commencer dans l'heure ; prises toutes les 30-60 min | A | [@burke2017] [@craven2021] [@kerksick2017] [@churchwardvenne2020] [@shirreffs1996] |
-| **Intervalles / haute intensité** (60-90 min) | 1,0 g/kg dans l'heure, puis repas riches en glucides | 0,3-0,4 g/kg | ~1,5 L par kg perdu | Repas salé | Dans l'heure si séance le lendemain ; sinon repas normal | A/B | [@burke2017] [@craven2021] [@churchwardvenne2020] |
+| **Endurance longue** (> 2,5 h) | 1,0-1,2 g/kg/h pendant 2-4 h si une séance arrive dans moins de 8 h ; sinon repas riches en glucides. 6-10 g/kg sur la journée ; 8-12 seulement veille de course longue ou journée de plus de 4-5 h | 0,3-0,4 g/kg | ~1,5 L par kg perdu si une séance arrive dans la journée ; sinon à la soif | Repas ou boisson salés | Commencer dans l'heure ; prises toutes les 30-60 min | A | [@burke2017] [@craven2021] [@kerksick2017] [@churchwardvenne2020] [@shirreffs1996] |
+| **Intervalles / haute intensité** (60-90 min) | 1,0 g/kg dans l'heure, puis repas riches en glucides | 0,3-0,4 g/kg | ~1,5 L par kg perdu si une séance arrive dans la journée ; sinon à la soif | Repas salé | Dans l'heure si séance le lendemain ; sinon repas normal | A/B | [@burke2017] [@craven2021] [@churchwardvenne2020] |
 | **Récup / endurance facile** (< 60 min) | Pas de protocole : repas habituel (0-0,5 g/kg si faim) | 0,3 g/kg au repas suivant | À la soif | Rien de spécial | Repas habituel | D (protéines B) | [@burke2017] [@moore2024] [@goulet2013] |
-| **Double séance dans la journée** (< 8 h entre les deux) | 1,0 g/kg/h jusqu'à la 2e séance (4 h max), fractionné | 0,3 g/kg après chaque séance | 1,5 L par kg perdu avant la 2e séance | Boisson salée ou aliments salés | Commencer tout de suite ; toutes les 30-60 min | A | [@craven2021] [@burke2017] [@margolis2021] [@shirreffs1996] |
-| **Veille de course** (activation courte) | ~10 g/kg sur la journée (fourchette 8-12) | 0,3 g/kg par repas | À la soif, sans forcer | Alimentation normale | Sur 24-36 h ; aliments connus ; pas d'alcool | B | [@bussau2002] [@kerksick2017] [@goulet2013] [@parr2014] |
+| **Double séance dans la journée** (< 8 h entre les deux) | 1,0-1,2 g/kg/h jusqu'à la 2e séance (4 h max), fractionné | 0,3 g/kg après chaque séance | 1,5 L par kg perdu avant la 2e séance | Repas ou boisson salés | Commencer tout de suite ; toutes les 30-60 min | A | [@craven2021] [@burke2017] [@margolis2021] [@shirreffs1996] |
+| **Veille de course** (activation courte) | 7-10 g/kg si la course dure moins de 90 min ; 10-12 au-delà | 0,3 g/kg par repas | À la soif, sans forcer | Alimentation normale | Sur 24-36 h ; aliments connus, peu de fibres ; pas d'alcool | B | [@bussau2002] [@kerksick2017] [@goulet2013] [@parr2014] |
 
-Exemple pour 65 kg après une sortie longue avec 1 kg perdu : ~65 g de glucides par heure pendant 2-4 h, ~20-26 g de protéines, ~1,5 L de boisson salée.
+Exemple pour 65 kg après une sortie longue avec 1 kg perdu et une séance dans moins de 8 h : ~65-78 g de glucides par heure pendant 2-4 h, ~20-26 g de protéines, ~1,5 L de boisson avec un repas ou une boisson salés. Sans séance proche : repas riches en glucides (390-650 g sur la journée), boire à la soif.
 
 Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un diététicien du sport. Si tu as du mal à manger assez, si ton poids baisse sans le vouloir ou si tes règles s'arrêtent, parles-en à un médecin. »
 
@@ -257,8 +259,8 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
   "unites": {
     "glucides": "g par kg de poids de corps",
     "proteines": "g par kg de poids de corps",
-    "liquide": "litres par kg de poids perdu pendant la séance (sinon à la soif)",
-    "sodium": "mg par litre de boisson (null = alimentation normale)"
+    "liquide": "litres par kg de poids perdu pendant la séance, si une séance arrive dans la journée ; sinon à la soif",
+    "sodium": "toujours null : pas de recette chiffrée, voir sodium_texte (repas ou boisson salés)"
   },
   "avertissement": "Repères d'entraîneur, pas une prescription. En cas de doute, de perte de poids non voulue ou de troubles du cycle : médecin du sport et diététicien du sport.",
   "seances": [
@@ -267,7 +269,7 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
       "libelle": "Muscu lourde (45-75 min)",
       "glucides_g_kg": {"min": 0.5, "max": 1.0, "mode": "repas_suivant"},
       "proteines_g_kg": {"min": 0.3, "max": 0.4},
-      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif"},
+      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif", "condition": "si une séance arrive dans la journée ; sinon à la soif"},
       "sodium_mg_l": null,
       "timing": "Repas dans les 2 h. Option : collation du soir avec 30-40 g de protéines.",
       "si_endurance_dans_8h": "Passer aux repères de double séance.",
@@ -288,10 +290,11 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
     {
       "type": "endurance_longue",
       "libelle": "Endurance longue (> 2,5 h)",
-      "glucides_g_kg": {"min": 1.0, "max": 1.0, "mode": "par_heure", "duree_h": {"min": 2, "max": 4}, "cible_jour_g_kg": {"min": 8, "max": 12}},
+      "glucides_g_kg": {"min": 1.0, "max": 1.2, "mode": "par_heure", "duree_h": {"min": 2, "max": 4}, "condition": "si une séance arrive dans moins de 8 h ; sinon repas riches en glucides", "cible_jour_g_kg": {"min": 6, "max": 10}, "cible_jour_haute_g_kg": {"min": 8, "max": 12, "condition": "seulement veille de course longue ou journée de plus de 4-5 h"}},
       "proteines_g_kg": {"min": 0.3, "max": 0.4},
-      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif"},
-      "sodium_mg_l": 1400,
+      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif", "condition": "si une séance arrive dans la journée ; sinon à la soif"},
+      "sodium_mg_l": null,
+      "sodium_texte": "Repas ou boisson salés.",
       "timing": "Commencer dans l'heure. Prises toutes les 30-60 min.",
       "preuve": {"proteines": "B", "glucides": "A", "liquide": "B"},
       "sources": ["burke2017", "craven2021", "kerksick2017", "churchwardvenne2020", "shirreffs1996"]
@@ -301,7 +304,7 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
       "libelle": "Intervalles / haute intensité (60-90 min)",
       "glucides_g_kg": {"min": 1.0, "max": 1.0, "mode": "premiere_heure_puis_repas"},
       "proteines_g_kg": {"min": 0.3, "max": 0.4},
-      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif"},
+      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif", "condition": "si une séance arrive dans la journée ; sinon à la soif"},
       "sodium_mg_l": null,
       "timing": "Dans l'heure si séance le lendemain, sinon repas normal.",
       "preuve": {"proteines": "B", "glucides": "A", "liquide": "B"},
@@ -321,10 +324,11 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
     {
       "type": "double_seance",
       "libelle": "Double séance dans la journée (< 8 h entre les deux)",
-      "glucides_g_kg": {"min": 1.0, "max": 1.0, "mode": "par_heure", "duree_h": {"min": 1, "max": 4}},
+      "glucides_g_kg": {"min": 1.0, "max": 1.2, "mode": "par_heure", "duree_h": {"min": 1, "max": 4}},
       "proteines_g_kg": {"min": 0.3, "max": 0.3},
-      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif"},
-      "sodium_mg_l": 1400,
+      "liquide_l_par_kg_perdu": {"min": 1.5, "max": 1.5, "defaut": "a_la_soif", "condition": "si une séance arrive dans la journée ; sinon à la soif"},
+      "sodium_mg_l": null,
+      "sodium_texte": "Repas ou boisson salés.",
       "timing": "Commencer tout de suite. Prises toutes les 30-60 min jusqu'à la 2e séance. Ne pas remplacer des glucides par des protéines.",
       "preuve": {"proteines": "B", "glucides": "A", "liquide": "B"},
       "sources": ["craven2021", "burke2017", "margolis2021", "shirreffs1996"]
@@ -332,11 +336,11 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
     {
       "type": "veille_course",
       "libelle": "Veille de course (activation courte)",
-      "glucides_g_kg": {"min": 8, "max": 12, "mode": "sur_la_journee", "repere": 10},
+      "glucides_g_kg": {"min": 7, "max": 12, "mode": "sur_la_journee", "course_moins_de_90_min": {"min": 7, "max": 10}, "course_plus_de_90_min": {"min": 10, "max": 12}},
       "proteines_g_kg": {"min": 0.3, "max": 0.3, "mode": "par_repas"},
       "liquide_l_par_kg_perdu": {"min": null, "max": null, "defaut": "a_la_soif"},
       "sodium_mg_l": null,
-      "timing": "Sur 24-36 h. Aliments connus. Pas d'alcool.",
+      "timing": "Sur 24-36 h. Aliments connus, peu de fibres. Pas d'alcool.",
       "preuve": {"proteines": "A", "glucides": "B", "liquide": "A"},
       "sources": ["bussau2002", "kerksick2017", "goulet2013", "parr2014"]
     }
@@ -344,17 +348,17 @@ Garde-fous à afficher avec ce tableau : « Ces repères ne remplacent pas un di
 }
 ```
 
-Notes sur le JSON : `sodium_mg_l: 1400` vient d'un seul essai de laboratoire (61 mmol/L, 12 hommes) [@shirreffs1996] ; c'est plus salé que la plupart des boissons du commerce, un repas salé fait aussi l'affaire. Les valeurs `preuve: "D"` sont à afficher comme « repère pratique ».
+Notes sur le JSON : `sodium_mg_l` vaut `null` partout, avec le texte « repas ou boisson salés ». Note de labo, à ne pas afficher comme une recette : la valeur de 61 mmol/L (~1,4 g de sodium/L, soit 3,6 g de sel par litre) vient d'un seul essai de 1996, 12 hommes (6 par groupe) [@shirreffs1996] ; c'est plus salé que les boissons du commerce. Les valeurs `preuve: "D"` sont à afficher comme « repère pratique ».
 
 ## Ce que l'appli devrait faire
 
 **À faire**
 - **Conseil de fin de séance calculé** à partir du type de séance, de sa durée, du poids saisi par l'athlète et de l'heure de la séance suivante (déjà connue par le plan). Si une séance d'endurance arrive dans moins de 8 h, basculer sur « double séance ». Afficher en grammes arrondis et en exemples d'aliments, pas en g/kg.
 - **Afficher le niveau de preuve** de chaque ligne (A/B/C/D) et un lien « pourquoi ».
-- **Test de sudation guidé** : poids avant, poids après, volume bu, durée → L/h. Alerte si le poids d'arrivée dépasse le poids de départ [@almond2005].
+- **Test de sudation guidé** : poids avant, poids après, volume bu, durée → L/h. Alerte si le poids d'arrivée dépasse le poids de départ [@almond2005]. Test de sudation : facultatif, réservé aux adultes, désactivé pour les mineurs et pour tout athlète signalé à risque. L'appli n'enregistre que la différence avant/après, jamais le poids.
 - **Module « entraîner l'intestin »** : sur les sorties longues des 4-6 semaines avant une course A, proposer une cible de glucides par heure qui monte par paliers (ex. 40 → 60 → 75 → 90 g/h), avec note de confort digestif après la sortie [@martinez2023].
-- **Veille de course** (courses A/B du plan de saison) : rappel automatique « ~10 g/kg de glucides aujourd'hui, aliments connus ».
-- **Fiche « compléments »** : classement AIS A/B/C/D, avertissement contamination, rappel des labels (Informed Sport par lot ; NF EN 17444, ex NF V94-001), mention « demande à un diététicien ou à ton médecin ».
+- **Veille de course** (courses A/B du plan de saison) : rappel automatique selon la durée de la course : « 7-10 g/kg de glucides aujourd'hui » si elle dure moins de 90 min, « 10-12 g/kg » au-delà. Aliments connus, peu de fibres.
+- **Fiche « compléments »** : classement AIS A/B/C/D, avertissement contamination, rappel des labels (Informed Sport : testé par lot, à préférer ; NF EN 17444, ex NF V94-001 : bonnes pratiques de fabrication, réduit le risque sans garantir l'absence de substance interdite), mention « demande à un diététicien ou à ton médecin ».
 - **Page REDs** : signes d'alerte en langage simple, pour filles et garçons, avec renvoi vers un médecin du sport. Côté coach : rappel de ne jamais commenter le poids.
 - **Altitude** : pour les athlètes en stage à Font-Romeu, message « mange plus, fais vérifier ton fer avant de monter ».
 - **Muscu du matin** : rappel « ne viens pas à jeun » si la séance prévue dépasse 45 min [@king2022].
@@ -366,17 +370,20 @@ Notes sur le JSON : `sodium_mg_l: 1400` vient d'un seul essai de laboratoire (61
 - **Ne pas proposer « train low », jeûne, cétogène ni cétones.**
 - **Pas de lien d'affiliation** vers des marques de compléments (conflit d'intérêts + risque dopage).
 - **Pas de diagnostic** : jamais « tu es en REDs », « tu es carencé ». Toujours « parles-en à ton médecin ».
-- **Mineurs** (si un jour l'appli s'ouvre aux moins de 18 ans) : pas de conseil caféine ni complément.
+- **Mineurs** (si un jour l'appli s'ouvre aux moins de 18 ans) : pas de conseil caféine ni complément, pas de test de sudation.
+- **Aucune dose de complément côté athlète** : pas de dose de caféine calculée ; les doses de fer et de bicarbonate citées ici sont des constats d'étude, jamais affichées à l'athlète.
+- **Pas de recette de sodium chiffrée** : seulement « repas ou boisson salés ».
+- **Phrases réservées au coach**, jamais montrées à l'athlète : « une restriction modérée et encadrée peut améliorer le rapport poids/puissance » et le mythe 12 (« Plus léger = plus rapide en bosse »).
 
 ## Limites et incertitudes
 
-- **Consensus ACSM/AND/DC 2016** [@thomas2016] : seul le résumé, sans chiffres, a pu être lu (texte intégral non accessible). Les fourchettes souvent citées de ce texte (protéines 1,2-2,0 g/kg/j ; resynthèse 1,0-1,2 g/kg/h ; glucides 3-12 g/kg/j selon la charge) **n'ont pas été vérifiées** ; les chiffres donnés ici viennent d'autres sources lues (ISSN, Burke 2017, Craven 2021). Le « 1,2 g/kg/h » n'est donc pas repris.
+- **Consensus ACSM/AND/DC 2016** [@thomas2016] : seul le résumé, sans chiffres, a pu être lu (texte intégral non accessible). Les fourchettes souvent citées de ce texte (protéines 1,2-2,0 g/kg/j ; resynthèse 1,0-1,2 g/kg/h ; glucides 3-12 g/kg/j selon la charge) **n'ont pas été vérifiées** ; les chiffres donnés ici viennent d'autres sources lues (ISSN, Burke 2017, Craven 2021). Le 1,2 g/kg/h figure dans le résumé ISSN [@kerksick2017] : la fourchette retenue est 1,0-1,2 g/kg/h.
 - **Consensus hyponatrémie 2015 (Hew-Butler)** : pas de résumé disponible et page de l'éditeur inaccessible (erreur 403). Non cité.
 - **Consensus CIO 2018 et REDs 2023** : résumés lus seulement ; les doses par complément du texte complet ne sont pas reprises, elles viennent des positions ISSN.
 - **« ISSN endurance 2023 »** : je n'ai pas trouvé de position ISSN générale sur l'endurance ; la plus proche est la position ultra-marathon 2019 [@tiller2019].
 - **AIS** : pages lues via un outil de résumé automatique ; aucune date de mise à jour affichée. Le classement peut changer.
 - **NF V94-001** : remplacée par NF EN 17444 en 2021 ; le texte de la norme est payant et n'a pas été lu.
-- **120 g/h** : un essai métabolique [@podlogar2022] et un petit essai de terrain [@urdampilleta2020] ; pas de preuve de gain de performance lue.
+- **120 g/h** : un essai métabolique (n = 11 hommes, ratios différents entre les deux conditions) [@podlogar2022] et un petit essai de terrain [@urdampilleta2020] ; pas de preuve de gain de performance lue.
 - **Glucides après muscu ou plio** : pas de donnée chiffrée directe ; valeurs du tableau = extrapolation (D).
 - **Sodium** : la valeur de 61 mmol/L vient d'un essai de 1996 sur 12 hommes ; les besoins réels varient énormément [@barnes2019] [@baker2022].
 - **Femmes** : la plupart des essais portent sur de jeunes hommes (caféine, protéines, nitrate). Le seuil de 30 kcal/kg vient de femmes sédentaires sur 5 jours.

@@ -907,7 +907,7 @@
   "type": "revue-systematique",
   "niveau": "A",
   "verifie": true,
-  "note": "SS −3,7 %, PNF −4,4 %, dynamique +1,3 % ; ≥ 60 s −4,6 % vs < 60 s −1,1 % ; gain d'amplitude < 30 min ; pas d'effet clair du SS/PNF sur les blessures."
+  "note": "SS −3,7 %, PNF −4,4 %, dynamique +1,3 % ; ≥ 60 s −4,6 % vs < 60 s −1,1 % ; gain d'amplitude < 30 min ; pas d'effet clair du SS/PNF sur les blessures ; les auteurs recommandent quand même l'étirement dans l'échauffement pour les blessures musculaires."
  },
  {
   "cle": "behringer2010",
@@ -959,7 +959,7 @@
   "type": "consensus",
   "niveau": "D",
   "verifie": true,
-  "note": "Delphi (34 puis 21 coachs experts) : définition consensuelle de la décharge et principes de conception ; avis d'experts."
+  "note": "Consensus Delphi de coachs (34 → 21 participants, 3 tours, 138 énoncés) : définition et principes de conception de la décharge ; pratique peu étudiée (PMID 37730925)."
  },
  {
   "cle": "benjamin2019",
@@ -1177,10 +1177,10 @@
   "revue": "Sports Med 48(5):1117-1149",
   "doi": "10.1007/s40279-017-0835-7",
   "url": "https://doi.org/10.1007/s40279-017-0835-7",
-  "type": "revue",
+  "type": "revue-systematique",
   "niveau": "A",
   "verifie": true,
-  "note": "Revue systématique : bonnes preuves que la force améliore l'économie de course, les contre-la-montre et le sprint, sans effet négatif sur la composition corporelle ; 2-3 séances/sem conseillées (résumé Europe PMC, PMID 29249083)."
+  "note": "24 études : économie améliorée de 2-8 % le plus souvent, contre-la-montre et sprint aussi ; VO2max et composition corporelle généralement inchangées (PMID 29249083)."
  },
  {
   "cle": "blagrove2018b",
@@ -1323,7 +1323,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "27 études : affûtage optimal de 2 semaines (ES 0,59), volume réduit de 41-60 % (ES 0,72), sans baisser intensité ni fréquence."
+  "note": "27 études : affûtage de 2 semaines (effet 0,59 ± 0,33), volume réduit de 41-60 % de façon exponentielle (0,72 ± 0,36), sans toucher à l'intensité ni à la fréquence (PMID 17762369)."
  },
  {
   "cle": "bosquet2013",
@@ -1518,7 +1518,7 @@
   "type": "revue-systematique",
   "niveau": "C",
   "verifie": true,
-  "note": "8 essais, 257 personnes (246 hommes) : section du tendon plus grande dans 3 essais sur 4, raideur meilleure à 15-30 g par jour ; aucun effet sur la force ; petits effectifs."
+  "note": "8 essais, 257 personnes (246 hommes) : section du tendon plus grande dans 3 essais sur 4, raideur meilleure à 15-30 g par jour ; aucun effet sur la force ; petits effectifs (résumé, PMID 41900537)."
  },
  {
   "cle": "buffer-7-weeks-2011",
@@ -2328,7 +2328,7 @@
  },
  {
   "cle": "coleman2024",
-  "auteurs": "Coleman M, Burke R, Augustin F, et al.",
+  "auteurs": "Coleman M, Burke R, Augustin F, Piñero A, Maldonado J, Fisher JP, Israetel M, Androulakis Korakakis P, Swinton P, Oberlin D, Schoenfeld BJ",
   "annee": 2024,
   "titre": "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations",
   "revue": "PeerJ 12:e16777",
@@ -2337,7 +2337,7 @@
   "type": "essai",
   "niveau": "C",
   "verifie": true,
-  "note": "39 pratiquants, 9 sem : une semaine d'arrêt au milieu = hypertrophie égale mais gains de force moindres."
+  "note": "39 sujets entraînés, 9 sem : une semaine d'arrêt au milieu ne change ni la masse, ni la puissance, ni l'endurance locale, mais réduit les gains de force (PMID 38274324)."
  },
  {
   "cle": "colensosemple2023",
@@ -2987,7 +2987,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "22 études : économie lourd g −0,32 vs plyo g −0,13 ; ≥ 90 % 1RM g −0,31 ; 10-14 sem g −0,45 vs 6-8 sem −0,21 (PMID 36370207)."
+  "note": "22 études : économie de course g = -0,32 avec la charge lourde contre -0,13 (trivial) avec la pliométrie ; ≥ 90 % 1RM g = -0,31 ; sur 10-14 sem g = -0,45."
  },
  {
   "cle": "eimiller2024",
@@ -5080,7 +5080,7 @@
   "type": "observationnelle",
   "niveau": "B",
   "verifie": true,
-  "note": "178 athlètes : Hbmass +1,1 % sans fer, +3,3 % avec 105 mg/j, +4,0 % avec 210 mg/j ; ferritine −33 % sans supplément."
+  "note": "178 athlètes, ~21 j à 1 350-3 000 m : masse d'hémoglobine +1,1 % sans fer, +3,3 % avec 105 mg/j, +4,0 % avec 210 mg/j ; ferritine −33 % sans fer (résumé, PMID 26263553)."
  },
  {
   "cle": "granerogallegos2020",
@@ -5288,7 +5288,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "12 études, 414 sujets : sous-estimation moyenne de 0,95 rep ; meilleure précision près de l'échec et pour ≤ 12 reps ; I² = 97,9 % (PMID 34542869)."
+  "note": "12 études, 414 sujets : sous-estimation moyenne de 0,95 rep (IC 0,17-1,73), hétérogénéité énorme ; plus précis près de l'échec, sous 12 reps et en fin de séance ; le niveau d'entraînement ne change rien."
  },
  {
   "cle": "harkin2016",
@@ -5884,9 +5884,9 @@
   "doi": "10.1123/ijspp.2019-0864",
   "url": "https://doi.org/10.1123/ijspp.2019-0864",
   "type": "revue",
-  "niveau": "A",
+  "niveau": "B",
   "verifie": true,
-  "note": "Aucune preuve pour utiliser l'ACWR afin de réduire les blessures ; le ratio est imprécis, ajoute du bruit et crée des artefacts."
+  "note": "Aucune preuve pour utiliser l'ACWR dans la gestion de la charge ou la prévention des blessures ; ratio imprécis, artefacts."
  },
  {
   "cle": "impellizzeri2021",
@@ -6923,7 +6923,7 @@
   "revue": "J Med Internet Res 26:e56897",
   "doi": "10.2196/56897",
   "url": "https://doi.org/10.2196/56897",
-  "type": "revue-systematique",
+  "type": "revue",
   "niveau": "B",
   "verifie": true,
   "note": "18 études, 525 824 participants : médiane 70 % d'abandon dans les 100 premiers jours ; 22 raisons en 6 catégories."
@@ -7173,7 +7173,7 @@
   "type": "revue",
   "niveau": "C",
   "verifie": true,
-  "note": "En VTT, la tête et le membre supérieur restent les zones les plus touchées ; peu d'études sur la prévention."
+  "note": "En VTT, la tête et le membre supérieur restent les zones les plus touchées ; commotions et fractures ; peu d'études sur la prévention (PMID 40472158)."
  },
  {
   "cle": "koivistomork2021",
@@ -7459,7 +7459,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "25 ECR, 26 610 sujets : force RR 0,315 ; proprio RR 0,550 ; étirements RR 0,963 NS ; blessures de surmenage presque divisées par deux (PMID 24100287)."
+  "note": "25 essais, 26 610 participants ; étirement RR 0,963 (NS) ; force RR 0,315 ; proprio RR 0,550."
  },
  {
   "cle": "lauersen2018",
@@ -7472,7 +7472,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "6 ECR, 7738 sujets : RR 0,338 ; +10 % de volume de muscu = risque réduit de plus de 4 points (PMID 30131332)."
+  "note": "6 ECR, 7 738 sujets de 12-40 ans : RR 0,338 [0,238-0,480] ; +10 % de volume de muscu = risque réduit de plus de 4 points (PMID 30131332)."
  },
  {
   "cle": "leaf2024",
@@ -7810,7 +7810,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "Performance : lourd ES −0,469, combiné −1,035, plyo −0,210 NS ; aucun effet sur VO2max, vVO2max, MMSS ; certitude très faible à modérée (PMID 38627351)."
+  "note": "Performance en course : charge lourde ES -0,47, méthodes combinées -1,04 ; pliométrie seule -0,21 (p = 0,064) ; aucune méthode ne change le VO2max."
  },
  {
   "cle": "llanoslagos2024b",
@@ -7823,7 +7823,7 @@
   "type": "meta-analyse",
   "niveau": "A",
   "verifie": true,
-  "note": "Économie : lourd ES −0,266, combiné −0,426, plyo −0,307 (≤ 12 km/h) ; sous-max et isométrique NS ; effet du lourd plus grand à haute vitesse (PMID 38165636)."
+  "note": "Charge lourde ES -0,27, méthodes combinées -0,43 ; pliométrie -0,31 seulement aux vitesses ≤ 12 km/h ; charges moyennes et isométrie sans effet."
  },
  {
   "cle": "llanoslagos2026",
@@ -7866,16 +7866,16 @@
  },
  {
   "cle": "losnegard2011",
-  "auteurs": "Losnegard T, Mikkelsen K, Rønnestad BR, Hallén J, Rud B, Raastad T",
+  "auteurs": "Losnegard T, Mikkelsen K, Rønnestad BR et al.",
   "annee": 2011,
   "titre": "The effect of heavy strength training on muscle mass and physical performance in elite cross country skiers",
   "revue": "Scand J Med Sci Sports 21(3):389-401",
   "doi": "10.1111/j.1600-0838.2009.01074.x",
   "url": "https://doi.org/10.1111/j.1600-0838.2009.01074.x",
   "type": "essai",
-  "niveau": "C",
+  "niveau": "B",
   "verifie": true,
-  "note": "Skieurs 18-27 ans, 12 sem : 1RM tirage +19 %, demi-squat +12 % ; pas de changement de CSA du quadriceps ; VO2max en skating +7 % (PMID 20136751)."
+  "note": "19 skieurs 18-27 ans, 12 sem : 1RM tirage +19 %, demi-squat +12 % ; pas de hausse de section du quadriceps ; VO2max en skating +7 % ; double poussée améliorée (PMID 20136751)."
  },
  {
   "cle": "loucks2003",
@@ -7966,7 +7966,7 @@
   "type": "observationnelle",
   "niveau": "C",
   "verifie": true,
-  "note": "Accéléromètres : l'amortissement des vibrations est un travail musculaire non propulsif, maximal en descente (PMID 24735505)."
+  "note": "Accéléromètres : l'amortissement des vibrations est un travail musculaire non propulsif, maximal en descente ; 29 pouces plus rapide malgré plus de vibrations (PMID 24735505)."
  },
  {
   "cle": "macrumors-apple-pwa-ue",
@@ -8068,9 +8068,9 @@
   "doi": "10.3390/ijerph181910299",
   "url": "https://doi.org/10.3390/ijerph181910299",
   "type": "meta-analyse",
-  "niveau": "A",
+  "niveau": "B",
   "verifie": true,
-  "note": "VFC guidée : VFC vagale SMD 0,50 ; VO2max 0,20, seuil 2 0,26, performance 0,20, tous non significatifs."
+  "note": "Entraînement guidé par la variabilité cardiaque contre plan fixe : performance SMD 0,20 (IC −0,09 à 0,48), VO2max 0,20 (IC −0,07 à 0,47), non significatifs (PMID 34639599)."
  },
  {
   "cle": "mansfield2020",
@@ -8577,7 +8577,7 @@
   "type": "essai",
   "niveau": "C",
   "verifie": true,
-  "note": "Pédaler en descente n'améliore pas le temps ; les vibrations off-road augmentent FC et VO2 par rapport à la route (PMID 27712198)."
+  "note": "Pédaler en descente n'améliore pas le temps ; descente off-road : FC et VO2 plus élevées que sur route, à cause des vibrations (PMID 27712198)."
  },
  {
   "cle": "millet2010",
@@ -8789,7 +8789,7 @@
  },
  {
   "cle": "mountjoy2023",
-  "auteurs": "Mountjoy M, Ackerman KE, Bailey DM, Burke LM, Constantini N, Hackney AC, Heikura IA, et al.",
+  "auteurs": "Mountjoy M, Ackerman KE, Bailey DM et al.",
   "annee": 2023,
   "titre": "2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs)",
   "revue": "Br J Sports Med 57(17):1073-1097",
@@ -8798,7 +8798,7 @@
   "type": "consensus",
   "niveau": "A",
   "verifie": true,
-  "note": "Consensus CIO : le REDs touche les hommes comme les femmes ; rôle du manque de glucides ; nouvel outil clinique CAT2 et principes de prévention."
+  "note": "Consensus CIO : le REDs touche femmes et hommes ; > 170 études depuis 2018 ; rôle du manque de glucides ; outil clinique REDs CAT2 ; principes de prévention (PMID 37752011)."
  },
  {
   "cle": "mujika2000a",
@@ -8850,7 +8850,7 @@
   "type": "revue",
   "niveau": "B",
   "verifie": true,
-  "note": "Pendant l'affûtage, le volume peut être fortement réduit, mais pas au détriment de l'intensité."
+  "note": "Revue : pendant l'affûtage, le volume peut être fortement réduit mais la charge ne doit pas baisser aux dépens de l'intensité (PMID 20840559)."
  },
  {
   "cle": "mujika2016",
@@ -9240,7 +9240,7 @@
   "type": "revue-systematique",
   "niveau": "A",
   "verifie": true,
-  "note": "31 études : les routiers entraînés ont une DMO lombaire basse ; le VTT ou un autre sport pourrait atténuer cet effet ; le vélo sur route n'apporte aucun bénéfice osseux."
+  "note": "31 études : routiers adultes avec DMO lombaire basse ; le VTT ou un autre sport pourrait atténuer cet effet ; le vélo sur route n'apporte pas de bénéfice osseux (PMID 23256921)."
  },
  {
   "cle": "onlynnov-editeur-logiciel",
@@ -9864,7 +9864,7 @@
   "type": "revue-systematique",
   "niveau": "B",
   "verifie": true,
-  "note": "53 études : XCO actuel plus intermittent, ~1/4 du temps au-dessus de la PMA ; HIIT, SIT et muscu efficaces mais peu de tests directs (PMID 41739301)."
+  "note": "53 études : XCO actuel plus intermittent, ~1/4 du temps au-dessus de la PMA ; HIIT, SIT et muscu efficaces mais peu de tests directs de performance (PMID 41739301)."
  },
  {
   "cle": "ptdistinction-appstore",
@@ -10336,16 +10336,16 @@
  },
  {
   "cle": "rogerson2024",
-  "auteurs": "Rogerson D, Nolan D, Androulakis Korakakis P, et al.",
+  "auteurs": "Rogerson D, Nolan D, Androulakis Korakakis P, Immonen V, Wolf M, Bell L",
   "annee": 2024,
   "titre": "Deloading Practices in Strength and Physique Sports: A Cross-sectional Survey",
-  "revue": "Sports Med Open",
+  "revue": "Sports Med Open 10(1):26",
   "doi": "10.1186/s40798-024-00691-y",
   "url": "https://doi.org/10.1186/s40798-024-00691-y",
   "type": "observationnelle",
   "niveau": "D",
   "verifie": true,
-  "note": "246 athlètes : décharge de 6,4 ± 1,7 jours toutes les 5,6 ± 2,3 semaines ; volume réduit, fréquence gardée, RIR augmenté."
+  "note": "246 athlètes de force : décharge de 6,4 ± 1,7 jours toutes les 5,6 ± 2,3 semaines ; volume, charge et effort réduits, fréquence et exercices inchangés (PMID 38499934)."
  },
  {
   "cle": "romeo2019",
@@ -10436,7 +10436,7 @@
   "type": "revue",
   "niveau": "B",
   "verifie": true,
-  "note": "Revue : la force lourde est recommandée pour l'économie de pédalage ; force lourde ou explosive améliore la course ; effet additif le plus net en vélo avec la force lourde (résumé Europe PMC, PMID 23914932)."
+  "note": "Revue : force lourde recommandée pour l'économie de pédalage ; lourd ou explosif pour la course ; mécanismes : fibres IIX→IIA, efficacité neuromusculaire, raideur tendineuse (PMID 23914932)."
  },
  {
   "cle": "ronnestad2014b",
@@ -10852,7 +10852,7 @@
   "type": "observationnelle",
   "niveau": "B",
   "verifie": true,
-  "note": "131 athlètes, 16 sem : 70 essaient ; remplissage 84 % si soutenus par le coach vs 28 % et 8 % en autonomie."
+  "note": "Étude d'observation, contextes non tirés au sort. 131 athlètes, 16 sem : 70 essaient ; remplissage 84 % chez les athlètes d'équipe soutenus par leur structure vs 28 % et 8 % en autonomie."
  },
  {
   "cle": "saw2016",
@@ -11047,7 +11047,7 @@
   "type": "essai",
   "niveau": "C",
   "verifie": true,
-  "note": "8 hommes : 15 g de gélatine + vitamine C 1 h avant 6 min de corde à sauter doublent le PINP sanguin."
+  "note": "8 hommes : 15 g de gélatine + vitamine C 1 h avant 6 min de corde à sauter doublent le PINP sanguin (résumé, PMID 27852613)."
  },
  {
   "cle": "sheeran2020",
@@ -11385,7 +11385,7 @@
   "type": "essai",
   "niveau": "C",
   "verifie": true,
-  "note": "35 jeunes haltérophiles, 6 séances à distance : vidéo + activité pédagogique d = 0,58-1,1, maintenu à 1 sem ; vidéo seule non maintenue."
+  "note": "35 écoliers débutants (au moins 3 mois de pratique), 6 séances à distance : vidéo + activité pédagogique d = 0,58-1,1, maintenu à 1 sem ; vidéo seule non maintenue."
  },
  {
   "cle": "sp-cotisations-micro-2026",
@@ -11623,7 +11623,7 @@
  },
  {
   "cle": "stellingwerff2019",
-  "auteurs": "Stellingwerff T, Peeling P, Garvican-Lewis LA, et al.",
+  "auteurs": "Stellingwerff T, Peeling P, Garvican-Lewis LA, Hall R, Koivisto AE, Heikura IA, Burke LM",
   "annee": 2019,
   "titre": "Nutrition and Altitude: Strategies to Enhance Adaptation, Improve Performance and Maintain Health: A Narrative Review",
   "revue": "Sports Med 49(Suppl 2):169-184",
@@ -11632,7 +11632,7 @@
   "type": "revue",
   "niveau": "B",
   "verifie": true,
-  "note": "À 1 600-2 400 m : risque de faible disponibilité énergétique, besoins en fer accrus, bilan 4-6 semaines avant, pertes d'eau accrues (texte intégral lu)."
+  "note": "Revue : à 1 600-2 400 m, priorité à la disponibilité énergétique et au fer ; antioxydants par les aliments plutôt que par fortes doses (résumé, PMID 31691928)."
  },
  {
   "cle": "stoggl2014",
@@ -13183,16 +13183,16 @@
  },
  {
   "cle": "vernillo2017",
-  "auteurs": "Vernillo G, Giandolini M, Edwards WB, Morin JB, Samozino P, Horvais N, Millet GY",
+  "auteurs": "Vernillo G, Giandolini M, Edwards WB et al.",
   "annee": 2017,
   "titre": "Biomechanics and Physiology of Uphill and Downhill Running",
   "revue": "Sports Med 47(4):615-629",
   "doi": "10.1007/s40279-016-0605-y",
   "url": "https://doi.org/10.1007/s40279-016-0605-y",
   "type": "revue",
-  "niveau": "C",
+  "niveau": "B",
   "verifie": true,
-  "note": "Revue : en descente, dissipation d'énergie dominante ; coût énergétique minimal vers −20 % de pente puis remonte (PMID 27501719)."
+  "note": "Montée : plus de travail musculaire, surtout à la hanche ; descente : dissipation d'énergie (freinage) ; coût énergétique minimal vers −20 % de pente (PMID 27501719)."
  },
  {
   "cle": "vert-appstore",
@@ -13309,7 +13309,7 @@
   "type": "observationnelle",
   "niveau": "C",
   "verifie": true,
-  "note": "555 cyclistes masters ≥ 35 ans : moins de muscu en saison ; freins = fatigue induite et manque de temps ; l'os est une raison majeure chez les ≥ 50 ans (PMID 39584885)."
+  "note": "Questionnaire 555 cyclistes masters : muscu surtout hors saison, baisse en saison ; freins = fatigue et manque de temps."
  },
  {
   "cle": "vikestad2025",
@@ -13361,7 +13361,7 @@
   "type": "revue",
   "niveau": "C",
   "verifie": true,
-  "note": "Revue : effets similaires chez hommes et femmes ; la hausse de CSA des muscles moteurs est une adaptation importante, à rechercher (PMID 33803041)."
+  "note": "Revue : effets similaires chez hommes et femmes ; gain d'économie peut-être plus grand chez les femmes ; la hausse de section musculaire est une adaptation utile (PMID 33803041)."
  },
  {
   "cle": "viljoen2024",
@@ -13387,7 +13387,7 @@
   "type": "observationnelle",
   "niveau": "C",
   "verifie": true,
-  "note": "10 cyclistes route/VTT à densité osseuse basse : 70-90 % en DE < 30 kcal/kg FFM/j selon la période ; 70 % mangeurs restrictifs ; glucides 3,7-4,3 g/kg/j (résumé, PMID 26131616)."
+  "note": "10 cyclistes route/VTT de 29-49 ans, choisis pour une densité osseuse sous la moyenne (Z-score < 0) : 70-90 % en DE < 30 kcal/kg FFM/j selon la période ; 70 % mangeurs restrictifs ; glucides 3,7-4,3 g/kg/j (résumé, PMID 26131616)."
  },
  {
   "cle": "visentini2022",
@@ -14180,7 +14180,7 @@
   "type": "essai",
   "niveau": "B",
   "verifie": true,
-  "note": "790 étudiants : présence aux cours +90 % avec comparaison sociale ; soutien social seul = pas mieux que le contrôle."
+  "note": "790 étudiants : présence aux cours +90 % avec comparaison sociale ; soutien social seul = pas mieux que le contrôle ; l'essai incluait des incitations."
  },
  {
   "cle": "zhang2020",
@@ -14242,10 +14242,10 @@
   "revue": "J Strength Cond Res 30(1):267-275",
   "doi": "10.1519/jsc.0000000000001049",
   "url": "https://doi.org/10.1519/jsc.0000000000001049",
-  "type": "essai",
+  "type": "observationnelle",
   "niveau": "B",
   "verifie": true,
-  "note": "29 sujets : RPE-10 = 0 RIR ; corrélation vitesse-RPE r = −0,88 (expérimentés), −0,77 (novices) ; outil pratique de régulation quotidienne (PMID 26049792)."
+  "note": "29 squatteurs : forte relation inverse vitesse moyenne - RPE (r = -0,88 expérimentés, -0,77 novices) ; échelle RPE-RIR pratique pour réguler la charge."
  },
  {
   "cle": "zourdos2021",

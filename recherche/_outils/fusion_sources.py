@@ -17,7 +17,8 @@ def prendre(s, orig):
     if not s.get('annee'): s['annee'] = 2026
     k = s['cle']
     if k in by:
-        if by[k]['url'].rstrip('/') != s['url'].rstrip('/'): conflits.append(f'{k} ({orig})')
+        if by[k]['url'].rstrip('/') != s['url'].rstrip('/') and (by[k].get('doi') or 'x') != (s.get('doi') or 'y'): conflits.append(f'{k} ({orig})')
+        elif orig.startswith('science-') and by[k] != s: by[k] = s   # notice corrigée dans le fichier brut : elle remplace l'ancienne
         return
     by[k] = s; ajout += 1
 for f in sorted(glob.glob(os.path.join(R, '_brut', '*.md'))):

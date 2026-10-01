@@ -1,13 +1,15 @@
 # H — Tests, mesure et technologie
 
+*Relu par un contradicteur le 1er octobre 2026 : 3 corrections appliquées (voir _brut/revue-science-EH.md).*
+
 ## En 1 minute
 
 - **Un test ne vaut que par son erreur de mesure.** Pour suivre UN athlète, il faut le SEM et le plus petit changement réel (MDC), pas l'ICC. Sous le MDC, on écrit « stable » [@hopkins2000] [@weir2005].
 - **Le téléphone mesure bien un angle**, mais la preuve est solide surtout pour la fiabilité relative, moins pour l'erreur absolue ; la **hanche** est le point faible, l'épaule et la cheville sont les mieux validées [@keogh2019] [@hahn2021] [@kolber2011] [@powden2015].
-- **Le RIR se trompe d'environ 1 rep en moyenne**, davantage loin de l'échec et en série longue (jusqu'à 4-5 reps à RIR 5) ; le niveau d'entraînement n'y change rien [@halperin2022] [@zourdos2021].
-- **Le 1RM estimé par la vitesse n'est pas plus précis** que par les reps : erreur ≈ 10 %, surestimation ≈ 4 % [@greig2023] [@lemense2024].
-- **L'IA vidéo sait compter des reps** (si la caméra est bien placée) et mesure des angles sagittaux à ≈ 4-5° près ; elle n'est **pas** validée pour juger un valgus de genou sous charge [@oliosi2026] [@ogura2026] [@yoma2025].
-- **Montres :** FC correcte au repos et en course, **fausse en musculation (-7 bpm) et à vélo (-4,5 bpm)** ; VO2max estimée à ±10 ml/kg/min près ; sommeil et calories approximatifs [@zhang2020] [@molinagarcia2022] [@doherty2024] [@lee2025].
+- **RIR : un biais moyen, pas une marge d'erreur.** En moyenne, les pratiquants annoncent ~1 rep de moins que ce qu'ils peuvent faire ; l'écart individuel va de 0 à 2 reps près de l'échec, davantage loin de l'échec. (B) En série longue, jusqu'à 4-5 reps à RIR 5 ; le niveau d'entraînement n'y change rien [@halperin2022] [@zourdos2021].
+- **1RM par la vitesse.** Le 1RM estimé par la vitesse a une erreur d'environ 10 % et surestime d'environ 4 % [@greig2023]. Aucune comparaison directe avec les formules par les reps n'a été lue. Au squat, 4 études et 71 sujets [@lemense2024].
+- **L'IA vidéo sait compter des reps** (si la caméra est bien placée) et mesure des angles sagittaux à ≈ 4-5° près sur des sauts (profondeur de squat : plausible, non validé) ; elle n'est **pas** validée pour juger un valgus de genou sous charge [@oliosi2026] [@ogura2026] [@yoma2025].
+- **Montres :** FC correcte au repos et en course, **fausse en musculation (-7 bpm) et à vélo (-4,5 bpm, chiffre tiré surtout d'ergomètres)** ; VO2max estimée à ±10 ml/kg/min près ; sommeil et calories approximatifs [@zhang2020] [@molinagarcia2022] [@doherty2024] [@lee2025].
 - **Aucun test de dépistage (FMS, Y-balance) ne prédit la blessure** avec des seuils généraux [@moran2017b] [@plisky2021].
 - **Dans `tests.json` :** 8 `mdc` sur 13 collent à ce que j'ai lu ; la **rotation interne de hanche (6°) est trop optimiste** (littérature : 11-16°) ; 4 ne sont pas vérifiables dans les résumés lus (assis-debout, équilibre, pont, squat bras levés), et la plupart des repères chiffrés (10 cm, 30°, 70°, 165°…) non plus.
 
@@ -28,7 +30,7 @@
 | Le Y-balance est fiable mais ne prédit pas la blessure avec un seuil général | A | Fiabilité 0,85-0,91 ; 57 études | [@plisky2021] | Ne pas l'ajouter comme « test de risque » |
 | Genou au mur : très fiable | A | ICC 0,65-0,99 ; MDC 1,6-1,9 cm (4,6-4,7°) | [@powden2015] | `mdc` 2 cm confirmé |
 | L'asymétrie de cheville est moins fiable qu'un côté seul | C | ICC 0,85 vs 0,98 ; MDC 2,1° vs 1,7° | [@howe2020] | Seuil d'asymétrie ≥ MDC, jamais plus fin |
-| L'iPhone mesure l'angle de cheville comme un inclinomètre pro | C | r = 0,989 ; erreur 0,48° | [@balsalobrefernandez2019] | Une version « angle » du genou au mur est possible |
+| L'iPhone mesure l'angle de cheville comme un inclinomètre pro | C | r = 0,989 ; erreur 0,48° ; 12 sujets ; étude écrite par le développeur de l'appli | [@balsalobrefernandez2019] | Une version « angle » du genou au mur est possible |
 | Le Thomas est reproductible à l'inclinomètre si le bassin est tenu | C | ICC 0,85-0,92 | [@clapis2008] [@eimiller2024] | Consigne « genou serré, dos plaqué » obligatoire |
 | Sans contrôle du bassin, le Thomas n'est pas valide | C | Sensibilité 32 %, spécificité 57 % ; r = 0,98 si bassin contrôlé | [@vigotsky2016] | Critère d'arrêt « bas du dos décollé » = essai annulé |
 | Le repérage au goniomètre ruine le Thomas ; une mesure de segment est fiable | C | ICC 0,30-0,65 vs 0,90-0,95 | [@wakefield2015] | Téléphone sur la cuisse = bon choix |
@@ -44,23 +46,23 @@
 | Montées sur pointe : très fiable, MDC ≈ 6 reps | B | ICC 1,0 ; limites d'accord ±6 reps ; médiane 24 (H) / 21 (F) | [@hebertlosier2017b] | `mdc` 6 confirmé ; repère 25 = exigeant mais plausible |
 | Assis-debout unipodal : fiable, y compris chez des skieurs de fond élite | C | ICC 0,81-0,94 ; CV 6-10 % | [@waldhelm2020] [@birinci2026] | Garder ; préférer un format publié (30 s) |
 | Pont unipodal : lien fragile avec la blessure des ischios | C | 482 joueurs, 28 blessures | [@freckleton2014] | Outil de suivi, pas de prédiction |
-| Une appli iPhone mesure la vitesse de barre presque comme un capteur à câble | C | r 0,90-0,94 ; biais 0,01-0,03 m/s | [@balsalobrefernandez2018] [@balsalobrefernandez2023] | VBT par vidéo faisable, sur trajectoire verticale |
+| Une appli iPhone mesure la vitesse de barre presque comme un capteur à câble | C | r 0,90-0,94 ; biais 0,01-0,03 m/s ; études écrites par le développeur des applis | [@balsalobrefernandez2018] [@balsalobrefernandez2023] | VBT par vidéo faisable, sur trajectoire verticale |
 | Les applis de vitesse ont un biais aux charges lourdes | A | 23 études, 11 applis | [@silva2021] | Ne pas s'en servir pour un 1RM lourd |
 | La qualité des études de validation VBT est faible | A | 5/66 études de validité passent tous les critères | [@wannouch2025] [@claassen2026] | Rester humble sur toute fonction « vitesse » |
-| Le 1RM estimé par la vitesse surestime | A | SEE 9,8 % ; +3,7 % du 1RM ; ES 0,53 au squat | [@greig2023] [@lemense2024] | Garder la formule reps-charge, pas le profil vitesse |
+| Le 1RM estimé par la vitesse surestime | A | SEE 9,8 % ; +3,7 % du 1RM ; ES 0,53 au squat (4 études, 71 sujets, squat seulement) | [@greig2023] [@lemense2024] | Garder la formule reps-charge par simplicité ; aucune comparaison directe avec les formules par les reps n'a été lue |
 | Le 1RM s'estime mieux sur peu de reps | B | 5RM : R² 0,97-0,99 ; pas plus de 10 reps | [@reynolds2006] [@mayhew2008] | Test RM sur 3-6 reps, refuser > 10 |
 | Le nombre de reps à un %1RM varie selon l'individu et l'exercice | A | 269 études, 7 289 sujets ; presse > développé couché | [@nuzzo2024] | Une formule unique a une erreur individuelle incompressible |
-| Le RIR est faux d'environ 1 rep en moyenne | A | Sous-estimation 0,95 rep (IC 0,17-1,73) ; I² 98 % | [@halperin2022] [@refalo2024] | Annoncer « ±1 rep » ; RIR prudent = marge de sécurité |
+| En moyenne, les pratiquants annoncent ~1 rep de moins que ce qu'ils peuvent faire ; l'écart individuel va de 0 à 2 reps près de l'échec, davantage loin de l'échec | B | Biais moyen : sous-estimation 0,95 rep (IC 0,17-1,73) ; I² 97,9 % ; revue de portée « exploratoire » ; l'erreur d'un individu est plus large (2,05 ± 1,73 reps à RIR 1) | [@halperin2022] [@refalo2024] [@zourdos2021] | Ne pas afficher « ±1 rep » comme une marge d'erreur : c'est un biais moyen ; RIR prudent = marge de sécurité |
 | Le RIR est bien pire loin de l'échec et en série longue | B | Erreur 2,1 / 3,7 / 5,2 reps à RIR 1 / 3 / 5 (série de ~16) | [@zourdos2021] [@halperin2022] | Test RM : exiger RIR ≤ 2-3 et ≤ 8 reps |
-| L'expérience n'améliore pas la précision du RIR ; les séries tardives oui | A | β ≈ 0 pour le niveau ; 1re série sous-estimée | [@halperin2022] [@mansfield2020] | Ne pas ajuster la charge sur la 1re série seule |
+| L'expérience n'améliore pas la précision du RIR ; pour les séries tardives, résultats contradictoires | B | β ≈ 0 pour le niveau ; 1re série sous-estimée [@mansfield2020] ; pas de différence entre séries 1 et 2 [@refalo2024] | [@halperin2022] [@mansfield2020] [@refalo2024] | Ne pas ajuster la charge sur la 1re série seule |
 | La vitesse baisse quand le RPE monte | B | r = -0,77 à -0,88 | [@zourdos2016] | Le RPE reste un bon substitut gratuit à la vitesse |
 | Prédire les reps restantes par la vitesse échoue en fatigue | A | 6 études ; précision compromise avec repos courts | [@mirasmoreno2025] | Pas de « RIR automatique » par la vitesse |
-| L'IA de pose a ≈ 4-5° d'erreur en sagittal, plus en frontal à la cheville | A | RMSE 4,4° genou, 5,3° hanche, 7,5° cheville frontale | [@ogura2026] | Profondeur de squat : oui ; angles fins : non |
+| L'IA de pose a ≈ 4-5° d'erreur en sagittal, plus en frontal à la cheville | A | RMSE 4,4° genou, 5,3° hanche, 7,5° cheville frontale | [@ogura2026] | Profondeur de squat : plausible, non validé (la méta-analyse porte sur des sauts et mélange systèmes multi-caméras et téléphones) ; angles fins : non |
 | Le sans-marqueur est répétable mais pas interchangeable avec le labo | A | SEM < 5° souvent ; écarts 0,2 à 28,6° | [@yoma2025] [@chougule2026] | Comparer l'athlète à lui-même, même cadrage |
 | Le comptage de reps par IA dépend du placement de caméra | C | 95,5 % en diagonale à 2 m ; 0 % de profil à 90 cm | [@oliosi2026] | Guide de cadrage obligatoire avant de compter |
 | Le valgus mesuré en 2D est incertain | C | Angle de projection frontale vs 3D : ICC 0-0,57 ; OpenPose en labo : 2,4° | [@ortiz2016] [@ino2024] [@erdman2024] | Pas de verdict automatique « genou qui rentre » |
 | Le FMS est reproductible mais ne prédit pas la blessure | A | ICC 0,84 ; RR 1,47 au mieux | [@cuchna2016] [@moran2017b] | Squat bras levés = choisir des exercices, rien d'autre |
-| FC au poignet : bonne au repos et en course, mauvaise en muscu et à vélo | A | -7,3 bpm en musculation ; -4,6 bpm à vélo ; ≈ 0 au repos | [@zhang2020] [@doherty2024] | Ne pas calculer une charge de muscu depuis la FC poignet |
+| FC au poignet : bonne au repos et en course, mauvaise en muscu et à vélo | A | -7,3 bpm en musculation ; -4,6 bpm à vélo (surtout sur ergomètre) ; ≈ 0 au repos | [@zhang2020] [@doherty2024] | Ne pas calculer une charge de muscu depuis la FC poignet |
 | Aucune montre n'est juste pour les calories | A | 158 publications ; erreur -21 à +15 % | [@fuller2020] [@doherty2024] | Ne pas afficher de calories de séance |
 | La VO2max de montre est bonne en moyenne, pas pour un individu | A | Limites d'accord ±10 ml/kg/min (effort), -13 à +17 (repos) | [@molinagarcia2022] | Lire la tendance, jamais la valeur |
 | La VFC des appareils portables est proche de l'ECG | A | ES 0,23 ; 23 études | [@dobbs2019] | VFC du matin exploitable en tendance |
@@ -79,13 +81,13 @@
 - **Épaule** : MDC90 8° en flexion, 9° en rotation externe [@kolber2011] ; écart au 3D 5,8° (flexion), 1,7° (rotation externe) [@boissy2017].
 - **Montées sur pointe** : limites d'accord ±6 reps entre deux jours ; médiane 24 reps (hommes), 21 (femmes) [@hebertlosier2017b].
 - **Tirage isométrique mi-cuisse** : CV médian 4,9 %, ICC médian 0,96 [@grgic2022b].
-- **Vitesse de barre au téléphone** : r 0,90-0,94 avec un capteur à câble, biais 0,01-0,03 m/s [@balsalobrefernandez2018] [@balsalobrefernandez2023].
+- **Vitesse de barre au téléphone** : r 0,90-0,94 avec un capteur à câble, biais 0,01-0,03 m/s ; études écrites par le développeur des applis [@balsalobrefernandez2018] [@balsalobrefernandez2023].
 - **1RM par la vitesse** : erreur 9,8 % (IC 7,4-12,2), surestimation 3,7 % [@greig2023].
 - **1RM par les reps** : le 5RM donne R² 0,97-0,99 ; au-delà de 10 reps la précision chute [@reynolds2006].
-- **RIR** : erreur moyenne 0,95 rep [@halperin2022] ; 0,65 rep au développé couché à 75 % [@refalo2024] ; 2,1 / 3,7 / 5,2 reps à RIR 1 / 3 / 5 sur une série de 16 reps [@zourdos2021].
-- **Estimation de pose** : erreur 4,4° (genou), 5,3° (hanche), 4,9° (cheville) en sagittal ; 7,5° cheville frontale ; hauteur de saut -2,9 cm [@ogura2026].
+- **RIR** : biais moyen (sous-estimation) 0,95 rep, IC 0,17-1,73, I² 97,9 % [@halperin2022] ; 0,65 rep au développé couché à 75 % [@refalo2024] ; 2,1 / 3,7 / 5,2 reps à RIR 1 / 3 / 5 sur une série de 16 reps [@zourdos2021].
+- **Estimation de pose** : erreur 4,4° (genou), 5,3° (hanche), 4,9° (cheville) en sagittal ; 7,5° cheville frontale ; hauteur de saut -2,9 cm ; tâches de saut seulement [@ogura2026].
 - **Comptage de reps par IA** : de 0 % à 95,5 % de détection selon l'angle et la distance de la caméra [@oliosi2026].
-- **FC au poignet** : -7,3 bpm en musculation, -4,6 bpm à vélo, ≈ 0 au repos [@zhang2020].
+- **FC au poignet** : -7,3 bpm en musculation, -4,6 bpm à vélo (surtout sur ergomètre), ≈ 0 au repos [@zhang2020].
 - **VO2max de montre** : limites d'accord ≈ ±10 ml/kg/min avec un algorithme d'effort [@molinagarcia2022].
 - **Sommeil au poignet** : ≈ 17 min d'écart sur la durée totale [@lee2025]. **Calories** : erreur de -21 à +15 % [@doherty2024].
 - **Seuls ≈ 11 % des appareils grand public** ont été validés pour au moins une mesure [@doherty2024].
@@ -94,7 +96,7 @@
 
 1. **« Un ICC de 0,95, donc le test est précis. »** → Faux raccourci. L'ICC dépend de la diversité du groupe ; le RSI a un ICC ≥ 0,92 et pourtant un CV ≥ 12,5 %. Preuve B [@hopkins2000] [@montalvo2021].
 2. **« Le FMS (ou le Y-balance) détecte qui va se blesser. »** → Non. Lien faible ou nul avec des seuils généraux. Preuve A [@moran2017b] [@plisky2021].
-3. **« La vitesse de barre donne un 1RM plus juste que les reps. »** → Non. Erreur ≈ 10 % et surestimation ≈ 4 % ; au squat libre la méthode est jugée non viable. Preuve A [@greig2023] [@lemense2024].
+3. **« La vitesse de barre donne un 1RM plus juste que les reps. »** → Pas démontré. Le 1RM estimé par la vitesse a une erreur d'environ 10 % et surestime d'environ 4 % [@greig2023]. Aucune comparaison directe avec les formules par les reps n'a été lue. Au squat libre la méthode est jugée non viable (4 études, 71 sujets). Preuve B [@lemense2024].
 4. **« Les athlètes expérimentés jugent mieux leur RIR. »** → Pas démontré : le niveau ne change pas la précision ; c'est la proximité de l'échec et le nombre de reps qui comptent. Preuve A [@halperin2022] [@refalo2024].
 5. **« RIR 5, c'est précis. »** → Non. À RIR 5 annoncé, l'erreur moyenne atteint 5 reps sur une série longue. Preuve B [@zourdos2021].
 6. **« Le téléphone vaut un goniomètre partout. »** → Oui pour cheville, genou, épaule ; non garanti pour la hanche, et la preuve sur l'erreur absolue est mince. Preuve A [@keogh2019] [@hahn2021].
@@ -129,13 +131,13 @@
 **Force et charge**
 15. Test RM : 3 à 6 reps, jamais plus de 10. (B) [@reynolds2006] [@mayhew2008]
 16. Test RM : demande un arrêt à 1-2 reps en réserve, pas à 4-5. Plus on est loin de l'échec, plus l'estimation est fausse. (B) [@zourdos2021] [@halperin2022]
-17. Compte ±1 rep d'incertitude sur tout RIR annoncé, soit ≈ ±3 % sur le max estimé avec Epley (calcul). (A) [@halperin2022] [@refalo2024]
+17. RIR annoncé : en moyenne, les pratiquants annoncent ~1 rep de moins que ce qu'ils peuvent faire ; l'écart individuel va de 0 à 2 reps près de l'échec, davantage loin de l'échec. Une rep d'écart ≈ 3 % sur le max estimé avec Epley (calcul). (B) [@halperin2022] [@refalo2024] [@zourdos2021]
 18. Ne modifie pas un max pour un écart de moins de 5 % ; attends deux tests concordants. (B) [@reynolds2006] [@nuzzo2024]
 19. Fais un max par exercice : le lien reps-charge change d'un exercice à l'autre. (A) [@nuzzo2024]
-20. Ne règle pas la charge sur le RIR de la 1re série seule : elle est souvent sous-estimée. Regarde les séries 2 et 3. (B) [@mansfield2020] [@halperin2022]
+20. Ne règle pas la charge sur le RIR de la 1re série seule : elle est souvent sous-estimée. Regarde les séries 2 et 3. Résultats contradictoires : une étude ne trouve pas de différence entre séries 1 et 2. (C) [@mansfield2020] [@halperin2022] [@refalo2024]
 21. Un athlète « expérimenté » n'est pas plus précis en RIR : garde la même prudence pour tous. (A) [@halperin2022]
 22. Séries longues (> 12 reps) : le RIR devient peu fiable ; préfère un nombre de reps fixé et un RPE global. (A) [@halperin2022] [@zourdos2021]
-23. Si tu utilises une appli de vitesse : même exercice, trajectoire verticale, charges moyennes ; ne t'en sers pas pour estimer un 1RM. (A) [@silva2021] [@greig2023] [@lemense2024]
+23. Si tu utilises une appli de vitesse : même exercice, trajectoire verticale, charges moyennes ; ne t'en sers pas pour estimer un 1RM (erreur d'environ 10 %). (A) [@silva2021] [@greig2023] [@lemense2024]
 24. Le RPE reste un bon indicateur gratuit de la vitesse perdue (r ≈ -0,8). (B) [@zourdos2016]
 
 **Tests d'endurance locale et sauts**
@@ -146,12 +148,12 @@
 
 **Vidéo et IA**
 29. Vidéo de squat : téléphone fixe, à ≈ 2 m, corps entier dans le cadre ; pour compter, la vue de trois quarts marche mieux que le profil collé. (C) [@oliosi2026]
-30. Sers-toi de la vidéo pour la profondeur, les talons, le buste. Pas pour chiffrer un valgus. (A/C) [@ogura2026] [@ortiz2016]
+30. Sers-toi de la vidéo pour regarder la profondeur, les talons, le buste : usage plausible, non validé (les mesures portent sur des sauts). Pas pour chiffrer un valgus. (C) [@ogura2026] [@ortiz2016]
 31. Pour le genou, critère visuel simple : « le genou passe-t-il à l'intérieur du pied ? ». (C) [@erdman2024]
 
 **Montres**
 32. FC en musculation : ignore la valeur du poignet. Si tu veux la FC, ceinture thoracique. (A) [@zhang2020]
-33. À vélo aussi, la FC du poignet est en retrait (-4,5 bpm) : ceinture pour les séances clés. (A) [@zhang2020]
+33. À vélo aussi, la FC du poignet est en retrait (-4,5 bpm, chiffre tiré surtout d'ergomètres) : ceinture pour les séances clés. (B) [@zhang2020]
 34. VO2max de montre : regarde la tendance sur des mois, jamais la valeur ni la comparaison entre athlètes. (A) [@molinagarcia2022]
 35. Sommeil : fie-toi à la durée approximative et à la régularité, pas aux phases. (A) [@lee2025] [@doherty2024]
 36. VFC : une mesure du matin, même position, moyenne sur 7 jours ; l'outil portable suffit. (A pour l'outil ; D pour la moyenne sur 7 jours, usage de terrain) [@dobbs2019]
@@ -165,7 +167,7 @@ Lecture : **OK** = le `mdc` colle aux chiffres lus ; **Limite** = dans le bas de
 |---|---|---|---|---|
 | `saut-unipodal` | 12 cm ; 90 % | SEM 3,4-11 %, différence réelle 9-31 % ; symétrie MDC 7-13 points ; sains ≥ 90 % [@kockum2015] [@reid2007] [@munro2011] | **Limite** (12 cm ≈ 7-8 % d'un saut de 150-170 cm) ; seuil 90 % **OK** | Passer à 15 cm ou à 10 % du score. La fiche annonce « ICC 0,92-0,97 » : les résumés lus donnent 0,76-0,98, et Reid 0,82-0,93 sur l'indice de symétrie. Corriger le texte. |
 | `assis-debout-unipodal` | 4 reps ; 90 % | Formats publiés : 30 s (ICC 0,92-0,94), 5 reps chronométrées, ou vitesse par appli (ICC 0,81-0,89, CV 6-10 %) [@waldhelm2020] [@birinci2026]. Le format « jusqu'à épuisement au métronome » n'apparaît pas | **Non vérifié** | Garder la mention honnête de la fiche. Mesurer le `mdc` en interne (2 passations à 1 semaine sur les 7 athlètes) ou basculer sur le format 30 s. |
-| `rm` | 5 % | 5RM : R² 0,97-0,99 ; pas plus de 10 reps [@reynolds2006] ; RIR ±1 rep près de l'échec, 2-5 reps loin de l'échec [@halperin2022] [@zourdos2021] ; 1 rep ≈ 3,3 % avec Epley (calcul) | **OK sous conditions** (≤ 8 reps et RIR ≤ 2) ; optimiste sinon | Afficher ±5 % si RIR ≤ 2, ±8 à 10 % si RIR ≥ 3 ou reps > 8. Les sources « Moses (Wintec) », « LeSuer 1997 », « étude RIR au squat 2025 » et la phrase sur le soulevé de terre n'ont pas pu être vérifiées ici. |
+| `rm` | 5 % | 5RM : R² 0,97-0,99 ; pas plus de 10 reps [@reynolds2006] ; RIR : biais moyen ~1 rep, écart individuel de 0 à 2 reps près de l'échec, 2-5 reps loin de l'échec [@halperin2022] [@zourdos2021] ; 1 rep ≈ 3,3 % avec Epley (calcul) | **OK sous conditions** (≤ 8 reps et RIR ≤ 2) ; optimiste sinon | Afficher ±5 % si RIR ≤ 2, ±8 à 10 % si RIR ≥ 3 ou reps > 8. Les sources « Moses (Wintec) », « LeSuer 1997 », « étude RIR au squat 2025 » et la phrase sur le soulevé de terre n'ont pas pu être vérifiées ici. |
 | `genou-mur` | 2 cm ; asym 2 cm ; repère 10 cm | MDC 1,6-1,9 cm ; ICC 0,65-0,99 [@powden2015] ; asymétrie moins fiable qu'un côté [@howe2020] | **OK** | Rien à changer. Le repère 10 cm n'est pas dans les résumés lus : le garder comme repère d'usage, pas comme norme. |
 | `thomas` | 5° ; asym 6° ; repère 0° | ICC 0,85-0,92 bassin tenu [@clapis2008] [@eimiller2024] ; extension de hanche à l'iPhone MDC95 3,9° (intra) et 9,6° (inter) [@amano2024] ; non valide si bassin libre [@vigotsky2016] | **Limite** | 6-7° serait plus prudent en auto-mesure. Moyenne de jeunes sains 5,4 ± 9,7° : environ un tiers est sous 0° sans problème ; présenter 0° comme repère, pas comme seuil d'alerte. |
 | `rotation-interne-hanche` | 6° ; asym 8° ; repère 30° | Validité vs 3D ICC 0,81-0,94 (mesure passive par examinateur) [@ganokroj2021] ; en conditions réelles MDC 10,9-16,4° [@spork2021] ; « aucune appli recommandable sans réserve pour la hanche » (résumé de [@hahn2021]) | **Optimiste** | `mdc` 10°, `asym` 10-12°. Le texte de la fiche (ICC 0,81-0,94) est exact mais concerne la validité, pas l'erreur de re-test. Repère 30° non vérifié. |
@@ -187,18 +189,19 @@ Lecture : **OK** = le `mdc` colle aux chiffres lus ; **Limite** = dans le bas de
 - **Marge du max variable.** `mdcPct` 5 si reps ≤ 8 et RIR ≤ 2 ; 8-10 sinon. Refuser un calcul de max au-delà de 10 reps ou de RIR 4 (message : « série trop loin de l'échec pour estimer ») [@reynolds2006] [@zourdos2021].
 - **Passation de familiarisation.** Marquer la 1re passation d'un test « découverte » et prendre la 2e comme référence, au moins pour les sauts [@munro2011].
 - **Asymétrie confirmée.** N'afficher l'alerte gauche/droite que si elle dépasse le seuil sur deux passations de suite [@reid2007] [@howe2020].
-- **Ajustement de charge prudent.** Ne pas ajuster sur le RIR de la 1re série seule ; pondérer les séries 2-3 ; traiter un RIR annoncé comme « ± 1 » [@mansfield2020] [@halperin2022].
+- **Ajustement de charge prudent.** Ne pas ajuster sur le RIR de la 1re série seule ; pondérer les séries 2-3 ; traiter un RIR annoncé comme sous-estimé d'environ 1 rep en moyenne, avec un écart individuel de 0 à 2 reps près de l'échec (ne pas afficher « ±1 rep » comme une marge d'erreur) ; l'effet de la 1re série est contesté [@mansfield2020] [@halperin2022] [@refalo2024].
 - **Auto-mesure du `mdc` maison.** Proposer au coach un mode « test-retest » (2 passations à une semaine) qui calcule le SEM et le MDC réels du groupe pour les tests non validés (assis-debout, pont, équilibre) [@hopkins2000].
 - **Thomas : garde-fou bassin.** Rappel sonore « dos plaqué », et si possible contrôle que le téléphone ne détecte pas de mouvement parasite avant la mesure [@vigotsky2016].
 - **Vidéo : guide de cadrage.** Gabarit à l'écran (corps entier, ≈ 2 m, téléphone fixe). Pour un futur comptage de reps, viser la vue de trois quarts [@oliosi2026].
 - **CMJ optionnel.** Un saut vertical filmé au ralenti est la mesure de puissance la mieux validée au téléphone [@gencoglu2023] ; `mdc` à fixer par test-retest (CV 2,4-4,6 % en labo [@markovic2004]).
-- **Version « angle » du genou au mur.** Le téléphone sur le tibia donne l'angle à 0,5° d'un inclinomètre pro [@balsalobrefernandez2019] : utile si le mètre ruban gêne.
+- **Version « angle » du genou au mur.** Le téléphone sur le tibia donne l'angle à 0,5° d'un inclinomètre pro (12 sujets, étude écrite par le développeur de l'appli) [@balsalobrefernandez2019] : utile si le mètre ruban gêne.
 - **Données de montre via intervals.icu.** N'utiliser que des tendances : FC de repos, VFC du matin, durée de sommeil [@dobbs2019] [@lee2025].
 
 **À ne PAS faire**
 - Pas de « score de risque de blessure » tiré des tests [@moran2017b] [@plisky2021].
 - Pas de verdict automatique « valgus du genou » par IA sur une vidéo d'athlète [@ortiz2016] [@yoma2025].
 - Pas de 1RM calculé par la vitesse de barre [@greig2023] [@lemense2024].
+- Pas de « profondeur de squat mesurée par IA » présentée comme validée : plausible, non validé [@ogura2026].
 - Pas de charge de séance de muscu calculée depuis la FC du poignet [@zhang2020].
 - Pas de calories de séance [@fuller2020].
 - Pas de comparaison d'un athlète à une « norme » pour les tests sans norme vérifiée (assis-debout, pont, équilibre).
@@ -209,7 +212,7 @@ Lecture : **OK** = le `mdc` colle aux chiffres lus ; **Limite** = dans le bas de
 
 - **Je n'ai lu que les résumés** (Europe PMC). Les chiffres absents des résumés ne sont pas cités : normes par âge de Springer, seuils 20/25 du pont unipodal, repères 10 cm / 30° / 70° / 165° / 60°.
 - **Non trouvés ou non ouverts** : LeSuer 1997, Epley 1985, « Moses (Wintec) », « étude RIR au squat 2025 », « CISS 2023 », « IJSPT 2024 » (pont), « revue Sports 2025 » citées dans `tests.json`. Je ne confirme ni n'infirme ces sources. L'affirmation « au soulevé de terre les formules sous-estiment » n'est pas vérifiée ici.
-- **Aucune méta-analyse sur la précision des formules reps → 1RM** (Epley, Brzycki) n'a été trouvée ; le « ±5 % » repose sur des études isolées et sur mon calcul à partir de l'erreur de RIR.
+- **Aucune méta-analyse sur la précision des formules reps → 1RM** (Epley, Brzycki) n'a été trouvée ; le « ±5 % » repose sur des études isolées et sur mon calcul à partir de l'erreur de RIR. On ne peut donc pas dire que la vitesse est « moins précise » ou « pas plus précise » que les reps : aucune comparaison directe n'a été lue.
 - **Auto-mesure.** Presque toutes les études font mesurer par un examinateur, souvent en passif. L'appli fait mesurer l'athlète seul, en actif. L'erreur réelle est sans doute plus grande ; elle n'est connue que par un test-retest interne.
 - **Populations.** Étudiants, sportifs loisir, patients. Très peu d'athlètes d'endurance (exception : skieurs de fond, [@birinci2026]). Rien en altitude.
 - **MDC90 vs MDC95, intra vs inter-évaluateur** : les études ne sont pas homogènes ; mes comparaisons avec les `mdc` de l'appli sont des ordres de grandeur.
@@ -240,20 +243,20 @@ Lecture : **OK** = le `mdc` colle aux chiffres lus ; **Limite** = dans le bas de
 - **Jambe tendue.** iPhone, mesure passive : MDC95 3,3° même examinateur, 10,2° entre examinateurs [@amano2024]. Auto-mesure active seul : non validée.
 - **Épaule.** Smartphone ≥ goniomètre pour la reproductibilité (ICC 0,80 vs 0,69) [@werner2014]. MDC90 inclinomètre : 8° flexion, 9° rotation externe [@kolber2011]. Vs capture 3D : erreur moyenne 5,8° en flexion, 1,7° en rotation externe [@boissy2017]. **Le MDC de 8° de l'appli colle à la littérature.**
 - **Thomas.** Au goniomètre, fiabilité basse entre jours (ICC 0,30-0,65) ; une méthode géométrique (cuisse) fait 0,90-0,95 [@wakefield2015]. Le téléphone posé sur la cuisse se rapproche de la méthode « segment » : bonne idée, mais la bascule du bassin reste la principale source d'erreur [@vigotsky2016].
-- **À retenir.** Face à un inclinomètre pro, l'iPhone fait 0,48° d'erreur sur l'angle de cheville [@balsalobrefernandez2019] ; l'erreur vient donc surtout de la **position du corps, du placement et du zéro**. L'auto-mesure active d'un athlète seul n'est validée pour presque aucun test : l'appli doit le dire.
+- **À retenir.** Face à un inclinomètre pro, l'iPhone fait 0,48° d'erreur sur l'angle de cheville (étude écrite par le développeur de l'appli) [@balsalobrefernandez2019] ; l'erreur vient donc surtout de la **position du corps, du placement et du zéro**. L'auto-mesure active d'un athlète seul n'est validée pour presque aucun test : l'appli doit le dire.
 
 ### Notes de lecture 3 — VBT par téléphone, estimation du 1RM, précision du RIR
 
-- **Vitesse de barre au téléphone.** PowerLift (ex-My Lift) vs capteur linéaire : r = 0,94, ICC 0,97 [@balsalobrefernandez2018]. My Jump Lab (IA, temps réel) vs GymAware : r 0,90-0,92, biais ≈ 0,01-0,03 m/s, CV de l'appli proche du capteur [@balsalobrefernandez2023]. Revue des applis : valides, **biais aux charges lourdes** [@silva2021]. Centrales inertielles : 7 modèles sur 8 valides en trajectoire linéaire [@clemente2021]. Méta-analyse 2026 : validité ICC ≈ 0,91, les capteurs à câble plus constants que les IMU [@claassen2026]. Mais seules 5 études de validité sur 66 passent des critères stricts [@wannouch2025].
-- **1RM par la vitesse.** Erreur ≈ 10 % (SEE%) et **surestimation** moyenne de ~4 % [@greig2023] ; au squat libre la méthode de vitesse seuil surestime (ES 0,53) [@lemense2024]. Donc le profil charge-vitesse n'est pas plus précis qu'une formule reps-charge bien utilisée.
+- **Vitesse de barre au téléphone.** PowerLift (ex-My Lift) vs capteur linéaire : r = 0,94, ICC 0,97 (étude écrite par le développeur de l'appli) [@balsalobrefernandez2018]. My Jump Lab (IA, temps réel) vs GymAware : r 0,90-0,92, biais ≈ 0,01-0,03 m/s, CV de l'appli proche du capteur (étude écrite par le développeur de l'appli) [@balsalobrefernandez2023]. Revue des applis : valides, **biais aux charges lourdes** [@silva2021]. Centrales inertielles : 7 modèles sur 8 valides en trajectoire linéaire [@clemente2021]. Méta-analyse 2026 : validité ICC ≈ 0,91, les capteurs à câble plus constants que les IMU [@claassen2026]. Mais seules 5 études de validité sur 66 passent des critères stricts [@wannouch2025].
+- **1RM par la vitesse.** Erreur ≈ 10 % (SEE%) et **surestimation** moyenne de ~4 % [@greig2023] ; au squat libre la méthode de vitesse seuil surestime (ES 0,53) [@lemense2024]. Aucune comparaison directe avec les formules par les reps n'a été lue : on ne peut pas classer les deux méthodes.
 - **1RM par les reps.** Le 5RM prédit le mieux (R² 0,97-0,99) ; pas plus de 10 reps en équation linéaire [@reynolds2006] [@mayhew2008]. Le nombre de reps à un %1RM varie beaucoup d'un individu à l'autre et selon l'exercice (presse > développé couché) [@nuzzo2024] → une même formule pour tous a une erreur individuelle incompressible.
-- **RIR/RPE.** Erreur moyenne ≈ 1 rep (sous-estimation 0,95), hétérogénéité énorme ; meilleur près de l'échec, sous 12 reps, en séries tardives ; le niveau d'entraînement ne change rien [@halperin2022]. Au développé couché 75 % : erreur absolue 0,65 rep [@refalo2024]. Mais en série longue (squat 70 %, ~16 reps) : 2 reps d'erreur à RIR 1, 3,7 à RIR 3, 5,2 à RIR 5 [@zourdos2021]. 1re série souvent sous-estimée [@mansfield2020]. La vitesse baisse quand le RPE monte (r ≈ -0,8 à -0,9) [@zourdos2016].
+- **RIR/RPE.** Biais moyen ≈ 1 rep (sous-estimation 0,95, IC 0,17-1,73, I² 97,9 %, revue de portée « exploratoire ») : ce n'est pas la marge d'erreur d'un individu, qui est plus large ; meilleur près de l'échec, sous 12 reps, en séries tardives ; le niveau d'entraînement ne change rien [@halperin2022]. Au développé couché 75 % : erreur absolue 0,65 rep [@refalo2024]. Mais en série longue (squat 70 %, ~16 reps) : 2 reps d'erreur à RIR 1, 3,7 à RIR 3, 5,2 à RIR 5 [@zourdos2021]. 1re série souvent sous-estimée [@mansfield2020], mais pas de différence entre séries 1 et 2 dans [@refalo2024] : résultats contradictoires. La vitesse baisse quand le RPE monte (r ≈ -0,8 à -0,9) [@zourdos2016].
 - **Calcul pour l'appli.** Avec Epley (1RM = charge × (1 + reps/30)), 1 rep d'erreur sur les reps totales ≈ 3 % d'erreur sur le 1RM ; 2 reps ≈ 6-7 %. Le « ±5 % » affiché tient pour 3-8 reps **si** le RIR annoncé est ≤ 2-3 ; il devient optimiste au-delà (calcul de l'auteur à partir de [@zourdos2021] [@halperin2022]).
 - **Vitesse → reps restantes.** Bonne au repos, mauvaise en fatigue sauf athlètes très expérimentés de l'échec [@mirasmoreno2025] : pas pour des endurants qui ne vont pas à l'échec.
 
 ### Notes de lecture 4 — Analyse vidéo du mouvement par IA (estimation de pose)
 
-- **État 2025-2026.** Méta-analyse sauts : erreur ≈ 4-5° dans le plan sagittal (genou, hanche, cheville), 3° hanche frontale, **7,5° cheville frontale** ; hauteur de saut biaisée de -2,9 cm ; énorme variabilité selon le système [@ogura2026]. Revue de 53 études : fiable d'une fois sur l'autre (SEM < 5° le plus souvent) mais écarts au 3D de 0,2 à 28,6° → **pas interchangeable avec un labo** [@yoma2025] [@chougule2026]. L'IA de pose en sport repose sur des données privées, peu reproductible [@aulton2025].
+- **État 2025-2026.** Méta-analyse sauts : erreur ≈ 4-5° dans le plan sagittal (genou, hanche, cheville), 3° hanche frontale, **7,5° cheville frontale** ; hauteur de saut biaisée de -2,9 cm ; énorme variabilité selon le système (multi-caméras et téléphones mélangés) [@ogura2026]. Revue de 53 études : fiable d'une fois sur l'autre (SEM < 5° le plus souvent) mais écarts au 3D de 0,2 à 28,6° → **pas interchangeable avec un labo** [@yoma2025] [@chougule2026]. L'IA de pose en sport repose sur des données privées, peu reproductible [@aulton2025].
 - **Compter les reps : oui, si la caméra est bien placée.** Squat filmé en diagonale à 2 m : 95 % de détection, erreur 0,05 rep ; de profil à 90 cm : 0 % [@oliosi2026]. Montre connectée : comptage correct au squat et soulevé de terre, mauvais au développé couché [@oberhofer2021].
 - **Valgus du genou.** En labo, sans charge, vidéo de face : OpenPose ≈ 2,4° d'erreur, aussi bien qu'un kiné [@ino2024]. Mais l'angle de projection frontale 2D peut être mal corrélé au 3D (ICC 0-0,57) alors que l'écart genoux/chevilles l'est bien [@ortiz2016]. Les vrais angles de valgus sont petits (2-5°) [@erdman2024] : **l'erreur de l'IA est du même ordre que ce qu'on veut mesurer**. Juger un valgus sous charge, en salle, filmé de profil par un athlète seul : non validé → rester sur un critère visuel simple (genou à l'intérieur du pied) et sur l'œil du coach.
 - **Amplitudes par IA.** Appli de vision : ICC 0,74-0,93 pour hanche/genou [@hellsten2025] ; systèmes 3D multi-caméras très bons au squat bras levés [@bae2024] (pas un téléphone seul).
