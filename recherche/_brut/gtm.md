@@ -160,3 +160,58 @@ Formats probables, du plus utile au moins utile pour l'acquisition B2B :
 
 Points de vigilance : droit à l'image (autorisation écrite, parentale pour les mineurs de pôle espoir), logos fédéraux, ne pas promettre des résultats. Mesurer : nombre de **messages entrants de coachs ou de structures**, pas les vues.
 
+---
+
+## 3. Entretiens de découverte : méthodes et script
+
+### 3.1 The Mom Test (Rob Fitzpatrick)
+
+Le sous-titre du livre résume l'enjeu : apprendre si son idée est bonne alors que « tout le monde vous ment » ([momtestbook.com](https://www.momtestbook.com/)). Principes (d'après le site du livre, le résumé Shortform et un résumé LessWrong) :
+
+1. **Parler de leur vie, pas de ton idée** : ne pas présenter Charge Utile pendant l'entretien de découverte ; demander comment ils font aujourd'hui ([shortform.com](https://www.shortform.com/blog/what-is-the-mom-test/)).
+2. **Demander du concret passé, pas des opinions ni du futur** : « la dernière fois que… », de préférence un passé **récent** (la mémoire déforme) ([shortform.com](https://www.shortform.com/blog/what-is-the-mom-test/)).
+3. **Parler moins, écouter plus** ([shortform.com](https://www.shortform.com/blog/what-is-the-mom-test/)).
+4. **Les compliments ne valent rien** : les gens complimentent les mauvaises idées pour être gentils ; on les dévie en revenant au dernier cas réel. Les idées de fonctions se creusent (« pourquoi ça vous aiderait ? »). L'enthousiasme sans action passée = du vent ([lesswrong.com](https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts)).
+5. **Chercher un engagement à la fin** : du temps (tester un prototype), de la réputation (présenter un collègue ou un décideur — le plus parlant en B2B), de l'argent (précommande). Un entretien sans engagement ni étape suivante est un échec poli ([lesswrong.com](https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts)).
+6. **Préparer ses 3 questions les plus importantes**, y compris les « questions qui font peur » (celles qui peuvent tuer le projet), et **rester informel** : si l'autre a l'impression de rendre un service, c'est trop formel ([lesswrong.com](https://www.lesswrong.com/posts/fuktKYSvzFMTfPpeT/the-mom-test-summary-and-thoughts)).
+
+### 3.2 Jobs To Be Done (Christensen ; entretien « switch » de Moesta et Spiek)
+
+- Concept popularisé par Clayton Christensen et coauteurs dans la Harvard Business Review (septembre 2016, « Know Your Customers' Jobs to Be Done ») : les gens « embauchent » un produit pour faire un progrès dans une situation donnée ([hbr.org](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) — seul l'en-tête de l'article a pu être lu, le contenu est payant).
+- **Méthode d'entretien** (site de Bob Moesta et Chris Spiek, [jobstobedone.org](https://jobstobedone.org/)) :
+  - **Moment de difficulté** : tout changement commence quand le statu quo devient inacceptable ; issues possibles : changer, continuer à chercher, ou ne rien faire.
+  - **Chronologie** : premier déclic → recherche passive → recherche active → achat (→ première utilisation). On reconstitue l'histoire d'un **changement réel et récent** (ex. : le jour où un coach est passé d'un PDF à une appli).
+  - **Quatre forces** : poussée (le problème actuel), attraction (la nouvelle solution) contre anxiété (peur du nouveau) et habitude (confort de l'existant). On ne change que si poussée + attraction l'emportent.
+- **Application à Charge Utile** : le vrai concurrent est souvent l'**habitude** (tableur, PDF, WhatsApp, séance notée sur papier) et l'**anxiété** (« mes athlètes vont-ils l'utiliser ? », « mes données ? »). Il faut trouver des coachs qui ont **déjà changé d'outil** récemment et reconstituer pourquoi.
+
+### 3.3 Script de 15 questions (proposition, à adapter)
+
+Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physique, responsable de team. Durée : 20-30 min. **Pas de démonstration avant la question 13.**
+
+*Contexte (vie actuelle)*
+1. Raconte-moi ta semaine type avec tes athlètes : combien, quel niveau, quelles disciplines ?
+2. La dernière séance de renforcement que tu as donnée à un athlète : comment l'as-tu construite et comment lui est-elle parvenue (papier, PDF, appli, message) ?
+3. Comment as-tu su s'il l'avait faite, et avec quelles charges ?
+4. La dernière fois qu'une séance de muscu s'est mal passée (charge trop lourde, exercice mal fait, séance sautée), qu'est-ce qui s'est passé ? Qu'as-tu fait ensuite ?
+
+*Difficulté et solutions déjà essayées (JTBD)*
+5. Quel outil utilises-tu pour l'endurance (intervals.icu, TrainingPeaks, Nolio…) ? Depuis quand, et qu'est-ce qui t'a fait l'adopter ?
+6. As-tu déjà essayé un outil pour la muscu ? Lequel, combien de temps, pourquoi l'as-tu gardé ou abandonné ?
+7. Combien de temps passes-tu par semaine à préparer et suivre la partie force ? À quel moment de la semaine ?
+8. Qu'est-ce que tu as fait la dernière fois pour vérifier la technique d'un athlète à distance ?
+
+*Argent et décision*
+9. Combien payes-tu aujourd'hui pour tes outils de coaching, et qui paie (toi, le club, l'athlète, la structure) ?
+10. La dernière fois que ta structure a acheté un outil ou du matériel, qui a décidé, à quel moment de l'année, avec quel budget ?
+11. Si tu arrêtais de suivre la muscu de tes athlètes demain, qu'est-ce qui se passerait concrètement ?
+
+*Question qui fait peur*
+12. Qu'est-ce qui ferait que tu n'utiliserais jamais un outil de ce type avec tes athlètes (mineurs, données, temps, téléphone interdit en salle…) ?
+
+*Après seulement : montrer, puis demander un engagement*
+13. (Démo de 3 min) Qu'est-ce qui te paraît inutile ou faux ? Qu'est-ce qui manque pour que tu l'utilises la semaine prochaine ?
+14. Est-ce que tu serais d'accord pour l'essayer avec 2 ou 3 athlètes pendant 4 semaines, à une date précise ? (engagement de temps)
+15. Qui d'autre devrais-je rencontrer — un collègue coach, le responsable du pôle, le préparateur physique ? Peux-tu me présenter ? (engagement de réputation)
+
+**Règles de passage** : noter les faits (nombres, outils, dates), pas les compliments ; viser 15 à 20 entretiens par segment avant de conclure ; un « oui » à 14 ou 15 compte, un « c'est génial » ne compte pas.
+
