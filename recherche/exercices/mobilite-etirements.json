@@ -1,0 +1,3114 @@
+[
+ {
+  "id": "rotation-thoracique-main-nuque",
+  "nom": "Rotation du haut du dos, main à la nuque (assis sur les talons)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : à genoux, fesses posées sur les talons, buste penché à 45°, main gauche à plat au sol sous l'épaule (bras tendu), main droite derrière la nuque, coude droit dirigé vers le sol près du coude gauche. Fin (s=1) : le buste tourne d'environ 60°, le coude droit pointe vers le plafond, le regard suit le coude. Bassin et genoux immobiles. Matériel : tapis sous les genoux.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "obliques"
+  ],
+  "musclesTxt": "Haut du dos, obliques",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Assis sur les talons, une main au sol",
+   "Autre main à la nuque, coude vers le sol",
+   "Puis ouvre le coude vers le plafond"
+  ],
+  "erreurs": [
+   "Décoller les fesses des talons",
+   "Tourner la tête sans tourner le buste"
+  ],
+  "pourquoi": "Sur le vélo, ton haut du dos reste figé des heures : ici tu lui rends sa rotation.",
+  "respiration": "Souffle en ouvrant le coude, inspire en revenant.",
+  "securite": "Reste assis sur les talons pour ne pas tourner avec le bas du dos. Si ça pince, ouvre moins.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "velo",
+   "recuperation",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "enfiler-aiguille",
+   "livre-ouvert",
+   "chat-vache"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×8/côté, lent",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-thoracique-rouleau",
+  "nom": "Extension du haut du dos sur un rouleau de massage",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : couché sur le dos, genoux pliés à 90°, pieds à plat, fesses au sol, un rouleau cylindrique (15 cm de diamètre) posé en travers sous les omoplates, mains croisées derrière la tête, buste à l'horizontale. Fin (s=1) : le haut du dos s'enroule en arrière par-dessus le rouleau, la tête descend vers le sol (environ 30° d'extension), les coudes restent serrés, fesses et bas du dos ne bougent pas.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "abs"
+  ],
+  "musclesTxt": "Haut du dos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Rouleau sous les omoplates, fesses au sol",
+   "Mains derrière la tête, coudes serrés",
+   "Bascule le haut du dos en arrière"
+  ],
+  "erreurs": [
+   "Creuser le bas du dos au lieu du haut",
+   "Laisser tomber la tête sans la tenir"
+  ],
+  "pourquoi": "Le guidon t'arrondit le haut du dos : le rouleau te redonne de l'extension.",
+  "respiration": "Souffle en basculant en arrière, inspire en revenant.",
+  "securite": "Garde les côtes rentrées et les fesses au sol. Ne mets jamais le rouleau sous le bas du dos.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "velo",
+   "recuperation",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "glisse-au-mur",
+   "chat-vache",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3 positions du rouleau × 5 bascules",
+  "preuve": "C · [@konrad2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-thoracique-banc",
+  "nom": "Étirement en prière, coudes sur un banc",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : à genoux sur un tapis face à un banc (45 cm de haut), cuisses verticales, coudes posés sur le banc à largeur d'épaules, avant-bras verticaux, mains jointes, dos plat. Étiré (s=1) : les fesses reculent un peu, la poitrine descend entre les bras sous le niveau du banc, tête entre les bras, coudes pliés à 100°, les mains jointes passent derrière la nuque ; angle bras-buste d'environ 170°.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "upperback",
+   "triceps"
+  ],
+  "musclesTxt": "Grand dorsal, haut du dos, triceps",
+  "materiel": [
+   "banc",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À genoux, coudes posés sur le banc",
+   "Recule les fesses, poitrine vers le sol",
+   "Mains jointes qui passent derrière la tête"
+  ],
+  "erreurs": [
+   "Creuser fort le bas du dos",
+   "Hausser les épaules vers les oreilles"
+  ],
+  "pourquoi": "Ouvre les épaules et le grand dorsal, raccourcis par la position vélo et la double poussée en ski.",
+  "respiration": "Respire lentement, laisse la poitrine descendre à chaque expiration.",
+  "securite": "Rentre un peu le ventre pour garder le bas du dos neutre. Si l'épaule pince, écarte les coudes.",
+  "tags": [
+   "etirement",
+   "dos",
+   "velo",
+   "recuperation",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "etirement-dos-mur",
+   "posture-enfant",
+   "glisse-au-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30-45 s",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-pectoraux-cadre-porte",
+  "nom": "Étirement des pectoraux au cadre de porte",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de dessus ou de trois quarts. Départ (s=0) : debout de profil à un montant de porte ou un angle de mur, pieds décalés (pied côté mur devant), bras côté mur levé sur le côté, coude plié à 90° à hauteur d'épaule, avant-bras et paume à plat contre le montant, buste face au mur. Étiré (s=1) : le buste avance de 15 cm et tourne de 30° à l'opposé du bras, le coude reste derrière la ligne des épaules, dos droit.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "delts"
+  ],
+  "musclesTxt": "Pectoraux, avant de l'épaule",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Avant-bras contre le montant, coude à 90°",
+   "Coude à hauteur d'épaule",
+   "Avance le buste et tourne-le à l'opposé"
+  ],
+  "erreurs": [
+   "Cambrer le bas du dos pour aller plus loin",
+   "Monter l'épaule vers l'oreille"
+  ],
+  "pourquoi": "Des heures mains au guidon ferment la poitrine : cet étirement rouvre l'avant des épaules.",
+  "respiration": "Respire lentement, relâche un peu plus à chaque expiration.",
+  "securite": "Avance doucement. Si tu sens une gêne dans l'épaule plutôt que dans le pectoral, descends le coude.",
+  "tags": [
+   "etirement",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "glisse-au-mur",
+   "etirement-epaule-bras-croise",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-pectoraux-mains-dos",
+  "nom": "Ouverture de poitrine, mains croisées dans le dos",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds largeur de bassin, bras tendus derrière le dos, doigts croisés, mains posées contre les fesses, épaules relâchées. Étiré (s=1) : les omoplates se serrent, les bras tendus se décollent des fesses et montent d'environ 30° vers l'arrière, la poitrine avance, la tête reste droite, le bassin ne bouge pas. Aucun matériel.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "pecs",
+   "delts",
+   "biceps"
+  ],
+  "musclesTxt": "Pectoraux, avant des épaules, biceps",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, croise les doigts dans le dos",
+   "Tends les bras, serre les omoplates",
+   "Monte les mains, poitrine vers l'avant"
+  ],
+  "erreurs": [
+   "Pencher le buste en avant",
+   "Cambrer le bas du dos"
+  ],
+  "pourquoi": "À faire dès que tu poses le vélo : tu rouvres la poitrine fermée par la position sur le guidon.",
+  "respiration": "Inspire en ouvrant la poitrine, souffle en relâchant les épaules.",
+  "securite": "Monte les mains seulement tant que le buste reste droit. Si l'épaule tire devant, monte moins.",
+  "tags": [
+   "etirement",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "glisse-au-mur",
+   "etirement-epaule-bras-croise"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×20-30 s",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-grand-dorsal-montant",
+  "nom": "Étirement du grand dorsal, accroché à un montant",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout face à un poteau vertical, pieds joints à 50 cm du poteau, la main droite tient le poteau à hauteur de taille, bras tendu. Étiré (s=1) : les fesses reculent et descendent (hanches pliées à 90°, genoux à 150°), le buste est presque horizontal, le bras droit tendu dans l'axe du dos, les hanches se décalent de 20 cm vers la droite pour allonger tout le côté droit ; la main gauche tient le poteau plus bas.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "obliques",
+   "upperback"
+  ],
+  "musclesTxt": "Grand dorsal, côté du buste",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Attrape un montant à hauteur de taille",
+   "Recule les fesses, bras tendu",
+   "Laisse la hanche partir à l'opposé"
+  ],
+  "erreurs": [
+   "Plier le coude",
+   "Tourner le buste vers le sol"
+  ],
+  "pourquoi": "Étire le grand dorsal, très sollicité quand tu tires sur le cintre, les bâtons ou en natation.",
+  "respiration": "Inspire dans les côtes du côté étiré, souffle en te laissant pendre.",
+  "securite": "Choisis un appui solide (poteau, cadre de porte, tube de selle du vélo tenu par un copain). Relâche si l'épaule gêne.",
+  "tags": [
+   "etirement",
+   "dos",
+   "velo",
+   "recuperation",
+   "haut-du-corps",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "etirement-dos-mur",
+   "posture-enfant"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-elevateur-omoplate",
+  "nom": "Étirement de la nuque en diagonale (nez vers l'aisselle)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout ou assis, dos droit, tête droite, main gauche glissée derrière le dos pour garder l'épaule gauche basse. Étiré (s=1) : la tête tourne de 45° vers la droite puis se penche en avant, le nez vers l'aisselle droite ; la main droite est posée sur l'arrière du crâne, coude vers l'avant ; l'épaule gauche reste basse.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Arrière de la nuque, haut de l'omoplate",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Tourne la tête à 45° d'un côté",
+   "Baisse le nez vers l'aisselle",
+   "La main du même côté pèse sur la tête"
+  ],
+  "erreurs": [
+   "Tirer fort sur la tête",
+   "Laisser monter l'épaule opposée"
+  ],
+  "pourquoi": "Tête relevée pour voir la route ou la piste, la nuque se tend : cet étirement la relâche.",
+  "respiration": "Respire lentement, laisse l'épaule descendre à chaque expiration.",
+  "securite": "Le poids de la main suffit, ne tire pas. Si ça tire dans le bras ou si la tête tourne, arrête.",
+  "tags": [
+   "etirement",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "cou",
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "etirement-cou-lateral",
+   "etirement-cou-flexion"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×20-30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "cercles-omoplates",
+  "nom": "Cercles des omoplates, bras tendus",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, bras tendus à l'horizontale devant soi, paumes face à face, épaules en position neutre. Cycle (s de 0 à 1) : seules les épaules bougent, elles avancent de 5 cm (mains qui s'éloignent), montent vers les oreilles, reculent (omoplates serrées, mains qui reviennent de 8 cm), puis descendent ; coudes tendus, buste immobile.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback",
+   "delts"
+  ],
+  "musclesTxt": "Muscles autour des omoplates",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bras tendus devant, à hauteur d'épaules",
+   "Épaules : avant, haut, arrière, bas",
+   "Les coudes restent tendus"
+  ],
+  "erreurs": [
+   "Plier les coudes",
+   "Bouger tout le buste"
+  ],
+  "pourquoi": "Des omoplates qui bougent bien, c'est un haut du corps plus libre pour piloter, pousser sur les bâtons ou nager.",
+  "respiration": "Respire normalement, sans bloquer.",
+  "securite": "Fais de grands cercles lents. Si ça craque avec une gêne, réduis le cercle.",
+  "tags": [
+   "mobilite",
+   "haut-du-corps",
+   "echauffement",
+   "avant-effort",
+   "velo"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "protraction-quatre-pattes",
+   "glisse-au-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 6,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×6 cercles dans chaque sens",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "cercles-bras",
+  "nom": "Grands cercles de bras",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds largeur de bassin, bras tendus le long du corps. Cycle (s de 0 à 1) : les deux bras tendus font ensemble un tour complet dans le plan de profil : vers l'avant, à la verticale au-dessus de la tête (s=0,5), puis vers l'arrière et retour le long du corps. Buste droit, bassin immobile.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "delts",
+   "upperback",
+   "pecs"
+  ],
+  "musclesTxt": "Épaules, haut du dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, bras le long du corps",
+   "Grands cercles lents, bras tendus",
+   "Change de sens à la moitié"
+  ],
+  "erreurs": [
+   "Cambrer le dos quand les bras montent",
+   "Aller trop vite, sans amplitude"
+  ],
+  "pourquoi": "Réveille les épaules avant une descente VTT, une séance de bâtons ou une natation.",
+  "respiration": "Inspire quand les bras montent, souffle quand ils descendent.",
+  "securite": "Garde le ventre serré. Si une épaule accroche, fais un cercle plus petit.",
+  "tags": [
+   "mobilite",
+   "haut-du-corps",
+   "echauffement",
+   "avant-effort",
+   "velo",
+   "trail"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "glisse-au-mur",
+   "jumping-jack"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 10,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/arm-circles/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "10 en avant + 10 en arrière",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "moulin-debout",
+  "nom": "Moulin debout (main vers le pied opposé)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout, pieds écartés à deux largeurs d'épaules, jambes tendues, buste penché à l'horizontale (hanches à 90°), dos plat, bras qui pendent à la verticale. Fin (s=1) : le buste tourne de 80°, la main droite touche le pied gauche (ou le tibia), le bras gauche tendu pointe vers le plafond, le regard monte vers la main gauche. Puis même chose de l'autre côté.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "obliques",
+   "upperback",
+   "adductors"
+  ],
+  "musclesTxt": "Ischios, obliques, haut du dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds très écartés, buste penché, dos plat",
+   "Main droite vers le pied gauche",
+   "L'autre bras monte au ciel, regarde-le"
+  ],
+  "erreurs": [
+   "Arrondir le dos",
+   "Aller vite en se balançant"
+  ],
+  "pourquoi": "Sans tapis, juste à côté du vélo : tu fais tourner le haut du dos et tu allonges l'arrière des cuisses.",
+  "respiration": "Souffle en tournant, inspire en repassant au centre.",
+  "securite": "Plie un peu les genoux si l'arrière des cuisses tire. Remonte lentement si la tête tourne.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "echauffement",
+   "avant-effort",
+   "retour-au-calme",
+   "velo",
+   "trail",
+   "chaine-posterieure"
+  ],
+  "zones": [
+   "haut-du-dos",
+   "ischios",
+   "adducteurs",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "fente-rotation-thoracique",
+   "squat-sumo-inclinaison",
+   "ischios-dynamique"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 6,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×6/côté, lent",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "extension-dos-debout",
+  "nom": "Extension du dos debout, mains sur les hanches",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds largeur de bassin, jambes tendues, mains à plat en bas du dos (doigts vers le bas), coudes en arrière, buste vertical. Fin (s=1) : le bassin avance de 10 cm, le buste part en arrière d'environ 25°, la poitrine regarde vers le haut, le menton reste légèrement rentré, genoux tendus. Aucun matériel.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "hipflex",
+   "lowback"
+  ],
+  "musclesTxt": "Abdos, avant des hanches, dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, mains en bas du dos",
+   "Pousse le bassin vers l'avant",
+   "Ouvre la poitrine vers le ciel, reviens"
+  ],
+  "erreurs": [
+   "Plier les genoux pour tricher",
+   "Casser la nuque en arrière"
+  ],
+  "pourquoi": "Après des heures plié sur le vélo, c'est le geste inverse : tu redresses tout le dos en 30 secondes.",
+  "respiration": "Souffle en te penchant en arrière, inspire en revenant.",
+  "securite": "Va lentement et reste dans une amplitude confortable. Si le bas du dos pince, va moins loin.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "velo",
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos",
+   "hanches"
+  ],
+  "alternatives": [
+   "chat-vache",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "8-10 lentes, dès la descente du vélo",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "sphinx",
+  "nom": "Sphinx (à plat ventre sur les avant-bras)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : à plat ventre sur un tapis, jambes tendues, front au sol, coudes pliés sous les épaules, avant-bras à plat vers l'avant. Tenue (s=1) : les avant-bras poussent, la poitrine se décolle, bras verticaux, coudes à 90°, le buste fait environ 30° avec le sol, regard devant, bassin et cuisses au sol.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "abs",
+   "hipflex"
+  ],
+  "musclesTxt": "Abdos, avant des hanches",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À plat ventre, coudes sous les épaules",
+   "Pousse sur les avant-bras, poitrine en avant",
+   "Bassin et cuisses restent au sol"
+  ],
+  "erreurs": [
+   "Enfoncer la tête dans les épaules",
+   "Serrer fort les fessiers"
+  ],
+  "pourquoi": "Remet le dos en extension après la position vélo ou la position aéro du triathlète.",
+  "respiration": "Respire par le ventre, contre le sol.",
+  "securite": "Si le bas du dos pince, avance les coudes pour monter moins haut.",
+  "tags": [
+   "etirement",
+   "dos",
+   "velo",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos",
+   "hanches"
+  ],
+  "alternatives": [
+   "chat-vache",
+   "posture-enfant"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/sphinx-stretch/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30-45 s",
+  "preuve": "D · pratique de terrain [@polsgrove2016]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-triceps-tete",
+  "nom": "Étirement du triceps, coude derrière la tête",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (ou de dos). Départ (s=0) : debout, bras droit levé à la verticale, coude plié à fond, main droite posée entre les omoplates, coude pointé vers le plafond. Étiré (s=1) : la main gauche attrape le coude droit par-dessus la tête et le tire de 10 cm vers la gauche, le buste s'incline de 10° à gauche, tête droite.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "triceps",
+   "lats"
+  ],
+  "musclesTxt": "Triceps, grand dorsal",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Lève un bras, main entre les omoplates",
+   "L'autre main tire le coude vers la tête",
+   "Penche un peu le buste à l'opposé"
+  ],
+  "erreurs": [
+   "Baisser la tête en avant",
+   "Cambrer le bas du dos"
+  ],
+  "pourquoi": "Relâche le triceps et le grand dorsal après une séance de bâtons, de double poussée ou de natation.",
+  "respiration": "Respire lentement, relâche à chaque expiration.",
+  "securite": "Tire doucement. Si l'épaule pince en haut, descends le coude.",
+  "tags": [
+   "etirement",
+   "haut-du-corps",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "epaules",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "etirement-epaule-bras-croise",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2×20-30 s/bras",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "nordique",
+   "triathlon",
+   "trail"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-flechisseurs-poignet",
+  "nom": "Étirement des fléchisseurs du poignet (paume vers l'avant)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, bras droit tendu à l'horizontale devant soi, paume vers le haut, main dans l'axe de l'avant-bras. Étiré (s=1) : le poignet droit part en extension à 70-80°, doigts vers le sol, paume vers l'avant ; la main gauche tient les quatre doigts et la paume droite et les ramène vers soi ; coude droit tendu.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Dessous de l'avant-bras",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bras tendu devant, paume vers le ciel",
+   "L'autre main tire les doigts vers le bas",
+   "Coude bien tendu"
+  ],
+  "erreurs": [
+   "Plier le coude",
+   "Tirer sur le bout des doigts seulement"
+  ],
+  "pourquoi": "Après une descente VTT, les avant-bras qui serrent et freinent sont durs : étire-les au bord du sentier.",
+  "respiration": "Respire lentement, ouvre la main en soufflant.",
+  "securite": "Tire doucement, sans à-coup. Si ça fourmille dans les doigts, relâche.",
+  "tags": [
+   "etirement",
+   "descente-vtt",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "etirement-epaule-bras-croise"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×20-30 s/bras",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-extenseurs-poignet",
+  "nom": "Étirement des extenseurs du poignet (dos de la main vers l'avant)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, bras droit tendu à l'horizontale devant soi, paume vers le sol, main dans l'axe. Étiré (s=1) : le poignet droit se plie à 70-80° en flexion, doigts vers le sol, dos de la main vers l'avant ; la main gauche appuie sur le dos de la main droite et la ramène vers soi ; coude droit tendu, épaule basse.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Dessus de l'avant-bras",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Bras tendu devant, paume vers le sol",
+   "Plie le poignet, doigts vers le sol",
+   "L'autre main appuie sur le dos de la main"
+  ],
+  "erreurs": [
+   "Plier le coude",
+   "Hausser l'épaule"
+  ],
+  "pourquoi": "Le dessus de l'avant-bras tient le guidon dans les secousses et gère les freins : il mérite d'être relâché.",
+  "respiration": "Respire lentement, relâche à chaque expiration.",
+  "securite": "Appuie doucement. Si ça tire fort au coude, plie moins le poignet.",
+  "tags": [
+   "etirement",
+   "descente-vtt",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "etirement-epaule-bras-croise"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×20-30 s/bras",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "mobilite-poignets-appui",
+  "nom": "Bascules sur les poignets à quatre pattes",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : à quatre pattes sur un tapis, mains sous les épaules, doigts écartés vers l'avant, bras tendus et verticaux, cuisses verticales. Fin (s=1) : tout le corps avance de 10-15 cm, les épaules passent devant les doigts, poignets à environ 100° d'extension, paumes à plat, coudes tendus. Variante montrée sur la 2e moitié : mains retournées, doigts vers les genoux, et le corps recule vers les talons.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Avant-bras, poignets",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À quatre pattes, doigts bien écartés",
+   "Avance les épaules au-dessus des doigts",
+   "Reviens, puis doigts tournés vers les genoux"
+  ],
+  "erreurs": [
+   "Décoller la paume du sol",
+   "Plier les coudes"
+  ],
+  "pourquoi": "Prépare les poignets à encaisser l'appui sur le guidon, les pompes et les gainages.",
+  "respiration": "Souffle en avançant sur les mains, inspire en revenant.",
+  "securite": "Mets juste le poids que tes poignets acceptent. En cas de gêne, recule les genoux pour alléger.",
+  "tags": [
+   "mobilite",
+   "descente-vtt",
+   "velo",
+   "echauffement",
+   "avant-effort",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "protraction-quatre-pattes"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "8 bascules doigts devant + 8 doigts vers les genoux",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "cercles-poignets",
+  "nom": "Cercles des poignets, mains jointes",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout, coudes pliés à 90° près du corps, mains devant la poitrine, doigts entrecroisés, paumes l'une contre l'autre. Cycle (s de 0 à 1) : les deux poignets font ensemble un cercle complet (flexion, inclinaison d'un côté, extension, inclinaison de l'autre), les avant-bras restent presque immobiles.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Avant-bras, poignets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Croise les doigts devant la poitrine",
+   "Dessine de grands cercles lents",
+   "Change de sens à la moitié"
+  ],
+  "erreurs": [
+   "Faire de petits cercles rapides",
+   "Crisper les épaules"
+  ],
+  "pourquoi": "30 secondes avant de partir ou en haut d'une descente : tes poignets tournent mieux sur le guidon et les bâtons.",
+  "respiration": "Respire normalement.",
+  "securite": "Reste dans une amplitude sans gêne. Ça peut craquer un peu, ce n'est pas grave si c'est indolore.",
+  "tags": [
+   "mobilite",
+   "descente-vtt",
+   "velo",
+   "echauffement",
+   "avant-effort",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "protraction-quatre-pattes"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 10,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/wrist-circles-stretch/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "10 cercles dans chaque sens",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-doigts",
+  "nom": "Étirement des doigts et de la paume",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, plan serré sur les mains. Départ (s=0) : debout, coude droit plié à 90°, avant-bras à l'horizontale, main droite ouverte, paume vers le haut. Étiré (s=1) : la main gauche prend les quatre doigts droits (sans le pouce) et les pousse vers le bas et l'arrière : poignet à 60° d'extension, doigts à 30° de plus ; ensuite la main gauche écarte le pouce droit de la paume.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Doigts, paume, dessous de l'avant-bras",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Paume vers toi, coude plié",
+   "Tire les quatre doigts en arrière",
+   "Puis le pouce seul, doucement"
+  ],
+  "erreurs": [
+   "Tirer d'un coup sec",
+   "Oublier le pouce"
+  ],
+  "pourquoi": "Tes doigts restent fermés sur les poignées et les leviers de frein : ouvre-les après la sortie.",
+  "respiration": "Respire lentement.",
+  "securite": "Étire sans forcer, surtout le pouce. Si un doigt reste engourdi après les sorties, parles-en à un kiné.",
+  "tags": [
+   "etirement",
+   "descente-vtt",
+   "velo",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "etirement-epaule-bras-croise"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 15,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "15 s les doigts + 15 s le pouce, par main",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "ouvrir-fermer-mains",
+  "nom": "Ouvrir et fermer les mains en grand",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face, plan serré. Départ (s=0) : debout, coudes pliés à 90°, avant-bras devant soi, paumes vers l'avant, poings fermés, pouces par-dessus les doigts. Fin (s=1) : mains grandes ouvertes, doigts tendus et écartés au maximum en éventail, pouces écartés ; tenue 2 secondes puis retour au poing.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "forearms"
+  ],
+  "musclesTxt": "Muscles des doigts et de l'avant-bras",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Ferme les poings, sans serrer fort",
+   "Ouvre en écartant les doigts au maximum",
+   "Tiens 2 secondes ouvert"
+  ],
+  "erreurs": [
+   "Ouvrir à moitié",
+   "Aller trop vite"
+  ],
+  "pourquoi": "Fait revenir le sang dans les mains engourdies par le froid, les vibrations ou une longue descente.",
+  "respiration": "Respire normalement.",
+  "securite": "Si tes mains fourmillent à chaque sortie, fais vérifier ta position sur le vélo.",
+  "tags": [
+   "mobilite",
+   "descente-vtt",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "avant-effort"
+  ],
+  "zones": [
+   "poignets"
+  ],
+  "alternatives": [
+   "marche-du-fermier"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 15,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "15 ouvertures lentes, bras le long du corps puis bras en l'air",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rotation-cou",
+  "nom": "Rotations lentes de la tête",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout, épaules basses, tête droite, regard devant. Fin (s=1) : la tête tourne de 70-80° vers la droite, menton au-dessus de l'épaule, à la même hauteur qu'au départ ; les épaules ne tournent pas. Retour au centre puis même rotation à gauche.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Muscles du cou",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout ou assis, épaules basses",
+   "Tourne la tête pour regarder derrière",
+   "Reviens au centre, puis l'autre côté"
+  ],
+  "erreurs": [
+   "Tourner les épaules avec la tête",
+   "Lever le menton en tournant"
+  ],
+  "pourquoi": "Regarder derrière soi en roulant demande un cou qui tourne : garde cette rotation, que le vélo raidit.",
+  "respiration": "Souffle en tournant, inspire au centre.",
+  "securite": "Lentement, sans forcer en bout de course. Si la tête tourne ou si ça pince, réduis l'amplitude.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "echauffement",
+   "avant-effort",
+   "recuperation",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "cou"
+  ],
+  "alternatives": [
+   "etirement-cou-lateral",
+   "etirement-cou-flexion",
+   "etirement-cou-extension"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 6,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "6 par côté, 2 s tenues en bout de rotation",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "rentre-menton",
+  "nom": "Rentré de menton (double menton)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout ou assis, dos droit, tête légèrement projetée en avant (oreille 4 cm devant l'épaule), regard horizontal. Fin (s=1) : la tête recule à l'horizontale de 4-5 cm, sans s'incliner, l'oreille revient au-dessus de l'épaule, un double menton se forme, la nuque s'allonge ; le regard reste horizontal.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "upperback"
+  ],
+  "musclesTxt": "Muscles profonds du cou",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Regard droit devant, épaules basses",
+   "Recule la tête, comme un double menton",
+   "Tiens 3 secondes, relâche"
+  ],
+  "erreurs": [
+   "Baisser le menton vers la poitrine",
+   "Lever le menton"
+  ],
+  "pourquoi": "Sur le vélo, ta tête part en avant et ta nuque se casse : ce geste fait exactement l'inverse.",
+  "respiration": "Respire normalement pendant la tenue.",
+  "securite": "Petit mouvement, sans forcer. Si ça tire dans un bras, arrête et parles-en à un kiné.",
+  "tags": [
+   "mobilite",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "haut-du-corps"
+  ],
+  "zones": [
+   "cou",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "etirement-cou-flexion",
+   "etirement-cou-extension"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/chin-tuck/",
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×8, 3 s tenues",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "flechisseur-hanche-inclinaison",
+  "nom": "Fléchisseur de hanche à genou, bras levé et buste incliné",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (ou trois quarts). Départ (s=0) : fente à genou sur un tapis, genou droit au sol sous la hanche, pied gauche devant, genou gauche à 90°, buste vertical, bras le long du corps. Étiré (s=1) : le bassin avance de 10 cm (hanche droite ouverte à environ 15° d'extension), le bras droit est tendu à la verticale puis le buste s'incline de 20-25° vers la gauche, la main gauche est posée sur la hanche gauche.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "obliques",
+   "lats"
+  ],
+  "musclesTxt": "Psoas, avant de la hanche, côté du buste",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Un genou au sol, serre la fesse arrière",
+   "Lève le bras du côté du genou posé",
+   "Incline le buste vers la jambe avant"
+  ],
+  "erreurs": [
+   "Cambrer le bas du dos",
+   "Avancer le bassin sans serrer la fesse"
+  ],
+  "pourquoi": "Assis sur la selle, l'avant de la hanche reste court : le bras levé allonge toute la ligne, de la cuisse aux côtes.",
+  "respiration": "Inspire dans les côtes du côté étiré, souffle en t'inclinant.",
+  "securite": "Mets un coussin sous le genou. Rentre le ventre : tu dois sentir l'avant de la hanche, pas le bas du dos.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "coup-de-pedale",
+   "foulee"
+  ],
+  "zones": [
+   "hanches",
+   "quadriceps",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "flechisseur-hanche-genou",
+   "psoas-rotation-fente",
+   "couch-stretch"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "flechisseur-hanche-genou"
+ },
+ {
+  "id": "psoas-debout-fente",
+  "nom": "Fléchisseur de hanche debout, en fente haute",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds joints, une main posée sur un appui à hauteur de hanche (selle du vélo). Étiré (s=1) : fente haute, pied gauche 80-90 cm devant, genou gauche plié à 110°, jambe droite tendue derrière, talon droit légèrement décollé, hanche droite en extension de 15-20°, bassin basculé vers l'arrière (fesse droite serrée), buste vertical.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "calves"
+  ],
+  "musclesTxt": "Psoas, avant de la hanche, mollet",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Grand pas en avant, jambe arrière tendue",
+   "Serre la fesse arrière, bassin vers l'avant",
+   "Buste droit, une main sur le vélo ou la selle"
+  ],
+  "erreurs": [
+   "Cambrer le bas du dos",
+   "Tourner le pied arrière vers l'extérieur"
+  ],
+  "pourquoi": "Debout, chaussures aux pieds, à côté du vélo : tu rouvres l'avant de la hanche fermé par des heures de selle.",
+  "respiration": "Respire lentement, pousse le bassin un peu plus à chaque expiration.",
+  "securite": "Garde le ventre rentré pour que le bas du dos ne se creuse pas. Tiens-toi au vélo si tu vacilles.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme",
+   "coup-de-pedale",
+   "foulee"
+  ],
+  "zones": [
+   "hanches",
+   "quadriceps",
+   "mollets"
+  ],
+  "alternatives": [
+   "flechisseur-hanche-genou",
+   "etirement-psoas-pied-sureleve",
+   "couch-stretch"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×30 s/côté, juste après la sortie",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "fessier-debout-figure-4",
+  "nom": "Fessier debout, cheville sur le genou (pigeon debout)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (ou trois quarts). Départ (s=0) : debout sur la jambe gauche, cheville droite posée sur la cuisse gauche juste au-dessus du genou, genou droit ouvert sur le côté, une main sur un appui à hauteur de hanche. Étiré (s=1) : les fesses reculent et descendent comme pour s'asseoir, genou gauche plié à 110°, hanche gauche à 90°, buste penché en avant à 45°, dos plat, tibia droit à l'horizontale.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes"
+  ],
+  "musclesTxt": "Fessiers, rotateurs de hanche",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Pose la cheville sur le genou opposé",
+   "Assieds-toi en arrière, dos plat",
+   "Tiens-toi au vélo ou à un arbre"
+  ],
+  "erreurs": [
+   "Arrondir le dos",
+   "Laisser le genou d'appui rentrer"
+  ],
+  "pourquoi": "Le pigeon sans tapis : tu relâches les fessiers au bord du sentier ou sur le parking, juste après l'effort.",
+  "respiration": "Respire lentement, descends un peu plus en soufflant.",
+  "securite": "Tiens un appui stable. Si le genou de la jambe croisée tire, remonte et croise moins haut.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "fessiers",
+   "hanches"
+  ],
+  "alternatives": [
+   "etirement-fessier-dos",
+   "pigeon",
+   "hanche-90-90"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-adducteurs-debout",
+  "nom": "Étirement des adducteurs debout, en fente latérale",
+  "famille": "etirement",
+  "anim": "sidelunge",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "adductors"
+  ],
+  "musclesTxt": "Adducteurs (intérieur de la cuisse)",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds très écartés, pointes vers l'avant",
+   "Plie un genou, l'autre jambe reste tendue",
+   "Fesses en arrière, mains sur la cuisse pliée"
+  ],
+  "erreurs": [
+   "Décoller le pied de la jambe tendue",
+   "Laisser le genou plié rentrer"
+  ],
+  "pourquoi": "Étire l'intérieur des cuisses debout, sans tapis : utile après le vélo, le trail ou le pas de patineur.",
+  "respiration": "Respire lentement, relâche l'intérieur de la cuisse en soufflant.",
+  "securite": "Descends doucement. Si ça tire fort près de l'aine, remonte un peu.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "adducteurs",
+   "hanches"
+  ],
+  "alternatives": [
+   "papillon",
+   "cossack-squat",
+   "etirement-adducteurs-assis"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-rotation-interne-hanche",
+  "nom": "Rotation interne de hanche couché (genou qui tombe en dedans)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (depuis les pieds) ou de dessus. Départ (s=0) : couché sur le dos sur un tapis, genoux pliés à 90°, pieds à plat écartés de 70-80 cm, bras en croix. Étiré (s=1) : le genou droit tombe vers l'intérieur et vers le sol (rotation interne de hanche d'environ 35°), le pied droit reste en place sur sa tranche interne, le genou gauche reste vertical, les deux fesses au sol.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes"
+  ],
+  "musclesTxt": "Rotateurs profonds de la hanche",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, pieds plus larges que le bassin",
+   "Laisse tomber un genou vers l'intérieur",
+   "Le bassin reste posé à plat"
+  ],
+  "erreurs": [
+   "Décoller la fesse du sol",
+   "Pousser le genou avec la main"
+  ],
+  "pourquoi": "Le pédalage se fait toujours dans le même axe : cet étirement entretient la rotation de la hanche.",
+  "respiration": "Respire lentement par le ventre.",
+  "securite": "Laisse faire le poids de la jambe. Si ça pince dans l'aine ou à l'intérieur du genou, écarte moins les pieds.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "recuperation"
+  ],
+  "zones": [
+   "hanches",
+   "fessiers"
+  ],
+  "alternatives": [
+   "essuie-glace-hanches",
+   "hanche-90-90"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b] [@craib1996]",
+  "sports": [
+   "xco",
+   "route",
+   "triathlon"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-tfl-debout",
+  "nom": "Étirement du côté de la hanche, jambes croisées debout",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout, pieds joints, main gauche sur un appui à hauteur de hanche. Étiré (s=1) : la jambe droite passe derrière la gauche, pied droit posé à plat 30 cm à gauche du pied gauche, jambe droite tendue ; la hanche droite se pousse de 15 cm vers la droite, le bras droit monte au-dessus de la tête et le buste s'incline de 20° vers la gauche : tout le côté droit dessine un arc.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "obliques"
+  ],
+  "musclesTxt": "Côté de la hanche et de la cuisse, obliques",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Croise une jambe derrière l'autre",
+   "Pousse la hanche arrière vers le côté",
+   "Bras du même côté au-dessus de la tête"
+  ],
+  "erreurs": [
+   "Pencher le buste en avant",
+   "Plier le genou de la jambe arrière"
+  ],
+  "pourquoi": "Le côté de la hanche travaille à chaque appui en trail et à chaque coup de pédale : relâche-le debout.",
+  "respiration": "Inspire dans les côtes, souffle en poussant la hanche.",
+  "securite": "Tiens-toi à un mur ou au vélo. Tu dois sentir le côté de la hanche, pas le genou.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "genou",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "hanches",
+   "fessiers",
+   "genoux"
+  ],
+  "alternatives": [
+   "etirement-fessier-dos",
+   "squat-sumo-inclinaison"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pnf-ischios-contracte-relache",
+  "nom": "Ischios en contracté-relâché (sangle ou serviette)",
+  "famille": "etirement",
+  "anim": "tm_hamfloss",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Ischios, mollet",
+  "materiel": [
+   "sangle",
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Sur le dos, jambe tendue levée, sangle au pied",
+   "Pousse le talon dans la sangle : 6 secondes",
+   "Relâche, souffle, monte la jambe plus haut"
+  ],
+  "erreurs": [
+   "Pousser à fond (la moitié de ta force suffit)",
+   "Décoller les fesses du sol"
+  ],
+  "pourquoi": "La méthode la plus efficace avec l'étirement classique pour gagner de l'amplitude derrière la cuisse.",
+  "respiration": "Respire pendant la poussée, souffle long en relâchant.",
+  "securite": "Pousse à 50 % seulement. Pas juste avant une séance intense. Si ça tire sous la fesse ou derrière le genou, réduis.",
+  "tags": [
+   "etirement",
+   "chaine-posterieure",
+   "velo",
+   "trail",
+   "recuperation"
+  ],
+  "zones": [
+   "ischios",
+   "mollets"
+  ],
+  "alternatives": [
+   "ischios-sangle-dynamique",
+   "etirement-ischios-assis",
+   "etirement-ischios-debout"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 75,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3 cycles/jambe : 6 s poussée + 20 s étirement",
+  "preuve": "B · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "pnf-flechisseur-hanche",
+  "nom": "Fléchisseur de hanche en contracté-relâché (à genou)",
+  "famille": "etirement",
+  "anim": "vm_hipflexor",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "quadsL"
+  ],
+  "musclesTxt": "Psoas, avant de la cuisse",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "Fente à genou, fesse arrière serrée",
+   "Tire le genou arrière vers l'avant : 6 s",
+   "Relâche, souffle, avance le bassin plus loin"
+  ],
+  "erreurs": [
+   "Cambrer pour avancer",
+   "Tirer à fond (la moitié de ta force suffit)"
+  ],
+  "pourquoi": "Quand l'étirement classique de la hanche ne progresse plus, le contracté-relâché aide à gagner de l'amplitude.",
+  "respiration": "Respire pendant la contraction, souffle long en relâchant.",
+  "securite": "Le genou ne bouge pas : il « tire » dans le sol. Coussin sous le genou. Pas juste avant une séance intense.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "hanches",
+   "quadriceps"
+  ],
+  "alternatives": [
+   "flechisseur-hanche-genou",
+   "couch-stretch",
+   "etirement-psoas-pied-sureleve"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 75,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3 cycles/côté : 6 s contraction + 20 s étirement",
+  "preuve": "B · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "flechisseur-hanche-genou"
+ },
+ {
+  "id": "ouverture-hanche-marchee",
+  "nom": "Ouverture et fermeture de hanche en marchant (la barrière)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout sur la jambe gauche, genou droit levé devant soi à hauteur de hanche (hanche et genou à 90°), bras écartés pour l'équilibre. Fin (s=1) : la cuisse droite s'ouvre de 80° sur le côté en restant à l'horizontale (genou pointé vers la droite), bassin et épaules de face ; puis le pied se pose un pas devant et l'autre jambe enchaîne.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "glutes",
+   "adductors"
+  ],
+  "musclesTxt": "Fléchisseurs de hanche, fessiers, adducteurs",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Monte le genou devant, à hauteur de hanche",
+   "Ouvre-le sur le côté, puis pose le pied",
+   "Au retour : genou sur le côté, ramène devant"
+  ],
+  "erreurs": [
+   "Tourner tout le bassin avec le genou",
+   "Pencher le buste sur le côté"
+  ],
+  "pourquoi": "Réveille la hanche dans toutes les directions avant de courir, de skier ou d'attaquer une séance de jambes.",
+  "respiration": "Respire normalement, au rythme des pas.",
+  "securite": "Garde le buste droit et face à la route. Monte le genou seulement à la hauteur confortable.",
+  "tags": [
+   "mobilite",
+   "hanche",
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "hanches",
+   "adducteurs",
+   "fessiers"
+  ],
+  "alternatives": [
+   "cercles-hanche-debout",
+   "balancier-jambe-lateral",
+   "cercles-hanche-quadrupedie"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "8/jambe en ouverture + 8/jambe en fermeture",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "trail",
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "fente-rotation-debout",
+  "nom": "Fente avant avec rotation du buste (debout)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil puis de face pour la rotation. Départ (s=0) : debout, pieds joints, mains jointes devant la poitrine, coudes écartés. Fin (s=1) : fente avant, pied gauche 80 cm devant, genou gauche à 90° au-dessus de la cheville, genou droit à 5 cm du sol, buste vertical tourné de 60° vers la gauche (côté jambe avant), coudes à l'horizontale, bassin de face.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "quads",
+   "glutes",
+   "hipflex",
+   "obliques"
+  ],
+  "musclesTxt": "Cuisses, fessiers, avant de la hanche, obliques",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Grand pas en avant, descends en fente",
+   "Tourne le buste vers la jambe avant",
+   "Reviens de face, repousse, change de jambe"
+  ],
+  "erreurs": [
+   "Laisser le genou avant rentrer",
+   "Tourner les hanches avec le buste"
+  ],
+  "pourquoi": "Un seul geste, sans poser les mains au sol : hanches ouvertes et dos qui tourne avant de partir courir ou rouler.",
+  "respiration": "Souffle en tournant, inspire en remontant.",
+  "securite": "Descends seulement à la profondeur que tu contrôles. Le genou arrière ne tape pas le sol.",
+  "tags": [
+   "mobilite",
+   "hanche",
+   "dos",
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "velo",
+   "foulee"
+  ],
+  "zones": [
+   "hanches",
+   "haut-du-dos",
+   "quadriceps"
+  ],
+  "alternatives": [
+   "fente-rotation-thoracique",
+   "psoas-rotation-fente",
+   "spiderman"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 6,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5-6/jambe, sans se presser",
+  "preuve": "C · [@opplert2018] [@panasci2025]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "genou-poitrine-marche",
+  "nom": "Genou à la poitrine en marchant",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds joints, bras le long du corps. Fin (s=1) : debout sur la jambe gauche tendue, talon gauche légèrement décollé (sur la pointe), genou droit monté contre la poitrine (hanche pliée à 120°), les deux mains croisées sur le tibia droit sous le genou, buste vertical et grandi. Puis le pied droit se pose un pas devant.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "glutes",
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Fessiers, arrière de la cuisse",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Attrape ton genou, tire-le vers la poitrine",
+   "Grandis-toi sur la jambe d'appui",
+   "Relâche, un pas, puis l'autre genou"
+  ],
+  "erreurs": [
+   "Arrondir le dos vers le genou",
+   "Plier la jambe d'appui"
+  ],
+  "pourquoi": "Étire le fessier et réveille l'équilibre sur une jambe avant un trail, un footing ou une séance de ski.",
+  "respiration": "Souffle en tirant le genou.",
+  "securite": "Regarde loin devant pour garder l'équilibre. Tire sous le genou si le devant du genou gêne.",
+  "tags": [
+   "mobilite",
+   "hanche",
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "foulee",
+   "proprio"
+  ],
+  "zones": [
+   "fessiers",
+   "hanches"
+  ],
+  "alternatives": [
+   "montees-de-genoux",
+   "fessier-dynamique",
+   "balancier-jambe"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "8/jambe, 2 s tenues en haut",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "trail",
+   "xco",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "squat-profond-rotation",
+  "nom": "Squat profond avec bras tendu vers le ciel",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : squat complet, pieds un peu plus larges que les épaules, pointes ouvertes à 20°, talons au sol, fesses près des talons, coudes à l'intérieur des genoux, mains au sol entre les pieds. Fin (s=1) : la main gauche reste au sol, le coude gauche pousse le genou gauche vers l'extérieur, le bras droit tendu monte à la verticale, le buste tourne de 70° vers la droite, regard vers la main droite.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "adductors",
+   "glutes",
+   "upperback",
+   "calves"
+  ],
+  "musclesTxt": "Adducteurs, fessiers, haut du dos, mollets",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "En squat profond, talons au sol",
+   "Une main au sol, coude contre le genou",
+   "L'autre bras monte au ciel, regarde-le"
+  ],
+  "erreurs": [
+   "Décoller les talons",
+   "Laisser le genou rentrer vers l'intérieur"
+  ],
+  "pourquoi": "Chevilles, hanches et haut du dos en un seul exercice : parfait avant une séance de squats.",
+  "respiration": "Souffle en montant le bras, inspire en le ramenant.",
+  "securite": "Si tes talons décollent, pose-les sur une cale ou tiens-toi à un appui. Si un genou gêne, descends moins bas.",
+  "tags": [
+   "mobilite",
+   "hanche",
+   "cheville",
+   "dos",
+   "echauffement",
+   "avant-effort"
+  ],
+  "zones": [
+   "hanches",
+   "chevilles",
+   "haut-du-dos",
+   "adducteurs",
+   "genoux"
+  ],
+  "alternatives": [
+   "squat-profond-tenu",
+   "squat-sumo-inclinaison",
+   "fente-rotation-thoracique"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5/côté, 2 s tenues bras en haut",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "squat-profond-tenu"
+ },
+ {
+  "id": "ischios-pied-sureleve",
+  "nom": "Ischios debout, talon posé en hauteur (rocher, banc, cadre)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout face à un appui de 40-50 cm de haut (rocher, banc), talon droit posé dessus, jambe droite tendue, pointe du pied vers le haut, jambe gauche d'appui tendue, buste vertical, mains sur les hanches. Étiré (s=1) : le buste se penche en avant depuis les hanches d'environ 45°, dos plat, poitrine vers le pied droit, les mains glissent sur la cuisse et le tibia droits.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Ischios, mollet",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Talon posé sur un appui, jambe tendue",
+   "Penche le buste, dos plat",
+   "Les deux hanches face à la jambe levée"
+  ],
+  "erreurs": [
+   "Arrondir le dos pour toucher le pied",
+   "Tourner le bassin sur le côté"
+  ],
+  "pourquoi": "L'étirement des ischios le plus simple après la sortie : un rocher, un banc ou le tube du cadre suffisent.",
+  "respiration": "Respire lentement, penche-toi un peu plus en soufflant.",
+  "securite": "Prends un appui stable, à hauteur de genou au plus. Si ça tire derrière le genou, plie-le légèrement.",
+  "tags": [
+   "etirement",
+   "chaine-posterieure",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "ischios",
+   "mollets"
+  ],
+  "alternatives": [
+   "etirement-ischios-debout",
+   "etirement-ischios-assis",
+   "ischios-dynamique"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×30 s/jambe",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "levee-jambe-tendue-active",
+  "nom": "Levée active de jambe tendue (couché sur le dos)",
+  "famille": "mobilite",
+  "anim": "t_aslr",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "hams",
+   "abs"
+  ],
+  "musclesTxt": "Fléchisseurs de hanche, ischios, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, deux jambes tendues",
+   "Monte une jambe tendue, sans élan",
+   "L'autre jambe reste collée au sol"
+  ],
+  "erreurs": [
+   "Plier le genou de la jambe qui monte",
+   "Laisser l'autre jambe se décoller"
+  ],
+  "pourquoi": "Tu gagnes de l'amplitude en la contrôlant toi-même : utile pour la foulée et pour lever la jambe en ski.",
+  "respiration": "Souffle en montant la jambe, inspire en descendant.",
+  "securite": "Garde le bas du dos au sol. Monte seulement jusqu'où la jambe reste tendue.",
+  "tags": [
+   "mobilite",
+   "chaine-posterieure",
+   "hanche",
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "foulee",
+   "gainage"
+  ],
+  "zones": [
+   "ischios",
+   "hanches"
+  ],
+  "alternatives": [
+   "ischios-sangle-dynamique",
+   "ischios-dynamique",
+   "balancier-jambe"
+  ],
+  "tempoConseille": [
+   "2",
+   "0",
+   "2",
+   "2"
+  ],
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×8/jambe, 2 s tenues en haut",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-mollet-marche",
+  "nom": "Étirement du mollet, talon dans le vide (marche ou trottoir)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout sur une marche de 15-20 cm, avant du pied droit posé sur le bord, talon droit dans le vide à l'horizontale, pied gauche posé à plat sur la marche, une main sur un mur ou une rampe. Étiré (s=1) : le talon droit descend 5-6 cm sous le niveau de la marche (cheville à environ 20° de flexion dorsale), genou droit tendu, le poids passe sur le pied droit, buste droit.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollet, tendon d'Achille",
+  "materiel": [
+   "marche"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Avant du pied sur le bord de la marche",
+   "Laisse descendre le talon, genou tendu",
+   "Puis plie un peu le genou : mollet profond"
+  ],
+  "erreurs": [
+   "Rebondir en bas",
+   "Mettre tout le poids d'un coup"
+  ],
+  "pourquoi": "Une marche, un trottoir ou une racine suffisent pour relâcher les mollets après un trail ou une montée en danseuse.",
+  "respiration": "Respire lentement, laisse le talon descendre en soufflant.",
+  "securite": "Tiens-toi à quelque chose. Garde un peu de poids sur l'autre pied si le tendon tire trop.",
+  "tags": [
+   "etirement",
+   "cheville",
+   "trail",
+   "velo",
+   "recuperation",
+   "retour-au-calme",
+   "foulee",
+   "montee"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "etirement-mollet-mur",
+   "etirement-soleaire-mur",
+   "mollet-excentrique-marche"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "30 s genou tendu + 30 s genou plié, par jambe",
+  "preuve": "C · [@konrad2024b] [@konrad2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-mollet-charge",
+  "nom": "Étirement lesté du mollet sur une marche (sac lesté)",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout sur une marche, avant du pied droit sur le bord, talon à l'horizontale, pied gauche décollé derrière, sac à dos lesté sur le dos, une main sur un mur. Tenue (s=1) : le talon droit est descendu 5-6 cm sous la marche (cheville à 20° de flexion dorsale), genou droit tendu, tout le poids sur le pied droit, buste droit ; la position reste immobile.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollet, tendon d'Achille",
+  "materiel": [
+   "marche",
+   "sac-leste"
+  ],
+  "niveau": 3,
+  "consignes": [
+   "Sac lesté sur le dos, un pied sur la marche",
+   "Descends le talon lentement, en 5 secondes",
+   "Tiens en bas, remonte avec les deux pieds"
+  ],
+  "erreurs": [
+   "Rebondir en position basse",
+   "Charger lourd dès la première fois"
+  ],
+  "pourquoi": "Étirer sous charge combine souplesse et solidité du mollet et du tendon, utile pour les descentes en trail.",
+  "respiration": "Respire lentement pendant la tenue, sans bloquer.",
+  "securite": "Commence sans charge. Jamais avant une séance de course. Si le tendon est sensible le lendemain, allège.",
+  "tags": [
+   "etirement",
+   "cheville",
+   "trail",
+   "foulee",
+   "recuperation"
+  ],
+  "zones": [
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "mollet-excentrique-marche",
+   "etirement-mollet-mur",
+   "etirement-soleaire-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "3×30 s/jambe, charge légère (5-10 kg), 1 min de repos",
+  "preuve": "C · [@warneke2024c] [@osullivan2012]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco"
+  ],
+  "varianteDe": "mollet-excentrique-marche"
+ },
+ {
+  "id": "quadriceps-couche-cote",
+  "nom": "Étirement du quadriceps couché sur le côté",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (personnage couché sur le côté gauche, vu de devant). Départ (s=0) : couché sur le côté gauche sur un tapis, tête posée sur le bras gauche, jambe gauche pliée à 90° devant pour la stabilité, jambe droite tendue dans l'axe du corps. Étiré (s=1) : le genou droit est plié à fond, la main droite tient la cheville droite, talon contre la fesse, la cuisse droite recule de 15° derrière la ligne du buste, bassin vertical.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "quadsL",
+   "hipflex"
+  ],
+  "musclesTxt": "Quadriceps, avant de la hanche",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le côté, attrape la cheville du dessus",
+   "Talon vers la fesse, genou vers l'arrière",
+   "Rentre le ventre, ne cambre pas"
+  ],
+  "erreurs": [
+   "Cambrer le bas du dos",
+   "Laisser le genou monter vers le plafond"
+  ],
+  "pourquoi": "Couché, tu ne perds pas l'équilibre : tu peux enfin relâcher le quadriceps et l'avant de la hanche.",
+  "respiration": "Respire lentement, recule le genou en soufflant.",
+  "securite": "Si le genou gêne en flexion, tiens le pied avec une serviette pour plier moins.",
+  "tags": [
+   "etirement",
+   "genou",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "quadriceps",
+   "hanches",
+   "genoux"
+  ],
+  "alternatives": [
+   "etirement-quadriceps-debout",
+   "couch-stretch",
+   "etirement-quadriceps-genoux-arriere"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "mobilisation-cheville-debout-mur",
+  "nom": "Genou vers le mur, debout (mobilité de cheville)",
+  "famille": "mobilite",
+  "anim": "t_kneewall",
+  "opts": {},
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Mollet profond, cheville",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pied à 10 cm du mur, mains au mur",
+   "Avance le genou jusqu'à toucher le mur",
+   "Le talon reste collé au sol"
+  ],
+  "erreurs": [
+   "Décoller le talon",
+   "Laisser le genou partir vers l'intérieur"
+  ],
+  "pourquoi": "Une cheville qui plie bien, c'est un pied plus sûr en descente de trail et un squat plus profond. Marche aussi contre un arbre.",
+  "respiration": "Souffle en avançant le genou.",
+  "securite": "Vise le 2e orteil avec le genou. Si ça pince devant la cheville, recule moins le pied.",
+  "tags": [
+   "mobilite",
+   "cheville",
+   "trail",
+   "echauffement",
+   "avant-effort",
+   "foulee",
+   "descente-vtt"
+  ],
+  "zones": [
+   "chevilles",
+   "mollets"
+  ],
+  "alternatives": [
+   "mobilisation-cheville-demi-genou",
+   "etirement-soleaire-mur",
+   "mobilisation-cheville-elastique"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×10/cheville, 2 s tenues au mur ; recule le pied si c'est facile",
+  "preuve": "C · [@konrad2024b] [@konrad2022]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "mobilisation-cheville-demi-genou"
+ },
+ {
+  "id": "cercles-cheville-debout",
+  "nom": "Cercles de cheville debout, pointe au sol",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout sur la jambe gauche, mains sur les hanches, pointe du pied droit posée au sol 20 cm sur le côté, talon droit levé à la verticale des orteils. Cycle (s de 0 à 1) : le talon droit décrit un cercle horizontal de 8-10 cm de diamètre autour de la pointe qui reste posée ; le genou droit suit à peine, le bassin ne bouge pas.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves",
+   "shins"
+  ],
+  "musclesTxt": "Muscles autour de la cheville",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, pose la pointe d'un pied au sol",
+   "Fais tourner le talon en grands cercles",
+   "Change de sens à la moitié"
+  ],
+  "erreurs": [
+   "Tourner le genou au lieu de la cheville",
+   "Faire de tout petits cercles"
+  ],
+  "pourquoi": "20 secondes par pied avant de s'élancer sur un sentier ou de chausser les skis : la cheville est prête à bouger.",
+  "respiration": "Respire normalement.",
+  "securite": "Appuie peu sur la pointe. Si la cheville est sensible après une entorse, fais des cercles plus petits.",
+  "tags": [
+   "mobilite",
+   "cheville",
+   "trail",
+   "echauffement",
+   "avant-effort"
+  ],
+  "zones": [
+   "chevilles",
+   "pieds"
+  ],
+  "alternatives": [
+   "cercles-chevilles-assis",
+   "alphabet-cheville",
+   "marche-talons-pointes"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 10,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "10 cercles dans chaque sens, par pied",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "trail",
+   "nordique",
+   "triathlon",
+   "xco"
+  ],
+  "varianteDe": "cercles-chevilles-assis"
+ },
+ {
+  "id": "etirement-orteils-mur",
+  "nom": "Étirement du gros orteil et de la plante contre un mur",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil, plan serré sur le pied. Départ (s=0) : debout face à un mur, pied droit nu, talon au sol à 5 cm du mur, les cinq orteils relevés à plat contre le mur (orteils à 60° d'extension), genou tendu, mains au mur. Étiré (s=1) : le genou droit avance et touche presque le mur, la cheville plie, le talon reste au sol, les orteils restent plaqués : la plante du pied est tendue.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "calves"
+  ],
+  "musclesTxt": "Plante du pied, mollet",
+  "materiel": [
+   "mur"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Pieds nus, orteils relevés contre le mur",
+   "Talon au sol, avant du pied collé au mur",
+   "Avance le genou vers le mur"
+  ],
+  "erreurs": [
+   "Garder la chaussure",
+   "Décoller le talon"
+  ],
+  "pourquoi": "La plante du pied encaisse chaque foulée et reste enfermée dans une chaussure rigide à vélo : redonne-lui de la souplesse.",
+  "respiration": "Respire lentement.",
+  "securite": "Avance doucement. Si ça tire fort sous le talon au réveil ou à chaque sortie, parles-en à un kiné.",
+  "tags": [
+   "etirement",
+   "cheville",
+   "trail",
+   "foulee",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "pieds",
+   "mollets",
+   "chevilles"
+  ],
+  "alternatives": [
+   "etirement-voute-plantaire",
+   "etirement-soleaire-mur",
+   "etirement-mollet-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/pied",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "xco",
+   "route",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "flexion-laterale-debout",
+  "nom": "Inclinaison sur le côté debout, bras au-dessus de la tête",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face. Départ (s=0) : debout, pieds largeur de bassin, bras droit tendu à la verticale, la main gauche tient le poignet droit au-dessus de la tête. Étiré (s=1) : le buste s'incline de 25-30° vers la gauche dans le plan frontal, la main gauche tire le poignet droit, le bassin reste centré au-dessus des pieds, jambes tendues, regard devant.",
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "obliques",
+   "lats"
+  ],
+  "musclesTxt": "Obliques, grand dorsal, côté du dos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Debout, un bras tendu vers le ciel",
+   "Attrape le poignet avec l'autre main",
+   "Incline-toi sur le côté, bassin fixe"
+  ],
+  "erreurs": [
+   "Pencher le buste en avant",
+   "Pousser la hanche trop loin sur le côté"
+  ],
+  "pourquoi": "Sur le vélo, le buste ne se penche jamais sur le côté : cet étirement debout redonne de l'air aux flancs et aux côtes.",
+  "respiration": "Inspire dans les côtes du côté étiré, souffle en t'inclinant.",
+  "securite": "Reste dans le plan, comme entre deux vitres. Si le bas du dos pince, incline-toi moins.",
+  "tags": [
+   "etirement",
+   "dos",
+   "velo",
+   "trail",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "squat-sumo-inclinaison",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 20,
+  "voirEnVrai": "https://fitnessprogramer.com/exercise/standing-side-bend/",
+  "valide": false,
+  "priorite": 1,
+  "prescription": "2×20-30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "chat-vache-segmente",
+  "nom": "Chat-vache vertèbre par vertèbre",
+  "famille": "mobilite",
+  "anim": "tm_catcow",
+  "opts": {},
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lowback",
+   "upperback",
+   "abs"
+  ],
+  "musclesTxt": "Tout le dos, abdos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 2,
+  "consignes": [
+   "À quatre pattes, démarre par le bassin",
+   "Arrondis le dos étage par étage, tête en dernier",
+   "Reviens pareil, en creusant depuis le bassin"
+  ],
+  "erreurs": [
+   "Bouger tout le dos d'un bloc",
+   "Plier les coudes"
+  ],
+  "pourquoi": "Tu apprends à bouger chaque étage du dos : les zones bloquées par la position vélo se réveillent.",
+  "respiration": "Souffle en arrondissant, inspire en creusant.",
+  "securite": "Très lent : 5 secondes dans chaque sens. Reste dans une amplitude sans gêne.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "velo",
+   "recuperation",
+   "gainage"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos",
+   "cou"
+  ],
+  "alternatives": [
+   "chat-vache",
+   "enroulement-vertebral",
+   "mobilite-bassin-dos"
+  ],
+  "tempoConseille": [
+   "5",
+   "1",
+   "5",
+   "1"
+  ],
+  "repsConseillees": 5,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "5 allers-retours très lents",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "chat-vache"
+ },
+ {
+  "id": "enfant-inclinaison",
+  "nom": "Posture de l'enfant, mains décalées sur le côté",
+  "famille": "etirement",
+  "anim": "tm_childpose",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "lats",
+   "lowback",
+   "obliques"
+  ],
+  "musclesTxt": "Grand dorsal, côté du dos",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "En posture de l'enfant, bras tendus devant",
+   "Marche avec les deux mains vers un côté",
+   "Pousse la fesse opposée vers le talon"
+  ],
+  "erreurs": [
+   "Décoller les fesses des talons",
+   "Laisser les épaules monter aux oreilles"
+  ],
+  "pourquoi": "Étire le côté du dos et le grand dorsal, que tu sollicites en tirant sur le guidon ou les bâtons.",
+  "respiration": "Inspire dans les côtes du côté étiré, souffle en t'allongeant.",
+  "securite": "Si les genoux gênent, glisse un coussin entre les fesses et les talons.",
+  "tags": [
+   "etirement",
+   "dos",
+   "velo",
+   "recuperation",
+   "retour-au-calme"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos",
+   "epaules"
+  ],
+  "alternatives": [
+   "posture-enfant",
+   "etirement-dos-mur",
+   "enfiler-aiguille"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 30,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×30 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "posture-enfant"
+ },
+ {
+  "id": "chat-vache-debout",
+  "nom": "Chat-vache debout, mains sur les cuisses",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Position : debout, pieds largeur de bassin, genoux pliés à 130°, buste penché à 45°, mains posées sur les cuisses juste au-dessus des genoux, bras tendus. Départ (s=0) : dos arrondi au maximum, bassin enroulé, menton vers la poitrine. Fin (s=1) : dos creusé, fesses vers l'arrière et le haut, poitrine vers l'avant, regard devant. Mains et jambes immobiles.",
+  "type": "reps",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "lowback",
+   "upperback",
+   "abs"
+  ],
+  "musclesTxt": "Tout le dos, abdos",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Genoux pliés, mains sur les cuisses",
+   "Arrondis tout le dos, menton rentré",
+   "Puis creuse, poitrine vers l'avant"
+  ],
+  "erreurs": [
+   "Bouger seulement la tête",
+   "Tendre les jambes"
+  ],
+  "pourquoi": "Le chat-vache sans se mettre au sol : tu déverrouilles le dos sur le parking, en tenue, juste après la sortie.",
+  "respiration": "Souffle en arrondissant, inspire en creusant.",
+  "securite": "Garde le poids sur les mains. Mouvement lent, sans aller chercher la gêne.",
+  "tags": [
+   "mobilite",
+   "dos",
+   "velo",
+   "trail",
+   "retour-au-calme",
+   "recuperation"
+  ],
+  "zones": [
+   "bas-du-dos",
+   "haut-du-dos"
+  ],
+  "alternatives": [
+   "chat-vache",
+   "enroulement-vertebral",
+   "etirement-dos-mur"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 1,
+  "prescription": "8-10 lentes, juste après la sortie",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": "chat-vache"
+ },
+ {
+  "id": "marche-du-soldat",
+  "nom": "Marche du soldat (jambe tendue vers la main)",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : debout, pieds joints, bras le long du corps. Fin (s=1) : debout sur la jambe gauche tendue, la jambe droite tendue est levée devant à 70-80° de flexion de hanche, pointe de pied relevée, le bras gauche tendu à l'horizontale devant, la main gauche près du pied droit, buste vertical. Puis le pied se pose un pas devant et l'autre jambe enchaîne.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "hipflex",
+   "calves"
+  ],
+  "musclesTxt": "Ischios, fléchisseurs de hanche",
+  "materiel": [
+   "aucun"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Marche en lançant une jambe tendue devant",
+   "Main opposée tendue vers le pied",
+   "Buste droit, monte sans forcer"
+  ],
+  "erreurs": [
+   "Arrondir le dos pour toucher le pied",
+   "Lancer la jambe en force"
+  ],
+  "pourquoi": "Allonge l'arrière des cuisses en mouvement, juste avant un footing, un trail ou une séance de ski.",
+  "respiration": "Souffle à chaque montée de jambe.",
+  "securite": "Commence bas et monte petit à petit. La hauteur compte moins que le buste droit.",
+  "tags": [
+   "mobilite",
+   "chaine-posterieure",
+   "echauffement",
+   "avant-effort",
+   "trail",
+   "foulee"
+  ],
+  "zones": [
+   "ischios",
+   "hanches"
+  ],
+  "alternatives": [
+   "balancier-jambe",
+   "ischios-dynamique",
+   "chenille"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×8/jambe en avançant",
+  "preuve": "C · [@opplert2018] [@panasci2025]",
+  "sports": [
+   "trail",
+   "triathlon",
+   "nordique",
+   "xco"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "etirement-psoas-bord-banc",
+  "nom": "Fléchisseur de hanche au bord d'un banc, genou tenu",
+  "famille": "etirement",
+  "anim": "t_thomas",
+  "opts": {},
+  "type": "hold",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "hipflex",
+   "quadsL"
+  ],
+  "musclesTxt": "Psoas, avant de la cuisse",
+  "materiel": [
+   "banc"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Couché au bord du banc, fesses au bord",
+   "Serre un genou contre la poitrine",
+   "Laisse pendre l'autre jambe dans le vide"
+  ],
+  "erreurs": [
+   "Laisser le bas du dos se creuser",
+   "Tirer la jambe pendante vers le bas"
+  ],
+  "pourquoi": "Le poids de la jambe étire l'avant de la hanche sans effort : idéal en fin de séance de salle.",
+  "respiration": "Respire lentement par le ventre, relâche la cuisse en soufflant.",
+  "securite": "Garde le bas du dos plaqué grâce au genou serré. Remonte la jambe avec les mains pour sortir.",
+  "tags": [
+   "etirement",
+   "hanche",
+   "velo",
+   "trail",
+   "recuperation",
+   "coup-de-pedale"
+  ],
+  "zones": [
+   "hanches",
+   "quadriceps"
+  ],
+  "alternatives": [
+   "flechisseur-hanche-genou",
+   "etirement-psoas-pied-sureleve",
+   "couch-stretch"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 45,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 3,
+  "prescription": "2×45 s/côté",
+  "preuve": "C · [@konrad2024b]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "jambes-au-mur",
+  "nom": "Jambes en l'air contre un mur",
+  "famille": "etirement",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de profil. Départ (s=0) : couché sur le dos sur un tapis, perpendiculaire à un mur, fesses à 10-20 cm du mur, genoux pliés, pieds à plat contre le mur. Tenue (s=1) : les deux jambes tendues à la verticale, talons posés contre le mur, hanches à 90°, bas du dos au sol, bras ouverts sur les côtés paumes vers le haut, tête au sol ; seul le ventre bouge avec la respiration.",
+  "type": "hold",
+  "unilateral": false,
+  "cote": null,
+  "muscles": [
+   "hams",
+   "calves"
+  ],
+  "musclesTxt": "Ischios, mollets (léger)",
+  "materiel": [
+   "mur",
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "Sur le dos, fesses près du mur",
+   "Jambes tendues posées contre le mur",
+   "Bras relâchés, ferme les yeux"
+  ],
+  "erreurs": [
+   "Coller les fesses au mur si ça tire trop",
+   "Rester crispé, regarder son téléphone"
+  ],
+  "pourquoi": "Un vrai moment de calme après une grosse sortie : jambes légères, respiration lente, tête au repos.",
+  "respiration": "Respire lentement par le nez, expire plus longtemps que tu n'inspires.",
+  "securite": "Éloigne les fesses du mur si l'arrière des cuisses tire. Si les pieds fourmillent, redescends.",
+  "tags": [
+   "etirement",
+   "recuperation",
+   "retour-au-calme",
+   "chaine-posterieure",
+   "velo",
+   "trail"
+  ],
+  "zones": [
+   "ischios",
+   "mollets",
+   "bas-du-dos"
+  ],
+  "alternatives": [
+   "respiration-allonge",
+   "etirement-ischios-assis"
+  ],
+  "tempoConseille": null,
+  "dureeConseillee": 180,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "3-5 min, le soir ou après la douche",
+  "preuve": "D · pratique de terrain",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ },
+ {
+  "id": "adducteur-bascule-quadrupedie",
+  "nom": "Adducteur jambe tendue sur le côté, bascule arrière",
+  "famille": "mobilite",
+  "anim": null,
+  "opts": {},
+  "animAFaire": "Vue de face (ou de dessus). Départ (s=0) : à quatre pattes sur un tapis, mains sous les épaules, genou gauche sous la hanche, jambe droite tendue sur le côté dans l'alignement des hanches, pied droit à plat au sol, pointe vers l'avant, dos plat. Fin (s=1) : les fesses reculent vers le talon gauche (hanche gauche pliée à 120°), les bras s'allongent, le dos reste plat, la jambe droite reste tendue et le pied droit à plat.",
+  "type": "reps",
+  "unilateral": true,
+  "cote": null,
+  "muscles": [
+   "adductors",
+   "hams"
+  ],
+  "musclesTxt": "Adducteurs, intérieur de la cuisse",
+  "materiel": [
+   "tapis"
+  ],
+  "niveau": 1,
+  "consignes": [
+   "À quatre pattes, une jambe tendue sur le côté",
+   "Pied à plat au sol, pointe vers l'avant",
+   "Recule les fesses vers le talon, dos plat"
+  ],
+  "erreurs": [
+   "Arrondir le bas du dos en reculant",
+   "Plier le genou de la jambe tendue"
+  ],
+  "pourquoi": "Mobilise un adducteur à la fois, sans forcer sur les genoux : utile pour le pas de patineur et les appuis en VTT.",
+  "respiration": "Souffle en reculant, inspire en revenant.",
+  "securite": "Recule seulement tant que le dos reste plat. Si ça tire près de l'aine, réduis l'amplitude.",
+  "tags": [
+   "mobilite",
+   "hanche",
+   "recuperation",
+   "echauffement",
+   "velo",
+   "trail"
+  ],
+  "zones": [
+   "adducteurs",
+   "hanches"
+  ],
+  "alternatives": [
+   "grenouille-adducteurs",
+   "cossack-squat",
+   "papillon"
+  ],
+  "tempoConseille": null,
+  "repsConseillees": 8,
+  "voirEnVrai": null,
+  "valide": false,
+  "priorite": 2,
+  "prescription": "2×8/côté, lent",
+  "preuve": "C · [@opplert2018]",
+  "sports": [
+   "xco",
+   "route",
+   "trail",
+   "triathlon",
+   "nordique"
+  ],
+  "varianteDe": null
+ }
+]
