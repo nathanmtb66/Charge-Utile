@@ -215,3 +215,67 @@ Cible : entraîneur de pôle, coach indépendant VTT/trail, préparateur physiqu
 
 **Règles de passage** : noter les faits (nombres, outils, dates), pas les compliments ; viser 15 à 20 entretiens par segment avant de conclure ; un « oui » à 14 ou 15 compte, un « c'est génial » ne compte pas.
 
+---
+
+## 4. Tests de prix et de demande
+
+### 4.1 Principes
+
+- **Pretotypage et « fake door » (Alberto Savoia, *Pretotype It*, 2e édition, PDF de pretotyping.org)** : avant de construire, créer une « entrée » (lien, bouton, annonce) vers un produit ou une fonction qui n'existe pas encore et compter qui clique. Le nom vient d'une présentation de la cofondatrice de Polyvore. Métrique proposée : **niveau d'intérêt initial (ILI) = nombre d'actions faites / nombre d'occasions offertes**, puis un **niveau d'intérêt dans la durée (OLI)** qui se suit dans le temps ([pretotyping.org, PDF](https://www.pretotyping.org/uploads/1/4/0/9/14099067/pretotype_it_2nd_pretotype_edition-2.pdf), lu en texte). L'idée d'exiger un engagement réel (« skin in the game » : temps, argent, informations) apparaît dans les résumés WebSearch du livre *The Right It* (non ouvert).
+- **Landing page + page de prix (cas Buffer, 2011)** : deux pages sans produit — une description, puis un clic « Plans et prix » qui mène à « pas encore prêt, laissez votre e-mail ». La page de prix mesure à la fois l'intérêt pour le prix et l'intensité de la demande (un clic de plus). Premier client payant **4 jours** après le lancement du 30 novembre 2010 ; l'article mentionne environ **4 %** d'utilisateurs passés à une offre payante après le lancement ([buffer.com, 16 février 2011](https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/)). Cas célèbre, un seul produit, grand public : à lire comme une illustration.
+- **Van Westendorp (1976)** : quatre questions ouvertes à chaque répondant — trop cher pour acheter, si bon marché qu'on doute de la qualité, commence à être cher, bonne affaire. On trace les courbes cumulées : la zone entre les points de « bon marché marginal » et de « cher marginal » donne la fourchette acceptable. **Limites** : prix déclaré et non choix réel, pas de concurrents dans la question, pas de prédiction de volume ; l'extension Newton-Miller-Smith (1993) ajoute une question d'intention d'achat aux deux prix-clés ([sawtoothsoftware.com](https://sawtoothsoftware.com/resources/blog/posts/van-westendorp-pricing-sensitivity-meter)). Avec 20-40 coachs interrogés, la méthode donne une fourchette, pas un prix.
+- **Préventes / engagement payant** : c'est la forme la plus forte de l'engagement « argent » du Mom Test (section 3.1). En B2B : bon de commande pour la saison 2027, ou pilote payant à prix réduit.
+
+### 4.2 Taux de conversion typiques (à prendre avec prudence)
+
+| Étape | Repère | Source et fiabilité |
+|---|---|---|
+| Visiteur → inscription liste d'attente | 2-5 % (B2B trafic froid), 6-12 % (trafic chaud), 1-3 % (produits de niche/techniques), 4-8 % (applis grand public) | [getwaitlist.com, 22 juin 2025](https://getwaitlist.com/blog/waitlist-benchmarks-conversion-rates) — **contenu marketing d'un éditeur d'outil de liste d'attente**, fondé sur des anecdotes ; faible |
+| Liste d'attente → client payant | > 20 % = bon signal en B2B ; 10-15 % appli grand public | même source, faible |
+| Effet du délai | ~50 % de conversion si l'accès est ouvert dans les 30 jours, ~20 % après 90 jours | résumé WebSearch d'articles d'éditeurs (waitlister.me, scalemath.com), **non ouverts, non vérifiés** |
+| Inscrits → payants (cas Buffer) | ≈ 4 % | [buffer.com](https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/), un seul cas |
+
+**Aucune étude indépendante et solide** sur la conversion liste d'attente → payant n'a été trouvée. Retenir l'ordre de grandeur : quelques % des visiteurs laissent un e-mail, et une minorité (10-25 %) des inscrits paie, d'autant moins que l'attente est longue.
+
+### 4.3 Application à Charge Utile (proposition)
+
+1. **Page « coach » avec fake door de prix** : présentation + bouton « Équiper mon groupe » → choix d'une formule (ex. : gratuit 3 athlètes / formule coach / formule structure) → « bêta fermée, laissez votre e-mail ». Mesurer l'ILI sur un trafic **qualifié** (coachs contactés, abonnés de Nathan), pas sur des vues.
+2. **Van Westendorp en fin d'entretien** (après la question 15 de la section 3.3) sur les coachs qui utilisent déjà un outil payant : on obtient une fourchette par segment (indépendant vs structure).
+3. **Prévente saison 2027** : proposer aux 5-10 coachs les plus engagés un tarif fondateur payé d'avance pour la saison (ou un pilote payant symbolique pour une structure). Un seul paiement vaut plus que cinquante « super idée ».
+4. **Fake door de fonctions** dans l'appli coach existante (ex. : bouton « Exporter le bilan PDF pour le club », « Ajouter un 2e coach ») pour hiérarchiser ce qu'on construit.
+
+---
+
+## 5. Critères d'arrêt ou de pivot : repères publiés
+
+### 5.1 Le test de Sean Ellis (40 % « très déçu »)
+
+- Question : « Que ressentiriez-vous si vous ne pouviez plus utiliser [produit] ? » — très déçu / un peu déçu / pas déçu. Sean Ellis (premier responsable marketing de Dropbox, LogMeIn, Eventbrite) a comparé environ 100 startups : au-dessus de **40 % de « très déçu »**, la croissance devient durable ; en dessous, les produits peinent presque toujours (récit repris par la First Round Review, [review.firstround.com](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/)). Wikipedia le décrit comme une **heuristique** popularisée par Ellis, pas une loi ([wikipedia](https://en.wikipedia.org/wiki/Product-market_fit)).
+- **Cas Superhuman** (même article) : 22 % de « très déçu » au départ → 33 % en ne gardant que le segment le plus exigeant → **58 % trois trimestres plus tard**. Quatre questions : la question d'Ellis + « quel type de personne en profiterait le plus ? » + « quel est le principal bénéfice ? » + « comment l'améliorer ? ». Environ **40 réponses** suffisent pour un résultat indicatif. **Leçon** : le score se calcule sur un segment précis (pour Charge Utile : coach VTT/trail qui suit déjà ses athlètes sur intervals.icu ?), pas sur tout le monde.
+- **Limite pour Charge Utile** : il faut d'abord des utilisateurs actifs. Avec 7 athlètes, le score n'a pas de sens ; viser ≥ 40 répondants (coachs + athlètes séparés) avant de l'utiliser.
+
+### 5.2 Rétention
+
+Repères de Lenny Rachitsky (lettre du 9 juin 2020, synthèse de 20 praticiens de la croissance) : rétention des utilisateurs **à 6 mois** — logiciel grand public par abonnement ≈ 40 % bon / ≈ 70 % excellent ; **SaaS PME** ≈ 60 % bon / ≈ 80 % excellent ; SaaS grands comptes ≈ 70 % / ≈ 90 %. Rétention nette du revenu à 12 mois, SaaS grand public : ≈ 55 % bon / ≈ 80 % excellent ([lennysnewsletter.com](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29)). Repères d'experts, pas une étude statistique.
+
+Pour Charge Utile, deux rétentions distinctes : **coach** (proche d'un SaaS PME : il programme encore des séances 6 mois après ?) et **athlète** (fait-il encore ≥ 1 séance/semaine prévue après 8 semaines ?). La saisonnalité du sport fausse la lecture : comparer à la même période du plan de saison.
+
+### 5.3 Conversion d'essai et de pilote
+
+- **Essais logiciels** (synthèse d'un éditeur, [pulseahead.com](https://www.pulseahead.com/blog/trial-to-paid-conversion-benchmarks-in-saas)) : essai sans carte bancaire → payant **8,9 %** (ChartMogul 2026, 200 produits) à 18,2 % (First Page Sage 2025, 86 entreprises) ; essai avec carte → 31,4 % à 48,8 % ; **freemium → payant 5,6 %** (« bon » 3-5 %, « excellent » 8-12 %). Chiffres de seconde main (études originales non ouvertes).
+- **Pilotes B2B** (Jason Lemkin, SaaStr) : un **pilote payant** bien mené se convertit en contrat annuel à **70 % et plus** (60 % si le pilote demande de changer les processus, plus de 90 % quand la valeur est immédiate) ; les **pilotes gratuits** échouent selon lui dans 95 % des cas faute d'engagement des deux côtés ([saastr.com](https://www.saastr.com/what-is-the-typical-conversion-from-paid-pilot-to-annual-contract-in-b2b-saas-2)). Avis d'un investisseur, fondé sur son expérience, pas une étude ; pertinent pour Charge Utile, qui est gratuit aujourd'hui.
+
+### 5.4 Critères de décision proposés pour Nathan (à fixer **avant** de commencer)
+
+Fenêtre proposée : saison de préparation hivernale, **novembre 2026 → fin février 2027**.
+
+| Signal | Continuer | Pivoter ou recentrer | Arrêter la piste « vendre » |
+|---|---|---|---|
+| Entretiens de découverte (section 3) | ≥ 15 entretiens par segment ; la muscu suivie à distance est citée spontanément comme un problème par ≥ 1/3 | problème réel mais chez un autre segment (ex. préparateurs physiques de structures plutôt que coachs indépendants) | personne ne cite de vraie difficulté ni d'action passée pour la résoudre |
+| Engagements (temps / réputation) | ≥ 5 coachs testent avec ≥ 3 athlètes pendant ≥ 4 semaines ; ≥ 3 présentations à un autre coach ou décideur | tests démarrés puis abandonnés pour une raison précise et réparable | < 2 tests réels sur 20 contacts qualifiés |
+| Rétention coach | ≥ 60 % des coachs testeurs programment encore à 8 semaines (repère SaaS PME) | 30-60 % | < 30 % |
+| Score Ellis (quand ≥ 40 répondants) | ≥ 40 % « très déçu » dans un segment | 25-40 % : segmenter (méthode Superhuman) | < 25 % partout après segmentation |
+| Paiement | ≥ 3 préventes ou 1 pilote payant de structure pour la saison 2027 | intérêt sans paiement → tester un autre prix ou un autre payeur (club, structure) | zéro paiement après offre explicite à 10 coachs engagés |
+
+Ces seuils sont des **choix de pilotage** inspirés des repères ci-dessus, pas des normes publiées.
+

@@ -188,3 +188,109 @@ Enjeu : un logiciel DM doit être **marqué CE** (classe I au minimum, classe II
 - Relire la page de vente, la fiche de magasin d'applis et les posts avant publication.
 - **Juriste ou consultant réglementaire DM** : seulement si Nathan veut un jour un module « retour de blessure » ou un partenariat avec des kinés qui prescrivent via l'appli. Sinon inutile.
 
+---
+
+## 5. CGU, responsabilité en cas de blessure, assurance, carte professionnelle
+
+### 5.1 Responsabilité et clauses limitatives face à un consommateur
+
+**Réponse franche** : **on ne peut pas s'exonérer d'une blessure par une clause.** Face à un consommateur, une clause qui supprime ou réduit le droit à réparation en cas de manquement du professionnel est **présumée abusive de façon irréfragable** (« clause noire ») : article **R.212-1, 6° du Code de la consommation** (en vigueur depuis le 01/07/2016, [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807196), lu). Elle est réputée non écrite. Le 7° interdit aussi d'empêcher le consommateur de résilier en cas d'inexécution. Certitude : **élevée**.
+
+Ce que les CGU **peuvent** faire utilement (et que les juges regardent) :
+- **Définir précisément le service** : outil de planification d'entraînement pour sportifs en bonne santé, pas un suivi médical, pas un encadrement en présentiel.
+- **Informer et faire déclarer** : l'utilisateur déclare ne pas avoir de contre-indication connue à la pratique, être invité à consulter un médecin en cas de doute, à arrêter tout exercice douloureux. Cela ne supprime pas la responsabilité, mais peut établir une **faute de la victime** qui réduit l'indemnisation.
+- **Consignes de sécurité visibles** dans l'appli au bon moment (avant la pliométrie, les tests de max, la proprio sur surface instable), pas seulement dans les CGU.
+- Limiter la responsabilité **entre professionnels** (clubs, coachs clients en B2B) : possible dans une certaine mesure, contrairement au B2C.
+
+**Responsabilité du fait des produits défectueux et logiciels** : l'article 1245-14 du Code civil interdit déjà les clauses écartant ou limitant cette responsabilité ([Légifrance](https://legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070721&idArticle=LEGIARTI000032023655), vu via recherche web). La **directive (UE) 2024/2853** inclut explicitement les **logiciels** (dont SaaS et IA) dans la notion de produit ; elle est à transposer au plus tard le **09/12/2026** et s'applique aux produits mis sur le marché après cette date. Selon les sources consultées via recherche web (cabinets et blogs, ex. [DLA Piper](https://www.dlapiper.com/fr-fr/insights/publications/2024/11/responsabilite-des-produits-defectueux-une-nouvelle-directive-europeenne-pour-sadapter)), aucun texte de transposition français n'était encore publié. Conséquence pour Charge Utile : un défaut de l'algorithme (ex. bug qui double une charge) ayant causé une blessure pourrait engager la **responsabilité sans faute** de l'éditeur. Certitude : moyenne (texte de transposition inconnu). **Mesure concrète : plafonds de progression codés en dur** (jamais plus de +X % de charge d'une série à l'autre, jamais de max réel non encadré), tests automatiques sur l'algorithme d'ajustement, journal des versions.
+
+**Autres obligations de consommation pour un abonnement** (vérifiées sur des pages officielles via recherche web) :
+- **Résiliation « en trois clics »** : depuis le 01/06/2023, tout professionnel qui permet de souscrire en ligne doit offrir une fonction gratuite, directe et permanente « résilier votre contrat » dans le site ou l'appli ([communiqué economie.gouv.fr, 01/06/2023](https://presse.economie.gouv.fr/01062023-cp-entree-en-vigueur-de-la-resiliation-en-ligne-des-contrats-en-trois-clics/)).
+- **Médiateur de la consommation** : obligatoire pour tout professionnel vendant à des consommateurs depuis le 01/01/2016 ; ses coordonnées doivent figurer sur le site et dans les CGV ([economie.gouv.fr, médiation](https://www.economie.gouv.fr/mediation-conso/vous-etes-un-professionnel/vos-principales-obligations-0)). Coût : adhésion à un médiateur référencé, souvent quelques dizaines d'euros par an pour un petit professionnel (ordre de grandeur **non vérifié**).
+- **Droit de rétractation de 14 jours** pour un service en ligne, sauf renonciation expresse si l'exécution commence avant la fin du délai : à prévoir dans le parcours de paiement (règle générale connue, page DGCCRF non relue).
+- Mentions légales, CGV, information précontractuelle (prix TTC, durée, reconduction).
+
+### 5.2 Assurance responsabilité civile professionnelle
+
+| Profil | Obligatoire ? | Ordre de prix public (vérifié le 01/10/2026) |
+|---|---|---|
+| Éducateur sportif rémunéré (coaching en ligne inclus) | **Oui en pratique** : la réponse ministérielle n° 714 (voir 5.3) liste l'assurance RC parmi les obligations du coach en ligne ; l'art. L.321-7 du Code du sport impose l'assurance à l'exploitant d'un établissement d'APS, pour lui et ses enseignants ([Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006547692), vu via recherche web). | Insify : RC pro coach sportif « dès 11 € par mois », multirisque « dès 30 € par mois », RC jusqu'à 5 M€ par sinistre ([insify.fr](https://www.insify.fr/rc-pro/coach-sportifs/), lu). La page ne dit **rien du coaching en ligne** : à faire préciser par écrit. |
+| Éditeur de logiciel / SaaS | **Non obligatoire** légalement, fortement recommandée | Onlynnov : RC pro éditeur de logiciel « à partir de 20 €/mois » ; les conséquences d'une faille de sécurité sont généralement exclues de la RC pro et relèvent d'une assurance cyber ([onlynnov.com](https://onlynnov.com/assurance-par-secteur/editeur-de-logiciel/), lu). |
+
+**Point de vigilance majeur** : les contrats « coach sportif » couvrent des cours en présentiel ; les contrats « éditeur de logiciel » couvrent des pertes financières de clients (bug, retard) et souvent **pas les dommages corporels**. Charge Utile est à cheval : une blessure d'un utilisateur à cause d'une charge proposée par l'appli. **Il faut demander par écrit à l'assureur si le dommage corporel causé par un programme généré par l'appli est couvert**, et en quelle qualité (coach ou éditeur). Budget réaliste : 150 à 500 € par an pour les deux volets (estimation à partir des prix d'appel ci-dessus, à confirmer sur devis).
+
+### 5.3 Carte professionnelle d'éducateur sportif (art. L.212-1 Code du sport)
+
+**Le texte** ([Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037388193), version en vigueur depuis le 01/01/2019, lu) : seuls peuvent, **contre rémunération**, « enseigner, animer ou encadrer une activité physique ou sportive ou entraîner ses pratiquants », même à titre secondaire ou occasionnel, les titulaires d'un diplôme ou certificat enregistré au RNCP garantissant la sécurité des pratiquants (liste à l'annexe II-1 de l'art. A.212-1). Le II autorise aussi les **personnes en cours de formation** à exercer contre rémunération, dans les conditions prévues par le règlement de leur diplôme. Obligation de **déclaration** (carte professionnelle, renouvelée tous les 5 ans) et d'**honorabilité**.
+
+**Le coaching en ligne est visé** : réponse du ministère des Sports à la question écrite n° 714 de M. Xavier Roseren (question JO 08/10/2024, réponse JO 29/04/2025, [assemblee-nationale.fr](https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE714), PDF lu). Le ministère rappelle que l'article L.212-1 ne distingue pas présentiel et distanciel : un coach en ligne dont l'activité est de l'enseignement, de l'animation ou de l'encadrement est soumis à la qualification, à la déclaration (carte à jour), à l'honorabilité et à l'**assurance RC**. Le ministère indique travailler avec la **DGCCRF** à des contrôles sur les plateformes numériques. Certitude : **élevée**.
+
+**Application à Nathan :**
+| Situation | Carte pro requise ? | Certitude |
+|---|---|---|
+| Coaching **bénévole** de 7 athlètes (aujourd'hui) | **Non** (condition « contre rémunération » absente). L'honorabilité s'applique quand même aux bénévoles selon l'article. | Élevée |
+| Coaching **payé** (séances dictées et personnalisées pour un athlète) | **Oui**. Diplôme + déclaration + carte + RC. | Élevée |
+| Nathan étudiant L3 STAPS | **Ça dépend du parcours et du public.** D'après une université ([Montpellier, prérogatives](https://entrainement-sportif-staps.edu.umontpellier.fr/la-licence-entrainement-sportif/les-prerogatives/), lu) : le **DEUG STAPS** donne une carte pour l'initiation, l'entretien et le loisir **à l'exclusion de la compétition** ; la **licence Entraînement sportif** permet d'entraîner en compétition **dans la discipline indiquée dans l'annexe descriptive du diplôme**. Ses athlètes sont des compétiteurs régionaux à nationaux : il lui faut donc, en pratique, la **licence ES avec une mention cyclisme / VTT** (ou un BPJEPS, DEJEPS…), ou exercer en tant que stagiaire dans le cadre prévu par sa formation. | Moyenne : prérogatives exactes à vérifier sur l'annexe descriptive de **son** diplôme |
+| **Éditeur d'appli** qui vend un logiciel où l'utilisateur (ou son coach) crée ses séances | **Non, a priori** : vendre un outil n'est pas « enseigner, animer, encadrer ». | Moyenne |
+| Éditeur qui vend des **programmes personnalisés générés par IA** sans coach qualifié derrière | **Zone grise** : aucun texte ni réponse officielle ne tranche ; la réponse n° 714 montre que l'administration regarde la réalité de l'activité, pas le support. | Faible : à faire valider |
+
+**Sanction** : exercer sans déclaration ou sans qualification est un délit (un an d'emprisonnement et 15 000 € d'amende selon la page de l'université de Montpellier ; article pénal correspondant, L.212-8, **non relu**).
+
+### Ce que Nathan doit faire
+1. Vérifier l'**annexe descriptive** de son diplôme STAPS et demander sa **carte professionnelle** sur le téléservice du ministère dès qu'il est payé pour coacher (même 10 € par mois).
+2. Séparer clairement deux offres : **(a)** le logiciel Charge Utile vendu à des coachs ou à des athlètes autonomes ; **(b)** le coaching personnalisé de Nathan, qui exige carte pro + RC coach.
+3. CGU / CGV : description du service, déclaration d'aptitude, consignes de sécurité, médiateur, résiliation en ligne, pas de clause d'exonération pour les dommages corporels (inutile et abusive).
+4. Assurance : devis écrit couvrant explicitement le **coaching à distance** et le **dommage corporel lié au programme**.
+5. **Juriste** : relecture des CGU/CGV avant la vente (c'est la dépense juridique la plus rentable) ; question précise à poser sur l'offre « programme généré par IA sans coach diplômé ».
+
+---
+
+## 6. Micro-entreprise : plafonds, TVA, cotisations, statut étudiant
+
+### Réponse franche
+La micro-entreprise suffit largement pour lancer Charge Utile. **Pas de TVA à facturer tant que le CA reste sous 37 500 €** (la réforme à 25 000 € a été **abandonnée**). Coût social : **21,2 % du CA** si l'activité est classée en prestation commerciale (BIC, cas probable du logiciel par abonnement), **25,6 %** en BNC (cas probable du coaching personnalisé). Certitude : **élevée** sur les chiffres 2026 (pages officielles), **moyenne** sur la qualification BIC/BNC.
+
+### Les chiffres 2026 (pages officielles lues le 01/10/2026)
+| Élément | Valeur 2026 | Source |
+|---|---|---|
+| Plafond CA micro, prestations de services (BIC) et libéral (BNC) | **83 600 €** | [entreprendre.service-public.gouv.fr F32353](https://entreprendre.service-public.gouv.fr/vosdroits/F32353) |
+| Plafond CA micro, vente de marchandises | 203 100 € | idem |
+| Sortie du régime | seulement après **2 années consécutives** de dépassement | idem |
+| Franchise en base de TVA, services | **37 500 €** (seuil de tolérance 41 250 €) | [F21746](https://entreprendre.service-public.gouv.fr/vosdroits/F21746), vérifiée au 01/01/2026 |
+| Franchise TVA, ventes | 85 000 € (tolérance 93 500 €) | idem |
+| Réforme « seuil unique 25 000 € » (loi de finances 2025) | **abandonnée** ; seuils 2026 inchangés | idem |
+| Cotisations sociales, prestations de services BIC | **21,2 %** du CA (22,9 % avec versement libératoire) | [F36232](https://entreprendre.service-public.gouv.fr/vosdroits/F36232) |
+| Cotisations, activité libérale non réglementée (BNC) | **25,6 %** du CA (27,8 % avec versement libératoire) | idem |
+| Cotisations, vente | 12,3 % | idem |
+| Versement libératoire de l'impôt | 1 % vente, **1,7 % BIC services**, **2,2 % BNC** ; possible si le revenu fiscal de référence est sous un plafond allant d'environ 29 579 € (1 part) à 88 738 € selon la composition du foyer | [F23267](https://entreprendre.service-public.gouv.fr/vosdroits/F23267) |
+
+Note : une recherche web a fait remonter des sites privés affichant d'autres valeurs (ex. 77 700 € / 188 700 €, anciens plafonds 2023-2025 ; 26,1 % en BNC). **Les valeurs ci-dessus sont celles des pages officielles** ; les autres sont périmées ou fausses.
+
+### ACRE
+D'après plusieurs sources secondaires concordantes (non vérifié sur une page officielle, la page URSSAF a refusé la connexion le 01/10/2026) : la loi de financement de la Sécurité sociale pour 2026 (n° 2025-1403 du 30/12/2025) **ramène l'exonération ACRE des micro-entrepreneurs à 25 % des cotisations pour les créations à partir du 01/07/2026** (50 % avant) ; demande à faire dans les **60 jours** suivant le début d'activité ; exonération jusqu'à la fin du 3e trimestre civil suivant la création ([exemple de source secondaire](https://www.legalstart.fr/fiches-pratiques/autoentrepreneur/accre-autoentrepreneur/)). Certitude : moyenne. **À vérifier sur urssaf.fr au moment de la création.** Avec 25 %, l'ACRE ramènerait le taux BIC d'environ 21,2 % à environ 15,9 % la première année : gain modeste sur de petits montants.
+
+### BIC ou BNC ?
+- **Abonnement à un logiciel / SaaS standardisé** (même produit pour tous) : **BIC, prestation de services commerciale** selon la pratique majoritaire relevée dans des guides privés ([Legalplace](https://www.legalplace.fr/guides/bic-bnc-prestation-service/), vu via recherche web). Pas de texte officiel lu qui tranche pour le SaaS. Abattement fiscal forfaitaire en BIC services : 50 % (règle connue, non relue).
+- **Coaching personnalisé** (Nathan écrit les séances d'un athlète) : **BNC** (activité libérale), abattement 34 %.
+- Si Nathan fait les deux : une seule micro-entreprise peut exercer des activités mixtes, mais il faut **ventiler le CA** entre les deux catégories dans les déclarations, et les plafonds se cumulent selon des règles spécifiques. **À faire confirmer** par l'URSSAF ou un expert-comptable au moment de l'immatriculation (choix du code APE).
+
+### Cumul avec le statut étudiant
+- Un étudiant majeur peut être micro-entrepreneur en parallèle de ses études ([F36612](https://entreprendre.service-public.gouv.fr/vosdroits/F36612), lu). Les cotisations sont dues sur le CA, indépendamment de l'affiliation sécurité sociale étudiante.
+- **Point fiscal** : si Nathan est **rattaché au foyer fiscal de ses parents**, le revenu de la micro-entreprise est déclaré sur leur déclaration (même page). Cela peut augmenter leur impôt et, surtout, le **revenu fiscal de référence** sert au calcul de la **bourse sur critères sociaux** et à l'éligibilité au versement libératoire. Si Nathan est boursier, en parler au CROUS avant de facturer.
+- La bourse est en principe compatible avec une activité rémunérée tant que l'assiduité aux cours et examens est respectée (service-public, F18291, vu via recherche web).
+- **Statut national étudiant-entrepreneur** (via un PEPITE) : permet d'aménager les études et d'être accompagné ; à envisager (page etudiant.gouv.fr vue via recherche web seulement).
+
+### Clients hors de France : TVA sur les services électroniques (B2C)
+- Un abonnement à une appli est un **service fourni par voie électronique**. Pour un client particulier d'un autre pays de l'UE, la TVA est en principe due dans le pays du client, **sauf sous un seuil de 10 000 €** de ventes B2C intra-UE cumulées (année en cours et précédente) : en dessous, les règles françaises s'appliquent, donc la **franchise en base** de Nathan continue de jouer ([BOFiP, critères d'éligibilité OSS](https://bofip.impots.gouv.fr/bofip/13240-PGP.html/identifiant=BOI-TVA-DECLA-20-20-60-10-20211222) et page impots.gouv « Suis-je concerné ? », vues via recherche web).
+- Au-delà de 10 000 € : TVA du pays de chaque client, déclarée via le **guichet unique OSS** sur impots.gouv.fr, même si Nathan est en franchise en France. C'est lourd pour une micro-entreprise.
+- **Solution pratique** : vendre via un **« merchant of record »** (Paddle, Lemon Squeezy…) ou via l'App Store / Google Play, qui collectent et reversent la TVA eux-mêmes ; Nathan facture alors une seule entreprise (B2B). Coût : commission plus élevée (non vérifié ici, voir les pages de prix concernées).
+- Le coaching personnalisé par Nathan (intervention humaine) n'est **pas** un service électronique au sens TVA : règles différentes.
+
+### Ce que Nathan doit faire
+1. Immatriculer la micro-entreprise **avant le premier euro encaissé** (guichet unique de l'INPI, gratuit), demander l'ACRE dans les 60 jours.
+2. Choisir l'activité principale (logiciel = BIC services) et vérifier avec l'URSSAF le traitement d'un coaching BNC en activité secondaire.
+3. Opter ou non pour le versement libératoire (avantageux si le foyer est peu imposé ; vérifier le plafond de revenu).
+4. Rester sous 37 500 € de CA pour ne pas facturer de TVA ; surveiller le seuil de 10 000 € de ventes B2C dans les autres pays de l'UE ou passer par un merchant of record.
+5. Ouvrir un compte bancaire dédié (obligatoire au-delà de 10 000 € de CA deux années de suite : règle connue, non relue ici).
+6. **Expert-comptable** : une consultation ponctuelle (souvent proposée gratuitement par les CCI ou les réseaux d'accompagnement) suffit au début.
+
