@@ -61,7 +61,7 @@ Aucune page ouverte ne dit qui choisit les logiciels. D'après l'organisation d�
 | Massif jurassien (Pontarlier, Prémanon/Les Rousses) | ≈ 39 | ≈ 39 | 5 |
 | Dauphiné (lycée climatique de Villard-de-Lans) | ≈ 24 | ≈ 29 | 3 |
 | Alpes-Provence (lycée d'altitude de Briançon) | ≈ 17 | ≈ 6 | – |
-| **Massif des Pyrénées** | ≈ 2 | ≈ 7 | – |
+| **Massif des Pyrénées** | moins de 10 jeunes au total (détail retiré : effectif trop petit pour un dépôt public) | | |
 
 Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans CIE identifiable dans l'extraction) : un public très entraîné en force (le biathlon et le fond font de la musculation), réparti sur 6 sites. Le CIE Pyrénées est petit ; Font-Romeu y figure comme lycée d'accueil (21 mentions dans le PDF, toutes disciplines). Chiffres ± quelques unités (extraction automatique).
 

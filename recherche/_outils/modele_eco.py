@@ -43,16 +43,22 @@ if __name__ == '__main__':
     ]
     for r in rows: print(f'| {r[0]} | {r[1]:.2f} | {r[2]:.2f} | {r[3]:.2f} | {r[4]:.2f} | **{r[5]:.2f}** |')
     print()
-    # projections : (clients payants à M12, M36), prix, marge/u
+    # --- coûts fixes annuels dès qu'on vend (hypothèses, voir 06) ---
+    FIXES_AN = 300 + 50 + 15 + 12 * CF_WORKERS   # RC pro (150-500 €, milieu) + médiateur + domaine + Cloudflare
+    print(f'Coûts fixes annuels en mode vente : ~{FIXES_AN:.0f} € (RC pro ~300, médiateur ~50, domaine 15, Cloudflare {12*CF_WORKERS:.0f}), hors juriste 500-1 500 € une fois')
+    print()
+    # projections : clients payants ATTEINTS à M12 (sept. 2027) et M36 ; minutes de Nathan par client et par mois
     scen = {
-     'M1 SaaS coach (coachs payants, 12 ath. moyens)': ([1,4,10],[5,25,80], 24, rows[0][5]),
-     'M2 Freemium athlète (abonnés premium)':          ([5,25,80],[20,150,600], 3.99, rows[1][5]),
-     'M3 Licence structure (structures)':              ([0,1,2],[1,3,8], 50, rows[2][5]),
-     'M4 Marketplace (programmes vendus / mois)':      ([1,3,8],[3,10,30], 39*0.25, rows[3][5]),
-     'M5 Service Nathan (athlètes payants)':            ([3,8,15],[5,20,40], 49, rows[4][5]),
+     'M1 SaaS coach (coachs payants, 12 ath. moyens)': ([0,1,3],[5,20,60], 24, rows[0][5], 15),
+     'M2 Freemium athlète (abonnés premium)':          ([0,10,50],[20,150,600], 3.99, rows[1][5], 1),
+     'M3 Licence structure (structures)':              ([0,0,1],[1,3,6], 50, rows[2][5], 60),
+     'M4 Marketplace (programmes vendus / mois)':      ([0,2,6],[3,10,30], 39*0.25, rows[3][5], 5),
+     'M5 Service Nathan (athlètes payants)':            ([0,3,8],[5,12,18], 49, rows[4][5], 65),
     }
     print('| Modèle | Pessimiste M12 | Réaliste M12 | Optimiste M12 | Pessimiste M36 | Réaliste M36 | Optimiste M36 |')
     print('|---|---|---|---|---|---|---|')
-    for k,(m12,m36,p,mg) in scen.items():
-        f = lambda n: f'{n} → CA {n*p*12:,.0f} €/an, marge {n*mg*12:,.0f} €'.replace(',', ' ')
+    for k,(m12,m36,p,mg,mn) in scen.items():
+        f = lambda n: f'{n} → CA {n*p*12:,.0f} €/an ; marge {n*mg*12:,.0f} € ; {n*mn/60:.0f} h/mois'.replace(',', ' ')
         print(f'| {k} | ' + ' | '.join(f(n) for n in m12+m36) + ' |')
+    print()
+    print(f'LTV M5 (perte de 8 %/mois) : {rows[4][5]/0.08:.0f} € ; plafond de temps : à 5 h/semaine (≈ 22 h/mois), M5 seul plafonne à {int(22*60/65)} athlètes, sans une heure de développement.')

@@ -5,11 +5,11 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 ## Checklist (section 9 de MISSION.md)
 
 **Business**
-- [ ] 01 à 09 écrits ; `concurrents.csv` avec ≥ 35 lignes et prix datés.
-- [ ] ≥ 120 citations d'utilisateurs classées et comptées (04).
-- [ ] Unités économiques chiffrées pour ≥ 5 modèles, coût API Claude par séance calculé (06).
-- [ ] Recommandation claire de positionnement et de modèle, avec les raisons de ne pas choisir les autres.
-- [ ] Section « Ce qui est faux dans nos hypothèses » (09).
+- [x] 01 à 09 écrits ; `concurrents.csv` avec ≥ 35 lignes et prix datés. *(74 lignes)*
+- [x] ≥ 120 citations d'utilisateurs classées et comptées (04). *(189, dont 90 revérifiées mot pour mot)*
+- [x] Unités économiques chiffrées pour ≥ 5 modèles, coût API Claude par séance calculé (06). *(5 modèles + mixte ; 0,03 à 0,06 € par séance)*
+- [x] Recommandation claire de positionnement et de modèle, avec les raisons de ne pas choisir les autres. *(05, 06)*
+- [x] Section « Ce qui est faux dans nos hypothèses » (09). *(14 points)*
 
 **Science**
 - [ ] 9 domaines A à I écrits, chacun avec ≥ 30 sources vérifiées dont ≥ 10 méta-analyses/consensus, tableau d'affirmations, chiffres clés, mythes, règles, « ce que l'appli devrait faire ».
@@ -34,12 +34,14 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - [ ] `recherche/SYNTHESE.md`, à lire en 10 minutes.
 - [ ] Tout est commité et poussé sur la branche `recherche`.
 
+- **Business 02, 03, 05 à 09** (01/10, sous-agent contradicteur « investisseur / coach concurrent / juriste », rapport `_brut/revue-business.md`) : 40 faits rouverts → 31 confirmés, 7 imprécis, 2 non vérifiables ; aucune source inventée ; arithmétique juste. **2 bloquants corrigés** : (1) le plan faisait vendre du coaching à des compétiteurs dès novembre 2026 alors que Nathan, en L3, n'en a pas le droit → `05`, `06`, `09` recalés (service payant à partir de l'été 2027, tableau « ce que Nathan peut vendre aujourd'hui ») ; (2) `07` décrivait une faille non corrigée dans un dépôt public → détails déplacés dans `recherche/_prive/` (non versionné), fichiers expurgés, **historique local non poussé réécrit**. **Importants corrigés** : micro-entreprise déjà existante (cumul des seuils, pas d'ACRE) ; coûts fixes et heures de Nathan ajoutés au modèle ; prix du marché sur deux étages (8 € standard / 55-80 € personnalisé) ; budget logiciel 1-3 € par athlète (et non 5-15 €) ; marché du coaching 15-55 M€ ; critères de bascule unifiés sur ceux de `08` (paiements réels) ; seuil de rétention corrigé (60 % = repère à 6 mois) ; mineurs sortis de la première vague ; équipe intervals « 3 à 8 personnes » ; statut du pôle VTT de Font-Romeu marqué incertain ; nuance Garmin alignée partout ; effectifs trop petits retirés. **Non traité, noté pour la fin** : doublons d'URL sous deux clés dans `sources.json`.
+
 ## Phases
 
 | Phase | Début | Fin |
 |---|---|---|
-| 1 — Business | 30/09 20 h 30 | |
-| 2 — Science | | |
+| 1 — Business | 30/09 20 h 30 | 01/10 13 h 30 (3 coupures par limite de session) |
+| 2 — Science | 01/10 03 h 00 (collecte lancée en parallèle) | |
 | 3 — Exercices | | |
 | 4 — Séances modèles | | |
 | 5 — Règles | | |
@@ -53,6 +55,9 @@ Session Claude Code (Opus 5.5), branche `recherche`, lancée le 30 septembre 202
 - Les sous-agents de collecte écrivent dans `recherche/_brut/` ; seules les sources qu'ils ont réellement ouvertes (WebFetch) passent dans `sources.json`.
 
 ## Problèmes rencontrés
+
+- 01/10 — **Push bloqué** : depuis le 30/09 21 h, l'écran du Mac est verrouillé et la demande de contrôle de l'écran reste sans réponse ; le push par GitHub Desktop (menu Repository > Push) est impossible tant que l'écran est verrouillé. Tous les commits sont locaux sur `recherche`. À pousser dès le déverrouillage (un clic sur « Push origin »).
+- 01/10 — 2 failles de sécurité du site actuel repérées par la collecte juridique : détails dans `recherche/_prive/securite-relais.md` (non versionné). Hors périmètre de la mission (interdiction de modifier `docs/` et `relais/`) : à corriger par Nathan en priorité.
 
 - 01/10 01 h 55 — `verifie.py` échouait sur les exemples de format de `MISSION.md` (les clés d'exemple « cle », « ronnestad2014 », « blagrove2018 » écrites au format citation). Correctif : `verifie.py` ignore **uniquement** `MISSION.md` (la consigne, pas un livrable). En contrepartie je l'ai **durci** : toute source de `sources.json` doit avoir `verifie: true`. Les deux références d'exemple ont été vérifiées (Europe PMC) et ajoutées à `sources.json`.
 - 30/09 21 h 10 → 01/10 01 h 50 — seconde coupure par limite de session : 5 sous-agents interrompus (marché, concurrence endurance et mesure/IA à moitié écrits ; juridique et go-to-market sans fichier). Repris à 01 h 50.

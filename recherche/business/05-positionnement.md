@@ -38,7 +38,7 @@ Version courte pour un coach : « Ta muscu, enfin dans le même circuit que l'en
 
 1. **Un seul développeur, étudiant, en saison de VTT.** Support, sécurité, disponibilité : un client payant attend tout cela. C'est le risque n° 1.
 2. **Dépendance à Claude** pour écrire les séances. Coût, disponibilité, erreurs possibles. Il faut que le coach **valide avant publication** et qu'un éditeur manuel existe (`produit/mvp-vendable.md`).
-3. **Dépendance à intervals.icu** : 3 personnes, conditions changeables avec 30 jours de préavis. Et le mode « clé du coach » **ne passe pas à l'échelle** : il faudra un OAuth athlète par athlète (`03`).
+3. **Dépendance à intervals.icu** : une petite équipe (3 à 8 personnes selon la source), conditions changeables avec 30 jours de préavis. Et le mode « clé du coach » **ne passe pas à l'échelle** : il faudra un OAuth athlète par athlète (`03`).
 4. **GitHub Pages interdit un usage SaaS commercial** [@github-pages-limites]. Le site public actuel publie les séances en JSON lisible par tous. Pour vendre, il faut un hébergement et des accès protégés (Cloudflare Pages + Workers + D1), donc une partie de l'appli à reconstruire.
 5. **Pas d'appli native** : sur iPhone, l'installation passe par Safari « Sur l'écran d'accueil », les notifications ne marchent qu'une fois l'appli installée, et Safari peut effacer le stockage. Détail dans `07-juridique-technique.md`.
 6. **Animations faites main** et squelette MakeHuman sous **licence AGPL** : à refaire ou à isoler avant toute vente (`07`).
@@ -53,7 +53,7 @@ Version courte pour un coach : « Ta muscu, enfin dans le même circuit que l'en
 - **Promesse** : « tu dictes la muscu, ton athlète la fait guidée, tu la vois dans ta plateforme ».
 - **Pour** : c'est là que la douleur outil est prouvée (ressaisie, charge non comptée) ; le coach paie déjà pour un logiciel (0-100 €/mois, `02`) ; le marché est international.
 - **Contre** :
-  - marché adressable petit en France (≈ 36 000 à 216 000 €/an en plafond, `02`) ;
+  - marché adressable petit en France (de 36 000 €/an en scénario bas à 216 000 €/an en plafond optimiste, `02`) ;
   - la douleur « le coach ne sait pas si c'est fait » n'est **pas prouvée** (`04`) ;
   - Nolio et TrainingPeaks Strength sont déjà installés chez les coachs ;
   - Garmin arrive ;
@@ -63,13 +63,14 @@ Version courte pour un coach : « Ta muscu, enfin dans le même circuit que l'en
 - **Pour qui** : athlètes d'endurance (VTT, trail, route, triathlon, nordique) et leurs coachs d'endurance qui **n'ont pas de préparateur physique**, d'abord à Font-Romeu et en Occitanie, puis à distance.
 - **Promesse** : « ton plan de force et de prévention fait par un préparateur STAPS, qui tient compte de ton endurance, guidé dans l'appli et visible par ton coach ».
 - **Pour** :
-  - se vend **tout de suite**, sans produit SaaS : la préparation physique à distance se paie **55-70 €/mois** en France (`02`) ;
+  - se vend **sans produit SaaS** : la préparation physique personnalisée à distance se paie 55-80 €/mois chez des professionnels installés, mais du contenu standard se vend 8 €/mois (`06`). Le prix d'un jeune diplômé est à tester ;
   - s'appuie sur le seul avantage non copiable (Nathan, son réseau, son contenu vidéo) ;
   - teste la valeur réelle de l'appli avec de vrais clients ;
   - le statut micro-entreprise suffit ; coût marginal faible.
 - **Contre** :
   - ne passe pas à l'échelle (le temps de Nathan) ;
-  - **carte professionnelle d'éducateur sportif obligatoire** pour encadrer contre rémunération (`02`, `07`) ;
+  - **carte professionnelle obligatoire** pour encadrer contre rémunération, même en ligne. **En L3, Nathan ne peut pas encadrer de compétiteurs contre rémunération** : le service ne peut démarrer qu'à l'été 2027, avec la licence (`07`, `09`). Le faire avant est un délit ;
+  - rien ne dit qu'un coach d'endurance enverra son athlète payer un autre intervenant, ni que les 7 athlètes suivis gratuitement paieront ;
   - en concurrence avec les coachs qui incluent déjà la préparation physique ;
   - responsabilité en cas de blessure (assurance responsabilité civile professionnelle).
 
@@ -86,35 +87,35 @@ Version courte pour un coach : « Ta muscu, enfin dans le même circuit que l'en
 
 ### Comparaison
 
-| Critère (note sur 5) | P1 Logiciel coachs | P2 Service Nathan + appli | P3 Grand public |
+| Critère (note sur 5 ; 5 = favorable) | P1 Logiciel coachs | P2 Service Nathan + appli | P3 Grand public |
 |---|---|---|---|
-| Douleur prouvée | 3 | 4 | 4 |
-| Concurrence | 2 | 4 | 1 |
+| Douleur prouvée et envie de payer | 3 | 3 | 3 |
+| Concurrence (5 = peu) | 2 | 3 | 1 |
 | Avantage défendable | 2 | 5 | 1 |
-| Revenu possible en 12 mois | 2 | 4 | 1 |
+| Revenu possible en 12 mois | 1 | 1 | 1 |
 | Revenu possible en 36 mois | 4 | 3 | 3 |
 | Compatible avec un étudiant seul | 2 | 4 | 1 |
-| Risque juridique et technique | 2 | 3 | 2 |
-| **Total** | **17** | **27** | **13** |
+| Risque juridique et technique (5 = peu de risque) | 2 | 2 | 2 |
+| **Total** | **16** | **21** | **12** |
 
-*Notes de ma part, à partir des données des fichiers 01 à 04. Elles servent à ordonner, pas à mesurer.*
+*Notes de ma part, révisées après la relecture contradictoire. Elles servent à ordonner, pas à mesurer. P2 reste devant surtout grâce à deux lignes : « avantage défendable » (Nathan) et « compatible avec un étudiant seul ». Sur la douleur, la collecte prouve un problème de dosage et d'outil ; elle ne prouve pas l'envie de payer un préparateur à distance. Sur le risque, P2 porte un risque pénal s'il est lancé avant la carte professionnelle.*
 
 ## Recommandation
 
-**P2 maintenant, P1 ensuite, seulement si les chiffres le justifient. Jamais P3.**
+**D'abord prouver (jusqu'à l'été 2027), puis P2, puis P1 seulement si des gens paient. Jamais P3.**
 
-1. **Dès cet automne (P2)** :
-   - vendre la **préparation physique pour athlètes d'endurance** (Nathan + appli), en individuel et en petit groupe de club ;
-   - viser 5 à 15 athlètes payants à 40-60 €/mois en 12 mois ;
-   - obtenir d'abord la **carte professionnelle** (à vérifier : la L3 STAPS Entraînement sportif y donne droit sous conditions, voir `07`) et une **assurance responsabilité civile professionnelle**.
-2. **En même temps, préparer P1 à petit coût** :
-   - donner l'appli **gratuitement** aux coachs d'endurance qui confient la préparation physique à Nathan, ou à 3-5 coachs pilotes ;
-   - mesurer s'ils l'utilisent seuls ;
-   - faire les 20 entretiens (`08`).
-3. **Basculer vers P1 (logiciel payant) seulement si**, dans les 6 à 9 mois :
-   - au moins 5 coachs non payés l'utilisent chaque semaine pendant 8 semaines ;
-   - au moins 3 disent qu'ils paieraient 10 €/mois ou plus ;
-   - l'OAuth athlète est réglé techniquement.
+1. **D'octobre 2026 à juin 2027 : rien à vendre côté coaching, et c'est normal.** Nathan n'a pas encore le droit d'encadrer des compétiteurs contre rémunération (`09`). Cette période sert à :
+   - corriger la sécurité du site et du relais ;
+   - **embarquer ses 7 athlètes et mesurer leur adhésion** ;
+   - faire 20 entretiens (`08`) ;
+   - faire tester le logiciel gratuitement par 3 à 5 coachs **adultes** ;
+   - obtenir des **préventes** du logiciel, s'il y en a.
+2. **À partir de l'été 2027 (P2)** : vendre la **préparation physique pour athlètes d'endurance** (Nathan + appli), avec la carte professionnelle et une assurance responsabilité civile professionnelle **souscrite avant le premier paiement**. Prix à tester : 29, 39 ou 49 €/mois. Plafond réaliste : 10 à 12 athlètes, à cause du temps disponible (`06`).
+3. **Basculer vers P1 (logiciel payant) seulement si les critères de `08` sont atteints** (ce sont les seuls critères, ils reposent sur des **paiements réels**, pas sur des déclarations) :
+   - au moins 5 coachs testent avec au moins 3 athlètes pendant au moins 4 semaines ;
+   - la majorité programme encore à 8 semaines ;
+   - **au moins 3 préventes payées** ou 1 pilote payant de structure ;
+   - l'OAuth athlète d'intervals.icu est réglé techniquement.
 
    Sinon, Charge Utile reste l'**outil de travail** de Nathan, ce qui a déjà de la valeur.
 
@@ -122,7 +123,7 @@ Version courte pour un coach : « Ta muscu, enfin dans le même circuit que l'en
 - la douleur coach n'est pas prouvée ;
 - le marché France est petit ;
 - il faut 6 à 12 mois de travail technique (comptes, OAuth, hébergement, paiement, données de santé) avant le premier euro ;
-- Garmin peut fermer la fenêtre pendant ce temps.
+- pendant ce temps, les applis nées sur intervals.icu avancent, et Garmin peut relier ses produits.
 
 **Pourquoi jamais P3** :
 - tous les grands s'y sont déjà installés (Strava + Runna, Garmin, WHOOP) ;

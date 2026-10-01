@@ -4,8 +4,8 @@
 
 ## En 1 minute
 
-- **La fenêtre, c'est maintenant.**
-  - En VTT et sur route, le **bloc de force hivernal se programme d'octobre à mi-novembre**, et les teams VTT bouclent leur dossier et leur **budget avant le 1er novembre** [@comite-occitanie-labellisation-2026].
+- **La fenêtre d'automne est déjà en partie passée ; elle sert aux tests gratuits, pas à la vente.**
+  - En VTT et sur route, le **bloc de force hivernal se programme d'octobre à mi-novembre**, et les teams VTT bouclent leur dossier et leur budget vers le 1er novembre (échéance 2025 pour la saison 2026 ; celle de 2026 n'est pas publiée) [@comite-occitanie-labellisation-2026]. Avec 5 h par semaine, cette fenêtre est trop courte pour vendre : elle sert à **lancer des pilotes gratuits**.
   - Les CREPS votent leur budget en **novembre-décembre** : trop tard pour un achat en 2027, assez tôt pour un **pilote gratuit** qui prépare une ligne budgétaire.
   - En ski nordique et biathlon, la bonne fenêtre est **avril-juin**.
 - **Les premiers utilisateurs les plus réalistes ne sont pas des clients, mais des testeurs à Font-Romeu** :
@@ -16,18 +16,20 @@
 - **Le contenu photo/vidéo de Nathan sert à ouvrir des portes B2B, pas à vendre aux athlètes.**
   - La portée organique d'Instagram est faible : 3,2 % des abonnés en moyenne, 6,65 % pour les comptes de 1 000 à 5 000 abonnés [@socialinsider-reach-2026].
   - L'échange qui marche : **« je filme votre stage, vos athlètes testent l'appli »**.
-  - Le modèle à suivre est **Campus Coach** (ex-Running Addict) : 7 ans de contenu pédagogique avant l'appli, puis plus de 5 M€ de revenu récurrent annuel déclaré [@gdiy-running-addict-2025].
+  - Le modèle à suivre est **Campus Coach** (ex-Running Addict) : 7 ans de contenu pédagogique avant l'appli, puis plus de 5 M€ de revenu récurrent annuel **déclarés par le fondateur** (titre d'un épisode de podcast, non audité) [@gdiy-running-addict-2025].
 - **Avant de coder quoi que ce soit pour vendre** : 20 entretiens Mom Test (script ci-dessous), puis une page « coach » avec une fausse porte de prix (« fake door »), puis des préventes pour la saison 2027.
 - **Les critères d'arrêt sont fixés à l'avance** (tableau plus bas). Par exemple : **zéro paiement après une offre explicite à 10 coachs engagés → on arrête la piste « vendre le logiciel »** et l'appli reste l'outil de Nathan.
 
-## Les 10 premiers contacts (classés par chance d'obtenir un vrai test d'ici fin novembre 2026)
+## Les 10 premiers contacts (classés par chance d'obtenir un vrai test)
+
+**Première vague : des adultes seulement** (contacts 1, 2, 5, 6, 8). Les stagiaires DEJEPS et les étudiants STAPS sont des **testeurs**, pas des clients : ils ne paieront pas et partent en fin d'année.
 
 | # | Qui | Ce qu'on leur propose | Ce qu'on attend |
 |---|---|---|---|
 | 1 | **Stagiaires DEJEPS VTT 2026-2027** (CREPS Montpellier / Font-Romeu, 16 places) | Outil gratuit pour leurs séances de stage | Retours écrits ; 5 utilisateurs actifs |
 | 2 | **Licence STAPS ES et master de Font-Romeu** (enseignants, étudiants) | Support de TD ou de projet tutoré ; outil pour le stage de L3 | 5-10 étudiants qui l'utilisent avec leurs athlètes |
-| 3 | **Section VTT du collège-lycée et club support** de Font-Romeu | Vue coach + séances au poids du corps, **accord parental** | Un groupe jeune pilote |
-| 4 | **Club des sports de Font-Romeu, biathlon et ski de fond** | Préparation physique d'automne | Un groupe pilote (mineurs : précautions) |
+| 3 | **Section VTT du collège-lycée et club support** de Font-Romeu — **pas dans la première vague (mineurs)** | Après la correction de la sécurité, avec consentement parental écrit et carte professionnelle | Un groupe jeune pilote, plus tard |
+| 4 | **Club des sports de Font-Romeu, biathlon et ski de fond** — **pas dans la première vague (mineurs)** | Mêmes conditions qu'en 3 ; fenêtre avril-juin | Un groupe pilote, plus tard |
 | 5 | **Préparateurs physiques du CREPS** (via le département haute performance) | Avis d'expert ; test sur un groupe en stage ; **vidéo de leur stage en échange** | Critique experte, crédibilité |
 | 6 | **Coachs VTT et trail indépendants** (602 coachs sur la marketplace Nolio [@nolio-marketplace], annuaire intervals.icu) | Entretien Mom Test, puis test de 4 semaines | 20 entretiens, 5 tests |
 | 7 | **Comité régional FFC Occitanie** (équipe technique régionale, commission VTT) | Séances de renforcement standard pour les stages régionaux | Accès aux clubs et aux jeunes sélectionnés |
@@ -98,13 +100,13 @@ Fenêtre de test : **novembre 2026 → fin février 2027** (bloc de force hivern
 |---|---|---|---|
 | Entretiens | ≥ 15 par segment ; la muscu suivie à distance est citée **spontanément** comme un problème par au moins un tiers | Problème réel, mais dans un autre segment (préparateurs de structures plutôt que coachs indépendants) | Personne ne cite de vraie difficulté ni d'action passée pour la résoudre |
 | Engagements | ≥ 5 coachs testent avec ≥ 3 athlètes pendant ≥ 4 semaines ; ≥ 3 présentations à un autre coach ou décideur | Tests abandonnés pour une raison précise et réparable | Moins de 2 tests réels sur 20 contacts qualifiés |
-| Rétention coach | ≥ 60 % programment encore à 8 semaines (repère SaaS pour petites entreprises [@lenny-retention-2020]) | 30-60 % | < 30 % |
-| Score de Sean Ellis (à partir de 40 répondants) | ≥ 40 % « très déçu » dans un segment [@firstround-superhuman] | 25-40 % : segmenter | < 25 % partout |
-| Paiement | ≥ 3 préventes ou 1 pilote payant de structure pour 2027 | Intérêt sans paiement : tester un autre prix ou un autre payeur | **Zéro paiement après une offre explicite à 10 coachs engagés** |
+| Rétention coach | ≥ 80 % programment encore à 8 semaines (choix de pilotage : le repère publié, 60 %, vaut pour **6 mois** en SaaS pour petites entreprises [@lenny-retention-2020]) | 50-80 % | < 50 % |
+| Score de Sean Ellis (à partir de 40 répondants : **pas calculable la première année** avec 5 à 10 coachs) | ≥ 40 % « très déçu » dans un segment [@firstround-superhuman] | 25-40 % : segmenter | < 25 % partout |
+| Paiement (+ OAuth intervals réglé) | ≥ 3 préventes ou 1 pilote payant de structure pour 2027 | Intérêt sans paiement : tester un autre prix ou un autre payeur | **Zéro paiement après une offre explicite à 10 coachs engagés** |
 
-**Pour le service M5 (préparation physique par Nathan)** : continuer si ≥ 3 athlètes paient à 40 €/mois ou plus d'ici fin février 2027 et que ≥ 2 sur 3 renouvellent après 3 mois. Arrêter ou revoir le prix si personne ne paie après 15 propositions.
+**Pour le service M5 (préparation physique par Nathan)** : il ne peut être vendu à des compétiteurs qu'avec la carte professionnelle, donc à partir de l'été 2027 (`09`). Continuer si ≥ 3 athlètes paient d'ici fin septembre 2027 et que ≥ 2 sur 3 renouvellent après 3 mois. Arrêter ou revoir le prix (tester 29, 39, 49 €) si personne ne paie après 15 propositions.
 
-**Signal d'arrêt global** : si les **7 athlètes de Nathan** eux-mêmes ne font pas ≥ 75 % des séances de force prévues pendant 8 semaines avec l'appli, le problème est le produit ou l'adhésion (phase 2 G), pas le marché. Il faut le régler avant tout le reste.
+**Signal d'arrêt global** : il faut d'abord **embarquer les 7 athlètes dans l'appli** (un seul a des séances publiées au 30/09/2026). Ensuite, si les **7 athlètes de Nathan** eux-mêmes ne font pas ≥ 75 % des séances de force prévues pendant 8 semaines avec l'appli, le problème est le produit ou l'adhésion (phase 2 G), pas le marché. Il faut le régler avant tout le reste.
 
 ## Calendrier de saison
 
@@ -180,7 +182,7 @@ Aucune page ouverte ne dit qui choisit les logiciels. D'après l'organisation d�
 | Massif jurassien (Pontarlier, Prémanon/Les Rousses) | ≈ 39 | ≈ 39 | 5 |
 | Dauphiné (lycée climatique de Villard-de-Lans) | ≈ 24 | ≈ 29 | 3 |
 | Alpes-Provence (lycée d'altitude de Briançon) | ≈ 17 | ≈ 6 | – |
-| **Massif des Pyrénées** | ≈ 2 | ≈ 7 | – |
+| **Massif des Pyrénées** | moins de 10 jeunes au total (détail retiré : effectif trop petit pour un dépôt public) | | |
 
 Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans CIE identifiable dans l'extraction) : un public très entraîné en force (le biathlon et le fond font de la musculation), réparti sur 6 sites. Le CIE Pyrénées est petit ; Font-Romeu y figure comme lycée d'accueil (21 mentions dans le PDF, toutes disciplines). Chiffres ± quelques unités (extraction automatique).
 
@@ -254,7 +256,7 @@ Soit **≈ 370 jeunes skieurs nordiques et biathlètes en CIE** (+ ≈ 28 sans C
 
 #### 2.1 Exemples réels d'entreprises d'entraînement nées du contenu
 
-- **Running Addict → Campus Coach (France)** — le cas le plus proche. Blog éducatif lancé en 2013 ; en 2020 le créateur quitte son poste d'ingénieur pour lancer l'appli. En avril 2025 : « plus de 5 millions d'euros » de revenu récurrent annuel déclaré, 50 personnes, croissance autofinancée, 350 000 à 500 000 abonnés YouTube (épisode #463 du podcast Génération Do It Yourself, 13 avril 2025, [gdiy.fr](https://www.gdiy.fr/podcast/nicolas-spiess-running-addict/) — chiffres déclarés par le fondateur, non audités). Le Journal du Geek (11 avril 2025) décrit les canaux : blog avec une newsletter partie de 5 000 abonnés, chaîne YouTube d'un cofondateur, une trentaine de groupes de course en présentiel, webinaires qui expliquent la méthode ; les applis gratuites sont vues comme des « portes d'entrée » ([journaldugeek.com](https://www.journaldugeek.com/2025/04/11/campus-coach-au-coeur-du-marathon-de-paris-on-veut-devenir-les-meilleurs/)). **Leçon** : sept ans de contenu pédagogique avant l'appli ; l'audience venait pour apprendre à s'entraîner, pas pour du divertissement.
+- **Running Addict → Campus Coach (France)** — le cas le plus proche. Blog éducatif lancé en 2013 ; en 2020 le créateur quitte son poste d'ingénieur pour lancer l'appli. En avril 2025 : « plus de 5 millions d'euros » de revenu récurrent annuel déclaré, 50 personnes, croissance autofinancée, 350 000 abonnés sur YouTube et 500 000 toutes plateformes confondues (épisode #463 du podcast Génération Do It Yourself, 13 avril 2025, [gdiy.fr](https://www.gdiy.fr/podcast/nicolas-spiess-running-addict/) — chiffres déclarés par le fondateur, non audités). Le Journal du Geek (11 avril 2025) décrit les canaux : blog avec une newsletter partie de 5 000 abonnés, chaîne YouTube d'un cofondateur, une trentaine de groupes de course en présentiel, webinaires qui expliquent la méthode ; les applis gratuites sont vues comme des « portes d'entrée » ([journaldugeek.com](https://www.journaldugeek.com/2025/04/11/campus-coach-au-coeur-du-marathon-de-paris-on-veut-devenir-les-meilleurs/)). **Leçon** : sept ans de contenu pédagogique avant l'appli ; l'audience venait pour apprendre à s'entraîner, pas pour du divertissement.
 - **Uphill Athlete (États-Unis)** — livre *Training for the New Alpinism* (2014) puis *Training for the Uphill Athlete* (2017) ; après les livres, « des milliers de messages » de lecteurs ; constat qu'un livre est figé alors que l'entraînement est vivant → création d'une offre de plans, coaching de groupe et coaching individuel ([uphillathlete.com](https://uphillathlete.com/steve-house-and-the-roots-of-uphill-athlete)). Le résumé WebSearch d'une page tierce indique plus de 100 000 exemplaires vendus en Amérique du Nord en 2020 (non ouvert, non cité comme vérifié). **Leçon** : un contenu de référence sur la force et l'endurance en montagne a créé la demande de coaching.
 - **TrainerRoad** — podcast hebdomadaire « Ask a Cycling Coach » depuis 2015, environ 590 épisodes sur 11 ans (résumé WebSearch, [Apple Podcasts](https://podcasts.apple.com/us/podcast/ask-a-cycling-coach-podcast-presented-by-trainerroad/id1035433041)) : l'éditeur d'un logiciel d'entraînement répond chaque semaine aux questions d'entraînement. Audience non publiée.
 - **Nolio** — contre-exemple utile : croissance **sans** gros contenu grand public, par le bouche-à-oreille entre coachs et les fédérations (voir 1.4).

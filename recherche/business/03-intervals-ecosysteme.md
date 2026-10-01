@@ -20,7 +20,7 @@
 C'est la découverte la plus importante de cette étude pour le produit.
 
 1. Aujourd'hui, le relais garde **la clé API personnelle de Nathan**. Elle donne accès en lecture et en écriture **à tous ses athlètes coachés** : fréquence cardiaque, VFC, sommeil, poids. C'est toléré pour un usage personnel. Les règles d'intervals disent qu'une appli utilisée par plus d'une personne **doit passer par OAuth** [@forum-api-access].
-2. **Or un jeton OAuth ne donne accès qu'aux données de la personne qui l'autorise, pas à ses athlètes coachés.** C'est un choix de conception, confirmé par un modérateur [@forum-oauth-coach-limite]. L'endpoint qui liste les athlètes d'un coach refuse les jetons OAuth [@forum-onboarding-coachs].
+2. **Or un jeton OAuth ne donne accès qu'aux données de la personne qui l'autorise, pas à ses athlètes coachés.** C'est un choix de conception, énoncé par le créateur lui-même dès novembre 2023 (fil OAuth) et rappelé par un modérateur en 2025 [@forum-oauth] [@forum-oauth-coach-limite]. L'endpoint qui liste les athlètes d'un coach refuse les jetons OAuth [@forum-onboarding-coachs].
 3. **Conséquence** : dans une version vendue, **chaque athlète devra autoriser Charge Utile lui-même** sur intervals.icu, par OAuth. Ce n'est plus le parcours « lien sans compte, rien à faire ». Ce n'est pas rédhibitoire (un clic « Autoriser »), mais il faut le concevoir dès le MVP (voir `produit/mvp-vendable.md`). Il faut aussi faire approuver l'appli OAuth par intervals.icu (approbation manuelle).
 4. **Strava** : un athlète qui synchronise **uniquement via Strava** est **invisible** pour une appli tierce (conditions de Strava) [@forum-strava-api]. La vue coach de Charge Utile serait vide pour lui. Il faut lui demander de connecter sa montre directement à intervals.
 
@@ -48,7 +48,7 @@ C'est la découverte la plus importante de cette étude pour le produit.
 
 ## Risques
 
-1. **Plateforme gérée par 3 personnes**, sans engagement de disponibilité. Un départ du fondateur toucherait tout l'écosystème. Il y a une contradiction de sources sur la taille de l'équipe : « 3 personnes » selon Bicycling SA (mai 2026), « environ 8 » selon la page « About ». → **Charge Utile doit marcher sans intervals** (c'est déjà le cas : relais optionnel).
+1. **Plateforme gérée par une petite équipe**, sans engagement de disponibilité. Un départ du fondateur toucherait tout l'écosystème. Taille de l'équipe : « 3 personnes » selon Bicycling SA (mai 2026), 7 personnes nommées sur la page « About » (relevé du 01/10/2026). → **Charge Utile doit marcher sans intervals** (c'est déjà le cas : relais optionnel).
 2. **Les conditions changent avec 30 jours de préavis.** Strava a déjà coupé l'accès à ses activités via l'API (décembre 2024) et durci ses règles en juin 2026 [@forum-strava-2026].
 3. **La clé du coach dans le relais** : une fuite = accès aux données de santé de jeunes athlètes. Aujourd'hui, la clé est un secret Cloudflare, jamais dans le dépôt public : à garder ainsi. Pour vendre : OAuth athlète par athlète (voir plus haut).
 4. **intervals.icu peut ajouter un minimum de force** (étapes REPS, champ séries). Risque faible à court terme : ses priorités affichées sont l'appli mobile native, le MCP officiel et les tests de fatigue [@forum-news-2026-09]. Mais le créateur fait vite les petites demandes.
@@ -63,7 +63,6 @@ C'est la découverte la plus importante de cette étude pour le produit.
 - **Ne pas en faire le marché.** Le marché, ce sont les coachs d'endurance francophones, quelle que soit leur plateforme (Nolio, TrainingPeaks, intervals, tableur).
 - **Préparer OAuth dès le MVP** et garder le mode « clé du coach » pour Nathan seul.
 - Écrire dans intervals une **charge sRPE documentée**, pas un faux TSS.
-- **Le coach de Font-Romeu inscrit dans l'annuaire le 29/09/2026** est soit un premier contact, soit un concurrent local. À identifier : c'est peut-être Nathan lui-même.
 
 ---
 
@@ -141,7 +140,7 @@ Sources : [fil « API access to Intervals.icu »](https://forum.intervals.icu/t/
 #### Complément au §1 : nouveautés en cours (veille)
 - **Serveur MCP officiel** (connexion directe ChatGPT/Claude) : « We are working on an official MCP server. It is at the spec stage currently » (David, 09/09/2026, [fil](https://forum.intervals.icu/t/request-for-official-mcp-support-for-ai-tools-chatgpt-claude/126164)).
 - **Appli native iOS/Android « in progress »** ; gros travail d'ergonomie mobile ([news du 23/09/2026](https://forum.intervals.icu/t/intervals-icu-news-2026-09-23/132557)).
-- **Annuaire des coachs** public depuis mars 2026 ([fil](https://forum.intervals.icu/t/coach-directory-on-www-intervals-icu/124643), [page](https://www.intervals.icu/coaches/)) : **108 coachs listés** au 30/09/2026, dont **7 en France** (inscription volontaire, donc très en dessous du nombre réel de coachs). Un coach **basé à Font-Romeu** a demandé à y figurer le 29/09/2026 : il existe déjà au moins un coach local sur intervals.icu (contact ou concurrent direct pour Nathan).
+- **Annuaire des coachs** public depuis mars 2026 ([fil](https://forum.intervals.icu/t/coach-directory-on-www-intervals-icu/124643), [page](https://www.intervals.icu/coaches/)) : **108 coachs listés** au 30/09/2026, dont **7 en France** (inscription volontaire, donc très en dessous du nombre réel de coachs). L'annuaire permet de repérer les coachs proches (contacts ou concurrents).
 
 ---
 
@@ -254,7 +253,7 @@ Avis et limites :
 - Idée « TrainHeroic ↔ TrainingPeaks » sur le UserVoice TP : **50 votes**, ouverte en 2020, statut « Future Opportunity » ; des athlètes disent **recopier à la main** les séances de leur coach de force (TrainHeroic) vers le calendrier de leur coach d'endurance (TP) ([UserVoice](https://peaksware.uservoice.com/forums/106657-trainingpeaks-customer-feedback/suggestions/41882029-trainheroic-link-button-as-a-add-a-workout-op)).
 - Vieille idée « tracking strength training » (2011) : commentaires sur l'impossibilité de saisir charges/reps/séries après coup et l'absence de TSS de force — **antérieurs au Strength Builder de 2024**, donc datés ([UserVoice](https://peaksware.uservoice.com/forums/106657-trainingpeaks-customer-feedback/suggestions/2289895-add-support-for-tracking-strength-training)).
 - Côté intervals.icu, des coachs citent TP comme **la** référence pour la force avec vidéos (fils 2024 et 2026).
-- **Fait majeur 2026 : Garmin a racheté TrainingPeaks et TrainHeroic** (annoncé le 22/07/2026). TrainHeroic ≈ **500 000 utilisateurs et 10 000 coachs** ; 120 salariés rejoignent Garmin ; TP promet de rester multi-plateformes ([DC Rainmaker](https://www.dcrainmaker.com/2026/07/garmin-acquires-training-trainheroic.html)). Probable à moyen terme : une offre Garmin endurance + force intégrée (TP + TrainHeroic + montres). C'est le vrai concurrent structurel d'un « module force pour coach d'endurance ».
+- **Fait majeur 2026 : Garmin a racheté TrainingPeaks et TrainHeroic** (annoncé le 22/07/2026). TrainHeroic ≈ **500 000 utilisateurs et 10 000 coachs** ; 120 salariés rejoignent Garmin ; TP promet de rester multi-plateformes ([DC Rainmaker](https://www.dcrainmaker.com/2026/07/garmin-acquires-training-trainheroic.html)). **Hypothèse, pas un fait** : une offre Garmin endurance + force plus intégrée. DC Rainmaker juge quasi nulle une intégration native de TrainingPeaks dans Garmin Connect, ce qui n'exclut pas des passerelles entre produits. À surveiller.
 - Avis détaillés de coachs sur le Strength Builder (Reddit, forums) : **non trouvés / non accessibles**. La note App Store/Play de l'appli TP (4,7 / 4,2) vient d'un extrait de recherche, non ouvert : non retenue.
 
 ---

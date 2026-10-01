@@ -8,10 +8,10 @@
 - **France, par le bas (mes calculs, incertains d'un facteur 2 au moins) :**
   - **≈ 3 000 coachs d'endurance rémunérés** (fourchette 2 000-5 000) ;
   - **≈ 1 M€/an de dépense logicielle** (0,5-3 M€) ;
-  - **≈ 35-55 M€/an de coaching d'endurance** payé par les athlètes ;
+  - **≈ 15-55 M€/an de coaching d'endurance** payé par les athlètes (le bas de la fourchette est le plus probable : beaucoup de coachs n'ont que 3 à 5 athlètes) ;
   - la préparation physique vendue à part pour ces athlètes pèse **quelques millions d'euros par an au maximum**.
 - **Ce qui est solide** :
-  - **Licenciés** : FFC ≈ 110 000, dont environ 23 % en VTT, soit environ 26 000 licenciés VTT, **en baisse depuis 4 ans** [@cnosf-fiche-ffc-2025] [@directvelo-ffc-2025] ; FFTri 75 519 (+6,4 %) [@sportbusiness-fftri-2026-09] ; FFA 331 000 titres, dont **42 000 licenciés trail (+90 % en 3 ans)** [@insee-licences-2024] [@jogging-trail-chiffres] ; FF Ski 93 000.
+  - **Licenciés** : FFC ≈ 110 000, dont environ 23 % en VTT, soit environ 26 000 licenciés VTT, **en baisse sur plusieurs années** [@cnosf-fiche-ffc-2025] [@directvelo-ffc-2025] ; FFTri 75 519 (+6,4 %) [@sportbusiness-fftri-2026-09] ; FFA 331 000 titres, dont **42 000 licenciés trail (+90 % en 3 ans)** [@insee-licences-2024] [@jogging-trail-chiffres] ; FF Ski 93 000.
   - **Fréquentation de Font-Romeu** : 105 à 142 sportifs à l'année selon la source, plus de 3 000 en stage chaque année [@sports-gouv-creps-font-romeu] [@font-romeu-cnea].
 - **Les grands acteurs consolident** :
   - Garmin : segment Fitness à 2,36 Md$ en 2025 (+33 %), puis rachat de TrainingPeaks et TrainHeroic [@garmin-resultats-2025] [@garmin-rachat-trainingpeaks-trainheroic] ;
@@ -21,16 +21,16 @@
   C'est un marché d'**intégration** : les gros achètent, les petits se branchent ou disparaissent.
 - **Les prix de référence pour Charge Utile** :
   - un coach d'endurance français coûte **80-130 €/mois** (50-200) ;
-  - la **préparation physique à distance vendue seule** coûte **55-70 €/mois** [@trailsinfrance-coaching] [@reathletik-prix] ;
+  - la **préparation physique à distance** se vend sur **deux étages** : **8 €/mois** pour du contenu standard, **55-80 €/mois** pour du personnalisé vendu par des professionnels installés [@trailsinfrance-coaching] [@reathletik-prix] ;
   - un coach dépense **0-100 €/mois en logiciel**, typiquement 20-60 €, soit 2 à 6 % de son chiffre d'affaires. Nolio coûte 19,90-39,90 € [@nolio-prix] ; TrainingPeaks Coach Unlimited 54,99 $ plus les athlètes Premium [@trainingpeaks-prix-coach].
 
 ## Ce que ça implique (lecture franche)
 
 1. **Le marché adressable français est petit.** Admettons que 10 % des ≈ 3 000 coachs d'endurance paient 10 €/mois un module force : on obtient 300 coachs × 10 € × 12 = 36 000 €/an. Avec 30 % des coachs à 20 €/mois, on obtient 900 × 20 € × 12 = 216 000 €/an : c'est le **plafond optimiste en France pour un SaaS coach**. Pour en vivre, il faut l'**international** (anglophones, via intervals.icu et TrainingPeaks), ou **vendre du service** (Nathan coach), ou les deux. Détail dans `06-modele-economique.md`.
 2. **Le VTT seul est trop étroit** : environ 26 000 licenciés, en baisse. Le **trail** (+90 % en 3 ans) et le **triathlon** (+6 %/an) sont les marchés d'endurance qui croissent. Le positionnement doit couvrir **« athlète d'endurance »**, pas « vététiste ».
-3. **Les pratiquants hors club sont nombreux** : 12 % des 15 ans et plus pratiquent avec une appli ou un cours en ligne [@injep-pratiques-2024]. Mais ce sont des clients grand public, qui paient peu et partent vite.
-4. **Font-Romeu est un banc d'essai, pas un marché** : quelques centaines de sportifs permanents (pôle espoir VTT, ski nordique, natation, lutte, etc.) et des milliers de stagiaires de passage. C'est l'**effet vitrine** qui compte : athlètes de 35 pays par an, et des coachs qui passent.
-5. **Un coach qui facture 80-130 €/mois par athlète peut payer 5 à 15 €/mois par athlète pour un outil**, si cet outil lui fait gagner du temps ou lui permet de vendre la préparation physique 55-70 €/mois en plus. **C'est le vrai argument économique** : Charge Utile comme outil qui permet au coach de **vendre une option force**.
+3. **Les pratiquants hors club sont nombreux** : 12 % pratiquent hors structure avec une appli ou un cours en ligne (la base semble être les pratiquants, pas toute la population : à vérifier dans le PDF) [@injep-pratiques-2024]. Mais ce sont des clients grand public, qui paient peu et partent vite.
+4. **Font-Romeu est un banc d'essai, pas un marché** : quelques centaines de sportifs permanents (ski nordique, natation, lutte, etc. ; le statut « pôle espoir VTT » est **incertain** : l'office de tourisme l'annonce, le plan de performance FFC 2025-2029 classe Font-Romeu en simple structure d'entraînement, voir `08`) et des milliers de stagiaires de passage. C'est l'**effet vitrine** qui compte : athlètes de 35 pays par an, et des coachs qui passent.
+5. **Un coach dépense aujourd'hui 1 à 3 € par athlète et par mois pour tous ses outils** (20-60 €/mois pour 10-25 athlètes ; Nolio : 1,20 € par athlète à 25 athlètes). Un module de force ne peut donc guère dépasser 2 € par athlète, sauf s'il permet au coach de **vendre en plus** une option de préparation physique. **C'est le vrai argument économique** : Charge Utile comme outil qui permet au coach de **vendre une option force**.
 
 ## Détail des données
 
@@ -73,7 +73,7 @@ Lecture : la catégorie store « Health & Fitness » mélange régime, sommeil, 
 
 **TrainingPeaks** : aucun nombre d'utilisateurs ou de coachs publié (vérifié : l'article sur le rachat n'en donne pas). Les chiffres de Growjo/Owler (≈ 17 M$ de CA, ~125 salariés) sont des estimations automatiques. [C] Prix coach : voir section 5.
 
-**intervals.icu** : page « About » officielle : 100 000+ athlètes et 111 M+ d'activités analysées « en 2024 » ; équipe ~8 personnes ; fondateur à plein temps depuis septembre 2024 ; modèle freemium (abonnement « supporter » facultatif). Un site tiers (via recherche) avance 160 000+ athlètes en 2026, non vérifié. **Nombre de supporters payants non public.** [A pour la page officielle, mais auto-déclaré]
+**intervals.icu** : page « About » officielle : 100 000+ athlètes et 111 M+ d'activités analysées « en 2024 » ; équipe ~8 personnes ; fondateur à plein temps depuis septembre 2024 ; modèle freemium (abonnement « supporter » facultatif). Un site tiers (via recherche) avance 160 000+ athlètes en 2026, non vérifié. **Nombre de supporters payants non public.** [A pour la page officielle, mais auto-déclaré] **Mise à jour** : la page d'accueil affiche « 160 000+ athlètes actifs » et 193 M d'activités au 30/09/2026 (vérifié, `03`) ; la page « About » nomme 7 personnes (relevé du contradicteur) ; un article de presse de mai 2026 parle de 3. On retient : **petite équipe, 3 à 8 personnes selon la source**.
 
 #### 1.3 « Marché du coaching en ligne » — rapports à vendre ([C], à ne pas utiliser)
 
@@ -123,7 +123,7 @@ Attention aux définitions : « licence annuelle » (INJEP), « licenciés au 30
 #### 2.2 Ordres de grandeur utiles pour Charge Utile
 
 - **Licenciés « endurance compétitive » ciblés** (hors cyclotourisme loisir et hors athlétisme jeunes/piste) : FFC ~110 k + FFTri ~75 k + trail FFA ~42 k + une part du running FFA + ski nordique (non chiffré, quelques milliers à ~20 k) + UFOLEP/FSGT cyclisme (~25 k FSGT + UFOLEP inconnu) → **de l'ordre de 250 000 à 300 000 licenciés d'endurance en compétition ou quasi-compétition**. Fourchette large, faite de ma main : les doubles licences et les licences « loisir » ne sont pas déduites.
-- Le **VTT fédéral** est une petite niche (~26 000 licenciés FFC) et **en baisse depuis 4 ans**. Le trail et le triathlon sont les disciplines d'endurance en forte croissance.
+- Le **VTT fédéral** est une petite niche (~26 000 licenciés FFC) et **en baisse sur plusieurs années** (DirectVelo signale aussi un recul de 5,8 % des licences validées au 15/10/2025). Le trail et le triathlon sont les disciplines d'endurance en forte croissance.
 - En dehors des fédérations : 48 % des 15 ans et plus pratiquent marche/course et 17 % du vélo sportif au moins une fois par an (INJEP 2024) ; 12 % pratiquent hors structure avec une appli ou un cours en ligne.
 
 ---
@@ -188,7 +188,7 @@ Aucune statistique ne compte ce métier. Trois approches, toutes grossières :
 - 1 Pôle France olympique BMX Freestyle (Montpellier).
 - **Pôles Espoirs** : pages pour 13 régions (AURA, BFC, Bretagne, CVL, Grand Est, Guadeloupe, HdF, Normandie, Nouvelle-Aquitaine, Nouvelle-Calédonie, Occitanie, Pays de la Loire, Sud-PACA) + des « Structures d'Entraînement et de Formation » (SEF). Les disciplines de chaque pôle ne sont pas listées sur la page d'index. Exemple : le pôle espoir BFC a une antenne route/piste à Dijon (CREPS) et une antenne **VTT** à Besançon.
 - PPF FFC 2025-2029 validé par arrêté du 23/06/2025 (extrait de recherche).
-- **Font-Romeu accueille un pôle espoir VTT** (office de tourisme de Font-Romeu, liste des pôles du CNEA).
+- **Font-Romeu : « pôle espoir VTT » selon l'office de tourisme** ; le plan de performance FFC 2025-2029 le classe en structure d'entraînement et de formation, et la page sports.gouv.fr ne cite pas le VTT parmi les structures permanentes. **Statut à vérifier sur place** (`08`).
 
 **Triathlon (FFTri)** — fftri.com, structures au 01/01/2026 : **1 Pôle France (CREPS de Boulouris)**, **1 Pôle Espoirs (CREPS de Montpellier)**, 4 centres régionaux d'accession (Besançon, Orléans, CREPS de Reims, Nantes ; la page annonce 5 ligues mais n'en liste que 4), **8 clubs structures d'accession** (Brive, La Rochelle, Reims, Rouen, Palaiseau, Mulhouse, Villeneuve-d'Ascq, Poissy).
 
@@ -208,7 +208,7 @@ Deux sources officielles, pas tout à fait concordantes :
 - **Office de tourisme de Font-Romeu** : « 142 sportifs » à l'année dans **11 pôles**, la liste en affiche 13 : lutte (espoir et France), natation (CAF et CNE), pentathlon moderne (Pôle France relève), short-track, **ski-alpinisme (espoir)**, ski alpin (espoir), ski freestyle, **ski nordique**, snowboard (et CNE snowboard), parapente (espoir), **VTT (pôle espoir)**. Plus de 140 lits.
 - **sports.gouv.fr** : 8 pôles permanents, 105 athlètes de haut niveau à l'année ; plus de 3 000 athlètes de 35 pays et 35 sports par an en stage ; équipements : 2 stades, 2 pistes de VTT, chambres hypoxiques, salles chaleur/humidité ; disciplines accueillies en stage : rugby, canoë, **VTT**, équitation, pentathlon, **athlétisme**, **triathlon**.
 - Un extrait de recherche mentionne aussi le **biathlon** parmi les pôles permanents : à confirmer.
-**Pour Charge Utile** : Font-Romeu concentre au même endroit un pôle espoir VTT, un pôle ski nordique et des milliers de sportifs d'endurance en stage (athlétisme, triathlon, VTT). C'est un banc d'essai rêvé et un lieu de bouche-à-oreille, pas un marché en soi (quelques centaines de sportifs permanents).
+**Pour Charge Utile** : Font-Romeu concentre au même endroit une structure d'entraînement VTT, un pôle ski nordique et des milliers de sportifs d'endurance en stage (athlétisme, triathlon, VTT). C'est un banc d'essai rêvé et un lieu de bouche-à-oreille, pas un marché en soi (quelques centaines de sportifs permanents).
 
 #### 4.5 Sections sportives scolaires
 - Extrait de recherche Eduscol (page 403, non ouverte) : **3 646 sections à la rentrée 2023** (+4 %), **97 611 élèves** (83 609 en collège, 14 002 en lycée) ; athlétisme : 175 sections ; football 719. **Cyclisme/VTT, ski nordique et triathlon non chiffrés** dans l'extrait. [A si confirmé]
@@ -251,7 +251,7 @@ Tous les prix ci-dessous ont été vérifiés le **30/09/2026** sur la page cit�
 | Trails in France | option préparation physique 60 €/mois | voir 5.1 |
 | Fourchettes « coach sportif » en France | 40-80 €/séance, jusqu'à 90-150 € à domicile à Paris/Lyon — **extraits de recherche de blogs commerciaux, non ouverts** | non vérifié |
 
-**Repère utile pour Charge Utile : la muscu/proprio pour sportif d'endurance, vendue seule à distance, se paie ~55-70 €/mois en France.**
+**Repère utile pour Charge Utile : deux étages.** Trails in France vend aussi un « renforcement général » et une formule trail standard à **8 €/mois** chacune (relevé du contradicteur, 01/10/2026). Le personnalisé à distance se paie 55-80 €/mois chez des professionnels installés (Réathlétik est un centre avec kinésithérapie). **Un jeune diplômé n'est pas dans l'étage haut par défaut.**
 
 #### 5.4 Budget logiciel d'un coach
 
@@ -273,7 +273,7 @@ Rapports à vendre sur le sujet, **[C], à ne pas utiliser** : ResearchAndMarket
 #### 5.6 Reconstruction « par le bas » du marché France (ordre de grandeur, calcul de ma part)
 - Coachs d'endurance rémunérés : ~3 000 (2 000-5 000, section 3.4).
 - Logiciel : ~30 €/mois/coach → **~1 M€/an** (0,5-3 M€) de dépense logicielle des coachs d'endurance en France. Cohérent avec Nolio (CA 2023 > 500 k€ déclaré, ~4 500 comptes coachs en 2026, beaucoup gratuits ou clubs).
-- Services de coaching : 3 000 coachs × ~10-15 athlètes payants × ~100 €/mois → **~35-55 M€/an** de coaching d'endurance payé par les athlètes en France (très incertain ; beaucoup de coachs ont 3-5 athlètes).
+- Services de coaching : 3 000 coachs × ~10-15 athlètes payants × ~100 €/mois → **~35-55 M€/an** ; avec 5 athlètes par coach en moyenne, **~18 M€/an**. Fourchette retenue : **15-55 M€/an**, le bas étant le plus probable (beaucoup de coachs ont 3-5 athlètes).
 - Muscu/proprio pour sportifs d'endurance comme poste séparé : si 10-20 % des athlètes coachés paient une option préparation physique à ~55-60 €/mois, cela fait quelques millions d'euros par an en France au maximum.
 
 ---
@@ -296,7 +296,7 @@ Rapports à vendre sur le sujet, **[C], à ne pas utiliser** : ResearchAndMarket
 #### Fragile (estimation de ma part ou chiffre non vérifié)
 - **Nombre de coachs d'endurance indépendants en France : 2 000-5 000 (centre ~3 000)**, aucune statistique directe ; incertitude d'un facteur 2.
 - Nombre de DEJEPS « endurance » par an (~150-300) : **déduit, non publié** par spécialité.
-- Marché France du logiciel de coaching d'endurance ~1 M€/an et coaching payé ~35-55 M€/an : reconstructions par le bas à partir d'hypothèses.
+- Marché France du logiciel de coaching d'endurance ~1 M€/an et coaching payé ~15-55 M€/an : reconstructions par le bas à partir d'hypothèses.
 - Abonnés TrainerRoad (150-350 k, intuition de DC Rainmaker en 2022), TrainingPeaks (aucun chiffre), intervals.icu supporters (non public).
 - Ski nordique/biathlon : pas de chiffre fiable de licenciés par discipline ; pôles espoirs nordiques non listés.
 - Font-Romeu : deux sources officielles discordantes (8 ou 11 pôles, 105 ou 142 sportifs à l'année).
